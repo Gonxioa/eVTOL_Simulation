@@ -1,0 +1,106 @@
+# Python bytecode and native extensions
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+
+# Test, type-checker, linter, and coverage caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.hypothesis/
+.tox/
+.nox/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# Python packaging and build output
+build/
+dist/
+downloads/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Virtual environments and local environment files
+.venv/
+venv/
+env/
+ENV/
+__pypackages__/
+.env
+.env.*
+!.env.example
+
+# IDE, editor, OS, and temporary files
+.idea/
+.vscode/
+*.code-workspace
+*.swp
+*.swo
+*.tmp
+*.temp
+*.bak
+*~
+.tmp/
+.cache/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# External/raw datasets (kept locally; not project source)
+/RflyMAD多旋翼故障数据集/
+/UAV-FD/
+/轴承数据集/
+
+# Generated simulation, preprocessing, training, and evaluation output
+/output*/
+/plots/
+/runs/
+/converted_documents/
+/模型/
+/*.csv
+*.log
+events.out.tfevents*
+
+# Model checkpoints and serialized numerical artifacts
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.joblib
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.h5
+*.hdf5
+*.mat
+
+# Large/generated reference materials; keep the maintained Markdown in docs/
+/docs/literature/
+/docs/presentations/
+/docs/data_examples/
+/docs/media/
+/docs/tables/
+
+# Archives are local delivery/data bundles, not repository source
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
+*.tgz
+
+# Local historical working notes
+/CLEANUP_REPORT_20260610.md
+/每日进度汇总.md
+/每日进度汇总.txt
+
+# Stale RotorPy upstream packaging/CI metadata (not valid for this project)
+/.github/
+/pyproject.toml
