@@ -148,58 +148,23 @@ WGAN.py / classify.py
 
 ## 5. 当前已确认的高优先级问题
 
-### P0-1：IMU 坐标系/真值来源问题
+### P0-1：IMU 坐标系/真值来源（`fix/simulation-physics` 已修，待审查）
 
-当前 `main.py::generate_imu_data()`：
+本机 RotorPy 2.1.2 的 `simulate()` 返回 `imu_gt`；其 `Imu.measurement(..., with_noise=False)` 仍叠加内置 bias。分支中新增显式零 bias、零 random walk、零内置噪声、`p_BS=0`、`R_BS=I` 的 RotorPy IMU，使 `imu_gt` 成为机体系比力和角速度真值。`generate_imu_data()` 只从该真值叠加项目原有的独立随机流噪声；真值缺失、形状错误或非有限时明确报错，不再使用世界系速度差分。
 
-- 使用世界坐标系速度 `state['v']` 做差分；
-- 直接计算 `dv/dt + g`；
-- 然后将其作为加速度计真值传给 `RealisticIMU`；
-- 同时陀螺真值直接使用 `state['w']`（机体系角速度）。
-
-因此当前 6 维 IMU 存在**加速度世界系、角速度机体系的坐标系混用风险**。
-
-#### 推荐修复方向
-
-优先核对 RotorPy 2.1.2 当前 `Environment/simulate/Imu` 的 `imu_gt` 定义。如果 `imu_gt` 已提供无噪声、机体系 accelerometer / gyroscope ground truth，则优先：
-
-```text
-RotorPy imu_gt
-    ↓
-RealisticIMU
-    ↓
-叠加项目自定义白噪声 + bias random walk + vibration
-```
-
-不要在没有核对 RotorPy 2.1.2 源码/接口的情况下凭记忆实现坐标变换。
-
-#### 数据影响
-
-该问题会改变训练数据的物理含义。修复后，旧 `output_hex_v3` 不应与新数据混合作为同一正式数据版本。
+`tests/test_imu_wind.py` 覆盖解析机体系比力（含倾斜姿态）、水平静止、理想自由落体、短时 RotorPy 仿真、随机流复现和异常输入。传感器解析算例不代表倾斜静止是可持续自由飞行状态。旧 `output_hex_v3` 未重生成，不能与新物理定义混用。
 
 ---
 
-### P0-2：`TurbulentWind.base_amplitude` 当前未生效
+### P0-2：`TurbulentWind.base_amplitude`（`fix/simulation-physics` 已修，待审查）
 
-当前逻辑：
+本机 RotorPy 2.1.2 的 `SinusoidWind` 接收三轴 `amplitudes`。分支现将标量 `base_amplitude` 映射为三轴相同振幅，并移除会掩盖内部错误的 `TypeError` 回退。频率、相位、湍流标准差及项目独立随机源保持不变。测试覆盖零/半幅/全幅解析正弦值、同种子湍流复现及内部异常传播。基础正弦分量变化不等于总风扰动按同一倍数变化。
 
-```python
-self.base = SinusoidWind()
-self.amp = base_amplitude
-```
+---
 
-但 `self.amp` 没有进入 `update()` 或传给 `SinusoidWind`。
+### P0-3：故障时间边界（待第二批单独修复）
 
-因此 `build_scenario()` 中传入的 `base_amplitude=0.5` 目前是死参数，实际基础正弦风由 RotorPy `SinusoidWind` 默认配置决定。
-
-#### 修复要求
-
-- 对照本机 RotorPy 2.1.2 的 `SinusoidWind.__init__` 签名；
-- 让 `base_amplitude` 真正接入基础风场；
-- 不要直接照抄未经核对的参数名；
-- 删除/收窄不必要的 `except TypeError` fallback，避免吞掉真实内部错误。
-
-该问题同样属于正式数据生成前必须修复的问题。
+RotorPy 逐步累加浮点时间与 CSV 取整可能使名义 8.00 s 的故障激活状态不一致。当前第一批未修改故障时间、控制器、载体或校验器。正式数据生成前必须完成独立复现、统一采样步语义及回归测试，不能靠放宽校验掩盖。
 
 ---
 
@@ -302,6 +267,8 @@ all(f"cmd_motor{i}" in FEATURE_NAMES for i in range(6))
 
 **物理定义改变 = 新数据版本。**
 
+`fix/simulation-physics` 已改变 IMU 真值和基础风场语义，但本批次没有升级默认目录或 dataset_version，也没有生成正式 CSV。P0-3 时间边界与 P1-04 版本迁移完成并审查前，不要运行正式数据生成或在 `output_hex_v3` 中续跑。
+
 以下修改发生后，不得把新 CSV 混入旧 `output_hex_v3`：
 
 - IMU 真值/坐标系修正；
@@ -321,7 +288,7 @@ all(f"cmd_motor{i}" in FEATURE_NAMES for i in range(6))
 - 本地仓库与 GitHub 已连接；
 - remote：`origin`；
 - 默认分支：`main`；
-- `main` 用作稳定基线；
+- `main` 用作稳定基线；首批物理修复在 `fix/simulation-physics` 分支，未合并；
 - 不应把实验性修改直接堆在 `main`。
 
 ### 推荐流程
@@ -344,7 +311,7 @@ push
 确认后合并 main
 ```
 
-### 当前建议的下一分支
+### 第一批修复分支
 
 ```text
 fix/simulation-physics
@@ -352,8 +319,10 @@ fix/simulation-physics
 
 第一轮仅处理：
 
-1. IMU 真值/机体系问题；
-2. TurbulentWind `base_amplitude` 问题。
+1. IMU 真值/机体系问题（已修，定向测试通过）；
+2. TurbulentWind `base_amplitude` 问题（已修，定向测试通过）。
+
+故障时间边界 P0-3 仍待第二批单独处理；新数据版本 P1-04 仍待正式重生成之前处理。
 
 **第一轮不要同时修改 WGAN / classify / 类别定义。**
 
@@ -365,15 +334,12 @@ fix/simulation-physics
 
 ### Phase A — 仿真物理修复
 
-1. 新建 `fix/simulation-physics`；
-2. 核对 RotorPy 2.1.2 `Imu` / `simulate` / `Environment` 的实际接口；
-3. 修 IMU ground truth 来源；
-4. 修 `TurbulentWind.base_amplitude`；
-5. 更新/补充对应测试；
-6. 运行最小仿真验证；
-7. 检查输出 IMU 的坐标系与静态/悬停行为；
-8. push 后做代码 diff 审查；
-9. 不立刻覆盖旧正式数据。
+1. `fix/simulation-physics` 已建立；
+2. 本机 RotorPy 2.1.2 的 `Imu` / `simulate` / `Environment` / `SinusoidWind` 接口已核对；
+3. IMU ground truth 来源及 `base_amplitude` 已修；
+4. 定向测试与短时仿真已通过；
+5. 全套测试、diff 审查与提交记录以本分支最新交付为准；
+6. 不覆盖旧正式数据；P0-3 与 P1-04 另批处理。
 
 ### Phase B — 类别语义决策
 

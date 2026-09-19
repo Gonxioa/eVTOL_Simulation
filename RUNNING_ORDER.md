@@ -5,15 +5,18 @@
 
 ## 0. 代码门禁（当前只执行这一步）
 
-在控制器和故障模型尚未完成共同审查前，不要运行 `main.py`。先执行不产生任何
-飞行数据的静态编译与单元测试：
+`fix/simulation-physics` 第一批已修 IMU 真值坐标系和基础正弦风幅值，但故障时间边界
+P0-03 及新数据版本迁移 P1-04 尚未完成。下方第 1–4 步仍是历史正式流程，**现在不要
+运行 `main.py` 生成正式数据，也不要向旧 `output_hex_v3` 续跑**。仅运行不产生正式数据
+的静态编译、单元测试及隔离的短时仿真：
 
 ```powershell
 python -m py_compile .\control_allocation.py .\hex_params.py .\main.py .\validate_hex_data.py .\data_process.py .\WGAN.py .\classify.py
 python -m unittest discover -s .\tests -v
 ```
 
-只有全部通过、并且确认故障语义与传感器模型后，才进入下面的数据生成步骤。
+只有全部通过，且 P0-03、P1-04 完成并经审查后，才更新下方目录及版本并进入正式
+数据生成。短时测试的通过不能替代这两个门禁。
 
 ## 1. 生成独立重复仿真
 

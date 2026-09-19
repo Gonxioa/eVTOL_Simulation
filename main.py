@@ -12,6 +12,7 @@ plt.rcParams['axes.unicode_minus'] = False
 from scipy.spatial.transform import Rotation as R
 
 from rotorpy.environments import Environment
+from rotorpy.sensors.imu import Imu
 from rotorpy.vehicles.multirotor import Multirotor
 from rotorpy.controllers.quadrotor_control import SE3Control
 from rotorpy.world import World
@@ -403,6 +404,28 @@ class RealisticIMU:
         return acc_meas, gyro_meas
 
 
+def make_truth_imu(sampling_rate=SIM_RATE):
+    """Body-aligned, body-origin RotorPy IMU used only for unbiased truth.
+
+    RotorPy 2.1.2 applies its bias even when ``with_noise=False``. Explicitly
+    zero all built-in errors so ``results['imu_gt']`` can be passed through the
+    project's separately seeded :class:`RealisticIMU` exactly once.
+    """
+    zero_error = {
+        "initial_bias": np.zeros(3),
+        "noise_density": np.zeros(3),
+        "random_walk": np.zeros(3),
+    }
+    return Imu(
+        accelerometer_params={key: value.copy() for key, value in zero_error.items()},
+        gyroscope_params={key: value.copy() for key, value in zero_error.items()},
+        p_BS=np.zeros(3),
+        R_BS=np.eye(3),
+        sampling_rate=sampling_rate,
+        gravity_vector=np.array([0.0, 0.0, -9.81]),
+    )
+
+
 # =============================================================================
 # ★ 湍流风场（SinusoidWind + 随机高频扰动）
 # =============================================================================
@@ -412,17 +435,15 @@ class TurbulentWind:
     接口与 RotorPy 风场类兼容。
     """
     def __init__(self, base_amplitude=0.5, turbulence_std=0.2, rng=None):
-        self.base   = SinusoidWind()
+        self.base   = SinusoidWind(
+            amplitudes=np.full(3, base_amplitude, dtype=float)
+        )
         self.std    = turbulence_std
-        self.amp    = base_amplitude
         self.rng    = rng if rng is not None else np.random.default_rng()
 
     def update(self, t, position):
         # 基础正弦风
-        try:
-            base_wind = self.base.update(t, position)
-        except TypeError:
-            base_wind = self.base.update(t)
+        base_wind = self.base.update(t, position)
         # 叠加随机湍流扰动
         turbulence = self.rng.normal(0, self.std, 3)
         return base_wind + turbulence
@@ -669,33 +690,40 @@ def export_to_csv(results, imu_data, filename="flight_data.csv",
 # =============================================================================
 def generate_imu_data(results, imu: RealisticIMU):
     """
-    遍历仿真结果，为每个时间步生成带噪声的 IMU 读数。
-    真实加速度用状态导数近似，角速度直接取 state['w']。
+    Add the project's sensor errors to RotorPy's body-frame IMU truth.
+
+    Do not use ``imu_measurements`` here: it may already include built-in
+    sensor errors. Missing or invalid truth must fail rather than fall back to
+    the old world-frame finite-difference acceleration approximation.
     """
     t_key = 'time' if 'time' in results else 't'
-    t     = results[t_key]
-    state = results['state']
+    if t_key not in results:
+        raise ValueError("IMU generation requires results['time'] or results['t']")
+    t = np.asarray(results[t_key], dtype=float)
+    if t.ndim != 1 or not np.isfinite(t).all():
+        raise ValueError("IMU generation requires a finite one-dimensional time array")
     n     = len(t)
+
+    truth = results.get('imu_gt')
+    if not isinstance(truth, dict):
+        raise ValueError("IMU generation requires results['imu_gt']")
+    for key in ('accel', 'gyro'):
+        if key not in truth:
+            raise ValueError(f"IMU generation requires results['imu_gt']['{key}']")
+
+    accel_truth = np.asarray(truth['accel'], dtype=float)
+    gyro_truth = np.asarray(truth['gyro'], dtype=float)
+    for name, values in (('accel', accel_truth), ('gyro', gyro_truth)):
+        if values.shape != (n, 3):
+            raise ValueError(f"imu_gt.{name} shape must be ({n}, 3), got {values.shape}")
+        if not np.isfinite(values).all():
+            raise ValueError(f"imu_gt.{name} must contain only finite values")
 
     acc_out  = np.zeros((n, 3))
     gyro_out = np.zeros((n, 3))
 
-    # 用速度差分近似加速度（加上重力补偿，模拟 IMU 比力）
-    v = state['v']
-    g_vec = np.array([0., 0., 9.81])  # 重力（世界系）
-
     for i in range(n):
-        if i == 0:
-            true_acc = g_vec.copy()
-        else:
-            dt = t[i] - t[i-1]
-            if dt < 1e-9:
-                dt = 1.0 / SIM_RATE
-            dv = (v[i] - v[i-1]) / dt
-            true_acc = dv + g_vec   # IMU 测量的是比力（含重力）
-
-        true_gyro = state['w'][i]
-        acc_out[i], gyro_out[i] = imu.measure(true_acc, true_gyro)
+        acc_out[i], gyro_out[i] = imu.measure(accel_truth[i], gyro_truth[i])
 
     return {'acc': acc_out, 'gyro': gyro_out}
 
@@ -893,7 +921,7 @@ def run_one(fault_motors, fault_factor, fault_label, scenario_name,
         world         = world,
         wind_profile  = wind,
         sim_rate      = SIM_RATE,
-        imu           = None,   # 我们自己实现 IMU 噪声，不用 RotorPy 内置
+        imu           = make_truth_imu(SIM_RATE),  # unbiased body-frame truth
         mocap         = None,
         estimator     = None,
         safety_margin = 0.0,
