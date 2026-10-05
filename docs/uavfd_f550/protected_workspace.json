@@ -1,0 +1,32 @@
+{
+  "docs/HEXAROTOR_PHYSICAL_CHARACTERISTICS.md": {
+    "original_sha256": "1833bcd97b1134eeec584dc4e83ba18569639e7bc09a3cb2d2c643d01e6f870d",
+    "current_sha256": "1833bcd97b1134eeec584dc4e83ba18569639e7bc09a3cb2d2c643d01e6f870d",
+    "unchanged": true
+  },
+  "hex_physical_characteristics.py": {
+    "original_sha256": "7aeaf3acd682d9d399b670d26a9b140bc61492bbec6370048bc27e413bf48849",
+    "current_sha256": "7aeaf3acd682d9d399b670d26a9b140bc61492bbec6370048bc27e413bf48849",
+    "unchanged": true
+  },
+  "main.py": {
+    "original_sha256": "5c5b8b37994ece58f6562b966759fc4de13c5af9af3e89afb354d8d10f71458f",
+    "current_sha256": "5c5b8b37994ece58f6562b966759fc4de13c5af9af3e89afb354d8d10f71458f",
+    "unchanged": true
+  },
+  "tests/test_control_allocation.py": {
+    "original_sha256": "3f3833238e7324b6d97d6d484e48f6ff9589bfa100af9cba3838212102c1fdb0",
+    "current_sha256": "3f3833238e7324b6d97d6d484e48f6ff9589bfa100af9cba3838212102c1fdb0",
+    "unchanged": true
+  },
+  "eR_geometry.png": {
+    "original_sha256": "d7a532be61fda621b3564c28a1a7cb9e438e867859cc8a884dd028ce7b273ac7",
+    "current_sha256": "d7a532be61fda621b3564c28a1a7cb9e438e867859cc8a884dd028ce7b273ac7",
+    "unchanged": true
+  },
+  "tests/test_hex_physical_characteristics.py": {
+    "original_sha256": "14d4790ef2ce8e89301a54e3c179353adfaf97c3a09ce6b8dbf3c97138a6ab7f",
+    "current_sha256": "14d4790ef2ce8e89301a54e3c179353adfaf97c3a09ce6b8dbf3c97138a6ab7f",
+    "unchanged": true
+  }
+}

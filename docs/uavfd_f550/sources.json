@@ -1,0 +1,114 @@
+[
+  {
+    "id": "S01",
+    "title": "UAV-FD dataset v1",
+    "authors": "Baldini, D'Alleva, Felicetti, Ferracuti, Freddi, Monteriù / Università Politecnica delle Marche",
+    "year": 2023,
+    "url": "https://zenodo.org/records/7648996",
+    "doi": "10.5281/zenodo.7648996",
+    "version": "v1, published 2023-02-26",
+    "location": "Description, individual file sizes/MD5; original main.m, compare3.m, sync_zoh_exa.m",
+    "access": "record/API and local original scripts read",
+    "access_date": "2026-10-04"
+  },
+  {
+    "id": "S02",
+    "title": "UAV-FD: a dataset for actuator fault detection in multirotor drones",
+    "authors": "Alessandro Baldini et al.",
+    "year": 2023,
+    "url": "https://iris.univpm.it/handle/11566/320071",
+    "doi": "10.1109/ICUAS57906.2023.10156060",
+    "version": "ICUAS 2023 pp.998–1004",
+    "location": "Crossref metadata; university repository abstract",
+    "access": "Full text not acquired from checked sources: repository lists no attached file; direct retrieval failed, IEEE 202 has no paper content. Supplemental read-only Zotero title enumeration found no matching paper in the current scope (receipt: reference_access_check.json). Physical setup and 5/10 geometry not confirmed.",
+    "access_date": "2026-10-04"
+  },
+  {
+    "id": "S03",
+    "title": "Identification of a Multicopter",
+    "authors": "ArduPilot documentation contributors",
+    "year": null,
+    "url": "https://ardupilot.org/copter/docs/systemid-model-development.html",
+    "version": "access snapshot, current document not historical firmware",
+    "location": "Model Scope; Model Structure; verification discussion",
+    "access": "read; equation images discussed alongside body definitions. Example quadrotor values not adopted.",
+    "access_date": "2026-10-04"
+  },
+  {
+    "id": "S04",
+    "title": "ArduPilot historical base source",
+    "authors": "ArduPilot contributors",
+    "year": 2022,
+    "url": "https://github.com/ArduPilot/ardupilot/blob/232083c4d23be21d694d130f639fb6497bd57f98",
+    "version": "232083c4d23be21d694d130f639fb6497bd57f98",
+    "location": "AP_MotorsMatrix.cpp:793–799, add_motor; AP_InertialSensor/LogStructure.h:45–61,116–122; AP_InertialSensor_Logging.cpp:39–94; AP_InertialSensor_Backend.cpp:537,713–747; AP_InertialSensor.cpp:1943–1965,1987–1995; AP_BLHeli.cpp:1330–1334,1403–1406,1447–1463; AP_ESC_Telem/LogStructure.h:8–36; AP_Logger/LogStructure.h:54,64,69,1331–1332",
+    "access": "source snapshots read; only public base commit is established. Dataset custom logging patch and strings missing.",
+    "access_date": "2026-10-04"
+  },
+  {
+    "id": "S05",
+    "title": "Active Propeller Fault Detection and Isolation in Multirotors Via Vibration Model",
+    "authors": "Alessandro Baldini, Riccardo Felicetti, Alessandro Freddi, Andrea Monteriù",
+    "year": 2026,
+    "url": "https://arxiv.org/html/2604.07281v1",
+    "version": "arXiv:2604.07281v1 2026-04-08",
+    "location": "§2 equations(1)–(6), mass/COM and rotation; §3 frequency interpretation",
+    "access": "HTML full text read; our E7 follows an explicit support-reaction derivation. No octarotor parameters or active excitation imported.",
+    "access_date": "2026-10-04"
+  },
+  {
+    "id": "S06",
+    "title": "Propeller damage detection, classification and estimation in multirotor vehicles",
+    "authors": "Claudio Pose, Juan I. Giribet, Gabriel Torre",
+    "year": 2024,
+    "url": "https://arxiv.org/html/2410.05447v1",
+    "version": "arXiv:2410.05447v1",
+    "location": "§1.3–1.4; frequency-domain methodology; UAV-FD transfer section",
+    "access": "HTML read; only diagnostic context, not evidence validating our dynamics or damage geometry",
+    "access_date": "2026-10-04"
+  },
+  {
+    "id": "S07",
+    "title": "FlameWheel 550 User Manual",
+    "authors": "DJI",
+    "year": 2015,
+    "url": "https://dl.djicdn.com/downloads/flamewheel/en/F550_User_Manual_v2.0_en.pdf",
+    "version": "V2.0, 2015.05",
+    "location": "printed p.8 Specifications (PDF page index 7)",
+    "access": "spec table read, PDF archived. 550mm frame wheelbase is generic; not proof of dataset hardware or COM radius; 478g is frame only; listed motor/prop combination differs from Air Gear clue.",
+    "access_date": "2026-10-04"
+  },
+  {
+    "id": "S08",
+    "title": "Standard acceleration of gravity",
+    "authors": "NIST / CODATA",
+    "year": 2022,
+    "url": "https://physics.nist.gov/cgi-bin/cuu/Value?gn",
+    "version": "2022 CODATA site snapshot",
+    "location": "numerical value 9.80665 m/s2 (exact conventional standard)",
+    "access": "read; model convention, not measured local gravity",
+    "access_date": "2026-10-04"
+  },
+  {
+    "id": "S09",
+    "title": "Legacy project airframe candidates",
+    "authors": "Existing local project",
+    "year": null,
+    "url": "local:hex_physical_characteristics.py",
+    "version": "7aeaf3acd682d9d399b670d26a9b140bc61492bbec6370048bc27e413bf48849",
+    "location": "uncommitted working-tree parameter definitions",
+    "access": "reviewed, not accepted as UAV-FD truth; provenance claims unresolved for exact aircraft",
+    "access_date": "2026-10-04"
+  },
+  {
+    "id": "S10",
+    "title": "AIR GEAR 350 product candidate",
+    "authors": "T-Motor",
+    "year": null,
+    "url": "https://store.tmotor.com/product/air-gear-350.html",
+    "version": "requested legacy URL",
+    "location": "not accessible",
+    "access": "direct request failed; no manufacturer values adopted",
+    "access_date": "2026-10-04"
+  }
+]

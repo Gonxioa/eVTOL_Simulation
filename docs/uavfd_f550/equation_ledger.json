@@ -1,0 +1,199 @@
+[
+  {
+    "id": "E1",
+    "relation": "pdot=v; vdot=g_world+R F_body/m",
+    "units": "m/s; m/s2",
+    "source_ids": [
+      "S03",
+      "S05"
+    ],
+    "source_location": "sources.json/SOURCE_REGISTER; MODEL_SPEC section E1",
+    "evidence_status": "own_derivation_or_explicit_reduced_assumption; source context only",
+    "coordinate": "NED world / FRD body; Hamilton wxyz body-to-world",
+    "implementation": "dynamics.Body.derivative",
+    "verification": "freefall_acceleration; known_external_force; hover_collective",
+    "limits": "Constant rigid-body mass; no drag or wind"
+  },
+  {
+    "id": "E2",
+    "relation": "J omega_dot=tau-omega cross(J omega)",
+    "units": "N m",
+    "source_ids": [
+      "S03",
+      "S05"
+    ],
+    "source_location": "sources.json/SOURCE_REGISTER; MODEL_SPEC section E2",
+    "evidence_status": "own_derivation_or_explicit_reduced_assumption; source context only",
+    "coordinate": "NED world / FRD body; Hamilton wxyz body-to-world",
+    "implementation": "dynamics.Body.derivative",
+    "verification": "constant_principal_torque_rate; RK4_final_error",
+    "limits": "COM rigid-body inertia; rotor angular momentum omitted"
+  },
+  {
+    "id": "E3",
+    "relation": "qdot=0.5 q HamiltonProduct [0,omega_body]",
+    "units": "1/s",
+    "source_ids": [
+      "S05"
+    ],
+    "source_location": "sources.json/SOURCE_REGISTER; MODEL_SPEC section E3",
+    "evidence_status": "own_derivation_or_explicit_reduced_assumption; source context only",
+    "coordinate": "NED world / FRD body; Hamilton wxyz body-to-world",
+    "implementation": "dynamics.qmul; dynamics.rk4",
+    "verification": "constant_principal_torque_attitude; rotation_orthogonality",
+    "limits": "Hamilton wxyz, body to world; step normalization"
+  },
+  {
+    "id": "E4",
+    "relation": "T=kT Omega^2; Q=kQ Omega^2; tau=r cross F-s Q e3",
+    "units": "N; N m",
+    "source_ids": [
+      "S03",
+      "S05"
+    ],
+    "source_location": "sources.json/SOURCE_REGISTER; MODEL_SPEC section E4",
+    "evidence_status": "own_derivation_or_explicit_reduced_assumption; source context only",
+    "coordinate": "NED world / FRD body; Hamilton wxyz body-to-world",
+    "implementation": "dynamics.Body.wrench",
+    "verification": "hover_torque; per_motor_wrench_sign; RPM_conversion_60_equals_2pi",
+    "limits": "Coplanar fixed pitch; scales do not map to 5/10 labels"
+  },
+  {
+    "id": "E5",
+    "relation": "f=R.T(a_COM-g)+alpha cross r+omega cross(omega cross r)+a_elastic",
+    "units": "m/s2",
+    "source_ids": [],
+    "source_location": "sources.json/SOURCE_REGISTER; MODEL_SPEC section E5",
+    "evidence_status": "own_derivation_or_explicit_reduced_assumption; source context only",
+    "coordinate": "NED world / FRD body; Hamilton wxyz body-to-world",
+    "implementation": "dynamics.specific_force; dynamics.imu_observe",
+    "verification": "static_IMU_sign; freefall_specific_force; IMU_centripetal_lever",
+    "limits": "Own rigid-point acceleration derivation; sensor fixed in body"
+  },
+  {
+    "id": "E6",
+    "relation": "RK4 with time-varying stage inputs; R_new=S_world R_old S_body",
+    "units": "state units; 1",
+    "source_ids": [],
+    "source_location": "sources.json/SOURCE_REGISTER; MODEL_SPEC section E6",
+    "evidence_status": "own_derivation_or_explicit_reduced_assumption; source context only",
+    "coordinate": "NED world / FRD body; Hamilton wxyz body-to-world",
+    "implementation": "dynamics.rk4; dynamics.old_enu_flu_to_ned_frd",
+    "verification": "RK4_convergence_ratio; frame_adapter",
+    "limits": "Own numerical implementation; coordinate adapter is not aircraft equivalence"
+  },
+  {
+    "id": "E7",
+    "relation": "theta_dot=s Omega; F_imb=mu(Omega^2 e_r-s Omega_dot e_t)",
+    "units": "rad/s; N",
+    "source_ids": [
+      "S05"
+    ],
+    "source_location": "sources.json/SOURCE_REGISTER; MODEL_SPEC section E7",
+    "evidence_status": "own_derivation_or_explicit_reduced_assumption; source context only",
+    "coordinate": "NED world / FRD body; Hamilton wxyz body-to-world",
+    "implementation": "vibration.imbalance_force; vibration.integrate_phase",
+    "verification": "imbalance_Omega_squared; imbalance_tangential_reaction; phase_spin_direction",
+    "limits": "Own support-reaction derivation; body-motion/Coriolis interactions omitted"
+  },
+  {
+    "id": "E8",
+    "relation": "qdd=-wn^2 q-2 zeta wn qd+input_gain F; a_elastic=output_shape qdd",
+    "units": "m/s2",
+    "source_ids": [],
+    "source_location": "sources.json/SOURCE_REGISTER; MODEL_SPEC section E8",
+    "evidence_status": "own_derivation_or_explicit_reduced_assumption; source context only",
+    "coordinate": "NED world / FRD body; Hamilton wxyz body-to-world",
+    "implementation": "vibration.LocalModes",
+    "verification": "modal_ringdown_exact_ZOH; demo internal-rate comparison",
+    "limits": "Assumed linear mass-normalized local elastic modes; not recovered aircraft modes"
+  },
+  {
+    "id": "E9",
+    "relation": "Lowpass before sampling; retained cutoff<0.45 min(fs_internal,fs_observation)",
+    "units": "Hz",
+    "source_ids": [],
+    "source_location": "sources.json/SOURCE_REGISTER; MODEL_SPEC section E9",
+    "evidence_status": "own_derivation_or_explicit_reduced_assumption; source context only",
+    "coordinate": "NED world / FRD body; Hamilton wxyz body-to-world",
+    "implementation": "vibration.checked_sample; signals.segments",
+    "verification": "anti_alias_230_to_70_energy_ratio; Nyquist_violation_rejected",
+    "limits": "Nyquist requirement plus explicitly selected guard margin; acausal offline observation"
+  },
+  {
+    "id": "E10",
+    "relation": "-fz=a_z sum(Omega^2)+b_z",
+    "units": "m/s2",
+    "source_ids": [
+      "S01",
+      "S03",
+      "S04"
+    ],
+    "source_location": "sources.json/SOURCE_REGISTER; MODEL_SPEC section E10",
+    "evidence_status": "own_derivation_or_explicit_reduced_assumption; source context only",
+    "coordinate": "NED world / FRD body; Hamilton wxyz body-to-world",
+    "implementation": "analysis.calibrate; analysis.replay",
+    "verification": "NO_FAULT4 specific_force_m_s2; per_flight_estimates",
+    "limits": "E1/E4 reduced fit; nuisance intercept; no physical kT/m identification claim"
+  },
+  {
+    "id": "E11",
+    "relation": "Delta omega_j=gamma_j integral(U_j dt)+b_j h",
+    "units": "rad/s",
+    "source_ids": [
+      "S01",
+      "S03",
+      "S04"
+    ],
+    "source_location": "sources.json/SOURCE_REGISTER; MODEL_SPEC section E11",
+    "evidence_status": "own_derivation_or_explicit_reduced_assumption; source context only",
+    "coordinate": "NED world / FRD body; Hamilton wxyz body-to-world",
+    "implementation": "analysis.integral_examples; analysis.calibrate",
+    "verification": "NO_FAULT4 angular_rate_rad_s versus persistence",
+    "limits": "Conditional base mixer; coupling, aerodynamic damping and delays omitted"
+  },
+  {
+    "id": "E12",
+    "relation": "One-second RPM-driven rate/attitude/velocity prediction initialized per interval",
+    "units": "rad/s; rad; m/s",
+    "source_ids": [
+      "S01"
+    ],
+    "source_location": "sources.json/SOURCE_REGISTER; MODEL_SPEC section E12",
+    "evidence_status": "own_derivation_or_explicit_reduced_assumption; source context only",
+    "coordinate": "NED world / FRD body; Hamilton wxyz body-to-world",
+    "implementation": "analysis.replay",
+    "verification": "normal_replay.json; attitude and horizontal velocity worse than persistence",
+    "limits": "Effective normalized dynamics; estimated ATT/XKF reference is not external truth"
+  },
+  {
+    "id": "E13",
+    "relation": "Rotational band energy E_j approximately G_j Omega^4",
+    "units": "(m/s2)^2",
+    "source_ids": [
+      "S01",
+      "S05",
+      "S06"
+    ],
+    "source_location": "sources.json/SOURCE_REGISTER; MODEL_SPEC section E13",
+    "evidence_status": "own_derivation_or_explicit_reduced_assumption; source context only",
+    "coordinate": "NED world / FRD body; Hamilton wxyz body-to-world",
+    "implementation": "analysis.spectrum_rows; analysis.vibration",
+    "verification": "NO_FAULT4/FAULT_M3_5 vibration_validation.json",
+    "limits": "E7 amplitude-square derivation; overlapping bands and unknown transfer/filter; unvalidated cross-motor damage gain"
+  },
+  {
+    "id": "E14",
+    "relation": "Omega(t+dt)=steady+(Omega(t)-steady) exp(-dt/tau)",
+    "units": "rad/s",
+    "source_ids": [
+      "S03"
+    ],
+    "source_location": "sources.json/SOURCE_REGISTER; MODEL_SPEC section E14",
+    "evidence_status": "own_derivation_or_explicit_reduced_assumption; source context only",
+    "coordinate": "NED world / FRD body; Hamilton wxyz body-to-world",
+    "implementation": "dynamics.first_order_step",
+    "verification": "actuator_exact_step",
+    "limits": "Assumed first-order actuator; true PWM/voltage map, delay and tau unknown"
+  }
+]

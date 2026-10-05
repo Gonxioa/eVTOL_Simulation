@@ -1,0 +1,1347 @@
+[
+  {
+    "key": "mass",
+    "definition": "mass",
+    "unit": "kg",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": null,
+    "status": "unknown",
+    "source_ids": [
+      "S01",
+      "S02"
+    ],
+    "source_location": "Original exact hardware/geometry evidence unavailable",
+    "implementation": "configs/uavfd_aircraft.json",
+    "verification": "null enforced by body_from_config",
+    "limits": "Do not import legacy or demo values",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "inertia",
+    "definition": "inertia",
+    "unit": "kg*m^2",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": null,
+    "status": "unknown",
+    "source_ids": [
+      "S01",
+      "S02"
+    ],
+    "source_location": "Original exact hardware/geometry evidence unavailable",
+    "implementation": "configs/uavfd_aircraft.json",
+    "verification": "null enforced by body_from_config",
+    "limits": "Do not import legacy or demo values",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "rotor_positions",
+    "definition": "rotor_positions",
+    "unit": "m FRD relative to COM",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": null,
+    "status": "unknown",
+    "source_ids": [
+      "S01",
+      "S02"
+    ],
+    "source_location": "Original exact hardware/geometry evidence unavailable",
+    "implementation": "configs/uavfd_aircraft.json",
+    "verification": "null enforced by body_from_config",
+    "limits": "Do not import legacy or demo values",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "kT",
+    "definition": "kT",
+    "unit": "N/(rad/s)^2",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": null,
+    "status": "unknown",
+    "source_ids": [
+      "S01",
+      "S02"
+    ],
+    "source_location": "Original exact hardware/geometry evidence unavailable",
+    "implementation": "configs/uavfd_aircraft.json",
+    "verification": "null enforced by body_from_config",
+    "limits": "Do not import legacy or demo values",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "kQ",
+    "definition": "kQ",
+    "unit": "N*m/(rad/s)^2",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": null,
+    "status": "unknown",
+    "source_ids": [
+      "S01",
+      "S02"
+    ],
+    "source_location": "Original exact hardware/geometry evidence unavailable",
+    "implementation": "configs/uavfd_aircraft.json",
+    "verification": "null enforced by body_from_config",
+    "limits": "Do not import legacy or demo values",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "imu_lever",
+    "definition": "imu_lever",
+    "unit": "m FRD relative to COM",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": null,
+    "status": "unknown",
+    "source_ids": [
+      "S01",
+      "S02"
+    ],
+    "source_location": "Original exact hardware/geometry evidence unavailable",
+    "implementation": "configs/uavfd_aircraft.json",
+    "verification": "null enforced by body_from_config",
+    "limits": "Do not import legacy or demo values",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "imbalance_mu",
+    "definition": "imbalance_mu",
+    "unit": "kg*m",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": null,
+    "status": "unknown",
+    "source_ids": [
+      "S01",
+      "S02"
+    ],
+    "source_location": "Original exact hardware/geometry evidence unavailable",
+    "implementation": "configs/uavfd_aircraft.json",
+    "verification": "null enforced by body_from_config",
+    "limits": "Do not import legacy or demo values",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "modal_frequency",
+    "definition": "modal_frequency",
+    "unit": "Hz",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": null,
+    "status": "unknown",
+    "source_ids": [
+      "S01",
+      "S02"
+    ],
+    "source_location": "Original exact hardware/geometry evidence unavailable",
+    "implementation": "configs/uavfd_aircraft.json",
+    "verification": "null enforced by body_from_config",
+    "limits": "Do not import legacy or demo values",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "modal_damping",
+    "definition": "modal_damping",
+    "unit": "1",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": null,
+    "status": "unknown",
+    "source_ids": [
+      "S01",
+      "S02"
+    ],
+    "source_location": "Original exact hardware/geometry evidence unavailable",
+    "implementation": "configs/uavfd_aircraft.json",
+    "verification": "null enforced by body_from_config",
+    "limits": "Do not import legacy or demo values",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "motor_time_constant",
+    "definition": "motor_time_constant",
+    "unit": "s",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": null,
+    "status": "unknown",
+    "source_ids": [
+      "S01",
+      "S02"
+    ],
+    "source_location": "Original exact hardware/geometry evidence unavailable",
+    "implementation": "configs/uavfd_aircraft.json",
+    "verification": "null enforced by body_from_config",
+    "limits": "Do not import legacy or demo values",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "fault_geometry_5_10",
+    "definition": "fault_geometry_5_10",
+    "unit": "definition_pending",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": null,
+    "status": "unknown_original_paper_fulltext_unavailable",
+    "source_ids": [
+      "S01",
+      "S02"
+    ],
+    "source_location": "Original exact hardware/geometry evidence unavailable",
+    "implementation": "configs/uavfd_aircraft.json",
+    "verification": "null enforced by body_from_config",
+    "limits": "Do not import legacy or demo values",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "gravity",
+    "definition": "standard gravity convention",
+    "unit": "m/s2",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": 9.80665,
+    "status": "source_confirmed_convention",
+    "source_ids": [
+      "S08"
+    ],
+    "source_location": "NIST value",
+    "implementation": "dynamics.py/analysis.py",
+    "verification": "freefall/static support",
+    "limits": "not site measurement",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "motor_count",
+    "definition": "six propulsors",
+    "unit": "1",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": 6,
+    "status": "source_confirmed",
+    "source_ids": [
+      "S01"
+    ],
+    "source_location": "hexarotor description; six ESC tables",
+    "implementation": "data.py/signals.py",
+    "verification": "audit_summary.json",
+    "limits": "exact geometry unknown",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "motor_output_map",
+    "definition": "SERVO function Motor1–6",
+    "unit": "PWM us-equivalent commands",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": {
+      "Motor2": "C10",
+      "Motor3": "C11",
+      "Motor4": "C12",
+      "Motor5": "C13",
+      "Motor6": "C14",
+      "Motor1": "C9"
+    },
+    "status": "original_data_confirmed",
+    "source_ids": [
+      "S01",
+      "S04"
+    ],
+    "source_location": "all 18 PARM; SERVOx_FUNCTION 33–38",
+    "implementation": "audit.py/signals.py",
+    "verification": "audit_summary.json",
+    "limits": "PWM-equivalent number under DShot, not evidence of physical pulse width",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "motor_angles",
+    "definition": "base HEXA X bearing clockwise in FRD",
+    "unit": "deg",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": [
+      90,
+      -90,
+      -30,
+      150,
+      30,
+      -150
+    ],
+    "status": "derived_from_logged_base_custom_layout_unverified",
+    "source_ids": [
+      "S04"
+    ],
+    "source_location": "AP_MotorsMatrix.cpp:793–799",
+    "implementation": "analysis.py/ANGLES",
+    "verification": "per_motor_wrench_sign",
+    "limits": "physical motor locations relative to COM not recovered",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "spin_sign",
+    "definition": "FRD +z CW rotor spin",
+    "unit": "1",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": [
+      1,
+      -1,
+      1,
+      -1,
+      -1,
+      1
+    ],
+    "status": "derived_from_logged_base_custom_wiring_unverified",
+    "source_ids": [
+      "S04"
+    ],
+    "source_location": "same motor array; CW/CCW factors",
+    "implementation": "analysis.py/SPIN; dynamics.py",
+    "verification": "hover/per-motor torque",
+    "limits": "software config, not independent visual confirmation",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "ESC_RPM",
+    "definition": "mechanical logged slew adjusted rotation rate",
+    "unit": "rpm",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": null,
+    "status": "base_source_confirmed_custom_path_unverified",
+    "source_ids": [
+      "S04"
+    ],
+    "source_location": "AP_BLHeli.cpp:1447–1451; AP_ESC_Telem/LogStructure.h:12–13",
+    "implementation": "signals.py; rpm_to_rad_s",
+    "verification": "RPM conversion analytic",
+    "limits": "no extra pole division; real pole count and temporal delays not measured",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "MOT_THST_EXPO",
+    "definition": "ArduPilot actuator normalization parameter",
+    "unit": "1",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": 0.63,
+    "status": "original_data_confirmed",
+    "source_ids": [
+      "S01"
+    ],
+    "source_location": "all 18 PARM",
+    "implementation": "audit.py",
+    "verification": "audit_summary.json",
+    "limits": "not our dimensional kT",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "a_z_effective",
+    "definition": "slope in -fz=a*sum(Omega²)+b",
+    "unit": "(m/s2)/(rad/s)^2",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": 2.488988490211289e-06,
+    "status": "flight_identified_effective_combination",
+    "source_ids": [
+      "S03",
+      "S04"
+    ],
+    "source_location": "E10 derived; calibration log fields",
+    "implementation": "analysis.py/calibrate",
+    "verification": "normal_replay.json",
+    "limits": "intercept large; not physical kT/m",
+    "calibration_flights": [
+      "NO_FAULT1.mat",
+      "NO_FAULT2.mat",
+      "NO_FAULT3.mat"
+    ],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": "validation_metrics.json"
+  },
+  {
+    "key": "b_z_effective",
+    "definition": "vertical nuisance intercept",
+    "unit": "m/s2",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": 4.64415286841947,
+    "status": "flight_identified_nuisance",
+    "source_ids": [
+      "S01"
+    ],
+    "source_location": "E10",
+    "implementation": "analysis.py/calibrate",
+    "verification": "per_flight_estimates",
+    "limits": "not known sensor bias; captures model mismatch",
+    "calibration_flights": [
+      "NO_FAULT1.mat",
+      "NO_FAULT2.mat",
+      "NO_FAULT3.mat"
+    ],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": "validation_metrics.json"
+  },
+  {
+    "key": "gamma_x",
+    "definition": "effective angular input gain",
+    "unit": "(rad/s2)/(rad/s)^2",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": 3.1154875215724963e-07,
+    "status": "flight_identified_effective_combination",
+    "source_ids": [
+      "S03",
+      "S04"
+    ],
+    "source_location": "E11 integral regression",
+    "implementation": "analysis.py/calibrate",
+    "verification": "NO_FAULT4 development replay",
+    "limits": "no unique L,kT,J,kQ or delay; omitted coupling",
+    "calibration_flights": [
+      "NO_FAULT1.mat",
+      "NO_FAULT2.mat",
+      "NO_FAULT3.mat"
+    ],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": "validation_metrics.json"
+  },
+  {
+    "key": "b_omega_x",
+    "definition": "angular nuisance intercept",
+    "unit": "rad/s2",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": 0.047735988725186536,
+    "status": "flight_identified_nuisance",
+    "source_ids": [
+      "S01"
+    ],
+    "source_location": "E11",
+    "implementation": "analysis.py/calibrate",
+    "verification": "normal_replay.json",
+    "limits": "not calibrated physical torque",
+    "calibration_flights": [
+      "NO_FAULT1.mat",
+      "NO_FAULT2.mat",
+      "NO_FAULT3.mat"
+    ],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": "validation_metrics.json"
+  },
+  {
+    "key": "gamma_y",
+    "definition": "effective angular input gain",
+    "unit": "(rad/s2)/(rad/s)^2",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": 1.2116695406399562e-07,
+    "status": "flight_identified_effective_combination",
+    "source_ids": [
+      "S03",
+      "S04"
+    ],
+    "source_location": "E11 integral regression",
+    "implementation": "analysis.py/calibrate",
+    "verification": "NO_FAULT4 development replay",
+    "limits": "no unique L,kT,J,kQ or delay; omitted coupling",
+    "calibration_flights": [
+      "NO_FAULT1.mat",
+      "NO_FAULT2.mat",
+      "NO_FAULT3.mat"
+    ],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": "validation_metrics.json"
+  },
+  {
+    "key": "b_omega_y",
+    "definition": "angular nuisance intercept",
+    "unit": "rad/s2",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": -0.0017395925087264612,
+    "status": "flight_identified_nuisance",
+    "source_ids": [
+      "S01"
+    ],
+    "source_location": "E11",
+    "implementation": "analysis.py/calibrate",
+    "verification": "normal_replay.json",
+    "limits": "not calibrated physical torque",
+    "calibration_flights": [
+      "NO_FAULT1.mat",
+      "NO_FAULT2.mat",
+      "NO_FAULT3.mat"
+    ],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": "validation_metrics.json"
+  },
+  {
+    "key": "gamma_z",
+    "definition": "effective angular input gain",
+    "unit": "(rad/s2)/(rad/s)^2",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": 7.996145678497419e-07,
+    "status": "flight_identified_effective_combination",
+    "source_ids": [
+      "S03",
+      "S04"
+    ],
+    "source_location": "E11 integral regression",
+    "implementation": "analysis.py/calibrate",
+    "verification": "NO_FAULT4 development replay",
+    "limits": "no unique L,kT,J,kQ or delay; omitted coupling",
+    "calibration_flights": [
+      "NO_FAULT1.mat",
+      "NO_FAULT2.mat",
+      "NO_FAULT3.mat"
+    ],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": "validation_metrics.json"
+  },
+  {
+    "key": "b_omega_z",
+    "definition": "angular nuisance intercept",
+    "unit": "rad/s2",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": 0.25203015354751795,
+    "status": "flight_identified_nuisance",
+    "source_ids": [
+      "S01"
+    ],
+    "source_location": "E11",
+    "implementation": "analysis.py/calibrate",
+    "verification": "normal_replay.json",
+    "limits": "not calibrated physical torque",
+    "calibration_flights": [
+      "NO_FAULT1.mat",
+      "NO_FAULT2.mat",
+      "NO_FAULT3.mat"
+    ],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": "validation_metrics.json"
+  },
+  {
+    "key": "healthy_order_band_gain",
+    "definition": "1x logged energy/Omega^4",
+    "unit": "(m/s2)^2/(rad/s)^4",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": [
+      [
+        5.65390432625376e-15,
+        1.075315273975173e-15,
+        2.1856096545799766e-15
+      ],
+      [
+        1.711307834776137e-15,
+        3.861263050742688e-15,
+        2.5002275414108e-15
+      ],
+      [
+        2.6296720443480487e-15,
+        2.190891346735241e-15,
+        1.14051136766758e-15
+      ],
+      [
+        1.5398023384502793e-15,
+        2.604391871594447e-15,
+        1.0141728589490006e-15
+      ],
+      [
+        1.3717888290084866e-15,
+        2.742794974233258e-15,
+        9.66195928723282e-16
+      ],
+      [
+        3.944260556391356e-15,
+        1.947260500804936e-15,
+        1.0869997077184764e-15
+      ]
+    ],
+    "status": "flight_identified_observation_combination",
+    "source_ids": [
+      "S01",
+      "S05",
+      "S06"
+    ],
+    "source_location": "E13 support-reaction and variance derivation",
+    "implementation": "analysis.py/vibration",
+    "verification": "vibration_validation.json",
+    "limits": "overlapping motor bands; modal/log gains and mu inseparable",
+    "calibration_flights": [
+      "NO_FAULT1.mat",
+      "NO_FAULT2.mat",
+      "NO_FAULT3.mat"
+    ],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": "validation_metrics.json"
+  },
+  {
+    "key": "damage_order_band_increment",
+    "definition": "mean of nonnegative effective increments; raw values also retained",
+    "unit": "(m/s2)^2/(rad/s)^4",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": [
+      3.414164672154629e-16,
+      1.994776651532803e-15,
+      5.122092004674474e-16
+    ],
+    "status": "provisional_not_validated",
+    "source_ids": [
+      "S01",
+      "S05"
+    ],
+    "source_location": "E13; raw fault increments in vibration_model.json",
+    "implementation": "analysis.py/vibration",
+    "verification": "FAULT_M3_5 developer metrics",
+    "limits": "M1 increment negative; no damage transfer validation; no physical mu or 5/10 mapping",
+    "calibration_flights": [
+      "FAULT_M1_5.mat",
+      "FAULT_M2_5.mat"
+    ],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": "validation_metrics.json"
+  },
+  {
+    "key": "analysis.low_rate_hz",
+    "definition": "Low-frequency analysis observation rate",
+    "unit": "Hz",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": 20.0,
+    "status": "method_assumption",
+    "source_ids": [],
+    "source_location": "configs/analysis.json frozen before fit",
+    "implementation": "signals.py/analysis.py",
+    "verification": "sampling/alias analytic checks; limits assessed on development",
+    "limits": "not aircraft property or online filtering path",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "analysis.lowpass_hz",
+    "definition": "Offline low-frequency Butterworth cutoff",
+    "unit": "Hz",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": 2.0,
+    "status": "method_assumption",
+    "source_ids": [],
+    "source_location": "configs/analysis.json frozen before fit",
+    "implementation": "signals.py/analysis.py",
+    "verification": "sampling/alias analytic checks; limits assessed on development",
+    "limits": "not aircraft property or online filtering path",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "analysis.filter_order",
+    "definition": "Butterworth order; forward-backward filtering is acausal",
+    "unit": "1",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": 4,
+    "status": "method_assumption",
+    "source_ids": [],
+    "source_location": "configs/analysis.json frozen before fit",
+    "implementation": "signals.py/analysis.py",
+    "verification": "sampling/alias analytic checks; limits assessed on development",
+    "limits": "not aircraft property or online filtering path",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "analysis.rpm_interpolation",
+    "definition": "ESC telemetry interpolation; not an increase in measurement rate",
+    "unit": "method",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": "linear_within_support_no_extrapolation",
+    "status": "method_assumption",
+    "source_ids": [],
+    "source_location": "configs/analysis.json frozen before fit",
+    "implementation": "signals.py/analysis.py",
+    "verification": "sampling/alias analytic checks; limits assessed on development",
+    "limits": "not aircraft property or online filtering path",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "analysis.edge_trim_s",
+    "definition": "Trim at both segment edges after filtering",
+    "unit": "s",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": 3.0,
+    "status": "method_assumption",
+    "source_ids": [],
+    "source_location": "configs/analysis.json frozen before fit",
+    "implementation": "signals.py/analysis.py",
+    "verification": "sampling/alias analytic checks; limits assessed on development",
+    "limits": "not aircraft property or online filtering path",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "analysis.max_rpm_gap_s",
+    "definition": "Maximum supported consecutive ESC telemetry gap",
+    "unit": "s",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": 0.5,
+    "status": "method_assumption",
+    "source_ids": [],
+    "source_location": "configs/analysis.json frozen before fit",
+    "implementation": "signals.py/analysis.py",
+    "verification": "sampling/alias analytic checks; limits assessed on development",
+    "limits": "not aircraft property or online filtering path",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "analysis.segment_min_s",
+    "definition": "Minimum usable segment duration after trimming",
+    "unit": "s",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": 8.0,
+    "status": "method_assumption",
+    "source_ids": [],
+    "source_location": "configs/analysis.json frozen before fit",
+    "implementation": "signals.py/analysis.py",
+    "verification": "sampling/alias analytic checks; limits assessed on development",
+    "limits": "not aircraft property or online filtering path",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "analysis.integral_window_s",
+    "definition": "Nonoverlapping angular identification interval",
+    "unit": "s",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": 1.0,
+    "status": "method_assumption",
+    "source_ids": [],
+    "source_location": "configs/analysis.json frozen before fit",
+    "implementation": "signals.py/analysis.py",
+    "verification": "sampling/alias analytic checks; limits assessed on development",
+    "limits": "not aircraft property or online filtering path",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "analysis.replay_horizon_s",
+    "definition": "Prediction interval with measured/estimated initial conditions",
+    "unit": "s",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": 1.0,
+    "status": "method_assumption",
+    "source_ids": [],
+    "source_location": "configs/analysis.json frozen before fit",
+    "implementation": "signals.py/analysis.py",
+    "verification": "sampling/alias analytic checks; limits assessed on development",
+    "limits": "not aircraft property or online filtering path",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "analysis.vibration_rate_hz",
+    "definition": "Vibration analysis rate after anti-alias filtering",
+    "unit": "Hz",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": 300.0,
+    "status": "method_assumption",
+    "source_ids": [],
+    "source_location": "configs/analysis.json frozen before fit",
+    "implementation": "signals.py/analysis.py",
+    "verification": "sampling/alias analytic checks; limits assessed on development",
+    "limits": "not aircraft property or online filtering path",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "analysis.vibration_highpass_hz",
+    "definition": "Offline vibration lower cutoff",
+    "unit": "Hz",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": 10.0,
+    "status": "method_assumption",
+    "source_ids": [],
+    "source_location": "configs/analysis.json frozen before fit",
+    "implementation": "signals.py/analysis.py",
+    "verification": "sampling/alias analytic checks; limits assessed on development",
+    "limits": "not aircraft property or online filtering path",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "analysis.vibration_lowpass_hz",
+    "definition": "Highest retained vibration band cutoff",
+    "unit": "Hz",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": 120.0,
+    "status": "method_assumption",
+    "source_ids": [],
+    "source_location": "configs/analysis.json frozen before fit",
+    "implementation": "signals.py/analysis.py",
+    "verification": "sampling/alias analytic checks; limits assessed on development",
+    "limits": "not aircraft property or online filtering path",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "analysis.welch_segment_s",
+    "definition": "Disjoint spectrum window length; windows remain correlated within flights",
+    "unit": "s",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": 2.0,
+    "status": "method_assumption",
+    "source_ids": [],
+    "source_location": "configs/analysis.json frozen before fit",
+    "implementation": "signals.py/analysis.py",
+    "verification": "sampling/alias analytic checks; limits assessed on development",
+    "limits": "not aircraft property or online filtering path",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "analysis.order_band_halfwidth_hz",
+    "definition": "Rotational fundamental centered observation band halfwidth",
+    "unit": "Hz",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": 5.0,
+    "status": "method_assumption",
+    "source_ids": [],
+    "source_location": "configs/analysis.json frozen before fit",
+    "implementation": "signals.py/analysis.py",
+    "verification": "sampling/alias analytic checks; limits assessed on development",
+    "limits": "not aircraft property or online filtering path",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "analysis.seed",
+    "definition": "Declared local random seed; regression and PSD are deterministic",
+    "unit": "integer",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": 20261004,
+    "status": "method_assumption",
+    "source_ids": [],
+    "source_location": "configs/analysis.json frozen before fit",
+    "implementation": "signals.py/analysis.py",
+    "verification": "sampling/alias analytic checks; limits assessed on development",
+    "limits": "not aircraft property or online filtering path",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "demo.gravity_m_s2",
+    "definition": "analytical demonstration setting",
+    "unit": "m/s2",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": 9.80665,
+    "status": "demo_assumption",
+    "source_ids": [],
+    "source_location": "configs/demo.json",
+    "implementation": "verification.py",
+    "verification": "analytical_validation.json",
+    "limits": "never UAV-FD aircraft parameter",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "demo.mass_kg",
+    "definition": "analytical demonstration setting",
+    "unit": "kg",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": 1.0,
+    "status": "demo_assumption",
+    "source_ids": [],
+    "source_location": "configs/demo.json",
+    "implementation": "verification.py",
+    "verification": "analytical_validation.json",
+    "limits": "never UAV-FD aircraft parameter",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "demo.inertia_kg_m2",
+    "definition": "analytical demonstration setting",
+    "unit": "kg m2",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": [
+      0.02,
+      0.025,
+      0.04
+    ],
+    "status": "demo_assumption",
+    "source_ids": [],
+    "source_location": "configs/demo.json",
+    "implementation": "verification.py",
+    "verification": "analytical_validation.json",
+    "limits": "never UAV-FD aircraft parameter",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "demo.arm_radius_m",
+    "definition": "analytical demonstration setting",
+    "unit": "m",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": 0.2,
+    "status": "demo_assumption",
+    "source_ids": [],
+    "source_location": "configs/demo.json",
+    "implementation": "verification.py",
+    "verification": "analytical_validation.json",
+    "limits": "never UAV-FD aircraft parameter",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "demo.kT_N_per_rad_s_squared",
+    "definition": "analytical demonstration setting",
+    "unit": "N/(rad/s)^2",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": 1e-05,
+    "status": "demo_assumption",
+    "source_ids": [],
+    "source_location": "configs/demo.json",
+    "implementation": "verification.py",
+    "verification": "analytical_validation.json",
+    "limits": "never UAV-FD aircraft parameter",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "demo.kQ_Nm_per_rad_s_squared",
+    "definition": "analytical demonstration setting",
+    "unit": "N m/(rad/s)^2",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": 1e-07,
+    "status": "demo_assumption",
+    "source_ids": [],
+    "source_location": "configs/demo.json",
+    "implementation": "verification.py",
+    "verification": "analytical_validation.json",
+    "limits": "never UAV-FD aircraft parameter",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "demo.modal_frequency_hz",
+    "definition": "analytical demonstration setting",
+    "unit": "Hz",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": [
+      35.0,
+      70.0
+    ],
+    "status": "demo_assumption",
+    "source_ids": [],
+    "source_location": "configs/demo.json",
+    "implementation": "verification.py",
+    "verification": "analytical_validation.json",
+    "limits": "never UAV-FD aircraft parameter",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "demo.modal_damping_ratio",
+    "definition": "analytical demonstration setting",
+    "unit": "1",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": [
+      0.05,
+      0.08
+    ],
+    "status": "demo_assumption",
+    "source_ids": [],
+    "source_location": "configs/demo.json",
+    "implementation": "verification.py",
+    "verification": "analytical_validation.json",
+    "limits": "never UAV-FD aircraft parameter",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "demo.imbalance_kg_m",
+    "definition": "analytical demonstration setting",
+    "unit": "kg m",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": 1e-05,
+    "status": "demo_assumption",
+    "source_ids": [],
+    "source_location": "configs/demo.json",
+    "implementation": "verification.py",
+    "verification": "analytical_validation.json",
+    "limits": "never UAV-FD aircraft parameter",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "demo.rotor_frequency_hz",
+    "definition": "analytical demonstration setting",
+    "unit": "Hz",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": 50.0,
+    "status": "demo_assumption",
+    "source_ids": [],
+    "source_location": "configs/demo.json",
+    "implementation": "verification.py",
+    "verification": "analytical_validation.json",
+    "limits": "never UAV-FD aircraft parameter",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "demo.actuator_tau_s",
+    "definition": "analytical demonstration setting",
+    "unit": "s",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": 0.1,
+    "status": "demo_assumption",
+    "source_ids": [],
+    "source_location": "configs/demo.json",
+    "implementation": "verification.py",
+    "verification": "analytical_validation.json",
+    "limits": "never UAV-FD aircraft parameter",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "demo.sensor_lever_m",
+    "definition": "analytical demonstration setting",
+    "unit": "m",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": [
+      0.01,
+      0.02,
+      0.03
+    ],
+    "status": "demo_assumption",
+    "source_ids": [],
+    "source_location": "configs/demo.json",
+    "implementation": "verification.py",
+    "verification": "analytical_validation.json",
+    "limits": "never UAV-FD aircraft parameter",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "demo.seed",
+    "definition": "analytical demonstration setting",
+    "unit": "integer",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": 20261004,
+    "status": "demo_assumption",
+    "source_ids": [],
+    "source_location": "configs/demo.json",
+    "implementation": "verification.py",
+    "verification": "analytical_validation.json",
+    "limits": "never UAV-FD aircraft parameter",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "powered_pwm_threshold",
+    "definition": "Author candidate powered interval rule",
+    "unit": "us-equivalent",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": 1450,
+    "status": "method_assumption",
+    "source_ids": [
+      "S01"
+    ],
+    "source_location": "sync_zoh_exa.m mean(PWM)>=1450",
+    "implementation": "signals.py/vibration.py",
+    "verification": "MODEL_SPEC; checks.txt",
+    "limits": "Not proof of airborne/hover state or fault onset",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "max_imu_gap_s",
+    "definition": "Contiguous common-IMU candidate gap",
+    "unit": "s",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": 0.03,
+    "status": "method_assumption",
+    "source_ids": [],
+    "source_location": "signals.pieces call",
+    "implementation": "signals.py/vibration.py",
+    "verification": "MODEL_SPEC; checks.txt",
+    "limits": "Selected method threshold; not expected physical sample interval",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "max_state_pwm_gap_s",
+    "definition": "RCOU/ATT/XKF interpolation support gap",
+    "unit": "s",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": 0.1,
+    "status": "method_assumption",
+    "source_ids": [],
+    "source_location": "signals.support calls",
+    "implementation": "signals.py/vibration.py",
+    "verification": "MODEL_SPEC; checks.txt",
+    "limits": "Selected method threshold; unknown processing delays remain",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "nyquist_margin_fraction",
+    "definition": "Retained cutoff upper fraction of lower sample rate",
+    "unit": "1",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": 0.45,
+    "status": "method_assumption",
+    "source_ids": [],
+    "source_location": "vibration.checked_sample/signals.segments",
+    "implementation": "signals.py/vibration.py",
+    "verification": "MODEL_SPEC; checks.txt",
+    "limits": "Explicit margin below Nyquist .5; not original sensor anti-alias reconstruction",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "demo_observation_filter_order",
+    "definition": "Demonstration observation Butterworth order",
+    "unit": "1",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": 6,
+    "status": "method_assumption",
+    "source_ids": [],
+    "source_location": "vibration.checked_sample",
+    "implementation": "signals.py/vibration.py",
+    "verification": "MODEL_SPEC; checks.txt",
+    "limits": "Offline forward-backward filter, no aircraft evidence",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "base_vibe_floor_hz",
+    "definition": "Historical base VIBE floor cutoff",
+    "unit": "Hz",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": 5,
+    "status": "base_source_reference",
+    "source_ids": [
+      "S04"
+    ],
+    "source_location": "AP_InertialSensor.cpp:1943–1965",
+    "implementation": "signals.py/vibration.py",
+    "verification": "MODEL_SPEC; checks.txt",
+    "limits": "Requires unavailable pre-log raw acceleration; not applied to exported IMU",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "base_vibe_energy_hz",
+    "definition": "Historical base VIBE residual-square smoothing cutoff",
+    "unit": "Hz",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": 2,
+    "status": "base_source_reference",
+    "source_ids": [
+      "S04"
+    ],
+    "source_location": "AP_InertialSensor.cpp:1943–1965,1987–1995",
+    "implementation": "signals.py/vibration.py",
+    "verification": "MODEL_SPEC; checks.txt",
+    "limits": "Base source reference only; customized path unknown",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "demo.modal_input_gain",
+    "definition": "Explicit synthetic local-mode demonstration choice",
+    "unit": "1/kg",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ]
+    ],
+    "status": "demo_assumption",
+    "source_ids": [],
+    "source_location": "verification.demo",
+    "implementation": "verification.py",
+    "verification": "demo_vibration.json",
+    "limits": "Not a real aircraft modal participation, phase or sensor rate",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "demo.modal_output_shape",
+    "definition": "Explicit synthetic local-mode demonstration choice",
+    "unit": "1",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0.2,
+        0.3
+      ]
+    ],
+    "status": "demo_assumption",
+    "source_ids": [],
+    "source_location": "verification.demo",
+    "implementation": "verification.py",
+    "verification": "demo_vibration.json",
+    "limits": "Not a real aircraft modal participation, phase or sensor rate",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "demo.initial_rotor_phase",
+    "definition": "Explicit synthetic local-mode demonstration choice",
+    "unit": "rad",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": 0,
+    "status": "demo_assumption",
+    "source_ids": [],
+    "source_location": "verification.demo",
+    "implementation": "verification.py",
+    "verification": "demo_vibration.json",
+    "limits": "Not a real aircraft modal participation, phase or sensor rate",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "demo.internal_rates_hz",
+    "definition": "Explicit synthetic local-mode demonstration choice",
+    "unit": "Hz",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": [
+      1000,
+      2000,
+      4000
+    ],
+    "status": "demo_assumption",
+    "source_ids": [],
+    "source_location": "verification.demo",
+    "implementation": "verification.py",
+    "verification": "demo_vibration.json",
+    "limits": "Not a real aircraft modal participation, phase or sensor rate",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "omitted_physics",
+    "definition": "Terms excluded from implemented physical bottom layer",
+    "unit": "list",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": [
+      "airframe aerodynamics/drag/wind",
+      "rotor inertia/dynamic reaction torque/gyroscopic angular momentum",
+      "noncoplanar thrust",
+      "contact/landing gear"
+    ],
+    "status": "explicit_simplification",
+    "source_ids": [],
+    "source_location": "MODEL_SPEC E1–E6",
+    "implementation": "dynamics.py",
+    "verification": "analytical identities only",
+    "limits": "Applicability must be reassessed before real full-state model validation",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  },
+  {
+    "key": "legacy_candidates",
+    "definition": "values observed in old modified physical module",
+    "unit": "per field",
+    "coordinate": "NED world / FRD body unless stated",
+    "value": {
+      "mass_kg": 3.4,
+      "Ixx_Iyy_kg_m2": 0.0476,
+      "Izz_kg_m2": 0.1094,
+      "arm_length_m": 0.275,
+      "kT": 7.45e-06,
+      "torque_thrust_ratio_m": 0.01315,
+      "actuator_pole_rad_s": 20.06,
+      "motor_directions": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ]
+    },
+    "status": "candidate_not_UAVFD_confirmed",
+    "source_ids": [
+      "S09"
+    ],
+    "source_location": "protected old working tree",
+    "implementation": "no imports into new model",
+    "verification": "original file hash unchanged",
+    "limits": "other-F550 identification and successor torque proxy cannot establish exact aircraft",
+    "calibration_flights": [],
+    "method": "as described in MODEL_SPEC",
+    "residual_location": null
+  }
+]

@@ -1,5 +1,15 @@
 # eVTOL_Simulation — Project Handoff
 
+## 2026-10-04：UAV-FD／F550 独立建模状态
+
+当前开发分支 `codex/uavfd-f550-model`，基于 `af9b45a`；原工作区 6 项未提交修改由
+`docs/uavfd_f550/protected_workspace.json` 记录并保护。新增 `uavfd_f550/` 独立包，
+原始数据仍在 `UAV-FD/`，结果隔离到 `output_uavfd_f550/`。
+18 条原始记录完整性核对通过，按整条飞行冻结 5／2／11 分组，最终测试关闭。
+数学底座解析验证通过；实飞转速组合基线和振动观测评估已执行，但整体模型尚未通过。
+完整状态、资料需求和实际失败结果见 `docs/uavfd_f550/MODEL_STATUS.md` 与
+`VALIDATION_REPORT.md`。下一阶段优先补证据和解释模型残差，原 19 类 WGAN／分类主线暂停。
+
 > 用途：给 ChatGPT Work、Codex、Claude 或新的协作者快速恢复项目上下文。  
 > 仓库：`Gonxioa/eVTOL_Simulation`  
 > 默认分支：`main`  

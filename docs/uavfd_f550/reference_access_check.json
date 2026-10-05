@@ -1,0 +1,22 @@
+{
+  "access_date": "2026-10-04",
+  "method": "read-only Zotero MCP library_search entity=items mode=list; enumerate with limit=100 offsets=0,100; match titles/firstCreator locally",
+  "total_count": 149,
+  "returned_count": 149,
+  "library_scope": "current MCP library only; no claim about other libraries",
+  "title_match_terms": [
+    "UAV-FD",
+    "actuator fault detection in multirotor",
+    "propeller",
+    "Baldini",
+    "Felicetti",
+    "Freddi"
+  ],
+  "matching_items": 0,
+  "limitations": [
+    "Text search returned unrelated items; absence conclusion only from complete paginated title enumeration.",
+    "No paper body was retrieved from Zotero.",
+    "No library settings or items changed."
+  ],
+  "online_check": "Original DOI/title search still provided release metadata, university CV, program abstract and inaccessible full-text references; no original full paper acquired."
+}

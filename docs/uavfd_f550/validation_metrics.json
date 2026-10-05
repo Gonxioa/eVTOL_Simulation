@@ -1,0 +1,1566 @@
+{
+  "analytical": {
+    "status": "analytical_demo_only",
+    "checks": [
+      {
+        "name": "freefall_acceleration",
+        "error": 0.0,
+        "tolerance_predeclared": 1e-12,
+        "units": "m/s2",
+        "passed": true,
+        "parameter_status": "demo"
+      },
+      {
+        "name": "freefall_specific_force",
+        "error": 0.0,
+        "tolerance_predeclared": 1e-12,
+        "units": "m/s2",
+        "passed": true,
+        "parameter_status": "demo"
+      },
+      {
+        "name": "static_support",
+        "error": 0.0,
+        "tolerance_predeclared": 1e-12,
+        "units": "state_derivative",
+        "passed": true,
+        "parameter_status": "demo"
+      },
+      {
+        "name": "static_IMU_sign",
+        "error": 0.0,
+        "tolerance_predeclared": 1e-12,
+        "units": "m/s2",
+        "passed": true,
+        "parameter_status": "demo"
+      },
+      {
+        "name": "known_external_force",
+        "error": 0.0,
+        "tolerance_predeclared": 1e-12,
+        "units": "m/s2",
+        "passed": true,
+        "parameter_status": "demo"
+      },
+      {
+        "name": "hover_collective",
+        "error": 1.7763568394002505e-15,
+        "tolerance_predeclared": 1e-12,
+        "units": "N",
+        "passed": true,
+        "parameter_status": "demo"
+      },
+      {
+        "name": "hover_torque",
+        "error": 5.551115123125783e-17,
+        "tolerance_predeclared": 1e-12,
+        "units": "Nm",
+        "passed": true,
+        "parameter_status": "demo"
+      },
+      {
+        "name": "per_motor_wrench_sign",
+        "error": 0.0,
+        "tolerance_predeclared": 1e-12,
+        "units": "Nm",
+        "passed": true,
+        "parameter_status": "demo"
+      },
+      {
+        "name": "constant_principal_torque_rate",
+        "error": 1.3877787807814457e-16,
+        "tolerance_predeclared": 1e-12,
+        "units": "rad/s",
+        "passed": true,
+        "parameter_status": "demo"
+      },
+      {
+        "name": "constant_principal_torque_attitude",
+        "error": 3.1401849173675503e-16,
+        "tolerance_predeclared": 1e-08,
+        "units": "rotation_matrix",
+        "passed": true,
+        "parameter_status": "demo"
+      },
+      {
+        "name": "RK4_final_error",
+        "error": 9.582152298479141e-13,
+        "tolerance_predeclared": 1e-08,
+        "units": "rad/s",
+        "passed": true,
+        "parameter_status": "demo"
+      },
+      {
+        "name": "RK4_convergence_ratio",
+        "error": 0.0,
+        "tolerance_predeclared": 0.0,
+        "units": "boolean_error",
+        "passed": true,
+        "parameter_status": "demo"
+      },
+      {
+        "name": "RPM_conversion_60_equals_2pi",
+        "error": 8.881784197001252e-16,
+        "tolerance_predeclared": 1e-12,
+        "units": "rad/s",
+        "passed": true,
+        "parameter_status": "demo"
+      },
+      {
+        "name": "rotation_orthogonality",
+        "error": 6.224228018639352e-17,
+        "tolerance_predeclared": 1e-12,
+        "units": "dimensionless",
+        "passed": true,
+        "parameter_status": "demo"
+      },
+      {
+        "name": "IMU_centripetal_lever",
+        "error": 0.0,
+        "tolerance_predeclared": 1e-12,
+        "units": "m/s2",
+        "passed": true,
+        "parameter_status": "demo"
+      },
+      {
+        "name": "actuator_exact_step",
+        "error": 0.0,
+        "tolerance_predeclared": 1e-12,
+        "units": "rad/s",
+        "passed": true,
+        "parameter_status": "demo"
+      },
+      {
+        "name": "imbalance_Omega_squared",
+        "error": 0.0,
+        "tolerance_predeclared": 1e-12,
+        "units": "N",
+        "passed": true,
+        "parameter_status": "demo"
+      },
+      {
+        "name": "imbalance_tangential_reaction",
+        "error": 0.0,
+        "tolerance_predeclared": 1e-12,
+        "units": "N",
+        "passed": true,
+        "parameter_status": "demo"
+      },
+      {
+        "name": "phase_spin_direction",
+        "error": 3.907985046680551e-13,
+        "tolerance_predeclared": 1e-10,
+        "units": "rad",
+        "passed": true,
+        "parameter_status": "demo"
+      },
+      {
+        "name": "modal_ringdown_exact_ZOH",
+        "error": 1.9845236565174673e-15,
+        "tolerance_predeclared": 1e-11,
+        "units": "m",
+        "passed": true,
+        "parameter_status": "demo"
+      },
+      {
+        "name": "anti_alias_230_to_70_energy_ratio",
+        "error": 6.959107785229161e-08,
+        "tolerance_predeclared": 0.01,
+        "units": "power_ratio",
+        "passed": true,
+        "parameter_status": "demo"
+      },
+      {
+        "name": "Nyquist_violation_rejected",
+        "error": 0.0,
+        "tolerance_predeclared": 0,
+        "units": "boolean_error",
+        "passed": true,
+        "parameter_status": "demo"
+      },
+      {
+        "name": "frame_adapter",
+        "error": 0.0,
+        "tolerance_predeclared": 1e-12,
+        "units": "coordinate_identity",
+        "passed": true,
+        "parameter_status": "demo"
+      }
+    ],
+    "all_passed": true,
+    "integration_errors": [
+      2.4815137590311025e-10,
+      1.538846165977213e-11,
+      9.582152298479141e-13
+    ],
+    "configuration_sha256": "27dfcfe13fb75011fc333245cdb754a1b05a3a15a0f2b2f7d54f9d32a288e8ae"
+  },
+  "normal": {
+    "results": {
+      "NO_FAULT1.mat": {
+        "role": "calibration",
+        "n_nonoverlap_predictions": 32,
+        "independent_flights": 1,
+        "specific_force_m_s2": {
+          "rmse": [
+            0.34306616051852995,
+            1.074308800091746,
+            0.22407679663431815
+          ],
+          "mean": [
+            0.29179136107949866,
+            -1.0324710009536398,
+            0.011029297099852118
+          ],
+          "p95_absolute": [
+            0.6695011927276535,
+            1.5385369791320962,
+            0.46630714099111853
+          ]
+        },
+        "angular_rate_rad_s": {
+          "rmse": [
+            0.24424935494060984,
+            0.13078554971074968,
+            0.09826932286313457
+          ],
+          "mean": [
+            -0.008323256013140011,
+            0.0034301865091521822,
+            0.009296895419958099
+          ],
+          "p95_absolute": [
+            0.41968023432577006,
+            0.2765785246859882,
+            0.17903847124323016
+          ]
+        },
+        "persistence_angular_rate_rad_s": {
+          "rmse": [
+            0.2455596352057399,
+            0.13149108780339036,
+            0.11933200476513506
+          ],
+          "mean": [
+            -0.014111086810220249,
+            0.006440204305454258,
+            -0.003289914664982607
+          ],
+          "p95_absolute": [
+            0.43598225883707487,
+            0.27649412682954944,
+            0.22095554370955553
+          ]
+        },
+        "attitude_rotation_error_rad": {
+          "rmse": [
+            0.2294955550646868,
+            0.11830364467833557,
+            0.06242543520284649
+          ],
+          "mean": [
+            -0.013998174488250064,
+            0.029235445794707653,
+            0.0015409287214471633
+          ],
+          "p95_absolute": [
+            0.5250300250520601,
+            0.2189405161679282,
+            0.12843050689413363
+          ]
+        },
+        "persistence_attitude_error_rad": {
+          "rmse": [
+            0.10279712819675046,
+            0.05260069282738255,
+            0.029181798438243638
+          ],
+          "mean": [
+            -0.004270313512182232,
+            -0.0014228007269029277,
+            0.0014346869881260405
+          ],
+          "p95_absolute": [
+            0.2164658712742845,
+            0.09664723005156327,
+            0.05269407278694458
+          ]
+        },
+        "estimated_velocity_error_m_s": {
+          "rmse": [
+            0.5838545188190761,
+            1.436403418193444,
+            0.3393216484287297
+          ],
+          "mean": [
+            0.18031953718635652,
+            -0.9617555933485995,
+            0.2520228902661807
+          ],
+          "p95_absolute": [
+            1.0372276654481223,
+            2.631274985541204,
+            0.6482015908086133
+          ]
+        },
+        "persistence_velocity_error_m_s": {
+          "rmse": [
+            0.4225391257714657,
+            0.6524019810083779,
+            0.2303453838642649
+          ],
+          "mean": [
+            -0.018187706046109656,
+            -0.05566005886576923,
+            -0.03343802288986014
+          ],
+          "p95_absolute": [
+            0.7771571238803576,
+            1.3313352641818181,
+            0.4885218901559766
+          ]
+        },
+        "segments": [
+          {
+            "start_s": 25.8068,
+            "end_s": 43.7068,
+            "native_log_rate_regularized_hz": 388,
+            "arm_state_unknown_fraction": 1.0,
+            "imu_source": "exact_timestamp_intersection_three_IMU_mean",
+            "firmware_filter_reconstruction": "not_recovered",
+            "flight_state": "powered_candidate_not_certified_hover"
+          },
+          {
+            "start_s": 49.771698,
+            "end_s": 65.521698,
+            "native_log_rate_regularized_hz": 388,
+            "arm_state_unknown_fraction": 1.0,
+            "imu_source": "exact_timestamp_intersection_three_IMU_mean",
+            "firmware_filter_reconstruction": "not_recovered",
+            "flight_state": "powered_candidate_not_certified_hover"
+          }
+        ],
+        "rotation_metric": "rotation_vector_log(R_observed.T @ R_predicted)",
+        "velocity_reference": "XKF1 estimated_not_ground_truth"
+      },
+      "NO_FAULT2.mat": {
+        "role": "calibration",
+        "n_nonoverlap_predictions": 56,
+        "independent_flights": 1,
+        "specific_force_m_s2": {
+          "rmse": [
+            0.3505861372542937,
+            0.9061759656547795,
+            0.16532290930269294
+          ],
+          "mean": [
+            0.2668529125868247,
+            -0.8719172467876296,
+            -0.001355576599961946
+          ],
+          "p95_absolute": [
+            0.6146298590661878,
+            1.2791086710383468,
+            0.3215735330255547
+          ]
+        },
+        "angular_rate_rad_s": {
+          "rmse": [
+            0.1403978054111194,
+            0.20620041774160136,
+            0.08577904204158421
+          ],
+          "mean": [
+            0.007686810801924617,
+            -1.0026164604987908e-05,
+            -0.00737024768267422
+          ],
+          "p95_absolute": [
+            0.3187721591386966,
+            0.5290060775464138,
+            0.15662039142817494
+          ]
+        },
+        "persistence_angular_rate_rad_s": {
+          "rmse": [
+            0.13899139632177143,
+            0.2062698890758895,
+            0.09483054263634942
+          ],
+          "mean": [
+            0.0038537079333874923,
+            0.0009340023660185721,
+            0.0010077076965944655
+          ],
+          "p95_absolute": [
+            0.3126134678313308,
+            0.5313879087453381,
+            0.20171636837803253
+          ]
+        },
+        "attitude_rotation_error_rad": {
+          "rmse": [
+            0.10305996958487353,
+            0.11678847319123717,
+            0.05998726717527979
+          ],
+          "mean": [
+            0.0052978428441697156,
+            0.04375150998462136,
+            -0.0020793913898724645
+          ],
+          "p95_absolute": [
+            0.20900630115162824,
+            0.2949277926737788,
+            0.10050424757131304
+          ]
+        },
+        "persistence_attitude_error_rad": {
+          "rmse": [
+            0.04689771599359668,
+            0.07440046480010871,
+            0.05274138989718445
+          ],
+          "mean": [
+            -0.0019294409055083835,
+            -0.000319460645254239,
+            -0.005441125773512753
+          ],
+          "p95_absolute": [
+            0.11743875551023848,
+            0.09227342524636906,
+            0.07340278349561359
+          ]
+        },
+        "estimated_velocity_error_m_s": {
+          "rmse": [
+            0.48988615169931826,
+            0.785126598164036,
+            0.25314170436327166
+          ],
+          "mean": [
+            0.062023403562370384,
+            -0.6136536536772546,
+            0.1952277313144066
+          ],
+          "p95_absolute": [
+            0.9268083049285325,
+            1.2007002339543944,
+            0.48266636269327207
+          ]
+        },
+        "persistence_velocity_error_m_s": {
+          "rmse": [
+            0.25768263380115186,
+            0.33553314978090737,
+            0.12567726869023374
+          ],
+          "mean": [
+            0.002796802561154014,
+            0.004180297805336399,
+            -0.013722623825441252
+          ],
+          "p95_absolute": [
+            0.5685752571606879,
+            0.6670411318202312,
+            0.3240719976946136
+          ]
+        },
+        "segments": [
+          {
+            "start_s": 166.628691,
+            "end_s": 198.828691,
+            "native_log_rate_regularized_hz": 376,
+            "arm_state_unknown_fraction": 0.0,
+            "imu_source": "exact_timestamp_intersection_three_IMU_mean",
+            "firmware_filter_reconstruction": "not_recovered",
+            "flight_state": "powered_candidate_not_certified_hover"
+          },
+          {
+            "start_s": 216.801166,
+            "end_s": 241.601166,
+            "native_log_rate_regularized_hz": 375,
+            "arm_state_unknown_fraction": 0.0,
+            "imu_source": "exact_timestamp_intersection_three_IMU_mean",
+            "firmware_filter_reconstruction": "not_recovered",
+            "flight_state": "powered_candidate_not_certified_hover"
+          }
+        ],
+        "rotation_metric": "rotation_vector_log(R_observed.T @ R_predicted)",
+        "velocity_reference": "XKF1 estimated_not_ground_truth"
+      },
+      "NO_FAULT3.mat": {
+        "role": "calibration",
+        "n_nonoverlap_predictions": 49,
+        "independent_flights": 1,
+        "specific_force_m_s2": {
+          "rmse": [
+            0.36673914010455627,
+            0.8581102974990177,
+            0.21704247231714086
+          ],
+          "mean": [
+            0.2752724909690467,
+            -0.8228160849815009,
+            -0.009673720499880266
+          ],
+          "p95_absolute": [
+            0.7310185473886153,
+            1.246861908780094,
+            0.46714227358975213
+          ]
+        },
+        "angular_rate_rad_s": {
+          "rmse": [
+            0.15036000205854114,
+            0.13264632386506292,
+            0.12004265157717497
+          ],
+          "mean": [
+            0.0006364452112153677,
+            -0.0034201603445471697,
+            -0.0019266477372842357
+          ],
+          "p95_absolute": [
+            0.28383020980152657,
+            0.20146327405270803,
+            0.18522913126497914
+          ]
+        },
+        "persistence_angular_rate_rad_s": {
+          "rmse": [
+            0.15157129295859112,
+            0.132287613261565,
+            0.14302547152804432
+          ],
+          "mean": [
+            -0.0067905804706230935,
+            -0.0003969027840404288,
+            -0.001986185936722924
+          ],
+          "p95_absolute": [
+            0.30927585819149683,
+            0.20641458806973167,
+            0.1641293372120526
+          ]
+        },
+        "attitude_rotation_error_rad": {
+          "rmse": [
+            0.10731118318362765,
+            0.09589726523267761,
+            0.06907986689950753
+          ],
+          "mean": [
+            0.0036264417094325966,
+            -0.018960900173033955,
+            0.009931193786498285
+          ],
+          "p95_absolute": [
+            0.2082914508564063,
+            0.1950942736446746,
+            0.09648008013500041
+          ]
+        },
+        "persistence_attitude_error_rad": {
+          "rmse": [
+            0.05492295352352155,
+            0.046004699898762595,
+            0.05012971282767377
+          ],
+          "mean": [
+            -0.0014364905685135293,
+            -0.0038796894653664172,
+            -0.0016612307248026197
+          ],
+          "p95_absolute": [
+            0.11014053291099231,
+            0.12022009628633383,
+            0.11584510989464128
+          ]
+        },
+        "estimated_velocity_error_m_s": {
+          "rmse": [
+            0.485837457916488,
+            0.8221974310759969,
+            0.2481266588505808
+          ],
+          "mean": [
+            0.21009762575445565,
+            -0.682294531193661,
+            0.12805599457368091
+          ],
+          "p95_absolute": [
+            0.9864049195678346,
+            1.2286707623583495,
+            0.4318647427473482
+          ]
+        },
+        "persistence_velocity_error_m_s": {
+          "rmse": [
+            0.44480458845085213,
+            0.44558803359810145,
+            0.23115092395170236
+          ],
+          "mean": [
+            0.013370861133089494,
+            0.03179161064921451,
+            -0.04216753266174263
+          ],
+          "p95_absolute": [
+            1.0597060705597028,
+            1.0388478415598539,
+            0.4699415684047787
+          ]
+        },
+        "segments": [
+          {
+            "start_s": 88.431073,
+            "end_s": 101.881073,
+            "native_log_rate_regularized_hz": 373,
+            "arm_state_unknown_fraction": 1.0,
+            "imu_source": "exact_timestamp_intersection_three_IMU_mean",
+            "firmware_filter_reconstruction": "not_recovered",
+            "flight_state": "powered_candidate_not_certified_hover"
+          },
+          {
+            "start_s": 116.49077799999999,
+            "end_s": 142.99077799999998,
+            "native_log_rate_regularized_hz": 372,
+            "arm_state_unknown_fraction": 1.0,
+            "imu_source": "exact_timestamp_intersection_three_IMU_mean",
+            "firmware_filter_reconstruction": "not_recovered",
+            "flight_state": "powered_candidate_not_certified_hover"
+          },
+          {
+            "start_s": 149.061237,
+            "end_s": 159.761237,
+            "native_log_rate_regularized_hz": 373,
+            "arm_state_unknown_fraction": 1.0,
+            "imu_source": "exact_timestamp_intersection_three_IMU_mean",
+            "firmware_filter_reconstruction": "not_recovered",
+            "flight_state": "powered_candidate_not_certified_hover"
+          }
+        ],
+        "rotation_metric": "rotation_vector_log(R_observed.T @ R_predicted)",
+        "velocity_reference": "XKF1 estimated_not_ground_truth"
+      },
+      "NO_FAULT4.mat": {
+        "role": "development",
+        "n_nonoverlap_predictions": 40,
+        "independent_flights": 1,
+        "specific_force_m_s2": {
+          "rmse": [
+            0.28574834700652524,
+            0.7527926540260683,
+            0.2894813024365023
+          ],
+          "mean": [
+            0.15850639189503096,
+            -0.6858031551378666,
+            0.02437589925222773
+          ],
+          "p95_absolute": [
+            0.5417680820272639,
+            1.3830875359937775,
+            0.607127760068846
+          ]
+        },
+        "angular_rate_rad_s": {
+          "rmse": [
+            0.15661427952015683,
+            0.17153561386891855,
+            0.27357485560275596
+          ],
+          "mean": [
+            0.006292236276375854,
+            0.00773322619095775,
+            -0.022388480870367926
+          ],
+          "p95_absolute": [
+            0.3135294494032955,
+            0.4241416576039198,
+            0.6683437996342253
+          ]
+        },
+        "persistence_angular_rate_rad_s": {
+          "rmse": [
+            0.15666981778925806,
+            0.17348565245512185,
+            0.37410950440199875
+          ],
+          "mean": [
+            -0.006138653959057604,
+            0.007937017287220054,
+            -0.0004025809827257908
+          ],
+          "p95_absolute": [
+            0.3260885706954768,
+            0.4265248435980835,
+            0.9364761376366296
+          ]
+        },
+        "attitude_rotation_error_rad": {
+          "rmse": [
+            0.14687466125741774,
+            0.12394095047468742,
+            0.2323429444994127
+          ],
+          "mean": [
+            -0.0023224266695748208,
+            0.01574554202143915,
+            -0.009484885333904718
+          ],
+          "p95_absolute": [
+            0.25977754377083545,
+            0.24868632935860752,
+            0.5038462817740383
+          ]
+        },
+        "persistence_attitude_error_rad": {
+          "rmse": [
+            0.097696382994236,
+            0.06361466665694482,
+            0.14490029699164841
+          ],
+          "mean": [
+            -0.0015675449446061508,
+            -0.006382229502883195,
+            0.008024443400024254
+          ],
+          "p95_absolute": [
+            0.15631321036420853,
+            0.13747305288949188,
+            0.199077835997747
+          ]
+        },
+        "estimated_velocity_error_m_s": {
+          "rmse": [
+            0.5147847355536426,
+            1.0575940708311775,
+            0.2741044479934047
+          ],
+          "mean": [
+            -0.05807312098940145,
+            -0.4795347179776349,
+            0.14274823753481683
+          ],
+          "p95_absolute": [
+            0.9292229056838917,
+            1.808400656725196,
+            0.5129972326853961
+          ]
+        },
+        "persistence_velocity_error_m_s": {
+          "rmse": [
+            0.477837093973043,
+            0.677593265614293,
+            0.29589902880068053
+          ],
+          "mean": [
+            0.10132455229175814,
+            -0.02265835364329675,
+            -0.0442082092960552
+          ],
+          "p95_absolute": [
+            1.128775039974111,
+            1.5649860862598095,
+            0.7296609479783783
+          ]
+        },
+        "segments": [
+          {
+            "start_s": 79.487012,
+            "end_s": 87.737012,
+            "native_log_rate_regularized_hz": 374,
+            "arm_state_unknown_fraction": 0.0,
+            "imu_source": "exact_timestamp_intersection_three_IMU_mean",
+            "firmware_filter_reconstruction": "not_recovered",
+            "flight_state": "powered_candidate_not_certified_hover"
+          },
+          {
+            "start_s": 94.28651699999999,
+            "end_s": 103.13651699999998,
+            "native_log_rate_regularized_hz": 375,
+            "arm_state_unknown_fraction": 0.0,
+            "imu_source": "exact_timestamp_intersection_three_IMU_mean",
+            "firmware_filter_reconstruction": "not_recovered",
+            "flight_state": "powered_candidate_not_certified_hover"
+          },
+          {
+            "start_s": 109.225219,
+            "end_s": 133.875219,
+            "native_log_rate_regularized_hz": 376,
+            "arm_state_unknown_fraction": 0.0,
+            "imu_source": "exact_timestamp_intersection_three_IMU_mean",
+            "firmware_filter_reconstruction": "not_recovered",
+            "flight_state": "powered_candidate_not_certified_hover"
+          }
+        ],
+        "rotation_metric": "rotation_vector_log(R_observed.T @ R_predicted)",
+        "velocity_reference": "XKF1 estimated_not_ground_truth"
+      }
+    },
+    "horizon_s": 1.0,
+    "status": "conditional_combination_short_horizon_evaluation_not_closed_loop_validation",
+    "manifest": {
+      "code_head": "af9b45ae3e0d77987a051494ba68962964a38832",
+      "branch": "codex/uavfd-f550-model",
+      "code_sha256": {
+        "uavfd_f550\\__init__.py": "7b78e8d0fbe09f9a59b63aeb27ddd8c7316f65040286c3f3fabb4f5aa6778b62",
+        "uavfd_f550\\__main__.py": "216aa3250d61dd5085ccd04becf965c352cb4c2f1786ace2a71aaadd18e353ed",
+        "uavfd_f550\\analysis.py": "aefa0af92a8b4921779d72df5079c1de1a45c25947e9ab5a6b70faf056b283e9",
+        "uavfd_f550\\audit.py": "c2c7dcef08d5c7c2a622068f341838f6b201aab492147a7418bbaa98263f09c2",
+        "uavfd_f550\\common.py": "2d43d988213c0268bd2c5cb204e6fd30eb9547e012fee1a407f19af29f39cfce",
+        "uavfd_f550\\data.py": "1e6aaa04750d87aa8dc7536d42d31a8f8285b4ea14045aa47f43873d0cf9afc5",
+        "uavfd_f550\\dynamics.py": "0486b14d1e8b3e595d1ce3759f00b01d084c41eb196e72d60bc2d493bd8027e0",
+        "uavfd_f550\\provenance.py": "cb86708affc500d98628359970e7fedda253bb139651ad8a9e6b863e52bbcf22",
+        "uavfd_f550\\reports.py": "f8851641e1df89c8afc0a0e20c2b41ba432a031285cfefe96da119988b4b4a6d",
+        "uavfd_f550\\signals.py": "e6c2a88290849806485096dc80718eff336f0d414d8bcf5fc2f62be4f3488579",
+        "uavfd_f550\\sources.py": "e8a904b8fb04179a2ab675a91dd00bbcc605714f60dfbfe97c54303dc61320c0",
+        "uavfd_f550\\tests\\test_model.py": "b3c3478effba6676b0544dce0652ec1f0f95249b6aca99170d9ae2429f7cb6e2",
+        "uavfd_f550\\verification.py": "a0e81920050f3f70f59ae062cd0805e02f3948033de567485a030b9663d9ac9b",
+        "uavfd_f550\\vibration.py": "14df34ba3fdc8faafe26f05806c6e3c02e9584c445e7ae903c4c8d2e713693f7"
+      },
+      "configuration_sha256": {
+        "analysis.json": "f152f5f6d7ea708ed226618fd01cd8410b5e16cd02b01149e9058c0b1bc73484",
+        "demo.json": "27dfcfe13fb75011fc333245cdb754a1b05a3a15a0f2b2f7d54f9d32a288e8ae",
+        "split.json": "ebdee24fb48493729fe5d8dec6ea2e89cb80537e072011571777bb59f26731b5",
+        "uavfd_aircraft.json": "40753b2617e465e1929d42fc03807da531981058a91255f4295224ef8f174b51"
+      },
+      "split_sha256": "ebdee24fb48493729fe5d8dec6ea2e89cb80537e072011571777bb59f26731b5",
+      "config": {
+        "schema_version": 1,
+        "status": "method_assumptions_not_aircraft_parameters",
+        "low_rate_hz": 20.0,
+        "lowpass_hz": 2.0,
+        "filter_order": 4,
+        "rpm_interpolation": "linear_within_support_no_extrapolation",
+        "edge_trim_s": 3.0,
+        "max_rpm_gap_s": 0.5,
+        "segment_min_s": 8.0,
+        "integral_window_s": 1.0,
+        "replay_horizon_s": 1.0,
+        "vibration_rate_hz": 300.0,
+        "vibration_highpass_hz": 10.0,
+        "vibration_lowpass_hz": 120.0,
+        "welch_segment_s": 2.0,
+        "order_band_halfwidth_hz": 5.0,
+        "seed": 20261004,
+        "acceptance": "analytical identities predefined in tests; real-data metrics versus persistence only, no fidelity threshold yet"
+      },
+      "records": {
+        "NO_FAULT1.mat": "8fa683680232dae902d7c906853fb80f5b89ffb6b43ff8e97b708bd8f8473ba5",
+        "NO_FAULT2.mat": "58846d7e0addcb6100e7efd5ea80ad40dc18f3cfd8a8ac047547b933d1c69ec7",
+        "NO_FAULT3.mat": "2de0f92a49e660d03d81c7a1821ec7524a500d7c77e6dba229f846fa8e375a1b",
+        "NO_FAULT4.mat": "2a41050325fb9315cd2fd12429a31d3d7b1b2fef2a4802dada2eaea57ea3fcd3"
+      },
+      "python": "3.11.9",
+      "numpy": "2.4.4",
+      "scipy": "1.17.1",
+      "seed": 20261004,
+      "evaluation_role": "development_not_final_test"
+    }
+  },
+  "vibration": {
+    "NO_FAULT1.mat": {
+      "role": "calibration",
+      "windows_n": 15,
+      "independent_flights": 1,
+      "within_speed_voltage_support_n": 15,
+      "rotor_1x_band_energy_observed_mean": [
+        0.001210258812124346,
+        0.00016445696672744007,
+        0.0003138159621635647
+      ],
+      "rotor_1x_band_energy_predicted_mean": [
+        0.0010512570718898223,
+        0.00019993843564497665,
+        0.0004063807014028961
+      ],
+      "prediction_error": {
+        "rmse": [
+          0.0004776706794927391,
+          0.00012020538314385112,
+          0.00012991961081233142
+        ],
+        "mean": [
+          -0.00015900174023452394,
+          3.5481468917536536e-05,
+          9.256473923933145e-05
+        ],
+        "p95_absolute": [
+          0.001165382937515028,
+          0.0002078218871876457,
+          0.00021936616562936653
+        ]
+      },
+      "common_support_error": {
+        "rmse": [
+          0.0004776706794927391,
+          0.00012020538314385112,
+          0.00012991961081233142
+        ],
+        "mean": [
+          -0.00015900174023452394,
+          3.5481468917536536e-05,
+          9.256473923933145e-05
+        ],
+        "p95_absolute": [
+          0.001165382937515028,
+          0.0002078218871876457,
+          0.00021936616562936653
+        ]
+      },
+      "median_peak_hz": 24.5,
+      "rotor_frequency_hz_range": [
+        73.67772769771935,
+        107.9659836707877
+      ],
+      "mean_axis_energy_ratio": [
+        0.42177525623790424,
+        0.2855122177528438,
+        0.292712526009252
+      ]
+    },
+    "NO_FAULT2.mat": {
+      "role": "calibration",
+      "windows_n": 28,
+      "independent_flights": 1,
+      "within_speed_voltage_support_n": 28,
+      "rotor_1x_band_energy_observed_mean": [
+        0.000686530163702846,
+        0.00032394683656966747,
+        0.0004103297563410363
+      ],
+      "rotor_1x_band_energy_predicted_mean": [
+        0.0010749727824993429,
+        0.00020444892333278122,
+        0.00041554839917109273
+      ],
+      "prediction_error": {
+        "rmse": [
+          0.0006042435168541161,
+          0.0003442914288536926,
+          0.00022616547483665167
+        ],
+        "mean": [
+          0.00038844261879649686,
+          -0.00011949791323688619,
+          5.218642830056383e-06
+        ],
+        "p95_absolute": [
+          0.000983098258305615,
+          0.000834439673331635,
+          0.0003804817211600518
+        ]
+      },
+      "common_support_error": {
+        "rmse": [
+          0.0006042435168541161,
+          0.0003442914288536926,
+          0.00022616547483665167
+        ],
+        "mean": [
+          0.00038844261879649686,
+          -0.00011949791323688619,
+          5.218642830056383e-06
+        ],
+        "p95_absolute": [
+          0.000983098258305615,
+          0.000834439673331635,
+          0.0003804817211600518
+        ]
+      },
+      "median_peak_hz": 18.5,
+      "rotor_frequency_hz_range": [
+        71.45142550927488,
+        108.88250634940391
+      ],
+      "mean_axis_energy_ratio": [
+        0.40443505586839157,
+        0.3060108877187981,
+        0.2895540564128104
+      ]
+    },
+    "NO_FAULT3.mat": {
+      "role": "calibration",
+      "windows_n": 24,
+      "independent_flights": 1,
+      "within_speed_voltage_support_n": 24,
+      "rotor_1x_band_energy_observed_mean": [
+        0.001409653541451804,
+        0.00046558550812163133,
+        0.000438189007227668
+      ],
+      "rotor_1x_band_energy_predicted_mean": [
+        0.0010674284037048812,
+        0.00020301405898379173,
+        0.00041263199553574683
+      ],
+      "prediction_error": {
+        "rmse": [
+          0.0009071133796127957,
+          0.0005204598944449258,
+          0.00022840456698189275
+        ],
+        "mean": [
+          -0.0003422251377469231,
+          -0.0002625714491378396,
+          -2.555701169192122e-05
+        ],
+        "p95_absolute": [
+          0.0020290520559102204,
+          0.0011907912545500595,
+          0.00041606414913705287
+        ]
+      },
+      "common_support_error": {
+        "rmse": [
+          0.0009071133796127957,
+          0.0005204598944449258,
+          0.00022840456698189275
+        ],
+        "mean": [
+          -0.0003422251377469231,
+          -0.0002625714491378396,
+          -2.555701169192122e-05
+        ],
+        "p95_absolute": [
+          0.0020290520559102204,
+          0.0011907912545500595,
+          0.00041606414913705287
+        ]
+      },
+      "median_peak_hz": 22.75,
+      "rotor_frequency_hz_range": [
+        73.42450316355793,
+        108.38997491556971
+      ],
+      "mean_axis_energy_ratio": [
+        0.46282047305804325,
+        0.2614703919297923,
+        0.27570913501216415
+      ]
+    },
+    "FAULT_M1_5.mat": {
+      "role": "calibration",
+      "windows_n": 19,
+      "independent_flights": 1,
+      "within_speed_voltage_support_n": 18,
+      "rotor_1x_band_energy_observed_mean": [
+        0.000931702899303817,
+        0.00018331155817470992,
+        0.00015909872309127716
+      ],
+      "rotor_1x_band_energy_predicted_mean": [
+        0.0011346235837804898,
+        0.0005810195689361468,
+        0.0005105663238302244
+      ],
+      "prediction_error": {
+        "rmse": [
+          0.00048375269623558535,
+          0.00041431519665407844,
+          0.0003613740291174985
+        ],
+        "mean": [
+          0.0002029206844766728,
+          0.0003977080107614368,
+          0.0003514676007389474
+        ],
+        "p95_absolute": [
+          0.0008610999937008507,
+          0.0005518779291363687,
+          0.00046471583013422876
+        ]
+      },
+      "common_support_error": {
+        "rmse": [
+          0.0004908755393220472,
+          0.00040314470890385855,
+          0.0003555025809337152
+        ],
+        "mean": [
+          0.0001958473907087711,
+          0.0003875987507339742,
+          0.0003457567338866019
+        ],
+        "p95_absolute": [
+          0.0008763103498511481,
+          0.0005091742575290519,
+          0.0004571131154358619
+        ]
+      },
+      "median_peak_hz": 26.5,
+      "rotor_frequency_hz_range": [
+        67.35112286046883,
+        109.59041434175867
+      ],
+      "mean_axis_energy_ratio": [
+        0.4026645439405556,
+        0.28824997403308944,
+        0.309085482026355
+      ]
+    },
+    "FAULT_M2_5.mat": {
+      "role": "calibration",
+      "windows_n": 24,
+      "independent_flights": 1,
+      "within_speed_voltage_support_n": 0,
+      "rotor_1x_band_energy_observed_mean": [
+        0.00015901324445349264,
+        0.0005339246822135235,
+        0.00034642513048571997
+      ],
+      "rotor_1x_band_energy_predicted_mean": [
+        0.00012119454001205156,
+        0.00034574542588159703,
+        0.0001778567559672373
+      ],
+      "prediction_error": {
+        "rmse": [
+          7.534611037887563e-05,
+          0.00036673600987290896,
+          0.0003492145056222936
+        ],
+        "mean": [
+          -3.781870444144108e-05,
+          -0.00018817925633192654,
+          -0.00016856837451848273
+        ],
+        "p95_absolute": [
+          0.0001724071268205007,
+          0.0007976770744186088,
+          0.0007357259630003561
+        ]
+      },
+      "common_support_error": null,
+      "median_peak_hz": 16.0,
+      "rotor_frequency_hz_range": [
+        68.74946375180421,
+        109.04837807437148
+      ],
+      "mean_axis_energy_ratio": [
+        0.3639112979068207,
+        0.36409564684529433,
+        0.271993055247885
+      ]
+    },
+    "NO_FAULT4.mat": {
+      "role": "development",
+      "windows_n": 20,
+      "independent_flights": 1,
+      "within_speed_voltage_support_n": 7,
+      "rotor_1x_band_energy_observed_mean": [
+        0.0015398839365858836,
+        0.00046848438278809053,
+        0.00040741836313570173
+      ],
+      "rotor_1x_band_energy_predicted_mean": [
+        0.0010581327910812852,
+        0.0002012461277174817,
+        0.0004090386236774669
+      ],
+      "prediction_error": {
+        "rmse": [
+          0.0013602880643672234,
+          0.00045823671677571235,
+          0.00039127065666034094
+        ],
+        "mean": [
+          -0.00048175114550459854,
+          -0.00026723825507060883,
+          1.6202605417651874e-06
+        ],
+        "p95_absolute": [
+          0.0024314167855152458,
+          0.0009527602312456579,
+          0.0006197863134444616
+        ]
+      },
+      "common_support_error": {
+        "rmse": [
+          0.001689925850024584,
+          0.0004389505547376743,
+          0.0005548825674269883
+        ],
+        "mean": [
+          -0.0009176399052059676,
+          -0.00031026292541531903,
+          -0.00019650386071494143
+        ],
+        "p95_absolute": [
+          0.002905516204765126,
+          0.0008113781829041128,
+          0.0010541738610873046
+        ]
+      },
+      "median_peak_hz": 21.75,
+      "rotor_frequency_hz_range": [
+        68.8317370083936,
+        111.30420120439885
+      ],
+      "mean_axis_energy_ratio": [
+        0.3601649057452308,
+        0.33904249209478593,
+        0.30079260215998327
+      ]
+    },
+    "FAULT_M3_5.mat": {
+      "role": "development",
+      "windows_n": 24,
+      "independent_flights": 1,
+      "within_speed_voltage_support_n": 15,
+      "rotor_1x_band_energy_observed_mean": [
+        0.0006984154940376862,
+        0.0002340762140481924,
+        0.00010405021941801544
+      ],
+      "rotor_1x_band_energy_predicted_mean": [
+        0.0003970029133218273,
+        0.000559297504279294,
+        0.0002208398968603011
+      ],
+      "prediction_error": {
+        "rmse": [
+          0.0007261948994871342,
+          0.0003625759227296465,
+          0.00013437663934148626
+        ],
+        "mean": [
+          -0.00030141258071585906,
+          0.0003252212902311018,
+          0.00011678967744228565
+        ],
+        "p95_absolute": [
+          0.0016374343298429914,
+          0.0005343917322192075,
+          0.0001876663885290015
+        ]
+      },
+      "common_support_error": {
+        "rmse": [
+          0.0005779909242488629,
+          0.0003657779094786113,
+          0.0001319826608046818
+        ],
+        "mean": [
+          -0.00016380392390484,
+          0.00032970520994378205,
+          0.00011526070369570578
+        ],
+        "p95_absolute": [
+          0.001399142365092225,
+          0.0005424051256229448,
+          0.00018468045340892496
+        ]
+      },
+      "median_peak_hz": 23.0,
+      "rotor_frequency_hz_range": [
+        66.06307040976068,
+        113.29000908759032
+      ],
+      "mean_axis_energy_ratio": [
+        0.355824907547958,
+        0.3765872265462263,
+        0.26758786590581574
+      ]
+    }
+  },
+  "vibration_model": {
+    "healthy_per_motor_band_gain": [
+      [
+        5.65390432625376e-15,
+        1.075315273975173e-15,
+        2.1856096545799766e-15
+      ],
+      [
+        1.711307834776137e-15,
+        3.861263050742688e-15,
+        2.5002275414108e-15
+      ],
+      [
+        2.6296720443480487e-15,
+        2.190891346735241e-15,
+        1.14051136766758e-15
+      ],
+      [
+        1.5398023384502793e-15,
+        2.604391871594447e-15,
+        1.0141728589490006e-15
+      ],
+      [
+        1.3717888290084866e-15,
+        2.742794974233258e-15,
+        9.66195928723282e-16
+      ],
+      [
+        3.944260556391356e-15,
+        1.947260500804936e-15,
+        1.0869997077184764e-15
+      ]
+    ],
+    "healthy_flight_gain_spread": [
+      [
+        [
+          5.65390432625376e-15,
+          6.760037945422607e-16,
+          1.7366446022442735e-15
+        ],
+        [
+          1.711307834776137e-15,
+          2.1848983715923725e-15,
+          2.4684729567372156e-15
+        ],
+        [
+          5.576067170809235e-15,
+          2.190891346735241e-15,
+          8.376071048525558e-16
+        ],
+        [
+          3.24383788729531e-15,
+          4.4668263166200315e-15,
+          1.2796491198819321e-15
+        ],
+        [
+          2.54115567135589e-15,
+          4.837878027090689e-15,
+          1.4669594287338185e-15
+        ],
+        [
+          5.1307771201144115e-15,
+          1.8285678564747092e-15,
+          7.118112594993104e-16
+        ]
+      ],
+      [
+        [
+          3.29003043458864e-15,
+          1.075315273975173e-15,
+          2.1856096545799766e-15
+        ],
+        [
+          1.3839426166464317e-15,
+          3.861263050742688e-15,
+          2.953970658807974e-15
+        ],
+        [
+          2.447222293455618e-15,
+          2.472603979077888e-15,
+          1.3282205010922955e-15
+        ],
+        [
+          9.236379473824173e-16,
+          2.604391871594447e-15,
+          9.351292935217307e-16
+        ],
+        [
+          9.800608263273258e-16,
+          2.742794974233258e-15,
+          8.377042132164993e-16
+        ],
+        [
+          2.535489752100812e-15,
+          1.947260500804936e-15,
+          1.3841699295469873e-15
+        ]
+      ],
+      [
+        [
+          6.628203929145521e-15,
+          1.8058320992732138e-15,
+          2.417503919487669e-15
+        ],
+        [
+          2.56979500012058e-15,
+          4.50013954257636e-15,
+          2.5002275414108e-15
+        ],
+        [
+          2.6296720443480487e-15,
+          2.1392624255974327e-15,
+          1.14051136766758e-15
+        ],
+        [
+          1.5398023384502793e-15,
+          2.3457428937668203e-15,
+          1.0141728589490006e-15
+        ],
+        [
+          1.3717888290084866e-15,
+          2.4549304227996604e-15,
+          9.66195928723282e-16
+        ],
+        [
+          3.944260556391356e-15,
+          1.971309295892577e-15,
+          1.0869997077184764e-15
+        ]
+      ]
+    ],
+    "fault_flight_gains": {
+      "FAULT_M1_5.mat": {
+        "raw_increment": [
+          -7.481297675176699e-16,
+          -2.3274663386487905e-16,
+          -1.2887597865781605e-15
+        ],
+        "nonnegative_increment": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "motor": 1,
+        "status": "effective_energy_combination_not_mu_or_modal_gain"
+      },
+      "FAULT_M2_5.mat": {
+        "raw_increment": [
+          6.828329344309258e-16,
+          3.989553303065606e-15,
+          1.0244184009348947e-15
+        ],
+        "nonnegative_increment": [
+          6.828329344309258e-16,
+          3.989553303065606e-15,
+          1.0244184009348947e-15
+        ],
+        "motor": 2,
+        "status": "effective_energy_combination_not_mu_or_modal_gain"
+      }
+    },
+    "shared_damage_increment": [
+      3.414164672154629e-16,
+      1.994776651532803e-15,
+      5.122092004674474e-16
+    ],
+    "speed_support_rad_s": [
+      448.9425469369126,
+      684.1289641034626
+    ],
+    "voltage_support_V": [
+      14.523925745448844,
+      15.639574734459227
+    ],
+    "calibration_flights": [
+      "NO_FAULT1.mat",
+      "NO_FAULT2.mat",
+      "NO_FAULT3.mat",
+      "FAULT_M1_5.mat",
+      "FAULT_M2_5.mat"
+    ],
+    "status": "effective_observation_band_model_not_structural_modal_calibration",
+    "limitations": [
+      "1x bands from multiple rotors can overlap; cannot attribute all band energy to damaged rotor",
+      "unknown log anti-alias/filter path; not raw sensor PSD",
+      "n=2 fault calibration flights insufficient for motor-position transfer",
+      "mass imbalance and structural/log gain not separable",
+      "speed-voltage overlap is insufficient to ensure comparable maneuvers",
+      "2s windows correlated within flights; no classifier accuracy or independent window CI"
+    ],
+    "manifest": {
+      "code_head": "af9b45ae3e0d77987a051494ba68962964a38832",
+      "branch": "codex/uavfd-f550-model",
+      "code_sha256": {
+        "uavfd_f550\\__init__.py": "7b78e8d0fbe09f9a59b63aeb27ddd8c7316f65040286c3f3fabb4f5aa6778b62",
+        "uavfd_f550\\__main__.py": "216aa3250d61dd5085ccd04becf965c352cb4c2f1786ace2a71aaadd18e353ed",
+        "uavfd_f550\\analysis.py": "aefa0af92a8b4921779d72df5079c1de1a45c25947e9ab5a6b70faf056b283e9",
+        "uavfd_f550\\audit.py": "c2c7dcef08d5c7c2a622068f341838f6b201aab492147a7418bbaa98263f09c2",
+        "uavfd_f550\\common.py": "2d43d988213c0268bd2c5cb204e6fd30eb9547e012fee1a407f19af29f39cfce",
+        "uavfd_f550\\data.py": "1e6aaa04750d87aa8dc7536d42d31a8f8285b4ea14045aa47f43873d0cf9afc5",
+        "uavfd_f550\\dynamics.py": "0486b14d1e8b3e595d1ce3759f00b01d084c41eb196e72d60bc2d493bd8027e0",
+        "uavfd_f550\\provenance.py": "cb86708affc500d98628359970e7fedda253bb139651ad8a9e6b863e52bbcf22",
+        "uavfd_f550\\reports.py": "f8851641e1df89c8afc0a0e20c2b41ba432a031285cfefe96da119988b4b4a6d",
+        "uavfd_f550\\signals.py": "e6c2a88290849806485096dc80718eff336f0d414d8bcf5fc2f62be4f3488579",
+        "uavfd_f550\\sources.py": "e8a904b8fb04179a2ab675a91dd00bbcc605714f60dfbfe97c54303dc61320c0",
+        "uavfd_f550\\tests\\test_model.py": "b3c3478effba6676b0544dce0652ec1f0f95249b6aca99170d9ae2429f7cb6e2",
+        "uavfd_f550\\verification.py": "a0e81920050f3f70f59ae062cd0805e02f3948033de567485a030b9663d9ac9b",
+        "uavfd_f550\\vibration.py": "14df34ba3fdc8faafe26f05806c6e3c02e9584c445e7ae903c4c8d2e713693f7"
+      },
+      "configuration_sha256": {
+        "analysis.json": "f152f5f6d7ea708ed226618fd01cd8410b5e16cd02b01149e9058c0b1bc73484",
+        "demo.json": "27dfcfe13fb75011fc333245cdb754a1b05a3a15a0f2b2f7d54f9d32a288e8ae",
+        "split.json": "ebdee24fb48493729fe5d8dec6ea2e89cb80537e072011571777bb59f26731b5",
+        "uavfd_aircraft.json": "40753b2617e465e1929d42fc03807da531981058a91255f4295224ef8f174b51"
+      },
+      "split_sha256": "ebdee24fb48493729fe5d8dec6ea2e89cb80537e072011571777bb59f26731b5",
+      "config": {
+        "schema_version": 1,
+        "status": "method_assumptions_not_aircraft_parameters",
+        "low_rate_hz": 20.0,
+        "lowpass_hz": 2.0,
+        "filter_order": 4,
+        "rpm_interpolation": "linear_within_support_no_extrapolation",
+        "edge_trim_s": 3.0,
+        "max_rpm_gap_s": 0.5,
+        "segment_min_s": 8.0,
+        "integral_window_s": 1.0,
+        "replay_horizon_s": 1.0,
+        "vibration_rate_hz": 300.0,
+        "vibration_highpass_hz": 10.0,
+        "vibration_lowpass_hz": 120.0,
+        "welch_segment_s": 2.0,
+        "order_band_halfwidth_hz": 5.0,
+        "seed": 20261004,
+        "acceptance": "analytical identities predefined in tests; real-data metrics versus persistence only, no fidelity threshold yet"
+      },
+      "records": {
+        "NO_FAULT1.mat": "8fa683680232dae902d7c906853fb80f5b89ffb6b43ff8e97b708bd8f8473ba5",
+        "NO_FAULT2.mat": "58846d7e0addcb6100e7efd5ea80ad40dc18f3cfd8a8ac047547b933d1c69ec7",
+        "NO_FAULT3.mat": "2de0f92a49e660d03d81c7a1821ec7524a500d7c77e6dba229f846fa8e375a1b",
+        "FAULT_M1_5.mat": "92dee24aa4ee0eda99185b907097dfa7820e1602d5cd60152785940faa779570",
+        "FAULT_M2_5.mat": "9ef7b4fb91070818df6550f164982508470a440052d50e5ab4043f49b08c9405",
+        "NO_FAULT4.mat": "2a41050325fb9315cd2fd12429a31d3d7b1b2fef2a4802dada2eaea57ea3fcd3",
+        "FAULT_M3_5.mat": "e940dbc7b46d8592c7792d713bd3d8a89168da8d4aad5d32917e037202836170"
+      },
+      "python": "3.11.9",
+      "numpy": "2.4.4",
+      "scipy": "1.17.1",
+      "seed": 20261004,
+      "evaluation_role": "development_not_final_test"
+    }
+  },
+  "demo": {
+    "config": {
+      "status": "demo",
+      "purpose": "Analytical verification only; no value is an identified UAV-FD aircraft parameter",
+      "gravity_m_s2": 9.80665,
+      "mass_kg": 1.0,
+      "inertia_kg_m2": [
+        0.02,
+        0.025,
+        0.04
+      ],
+      "arm_radius_m": 0.2,
+      "kT_N_per_rad_s_squared": 1e-05,
+      "kQ_Nm_per_rad_s_squared": 1e-07,
+      "modal_frequency_hz": [
+        35.0,
+        70.0
+      ],
+      "modal_damping_ratio": [
+        0.05,
+        0.08
+      ],
+      "imbalance_kg_m": 1e-05,
+      "rotor_frequency_hz": 50.0,
+      "actuator_tau_s": 0.1,
+      "sensor_lever_m": [
+        0.01,
+        0.02,
+        0.03
+      ],
+      "seed": 20261004
+    },
+    "status": "demo_not_UAVFD_calibrated",
+    "modal_internal_rate_step_comparison_rms_m_s2": [
+      0.0743709952390119,
+      0.03698386878008927
+    ],
+    "rates_hz": [
+      1000,
+      2000,
+      4000
+    ],
+    "comparison": "1000-vs-2000,2000-vs-4000; exact modal ZOH, varying-force discretization remains"
+  }
+}

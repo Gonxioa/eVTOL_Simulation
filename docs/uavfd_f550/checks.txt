@@ -1,0 +1,71 @@
+COMMAND: python -m unittest discover -s uavfd_f550/tests -v
+EXIT: 0
+analytical: 23/23 passed
+test_duplicate_requested_mat_variable_rejected (test_model.AnalyticalTests.test_duplicate_requested_mat_variable_rejected) ... ok
+test_hdf5_matlab_cell_labels (test_model.AnalyticalTests.test_hdf5_matlab_cell_labels) ... ok
+test_invalid_physics_rejected (test_model.AnalyticalTests.test_invalid_physics_rejected) ... ok
+test_labels_override_column_order_and_average_intersection (test_model.AnalyticalTests.test_labels_override_column_order_and_average_intersection) ... ok
+test_lock_and_split (test_model.AnalyticalTests.test_lock_and_split) ... ok
+test_physical_identities (test_model.AnalyticalTests.test_physical_identities) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 1.270s
+
+OK
+
+COMMAND: python -m uavfd_f550 audit
+EXIT: 0
+audit NO_FAULT1.mat: checksum=True, parameters=972
+audit NO_FAULT2.mat: checksum=True, parameters=972
+audit NO_FAULT3.mat: checksum=True, parameters=972
+audit FAULT_M1_5.mat: checksum=True, parameters=972
+audit FAULT_M2_5.mat: checksum=True, parameters=972
+audit NO_FAULT4.mat: checksum=True, parameters=972
+audit FAULT_M3_5.mat: checksum=True, parameters=972
+audit NO_FAULT5.mat: checksum=True, parameters=972
+audit NO_FAULT6.mat: checksum=True, parameters=972
+audit FAULT_M1_10.mat: checksum=True, parameters=972
+audit FAULT_M2_10.mat: checksum=True, parameters=972
+audit FAULT_M3_10.mat: checksum=True, parameters=972
+audit FAULT_M4_5.mat: checksum=True, parameters=972
+audit FAULT_M4_10.mat: checksum=True, parameters=972
+audit FAULT_M5_5.mat: checksum=True, parameters=972
+audit FAULT_M5_10.mat: checksum=True, parameters=972
+audit FAULT_M6_5.mat: checksum=True, parameters=972
+audit FAULT_M6_10.mat: checksum=True, parameters=972
+
+COMMAND: python -m uavfd_f550 calibrate
+EXIT: 0
+combination gains: [2.488988490211289e-06, 4.64415286841947] [[3.1154875215724963e-07, 0.047735988725186536], [1.2116695406399562e-07, -0.0017395925087264612], [7.996145678497419e-07, 0.25203015354751795]]
+
+COMMAND: python -m uavfd_f550 replay
+EXIT: 0
+normal development: {'rmse': [0.15661427952015683, 0.17153561386891855, 0.27357485560275596], 'mean': [0.006292236276375854, 0.00773322619095775, -0.022388480870367926], 'p95_absolute': [0.3135294494032955, 0.4241416576039198, 0.6683437996342253]}
+
+COMMAND: python -m uavfd_f550 vibration
+EXIT: 0
+vibration NO_FAULT1.mat: 15 disjoint windows (one flight)
+vibration NO_FAULT2.mat: 28 disjoint windows (one flight)
+vibration NO_FAULT3.mat: 24 disjoint windows (one flight)
+vibration FAULT_M1_5.mat: 19 disjoint windows (one flight)
+vibration FAULT_M2_5.mat: 24 disjoint windows (one flight)
+vibration NO_FAULT4.mat: 20 disjoint windows (one flight)
+vibration FAULT_M3_5.mat: 24 disjoint windows (one flight)
+
+COMMAND: python -m uavfd_f550 demo
+EXIT: 0
+demo vibration convergence RMS: [0.0743709952390119, 0.03698386878008927]
+
+COMMAND: python -m uavfd_f550 validate
+EXIT: 0
+analytical: 23/23 passed
+
+COMMAND: python -m uavfd_f550 report
+EXIT: 0
+review documents and source/parameter ledgers saved: C:\Users\lenovo\Desktop\eVTOL_Simulation\docs\uavfd_f550
+
+COMMAND: python -m uavfd_f550 test
+EXIT: 2 (expected locked-test rejection)
+usage: __main__.py [-h] [--data-dir DATA_DIR] [--out OUT] [--config CONFIG]
+                   {sources,audit,calibrate,replay,vibration,demo,validate,report,test}
+__main__.py: error: 最终实飞测试处于锁定状态，本轮不提供解锁开关。

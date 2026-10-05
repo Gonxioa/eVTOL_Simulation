@@ -1,0 +1,235 @@
+{
+  "zenodo": {
+    "url": "https://zenodo.org/api/records/7648996",
+    "accessed_at": "2026-10-04T21:44:55.243748+08:00",
+    "status": 200,
+    "resolved_url": "https://zenodo.org/api/records/7648996",
+    "sha256": "72c4a45062b49188a8424c5fb1615df8a9c83b96350839ffb9bbf990ab838e4b",
+    "archive": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_uavfd_f550\\source_snapshots\\zenodo.json"
+  },
+  "systemid": {
+    "url": "https://ardupilot.org/copter/docs/systemid-model-development.html",
+    "accessed_at": "2026-10-04T21:44:57.520522+08:00",
+    "status": 200,
+    "resolved_url": "https://ardupilot.org/copter/docs/systemid-model-development.html",
+    "sha256": "7ba931331fcd66c297ebcd4eb02e3d5385c684cccb2c159669233acb5294f5a2",
+    "archive": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_uavfd_f550\\source_snapshots\\systemid.html"
+  },
+  "logmessages_current_reference_only": {
+    "url": "https://ardupilot.org/copter/docs/logmessages.html",
+    "accessed_at": "2026-10-04T21:44:58.673006+08:00",
+    "status": 200,
+    "resolved_url": "https://ardupilot.org/copter/docs/logmessages.html",
+    "sha256": "df71f91a844d9c5a3f3dacfb34c1279aef1ba5ecfe387afeea43ed4fd95aa136",
+    "archive": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_uavfd_f550\\source_snapshots\\logmessages_current_reference_only.html"
+  },
+  "vibration_2026": {
+    "url": "https://arxiv.org/html/2604.07281v1",
+    "accessed_at": "2026-10-04T21:45:05.712340+08:00",
+    "status": 200,
+    "resolved_url": "https://arxiv.org/html/2604.07281v1",
+    "sha256": "8cd9f7898a4bfb63823ac6801339479c5b50ee0fb193895541de25f90c9a34e2",
+    "archive": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_uavfd_f550\\source_snapshots\\vibration_2026.html"
+  },
+  "diagnosis_2024": {
+    "url": "https://arxiv.org/html/2410.05447v1",
+    "accessed_at": "2026-10-04T21:45:08.013761+08:00",
+    "status": 200,
+    "resolved_url": "https://arxiv.org/html/2410.05447v1",
+    "sha256": "9d052d67f7906652477e2bb0beb3410159b9b95e474ec19177901a6f4f70aa9f",
+    "archive": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_uavfd_f550\\source_snapshots\\diagnosis_2024.html"
+  },
+  "logged_commit": {
+    "url": "https://api.github.com/repos/ArduPilot/ardupilot/commits/232083c4",
+    "accessed_at": "2026-10-04T21:45:08.997956+08:00",
+    "status": 200,
+    "resolved_url": "https://api.github.com/repos/ArduPilot/ardupilot/commits/232083c4",
+    "sha256": "5e3a63d060acab6d9aff78d783312095b8f186f1fc08ef3e3d4948c0e7dea653",
+    "archive": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_uavfd_f550\\source_snapshots\\logged_commit.json",
+    "sha": "232083c4d23be21d694d130f639fb6497bd57f98"
+  },
+  "icuas2023_metadata": {
+    "url": "https://api.crossref.org/works/10.1109/ICUAS57906.2023.10156060",
+    "accessed_at": "2026-10-04T21:45:09.626678+08:00",
+    "status": 200,
+    "resolved_url": "https://api.crossref.org/works/10.1109/ICUAS57906.2023.10156060",
+    "sha256": "e66a6f85fe259be5058fa28c007d7f525e3e2c594f58a27b1ca5b8e84145d931",
+    "archive": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_uavfd_f550\\source_snapshots\\icuas2023_metadata.json"
+  },
+  "libraries__AP_Motors__AP_MotorsMatrix.cpp": {
+    "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/232083c4d23be21d694d130f639fb6497bd57f98/libraries/AP_Motors/AP_MotorsMatrix.cpp",
+    "accessed_at": "2026-10-04T21:45:10.407038+08:00",
+    "sha": "232083c4d23be21d694d130f639fb6497bd57f98",
+    "status": 200,
+    "sha256": "a1d31d676b8895e7370f835a7ba17c212f2bd080ca29dc4ed67fdc260681e0b4",
+    "archive": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_uavfd_f550\\source_snapshots\\libraries__AP_Motors__AP_MotorsMatrix.cpp"
+  },
+  "libraries__AP_Logger__LogStructure.h": {
+    "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/232083c4d23be21d694d130f639fb6497bd57f98/libraries/AP_Logger/LogStructure.h",
+    "accessed_at": "2026-10-04T21:45:12.297263+08:00",
+    "sha": "232083c4d23be21d694d130f639fb6497bd57f98",
+    "status": 200,
+    "sha256": "c65cb3b51e4512e19f446ec163fae251adeb1927c1af6959546567906b4bef03",
+    "archive": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_uavfd_f550\\source_snapshots\\libraries__AP_Logger__LogStructure.h"
+  },
+  "libraries__AP_InertialSensor__AP_InertialSensor.cpp": {
+    "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/232083c4d23be21d694d130f639fb6497bd57f98/libraries/AP_InertialSensor/AP_InertialSensor.cpp",
+    "accessed_at": "2026-10-04T21:45:13.773143+08:00",
+    "sha": "232083c4d23be21d694d130f639fb6497bd57f98",
+    "status": 200,
+    "sha256": "c140c67918009910b64a137c7742a536167d1bf39d87bd65ec7e2caeb885b9d2",
+    "archive": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_uavfd_f550\\source_snapshots\\libraries__AP_InertialSensor__AP_InertialSensor.cpp"
+  },
+  "libraries__AP_InertialSensor__AP_InertialSensor_Backend.cpp": {
+    "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/232083c4d23be21d694d130f639fb6497bd57f98/libraries/AP_InertialSensor/AP_InertialSensor_Backend.cpp",
+    "accessed_at": "2026-10-04T21:45:14.670197+08:00",
+    "sha": "232083c4d23be21d694d130f639fb6497bd57f98",
+    "status": 200,
+    "sha256": "c178e95c7224e0a823bcba74e27cfefe73f71667edf7ece260ebba6b3f998859",
+    "archive": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_uavfd_f550\\source_snapshots\\libraries__AP_InertialSensor__AP_InertialSensor_Backend.cpp"
+  },
+  "libraries__AP_ESC_Telem__AP_ESC_Telem.cpp": {
+    "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/232083c4d23be21d694d130f639fb6497bd57f98/libraries/AP_ESC_Telem/AP_ESC_Telem.cpp",
+    "accessed_at": "2026-10-04T21:45:15.342521+08:00",
+    "sha": "232083c4d23be21d694d130f639fb6497bd57f98",
+    "status": 200,
+    "sha256": "a731afe2b6fdb5d3abfda0e8e1a5b4eeed4fe53a7412ccd94b0eed03348e856d",
+    "archive": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_uavfd_f550\\source_snapshots\\libraries__AP_ESC_Telem__AP_ESC_Telem.cpp"
+  },
+  "libraries__AP_BLHeli__AP_BLHeli.cpp": {
+    "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/232083c4d23be21d694d130f639fb6497bd57f98/libraries/AP_BLHeli/AP_BLHeli.cpp",
+    "accessed_at": "2026-10-04T21:45:16.173931+08:00",
+    "sha": "232083c4d23be21d694d130f639fb6497bd57f98",
+    "status": 200,
+    "sha256": "6dc4b967d7a9516eaaed0f0374394f27be5c68c0e13a36cec09ecb997f91f7fe",
+    "archive": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_uavfd_f550\\source_snapshots\\libraries__AP_BLHeli__AP_BLHeli.cpp"
+  },
+  "ArduCopter__Log.cpp": {
+    "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/232083c4d23be21d694d130f639fb6497bd57f98/ArduCopter/Log.cpp",
+    "accessed_at": "2026-10-04T21:45:16.768574+08:00",
+    "sha": "232083c4d23be21d694d130f639fb6497bd57f98",
+    "status": 200,
+    "sha256": "33f31d36ed60da0def287ff3809cb2e1d7be540133f9e9b9968d2638851fb0cb",
+    "archive": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_uavfd_f550\\source_snapshots\\ArduCopter__Log.cpp"
+  },
+  "libraries__AP_Motors__AP_Motors_Class.h": {
+    "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/232083c4d23be21d694d130f639fb6497bd57f98/libraries/AP_Motors/AP_Motors_Class.h",
+    "accessed_at": "2026-10-04T21:45:17.227014+08:00",
+    "sha": "232083c4d23be21d694d130f639fb6497bd57f98",
+    "status": 200,
+    "sha256": "093f170be6d94232d89d33450d1168e40dbf4c3c11c1829f034192533168ac36",
+    "archive": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_uavfd_f550\\source_snapshots\\libraries__AP_Motors__AP_Motors_Class.h"
+  },
+  "libraries__SRV_Channel__SRV_Channel.h": {
+    "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/232083c4d23be21d694d130f639fb6497bd57f98/libraries/SRV_Channel/SRV_Channel.h",
+    "accessed_at": "2026-10-04T21:45:17.670395+08:00",
+    "sha": "232083c4d23be21d694d130f639fb6497bd57f98",
+    "status": 200,
+    "sha256": "8dfa1f74d8a3448f292769d6ffcd43040ce12b14a93995810607c9ac32d7b8cf",
+    "archive": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_uavfd_f550\\source_snapshots\\libraries__SRV_Channel__SRV_Channel.h"
+  },
+  "libraries__AP_HAL__Util.cpp": {
+    "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/232083c4d23be21d694d130f639fb6497bd57f98/libraries/AP_HAL/Util.cpp",
+    "accessed_at": "2026-10-04T21:45:18.731158+08:00",
+    "sha": "232083c4d23be21d694d130f639fb6497bd57f98",
+    "status": 200,
+    "sha256": "37ea6850a8f1b0e9e7108d60897a45243508c08a3eebfb50b2a8ccb0d38c4c88",
+    "archive": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_uavfd_f550\\source_snapshots\\libraries__AP_HAL__Util.cpp"
+  },
+  "libraries__AP_InertialSensor__LogStructure.h": {
+    "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/232083c4d23be21d694d130f639fb6497bd57f98/libraries/AP_InertialSensor/LogStructure.h",
+    "sha": "232083c4d23be21d694d130f639fb6497bd57f98",
+    "access_date": "2026-10-04",
+    "status": 200,
+    "sha256": "0765be741c896c879b85df7216935f86b5c6682437d63b012a2d15315970e91f",
+    "archive": "output_uavfd_f550\\source_snapshots\\libraries__AP_InertialSensor__LogStructure.h"
+  },
+  "libraries__AP_ESC_Telem__LogStructure.h": {
+    "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/232083c4d23be21d694d130f639fb6497bd57f98/libraries/AP_ESC_Telem/LogStructure.h",
+    "sha": "232083c4d23be21d694d130f639fb6497bd57f98",
+    "access_date": "2026-10-04",
+    "status": 200,
+    "sha256": "459bf42fcd0fa95b5c68983445a4d1f0f6471739603f51a4877262c8fd8a4361",
+    "archive": "output_uavfd_f550\\source_snapshots\\libraries__AP_ESC_Telem__LogStructure.h"
+  },
+  "libraries__AP_Logger__LogFile.cpp": {
+    "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/232083c4d23be21d694d130f639fb6497bd57f98/libraries/AP_Logger/LogFile.cpp",
+    "sha": "232083c4d23be21d694d130f639fb6497bd57f98",
+    "access_date": "2026-10-04",
+    "status": 200,
+    "sha256": "85c414a0d042333c1a0f5a3a82774df67fc13ebad27340439fdac1de493bf916",
+    "archive": "output_uavfd_f550\\source_snapshots\\libraries__AP_Logger__LogFile.cpp"
+  },
+  "libraries__AP_Common__AP_FWVersion.h": {
+    "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/232083c4d23be21d694d130f639fb6497bd57f98/libraries/AP_Common/AP_FWVersion.h",
+    "sha": "232083c4d23be21d694d130f639fb6497bd57f98",
+    "access_date": "2026-10-04",
+    "status": 200,
+    "sha256": "35cde96e20acbe1c9553e1188c4bd9c88987ddd8695a2811237493c598c6b761",
+    "archive": "output_uavfd_f550\\source_snapshots\\libraries__AP_Common__AP_FWVersion.h"
+  },
+  "libraries__AP_Motors__AP_MotorsMatrix.h": {
+    "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/232083c4d23be21d694d130f639fb6497bd57f98/libraries/AP_Motors/AP_MotorsMatrix.h",
+    "sha": "232083c4d23be21d694d130f639fb6497bd57f98",
+    "access_date": "2026-10-04",
+    "status": 200,
+    "sha256": "25b2721e6db9828dad17f80683510f9549338db1fcf5d4986d75eb0c2c46c739",
+    "archive": "output_uavfd_f550\\source_snapshots\\libraries__AP_Motors__AP_MotorsMatrix.h"
+  },
+  "libraries__AP_HAL__RCOutput.h": {
+    "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/232083c4d23be21d694d130f639fb6497bd57f98/libraries/AP_HAL/RCOutput.h",
+    "sha": "232083c4d23be21d694d130f639fb6497bd57f98",
+    "access_date": "2026-10-04",
+    "status": 200,
+    "sha256": "ecda93298a8190647b17187f655391a02a81db7d1efd0a2fc891810a885ee8c8",
+    "archive": "output_uavfd_f550\\source_snapshots\\libraries__AP_HAL__RCOutput.h"
+  },
+  "ArduCopter__Copter.cpp": {
+    "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/232083c4d23be21d694d130f639fb6497bd57f98/ArduCopter/Copter.cpp",
+    "sha": "232083c4d23be21d694d130f639fb6497bd57f98",
+    "access_date": "2026-10-04",
+    "status": 200,
+    "sha256": "39b006f809e83c28df6ff9e640f379fd25f9342a3d615900836fa312753fb8d5",
+    "archive": "output_uavfd_f550\\source_snapshots\\ArduCopter__Copter.cpp"
+  },
+  "original_paper_iris": {
+    "url": "https://iris.univpm.it/handle/11566/320071",
+    "access_date": "2026-10-04",
+    "status": "unavailable",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  "original_paper_ieee": {
+    "url": "https://ieeexplore.ieee.org/document/10156060",
+    "access_date": "2026-10-04",
+    "status": 202,
+    "sha256": "a26e6833a5a46d94bd7418c86ff175912a3016a3fed82c150b6106c763ad330c",
+    "archive": "output_uavfd_f550\\source_snapshots\\original_paper_ieee.html"
+  },
+  "f550_manual": {
+    "url": "https://dl.djicdn.com/downloads/flamewheel/en/F550_User_Manual_v2.0_en.pdf",
+    "access_date": "2026-10-04",
+    "status": 200,
+    "sha256": "0908b1feab2fa399a8699e6b86408998ce2b96fdb62b575b351bdbe1dc9454cb",
+    "archive": "output_uavfd_f550\\source_snapshots\\f550_manual.pdf"
+  },
+  "air_gear_350_candidate": {
+    "url": "https://store.tmotor.com/product/air-gear-350.html",
+    "access_date": "2026-10-04",
+    "status": "unavailable",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "libraries__AP_InertialSensor__AP_InertialSensor_Logging.cpp": {
+    "url": "https://raw.githubusercontent.com/ArduPilot/ardupilot/232083c4d23be21d694d130f639fb6497bd57f98/libraries/AP_InertialSensor/AP_InertialSensor_Logging.cpp",
+    "status": 200,
+    "sha256": "08b0af33eb682488e73a65f21cda0ee59de6de2a307fd7b1be2639182df1dbf8",
+    "archive": "output_uavfd_f550\\source_snapshots\\libraries__AP_InertialSensor__AP_InertialSensor_Logging.cpp",
+    "access_date": "2026-10-04"
+  },
+  "standard_gravity": {
+    "url": "https://physics.nist.gov/cgi-bin/cuu/Value?gn",
+    "status": 200,
+    "sha256": "d8e16d67f9674cc2966cb3e8b75aceea5be448952f5fdc2ce6a97f6ce5dc79c5",
+    "archive": "output_uavfd_f550\\source_snapshots\\standard_gravity.html",
+    "access_date": "2026-10-04"
+  }
+}

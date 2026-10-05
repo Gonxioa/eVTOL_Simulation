@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "frozen_before_signal_analysis": true,
+  "decision_date": "2026-10-04",
+  "reason": "User task default; all 18 original files available",
+  "unit": "entire_independent_flight",
+  "calibration": ["NO_FAULT1.mat", "NO_FAULT2.mat", "NO_FAULT3.mat", "FAULT_M1_5.mat", "FAULT_M2_5.mat"],
+  "development": ["NO_FAULT4.mat", "FAULT_M3_5.mat"],
+  "locked_test": ["NO_FAULT5.mat", "NO_FAULT6.mat", "FAULT_M1_10.mat", "FAULT_M2_10.mat", "FAULT_M3_10.mat", "FAULT_M4_5.mat", "FAULT_M4_10.mat", "FAULT_M5_5.mat", "FAULT_M5_10.mat", "FAULT_M6_5.mat", "FAULT_M6_10.mat"],
+  "test_enabled": false
+}

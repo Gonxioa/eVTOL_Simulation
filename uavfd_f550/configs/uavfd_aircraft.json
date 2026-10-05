@@ -1,0 +1,17 @@
+{
+  "status": "unknown_not_ready_for_physical_replay",
+  "gravity": {"value": 9.80665, "unit": "m/s^2", "status": "standard_gravity_convention", "source": "S08"},
+  "mass": {"value": null, "unit": "kg", "status": "unknown"},
+  "inertia": {"value": null, "unit": "kg*m^2", "status": "unknown"},
+  "rotor_positions": {"value": null, "unit": "m FRD relative to COM", "status": "unknown"},
+  "spin_sign": {"value": [1, -1, 1, -1, -1, 1], "unit": "CW:+1 in FRD", "status": "derived_from_logged_base_mixer_custom_wiring_unverified", "source": "S04"},
+  "kT": {"value": null, "unit": "N/(rad/s)^2", "status": "unknown"},
+  "kQ": {"value": null, "unit": "N*m/(rad/s)^2", "status": "unknown"},
+  "imu_lever": {"value": null, "unit": "m FRD relative to COM", "status": "unknown"},
+  "imbalance_mu": {"value": null, "unit": "kg*m", "status": "unknown"},
+  "modal_frequency": {"value": null, "unit": "Hz", "status": "unknown"},
+  "modal_damping": {"value": null, "unit": "1", "status": "unknown"},
+  "motor_time_constant": {"value": null, "unit": "s", "status": "unknown"},
+  "fault_geometry_5_10": {"value": null, "unit": "definition_pending", "status": "unknown_original_paper_fulltext_unavailable"},
+  "forbidden": ["demo_as_aircraft", "legacy_mass_or_inertia_as_UAVFD_truth", "5_10_as_thrust_loss_percent"]
+}

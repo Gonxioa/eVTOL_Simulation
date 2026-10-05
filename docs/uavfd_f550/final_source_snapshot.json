@@ -1,0 +1,69 @@
+{
+  "date": "2026-10-05",
+  "numerical_validation_date": "2026-10-04",
+  "head_before_publication": "af9b45ae3e0d77987a051494ba68962964a38832",
+  "branch": "codex/uavfd-f550-model",
+  "code_sha256": {
+    "uavfd_f550/__init__.py": "7b78e8d0fbe09f9a59b63aeb27ddd8c7316f65040286c3f3fabb4f5aa6778b62",
+    "uavfd_f550/__main__.py": "216aa3250d61dd5085ccd04becf965c352cb4c2f1786ace2a71aaadd18e353ed",
+    "uavfd_f550/analysis.py": "aefa0af92a8b4921779d72df5079c1de1a45c25947e9ab5a6b70faf056b283e9",
+    "uavfd_f550/audit.py": "c2c7dcef08d5c7c2a622068f341838f6b201aab492147a7418bbaa98263f09c2",
+    "uavfd_f550/common.py": "2d43d988213c0268bd2c5cb204e6fd30eb9547e012fee1a407f19af29f39cfce",
+    "uavfd_f550/data.py": "1e6aaa04750d87aa8dc7536d42d31a8f8285b4ea14045aa47f43873d0cf9afc5",
+    "uavfd_f550/dynamics.py": "0486b14d1e8b3e595d1ce3759f00b01d084c41eb196e72d60bc2d493bd8027e0",
+    "uavfd_f550/provenance.py": "cb86708affc500d98628359970e7fedda253bb139651ad8a9e6b863e52bbcf22",
+    "uavfd_f550/reports.py": "fe846464c669d34a6192e5a512ab5b7107e1a4a8dd43392d85e7233bab2fe266",
+    "uavfd_f550/signals.py": "e6c2a88290849806485096dc80718eff336f0d414d8bcf5fc2f62be4f3488579",
+    "uavfd_f550/sources.py": "e8a904b8fb04179a2ab675a91dd00bbcc605714f60dfbfe97c54303dc61320c0",
+    "uavfd_f550/tests/test_model.py": "b3c3478effba6676b0544dce0652ec1f0f95249b6aca99170d9ae2429f7cb6e2",
+    "uavfd_f550/verification.py": "a0e81920050f3f70f59ae062cd0805e02f3948033de567485a030b9663d9ac9b",
+    "uavfd_f550/vibration.py": "14df34ba3fdc8faafe26f05806c6e3c02e9584c445e7ae903c4c8d2e713693f7"
+  },
+  "config_sha256": {
+    "uavfd_f550/configs/analysis.json": "f152f5f6d7ea708ed226618fd01cd8410b5e16cd02b01149e9058c0b1bc73484",
+    "uavfd_f550/configs/demo.json": "27dfcfe13fb75011fc333245cdb754a1b05a3a15a0f2b2f7d54f9d32a288e8ae",
+    "uavfd_f550/configs/split.json": "ebdee24fb48493729fe5d8dec6ea2e89cb80537e072011571777bb59f26731b5",
+    "uavfd_f550/configs/uavfd_aircraft.json": "40753b2617e465e1929d42fc03807da531981058a91255f4295224ef8f174b51"
+  },
+  "code_lf_sha256": {
+    "uavfd_f550/__init__.py": "7b78e8d0fbe09f9a59b63aeb27ddd8c7316f65040286c3f3fabb4f5aa6778b62",
+    "uavfd_f550/__main__.py": "216aa3250d61dd5085ccd04becf965c352cb4c2f1786ace2a71aaadd18e353ed",
+    "uavfd_f550/analysis.py": "aefa0af92a8b4921779d72df5079c1de1a45c25947e9ab5a6b70faf056b283e9",
+    "uavfd_f550/audit.py": "c2c7dcef08d5c7c2a622068f341838f6b201aab492147a7418bbaa98263f09c2",
+    "uavfd_f550/common.py": "2d43d988213c0268bd2c5cb204e6fd30eb9547e012fee1a407f19af29f39cfce",
+    "uavfd_f550/data.py": "1e6aaa04750d87aa8dc7536d42d31a8f8285b4ea14045aa47f43873d0cf9afc5",
+    "uavfd_f550/dynamics.py": "0486b14d1e8b3e595d1ce3759f00b01d084c41eb196e72d60bc2d493bd8027e0",
+    "uavfd_f550/provenance.py": "cb86708affc500d98628359970e7fedda253bb139651ad8a9e6b863e52bbcf22",
+    "uavfd_f550/reports.py": "fe846464c669d34a6192e5a512ab5b7107e1a4a8dd43392d85e7233bab2fe266",
+    "uavfd_f550/signals.py": "e6c2a88290849806485096dc80718eff336f0d414d8bcf5fc2f62be4f3488579",
+    "uavfd_f550/sources.py": "e8a904b8fb04179a2ab675a91dd00bbcc605714f60dfbfe97c54303dc61320c0",
+    "uavfd_f550/tests/test_model.py": "b3c3478effba6676b0544dce0652ec1f0f95249b6aca99170d9ae2429f7cb6e2",
+    "uavfd_f550/verification.py": "a0e81920050f3f70f59ae062cd0805e02f3948033de567485a030b9663d9ac9b",
+    "uavfd_f550/vibration.py": "14df34ba3fdc8faafe26f05806c6e3c02e9584c445e7ae903c4c8d2e713693f7"
+  },
+  "config_lf_sha256": {
+    "uavfd_f550/configs/analysis.json": "f152f5f6d7ea708ed226618fd01cd8410b5e16cd02b01149e9058c0b1bc73484",
+    "uavfd_f550/configs/demo.json": "27dfcfe13fb75011fc333245cdb754a1b05a3a15a0f2b2f7d54f9d32a288e8ae",
+    "uavfd_f550/configs/split.json": "ebdee24fb48493729fe5d8dec6ea2e89cb80537e072011571777bb59f26731b5",
+    "uavfd_f550/configs/uavfd_aircraft.json": "40753b2617e465e1929d42fc03807da531981058a91255f4295224ef8f174b51"
+  },
+  "hash_convention": "Original execution SHA256 is raw local bytes; *_lf_sha256 additionally normalizes CRLF for comparison with Git-normalized files.",
+  "data_used": "5 calibration / 2 development / 11 locked final test",
+  "final_test_executed": false,
+  "verification_log_sha256": "09c04fe1dc4aaa1b84bc2467906c8d0b99ae4b256b3a444b5d28f0e7be44bf00",
+  "metric_source_differences": {
+    "audit.json": [
+      "uavfd_f550\\reports.py"
+    ],
+    "combination_model.json": [
+      "uavfd_f550\\reports.py"
+    ],
+    "normal_replay.json": [
+      "uavfd_f550\\reports.py"
+    ],
+    "vibration_model.json": [
+      "uavfd_f550\\reports.py"
+    ]
+  },
+  "explanation": "Execution manifests preserve their original code hashes. Only reports.py changed afterward: figure packaging/relative Markdown links and publication history notes. Numerical model, data handling, fitting and analysis code are unchanged. Final publication commit is identified by Git history, not a self-referential field in this file."
+}

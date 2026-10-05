@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "status": "method_assumptions_not_aircraft_parameters",
+  "low_rate_hz": 20.0,
+  "lowpass_hz": 2.0,
+  "filter_order": 4,
+  "rpm_interpolation": "linear_within_support_no_extrapolation",
+  "edge_trim_s": 3.0,
+  "max_rpm_gap_s": 0.5,
+  "segment_min_s": 8.0,
+  "integral_window_s": 1.0,
+  "replay_horizon_s": 1.0,
+  "vibration_rate_hz": 300.0,
+  "vibration_highpass_hz": 10.0,
+  "vibration_lowpass_hz": 120.0,
+  "welch_segment_s": 2.0,
+  "order_band_halfwidth_hz": 5.0,
+  "seed": 20261004,
+  "acceptance": "analytical identities predefined in tests; real-data metrics versus persistence only, no fidelity threshold yet"
+}
