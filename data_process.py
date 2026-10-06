@@ -16,6 +16,7 @@ import pickle
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+from scipy.spatial.transform import Rotation
 from sklearn.preprocessing import StandardScaler
 
 from provenance import code_hashes, runtime_info, sha256_file, stable_hash, write_json
@@ -30,27 +31,29 @@ def _path_env(name, default):
     return Path(value).expanduser().resolve() if value else Path(default).resolve()
 
 
-DATA_DIR = _path_env("HEX_OUTPUT_DIR", PROJECT_ROOT / "output_hex_v3")
+DATA_DIR = _path_env("HEX_OUTPUT_DIR", PROJECT_ROOT / "output_hex_audit" / "dataset_v4")
 FEATURE_SET = os.getenv("FEATURE_SET", "combined").strip().lower()
 SAVE_DIR = _path_env(
     "DATA_PROCESS_DIR_OVERRIDE",
-    PROJECT_ROOT / "plots" / "hex" / "data_process" / FEATURE_SET,
+    PROJECT_ROOT / "plots" / "hex_v4_research" / "data_process" / FEATURE_SET,
 )
 WINDOW = max(2, int(os.getenv("HEX_WINDOW", "100")))
 STEP = max(1, int(os.getenv("HEX_STEP", "50")))
-BUFFER = max(0.0, float(os.getenv("HEX_FAULT_BUFFER", "1.0")))
+BUFFER = max(0.0, float(os.getenv("HEX_FAULT_BUFFER", "0.05")))
 MIN_GROUPS_PER_CLASS = max(2, int(os.getenv("HEX_MIN_GROUPS_PER_CLASS", "4")))
 ALLOW_INCOMPLETE = os.getenv("HEX_ALLOW_INCOMPLETE", "0") == "1"
 
 STATE_COLS = ["roll", "pitch", "yaw", "p", "q_body", "r"]
 IMU_COLS = ["ax", "ay", "az", "gx", "gy", "gz"]
 COMMAND_COLS = [f"cmd_motor{i}" for i in range(NUM_ROTORS)]
+ROTATION_COLS = ['R11','R21','R31','R12','R22','R32']
 FEATURE_SETS = {
     "imu": IMU_COLS,
     "state": STATE_COLS,
     "command": COMMAND_COLS,
     "response": STATE_COLS + IMU_COLS,
     "combined": STATE_COLS + IMU_COLS + COMMAND_COLS,
+    "rotation_combined": ROTATION_COLS + ['p','q_body','r'] + IMU_COLS + COMMAND_COLS,
 }
 if FEATURE_SET not in FEATURE_SETS:
     raise ValueError(f"FEATURE_SET={FEATURE_SET!r} 无效；可选: {sorted(FEATURE_SETS)}")
@@ -80,6 +83,15 @@ def _constant_value(df, column, path):
 
 def process_source(path, matched_start):
     df = pd.read_csv(path)
+    # Continuous rotation columns reconstructed from the exported OBSERVED
+    # orientation. No truth quaternion or latent fault state enters features.
+    if FEATURE_SET=='rotation_combined':
+        matrices=Rotation.from_euler('xyz',df[['roll','pitch','yaw']].to_numpy()).as_matrix()
+        for j,name in enumerate(ROTATION_COLS): df[name]=matrices[:,j%3,j//3]
+    manifest_path=path.parent/'dataset_generation_manifest.json'
+    if not manifest_path.exists(): raise RuntimeError('缺少v4数据清单，不能使用当前参数解释未知旧数据')
+    dataset=json.loads(manifest_path.read_text(encoding='utf-8'))
+    if dataset.get('dataset_version')!='hex_v4_research_cascade': raise RuntimeError('旧版本数据仅在legacy_reference中处理')
     required = FEATURE_COLS + [
         "time", "cmd_thrust", "predicted_plant_thrust", "fault_label",
         "fault_motor", "fault_factor", "scenario_name", "run_id",
@@ -130,6 +142,11 @@ def process_source(path, matched_start):
         selected_start = max(stable_start, matched_start)
         selected = df.loc[df["time"] > selected_start]
         segment = f"post_fault_matched_t_gt_{selected_start:g}"
+
+    # A single predeclared time interval for every class; early stops cannot
+    # secretly select a class-specific favorable segment.
+    selected = selected.loc[selected['time'] <= dataset['analysis_interval']['end_s']+1e-9]
+    if 'yaw' in selected: selected=selected.copy(); selected['yaw']=np.unwrap(selected['yaw'].to_numpy())
 
     values = selected[FEATURE_COLS].to_numpy(dtype=np.float32)
     desired_thrust = selected["cmd_thrust"].to_numpy(dtype=np.float32)
@@ -216,8 +233,10 @@ def main():
             f"缺少 {manifest_path}；数据集可能未完整生成，禁止预处理。"
         )
     dataset_manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
-    if dataset_manifest.get("dataset_version") != "hex_v3_bounded_nominal_allocator":
-        raise RuntimeError("拒绝预处理非 hex_v3_bounded_nominal_allocator 数据")
+    if dataset_manifest.get("dataset_version") != "hex_v4_research_cascade":
+        raise RuntimeError("当前入口仅处理hex_v4_research_cascade，旧数据留在独立legacy入口")
+    from hex_research.data import validate_dataset
+    validate_dataset(DATA_DIR)
     expected_hashes = dataset_manifest.get("csv_sha256", {})
     if set(expected_hashes) != {path.name for path in files}:
         raise RuntimeError("CSV集合与dataset_generation_manifest.json不一致")
@@ -244,16 +263,16 @@ def main():
         raise RuntimeError(
             "generation_plan.json自身签名无效或与完成清单不一致"
         )
-    matched_start = float(dataset_manifest["fault_time_s"]) + BUFFER
+    matched_start = max(float(dataset_manifest["fault_time_s"]) + BUFFER, dataset_manifest['analysis_interval']['start_s'])
 
     print("=" * 68)
-    print("六旋翼正式预处理：独立来源分组 + 单一标签 + Fold内缩放")
+    print("六旋翼v4接口预处理：独立来源分组 + 单一标签 + Fold内缩放")
     print(f"输入: {DATA_DIR}")
     print(f"特征方案: {FEATURE_SET} ({len(FEATURE_COLS)}维) = {FEATURE_COLS}")
     print(f"窗口={WINDOW}, 步长={STEP}, 重叠率={1 - STEP / WINDOW:.0%}")
     print(
         f"所有类别统一使用 t>{matched_start:g}s；"
-        "故障类同时满足故障后稳定缓冲，避免轨迹阶段混杂"
+        "故障类使用同一早期时间缓冲，不假定这些窗口稳定"
     )
     print("=" * 68)
 
@@ -307,16 +326,19 @@ def main():
 
     metadata = {
         **runtime_info(), "dataset_type": "hexarotor_simulation_only",
-        "formal_protocol": True, "data_dir": str(DATA_DIR),
+        "formal_protocol": dataset_manifest['formal_protocol'], "data_dir": str(DATA_DIR),
+        "model_version":dataset_manifest['model_version'],"config_hash":dataset_manifest['config_hash'],
+        "physics_parameters":dataset_manifest['physics_parameters'],"label_effectiveness":dataset_manifest['label_effectiveness'],
+        "feature_state_identity":"direct_observation_not_EKF_or_truth",
         "feature_set": FEATURE_SET, "feature_names": FEATURE_COLS,
         "window": WINDOW, "step": STEP, "overlap_fraction": 1 - STEP / WINDOW,
         "fault_buffer_s": BUFFER,
         "matched_analysis_start_s": matched_start,
         "normal_policy": "standalone normal runs, time-matched to fault classes",
-        "fault_policy": "post-fault stable segment, time-matched across classes",
+        "fault_policy": "fixed early transient interval shared by all classes; not presumed stable",
         "desired_thrust_array": "cmd_thrust.npy",
         "physics_target_array": "physics_thrust.npy",
-        "physics_target_column": "predicted_plant_thrust",
+        "physics_target_column": "predicted_plant_thrust (alias of steady_fault_predicted_thrust; not actual dynamic thrust)",
         "group_policy": "all classes sharing run_id form one paired holdout group",
         "groups_per_class": group_counts,
         "class_counts": {int(k): int(v) for k, v in Counter(y.tolist()).items()},

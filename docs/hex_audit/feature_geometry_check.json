@@ -1,0 +1,268 @@
+[
+  {
+    "file": "motor0_full__run001.csv",
+    "window_rows": 50,
+    "max_absolute_pitch_deg": 88.37571797412213,
+    "max_yaw_adjacent_step_rad": 1.332368397081912,
+    "same_gyro_channel_max_error": 0.0
+  },
+  {
+    "file": "motor0_full__run002.csv",
+    "window_rows": 50,
+    "max_absolute_pitch_deg": 88.49670189097337,
+    "max_yaw_adjacent_step_rad": 1.3170601542460114,
+    "same_gyro_channel_max_error": 0.0
+  },
+  {
+    "file": "motor0_partial__run001.csv",
+    "window_rows": 50,
+    "max_absolute_pitch_deg": 15.564354617199385,
+    "max_yaw_adjacent_step_rad": 0.0033577473455250004,
+    "same_gyro_channel_max_error": 0.0
+  },
+  {
+    "file": "motor0_partial__run002.csv",
+    "window_rows": 50,
+    "max_absolute_pitch_deg": 15.305122772803223,
+    "max_yaw_adjacent_step_rad": 0.0032263806382543,
+    "same_gyro_channel_max_error": 0.0
+  },
+  {
+    "file": "motor0_severe__run001.csv",
+    "window_rows": 50,
+    "max_absolute_pitch_deg": 88.67732388338084,
+    "max_yaw_adjacent_step_rad": 0.9354424359174154,
+    "same_gyro_channel_max_error": 0.0
+  },
+  {
+    "file": "motor0_severe__run002.csv",
+    "window_rows": 50,
+    "max_absolute_pitch_deg": 88.10705406879437,
+    "max_yaw_adjacent_step_rad": 0.8614109885658072,
+    "same_gyro_channel_max_error": 0.0
+  },
+  {
+    "file": "motor1_full__run001.csv",
+    "window_rows": 50,
+    "max_absolute_pitch_deg": 31.789789467904363,
+    "max_yaw_adjacent_step_rad": 0.036652759366697873,
+    "same_gyro_channel_max_error": 0.0
+  },
+  {
+    "file": "motor1_full__run002.csv",
+    "window_rows": 50,
+    "max_absolute_pitch_deg": 31.356725089810123,
+    "max_yaw_adjacent_step_rad": 0.037043113473966216,
+    "same_gyro_channel_max_error": 0.0
+  },
+  {
+    "file": "motor1_partial__run001.csv",
+    "window_rows": 50,
+    "max_absolute_pitch_deg": 8.086927805777552,
+    "max_yaw_adjacent_step_rad": 0.0022114433219550993,
+    "same_gyro_channel_max_error": 0.0
+  },
+  {
+    "file": "motor1_partial__run002.csv",
+    "window_rows": 50,
+    "max_absolute_pitch_deg": 7.74026647594068,
+    "max_yaw_adjacent_step_rad": 0.0027277127957444003,
+    "same_gyro_channel_max_error": 0.0
+  },
+  {
+    "file": "motor1_severe__run001.csv",
+    "window_rows": 50,
+    "max_absolute_pitch_deg": 31.169588603985574,
+    "max_yaw_adjacent_step_rad": 0.020796519679529224,
+    "same_gyro_channel_max_error": 0.0
+  },
+  {
+    "file": "motor1_severe__run002.csv",
+    "window_rows": 50,
+    "max_absolute_pitch_deg": 31.733448993627068,
+    "max_yaw_adjacent_step_rad": 0.02066663767349508,
+    "same_gyro_channel_max_error": 0.0
+  },
+  {
+    "file": "motor2_full__run001.csv",
+    "window_rows": 50,
+    "max_absolute_pitch_deg": 31.46371628675535,
+    "max_yaw_adjacent_step_rad": 0.036309044265995905,
+    "same_gyro_channel_max_error": 0.0
+  },
+  {
+    "file": "motor2_full__run002.csv",
+    "window_rows": 50,
+    "max_absolute_pitch_deg": 32.074186840178456,
+    "max_yaw_adjacent_step_rad": 0.036831472505922724,
+    "same_gyro_channel_max_error": 0.0
+  },
+  {
+    "file": "motor2_partial__run001.csv",
+    "window_rows": 50,
+    "max_absolute_pitch_deg": 8.266931941334768,
+    "max_yaw_adjacent_step_rad": 0.0032534985830323998,
+    "same_gyro_channel_max_error": 0.0
+  },
+  {
+    "file": "motor2_partial__run002.csv",
+    "window_rows": 50,
+    "max_absolute_pitch_deg": 8.248814343843877,
+    "max_yaw_adjacent_step_rad": 0.0024116767535778995,
+    "same_gyro_channel_max_error": 0.0
+  },
+  {
+    "file": "motor2_severe__run001.csv",
+    "window_rows": 50,
+    "max_absolute_pitch_deg": 32.017544920437594,
+    "max_yaw_adjacent_step_rad": 0.018839334093210203,
+    "same_gyro_channel_max_error": 0.0
+  },
+  {
+    "file": "motor2_severe__run002.csv",
+    "window_rows": 50,
+    "max_absolute_pitch_deg": 31.72047080104155,
+    "max_yaw_adjacent_step_rad": 0.01971162232767079,
+    "same_gyro_channel_max_error": 0.0
+  },
+  {
+    "file": "motor3_full__run001.csv",
+    "window_rows": 50,
+    "max_absolute_pitch_deg": 88.26727426873546,
+    "max_yaw_adjacent_step_rad": 1.215830946681875,
+    "same_gyro_channel_max_error": 0.0
+  },
+  {
+    "file": "motor3_full__run002.csv",
+    "window_rows": 50,
+    "max_absolute_pitch_deg": 88.40126801900404,
+    "max_yaw_adjacent_step_rad": 1.3942308085488415,
+    "same_gyro_channel_max_error": 0.0
+  },
+  {
+    "file": "motor3_partial__run001.csv",
+    "window_rows": 50,
+    "max_absolute_pitch_deg": 15.971192299385757,
+    "max_yaw_adjacent_step_rad": 0.0028558633908292008,
+    "same_gyro_channel_max_error": 0.0
+  },
+  {
+    "file": "motor3_partial__run002.csv",
+    "window_rows": 50,
+    "max_absolute_pitch_deg": 16.221452241215466,
+    "max_yaw_adjacent_step_rad": 0.0022301952982054004,
+    "same_gyro_channel_max_error": 0.0
+  },
+  {
+    "file": "motor3_severe__run001.csv",
+    "window_rows": 50,
+    "max_absolute_pitch_deg": 88.14117690594746,
+    "max_yaw_adjacent_step_rad": 0.915451463432956,
+    "same_gyro_channel_max_error": 0.0
+  },
+  {
+    "file": "motor3_severe__run002.csv",
+    "window_rows": 50,
+    "max_absolute_pitch_deg": 88.29723915937075,
+    "max_yaw_adjacent_step_rad": 0.930428940143287,
+    "same_gyro_channel_max_error": 0.0
+  },
+  {
+    "file": "motor4_full__run001.csv",
+    "window_rows": 50,
+    "max_absolute_pitch_deg": 28.64145637759711,
+    "max_yaw_adjacent_step_rad": 0.03668192447649882,
+    "same_gyro_channel_max_error": 0.0
+  },
+  {
+    "file": "motor4_full__run002.csv",
+    "window_rows": 50,
+    "max_absolute_pitch_deg": 28.387669654750038,
+    "max_yaw_adjacent_step_rad": 0.036998562384580935,
+    "same_gyro_channel_max_error": 0.0
+  },
+  {
+    "file": "motor4_partial__run001.csv",
+    "window_rows": 50,
+    "max_absolute_pitch_deg": 7.765219317519021,
+    "max_yaw_adjacent_step_rad": 0.0032553835065850002,
+    "same_gyro_channel_max_error": 0.0
+  },
+  {
+    "file": "motor4_partial__run002.csv",
+    "window_rows": 50,
+    "max_absolute_pitch_deg": 7.83122135038204,
+    "max_yaw_adjacent_step_rad": 0.0027518989300516997,
+    "same_gyro_channel_max_error": 0.0
+  },
+  {
+    "file": "motor4_severe__run001.csv",
+    "window_rows": 50,
+    "max_absolute_pitch_deg": 27.824578929831254,
+    "max_yaw_adjacent_step_rad": 0.0215051203574827,
+    "same_gyro_channel_max_error": 0.0
+  },
+  {
+    "file": "motor4_severe__run002.csv",
+    "window_rows": 50,
+    "max_absolute_pitch_deg": 27.128697620137455,
+    "max_yaw_adjacent_step_rad": 0.021085204279879366,
+    "same_gyro_channel_max_error": 0.0
+  },
+  {
+    "file": "motor5_full__run001.csv",
+    "window_rows": 50,
+    "max_absolute_pitch_deg": 28.69642712104717,
+    "max_yaw_adjacent_step_rad": 0.037741042102896416,
+    "same_gyro_channel_max_error": 0.0
+  },
+  {
+    "file": "motor5_full__run002.csv",
+    "window_rows": 50,
+    "max_absolute_pitch_deg": 28.46323119870873,
+    "max_yaw_adjacent_step_rad": 0.03804313110008428,
+    "same_gyro_channel_max_error": 0.0
+  },
+  {
+    "file": "motor5_partial__run001.csv",
+    "window_rows": 50,
+    "max_absolute_pitch_deg": 7.47879045463059,
+    "max_yaw_adjacent_step_rad": 0.0035367151014952004,
+    "same_gyro_channel_max_error": 0.0
+  },
+  {
+    "file": "motor5_partial__run002.csv",
+    "window_rows": 50,
+    "max_absolute_pitch_deg": 7.748181669391642,
+    "max_yaw_adjacent_step_rad": 0.003114594068273,
+    "same_gyro_channel_max_error": 0.0
+  },
+  {
+    "file": "motor5_severe__run001.csv",
+    "window_rows": 50,
+    "max_absolute_pitch_deg": 27.486064409968694,
+    "max_yaw_adjacent_step_rad": 0.021503245654889896,
+    "same_gyro_channel_max_error": 0.0
+  },
+  {
+    "file": "motor5_severe__run002.csv",
+    "window_rows": 50,
+    "max_absolute_pitch_deg": 27.722578998531343,
+    "max_yaw_adjacent_step_rad": 0.02074401487762939,
+    "same_gyro_channel_max_error": 0.0
+  },
+  {
+    "file": "normal__run001.csv",
+    "window_rows": 50,
+    "max_absolute_pitch_deg": 0.31321430425235663,
+    "max_yaw_adjacent_step_rad": 0.0035959606880614,
+    "same_gyro_channel_max_error": 0.0
+  },
+  {
+    "file": "normal__run002.csv",
+    "window_rows": 50,
+    "max_absolute_pitch_deg": 0.5588554171687938,
+    "max_yaw_adjacent_step_rad": 0.0030400603205158,
+    "same_gyro_channel_max_error": 0.0
+  }
+]

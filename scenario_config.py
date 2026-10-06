@@ -14,10 +14,9 @@ SEVERITY_LEVELS = (
     ("severe", "Sev", 0.2),
     ("partial", "Part", 0.8),
 )
-# RotorPy cannot retain enough stable post-fault data for motors 4/5 at exactly
-# zero effectiveness.  The residual factors are explicit assumptions, not
-# hidden changes to the label.
-FULL_FAULT_FACTOR_OVERRIDES = {4: 0.05, 5: 0.05}
+# Historical v3 residual factors are retained only in legacy_reference/.
+# Current Full means zero remaining steady effectiveness at every position.
+FULL_FAULT_FACTOR_OVERRIDES = {}  # v4: Full=0 for ALL six positions.
 
 
 @dataclass(frozen=True)

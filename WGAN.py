@@ -17,7 +17,6 @@ import torch.optim as optim
 from sklearn.preprocessing import MinMaxScaler
 from torch.utils.data import DataLoader, TensorDataset
 
-from hex_physical_characteristics import HEX_PHYSICAL_CHARACTERISTICS
 from scenario_config import effectiveness_table
 
 
@@ -36,8 +35,9 @@ def _env_flag(name, default=False):
     return value.strip().lower() not in {"0", "false", "no", "off"}
 
 
+FEATURE_SET=os.getenv('FEATURE_SET','combined').strip().lower()
 DATA_DIR = _path_env(
-    "DATA_DIR_OVERRIDE", PROJECT_ROOT / "plots" / "hex" / "data_process" / "combined"
+    "DATA_DIR_OVERRIDE", PROJECT_ROOT / "plots" / "hex_v4_research" / "data_process" / FEATURE_SET
 )
 SAVE_DIR = _path_env("WGAN_SAVE_DIR_OVERRIDE", PROJECT_ROOT / "plots" / "hex" / "wgan")
 
@@ -161,15 +161,17 @@ def physics_residual(
 
     The motor columns are located by name, never by their position.  Fault
     effectiveness is selected from each condition label.  ``physics_targets``
-    is the real fold-local ``predicted_plant_thrust`` sequence paired with the
-    batch.  Using the SE3-requested ``cmd_thrust`` would be physically wrong
-    whenever actuator loss or saturation makes that request unreachable.  If
+    is the fold-local STEADY command prediction paired with the batch, not
+    actual dynamic thrust during actuator lag. ``cmd_thrust`` is a different
+    requested wrench and is not this target. If
     the target is absent, hover weight is an explicitly reported fallback.
     Because the target trajectory is not an explicit generator condition,
     this is a distribution-level regularizer, not a full physics-informed
     dynamics residual.
     """
-    params = physics_params or HEX_PHYSICAL_CHARACTERISTICS
+    if physics_params is None:
+        raise ValueError('启用一致性正则必须提供数据版本中的physics_parameters，不能回退到当前飞机参数')
+    params = physics_params
     n_rotors = int(params["num_rotors"])
     expected_names = [f"cmd_motor{i}" for i in range(n_rotors)]
     index = {name: idx for idx, name in enumerate(feature_names)}
@@ -192,7 +194,7 @@ def physics_residual(
     effectiveness = eta_matrix[labels].unsqueeze(1)
     effective_thrust = (effectiveness * float(params["k_eta"]) * cmd.pow(2)).sum(dim=-1)
     if physics_targets is None:
-        target = torch.full_like(effective_thrust, float(params["mass"]) * 9.81)
+        target = torch.full_like(effective_thrust, float(params["mass"]) * float(params['gravity']))
     else:
         target = physics_targets.to(device=fake_x.device, dtype=fake_x.dtype)
         if target.ndim == 1:
@@ -371,6 +373,11 @@ def generate_synthetic(
 
 
 def _standalone():
+    if os.getenv('EXPERIMENT_MODE')!='interface_smoke':
+        raise RuntimeError('独立GAN入口仅作显式接口检查，正式GAN必须经classify.py折内训练')
+    metadata=__import__('json').loads((DATA_DIR/'preprocess_metadata.json').read_text(encoding='utf-8'))
+    if metadata.get('model_version')!='hex_research_v1' or metadata.get('feature_set')!=FEATURE_SET:
+        raise RuntimeError('GAN读取的数据模型/特征版本不一致')
     describe_device()
     raw_path, y_path = DATA_DIR / "X_raw.npy", DATA_DIR / "y_all.npy"
     if not raw_path.exists() or not y_path.exists():
@@ -385,6 +392,8 @@ def _standalone():
     G, _D, loss_g, loss_d = train(
         X, y, save_dir=SAVE_DIR, gan_scaler=scaler, feature_names=feature_names,
         physics_targets=targets,
+        physics_params=metadata['physics_parameters'],
+        label_effectiveness={int(k):v for k,v in metadata['label_effectiveness'].items()},
     )
     SAVE_DIR.mkdir(parents=True, exist_ok=True)
     fig, ax = plt.subplots(figsize=(9, 4))

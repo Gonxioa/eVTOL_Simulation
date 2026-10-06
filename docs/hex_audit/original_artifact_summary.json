@@ -1,0 +1,26 @@
+{
+  "output": {
+    "count": 0,
+    "total_bytes": 0
+  },
+  "output_uavfd_f550": {
+    "count": 50,
+    "total_bytes": 6687229
+  },
+  "plots": {
+    "count": 68,
+    "total_bytes": 103342608
+  },
+  "RflyMAD多旋翼故障数据集": {
+    "count": 53380,
+    "total_bytes": 45043244037
+  },
+  "runs": {
+    "count": 9,
+    "total_bytes": 98589
+  },
+  "UAV-FD": {
+    "count": 30,
+    "total_bytes": 879049881
+  }
+}

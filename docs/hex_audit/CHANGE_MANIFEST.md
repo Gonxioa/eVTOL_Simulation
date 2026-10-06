@@ -1,0 +1,95 @@
+# 本轮差异与交付清单
+
+独立工作树、本地分支codex/hex-audit-control，基线ef5fa5b。原桌面工作区6项修改和UAV-FD源码/文档内容保护通过，见protected_final_check.json。
+
+本轮改动包含导入候选审计、自有动力学与控制、版本化观测/故障/数据、学习接口改动、隔离旧参考和实际验证文档。原始MAT、旧训练结果和新大量数组均不在提交范围。
+
+差异补丁：output_hex_audit/hex_audit_changes.patch。暂存检查仅在本独立工作树进行，原工作区没有暂存或重置。源任务文件保留原有2处Markdown硬换行空格，其他改动通过git diff --check。
+
+| 文件 | 本地SHA256或删除状态 |
+| --- | --- |
+| CODEX_HEXAROTOR_AUDIT_AND_CONTROL_CHECKLIST.md | 78cb8d6c3d2cef89f6e3a5fc43b7ca3a40f288bf749a2702f296538ce7e5d9c7 |
+| PROJECT_HANDOFF.md | 215c4b300db4a7d80ad6476a5b082e76ff0e672528654d89d3d3331f15a7dded |
+| README.md | 3db4ba0d134ff3c62acfdbb6e2db11ee1583cd7c4a15cad281fe39cf9d7a9240 |
+| RUNNING_ORDER.md | d039965442ba90ae6f3e8aed4748778408433db069c4f65fe2598efe48e08396 |
+| WGAN.py | e22200d789a43148437f5174b3a2fc2ae0b74b21ab014441c2631c771a0c021c |
+| classify.py | a038d9b38f807c295608d70271b2c4b75ba8723c231e2cb9c8298eddc8617831 |
+| control_allocation.py | a8b942b05f51125146ea7b544e9fbdf0006ed8f8bf86886deeeead3e3eea26e3 |
+| data_process.py | a32f604d6fed22268845b3615b18b2d51d336092c05b5a5df368f35f1105d59b |
+| docs/HEXAROTOR_PHYSICAL_CHARACTERISTICS.md | ba9557633061cea114387d2b35993ff349f84390a99a783e92e81e0a6b389378 |
+| docs/hex_audit/CONTROL_SPEC.md | c45bdb3ec8b7a12fca8104684406a9f90c8cf3bb838a14098e911116f2a279c9 |
+| docs/hex_audit/DATA_CONTRACT.md | 69f7ecd29cb57a3621f3b4de09d49530f6409d3e321dfe63ebe7deb2445f15e5 |
+| docs/hex_audit/EQUATION_AUDIT.md | e212d8379f75cafcc4b20a3fe50892e911ca8f5121847f155ca17e00958c1bdd |
+| docs/hex_audit/GEOMETRY_AND_CHANNEL_MAP.md | 6add791f9a117b2aef8dfcaf5990a7f522d6e7a23660d4b4757a79945517d178 |
+| docs/hex_audit/MODEL_STATUS.md | 198e59cd22edfbfffb84cf482b90ef7f6ce024fa5e822c16c0600965193f60d7 |
+| docs/hex_audit/PARAMETER_AUDIT.md | 43ed1409d43e1b10c6370fca571604de68ef2bea4b34e6fb7de1f4c039b7fa4d |
+| docs/hex_audit/PARAMETER_READ_PATHS.md | 9c790342759e078b2a36a798dde6b2e3232eb755185beda796af8b3b322af3ee |
+| docs/hex_audit/PROGRESS.md | cfe6bd94d44f440b775ac808afbdd0d85c550d4ff79ec1ba414c97e4b5141b1f |
+| docs/hex_audit/README.md | daa80fee7be7a3b489587b1507c1387756bae83c2a6a8c2c003fd4254a3ae6dc |
+| docs/hex_audit/REUSE_REGISTER.md | 7b76067ddf865405d2c7ccc2a7120f42c4270860b17559cd031e947730500eda |
+| docs/hex_audit/THIRD_PARTY_NOTICES.md | 359deed1b840d4625eb6c2ee83ce0696ab56236e8d13aefe617e7e81d9d97179 |
+| docs/hex_audit/VALIDATION_REPORT.md | c9b958da54ba75d86857ffc99b52dd469fa24240c9accef12cb7da016c98fa4d |
+| docs/hex_audit/audit_metrics.json | be5cb5616c1f06daa4a850f035d30716882817b3c994d41312b182aed52d79f9 |
+| docs/hex_audit/baseline.json | 7f7060ac0a6f20e1d8126513c4bcbad45b3b0a29d22d9822d0bdd6072da523fd |
+| docs/hex_audit/baseline_tests.txt | b5a63185e7195a01d1720b00adfd48bd35939c7d74d9147d3ae432a172b12381 |
+| docs/hex_audit/baseline_tracked_tree.txt | a3cd9c3370a45050570ec1f3f4456a9b73236ea6b3778b75b8498fe6e302585c |
+| docs/hex_audit/check_receipt.json | bad2b8298619e446a40cf7f2d274c3a0c83c025725768fb0aae54da8106afa79 |
+| docs/hex_audit/checks.txt | 3cfef6a28fe3ed83f6d693cfecad82b7239dc8af3497f9cc29be156fcd57ac96 |
+| docs/hex_audit/dependencies.lock.txt | 892191ed9c7242dbd1d6b451ddc78da4ba8caa5db00b08838b2a653f2b18a0fa |
+| docs/hex_audit/equation_ledger.json | 9935cf47144cb958ef6d0e2032c96b3e5806cf885609a87080f79f7503eb95c0 |
+| docs/hex_audit/fault_feature_sensitivity.json | fb5848d487874a7bb0b501800023c12611d4e600d7373e71f0cfe5925c29478b |
+| docs/hex_audit/feature_geometry_check.json | c930d7419d5ea9ba9b3397aab999d8dde32b1bfa05509cb16315dd46b35f5194 |
+| docs/hex_audit/figures/fault_validation.png | d57a33219c91c4ff80b939e9c1732bbb8b58290fa2e9678e83194c34114af4c9 |
+| docs/hex_audit/figures/normal_validation.png | fdf7c224fd74eb132bd34d6505011104369a70167a271375f8e08097b3ca833f |
+| docs/hex_audit/final_code_snapshot.json | 425ba2c56990cf6c27980002c58addb1a91774c440ec89e949cbb110e10eef01 |
+| docs/hex_audit/geometry_channel_map.json | 2375e7a78737c7b5bc5426df835458ca4ae7c086b1293b3f59a9304b152cdfa8 |
+| docs/hex_audit/learning_checks.txt | d159948a7045f41d8c2b6037af928f7fd6aec843a21c81d26fe299732a057893 |
+| docs/hex_audit/learning_checks_rotation_combined.txt | 5daefb09b677a605c3c46f78421bfc421564dc4a3b22cd3a555eceb4f6618991 |
+| docs/hex_audit/learning_smoke.json | 8e5f6e9d5fd3427b2302e0bc8df8b8ef468d33d389d26d96bc5176277e2d1427 |
+| docs/hex_audit/learning_smoke_rotation_combined.json | a4395c19d23ee17d16e362d687b29ab65f1c9ce3f0515c72cee834491f15a1e7 |
+| docs/hex_audit/original_artifact_summary.json | 95d666e6d8a8c129e34df4864c4c2f193857941902c100db722431477f0d630c |
+| docs/hex_audit/parameter_ledger.json | f92081d282b2bf5ae8146a56a72ff0f0ee7fe8b633213d16d79d1dd5101c55b4 |
+| docs/hex_audit/protected_final_check.json | aa45a0d427f66787441f9c80c82df63d0ac47e2258ff292398dbe70f488a197e |
+| docs/hex_audit/rotation_generator_check.json | f49383667850ae8ff1b439587d97c969be1e912d29139c635afba7864069658d |
+| docs/hex_audit/source_archive_index.json | 17466cb6685d89a650b8940f7835a95b7bfe6e1128332dc2e4876e73a0aac4b9 |
+| docs/hex_audit/source_fetch.json | a483b89ccdfdf0e5e6f6a875bdfdac10877bcb297791edf768e0c69b084cff5f |
+| docs/hex_audit/sources.json | 36e8b62281304b8c2ca5dca259141362aebb42f913c5ea5f3d80d715f5d2c518 |
+| docs/hex_audit/stage_status.json | 7f5401b58927912a1d482ba06442200c4916289258911cd18327f2ea0b3cea19 |
+| docs/hex_audit/termination_audit.json | 5bc5faf8e1bbee77548ef45a2c431156ed6d6bd62bbecafcc30563f54fcce57b |
+| docs/hex_audit/third_party_version_check.json | 1eac1905f533d43c83f96afe883286827730feec2a49cb139d11943c2ad09ce2 |
+| docs/hex_audit/validation_metrics.json | 8ae5df53fb692c037c3aa028a9b626bd518f6f3a25b48592c41c943d0f1ccd15 |
+| hex_audit_reports.py | 6f7a65a51f2d5df633babdabcde6e6131288c3c6ee49b85fed6aae0540a4cdf9 |
+| hex_params.py | 43e2c6a075b42eee11a2a9e1ad93838d2cfb33b7ff4dab0216808b0c4e31a801 |
+| hex_physical_characteristics.py | 77e6a790e49c0cdda53971300f495c9641533aff6be9eed4f2392ec975e1bd31 |
+| hex_research/__init__.py | cc46472d04feb04d9789e8df3fd55dd194dcb4b79914693c1b087a24774134f2 |
+| hex_research/__main__.py | b612f4e3dbe0804005f99ef9d5a147331cd4769782759cdda46ef6e1ccf0e71f |
+| hex_research/configs/research.json | a702049678cb06804f8a81edd25fdd965f2002e0207326ad68c9a4a0de2d662d |
+| hex_research/configuration.py | cc32d7aacdca877c572a3918b7e9f02fd987affbfe0e244b2f7f2bd159bd3e76 |
+| hex_research/control.py | 6fafd36e3c81db94518f6d56f0f2c91bdb17378353b1924f379a68431b8d497a |
+| hex_research/data.py | 0510eebb362e9e4c3dadbd96d96ccc0567a88a479674744a675e7457e54f14c1 |
+| hex_research/dynamics.py | c44c78ef55e126ac1428db5f8dbc0e26b498bbba3ebb8bfc2e3fb71292f9e9d2 |
+| hex_research/math3d.py | 74ed58f34f337cb5e813e551662b8046b0ce26e6a2baa72baea0323c4fea60ed |
+| hex_research/observation.py | 59d918af93f89f556692eaa17c824040fcf91d954918c33fdbef9228f0dba4a9 |
+| hex_research/simulation.py | 9f9eb8b5c0b7e5816ed21f926bb3becaa153d4ff9b6d871e791097b6c388de46 |
+| hex_research/validation.py | 7eaead0e4ada8b4ca37b09285b91edc9cb3419be52655e25f1d16f4223ed5fe0 |
+| hex_source_fetch.py | a1e46aac1ada16839dcf1472326824a48a236a1f257a8c00e386fa1ab95e4182 |
+| legacy_reference/WGAN.py | 3b00e443f42eb735cacb20f9eb40047890c0a6aade7f18f6f85d63dcd04c5b4a |
+| legacy_reference/classify.py | 7ea8b8de4ef4c3a5454fd9b8e906ea039410e82dcb607f6f79d9008cd787598e |
+| legacy_reference/control_allocation.py | bf5c8c7dff17298c90ddace95cd47b118e7bae443106a8ae813d71b1cfabd1c2 |
+| legacy_reference/data_process.py | 10b00d69175fa304eda16cf5173f2498379cebf0106c4e9f7e954f57c0756575 |
+| legacy_reference/docs/HEXAROTOR_PHYSICAL_CHARACTERISTICS.md | 1833bcd97b1134eeec584dc4e83ba18569639e7bc09a3cb2d2c643d01e6f870d |
+| legacy_reference/hex_params.py | f0be094f97da3c94b64a75f8ef6435cff22a1c8a6110d54bff6bdbd0bab68bc9 |
+| legacy_reference/hex_physical_characteristics.py | 7aeaf3acd682d9d399b670d26a9b140bc61492bbec6370048bc27e413bf48849 |
+| legacy_reference/main.py | 5c5b8b37994ece58f6562b966759fc4de13c5af9af3e89afb354d8d10f71458f |
+| legacy_reference/provenance.py | 38bdef20ade038f89469e6172300556c399be602621c46666ed8b919c6c1ce5b |
+| legacy_reference/scenario_config.py | c43d104fdf93aa7e2c88cb24680768862894753123ee83396de7f8816e490469 |
+| legacy_reference/tests/test_control_allocation.py | 3f3833238e7324b6d97d6d484e48f6ff9589bfa100af9cba3838212102c1fdb0 |
+| legacy_reference/tests/test_controller_allocation_integration.py | 8a48310075b772da5fe77880af69f8e3c21b1e7f300a1e09f7e6de07d5fa8610 |
+| legacy_reference/tests/test_hex_physical_characteristics.py | 14d4790ef2ce8e89301a54e3c179353adfaf97c3a09ce6b8dbf3c97138a6ab7f |
+| legacy_reference/tests/test_imu_wind.py | d3ea2a4441f57867557036f8ff43e169ef84479d7fc8af1d20f24c1d2942580c |
+| legacy_reference/validate_hex_data.py | 6819af563ceadc19132aa170449e90f551339e9c15c4c4c1952ce5985cc6d197 |
+| main.py | f5ecb91e9ffea5a1eedb5bec76814d1f69d1f8cd52c0e4b167ee71f69251e7a1 |
+| scenario_config.py | d49b328b4325bf7fc456cbd62b3c48c9541ec9fb3914c081d4d470bded2389e1 |
+| tests/test_control_allocation.py | 3f3833238e7324b6d97d6d484e48f6ff9589bfa100af9cba3838212102c1fdb0 |
+| tests/test_hex_research.py | 10338e5d438831ad8bd65829fae4ce8d7bc4f04d256a200d82327fbac5d6cc6f |
+| validate_hex_data.py | 3a708248590160e9dd99ec58bfca6ed97b27276a7f6aac128a161304c2c1a10e |

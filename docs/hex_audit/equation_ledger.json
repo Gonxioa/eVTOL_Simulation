@@ -1,0 +1,98 @@
+[
+  {
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "formula": "pdot=v; vdot=-g e3+R F_B/m",
+    "id": "E1",
+    "implementation": "dynamics.HexPlant.derivative",
+    "source_and_assumptions": "R1; own ENU/FLU conventions",
+    "validation": "freefall, hover, force response"
+  },
+  {
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "formula": "J wdot=M-w cross(Jw)",
+    "id": "E2",
+    "implementation": "dynamics.HexPlant.derivative",
+    "source_and_assumptions": "R1",
+    "validation": "single motor, angular recovery, integration convergence"
+  },
+  {
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "formula": "qdot=.5 q HamiltonProduct [w,0]",
+    "id": "E3",
+    "implementation": "math3d.multiply; dynamics",
+    "source_and_assumptions": "own Hamilton xyzw derivation",
+    "validation": "quaternion/antipodal/coordinate checks"
+  },
+  {
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "formula": "Ti=kTi Omega_i²; Qi=kQi Omega_i²; M=sum(r cross Ti e3+d Qi e3)",
+    "id": "E4",
+    "implementation": "dynamics.wrench",
+    "source_and_assumptions": "R1; independent component derivation",
+    "validation": "six single-motor components and symmetry"
+  },
+  {
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "formula": "Omega_dot=(sqrt(lambda)*Omega_cmd-Omega)/tau",
+    "id": "E5",
+    "implementation": "dynamics.derivative; FaultSchedule",
+    "source_and_assumptions": "explicit research phenomenological mechanism",
+    "validation": "exact fault boundary, lag, complete stop, no double scaling"
+  },
+  {
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "formula": "D=-norm(vrel) diag(cD) vrel; Hi=-Omega_i diag(kdrag)(vrel+w cross ri)",
+    "id": "E6",
+    "implementation": "dynamics.wrench",
+    "source_and_assumptions": "R1 adapted; kh excluded",
+    "validation": "stopped rotors and aero units"
+  },
+  {
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "formula": "u=A f; A_i=[1,yi,-xi,di kQi/kTi]",
+    "id": "E7",
+    "implementation": "configuration.matrix; control_allocation",
+    "source_and_assumptions": "own cross-product reduction; not six-axis actuation",
+    "validation": "10 retained allocation tests + capability LP"
+  },
+  {
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "formula": "fS=R_BS.T [R.T(a+g e3)+alpha cross rI+w cross(w cross rI)]",
+    "id": "E8",
+    "implementation": "observation.Sensors",
+    "source_and_assumptions": "own rigid point acceleration",
+    "validation": "freefall, installation rotation, centripetal lever"
+  },
+  {
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "formula": "v_sp=clip(vd+Kx*(xd-xhat)); a=ad+Kv ev+Iv-Kdv filtered_vdot",
+    "id": "E9",
+    "implementation": "control.CascadeController",
+    "source_and_assumptions": "R2/R3 structure; own SI design",
+    "validation": "position step, tracking, saturation recovery"
+  },
+  {
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "formula": "F=m(a+g e3); qd=thrust/yaw construction; w_sp=clip(KR*2vec(qerr)+Rhat.T e3 yaw_dot)",
+    "id": "E10",
+    "implementation": "control.CascadeController; math3d",
+    "source_and_assumptions": "R2 concept; full-quaternion research law differs from PX4 reduced-yaw law",
+    "validation": "zero force, collinear,180deg,q/-q, tilted yaw feedforward"
+  },
+  {
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "formula": "alpha_c=Kpw(wsp-w)+Iw-Kdw filtered_wdot; M=Jalpha_c+w cross Jw",
+    "id": "E11",
+    "implementation": "control.CascadeController",
+    "source_and_assumptions": "R2 structure; own SI outputs",
+    "validation": "rate recovery, limits, reset, nominal antiwindup"
+  },
+  {
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "formula": "white_std=density/sqrt(dt); bias_increment=diffusion*sqrt(dt); OU a=exp(-dt/tau)",
+    "id": "E12",
+    "implementation": "observation.Sensors/OUWind",
+    "source_and_assumptions": "own stochastic process convention; no manufacturer PSD claim",
+    "validation": "seed/no-state-write/export-clock checks and feedback flights"
+  }
+]

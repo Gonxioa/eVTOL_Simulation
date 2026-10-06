@@ -1,0 +1,49 @@
+[
+  {
+    "command": [
+      "python",
+      "-X",
+      "utf8",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "exit": 0
+  },
+  {
+    "command": [
+      "python",
+      "-X",
+      "utf8",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "uavfd_f550/tests",
+      "-v"
+    ],
+    "exit": 0
+  },
+  {
+    "command": [
+      "python",
+      "-X",
+      "utf8",
+      "validate_hex_data.py"
+    ],
+    "exit": 0
+  },
+  {
+    "command": [
+      "python",
+      "-X",
+      "utf8",
+      "main.py",
+      "report"
+    ],
+    "exit": 0
+  }
+]

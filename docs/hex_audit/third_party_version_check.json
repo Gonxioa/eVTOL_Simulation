@@ -1,0 +1,14 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/spencerfolk/rotorpy/v2.1.2/rotorpy/vehicles/multirotor.py",
+    "official_sha256": "810e6036a982d5113c0ade9635bc27c8055722dc90330cf82bd787553091ebca",
+    "installed_sha256": "810e6036a982d5113c0ade9635bc27c8055722dc90330cf82bd787553091ebca",
+    "identical_bytes": true
+  },
+  {
+    "url": "https://raw.githubusercontent.com/spencerfolk/rotorpy/v2.1.2/rotorpy/controllers/quadrotor_control.py",
+    "official_sha256": "a40087a448408a0486172be8c21460e9b04adbc2380f82a80bd1f6af2892c69e",
+    "installed_sha256": "a40087a448408a0486172be8c21460e9b04adbc2380f82a80bd1f6af2892c69e",
+    "identical_bytes": true
+  }
+]

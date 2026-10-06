@@ -1,0 +1,50 @@
+{
+  "Hummingbird_k_m_is_different": true,
+  "adjacent_hub_distance_m": 0.275,
+  "allocation_shape": [
+    4,
+    6
+  ],
+  "disk_clearance_m": 0.033700000000000035,
+  "hover_rad_s": 863.8139247802708,
+  "hover_rpm": 8248.815362423446,
+  "inertia_eigenvalues": [
+    0.030527500000000006,
+    0.03052750000000001,
+    0.05937500000000001
+  ],
+  "inertia_kg_m2": [
+    [
+      0.030527500000000006,
+      -2.6020852139652106e-18,
+      0.0
+    ],
+    [
+      -2.6020852139652106e-18,
+      0.03052750000000001,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.05937500000000001
+    ]
+  ],
+  "legacy_candidate_inertia_is_effective_tilted_aircraft_identification": true,
+  "legacy_candidate_triangle_pass": false,
+  "legacy_equal_hummingbird_fields_confirmed": [
+    "c_Dx",
+    "c_Dy",
+    "c_Dz",
+    "k_d",
+    "k_z",
+    "k_h",
+    "k_flap"
+  ],
+  "legacy_stopped_translation_lift_N": 0.08135999999999999,
+  "mass_kg": 3.4,
+  "max_thrust_to_weight": 1.62160460514481,
+  "no_measured_real_aircraft_parameters": true,
+  "state_size": 19,
+  "triangle_pass": true
+}

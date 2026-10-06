@@ -1,3 +1,9 @@
+## 2026-10-06：研究六旋翼审计与自有飞控
+
+最新主线恢复正常+六个位置×Full/Severe/Partial的19类执行器效能下降任务。默认入口为`python main.py validate`，说明和实际结果见[docs/hex_audit/README.md](docs/hex_audit/README.md)。当前核心为自有ENU/FLU、19状态动力学与SI串级控制，旧SE3/RotorPy入口和原24项测试隔离保存在`legacy_reference/`。
+
+Full对所有六个位置统一为0；旧5%特例只属于历史v3。当前参数为研究设计，不是UAV-FD真值。UAV-FD独立包与11条锁定测试保持原样；此前“暂停19类主线”的段落是2026-10-04历史边界，本轮以这里为准。正常研究条件通过，Full/Severe早停保留；学习仅完成接口检查，实飞与GAN改善未验证。本轮未合并或推送。
+
 # eVTOL_Simulation — Project Handoff
 
 ## 2026-10-04：UAV-FD／F550 独立建模状态

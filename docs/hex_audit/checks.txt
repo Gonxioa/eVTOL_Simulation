@@ -1,0 +1,58 @@
+COMMAND: python -X utf8 -m unittest discover -s tests -v
+EXIT: 0
+test_allocation_matrix_matches_hex_geometry (test_control_allocation.ControlAllocationTests.test_allocation_matrix_matches_hex_geometry) ... ok
+test_allocator_is_deterministic (test_control_allocation.ControlAllocationTests.test_allocator_is_deterministic) ... ok
+test_diagnostic_priority_sacrifices_yaw_first (test_control_allocation.ControlAllocationTests.test_diagnostic_priority_sacrifices_yaw_first) ... ok
+test_effectiveness_is_applied_once_in_plant_prediction (test_control_allocation.ControlAllocationTests.test_effectiveness_is_applied_once_in_plant_prediction) ... ok
+test_excess_collective_returns_best_bounded_solution (test_control_allocation.ControlAllocationTests.test_excess_collective_returns_best_bounded_solution) ... ok
+test_invalid_inputs_fail_loudly (test_control_allocation.ControlAllocationTests.test_invalid_inputs_fail_loudly) ... ok
+test_negative_collective_returns_zero_without_signed_sqrt (test_control_allocation.ControlAllocationTests.test_negative_collective_returns_zero_without_signed_sqrt) ... ok
+test_normal_hover_is_exact_symmetric_and_inside_speed_limit (test_control_allocation.ControlAllocationTests.test_normal_hover_is_exact_symmetric_and_inside_speed_limit) ... ok
+test_random_feasible_wrenches_remain_physical (test_control_allocation.ControlAllocationTests.test_random_feasible_wrenches_remain_physical) ... ok
+test_schedule_changes_exactly_at_fault_time (test_control_allocation.ControlAllocationTests.test_schedule_changes_exactly_at_fault_time) ... ok
+test_antipodal_180_zero_force_and_collinear (test_hex_research.ResearchChecks.test_antipodal_180_zero_force_and_collinear) ... ok
+test_controller_clock_reset_limits_and_fault_truth_isolation (test_hex_research.ResearchChecks.test_controller_clock_reset_limits_and_fault_truth_isolation) ... ok
+test_coordinate_axial_vector_identity (test_hex_research.ResearchChecks.test_coordinate_axial_vector_identity) ... ok
+test_exact_fault_boundary_lag_recovery_no_double_loss (test_hex_research.ResearchChecks.test_exact_fault_boundary_lag_recovery_no_double_loss) ... ok
+test_export_clock_does_not_change_feedback_or_random_physics (test_hex_research.ResearchChecks.test_export_clock_does_not_change_feedback_or_random_physics) ... ok
+test_fault_float_boundary_is_not_rounded_to_inactive_tick (test_hex_research.ResearchChecks.test_fault_float_boundary_is_not_rounded_to_inactive_tick) ... ok
+test_freefall_and_sensor_lever_installation (test_hex_research.ResearchChecks.test_freefall_and_sensor_lever_installation) ... ok
+test_healthy_idle_bound_cannot_prevent_fault_stop (test_hex_research.ResearchChecks.test_healthy_idle_bound_cannot_prevent_fault_stop) ... ok
+test_known_force_torque_and_motor_exponential (test_hex_research.ResearchChecks.test_known_force_torque_and_motor_exponential) ... ok
+test_observation_no_state_write_and_seed_reproducibility (test_hex_research.ResearchChecks.test_observation_no_state_write_and_seed_reproducibility) ... ok
+test_physical_geometry_and_units (test_hex_research.ResearchChecks.test_physical_geometry_and_units) ... ok
+test_real_normal_export_with_optional_fault_time (test_hex_research.ResearchChecks.test_real_normal_export_with_optional_fault_time) ... ok
+test_regularized_allocation_does_not_bypass_objective (test_hex_research.ResearchChecks.test_regularized_allocation_does_not_bypass_objective) ... ok
+test_rotation_columns_remain_continuous_across_euler_gimbal (test_hex_research.ResearchChecks.test_rotation_columns_remain_continuous_across_euler_gimbal) ... ok
+test_single_motor_analytic_components_and_stopped_aero (test_hex_research.ResearchChecks.test_single_motor_analytic_components_and_stopped_aero) ... ok
+test_uavfd_adapter_reorders_scalar_without_transferring_parameters (test_hex_research.ResearchChecks.test_uavfd_adapter_reorders_scalar_without_transferring_parameters) ... ok
+test_yaw_feedforward_under_tilt (test_hex_research.ResearchChecks.test_yaw_feedforward_under_tilt) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 1.707s
+
+OK
+
+COMMAND: python -X utf8 -m unittest discover -s uavfd_f550/tests -v
+EXIT: 0
+analytical: 23/23 passed
+test_duplicate_requested_mat_variable_rejected (test_model.AnalyticalTests.test_duplicate_requested_mat_variable_rejected) ... ok
+test_hdf5_matlab_cell_labels (test_model.AnalyticalTests.test_hdf5_matlab_cell_labels) ... ok
+test_invalid_physics_rejected (test_model.AnalyticalTests.test_invalid_physics_rejected) ... ok
+test_labels_override_column_order_and_average_intersection (test_model.AnalyticalTests.test_labels_override_column_order_and_average_intersection) ... ok
+test_lock_and_split (test_model.AnalyticalTests.test_lock_and_split) ... ok
+test_physical_identities (test_model.AnalyticalTests.test_physical_identities) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.482s
+
+OK
+
+COMMAND: python -X utf8 validate_hex_data.py
+EXIT: 0
+dataset integrity: 38 sources checked; early stops retained.
+
+COMMAND: python -X utf8 main.py report
+EXIT: 0
+Audit ledgers and specifications saved: C:\Users\lenovo\.codex\worktrees\hex-audit-control\eVTOL_Simulation\docs\hex_audit
+Actual validation report and stage states saved.

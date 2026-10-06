@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-06",
+  "base_commit": "ef5fa5b0d7e00e63f9a4afe06e78128c1886b82b",
+  "code_sha256": {
+    "hex_research\\configuration.py": "cc32d7aacdca877c572a3918b7e9f02fd987affbfe0e244b2f7f2bd159bd3e76",
+    "hex_research\\control.py": "6fafd36e3c81db94518f6d56f0f2c91bdb17378353b1924f379a68431b8d497a",
+    "hex_research\\data.py": "0510eebb362e9e4c3dadbd96d96ccc0567a88a479674744a675e7457e54f14c1",
+    "hex_research\\dynamics.py": "c44c78ef55e126ac1428db5f8dbc0e26b498bbba3ebb8bfc2e3fb71292f9e9d2",
+    "hex_research\\math3d.py": "74ed58f34f337cb5e813e551662b8046b0ce26e6a2baa72baea0323c4fea60ed",
+    "hex_research\\observation.py": "59d918af93f89f556692eaa17c824040fcf91d954918c33fdbef9228f0dba4a9",
+    "hex_research\\simulation.py": "9f9eb8b5c0b7e5816ed21f926bb3becaa153d4ff9b6d871e791097b6c388de46",
+    "hex_research\\validation.py": "7eaead0e4ada8b4ca37b09285b91edc9cb3419be52655e25f1d16f4223ed5fe0",
+    "hex_research\\__init__.py": "cc46472d04feb04d9789e8df3fd55dd194dcb4b79914693c1b087a24774134f2",
+    "hex_research\\__main__.py": "b612f4e3dbe0804005f99ef9d5a147331cd4769782759cdda46ef6e1ccf0e71f",
+    "main.py": "f5ecb91e9ffea5a1eedb5bec76814d1f69d1f8cd52c0e4b167ee71f69251e7a1",
+    "hex_params.py": "43e2c6a075b42eee11a2a9e1ad93838d2cfb33b7ff4dab0216808b0c4e31a801",
+    "hex_physical_characteristics.py": "77e6a790e49c0cdda53971300f495c9641533aff6be9eed4f2392ec975e1bd31",
+    "control_allocation.py": "a8b942b05f51125146ea7b544e9fbdf0006ed8f8bf86886deeeead3e3eea26e3",
+    "scenario_config.py": "d49b328b4325bf7fc456cbd62b3c48c9541ec9fb3914c081d4d470bded2389e1",
+    "data_process.py": "a32f604d6fed22268845b3615b18b2d51d336092c05b5a5df368f35f1105d59b",
+    "classify.py": "a038d9b38f807c295608d70271b2c4b75ba8723c231e2cb9c8298eddc8617831",
+    "WGAN.py": "e22200d789a43148437f5174b3a2fc2ae0b74b21ab014441c2631c771a0c021c",
+    "hex_audit_reports.py": "6f7a65a51f2d5df633babdabcde6e6131288c3c6ee49b85fed6aae0540a4cdf9"
+  },
+  "config_sha256": "a702049678cb06804f8a81edd25fdd965f2002e0207326ad68c9a4a0de2d662d",
+  "execution_note": "Numerical reports/data retain originally executed parameters. Subsequent changes added guards, exact sub-tick edges, adapters/reporting. Canonical recorded normal/fault times and valid values are unchanged; final regression covers additions. Current signature rejects resume into earlier snapshots."
+}

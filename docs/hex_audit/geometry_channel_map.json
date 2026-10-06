@@ -1,0 +1,92 @@
+[
+  {
+    "actual_column": "truth_rotor0",
+    "body_yaw_reaction_sign": 1,
+    "command_column": "cmd_motor0",
+    "document_motor": 1,
+    "from_above": "CW",
+    "index": 0,
+    "measurement_column": "measured_rotor0",
+    "position_FLU_m": [
+      0.275,
+      0.0,
+      0.0
+    ],
+    "rotor_spin_about_plus_z": -1
+  },
+  {
+    "actual_column": "truth_rotor1",
+    "body_yaw_reaction_sign": -1,
+    "command_column": "cmd_motor1",
+    "document_motor": 2,
+    "from_above": "CCW",
+    "index": 1,
+    "measurement_column": "measured_rotor1",
+    "position_FLU_m": [
+      0.13750000000000004,
+      0.23815698604072064,
+      0.0
+    ],
+    "rotor_spin_about_plus_z": 1
+  },
+  {
+    "actual_column": "truth_rotor2",
+    "body_yaw_reaction_sign": 1,
+    "command_column": "cmd_motor2",
+    "document_motor": 3,
+    "from_above": "CW",
+    "index": 2,
+    "measurement_column": "measured_rotor2",
+    "position_FLU_m": [
+      -0.13749999999999996,
+      0.23815698604072066,
+      0.0
+    ],
+    "rotor_spin_about_plus_z": -1
+  },
+  {
+    "actual_column": "truth_rotor3",
+    "body_yaw_reaction_sign": -1,
+    "command_column": "cmd_motor3",
+    "document_motor": 4,
+    "from_above": "CCW",
+    "index": 3,
+    "measurement_column": "measured_rotor3",
+    "position_FLU_m": [
+      -0.275,
+      3.367778697655222e-17,
+      0.0
+    ],
+    "rotor_spin_about_plus_z": 1
+  },
+  {
+    "actual_column": "truth_rotor4",
+    "body_yaw_reaction_sign": 1,
+    "command_column": "cmd_motor4",
+    "document_motor": 5,
+    "from_above": "CW",
+    "index": 4,
+    "measurement_column": "measured_rotor4",
+    "position_FLU_m": [
+      -0.13750000000000012,
+      -0.2381569860407206,
+      0.0
+    ],
+    "rotor_spin_about_plus_z": -1
+  },
+  {
+    "actual_column": "truth_rotor5",
+    "body_yaw_reaction_sign": -1,
+    "command_column": "cmd_motor5",
+    "document_motor": 6,
+    "from_above": "CCW",
+    "index": 5,
+    "measurement_column": "measured_rotor5",
+    "position_FLU_m": [
+      0.13750000000000004,
+      -0.23815698604072064,
+      0.0
+    ],
+    "rotor_spin_about_plus_z": 1
+  }
+]

@@ -1,0 +1,185 @@
+{
+  "cases": {
+    "airframe.arm_radius_mx0.9": {
+      "controller_nominal_parameters": "follow the changed design config; not a mismatch-robustness test",
+      "gyro_rms_rad_s": [
+        0.0004245563748972995,
+        0.6406911727604117,
+        0.029322205015571992
+      ],
+      "independent_flights": 1,
+      "specific_force_rms_m_s2": [
+        0.06757611873396864,
+        0.0005532682509258505,
+        9.477578308977801
+      ],
+      "termination": "completed",
+      "window_identity": "same 50-sample early transient, not independent repeats"
+    },
+    "airframe.arm_radius_mx1.1": {
+      "controller_nominal_parameters": "follow the changed design config; not a mismatch-robustness test",
+      "gyro_rms_rad_s": [
+        0.00028083874321429924,
+        0.575835860807749,
+        0.021480367819956325
+      ],
+      "independent_flights": 1,
+      "specific_force_rms_m_s2": [
+        0.061165103038078955,
+        0.0003654614977970042,
+        9.513203092713445
+      ],
+      "termination": "completed",
+      "window_identity": "same 50-sample early transient, not independent repeats"
+    },
+    "airframe.center_mass_kgx0.8": {
+      "controller_nominal_parameters": "follow the changed design config; not a mismatch-robustness test",
+      "gyro_rms_rad_s": [
+        0.0002710388052572383,
+        0.5381146687841277,
+        0.02203613887499573
+      ],
+      "independent_flights": 1,
+      "specific_force_rms_m_s2": [
+        0.06250905454205556,
+        0.00038252455108818824,
+        9.533096037639604
+      ],
+      "termination": "completed",
+      "window_identity": "same 50-sample early transient, not independent repeats"
+    },
+    "airframe.center_mass_kgx1.2": {
+      "controller_nominal_parameters": "follow the changed design config; not a mismatch-robustness test",
+      "gyro_rms_rad_s": [
+        0.00041716577650332675,
+        0.6706822890919055,
+        0.027648396389754585
+      ],
+      "independent_flights": 1,
+      "specific_force_rms_m_s2": [
+        0.0655533273570106,
+        0.0005066202848106707,
+        9.45920316622413
+      ],
+      "termination": "completed",
+      "window_identity": "same 50-sample early transient, not independent repeats"
+    },
+    "baseline": {
+      "controller_nominal_parameters": "follow the changed design config; not a mismatch-robustness test",
+      "gyro_rms_rad_s": [
+        0.0003441939348109255,
+        0.6079277375959553,
+        0.024986723861535852
+      ],
+      "independent_flights": 1,
+      "specific_force_rms_m_s2": [
+        0.06435937626207798,
+        0.00044819149858034717,
+        9.496003563878695
+      ],
+      "termination": "completed",
+      "window_identity": "same 50-sample early transient, not independent repeats"
+    },
+    "propulsion.Q_over_T_mx0.8": {
+      "controller_nominal_parameters": "follow the changed design config; not a mismatch-robustness test",
+      "gyro_rms_rad_s": [
+        0.0002753552779414005,
+        0.6079277032950559,
+        0.01998937577251511
+      ],
+      "independent_flights": 1,
+      "specific_force_rms_m_s2": [
+        0.06436000386859414,
+        0.00035855465469460465,
+        9.496003239642697
+      ],
+      "termination": "completed",
+      "window_identity": "same 50-sample early transient, not independent repeats"
+    },
+    "propulsion.Q_over_T_mx1.2": {
+      "controller_nominal_parameters": "follow the changed design config; not a mismatch-robustness test",
+      "gyro_rms_rad_s": [
+        0.000413032483277448,
+        0.6079277795199589,
+        0.0299840747144829
+      ],
+      "independent_flights": 1,
+      "specific_force_rms_m_s2": [
+        0.06435860919166475,
+        0.0005378271292833101,
+        9.496003960167581
+      ],
+      "termination": "completed",
+      "window_identity": "same 50-sample early transient, not independent repeats"
+    },
+    "propulsion.kTx0.8": {
+      "controller_nominal_parameters": "follow the changed design config; not a mismatch-robustness test",
+      "gyro_rms_rad_s": [
+        0.0003331813691207168,
+        0.6003138944295762,
+        0.024746347734439234
+      ],
+      "independent_flights": 1,
+      "specific_force_rms_m_s2": [
+        0.07098014147360869,
+        0.0004898459755114695,
+        9.50059600273764
+      ],
+      "termination": "completed",
+      "window_identity": "same 50-sample early transient, not independent repeats"
+    },
+    "propulsion.kTx1.2": {
+      "controller_nominal_parameters": "follow the changed design config; not a mismatch-robustness test",
+      "gyro_rms_rad_s": [
+        0.00035267927619320655,
+        0.6136876823514125,
+        0.025167042367181647
+      ],
+      "independent_flights": 1,
+      "specific_force_rms_m_s2": [
+        0.05935595484103012,
+        0.00041613516487740046,
+        9.49253379752733
+      ],
+      "termination": "completed",
+      "window_identity": "same 50-sample early transient, not independent repeats"
+    },
+    "propulsion.tau_sx0.6": {
+      "controller_nominal_parameters": "follow the changed design config; not a mismatch-robustness test",
+      "gyro_rms_rad_s": [
+        0.00036056056849414776,
+        0.5778600575340488,
+        0.024222726328496348
+      ],
+      "independent_flights": 1,
+      "specific_force_rms_m_s2": [
+        0.06544378409763649,
+        0.0004582456395295464,
+        9.504324186016856
+      ],
+      "termination": "completed",
+      "window_identity": "same 50-sample early transient, not independent repeats"
+    },
+    "propulsion.tau_sx1.6": {
+      "controller_nominal_parameters": "follow the changed design config; not a mismatch-robustness test",
+      "gyro_rms_rad_s": [
+        0.0005871806525321331,
+        0.6456491867257328,
+        0.02594704877941546
+      ],
+      "independent_flights": 1,
+      "specific_force_rms_m_s2": [
+        0.06207869770195096,
+        0.0004232171165282642,
+        9.496730401428593
+      ],
+      "termination": "completed",
+      "window_identity": "same 50-sample early transient, not independent repeats"
+    }
+  },
+  "fault_motor": 0,
+  "lambda": 0.8,
+  "noise": false,
+  "status": "design sensitivity, not measured parameter CI",
+  "wind": false
+}

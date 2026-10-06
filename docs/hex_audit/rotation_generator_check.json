@@ -1,0 +1,14 @@
+[
+  {
+    "file": "output_hex_audit\\learning_smoke_rotation_combined\\folds\\fold_1\\wgan_plain\\X_quality_raw.npy",
+    "mean_column_orthogonality_error": 1.260717186200574,
+    "p95_error": 1.3383864246743589,
+    "physical_attitude_validity_claim": false
+  },
+  {
+    "file": "output_hex_audit\\learning_smoke_rotation_combined\\folds\\fold_2\\wgan_plain\\X_quality_raw.npy",
+    "mean_column_orthogonality_error": 1.227484152522524,
+    "p95_error": 1.328468922099541,
+    "physical_attitude_validity_claim": false
+  }
+]

@@ -1,0 +1,1886 @@
+[
+  {
+    "category": "model_version",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "model_version",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "configuration metadata/signature",
+    "reader_locations": [
+      "hex_research/configuration.py:76",
+      "hex_research/data.py:45",
+      "hex_research/simulation.py:109",
+      "hex_research/simulation.py:125"
+    ],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "identifier",
+    "value": "hex_research_v1",
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "parameter_status",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "parameter_status",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "configuration metadata/signature",
+    "reader_locations": [
+      "hex_research/configuration.py:12",
+      "hex_research/configuration.py:17",
+      "hex_research/configuration.py:76",
+      "hex_research/data.py:46",
+      "hex_research/simulation.py:112"
+    ],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "evidence status",
+    "value": "research_design_not_real_aircraft",
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "frame",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "frame",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "configuration metadata/signature",
+    "reader_locations": [
+      "hex_research/configuration.py:17"
+    ],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "coordinate convention",
+    "value": "ENU_world_FLU_body_xyzw_body_to_world",
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "airframe",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "airframe.center_mass_kg",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "configuration.physical",
+    "reader_locations": [
+      "hex_research/configuration.py:40",
+      "hex_research/validation.py:81"
+    ],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "kg",
+    "value": 2.8,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "airframe",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "airframe.center_radius_m",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "configuration.physical",
+    "reader_locations": [
+      "hex_research/configuration.py:41",
+      "hex_research/configuration.py:44"
+    ],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "m",
+    "value": 0.1,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "airframe",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "airframe.center_height_m",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "configuration.physical",
+    "reader_locations": [
+      "hex_research/configuration.py:41",
+      "hex_research/configuration.py:44"
+    ],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "m",
+    "value": 0.06,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "airframe",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "airframe.hub_mass_kg",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "configuration.physical",
+    "reader_locations": [
+      "hex_research/configuration.py:40"
+    ],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "kg",
+    "value": 0.1,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "airframe",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "airframe.arm_radius_m",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "configuration.physical",
+    "reader_locations": [
+      "hex_research/configuration.py:39",
+      "hex_research/configuration.py:41",
+      "hex_research/configuration.py:52",
+      "hex_research/validation.py:81"
+    ],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "m",
+    "value": 0.275,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "airframe",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "airframe.rotor_radius_m",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "configuration.physical",
+    "reader_locations": [
+      "hex_research/configuration.py:52",
+      "hex_research/configuration.py:70"
+    ],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "m",
+    "value": 0.12065,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "airframe",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "airframe.gravity_m_s2",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "configuration.physical",
+    "reader_locations": [
+      "hex_research/configuration.py:28",
+      "hex_research/configuration.py:58",
+      "hex_research/data.py:46",
+      "hex_research/observation.py:13"
+    ],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "m/s2",
+    "value": 9.81,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "propulsion",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "propulsion.kT",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "configuration.physical; dynamics; control; simulation.export",
+    "reader_locations": [
+      "hex_research/configuration.py:54",
+      "hex_research/configuration.py:57",
+      "hex_research/configuration.py:63",
+      "hex_research/configuration.py:73",
+      "hex_research/control.py:15",
+      "hex_research/control.py:40",
+      "hex_research/control.py:62",
+      "hex_research/data.py:72",
+      "hex_research/dynamics.py:20",
+      "hex_research/dynamics.py:35",
+      "hex_research/simulation.py:119",
+      "hex_research/simulation.py:129",
+      "hex_research/validation.py:25",
+      "hex_research/validation.py:81",
+      "hex_research/validation.py:113"
+    ],
+    "source_ids": [
+      "R7"
+    ],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "N/(rad/s)^2",
+    "value": 7.45e-06,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "propulsion",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "propulsion.Q_over_T_m",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "configuration.physical; dynamics; control; simulation.export",
+    "reader_locations": [
+      "hex_research/configuration.py:54",
+      "hex_research/configuration.py:57",
+      "hex_research/validation.py:81"
+    ],
+    "source_ids": [
+      "R7"
+    ],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "m",
+    "value": 0.01315,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "propulsion",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "propulsion.tau_s",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "configuration.physical; dynamics; control; simulation.export",
+    "reader_locations": [
+      "hex_research/configuration.py:54",
+      "hex_research/configuration.py:58",
+      "hex_research/validation.py:81"
+    ],
+    "source_ids": [
+      "R7"
+    ],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "s",
+    "value": 0.05,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "propulsion",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "propulsion.omega_min_rad_s",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "configuration.physical; dynamics; control; simulation.export",
+    "reader_locations": [
+      "hex_research/configuration.py:54",
+      "hex_research/configuration.py:59"
+    ],
+    "source_ids": [
+      "R7"
+    ],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "rad/s",
+    "value": 0.0,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "propulsion",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "propulsion.omega_max_rad_s",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "configuration.physical; dynamics; control; simulation.export",
+    "reader_locations": [
+      "hex_research/configuration.py:54",
+      "hex_research/configuration.py:59",
+      "hex_research/data.py:70",
+      "hex_research/validation.py:60"
+    ],
+    "source_ids": [
+      "R7"
+    ],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "rad/s",
+    "value": 1100.0,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "aerodynamics",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "aerodynamics.model",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "dynamics.HexPlant.wrench",
+    "reader_locations": [],
+    "source_ids": [
+      "R1"
+    ],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "model identity",
+    "value": "body_quadratic_and_rotating_rotor_drag",
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "aerodynamics",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "aerodynamics.body_drag_kg_m",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "dynamics.HexPlant.wrench",
+    "reader_locations": [
+      "hex_research/configuration.py:71",
+      "hex_research/configuration.py:72",
+      "hex_research/dynamics.py:16"
+    ],
+    "source_ids": [
+      "R1"
+    ],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "kg/m",
+    "value": [
+      0.005,
+      0.005,
+      0.01
+    ],
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "aerodynamics",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "aerodynamics.rotor_drag_kg_per_rad",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "dynamics.HexPlant.wrench",
+    "reader_locations": [
+      "hex_research/configuration.py:73",
+      "hex_research/configuration.py:74",
+      "hex_research/dynamics.py:17"
+    ],
+    "source_ids": [
+      "R1"
+    ],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "kg/rad",
+    "value": [
+      0.000119,
+      0.000119,
+      0.000232
+    ],
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "control",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "control.position_p",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "control.CascadeController.update",
+    "reader_locations": [
+      "hex_research/control.py:30"
+    ],
+    "source_ids": [
+      "R2",
+      "R3"
+    ],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "1/s",
+    "value": [
+      1.2,
+      1.2,
+      1.4
+    ],
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "control",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "control.velocity_p",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "control.CascadeController.update",
+    "reader_locations": [
+      "hex_research/control.py:35"
+    ],
+    "source_ids": [
+      "R2",
+      "R3"
+    ],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "1/s",
+    "value": [
+      2.5,
+      2.5,
+      3.0
+    ],
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "control",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "control.velocity_i",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "control.CascadeController.update",
+    "reader_locations": [
+      "hex_research/control.py:59"
+    ],
+    "source_ids": [
+      "R2",
+      "R3"
+    ],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "1/s2",
+    "value": [
+      0.4,
+      0.4,
+      0.6
+    ],
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "control",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "control.velocity_d",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "control.CascadeController.update",
+    "reader_locations": [
+      "hex_research/control.py:35"
+    ],
+    "source_ids": [
+      "R2",
+      "R3"
+    ],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "1",
+    "value": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "control",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "control.attitude_p",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "control.CascadeController.update",
+    "reader_locations": [
+      "hex_research/control.py:45"
+    ],
+    "source_ids": [
+      "R2",
+      "R3"
+    ],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "1/s",
+    "value": [
+      4.0,
+      4.0,
+      3.0
+    ],
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "control",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "control.rate_p",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "control.CascadeController.update",
+    "reader_locations": [
+      "hex_research/control.py:47"
+    ],
+    "source_ids": [
+      "R2",
+      "R3"
+    ],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "1/s",
+    "value": [
+      8.0,
+      8.0,
+      6.0
+    ],
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "control",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "control.rate_i",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "control.CascadeController.update",
+    "reader_locations": [
+      "hex_research/control.py:53"
+    ],
+    "source_ids": [
+      "R2",
+      "R3"
+    ],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "1/s2",
+    "value": [
+      1.0,
+      1.0,
+      0.6
+    ],
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "control",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "control.rate_d",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "control.CascadeController.update",
+    "reader_locations": [
+      "hex_research/control.py:47"
+    ],
+    "source_ids": [
+      "R2",
+      "R3"
+    ],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "1",
+    "value": [
+      0.1,
+      0.1,
+      0.06
+    ],
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "control",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "control.velocity_limit_m_s",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "control.CascadeController.update",
+    "reader_locations": [
+      "hex_research/control.py:30"
+    ],
+    "source_ids": [
+      "R2",
+      "R3"
+    ],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "m/s",
+    "value": [
+      3.0,
+      3.0,
+      2.0
+    ],
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "control",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "control.rate_limit_rad_s",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "control.CascadeController.update",
+    "reader_locations": [
+      "hex_research/control.py:45"
+    ],
+    "source_ids": [
+      "R2",
+      "R3"
+    ],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "rad/s",
+    "value": [
+      3.0,
+      3.0,
+      1.5
+    ],
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "control",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "control.velocity_integral_limit_m_s2",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "control.CascadeController.update",
+    "reader_locations": [
+      "hex_research/control.py:60"
+    ],
+    "source_ids": [
+      "R2",
+      "R3"
+    ],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "m/s2",
+    "value": [
+      2.0,
+      2.0,
+      2.0
+    ],
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "control",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "control.rate_integral_limit_rad_s2",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "control.CascadeController.update",
+    "reader_locations": [
+      "hex_research/control.py:55"
+    ],
+    "source_ids": [
+      "R2",
+      "R3"
+    ],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "rad/s2",
+    "value": [
+      3.0,
+      3.0,
+      2.0
+    ],
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "control",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "control.acceleration_limit_m_s2",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "control.CascadeController.update",
+    "reader_locations": [
+      "hex_research/control.py:36"
+    ],
+    "source_ids": [
+      "R2",
+      "R3"
+    ],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "m/s2",
+    "value": [
+      4.0,
+      4.0,
+      4.0
+    ],
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "control",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "control.tilt_limit_deg",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "control.CascadeController.update",
+    "reader_locations": [
+      "hex_research/configuration.py:29",
+      "hex_research/control.py:38"
+    ],
+    "source_ids": [
+      "R2",
+      "R3"
+    ],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "deg",
+    "value": 25.0,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "control",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "control.derivative_filter_hz",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "control.CascadeController.update",
+    "reader_locations": [
+      "hex_research/configuration.py:29",
+      "hex_research/control.py:31"
+    ],
+    "source_ids": [
+      "R2",
+      "R3"
+    ],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "Hz",
+    "value": 20.0,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "control",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "control.antiwindup_gain_s_inv",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "control.CascadeController.update",
+    "reader_locations": [
+      "hex_research/control.py:59"
+    ],
+    "source_ids": [
+      "R2",
+      "R3"
+    ],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "1/s",
+    "value": 2.0,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "allocator",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "allocator.wrench_priority",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "control.CascadeController -> control_allocation.BoundedControlAllocator",
+    "reader_locations": [],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "relative normalized weight",
+    "value": [
+      2.0,
+      1.0,
+      1.0,
+      0.2
+    ],
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "allocator",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "allocator.regularization",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "control.CascadeController -> control_allocation.BoundedControlAllocator",
+    "reader_locations": [],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "dimensionless objective weight",
+    "value": 0.0,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "allocator",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "allocator.solver_tolerance",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "control.CascadeController -> control_allocation.BoundedControlAllocator",
+    "reader_locations": [],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "dimensionless numerical tolerance",
+    "value": 1e-10,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "allocator",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "allocator.feasibility_tolerance",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "control.CascadeController -> control_allocation.BoundedControlAllocator",
+    "reader_locations": [],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "normalized wrench tolerance",
+    "value": 1e-06,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "allocator",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "allocator.bound_tolerance",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "control.CascadeController -> control_allocation.BoundedControlAllocator",
+    "reader_locations": [],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "N",
+    "value": 1e-08,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "allocator",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "allocator.max_iterations",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "control.CascadeController -> control_allocation.BoundedControlAllocator",
+    "reader_locations": [],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "iteration count",
+    "value": 200,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "sensor",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "sensor.rate_hz",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "observation.Sensors; simulation feedback queue",
+    "reader_locations": [
+      "hex_research/configuration.py:34",
+      "hex_research/observation.py:13",
+      "hex_research/simulation.py:61"
+    ],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "Hz",
+    "value": 100.0,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "sensor",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "sensor.accel_noise_density",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "observation.Sensors; simulation feedback queue",
+    "reader_locations": [
+      "hex_research/observation.py:28"
+    ],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "(m/s2)*sqrt(s)",
+    "value": 0.0035,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "sensor",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "sensor.gyro_noise_density",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "observation.Sensors; simulation feedback queue",
+    "reader_locations": [
+      "hex_research/observation.py:29"
+    ],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "(rad/s)*sqrt(s)",
+    "value": 0.0003,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "sensor",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "sensor.accel_bias_diffusion",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "observation.Sensors; simulation feedback queue",
+    "reader_locations": [
+      "hex_research/observation.py:26"
+    ],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "(m/s2)/sqrt(s)",
+    "value": 0.002,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "sensor",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "sensor.gyro_bias_diffusion",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "observation.Sensors; simulation feedback queue",
+    "reader_locations": [
+      "hex_research/observation.py:27"
+    ],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "(rad/s)/sqrt(s)",
+    "value": 2e-05,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "sensor",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "sensor.additional_accel_sample_std",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "observation.Sensors; simulation feedback queue",
+    "reader_locations": [
+      "hex_research/observation.py:28"
+    ],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "m/s2",
+    "value": 0.008,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "sensor",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "sensor.position_sample_std_m",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "observation.Sensors; simulation feedback queue",
+    "reader_locations": [
+      "hex_research/observation.py:30"
+    ],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "m",
+    "value": 0.003,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "sensor",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "sensor.velocity_sample_std_m_s",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "observation.Sensors; simulation feedback queue",
+    "reader_locations": [
+      "hex_research/observation.py:31"
+    ],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "m/s",
+    "value": 0.01,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "sensor",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "sensor.attitude_sample_std_rad",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "observation.Sensors; simulation feedback queue",
+    "reader_locations": [
+      "hex_research/observation.py:32"
+    ],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "rad",
+    "value": 0.0008,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "sensor",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "sensor.rpm_sample_std_rad_s",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "observation.Sensors; simulation feedback queue",
+    "reader_locations": [
+      "hex_research/observation.py:33"
+    ],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "rad/s",
+    "value": 1.0,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "sensor",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "sensor.lever_m",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "observation.Sensors; simulation feedback queue",
+    "reader_locations": [
+      "hex_research/configuration.py:33",
+      "hex_research/configuration.py:71",
+      "hex_research/observation.py:16"
+    ],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "m",
+    "value": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "sensor",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "sensor.installation_rotation_xyzw",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "observation.Sensors; simulation feedback queue",
+    "reader_locations": [
+      "hex_research/configuration.py:27",
+      "hex_research/configuration.py:33",
+      "hex_research/observation.py:15"
+    ],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "unit quaternion xyzw S->B",
+    "value": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "sensor",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "sensor.feedback_delay_s",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "observation.Sensors; simulation feedback queue",
+    "reader_locations": [
+      "hex_research/simulation.py:85",
+      "hex_research/validation.py:63"
+    ],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "s",
+    "value": 0.01,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "wind",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "wind.mean_m_s",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "observation.OUWind",
+    "reader_locations": [
+      "hex_research/observation.py:48"
+    ],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "m/s",
+    "value": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "wind",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "wind.ou_stationary_std_m_s",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "observation.OUWind",
+    "reader_locations": [
+      "hex_research/configuration.py:35",
+      "hex_research/observation.py:40",
+      "hex_research/observation.py:46"
+    ],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "m/s",
+    "value": 0.2,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "wind",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "wind.ou_correlation_time_s",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "observation.OUWind",
+    "reader_locations": [
+      "hex_research/configuration.py:28",
+      "hex_research/observation.py:45"
+    ],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "s",
+    "value": 1.0,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "wind",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "wind.update_rate_hz",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "observation.OUWind",
+    "reader_locations": [
+      "hex_research/configuration.py:34",
+      "hex_research/simulation.py:62"
+    ],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "Hz",
+    "value": 100.0,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "timing",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "timing.control_hz",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "simulation event clock; dynamics.integrate",
+    "reader_locations": [
+      "hex_research/control.py:25",
+      "hex_research/simulation.py:63",
+      "hex_research/validation.py:73"
+    ],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "Hz",
+    "value": 100.0,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "timing",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "timing.integration_hz",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "simulation event clock; dynamics.integrate",
+    "reader_locations": [
+      "hex_research/dynamics.py:56",
+      "hex_research/validation.py:73"
+    ],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "Hz (maximum step inverse)",
+    "value": 500.0,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "timing",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "timing.export_hz",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "simulation event clock; dynamics.integrate",
+    "reader_locations": [
+      "hex_research/data.py:65",
+      "hex_research/simulation.py:54",
+      "hex_research/simulation.py:63"
+    ],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "Hz",
+    "value": 100.0,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "termination",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "termination.position_norm_m",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "simulation.simulate",
+    "reader_locations": [
+      "hex_research/simulation.py:99"
+    ],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "m",
+    "value": 25.0,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "termination",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "termination.speed_m_s",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "simulation.simulate",
+    "reader_locations": [
+      "hex_research/simulation.py:99"
+    ],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "m/s",
+    "value": 20.0,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "termination",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "termination.body_rate_rad_s",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "simulation.simulate",
+    "reader_locations": [
+      "hex_research/simulation.py:99"
+    ],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "rad/s",
+    "value": 15.0,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "termination",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "termination.minimum_altitude_m",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "simulation.simulate",
+    "reader_locations": [
+      "hex_research/simulation.py:99"
+    ],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "m",
+    "value": -2.0,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "acceptance",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "acceptance.status",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "validation.normal",
+    "reader_locations": [
+      "hex_research/data.py:19",
+      "hex_research/data.py:76",
+      "hex_research/data.py:77"
+    ],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "evidence status",
+    "value": "predeclared_research_requirement_not_regulatory",
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "acceptance",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "acceptance.hover_final_position_error_m",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "validation.normal",
+    "reader_locations": [
+      "hex_research/validation.py:67"
+    ],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "m",
+    "value": 0.05,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "acceptance",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "acceptance.tracking_rmse_m",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "validation.normal",
+    "reader_locations": [
+      "hex_research/validation.py:65"
+    ],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "m",
+    "value": 0.25,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "acceptance",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "acceptance.maximum_normal_tilt_deg",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "validation.normal",
+    "reader_locations": [
+      "hex_research/validation.py:68"
+    ],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "deg",
+    "value": 35.0,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "acceptance",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "acceptance.integration_half_step_position_difference_m",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "validation.normal",
+    "reader_locations": [],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "m",
+    "value": 0.02,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "acceptance",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "acceptance.control_half_step_position_difference_m",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "validation.normal",
+    "reader_locations": [],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "m",
+    "value": 0.03,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "acceptance",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "acceptance.post_saturation_recovery_error_m",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "validation.normal",
+    "reader_locations": [
+      "hex_research/validation.py:66"
+    ],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "m",
+    "value": 0.25,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "category": "seed",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation_or_limits": "See PARAMETER_AUDIT/CONTROL_SPEC; no exact hardware identification or measurement",
+    "evidence_status": "research_design_assumption",
+    "identification_flights": [],
+    "key": "seed",
+    "range_status": "No measured confidence interval; sensitivity variations are design experiments only",
+    "read_identity": "numerical use or recorded configuration metadata; metadata does not always alter physics",
+    "reader": "simulation.simulate",
+    "reader_locations": [
+      "hex_research/data.py:31",
+      "hex_research/simulation.py:56",
+      "hex_research/simulation.py:103",
+      "hex_research/simulation.py:124",
+      "hex_research/simulation.py:142"
+    ],
+    "source_ids": [],
+    "source_location": "research.json / explicit current design; borrowed structure is not evidence for this numerical value",
+    "units": "integer",
+    "value": 20261006,
+    "verification": "normal_validation.json / tests / audit_metrics.json"
+  },
+  {
+    "evidence_status": "explicit_numerical_method_assumption",
+    "key": "numerical.maximum_control_interval_s",
+    "limits": "method guard, not measured physical aircraft parameter",
+    "reader": "control.update",
+    "source_ids": [],
+    "units": "s",
+    "value": 0.2
+  },
+  {
+    "evidence_status": "explicit_numerical_method_assumption",
+    "key": "numerical.actuator_step_to_tau_guard",
+    "limits": "method guard, not measured physical aircraft parameter",
+    "reader": "dynamics.integrate",
+    "source_ids": [],
+    "units": "1",
+    "value": 0.2
+  },
+  {
+    "evidence_status": "explicit_numerical_method_assumption",
+    "key": "numerical.zero_force_tolerance",
+    "limits": "method guard, not measured physical aircraft parameter",
+    "reader": "math3d.desired_attitude",
+    "source_ids": [],
+    "units": "N",
+    "value": 1e-10
+  },
+  {
+    "evidence_status": "explicit_numerical_method_assumption",
+    "key": "numerical.quaternion_zero_norm_tolerance",
+    "limits": "method guard, not measured physical aircraft parameter",
+    "reader": "math3d.quaternion",
+    "source_ids": [],
+    "units": "1",
+    "value": 1e-12
+  },
+  {
+    "evidence_status": "explicit_numerical_method_assumption",
+    "key": "numerical.supported_num_rotors",
+    "limits": "method guard, not measured physical aircraft parameter",
+    "reader": "configuration.physical; shape contracts",
+    "source_ids": [],
+    "units": "count",
+    "value": 6
+  },
+  {
+    "evidence_status": "unknown",
+    "key": "real_aircraft.mass",
+    "limits": "Requires matched original evidence; research values cannot fill this identity",
+    "reader": "not instantiated as real-aircraft model",
+    "source_ids": [],
+    "units": "kg",
+    "value": null
+  },
+  {
+    "evidence_status": "unknown",
+    "key": "real_aircraft.COM",
+    "limits": "Requires matched original evidence; research values cannot fill this identity",
+    "reader": "not instantiated as real-aircraft model",
+    "source_ids": [],
+    "units": "m",
+    "value": null
+  },
+  {
+    "evidence_status": "unknown",
+    "key": "real_aircraft.inertia",
+    "limits": "Requires matched original evidence; research values cannot fill this identity",
+    "reader": "not instantiated as real-aircraft model",
+    "source_ids": [],
+    "units": "kg m2",
+    "value": null
+  },
+  {
+    "evidence_status": "unknown",
+    "key": "real_aircraft.kT",
+    "limits": "Requires matched original evidence; research values cannot fill this identity",
+    "reader": "not instantiated as real-aircraft model",
+    "source_ids": [],
+    "units": "N/(rad/s)^2",
+    "value": null
+  },
+  {
+    "evidence_status": "unknown",
+    "key": "real_aircraft.kQ",
+    "limits": "Requires matched original evidence; research values cannot fill this identity",
+    "reader": "not instantiated as real-aircraft model",
+    "source_ids": [],
+    "units": "N m/(rad/s)^2",
+    "value": null
+  },
+  {
+    "evidence_status": "unknown",
+    "key": "real_aircraft.motor_tau",
+    "limits": "Requires matched original evidence; research values cannot fill this identity",
+    "reader": "not instantiated as real-aircraft model",
+    "source_ids": [],
+    "units": "s",
+    "value": null
+  },
+  {
+    "evidence_status": "unknown",
+    "key": "real_aircraft.motor_ESC_prop_voltage",
+    "limits": "Requires matched original evidence; research values cannot fill this identity",
+    "reader": "not instantiated as real-aircraft model",
+    "source_ids": [],
+    "units": "hardware identities",
+    "value": null
+  },
+  {
+    "evidence_status": "unknown",
+    "key": "real_aircraft.sensor_pose",
+    "limits": "Requires matched original evidence; research values cannot fill this identity",
+    "reader": "not instantiated as real-aircraft model",
+    "source_ids": [],
+    "units": "m / rad",
+    "value": null
+  },
+  {
+    "evidence_status": "unknown",
+    "key": "real_aircraft.sensor_noise_and_bias_spectra",
+    "limits": "Requires matched original evidence; research values cannot fill this identity",
+    "reader": "not instantiated as real-aircraft model",
+    "source_ids": [],
+    "units": "per channel",
+    "value": null
+  },
+  {
+    "evidence_status": "unknown",
+    "key": "real_aircraft.aero_coefficients",
+    "limits": "Requires matched original evidence; research values cannot fill this identity",
+    "reader": "not instantiated as real-aircraft model",
+    "source_ids": [],
+    "units": "per model",
+    "value": null
+  },
+  {
+    "category": "physical",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation": "central_mass + 6*hub_mass",
+    "evidence_status": "derived_from_explicit_research_design",
+    "identification_flights": [],
+    "key": "derived.mass",
+    "reader": "configuration.physical; dynamics; control",
+    "source_ids": [],
+    "units": "kg",
+    "value": 3.4,
+    "verification": "tests/test_hex_research.py; normal_validation.json"
+  },
+  {
+    "category": "physical",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation": "central cylinder principal inertia + six point hubs using parallel-axis theorem",
+    "evidence_status": "derived_from_explicit_research_design",
+    "identification_flights": [],
+    "key": "derived.inertia",
+    "reader": "configuration.physical; dynamics; control",
+    "source_ids": [],
+    "units": "kg m2",
+    "value": [
+      [
+        0.030527500000000006,
+        -2.6020852139652106e-18,
+        0.0
+      ],
+      [
+        -2.6020852139652106e-18,
+        0.03052750000000001,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.05937500000000001
+      ]
+    ],
+    "verification": "tests/test_hex_research.py; normal_validation.json"
+  },
+  {
+    "category": "physical",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation": "arm_radius*[cos(i*pi/3),sin(i*pi/3),0] relative to symmetric COM",
+    "evidence_status": "derived_from_explicit_research_design",
+    "identification_flights": [],
+    "key": "derived.rotor_positions",
+    "reader": "configuration.physical; dynamics; control",
+    "source_ids": [],
+    "units": "m",
+    "value": [
+      [
+        0.275,
+        0.0,
+        0.0
+      ],
+      [
+        0.13750000000000004,
+        0.23815698604072064,
+        0.0
+      ],
+      [
+        -0.13749999999999996,
+        0.23815698604072066,
+        0.0
+      ],
+      [
+        -0.275,
+        3.367778697655222e-17,
+        0.0
+      ],
+      [
+        -0.13750000000000012,
+        -0.2381569860407206,
+        0.0
+      ],
+      [
+        0.13750000000000004,
+        -0.23815698604072064,
+        0.0
+      ]
+    ],
+    "verification": "tests/test_hex_research.py; normal_validation.json"
+  },
+  {
+    "category": "physical",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation": "body reaction sign; actual rotor spin sign is its negative",
+    "evidence_status": "derived_from_explicit_research_design",
+    "identification_flights": [],
+    "key": "derived.yaw_sign",
+    "reader": "configuration.physical; dynamics; control",
+    "source_ids": [],
+    "units": "1",
+    "value": [
+      1,
+      -1,
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "verification": "tests/test_hex_research.py; normal_validation.json"
+  },
+  {
+    "category": "physical",
+    "coordinate": "ENU_world_FLU_body_xyzw_body_to_world",
+    "derivation": "kT * Q_over_T_m",
+    "evidence_status": "derived_from_explicit_research_design",
+    "identification_flights": [],
+    "key": "derived.kQ",
+    "reader": "configuration.physical; dynamics; control",
+    "source_ids": [],
+    "units": "N m/(rad/s)^2",
+    "value": [
+      9.79675e-08,
+      9.79675e-08,
+      9.79675e-08,
+      9.79675e-08,
+      9.79675e-08,
+      9.79675e-08
+    ],
+    "verification": "tests/test_hex_research.py; normal_validation.json"
+  },
+  {
+    "evidence_status": "legacy_candidate_not_active",
+    "key": "legacy_candidate_inertia",
+    "limits": "Original value preserved; not automatically real-aircraft truth",
+    "reader": "legacy_reference only; excluded from current core",
+    "source_ids": [
+      "R6"
+    ],
+    "value": [
+      0.0476,
+      0.0476,
+      0.1094
+    ]
+  },
+  {
+    "evidence_status": "legacy_candidate_not_active",
+    "key": "legacy_candidate_thrust_coefficient",
+    "limits": "Original value preserved; not automatically real-aircraft truth",
+    "reader": "legacy_reference only; excluded from current core",
+    "source_ids": [
+      "R1",
+      "R7"
+    ],
+    "value": 7.45e-06
+  },
+  {
+    "evidence_status": "legacy_candidate_not_active",
+    "key": "legacy_SE3_gains",
+    "limits": "Original value preserved; not automatically real-aircraft truth",
+    "reader": "legacy_reference only; excluded from current core",
+    "source_ids": [
+      "R1",
+      "R7"
+    ],
+    "value": [
+      544.0,
+      46.64
+    ]
+  },
+  {
+    "evidence_status": "legacy_candidate_not_active",
+    "key": "legacy_kh",
+    "limits": "Original value preserved; not automatically real-aircraft truth",
+    "reader": "legacy_reference only; excluded from current core",
+    "source_ids": [
+      "R1",
+      "R7"
+    ],
+    "value": 0.00339
+  },
+  {
+    "evidence_status": "legacy_candidate_not_active",
+    "key": "legacy_full_overrides",
+    "limits": "Original value preserved; not automatically real-aircraft truth",
+    "reader": "legacy_reference only; excluded from current core",
+    "source_ids": [
+      "R1",
+      "R7"
+    ],
+    "value": {
+      "4": 0.05,
+      "5": 0.05
+    }
+  }
+]

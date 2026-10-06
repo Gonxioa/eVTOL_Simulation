@@ -1,0 +1,49 @@
+使用设备: cuda
+显卡: NVIDIA GeForce RTX 4060 Laptop GPU
+
+六旋翼数据: X=(38, 50, 18), classes=19, independent groups=2
+特征: ['roll', 'pitch', 'yaw', 'p', 'q_body', 'r', 'ax', 'ay', 'az', 'gx', 'gy', 'gz', 'cmd_motor0', 'cmd_motor1', 'cmd_motor2', 'cmd_motor3', 'cmd_motor4', 'cmd_motor5']
+每类独立来源: {0: 2, 1: 2, 2: 2, 3: 2, 4: 2, 5: 2, 6: 2, 7: 2, 8: 2, 9: 2, 10: 2, 11: 2, 12: 2, 13: 2, 14: 2, 15: 2, 16: 2, 17: 2, 18: 2}
+评估: StratifiedGroupKFold(2); 普通随机窗口划分已禁用
+
+[Fold 1/2] train groups=1, test groups=1, overlap=0
+  no_gan: Acc=0.0526, F1=0.0058, 漏检=0.0000, 误报=1.0000
+  class_weighted: Acc=0.0526, F1=0.0526, 漏检=0.0000, 误报=1.0000
+  random_oversampling: Acc=0.0526, F1=0.0053, 漏检=0.0000, 误报=1.0000
+  训练wgan_plain: epochs=1, lambda_phys=0.0
+
+开始训练六旋翼 WGAN-GP...
+G参数=2,634, D参数=174,169
+epochs=1, batch=8, temporal_noise=True
+early_stopping=False, restore_best=False
+lambda_phys=0.0, target=predicted_plant_thrust
+Epoch [   1/1] G=   0.0137 Adv=   0.0137 Phys=   0.0000 D=   9.3175
+
+小批次生成: counts={0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0, 10: 0, 11: 0, 12: 0, 13: 0, 14: 0, 15: 0, 16: 0, 17: 0, 18: 0}, GPU batch=8
+  wgan_plain: Acc=0.1053, F1=0.0413, 漏检=0.0000, 误报=1.0000
+
+[Fold 2/2] train groups=1, test groups=1, overlap=0
+  no_gan: Acc=0.0526, F1=0.0096, 漏检=0.1111, 误报=1.0000
+  class_weighted: Acc=0.0526, F1=0.0066, 漏检=0.0000, 误报=1.0000
+  random_oversampling: Acc=0.0000, F1=0.0000, 漏检=0.0000, 误报=1.0000
+  训练wgan_plain: epochs=1, lambda_phys=0.0
+
+开始训练六旋翼 WGAN-GP...
+G参数=2,634, D参数=174,169
+epochs=1, batch=8, temporal_noise=True
+early_stopping=False, restore_best=False
+lambda_phys=0.0, target=predicted_plant_thrust
+Epoch [   1/1] G=   0.0088 Adv=   0.0088 Phys=   0.0000 D=   9.2600
+
+小批次生成: counts={0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0, 10: 0, 11: 0, 12: 0, 13: 0, 14: 0, 15: 0, 16: 0, 17: 0, 18: 0}, GPU batch=8
+  wgan_plain: Acc=0.1579, F1=0.0456, 漏检=0.0000, 误报=1.0000
+
+==============================================================================
+2折独立仿真源交叉验证汇总
+==============================================================================
+no_gan                   Acc=0.0526±0.0000  F1=0.0077  漏检=0.0556  误报=1.0000
+class_weighted           Acc=0.0526±0.0000  F1=0.0296  漏检=0.0000  误报=1.0000
+random_oversampling      Acc=0.0263±0.0263  F1=0.0026  漏检=0.0000  误报=1.0000
+wgan_plain               Acc=0.1316±0.0263  F1=0.0434  漏检=0.0000  误报=1.0000
+
+完成，结果保存到: C:\Users\lenovo\.codex\worktrees\hex-audit-control\eVTOL_Simulation\output_hex_audit\learning_smoke

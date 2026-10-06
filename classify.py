@@ -26,7 +26,7 @@ from torch.utils.data import DataLoader, TensorDataset
 
 import WGAN
 from provenance import code_hashes, runtime_info, sha256_file, stable_hash, write_json
-from scenario_config import LABEL_NAMES as CONFIG_LABEL_NAMES, SCENARIO_BY_LABEL
+from scenario_config import LABEL_NAMES as CONFIG_LABEL_NAMES, SCENARIO_BY_LABEL, NUM_ROTORS
 
 warnings.filterwarnings("ignore")
 
@@ -51,12 +51,13 @@ def _env_flag(name, default=False):
     return value.strip().lower() not in {"0", "false", "no", "off"}
 
 
+FEATURE_SET=os.getenv('FEATURE_SET','combined').strip().lower()
 DATA_DIR = _path_env(
-    "DATA_DIR_OVERRIDE", PROJECT_ROOT / "plots" / "hex" / "data_process" / "combined"
+    "DATA_DIR_OVERRIDE", PROJECT_ROOT / "plots" / "hex_v4_research" / "data_process" / FEATURE_SET
 )
 SAVE_DIR = _path_env(
     "CLASSIFIER_SAVE_DIR_OVERRIDE",
-    PROJECT_ROOT / "plots" / "hex" / "classification" / "formal_combined",
+    PROJECT_ROOT / "plots" / "hex_v4_research" / "classification" / FEATURE_SET,
     aliases=("OUTPUT_DIR_OVERRIDE",),
 )
 N_FOLDS = max(2, int(os.getenv("N_FOLDS", "4")))
@@ -96,6 +97,7 @@ N_FEATURES = 0
 N_CLASSES = 0
 FEATURE_NAMES = []
 LABEL_NAMES = {}
+DATA_METADATA={}
 
 
 def set_seed(seed):
@@ -114,6 +116,11 @@ def _load_json(path):
 
 def load_data():
     global SEQ_LEN, N_FEATURES, N_CLASSES, FEATURE_NAMES, LABEL_NAMES, N_FOLDS, GAN_LAMBDAS
+    global DATA_METADATA
+    DATA_METADATA=_load_json(DATA_DIR/'preprocess_metadata.json')
+    if DATA_METADATA.get('model_version')!='hex_research_v1': raise RuntimeError('数据模型版本不匹配；禁止当前参数替代旧数据参数')
+    if DATA_METADATA.get('feature_set')!=FEATURE_SET: raise RuntimeError('FEATURE_SET与数据清单不一致，请显式选择对应特征与目录')
+    if not DATA_METADATA.get('formal_protocol') and os.getenv('EXPERIMENT_MODE')!='interface_smoke': raise RuntimeError('当前是接口小样本数据，正式训练入口关闭；接口检查显式设置EXPERIMENT_MODE=interface_smoke')
     required = [
         "X_raw.npy", "y_all.npy", "groups.npy", "feature_names.json",
         "cmd_thrust.npy", "physics_thrust.npy",
@@ -170,7 +177,9 @@ def load_data():
             f"请求{N_FOLDS}折，但每类最少只有{max_folds}个独立来源；"
             "正式实验不自动降低折数，请补充仿真。"
         )
-    has_all_commands = all(f"cmd_motor{i}" in FEATURE_NAMES for i in range(6))
+    count=int(DATA_METADATA['physics_parameters']['num_rotors'])
+    if count!=NUM_ROTORS: raise RuntimeError('数据电机数与任务配置不一致')
+    has_all_commands = all(f"cmd_motor{i}" in FEATURE_NAMES for i in range(count))
     if not has_all_commands:
         skipped = [x for x in GAN_LAMBDAS if x > 0]
         GAN_LAMBDAS = [x for x in GAN_LAMBDAS if x == 0]
@@ -434,6 +443,7 @@ def train_or_load_gan(fold, fold_dir, signature, lambda_phys, X_train_raw, X_tra
         n_epochs=GAN_EPOCHS, early_stopping=False, restore_best=False,
         lambda_phys=lambda_phys, feature_names=FEATURE_NAMES, gan_scaler=gan_scaler,
         physics_targets=thrust_train, verbose=True,
+        physics_params=DATA_METADATA['physics_parameters'],label_effectiveness={int(k):v for k,v in DATA_METADATA['label_effectiveness'].items()},
     )
     deficits = generation_counts(y_train)
     X_gen_gan, y_gen = WGAN.generate_synthetic(

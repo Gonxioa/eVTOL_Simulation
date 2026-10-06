@@ -67,6 +67,7 @@ class ControlAllocationTests(unittest.TestCase):
         )
 
     def test_allocation_matrix_matches_hex_geometry(self):
+        yaw_ratio = float(P["k_m"]) / K_ETA
         expected = np.array([
             [1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
             [
@@ -79,12 +80,12 @@ class ControlAllocationTests(unittest.TestCase):
             ],
             [-0.275, -0.1375, 0.1375, 0.275, 0.1375, -0.1375],
             [
-                0.03949730700179534,
-                -0.03949730700179534,
-                0.03949730700179534,
-                -0.03949730700179534,
-                0.03949730700179534,
-                -0.03949730700179534,
+                yaw_ratio,
+                -yaw_ratio,
+                yaw_ratio,
+                -yaw_ratio,
+                yaw_ratio,
+                -yaw_ratio,
             ],
         ])
         self.assertEqual(A.shape, (4, 6))

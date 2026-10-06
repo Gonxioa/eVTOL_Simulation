@@ -232,7 +232,9 @@ class BoundedControlAllocator:
             <= self.solver_tolerance
         )
 
-        used_unconstrained = within_bounds and exact_enough
+        # With rho>0 the objective includes a zero-reference penalty, so an
+        # exact feasible pseudoinverse is not generally its minimizer.
+        used_unconstrained = self.regularization == 0.0 and within_bounds and exact_enough
         if used_unconstrained:
             thrusts = np.clip(candidate, self.thrust_min, self.thrust_max)
             success = True

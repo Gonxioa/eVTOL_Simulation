@@ -1,0 +1,202 @@
+{
+  "original_six_files": {
+    "docs/HEXAROTOR_PHYSICAL_CHARACTERISTICS.md": {
+      "sha256": "1833bcd97b1134eeec584dc4e83ba18569639e7bc09a3cb2d2c643d01e6f870d",
+      "unchanged": true
+    },
+    "hex_physical_characteristics.py": {
+      "sha256": "7aeaf3acd682d9d399b670d26a9b140bc61492bbec6370048bc27e413bf48849",
+      "unchanged": true
+    },
+    "main.py": {
+      "sha256": "5c5b8b37994ece58f6562b966759fc4de13c5af9af3e89afb354d8d10f71458f",
+      "unchanged": true
+    },
+    "tests/test_control_allocation.py": {
+      "sha256": "3f3833238e7324b6d97d6d484e48f6ff9589bfa100af9cba3838212102c1fdb0",
+      "unchanged": true
+    },
+    "eR_geometry.png": {
+      "sha256": "d7a532be61fda621b3564c28a1a7cb9e438e867859cc8a884dd028ce7b273ac7",
+      "unchanged": true
+    },
+    "tests/test_hex_physical_characteristics.py": {
+      "sha256": "14d4790ef2ce8e89301a54e3c179353adfaf97c3a09ce6b8dbf3c97138a6ab7f",
+      "unchanged": true
+    }
+  },
+  "uavfd_package_and_docs": {
+    "uavfd_f550\\analysis.py": {
+      "same_raw_bytes": false,
+      "same_git_normalized_content": true
+    },
+    "uavfd_f550\\audit.py": {
+      "same_raw_bytes": false,
+      "same_git_normalized_content": true
+    },
+    "uavfd_f550\\common.py": {
+      "same_raw_bytes": false,
+      "same_git_normalized_content": true
+    },
+    "uavfd_f550\\data.py": {
+      "same_raw_bytes": false,
+      "same_git_normalized_content": true
+    },
+    "uavfd_f550\\dynamics.py": {
+      "same_raw_bytes": false,
+      "same_git_normalized_content": true
+    },
+    "uavfd_f550\\provenance.py": {
+      "same_raw_bytes": false,
+      "same_git_normalized_content": true
+    },
+    "uavfd_f550\\reports.py": {
+      "same_raw_bytes": false,
+      "same_git_normalized_content": true
+    },
+    "uavfd_f550\\requirements.txt": {
+      "same_raw_bytes": false,
+      "same_git_normalized_content": true
+    },
+    "uavfd_f550\\signals.py": {
+      "same_raw_bytes": false,
+      "same_git_normalized_content": true
+    },
+    "uavfd_f550\\sources.py": {
+      "same_raw_bytes": false,
+      "same_git_normalized_content": true
+    },
+    "uavfd_f550\\verification.py": {
+      "same_raw_bytes": false,
+      "same_git_normalized_content": true
+    },
+    "uavfd_f550\\vibration.py": {
+      "same_raw_bytes": false,
+      "same_git_normalized_content": true
+    },
+    "uavfd_f550\\__init__.py": {
+      "same_raw_bytes": false,
+      "same_git_normalized_content": true
+    },
+    "uavfd_f550\\__main__.py": {
+      "same_raw_bytes": false,
+      "same_git_normalized_content": true
+    },
+    "uavfd_f550\\configs\\analysis.json": {
+      "same_raw_bytes": false,
+      "same_git_normalized_content": true
+    },
+    "uavfd_f550\\configs\\demo.json": {
+      "same_raw_bytes": false,
+      "same_git_normalized_content": true
+    },
+    "uavfd_f550\\configs\\split.json": {
+      "same_raw_bytes": false,
+      "same_git_normalized_content": true
+    },
+    "uavfd_f550\\configs\\uavfd_aircraft.json": {
+      "same_raw_bytes": false,
+      "same_git_normalized_content": true
+    },
+    "uavfd_f550\\tests\\test_model.py": {
+      "same_raw_bytes": false,
+      "same_git_normalized_content": true
+    },
+    "docs\\uavfd_f550\\audit_summary.json": {
+      "same_raw_bytes": true,
+      "same_git_normalized_content": true
+    },
+    "docs\\uavfd_f550\\CHANGE_MANIFEST.md": {
+      "same_raw_bytes": true,
+      "same_git_normalized_content": true
+    },
+    "docs\\uavfd_f550\\checks.txt": {
+      "same_raw_bytes": true,
+      "same_git_normalized_content": true
+    },
+    "docs\\uavfd_f550\\DATA_AUDIT.md": {
+      "same_raw_bytes": true,
+      "same_git_normalized_content": true
+    },
+    "docs\\uavfd_f550\\data_hashes.json": {
+      "same_raw_bytes": true,
+      "same_git_normalized_content": true
+    },
+    "docs\\uavfd_f550\\equation_ledger.json": {
+      "same_raw_bytes": true,
+      "same_git_normalized_content": true
+    },
+    "docs\\uavfd_f550\\final_source_snapshot.json": {
+      "same_raw_bytes": true,
+      "same_git_normalized_content": true
+    },
+    "docs\\uavfd_f550\\MODEL_SPEC.md": {
+      "same_raw_bytes": false,
+      "same_git_normalized_content": true
+    },
+    "docs\\uavfd_f550\\MODEL_STATUS.md": {
+      "same_raw_bytes": false,
+      "same_git_normalized_content": true
+    },
+    "docs\\uavfd_f550\\PACKAGING_QA.md": {
+      "same_raw_bytes": false,
+      "same_git_normalized_content": true
+    },
+    "docs\\uavfd_f550\\parameter_ledger.json": {
+      "same_raw_bytes": true,
+      "same_git_normalized_content": true
+    },
+    "docs\\uavfd_f550\\protected_workspace.json": {
+      "same_raw_bytes": true,
+      "same_git_normalized_content": true
+    },
+    "docs\\uavfd_f550\\README.md": {
+      "same_raw_bytes": false,
+      "same_git_normalized_content": true
+    },
+    "docs\\uavfd_f550\\reference_access_check.json": {
+      "same_raw_bytes": true,
+      "same_git_normalized_content": true
+    },
+    "docs\\uavfd_f550\\sources.json": {
+      "same_raw_bytes": true,
+      "same_git_normalized_content": true
+    },
+    "docs\\uavfd_f550\\source_archive_manifest.json": {
+      "same_raw_bytes": true,
+      "same_git_normalized_content": true
+    },
+    "docs\\uavfd_f550\\SOURCE_REGISTER.md": {
+      "same_raw_bytes": true,
+      "same_git_normalized_content": true
+    },
+    "docs\\uavfd_f550\\stage_gates.json": {
+      "same_raw_bytes": true,
+      "same_git_normalized_content": true
+    },
+    "docs\\uavfd_f550\\validation_metrics.json": {
+      "same_raw_bytes": true,
+      "same_git_normalized_content": true
+    },
+    "docs\\uavfd_f550\\VALIDATION_REPORT.md": {
+      "same_raw_bytes": true,
+      "same_git_normalized_content": true
+    },
+    "docs\\uavfd_f550\\figures\\demo_vibration.png": {
+      "same_raw_bytes": true,
+      "same_git_normalized_content": true
+    },
+    "docs\\uavfd_f550\\figures\\normal_replay.png": {
+      "same_raw_bytes": true,
+      "same_git_normalized_content": true
+    },
+    "docs\\uavfd_f550\\figures\\vibration_validation.png": {
+      "same_raw_bytes": true,
+      "same_git_normalized_content": true
+    }
+  },
+  "line_end_note": "Managed Git worktree checkout may normalize LF/CRLF; no source or doc content differences relative to preserved package. git diff for both paths is empty.",
+  "main_import_preserves_numpy_and_rotorpy": true,
+  "branch": "codex/hex-audit-control",
+  "baseline": "ef5fa5b0d7e00e63f9a4afe06e78128c1886b82b"
+}

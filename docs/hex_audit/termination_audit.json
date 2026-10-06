@@ -1,0 +1,314 @@
+[
+  {
+    "file": "motor0_full__run001.csv",
+    "last_export_time": 4.19,
+    "thresholds_from_original_sidecar": {
+      "body_rate_rad_s": 15.0,
+      "minimum_altitude_m": -2.0,
+      "position_norm_m": 25.0,
+      "speed_m_s": 20.0
+    },
+    "reconstructed_exit_causes": [
+      "minimum_altitude"
+    ]
+  },
+  {
+    "file": "motor0_full__run002.csv",
+    "last_export_time": 4.19,
+    "thresholds_from_original_sidecar": {
+      "body_rate_rad_s": 15.0,
+      "minimum_altitude_m": -2.0,
+      "position_norm_m": 25.0,
+      "speed_m_s": 20.0
+    },
+    "reconstructed_exit_causes": [
+      "minimum_altitude"
+    ]
+  },
+  {
+    "file": "motor0_severe__run001.csv",
+    "last_export_time": 4.22,
+    "thresholds_from_original_sidecar": {
+      "body_rate_rad_s": 15.0,
+      "minimum_altitude_m": -2.0,
+      "position_norm_m": 25.0,
+      "speed_m_s": 20.0
+    },
+    "reconstructed_exit_causes": [
+      "minimum_altitude"
+    ]
+  },
+  {
+    "file": "motor0_severe__run002.csv",
+    "last_export_time": 4.22,
+    "thresholds_from_original_sidecar": {
+      "body_rate_rad_s": 15.0,
+      "minimum_altitude_m": -2.0,
+      "position_norm_m": 25.0,
+      "speed_m_s": 20.0
+    },
+    "reconstructed_exit_causes": [
+      "minimum_altitude"
+    ]
+  },
+  {
+    "file": "motor1_full__run001.csv",
+    "last_export_time": 4.18,
+    "thresholds_from_original_sidecar": {
+      "body_rate_rad_s": 15.0,
+      "minimum_altitude_m": -2.0,
+      "position_norm_m": 25.0,
+      "speed_m_s": 20.0
+    },
+    "reconstructed_exit_causes": [
+      "minimum_altitude"
+    ]
+  },
+  {
+    "file": "motor1_full__run002.csv",
+    "last_export_time": 4.18,
+    "thresholds_from_original_sidecar": {
+      "body_rate_rad_s": 15.0,
+      "minimum_altitude_m": -2.0,
+      "position_norm_m": 25.0,
+      "speed_m_s": 20.0
+    },
+    "reconstructed_exit_causes": [
+      "minimum_altitude"
+    ]
+  },
+  {
+    "file": "motor1_severe__run001.csv",
+    "last_export_time": 4.22,
+    "thresholds_from_original_sidecar": {
+      "body_rate_rad_s": 15.0,
+      "minimum_altitude_m": -2.0,
+      "position_norm_m": 25.0,
+      "speed_m_s": 20.0
+    },
+    "reconstructed_exit_causes": [
+      "minimum_altitude"
+    ]
+  },
+  {
+    "file": "motor1_severe__run002.csv",
+    "last_export_time": 4.21,
+    "thresholds_from_original_sidecar": {
+      "body_rate_rad_s": 15.0,
+      "minimum_altitude_m": -2.0,
+      "position_norm_m": 25.0,
+      "speed_m_s": 20.0
+    },
+    "reconstructed_exit_causes": [
+      "minimum_altitude"
+    ]
+  },
+  {
+    "file": "motor2_full__run001.csv",
+    "last_export_time": 4.18,
+    "thresholds_from_original_sidecar": {
+      "body_rate_rad_s": 15.0,
+      "minimum_altitude_m": -2.0,
+      "position_norm_m": 25.0,
+      "speed_m_s": 20.0
+    },
+    "reconstructed_exit_causes": [
+      "minimum_altitude"
+    ]
+  },
+  {
+    "file": "motor2_full__run002.csv",
+    "last_export_time": 4.17,
+    "thresholds_from_original_sidecar": {
+      "body_rate_rad_s": 15.0,
+      "minimum_altitude_m": -2.0,
+      "position_norm_m": 25.0,
+      "speed_m_s": 20.0
+    },
+    "reconstructed_exit_causes": [
+      "minimum_altitude"
+    ]
+  },
+  {
+    "file": "motor2_severe__run001.csv",
+    "last_export_time": 4.22,
+    "thresholds_from_original_sidecar": {
+      "body_rate_rad_s": 15.0,
+      "minimum_altitude_m": -2.0,
+      "position_norm_m": 25.0,
+      "speed_m_s": 20.0
+    },
+    "reconstructed_exit_causes": [
+      "minimum_altitude"
+    ]
+  },
+  {
+    "file": "motor2_severe__run002.csv",
+    "last_export_time": 4.21,
+    "thresholds_from_original_sidecar": {
+      "body_rate_rad_s": 15.0,
+      "minimum_altitude_m": -2.0,
+      "position_norm_m": 25.0,
+      "speed_m_s": 20.0
+    },
+    "reconstructed_exit_causes": [
+      "minimum_altitude"
+    ]
+  },
+  {
+    "file": "motor3_full__run001.csv",
+    "last_export_time": 4.19,
+    "thresholds_from_original_sidecar": {
+      "body_rate_rad_s": 15.0,
+      "minimum_altitude_m": -2.0,
+      "position_norm_m": 25.0,
+      "speed_m_s": 20.0
+    },
+    "reconstructed_exit_causes": [
+      "minimum_altitude"
+    ]
+  },
+  {
+    "file": "motor3_full__run002.csv",
+    "last_export_time": 4.19,
+    "thresholds_from_original_sidecar": {
+      "body_rate_rad_s": 15.0,
+      "minimum_altitude_m": -2.0,
+      "position_norm_m": 25.0,
+      "speed_m_s": 20.0
+    },
+    "reconstructed_exit_causes": [
+      "minimum_altitude"
+    ]
+  },
+  {
+    "file": "motor3_severe__run001.csv",
+    "last_export_time": 4.22,
+    "thresholds_from_original_sidecar": {
+      "body_rate_rad_s": 15.0,
+      "minimum_altitude_m": -2.0,
+      "position_norm_m": 25.0,
+      "speed_m_s": 20.0
+    },
+    "reconstructed_exit_causes": [
+      "minimum_altitude"
+    ]
+  },
+  {
+    "file": "motor3_severe__run002.csv",
+    "last_export_time": 4.22,
+    "thresholds_from_original_sidecar": {
+      "body_rate_rad_s": 15.0,
+      "minimum_altitude_m": -2.0,
+      "position_norm_m": 25.0,
+      "speed_m_s": 20.0
+    },
+    "reconstructed_exit_causes": [
+      "minimum_altitude"
+    ]
+  },
+  {
+    "file": "motor4_full__run001.csv",
+    "last_export_time": 4.18,
+    "thresholds_from_original_sidecar": {
+      "body_rate_rad_s": 15.0,
+      "minimum_altitude_m": -2.0,
+      "position_norm_m": 25.0,
+      "speed_m_s": 20.0
+    },
+    "reconstructed_exit_causes": [
+      "minimum_altitude"
+    ]
+  },
+  {
+    "file": "motor4_full__run002.csv",
+    "last_export_time": 4.19,
+    "thresholds_from_original_sidecar": {
+      "body_rate_rad_s": 15.0,
+      "minimum_altitude_m": -2.0,
+      "position_norm_m": 25.0,
+      "speed_m_s": 20.0
+    },
+    "reconstructed_exit_causes": [
+      "minimum_altitude"
+    ]
+  },
+  {
+    "file": "motor4_severe__run001.csv",
+    "last_export_time": 4.21,
+    "thresholds_from_original_sidecar": {
+      "body_rate_rad_s": 15.0,
+      "minimum_altitude_m": -2.0,
+      "position_norm_m": 25.0,
+      "speed_m_s": 20.0
+    },
+    "reconstructed_exit_causes": [
+      "minimum_altitude"
+    ]
+  },
+  {
+    "file": "motor4_severe__run002.csv",
+    "last_export_time": 4.22,
+    "thresholds_from_original_sidecar": {
+      "body_rate_rad_s": 15.0,
+      "minimum_altitude_m": -2.0,
+      "position_norm_m": 25.0,
+      "speed_m_s": 20.0
+    },
+    "reconstructed_exit_causes": [
+      "minimum_altitude"
+    ]
+  },
+  {
+    "file": "motor5_full__run001.csv",
+    "last_export_time": 4.19,
+    "thresholds_from_original_sidecar": {
+      "body_rate_rad_s": 15.0,
+      "minimum_altitude_m": -2.0,
+      "position_norm_m": 25.0,
+      "speed_m_s": 20.0
+    },
+    "reconstructed_exit_causes": [
+      "minimum_altitude"
+    ]
+  },
+  {
+    "file": "motor5_full__run002.csv",
+    "last_export_time": 4.18,
+    "thresholds_from_original_sidecar": {
+      "body_rate_rad_s": 15.0,
+      "minimum_altitude_m": -2.0,
+      "position_norm_m": 25.0,
+      "speed_m_s": 20.0
+    },
+    "reconstructed_exit_causes": [
+      "minimum_altitude"
+    ]
+  },
+  {
+    "file": "motor5_severe__run001.csv",
+    "last_export_time": 4.22,
+    "thresholds_from_original_sidecar": {
+      "body_rate_rad_s": 15.0,
+      "minimum_altitude_m": -2.0,
+      "position_norm_m": 25.0,
+      "speed_m_s": 20.0
+    },
+    "reconstructed_exit_causes": [
+      "minimum_altitude"
+    ]
+  },
+  {
+    "file": "motor5_severe__run002.csv",
+    "last_export_time": 4.21,
+    "thresholds_from_original_sidecar": {
+      "body_rate_rad_s": 15.0,
+      "minimum_altitude_m": -2.0,
+      "position_norm_m": 25.0,
+      "speed_m_s": 20.0
+    },
+    "reconstructed_exit_causes": [
+      "minimum_altitude"
+    ]
+  }
+]

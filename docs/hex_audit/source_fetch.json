@@ -1,0 +1,125 @@
+[
+  {
+    "name": "rflymad_v2.html",
+    "url": "https://arxiv.org/html/2311.11340v2",
+    "access_date": "2026-10-06",
+    "status": 200,
+    "bytes": 164257,
+    "final_url": "https://arxiv.org/html/2311.11340v2",
+    "sha256": "8f547c812f811879ebe7c1ae71156b2eb5dbbde8b34966ecb9889b4af5eead9a"
+  },
+  {
+    "name": "rflymad_dataset.html",
+    "url": "https://rfly-openha.github.io/documents/4_resources/dataset.html",
+    "access_date": "2026-10-06",
+    "status": 200,
+    "bytes": 104728,
+    "final_url": "https://rfly-openha.github.io/documents/4_resources/dataset.html",
+    "sha256": "6b98034ef051499fc19f9ec8ab2c1afa4550759df531d581dcb7ab6ca883330f"
+  },
+  {
+    "name": "px4_112_control.html",
+    "url": "https://docs.px4.io/v1.12/en/flight_stack/controller_diagrams",
+    "access_date": "2026-10-06",
+    "status": 200,
+    "bytes": 414582,
+    "final_url": "https://docs.px4.io/v1.12/en/flight_stack/controller_diagrams",
+    "sha256": "66b1bc48db7327905b10cac74c5a540e052ac74136822f16df757299da5362a4"
+  },
+  {
+    "name": "px4_modern_allocation.html",
+    "url": "https://docs.px4.io/main/en/concept/control_allocation.html",
+    "access_date": "2026-10-06",
+    "status": 200,
+    "bytes": 1070579,
+    "final_url": "https://docs.px4.io/main/en/concept/control_allocation",
+    "sha256": "244621487630c9b45451b205af6795d1b1bba4b3f746adf19c9cdcf3f2386d04"
+  },
+  {
+    "name": "PositionControl.cpp",
+    "url": "https://raw.githubusercontent.com/PX4/PX4-Autopilot/v1.12.3/src/modules/mc_pos_control/PositionControl/PositionControl.cpp",
+    "access_date": "2026-10-06",
+    "status": 200,
+    "bytes": 8794,
+    "final_url": "https://raw.githubusercontent.com/PX4/PX4-Autopilot/v1.12.3/src/modules/mc_pos_control/PositionControl/PositionControl.cpp",
+    "sha256": "8bc5a6509b0bbb8df05b2348552d0dc639e72280cc0e5448c6b082018bfad499"
+  },
+  {
+    "name": "AttitudeControl.cpp",
+    "url": "https://raw.githubusercontent.com/PX4/PX4-Autopilot/v1.12.3/src/modules/mc_att_control/AttitudeControl/AttitudeControl.cpp",
+    "access_date": "2026-10-06",
+    "status": 200,
+    "bytes": 4678,
+    "final_url": "https://raw.githubusercontent.com/PX4/PX4-Autopilot/v1.12.3/src/modules/mc_att_control/AttitudeControl/AttitudeControl.cpp",
+    "sha256": "da8b346114b9126a0f3e79eeb3ee6c5e3b219350caa6add259b36bba02c8e54f"
+  },
+  {
+    "name": "RateControl.cpp",
+    "url": "https://raw.githubusercontent.com/PX4/PX4-Autopilot/v1.12.3/src/modules/mc_rate_control/RateControl/RateControl.cpp",
+    "access_date": "2026-10-06",
+    "status": 200,
+    "bytes": 4455,
+    "final_url": "https://raw.githubusercontent.com/PX4/PX4-Autopilot/v1.12.3/src/modules/mc_rate_control/RateControl/RateControl.cpp",
+    "sha256": "9f90c0ea42ee672138f9aaa76cfeea6ea1abf5df4db3d889c36750dfd1f66a4d"
+  },
+  {
+    "name": "px4_1123_ref.json",
+    "url": "https://api.github.com/repos/PX4/PX4-Autopilot/git/ref/tags/v1.12.3",
+    "access_date": "2026-10-06",
+    "status": 200,
+    "bytes": 339,
+    "final_url": "https://api.github.com/repos/PX4/PX4-Autopilot/git/ref/tags/v1.12.3",
+    "sha256": "65d0d493eb698234b20a6db9f335260d98df417e1b2d8b5461b9314e3d885d00"
+  },
+  {
+    "name": "hummingbird_params.py",
+    "url": "https://raw.githubusercontent.com/spencerfolk/rotorpy/v2.1.2/rotorpy/vehicles/hummingbird_params.py",
+    "access_date": "2026-10-06",
+    "status": 200,
+    "bytes": 2953,
+    "final_url": "https://raw.githubusercontent.com/spencerfolk/rotorpy/v2.1.2/rotorpy/vehicles/hummingbird_params.py",
+    "sha256": "65d91af56aecd8f08e2dc10e7b9c43f05052d2e6b490fc4adf05ba2c73a67433"
+  },
+  {
+    "name": "rotorpy_simulate.py",
+    "url": "https://raw.githubusercontent.com/spencerfolk/rotorpy/v2.1.2/rotorpy/simulate.py",
+    "access_date": "2026-10-06",
+    "status": 200,
+    "bytes": 21893,
+    "final_url": "https://raw.githubusercontent.com/spencerfolk/rotorpy/v2.1.2/rotorpy/simulate.py",
+    "sha256": "43b363623c32fc95317c9e4a63e7e95eb5a1221a6e56f44072d40b83afb2ef37"
+  },
+  {
+    "name": "rotorpy_environments.py",
+    "url": "https://raw.githubusercontent.com/spencerfolk/rotorpy/v2.1.2/rotorpy/environments.py",
+    "access_date": "2026-10-06",
+    "status": 200,
+    "bytes": 10158,
+    "final_url": "https://raw.githubusercontent.com/spencerfolk/rotorpy/v2.1.2/rotorpy/environments.py",
+    "sha256": "cba376508bcc0de0ceb3e251d676758b305b2fdbfe395510f771c2779c23766c"
+  },
+  {
+    "name": "rotorpy_LICENSE",
+    "url": "https://raw.githubusercontent.com/spencerfolk/rotorpy/v2.1.2/LICENSE",
+    "access_date": "2026-10-06",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "name": "rotorpy_paper.html",
+    "url": "https://arxiv.org/html/2306.04485",
+    "access_date": "2026-10-06",
+    "status": 200,
+    "bytes": 108454,
+    "final_url": "https://arxiv.org/html/2306.04485",
+    "sha256": "44dc8c03c7c8d6dd9b1c464e1d567e5c361ceadb21c93791827c286a3414a23c"
+  },
+  {
+    "name": "giribet_2018.html",
+    "url": "https://doi.org/10.18178/ijeetc.7.2.58-65",
+    "access_date": "2026-10-06",
+    "status": 200,
+    "bytes": 18330,
+    "final_url": "https://www.ijeetc.com/index.php?m=content&c=index&a=show&catid=180&id=1142",
+    "sha256": "4902a1309832c5d5de4aca0a47f6fad190786f3fd10211660476860eef0f6e7d"
+  }
+]

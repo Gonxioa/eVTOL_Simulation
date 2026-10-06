@@ -1,0 +1,86 @@
+{
+  "AttitudeControl.cpp": {
+    "bytes": 4678,
+    "sha256": "da8b346114b9126a0f3e79eeb3ee6c5e3b219350caa6add259b36bba02c8e54f"
+  },
+  "PositionControl.cpp": {
+    "bytes": 8794,
+    "sha256": "8bc5a6509b0bbb8df05b2348552d0dc639e72280cc0e5448c6b082018bfad499"
+  },
+  "RateControl.cpp": {
+    "bytes": 4455,
+    "sha256": "9f90c0ea42ee672138f9aaa76cfeea6ea1abf5df4db3d889c36750dfd1f66a4d"
+  },
+  "giribet_2018.html": {
+    "bytes": 18330,
+    "sha256": "4902a1309832c5d5de4aca0a47f6fad190786f3fd10211660476860eef0f6e7d"
+  },
+  "giribet_2018.pdf": {
+    "bytes": 1758269,
+    "sha256": "bed544faed40df7bf418bee97194bbe537c92fb9d01602bcdcef8e3dbeadbec3"
+  },
+  "giribet_2018.txt": {
+    "bytes": 36341,
+    "sha256": "ecf5f47259213986ca933f86ce0db5a217ac44c926398e260959cd9ff1692bdf"
+  },
+  "hummingbird_params.py": {
+    "bytes": 2953,
+    "sha256": "65d91af56aecd8f08e2dc10e7b9c43f05052d2e6b490fc4adf05ba2c73a67433"
+  },
+  "multirotor.py": {
+    "bytes": 58160,
+    "sha256": "810e6036a982d5113c0ade9635bc27c8055722dc90330cf82bd787553091ebca"
+  },
+  "official_multirotor.py": {
+    "bytes": 58160,
+    "sha256": "810e6036a982d5113c0ade9635bc27c8055722dc90330cf82bd787553091ebca"
+  },
+  "official_quadrotor_control.py": {
+    "bytes": 14838,
+    "sha256": "a40087a448408a0486172be8c21460e9b04adbc2380f82a80bd1f6af2892c69e"
+  },
+  "px4_1123_ref.json": {
+    "bytes": 339,
+    "sha256": "65d0d493eb698234b20a6db9f335260d98df417e1b2d8b5461b9314e3d885d00"
+  },
+  "px4_112_control.html": {
+    "bytes": 414582,
+    "sha256": "66b1bc48db7327905b10cac74c5a540e052ac74136822f16df757299da5362a4"
+  },
+  "px4_modern_allocation.html": {
+    "bytes": 1070579,
+    "sha256": "244621487630c9b45451b205af6795d1b1bba4b3f746adf19c9cdcf3f2386d04"
+  },
+  "px4_tag_object.json": {
+    "bytes": 1244,
+    "sha256": "b8bb8ec81682ff92b610796d790c1ea93a0e968fd50a02c184d3542bc25c0066"
+  },
+  "quadrotor_control.py": {
+    "bytes": 14838,
+    "sha256": "a40087a448408a0486172be8c21460e9b04adbc2380f82a80bd1f6af2892c69e"
+  },
+  "rflymad_dataset.html": {
+    "bytes": 104728,
+    "sha256": "6b98034ef051499fc19f9ec8ab2c1afa4550759df531d581dcb7ab6ca883330f"
+  },
+  "rflymad_v2.html": {
+    "bytes": 164257,
+    "sha256": "8f547c812f811879ebe7c1ae71156b2eb5dbbde8b34966ecb9889b4af5eead9a"
+  },
+  "rotorpy_LICENSE.md": {
+    "bytes": 1054,
+    "sha256": "2d071d5adbe090f4c3e55ca49a7e1821d8b5353fb813f8b6f37350494a587666"
+  },
+  "rotorpy_environments.py": {
+    "bytes": 10158,
+    "sha256": "cba376508bcc0de0ceb3e251d676758b305b2fdbfe395510f771c2779c23766c"
+  },
+  "rotorpy_paper.html": {
+    "bytes": 108454,
+    "sha256": "44dc8c03c7c8d6dd9b1c464e1d567e5c361ceadb21c93791827c286a3414a23c"
+  },
+  "rotorpy_simulate.py": {
+    "bytes": 21893,
+    "sha256": "43b363623c32fc95317c9e4a63e7e95eb5a1221a6e56f44072d40b83afb2ef37"
+  }
+}

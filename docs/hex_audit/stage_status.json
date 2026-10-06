@@ -1,0 +1,52 @@
+{
+  "A": {
+    "parameter_provenance_traceable": true,
+    "real_flight_support": false,
+    "status": "implemented_and_checked_research_scope"
+  },
+  "B": {
+    "real_flight_support": false,
+    "status": "implemented_and_checked_research_scope"
+  },
+  "C": {
+    "mathematical_consistency_in_declared_scope": true,
+    "real_flight_support": false,
+    "status": "implemented_and_checked_research_scope"
+  },
+  "D": {
+    "real_flight_support": false,
+    "status": "implemented_and_checked_research_scope"
+  },
+  "E": {
+    "real_flight_support": false,
+    "status": "implemented_and_checked_research_scope"
+  },
+  "F": {
+    "normal_research_gate": true,
+    "real_flight_support": false,
+    "status": "implemented_and_checked_research_scope"
+  },
+  "G": {
+    "all_full_stable": false,
+    "real_flight_support": false,
+    "status": "implemented_and_checked_research_scope"
+  },
+  "H": {
+    "observed_feedback_executed": true,
+    "real_flight_support": false,
+    "status": "implemented_and_checked_research_scope"
+  },
+  "I": {
+    "GAN_improvement_demonstrated": false,
+    "formal_training_done": false,
+    "generated_attitude_physics_validated": false,
+    "interface_only": true,
+    "legacy_euler_feature_singularity_supported": false,
+    "real_flight_support": false,
+    "status": "implemented_and_checked_research_scope"
+  },
+  "J": {
+    "real_flight_support": false,
+    "status": "implemented_and_checked_research_scope"
+  }
+}

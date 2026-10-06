@@ -1,0 +1,34 @@
+{
+  "command": "python classify.py",
+  "epochs": 1,
+  "exit_code": 0,
+  "feature_set": "rotation_combined",
+  "folds": 2,
+  "formal_performance_claim": false,
+  "gan_target_policy": "max: balanced dataset has no augmentation deficit",
+  "input_shape": [
+    38,
+    50,
+    21
+  ],
+  "new_settings": {
+    "CLASSIFIER_BATCH_SIZE": "8",
+    "CLASSIFIER_HIDDEN_DIM": "16",
+    "CLASSIFIER_LAYERS": "1",
+    "GAN_BATCH_SIZE": "8",
+    "GAN_HIDDEN_DIM": "16",
+    "GAN_LAYERS": "1",
+    "GAN_NOISE_DIM": "8",
+    "GAN_N_CRITIC": "1",
+    "GAN_QUALITY_EVAL": "1"
+  },
+  "physical_regularizer_lambda": 0,
+  "preserved_comparisons": [
+    "no_gan",
+    "class_weighted",
+    "random_oversampling",
+    "WGAN"
+  ],
+  "purpose": "interface_smoke_only_not_classifier_performance_evidence",
+  "real_source_groups": 2
+}
