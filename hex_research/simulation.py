@@ -1,5 +1,6 @@
 """Explicit event clock, plant-only fault schedules, atomic versioned data."""
 from dataclasses import dataclass
+from copy import deepcopy
 from pathlib import Path
 import time,json,subprocess
 import numpy as np
@@ -11,6 +12,7 @@ from .dynamics import HexPlant
 from .control import CascadeController
 from .observation import Sensors,OUWind
 from .math3d import rotation
+from .commands import LegacyTask, legacy_reference
 
 @dataclass(frozen=True)
 class FaultSchedule:
@@ -30,34 +32,28 @@ class FaultSchedule:
     def events(self,duration): return [t for t in (self.start,self.end) if t is not None and 0<t<duration]
 
 def reference(t,task='hover',offset=(0,0,0)):
-    center=np.array([0.,0.,2.5])+offset
-    p=center.copy(); v=np.zeros(3); a=np.zeros(3); yaw=0.; rate=0.
-    if task=='tracking':
-        frequency=.6; amplitude=.4
-        p+=np.array([amplitude*np.sin(frequency*t),amplitude*(1-np.cos(frequency*t)),.15*np.sin(.4*t)])
-        v=np.array([amplitude*frequency*np.cos(frequency*t),amplitude*frequency*np.sin(frequency*t),.06*np.cos(.4*t)])
-        a=np.array([-amplitude*frequency**2*np.sin(frequency*t),amplitude*frequency**2*np.cos(frequency*t),-.024*np.sin(.4*t)])
-        yaw=.2*np.sin(.3*t); rate=.06*np.cos(.3*t)
-    elif task=='step' and t>=2: p+=np.array([.5,-.4,.3])
-    elif task=='saturation' and 2<=t<4: p+=np.array([0,0,50.])
-    return {'x':p,'x_dot':v,'x_ddot':a,'yaw':yaw,'yaw_dot':rate}
+    return legacy_reference(t, task, offset)
 
 def clocks(duration,rate):
     count=int(np.floor(duration*rate+1e-9))
     return np.arange(count+1,dtype=float)/rate
 
 def simulate(cfg,duration=8.,schedule=None,seed=None,feedback='ideal_feedback',noise=False,wind=False,
-             task='hover',initial=None,force_fn=None,torque_fn=None):
+             task='hover',initial=None,force_fn=None,torque_fn=None,task_provider=None,seed_streams=None,diagnostic_sink=None):
     if feedback not in ('ideal_feedback','observed_feedback'): raise ValueError('Unknown feedback mode')
     if duration<=0 or not np.isfinite(duration): raise ValueError('Positive duration')
     plant=HexPlant(cfg); controller=CascadeController(cfg); schedule=schedule or FaultSchedule()
     if abs(duration*cfg['timing']['export_hz']-round(duration*cfg['timing']['export_hz']))>1e-8:
         raise ValueError('Duration must align with export clock; fault/recovery times may remain off-grid')
     seed=cfg['seed'] if seed is None else seed
-    streams=np.random.SeedSequence(seed).spawn(2)
+    streams=np.random.SeedSequence(seed).spawn(2) if seed_streams is None else [seed_streams['sensor'],seed_streams['wind']]
     sensors=Sensors(cfg,streams[0]); wind_process=OUWind(cfg,streams[1],wind)
     s=plant.initial() if initial is None else np.asarray(initial,dtype=float).copy()
     plant.unpack(s)
+    initial_state=s.copy()
+    provider=task_provider if task_provider is not None else LegacyTask(task)
+    provider.reset()
+    control_reference=None; control_reference_time=None
     timing=cfg['timing']; sensor_rate=cfg['sensor']['rate_hz']
     if sensor_rate!=cfg['wind']['update_rate_hz']: raise ValueError('Current implementation requires matching sensor and wind clocks')
     grids=[clocks(duration,r) for r in (timing['control_hz'],sensor_rate,timing['export_hz'])]
@@ -73,6 +69,9 @@ def simulate(cfg,duration=8.,schedule=None,seed=None,feedback='ideal_feedback',n
     force_fn=force_fn or (lambda t:np.zeros(3)); torque_fn=torque_fn or (lambda t:np.zeros(3))
     for i,t in enumerate(events):
         eta=schedule.at(t); force=force_fn(t); torque=torque_fn(t)
+        # Exactly one task call per union of control/export clocks. Never call
+        # a stateful/random provider from integration stages or twice for logs.
+        ref=deepcopy(provider.at(float(t))) if t in control_times or t in export_times else None
         if t in sensor_times:
             wind_value=wind_process.update(t)
             derivative=plant.derivative(t,s,command,eta,wind_value,force,torque)
@@ -84,28 +83,35 @@ def simulate(cfg,duration=8.,schedule=None,seed=None,feedback='ideal_feedback',n
             else:
                 eligible=[h for h in history if h['time']<=t-cfg['sensor']['feedback_delay_s']+1e-12]
                 observed=eligible[-1] if eligible else history[0]
-            controls=controller.update(float(t),observed,reference(t,task)); command=controls['cmd_motor_speeds']; evaluations+=1
+            control_reference=deepcopy(ref); control_reference_time=float(t)
+            controls=controller.update(float(t),observed,control_reference); command=controls['cmd_motor_speeds']; evaluations+=1
         if t in export_times:
             _,_,audit=plant.wrench(s,wind_value,force)
             actual=plant.derivative(t,s,command,eta,wind_value,force,torque)
-            ref=reference(t,task)
             rows.append({'time':float(t),'state':s.copy(),'measurement':{k:np.array(v).copy() if isinstance(v,np.ndarray) else v for k,v in last_measurement.items()},
                          'control':controls.copy(),'effectiveness':eta.copy(),'wind':wind_value.copy(),'reference':ref,
                          'feedback_timestamp':float(observed['time']),'feedback_age_s':float(t-observed['time']),
+                         'control_reference':deepcopy(control_reference),'control_reference_time':control_reference_time,
                          'acceleration_world':actual[3:6].copy(),'body_alpha':actual[10:13].copy(),
                          'audit':audit,'total_moment_body':plant.wrench(s,wind_value,force)[1]+torque})
+            if diagnostic_sink is not None:
+                from diagnostics.features import from_observation
+                diagnostic_sink(from_observation(last_measurement,command))
         bound=cfg['termination']
         if not np.isfinite(s).all(): raise FloatingPointError('Nonfinite physical state; never fabricate output')
         if np.linalg.norm(s[:3])>bound['position_norm_m'] or np.linalg.norm(s[3:6])>bound['speed_m_s'] or np.linalg.norm(s[10:13])>bound['body_rate_rad_s'] or s[2]<bound['minimum_altitude_m']:
             reason='physical_envelope_exit'; break
         if i+1<len(events): s=plant.integrate(s,t,events[i+1],command,schedule,wind_value,force,torque)
     return {'rows':rows,'termination':reason,'requested_duration_s':duration,'actual_duration_s':float(rows[-1]['time']),
-            'feedback_mode':feedback,'noise_enabled':noise,'wind_enabled':wind,'task':task,'seed':int(seed),
+            'feedback_mode':feedback,'noise_enabled':noise,'wind_enabled':wind,'task':provider.name,'task_config':deepcopy(provider.spec),'seed':int(seed),
+            'initial_state':initial_state.tolist(),'seed_streams':deepcopy(seed_streams),
             'elapsed_s':time.perf_counter()-started,'controller_evaluations':evaluations,'config':cfg,
             'config_hash':stable_hash(cfg),'independent_flight':True}
 
 def fingerprint(cfg):
     names=['main.py','scenario_config.py','control_allocation.py',*['hex_research/'+p.relative_to(ROOT/'hex_research').as_posix() for p in (ROOT/'hex_research').rglob('*.py')]]
+    names+=['diagnostics/'+p.relative_to(ROOT/'diagnostics').as_posix() for p in (ROOT/'diagnostics').rglob('*.py')]
+    names+=['hex_research/configs/research.json','hex_research/configs/continuous.json']
     return {'model_version':cfg['model_version'],'config_hash':stable_hash(cfg),
             'code_hashes':{n:sha256_file(ROOT/n) for n in sorted(names)},
             'code_head':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),

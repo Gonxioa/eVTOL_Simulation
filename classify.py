@@ -25,6 +25,7 @@ from sklearn.preprocessing import MinMaxScaler, StandardScaler
 from torch.utils.data import DataLoader, TensorDataset
 
 import WGAN
+from diagnostics.models import FaultLSTM
 from provenance import code_hashes, runtime_info, sha256_file, stable_hash, write_json
 from scenario_config import LABEL_NAMES as CONFIG_LABEL_NAMES, SCENARIO_BY_LABEL, NUM_ROTORS
 
@@ -209,30 +210,9 @@ def fit_scalers(X_train_raw, X_test_raw):
     )
 
 
-class FaultClassifier(nn.Module):
+class FaultClassifier(FaultLSTM):
     def __init__(self):
-        super().__init__()
-        self.lstm = nn.LSTM(
-            N_FEATURES, HIDDEN_DIM, N_LAYERS, batch_first=True,
-            dropout=0.3 if N_LAYERS > 1 else 0.0,
-        )
-        self.attention = nn.Linear(HIDDEN_DIM, 1)
-        self.head = nn.Sequential(
-            nn.Linear(HIDDEN_DIM, 64), nn.ReLU(), nn.Dropout(0.3), nn.Linear(64, N_CLASSES)
-        )
-
-    def forward(self, x, return_attention=False):
-        sequence, _ = self.lstm(x)
-        if ATTENTION_POOLING:
-            weights = torch.softmax(self.attention(torch.tanh(sequence)).squeeze(-1), dim=1)
-            pooled = torch.sum(sequence * weights.unsqueeze(-1), dim=1)
-        else:
-            weights = torch.full(
-                (x.size(0), x.size(1)), 1.0 / x.size(1), device=x.device, dtype=x.dtype
-            )
-            pooled = sequence.mean(dim=1)
-        logits = self.head(pooled)
-        return (logits, weights) if return_attention else logits
+        super().__init__(N_FEATURES, HIDDEN_DIM, N_LAYERS, N_CLASSES, ATTENTION_POOLING)
 
 
 def make_loader(X, y, shuffle=True):

@@ -32,6 +32,7 @@ class Sensors:
             q=quaternion(multiply(q,Rotation.from_rotvec(self.c['attitude_sample_std_rad']*self.rng[4].normal(size=3)).as_quat()))
             rotor+=self.c['rpm_sample_std_rad_s']*self.rng[5].normal(size=6)
         return {'x':x,'v':v,'q':q,'w':self.install@gyro,'accel_sensor':accel,'gyro_sensor':gyro,
+                'specific_force_body':self.install@accel,'gyro_body':self.install@gyro,
                 'rotor_measurement':rotor,'time':float(t)}
 
 class OUWind:

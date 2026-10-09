@@ -1,0 +1,662 @@
+{
+  "config": "hex_research/configs/continuous.json",
+  "entries": [
+    {
+      "key": "experiment_version",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "dimensionless/count/category; see key and contract",
+      "value": "hex_tasks_continuous_v1"
+    },
+    {
+      "key": "evidence_status",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "dimensionless/count/category; see key and contract",
+      "value": "predeclared_research_design_not_real_aircraft_or_formal_performance"
+    },
+    {
+      "key": "seed",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "dimensionless/count/category; see key and contract",
+      "value": 20261009
+    },
+    {
+      "key": "groups_per_family",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "dimensionless/count/category; see key and contract",
+      "value": 2
+    },
+    {
+      "key": "families",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "dimensionless/count/category; see key and contract",
+      "value": [
+        "hover",
+        "line",
+        "circle",
+        "vertical"
+      ]
+    },
+    {
+      "key": "duration_s",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "s",
+      "value": 8.0
+    },
+    {
+      "key": "motion_start_s",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "s",
+      "value": 1.0
+    },
+    {
+      "key": "motion_end_s",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "s",
+      "value": 7.0
+    },
+    {
+      "key": "fault_time_range_s",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "s",
+      "value": [
+        2.5,
+        3.5
+      ]
+    },
+    {
+      "key": "initial_position_jitter_m",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "m",
+      "value": 0.01
+    },
+    {
+      "key": "initial_attitude_jitter_rad",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "rad",
+      "value": 0.005
+    },
+    {
+      "key": "ranges.height_m",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "m",
+      "value": [
+        2.3,
+        2.7
+      ]
+    },
+    {
+      "key": "ranges.heading_rad",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "rad",
+      "value": [
+        -3.141592653589793,
+        3.141592653589793
+      ]
+    },
+    {
+      "key": "ranges.yaw_rad",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "rad",
+      "value": [
+        -0.2,
+        0.2
+      ]
+    },
+    {
+      "key": "ranges.yaw_change_rad",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "rad",
+      "value": [
+        -0.3,
+        0.3
+      ]
+    },
+    {
+      "key": "ranges.line_distance_m",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "m",
+      "value": [
+        1.0,
+        1.6
+      ]
+    },
+    {
+      "key": "ranges.circle_radius_m",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "m",
+      "value": [
+        0.25,
+        0.35
+      ]
+    },
+    {
+      "key": "ranges.vertical_distance_m",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "m",
+      "value": [
+        -0.6,
+        0.6
+      ]
+    },
+    {
+      "key": "reference_limits.speed_m_s",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "s",
+      "value": 1.0
+    },
+    {
+      "key": "reference_limits.acceleration_m_s2",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "m/s²",
+      "value": 1.5
+    },
+    {
+      "key": "reference_limits.yaw_rate_rad_s",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "s",
+      "value": 0.3
+    },
+    {
+      "key": "reference_limits.horizontal_radius_m",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "m",
+      "value": 2.5
+    },
+    {
+      "key": "reference_limits.altitude_m",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "m",
+      "value": [
+        1.0,
+        4.0
+      ]
+    },
+    {
+      "key": "normal_acceptance.position_rmse_m",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "m",
+      "value": 0.25
+    },
+    {
+      "key": "normal_acceptance.final_position_error_m",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "m",
+      "value": 0.1
+    },
+    {
+      "key": "normal_acceptance.maximum_tilt_deg",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "dimensionless/count/category; see key and contract",
+      "value": 35.0
+    },
+    {
+      "key": "normal_acceptance.maximum_body_rate_rad_s",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "s",
+      "value": 3.0
+    },
+    {
+      "key": "normal_acceptance.maximum_nominal_bound_fraction",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "dimensionless/count/category; see key and contract",
+      "value": 0.05
+    },
+    {
+      "key": "normal_acceptance.basis",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "dimensionless/count/category; see key and contract",
+      "value": "RMSE and tilt reuse old research gates; final/rate/saturation are new predeclared research requirements"
+    },
+    {
+      "key": "diagnostics.schema_version",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "dimensionless/count/category; see key and contract",
+      "value": "diagnostic_packet_v1"
+    },
+    {
+      "key": "diagnostics.feature_set",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "dimensionless/count/category; see key and contract",
+      "value": "imu_only"
+    },
+    {
+      "key": "diagnostics.sample_hz",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "Hz",
+      "value": 100.0
+    },
+    {
+      "key": "diagnostics.window",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "dimensionless/count/category; see key and contract",
+      "value": 50
+    },
+    {
+      "key": "diagnostics.step",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "dimensionless/count/category; see key and contract",
+      "value": 10
+    },
+    {
+      "key": "diagnostics.gap_tolerance_s",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "s",
+      "value": 1e-06
+    },
+    {
+      "key": "diagnostics.fault_probability_threshold",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "dimensionless/count/category; see key and contract",
+      "value": 0.8
+    },
+    {
+      "key": "diagnostics.consecutive_windows",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "dimensionless/count/category; see key and contract",
+      "value": 3
+    },
+    {
+      "key": "diagnostics.cooldown_s",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "s",
+      "value": 1.0
+    },
+    {
+      "key": "diagnostics.selection_status",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "dimensionless/count/category; see key and contract",
+      "value": "initial_design_not_tuned_or_calibrated"
+    },
+    {
+      "key": "interface_fit.purpose",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "dimensionless/count/category; see key and contract",
+      "value": "development_continuous_interface_check_not_formal_accuracy"
+    },
+    {
+      "key": "interface_fit.epochs",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "dimensionless/count/category; see key and contract",
+      "value": 3
+    },
+    {
+      "key": "interface_fit.hidden_dim",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "dimensionless/count/category; see key and contract",
+      "value": 32
+    },
+    {
+      "key": "interface_fit.layers",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "dimensionless/count/category; see key and contract",
+      "value": 1
+    },
+    {
+      "key": "interface_fit.learning_rate",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "dimensionless/count/category; see key and contract",
+      "value": 0.001
+    },
+    {
+      "key": "interface_fit.seed",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "dimensionless/count/category; see key and contract",
+      "value": 91009
+    },
+    {
+      "key": "interface_fit.max_windows_per_class",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "dimensionless/count/category; see key and contract",
+      "value": 160
+    },
+    {
+      "key": "interface_fit.training_repeat",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "dimensionless/count/category; see key and contract",
+      "value": 0
+    },
+    {
+      "key": "interface_fit.replay_repeat",
+      "readers": [
+        "hex_research.commands",
+        "hex_research.next_steps",
+        "diagnostics.continuous",
+        "diagnostics.workflow"
+      ],
+      "source": "IMPLEMENTATION_REQUEST.md; explicit implementation choice recorded before new-task trials",
+      "status": "research_experiment_design_not_measured_or_optimal",
+      "unit": "dimensionless/count/category; see key and contract",
+      "value": 1
+    }
+  ],
+  "inherited_physics_ledger": "docs/hex_audit/parameter_ledger.json"
+}

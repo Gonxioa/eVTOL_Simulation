@@ -1,0 +1,753 @@
+{
+  "faults": {
+    "all_full_factors": {
+      "motor0_full": 0.0,
+      "motor1_full": 0.0,
+      "motor2_full": 0.0,
+      "motor3_full": 0.0,
+      "motor4_full": 0.0,
+      "motor5_full": 0.0
+    },
+    "cases": {
+      "motor0_full": {
+        "actual_duration_s": 4.19,
+        "controller_evaluations": 420,
+        "elapsed_s": 3.549659900018014,
+        "feedback_mode": "ideal_feedback",
+        "final_position_error_m": 4.577090347905305,
+        "final_velocity_integral": [
+          -0.5164639316816497,
+          0.008810159755064263,
+          -2.0
+        ],
+        "max_initial_steady_actual_thrust_difference_N": 7.434642959156543,
+        "maximum_rate_rad_s": 9.223184284811511,
+        "maximum_speed_m_s": 7.433268016491668,
+        "maximum_tilt_deg": 174.33794876871934,
+        "nominal_bound_fraction": 0.1619047619047619,
+        "position_rmse_m": 1.061458245111468,
+        "termination": "physical_envelope_exit"
+      },
+      "motor0_partial": {
+        "actual_duration_s": 7.0,
+        "controller_evaluations": 701,
+        "elapsed_s": 5.799002200015821,
+        "feedback_mode": "ideal_feedback",
+        "final_position_error_m": 1.6735986948470323,
+        "final_velocity_integral": [
+          1.2970129465562727,
+          0.008253084586505866,
+          0.1799673804191023
+        ],
+        "max_initial_steady_actual_thrust_difference_N": 0.9982691121369172,
+        "maximum_rate_rad_s": 0.8896413757169992,
+        "maximum_speed_m_s": 1.3857398300417783,
+        "maximum_tilt_deg": 15.419323631306472,
+        "nominal_bound_fraction": 0.0,
+        "position_rmse_m": 1.244161931833513,
+        "termination": "completed"
+      },
+      "motor0_severe": {
+        "actual_duration_s": 4.22,
+        "controller_evaluations": 423,
+        "elapsed_s": 3.676014499971643,
+        "feedback_mode": "ideal_feedback",
+        "final_position_error_m": 4.6309460484976155,
+        "final_velocity_integral": [
+          0.24385974571490543,
+          0.012185965970962543,
+          -2.0
+        ],
+        "max_initial_steady_actual_thrust_difference_N": 3.872788183540159,
+        "maximum_rate_rad_s": 4.543281892444652,
+        "maximum_speed_m_s": 9.352581980055605,
+        "maximum_tilt_deg": 166.45057168936077,
+        "nominal_bound_fraction": 0.19621749408983452,
+        "position_rmse_m": 1.0213122297206974,
+        "termination": "physical_envelope_exit"
+      },
+      "motor1_full": {
+        "actual_duration_s": 4.18,
+        "controller_evaluations": 419,
+        "elapsed_s": 3.529232000000775,
+        "feedback_mode": "ideal_feedback",
+        "final_position_error_m": 4.595075405693713,
+        "final_velocity_integral": [
+          -0.26880890429331894,
+          -0.4570294677398757,
+          -2.0
+        ],
+        "max_initial_steady_actual_thrust_difference_N": 7.6007478467202105,
+        "maximum_rate_rad_s": 9.672372884511107,
+        "maximum_speed_m_s": 7.823023193728568,
+        "maximum_tilt_deg": 172.66095548871303,
+        "nominal_bound_fraction": 0.15990453460620524,
+        "position_rmse_m": 1.0485721016373588,
+        "termination": "physical_envelope_exit"
+      },
+      "motor1_partial": {
+        "actual_duration_s": 7.0,
+        "controller_evaluations": 701,
+        "elapsed_s": 5.747355800005607,
+        "feedback_mode": "ideal_feedback",
+        "final_position_error_m": 0.9070371489639836,
+        "final_velocity_integral": [
+          -0.594725474252851,
+          0.2998658198563823,
+          0.2169786896938967
+        ],
+        "max_initial_steady_actual_thrust_difference_N": 0.9982691121369243,
+        "maximum_rate_rad_s": 0.8897037168212575,
+        "maximum_speed_m_s": 1.3854960417537519,
+        "maximum_tilt_deg": 15.45060938112386,
+        "nominal_bound_fraction": 0.0,
+        "position_rmse_m": 0.8918137936384791,
+        "termination": "completed"
+      },
+      "motor1_severe": {
+        "actual_duration_s": 4.22,
+        "controller_evaluations": 423,
+        "elapsed_s": 3.5765266000526026,
+        "feedback_mode": "ideal_feedback",
+        "final_position_error_m": 4.634575670330282,
+        "final_velocity_integral": [
+          -0.47943394990128835,
+          -0.15315237760546718,
+          -2.0
+        ],
+        "max_initial_steady_actual_thrust_difference_N": 3.8727881835403437,
+        "maximum_rate_rad_s": 4.548923470702623,
+        "maximum_speed_m_s": 9.367016902082305,
+        "maximum_tilt_deg": 138.48846097785324,
+        "nominal_bound_fraction": 0.19858156028368795,
+        "position_rmse_m": 1.021909976194891,
+        "termination": "physical_envelope_exit"
+      },
+      "motor2_full": {
+        "actual_duration_s": 4.18,
+        "controller_evaluations": 419,
+        "elapsed_s": 3.953286200063303,
+        "feedback_mode": "ideal_feedback",
+        "final_position_error_m": 4.5950765460515965,
+        "final_velocity_integral": [
+          0.2688090596452937,
+          -0.4570298316875203,
+          -2.0
+        ],
+        "max_initial_steady_actual_thrust_difference_N": 7.600747846720219,
+        "maximum_rate_rad_s": 9.672378001321203,
+        "maximum_speed_m_s": 7.82302865466471,
+        "maximum_tilt_deg": 172.6609922541036,
+        "nominal_bound_fraction": 0.15990453460620524,
+        "position_rmse_m": 1.0485722155109338,
+        "termination": "physical_envelope_exit"
+      },
+      "motor2_partial": {
+        "actual_duration_s": 7.0,
+        "controller_evaluations": 701,
+        "elapsed_s": 5.746953300083987,
+        "feedback_mode": "ideal_feedback",
+        "final_position_error_m": 0.9070371489639846,
+        "final_velocity_integral": [
+          0.5947254742528453,
+          0.2998658198563827,
+          0.2169786896938972
+        ],
+        "max_initial_steady_actual_thrust_difference_N": 0.9982691121369243,
+        "maximum_rate_rad_s": 0.8897037168212623,
+        "maximum_speed_m_s": 1.385496041753759,
+        "maximum_tilt_deg": 15.450609381123956,
+        "nominal_bound_fraction": 0.0,
+        "position_rmse_m": 0.8918137936384787,
+        "termination": "completed"
+      },
+      "motor2_severe": {
+        "actual_duration_s": 4.22,
+        "controller_evaluations": 423,
+        "elapsed_s": 3.5844460000516847,
+        "feedback_mode": "ideal_feedback",
+        "final_position_error_m": 4.634575670356973,
+        "final_velocity_integral": [
+          0.4794339499158665,
+          -0.15315237755839892,
+          -2.0
+        ],
+        "max_initial_steady_actual_thrust_difference_N": 3.8727881835403437,
+        "maximum_rate_rad_s": 4.548923470702624,
+        "maximum_speed_m_s": 9.367016902231764,
+        "maximum_tilt_deg": 138.48846097615024,
+        "nominal_bound_fraction": 0.19858156028368795,
+        "position_rmse_m": 1.0219099761973804,
+        "termination": "physical_envelope_exit"
+      },
+      "motor3_full": {
+        "actual_duration_s": 4.19,
+        "controller_evaluations": 420,
+        "elapsed_s": 3.5163547000847757,
+        "feedback_mode": "ideal_feedback",
+        "final_position_error_m": 4.577090347905304,
+        "final_velocity_integral": [
+          0.5164639316816291,
+          0.008810159755064243,
+          -2.0
+        ],
+        "max_initial_steady_actual_thrust_difference_N": 7.434642959156525,
+        "maximum_rate_rad_s": 9.223184284811495,
+        "maximum_speed_m_s": 7.433268016491669,
+        "maximum_tilt_deg": 174.33794876871934,
+        "nominal_bound_fraction": 0.1619047619047619,
+        "position_rmse_m": 1.0614582451114671,
+        "termination": "physical_envelope_exit"
+      },
+      "motor3_partial": {
+        "actual_duration_s": 7.0,
+        "controller_evaluations": 701,
+        "elapsed_s": 5.767891900031827,
+        "feedback_mode": "ideal_feedback",
+        "final_position_error_m": 1.6735986948469994,
+        "final_velocity_integral": [
+          -1.2970129465562636,
+          0.008253084586505562,
+          0.17996738041910276
+        ],
+        "max_initial_steady_actual_thrust_difference_N": 0.9982691121369172,
+        "maximum_rate_rad_s": 0.8896413757170056,
+        "maximum_speed_m_s": 1.3857398300417914,
+        "maximum_tilt_deg": 15.419323631306664,
+        "nominal_bound_fraction": 0.0,
+        "position_rmse_m": 1.2441619318335058,
+        "termination": "completed"
+      },
+      "motor3_severe": {
+        "actual_duration_s": 4.22,
+        "controller_evaluations": 423,
+        "elapsed_s": 3.610852999961935,
+        "feedback_mode": "ideal_feedback",
+        "final_position_error_m": 4.630946048553538,
+        "final_velocity_integral": [
+          -0.24385974580520275,
+          0.01218596597309694,
+          -2.0
+        ],
+        "max_initial_steady_actual_thrust_difference_N": 3.8727881835401554,
+        "maximum_rate_rad_s": 4.5432818924446545,
+        "maximum_speed_m_s": 9.352581980442968,
+        "maximum_tilt_deg": 166.45057173385567,
+        "nominal_bound_fraction": 0.19621749408983452,
+        "position_rmse_m": 1.0213122297251533,
+        "termination": "physical_envelope_exit"
+      },
+      "motor4_full": {
+        "actual_duration_s": 4.18,
+        "controller_evaluations": 419,
+        "elapsed_s": 3.550381900044158,
+        "feedback_mode": "ideal_feedback",
+        "final_position_error_m": 4.5499857155683845,
+        "final_velocity_integral": [
+          0.2820182199288783,
+          0.4573604838550986,
+          -2.0
+        ],
+        "max_initial_steady_actual_thrust_difference_N": 7.563995846743518,
+        "maximum_rate_rad_s": 9.408494728776462,
+        "maximum_speed_m_s": 7.627594417855739,
+        "maximum_tilt_deg": 175.3895703373708,
+        "nominal_bound_fraction": 0.15990453460620524,
+        "position_rmse_m": 1.0436859754905186,
+        "termination": "physical_envelope_exit"
+      },
+      "motor4_partial": {
+        "actual_duration_s": 7.0,
+        "controller_evaluations": 701,
+        "elapsed_s": 5.934825100004673,
+        "feedback_mode": "ideal_feedback",
+        "final_position_error_m": 0.8165759636317037,
+        "final_velocity_integral": [
+          0.6036538597550853,
+          -0.09412012166974658,
+          0.20977851713385343
+        ],
+        "max_initial_steady_actual_thrust_difference_N": 0.99826911213691,
+        "maximum_rate_rad_s": 0.8895785621967525,
+        "maximum_speed_m_s": 1.353218593709015,
+        "maximum_tilt_deg": 15.387396513662733,
+        "nominal_bound_fraction": 0.0,
+        "position_rmse_m": 0.8478060862448016,
+        "termination": "completed"
+      },
+      "motor4_severe": {
+        "actual_duration_s": 4.22,
+        "controller_evaluations": 423,
+        "elapsed_s": 3.6590031000087038,
+        "feedback_mode": "ideal_feedback",
+        "final_position_error_m": 4.627903962835436,
+        "final_velocity_integral": [
+          0.49136004382705645,
+          0.1540135496394344,
+          -2.0
+        ],
+        "max_initial_steady_actual_thrust_difference_N": 3.8727881835399742,
+        "maximum_rate_rad_s": 4.537392944964683,
+        "maximum_speed_m_s": 9.357079963210584,
+        "maximum_tilt_deg": 134.43159164449193,
+        "nominal_bound_fraction": 0.19621749408983452,
+        "position_rmse_m": 1.0204302320315277,
+        "termination": "physical_envelope_exit"
+      },
+      "motor5_full": {
+        "actual_duration_s": 4.18,
+        "controller_evaluations": 419,
+        "elapsed_s": 3.6036856999853626,
+        "feedback_mode": "ideal_feedback",
+        "final_position_error_m": 4.549985715559886,
+        "final_velocity_integral": [
+          -0.28201821993015946,
+          0.4573604838570264,
+          -2.0
+        ],
+        "max_initial_steady_actual_thrust_difference_N": 7.563995846743516,
+        "maximum_rate_rad_s": 9.408494728865175,
+        "maximum_speed_m_s": 7.627594417814675,
+        "maximum_tilt_deg": 175.38957033754366,
+        "nominal_bound_fraction": 0.15990453460620524,
+        "position_rmse_m": 1.0436859754896701,
+        "termination": "physical_envelope_exit"
+      },
+      "motor5_partial": {
+        "actual_duration_s": 7.0,
+        "controller_evaluations": 701,
+        "elapsed_s": 5.813563199946657,
+        "feedback_mode": "ideal_feedback",
+        "final_position_error_m": 0.8165759636317047,
+        "final_velocity_integral": [
+          -0.6036538597550923,
+          -0.0941201216697461,
+          0.20977851713385193
+        ],
+        "max_initial_steady_actual_thrust_difference_N": 0.9982691121369172,
+        "maximum_rate_rad_s": 0.8895785621967494,
+        "maximum_speed_m_s": 1.3532185937090073,
+        "maximum_tilt_deg": 15.387396513662567,
+        "nominal_bound_fraction": 0.0,
+        "position_rmse_m": 0.8478060862448026,
+        "termination": "completed"
+      },
+      "motor5_severe": {
+        "actual_duration_s": 4.22,
+        "controller_evaluations": 423,
+        "elapsed_s": 3.6023975999560207,
+        "feedback_mode": "ideal_feedback",
+        "final_position_error_m": 4.627903962835245,
+        "final_velocity_integral": [
+          -0.4913600438273904,
+          0.15401354963679295,
+          -2.0
+        ],
+        "max_initial_steady_actual_thrust_difference_N": 3.8727881835399742,
+        "maximum_rate_rad_s": 4.537392944964678,
+        "maximum_speed_m_s": 9.357079963210204,
+        "maximum_tilt_deg": 134.43159164431765,
+        "nominal_bound_fraction": 0.19621749408983452,
+        "position_rmse_m": 1.020430232031496,
+        "termination": "physical_envelope_exit"
+      },
+      "normal": {
+        "actual_duration_s": 7.0,
+        "controller_evaluations": 701,
+        "elapsed_s": 5.589718200033531,
+        "feedback_mode": "ideal_feedback",
+        "final_position_error_m": 3.5611637903734986e-15,
+        "final_velocity_integral": [
+          2.1950088110412818e-15,
+          8.207116083680213e-15,
+          2.02022749593156e-14
+        ],
+        "max_initial_steady_actual_thrust_difference_N": 7.105427357601002e-15,
+        "maximum_rate_rad_s": 1.4979768284457456e-13,
+        "maximum_speed_m_s": 1.2523600622304733e-13,
+        "maximum_tilt_deg": 0.0,
+        "nominal_bound_fraction": 0.0,
+        "position_rmse_m": 2.3433788475424875e-14,
+        "termination": "completed"
+      }
+    },
+    "fault_mechanism": "sqrt(lambda) target RPM; dynamic thrust from actual RPM; no second scaling",
+    "fault_time_s": 3.005,
+    "requires_all_full_stable": false
+  },
+  "normal": {
+    "base_research_normal_gate": true,
+    "config_hash": "7bfa7b4ade91890b3191e76cadff64644de57f603a05be74f52dd3b39ad8d0ae",
+    "normal_cases": {
+      "attitude_recovery": {
+        "actual_duration_s": 8.0,
+        "controller_evaluations": 801,
+        "elapsed_s": 6.403118800022639,
+        "feedback_mode": "ideal_feedback",
+        "final_position_error_m": 0.008534950500724612,
+        "final_velocity_integral": [
+          0.008829707706020182,
+          0.01591179419038398,
+          0.0054592539116136455
+        ],
+        "maximum_rate_rad_s": 0.7575700314855396,
+        "maximum_speed_m_s": 0.39340338446694223,
+        "maximum_tilt_deg": 10.317192554325043,
+        "nominal_bound_fraction": 0.0,
+        "passed_research_condition": true,
+        "position_rmse_m": 0.06030180779020312,
+        "termination": "completed"
+      },
+      "constant_disturbance": {
+        "actual_duration_s": 10.0,
+        "controller_evaluations": 1001,
+        "elapsed_s": 8.751089200028218,
+        "feedback_mode": "ideal_feedback",
+        "final_position_error_m": 0.030610571978589653,
+        "final_velocity_integral": [
+          -0.06881590473857278,
+          0.03438550031856473,
+          -0.002381443218402255
+        ],
+        "maximum_rate_rad_s": 0.08595988543946394,
+        "maximum_speed_m_s": 0.14101192608913132,
+        "maximum_tilt_deg": 3.1467965662527337,
+        "nominal_bound_fraction": 0.0,
+        "passed_research_condition": true,
+        "position_rmse_m": 0.05565500101653933,
+        "termination": "completed"
+      },
+      "hover": {
+        "actual_duration_s": 8.0,
+        "controller_evaluations": 801,
+        "elapsed_s": 6.55899400007911,
+        "feedback_mode": "ideal_feedback",
+        "final_position_error_m": 9.694433508573046e-15,
+        "final_velocity_integral": [
+          2.689790971562835e-15,
+          3.376558498782656e-15,
+          2.0188824241936367e-14
+        ],
+        "maximum_rate_rad_s": 1.5241853595195363e-13,
+        "maximum_speed_m_s": 1.2523600622304733e-13,
+        "maximum_tilt_deg": 0.0,
+        "nominal_bound_fraction": 0.0,
+        "passed_research_condition": true,
+        "position_rmse_m": 2.3050695080951942e-14,
+        "termination": "completed"
+      },
+      "observed_delay": {
+        "actual_duration_s": 10.0,
+        "controller_evaluations": 1001,
+        "elapsed_s": 8.61684300005436,
+        "feedback_mode": "observed_feedback",
+        "final_position_error_m": 0.019958123060325312,
+        "final_velocity_integral": [
+          -0.009455226560619494,
+          0.003842064880595568,
+          -0.011943188745352573
+        ],
+        "maximum_rate_rad_s": 0.24759394393958822,
+        "maximum_speed_m_s": 0.4120644349213275,
+        "maximum_tilt_deg": 4.41255134196324,
+        "nominal_bound_fraction": 0.0,
+        "passed_research_condition": true,
+        "position_rmse_m": 0.03434572854808182,
+        "termination": "completed"
+      },
+      "observed_noise": {
+        "actual_duration_s": 10.0,
+        "controller_evaluations": 1001,
+        "elapsed_s": 8.479206799995154,
+        "feedback_mode": "observed_feedback",
+        "final_position_error_m": 0.017524416688362826,
+        "final_velocity_integral": [
+          -0.009362054449079338,
+          0.003986525224278777,
+          -0.011969723232433583
+        ],
+        "maximum_rate_rad_s": 0.22229691202360358,
+        "maximum_speed_m_s": 0.41147221849716903,
+        "maximum_tilt_deg": 4.186454837035017,
+        "nominal_bound_fraction": 0.0,
+        "passed_research_condition": true,
+        "position_rmse_m": 0.03636302229558252,
+        "termination": "completed"
+      },
+      "rate_recovery": {
+        "actual_duration_s": 8.0,
+        "controller_evaluations": 801,
+        "elapsed_s": 6.495230300002731,
+        "feedback_mode": "ideal_feedback",
+        "final_position_error_m": 0.002662262519392679,
+        "final_velocity_integral": [
+          -0.0009742143767837903,
+          -0.0012825775534338892,
+          0.0005600568818064859
+        ],
+        "maximum_rate_rad_s": 0.5385164807134505,
+        "maximum_speed_m_s": 0.11986879921907428,
+        "maximum_tilt_deg": 2.6495002095952005,
+        "nominal_bound_fraction": 0.0,
+        "passed_research_condition": true,
+        "position_rmse_m": 0.018959184357410584,
+        "termination": "completed"
+      },
+      "saturation_recovery": {
+        "actual_duration_s": 12.0,
+        "controller_evaluations": 1201,
+        "elapsed_s": 9.892538099898957,
+        "feedback_mode": "ideal_feedback",
+        "final_position_error_m": 0.08486606339103897,
+        "final_velocity_integral": [
+          -3.500999043819172e-15,
+          -4.400893087576327e-15,
+          0.30244658118896356
+        ],
+        "maximum_rate_rad_s": 2.4617624357957736e-14,
+        "maximum_speed_m_s": 1.553337885887025,
+        "maximum_tilt_deg": 0.0,
+        "nominal_bound_fraction": 0.042464612822647796,
+        "passed_research_condition": true,
+        "position_rmse_m": 20.066081236790716,
+        "termination": "completed"
+      },
+      "step": {
+        "actual_duration_s": 10.0,
+        "controller_evaluations": 1001,
+        "elapsed_s": 8.181953500024974,
+        "feedback_mode": "ideal_feedback",
+        "final_position_error_m": 0.0015878349770678181,
+        "final_velocity_integral": [
+          0.00170818224677973,
+          -0.0013151176720873276,
+          0.004843949199296342
+        ],
+        "maximum_rate_rad_s": 0.4813269754081363,
+        "maximum_speed_m_s": 0.7863545408102105,
+        "maximum_tilt_deg": 8.499813566901215,
+        "nominal_bound_fraction": 0.0,
+        "passed_research_condition": true,
+        "position_rmse_m": 0.1920191077495516,
+        "termination": "completed"
+      },
+      "tracking": {
+        "actual_duration_s": 10.0,
+        "controller_evaluations": 1001,
+        "elapsed_s": 8.24984589999076,
+        "feedback_mode": "ideal_feedback",
+        "final_position_error_m": 0.0057772603917847125,
+        "final_velocity_integral": [
+          0.012530343300089725,
+          -0.0026833691054484942,
+          -0.00812646690082442
+        ],
+        "maximum_rate_rad_s": 0.2027962876305246,
+        "maximum_speed_m_s": 0.4000850158613073,
+        "maximum_tilt_deg": 3.815481091137092,
+        "nominal_bound_fraction": 0.0,
+        "passed_research_condition": true,
+        "position_rmse_m": 0.03157027039967645,
+        "termination": "completed"
+      }
+    },
+    "real_flight_validation": false,
+    "sensitivity": {
+      "airframe.arm_radius_mx0.9": {
+        "actual_duration_s": 6.0,
+        "controller_evaluations": 601,
+        "elapsed_s": 5.116044200025499,
+        "feedback_mode": "ideal_feedback",
+        "final_position_error_m": 0.013967491731767045,
+        "final_velocity_integral": [
+          0.006330123638898434,
+          0.004570788345881824,
+          0.004749831557009531
+        ],
+        "maximum_rate_rad_s": 0.2041288129331211,
+        "maximum_speed_m_s": 0.39941759837890534,
+        "maximum_tilt_deg": 3.8306501019830694,
+        "nominal_bound_fraction": 0.0,
+        "position_rmse_m": 0.039813709247475106,
+        "termination": "completed"
+      },
+      "airframe.arm_radius_mx1.1": {
+        "actual_duration_s": 6.0,
+        "controller_evaluations": 601,
+        "elapsed_s": 5.037675700034015,
+        "feedback_mode": "ideal_feedback",
+        "final_position_error_m": 0.013811107391492616,
+        "final_velocity_integral": [
+          0.006433389257409118,
+          0.004475444808515246,
+          0.004758508312667268
+        ],
+        "maximum_rate_rad_s": 0.2017138594787588,
+        "maximum_speed_m_s": 0.40062519685545334,
+        "maximum_tilt_deg": 3.8034401263477644,
+        "nominal_bound_fraction": 0.0,
+        "position_rmse_m": 0.040113229537128405,
+        "termination": "completed"
+      },
+      "airframe.center_mass_kgx0.8": {
+        "actual_duration_s": 6.0,
+        "controller_evaluations": 601,
+        "elapsed_s": 5.3067341999849305,
+        "feedback_mode": "ideal_feedback",
+        "final_position_error_m": 0.015320450141109814,
+        "final_velocity_integral": [
+          0.005380462040988417,
+          0.005734614665075528,
+          0.004948989263928066
+        ],
+        "maximum_rate_rad_s": 0.20365931233297044,
+        "maximum_speed_m_s": 0.3973683230510932,
+        "maximum_tilt_deg": 3.8267967105577485,
+        "nominal_bound_fraction": 0.0,
+        "position_rmse_m": 0.04009877205002425,
+        "termination": "completed"
+      },
+      "airframe.center_mass_kgx1.2": {
+        "actual_duration_s": 6.0,
+        "controller_evaluations": 601,
+        "elapsed_s": 5.2997874999418855,
+        "feedback_mode": "ideal_feedback",
+        "final_position_error_m": 0.012768347218636417,
+        "final_velocity_integral": [
+          0.007175624419486832,
+          0.0035788546239233143,
+          0.004607608108396858
+        ],
+        "maximum_rate_rad_s": 0.20217393783688636,
+        "maximum_speed_m_s": 0.40219314437830594,
+        "maximum_tilt_deg": 3.8072404652351097,
+        "nominal_bound_fraction": 0.0,
+        "position_rmse_m": 0.03990910347675531,
+        "termination": "completed"
+      },
+      "propulsion.Q_over_T_mx0.8": {
+        "actual_duration_s": 6.0,
+        "controller_evaluations": 601,
+        "elapsed_s": 5.137373099918477,
+        "feedback_mode": "ideal_feedback",
+        "final_position_error_m": 0.013883518489756342,
+        "final_velocity_integral": [
+          0.0063860104812369966,
+          0.004518309550321246,
+          0.0047590913907646715
+        ],
+        "maximum_rate_rad_s": 0.20279461856212408,
+        "maximum_speed_m_s": 0.4000844081059775,
+        "maximum_tilt_deg": 3.815413269977239,
+        "nominal_bound_fraction": 0.0,
+        "position_rmse_m": 0.03997732615724083,
+        "termination": "completed"
+      },
+      "propulsion.Q_over_T_mx1.2": {
+        "actual_duration_s": 6.0,
+        "controller_evaluations": 601,
+        "elapsed_s": 5.036329400027171,
+        "feedback_mode": "ideal_feedback",
+        "final_position_error_m": 0.013882989439787831,
+        "final_velocity_integral": [
+          0.0063859817140561725,
+          0.00451816813155344,
+          0.004750997450456971
+        ],
+        "maximum_rate_rad_s": 0.20279720479562485,
+        "maximum_speed_m_s": 0.40008532960025084,
+        "maximum_tilt_deg": 3.8155177899622505,
+        "nominal_bound_fraction": 0.0,
+        "position_rmse_m": 0.03997700317843107,
+        "termination": "completed"
+      },
+      "propulsion.kTx0.8": {
+        "actual_duration_s": 6.0,
+        "controller_evaluations": 601,
+        "elapsed_s": 5.417557500069961,
+        "feedback_mode": "ideal_feedback",
+        "final_position_error_m": 0.015427228747476332,
+        "final_velocity_integral": [
+          0.005288328268144437,
+          0.005879529519201253,
+          0.00499903071763621
+        ],
+        "maximum_rate_rad_s": 0.20007066513433397,
+        "maximum_speed_m_s": 0.3986004122672609,
+        "maximum_tilt_deg": 3.7879484444966858,
+        "nominal_bound_fraction": 0.0,
+        "position_rmse_m": 0.04058976550480396,
+        "termination": "completed"
+      },
+      "propulsion.kTx1.2": {
+        "actual_duration_s": 6.0,
+        "controller_evaluations": 601,
+        "elapsed_s": 4.957259000046179,
+        "feedback_mode": "ideal_feedback",
+        "final_position_error_m": 0.012744859076701706,
+        "final_velocity_integral": [
+          0.0071986509520791195,
+          0.0035139814348445634,
+          0.004580598420785393
+        ],
+        "maximum_rate_rad_s": 0.2048509698775413,
+        "maximum_speed_m_s": 0.4011785521263384,
+        "maximum_tilt_deg": 3.8372121754837645,
+        "nominal_bound_fraction": 0.0,
+        "position_rmse_m": 0.03954589150156298,
+        "termination": "completed"
+      },
+      "propulsion.tau_sx0.6": {
+        "actual_duration_s": 6.0,
+        "controller_evaluations": 601,
+        "elapsed_s": 5.182029900024645,
+        "feedback_mode": "ideal_feedback",
+        "final_position_error_m": 0.01382472725596086,
+        "final_velocity_integral": [
+          0.0064026759781490895,
+          0.0045062951557678105,
+          0.004801419212278282
+        ],
+        "maximum_rate_rad_s": 0.19036132653890514,
+        "maximum_speed_m_s": 0.3977062865953098,
+        "maximum_tilt_deg": 3.66776171729588,
+        "nominal_bound_fraction": 0.0,
+        "position_rmse_m": 0.04003997987433061,
+        "termination": "completed"
+      },
+      "propulsion.tau_sx1.6": {
+        "actual_duration_s": 6.0,
+        "controller_evaluations": 601,
+        "elapsed_s": 4.862168599967845,
+        "feedback_mode": "ideal_feedback",
+        "final_position_error_m": 0.013943929987297333,
+        "final_velocity_integral": [
+          0.00637184218758474,
+          0.004541744944598121,
+          0.004706466340133342
+        ],
+        "maximum_rate_rad_s": 0.2163233854390252,
+        "maximum_speed_m_s": 0.40522685459247615,
+        "maximum_tilt_deg": 4.088772067326012,
+        "nominal_bound_fraction": 0.0,
+        "position_rmse_m": 0.039904855470203414,
+        "termination": "completed"
+      }
+    },
+    "sensitivity_status": "predeclared_design_variations_not_measured_confidence_intervals",
+    "step_convergence": {
+      "control": {
+        "max_position_difference_m": 0.0007468086165285995,
+        "passed": true,
+        "threshold_m": 0.03
+      },
+      "integration": {
+        "max_position_difference_m": 3.355317981179159e-11,
+        "passed": true,
+        "threshold_m": 0.02
+      }
+    }
+  },
+  "source_head": "63b9d7ee0dc47e11b5c1aee67e320458f36ed709",
+  "tests_exit": 0
+}
