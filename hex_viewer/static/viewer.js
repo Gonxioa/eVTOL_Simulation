@@ -17,7 +17,7 @@ async function loadRecord(){
   pause();error('');state.abort?.abort();state.abort=new AbortController();const token=++state.loading;
   const group=Number($('group').value),label=Number($('label').value);
   state.record=null;state.normal=null;state.time=0;$('record-name').textContent='正在加载记录…';
-  for(const id of ['position','reference-position','attitude','tilt','body-rate','prediction','fault-score','alarm-summary','phase','fault-clock','termination'])$(id).textContent='—';
+  for(const id of ['position','velocity','speed-norm','reference-position','attitude','tilt','body-rate','prediction','fault-score','alarm-summary','phase','fault-clock','termination'])$(id).textContent='—';
   $('motors').replaceChildren();$('injection-status').textContent='正在加载…';
   for(const id of ['play','reset','jump-fault','time'])$(id).disabled=true;
   for(const id of ['scene','height-chart','tilt-chart','score-chart']){const c=$(id);c.getContext('2d').clearRect(0,0,c.width,c.height);}
@@ -127,6 +127,7 @@ function render(){
   const early=r.meta.termination!=='completed';$('termination').textContent=early?`提前结束 ${fmt(r.meta.actual_end_s)} s · ${r.meta.termination_reasons.join('；')}`:`完整记录至${fmt(r.meta.actual_end_s)} s`;$('termination').classList.toggle('ended',early&&atEnd);
   const fault=s.effectiveness[i].some(v=>v<1);$('injection-status').textContent=fault?'注入真值：'+className(r.meta.label):'当前采样：未注入故障';$('injection-status').classList.toggle('fault',fault);
   $('position').textContent=vec(s.position[i]);$('reference-position').textContent=vec(s.reference[i]);$('attitude').textContent=vec(s.attitude[i].map(v=>v*180/Math.PI),2);$('body-rate').textContent=vec(s.body_rate[i]);$('tilt').textContent=fmt(tiltDegrees(s.attitude[i]),2);
+  $('velocity').textContent=vec(s.velocity[i]);$('speed-norm').textContent=fmt(Math.hypot(...s.velocity[i]),3);
   for(let m=0;m<6;m++){const tr=$('motor-'+m);tr.classList.toggle('fault',s.effectiveness[i][m]<1);const values=[fmt(s.command[i][m],1),fmt(s.rotor_speed[i][m],1),fmt(s.thrust[i][m],3),fmt(s.effectiveness[i][m],2)];values.forEach((v,j)=>tr.cells[j+1].textContent=v);}
   const prediction=predictionAt(r.diagnostics,t);
   $('prediction').textContent=!r.meta.diagnostics_available?'没有保存预测':!prediction?'尚未到首个诊断窗口':!prediction.valid?'当前诊断观测无效':'预测：'+className(prediction.predicted_label);

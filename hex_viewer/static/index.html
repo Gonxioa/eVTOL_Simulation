@@ -25,7 +25,7 @@
       <div class="charts"><div><h3>高度 <span>m</span></h3><canvas id="height-chart" aria-label="实际与参考高度曲线，点击可定位时间"></canvas></div><div><h3>机体倾角 <span>°</span></h3><canvas id="tilt-chart" aria-label="机体倾角曲线，点击可定位时间"></canvas></div></div>
     </section>
     <aside>
-      <section class="card"><h2>当前采样</h2><div class="status" id="injection-status">—</div><dl class="readings"><dt>位置 x / y / z，m</dt><dd id="position">—</dd><dt>参考位置，m</dt><dd id="reference-position">—</dd><dt>滚转 / 俯仰 / 偏航，°</dt><dd id="attitude">—</dd><dt>机体倾角，°</dt><dd id="tilt">—</dd><dt>角速度 p / q / r，rad/s</dt><dd id="body-rate">—</dd></dl></section>
+      <section class="card"><h2>当前采样</h2><div class="status" id="injection-status">—</div><dl class="readings"><dt>位置 x / y / z，m</dt><dd id="position">—</dd><dt>速度 vx / vy / vz，m/s</dt><dd id="velocity">—</dd><dt>总速度 |v|，m/s</dt><dd id="speed-norm">—</dd><dt>参考位置，m</dt><dd id="reference-position">—</dd><dt>滚转 / 俯仰 / 偏航，°</dt><dd id="attitude">—</dd><dt>机体倾角，°</dt><dd id="tilt">—</dd><dt>角速度 p / q / r，rad/s</dt><dd id="body-rate">—</dd></dl></section>
       <section class="card"><h2>六电机响应</h2><p class="small">命令与转速均为 rad/s；实际转速、推力为仿真状态真值。</p><table><thead><tr><th>电机</th><th>命令</th><th>实际</th><th>推力 N</th><th>效能 λ</th></tr></thead><tbody id="motors"></tbody></table></section>
       <section class="card"><h2>已保存的连续诊断</h2><p id="diagnostic-note" class="small">加载诊断记录…</p><div class="diagnostic-result"><span id="prediction">—</span><strong id="fault-score">—</strong></div><canvas id="score-chart" aria-label="已保存网络的故障得分与报警时刻"></canvas><p id="alarm-summary" class="small">—</p></section>
     </aside>
