@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>六旋翼任务回放</title><link rel="stylesheet" href="/viewer.css"></head>
+<body><main>
+  <header><div><p class="eyebrow">HEXAROTOR / SAVED FLIGHT REPLAY</p><h1>六旋翼任务回放</h1><p class="subtitle">实际轨迹、姿态与六电机响应，同步查看完整任务时间线。</p></div><div class="count" id="catalog-count">加载记录…</div></header>
+  <section class="toolbar" aria-label="选择与播放">
+    <label>任务组<select id="group" aria-label="任务组"></select></label>
+    <label>健康 / 故障状态<select id="label" aria-label="健康或故障状态"></select></label>
+    <label>播放速度<select id="speed" aria-label="播放速度"><option value="0.25">0.25×</option><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option><option value="4">4×</option></select></label>
+    <button id="play" class="primary" disabled>播放</button><button id="reset" disabled>回到起点</button><button id="jump-fault" disabled>跳到故障采样</button>
+  </section>
+  <p id="error" class="error" role="alert" hidden></p>
+  <section class="time-card" aria-label="回放时间轴">
+    <div class="time-header"><strong id="record-name">等待选择记录</strong><span><b id="time-now">0.00</b> / <span id="time-end">—</span> s　<span id="planned-end"></span></span></div>
+    <label class="sr-only" for="time">回放时间（秒）</label><input id="time" type="range" min="0" max="8" step="0.01" value="0" disabled>
+    <div class="time-footer"><span id="phase">—</span><span id="fault-clock">—</span><span id="termination">—</span></div>
+  </section>
+  <div class="layout">
+    <section class="scene-card">
+      <div class="section-heading"><h2>飞行过程 <span>ENU · 仿真真值</span></h2><div class="scene-controls"><label><input id="follow" type="checkbox">跟随放大</label><label><input id="normal-overlay" type="checkbox">同组正常轨迹</label><button id="camera-reset">复位视角</button></div></div>
+      <div class="legend"><span class="actual">实际轨迹</span><span class="reference">计划轨迹 0–8s</span><span class="normal">正常对照</span><span>圆盘亮度随实际转速变化；故障电机标红</span></div>
+      <canvas id="scene" tabindex="0" aria-label="六旋翼三维轨迹与姿态，可拖动旋转视角、滚轮缩放">浏览器需要支持Canvas。</canvas>
+      <div class="scene-caption"><span>拖动旋转 · 滚轮缩放 · 方向键调整视角</span><span>z=0为坐标参考面，无地面碰撞模型</span></div>
+      <div class="charts"><div><h3>高度 <span>m</span></h3><canvas id="height-chart" aria-label="实际与参考高度曲线，点击可定位时间"></canvas></div><div><h3>机体倾角 <span>°</span></h3><canvas id="tilt-chart" aria-label="机体倾角曲线，点击可定位时间"></canvas></div></div>
+    </section>
+    <aside>
+      <section class="card"><h2>当前采样</h2><div class="status" id="injection-status">—</div><dl class="readings"><dt>位置 x / y / z，m</dt><dd id="position">—</dd><dt>参考位置，m</dt><dd id="reference-position">—</dd><dt>滚转 / 俯仰 / 偏航，°</dt><dd id="attitude">—</dd><dt>机体倾角，°</dt><dd id="tilt">—</dd><dt>角速度 p / q / r，rad/s</dt><dd id="body-rate">—</dd></dl></section>
+      <section class="card"><h2>六电机响应</h2><p class="small">命令与转速均为 rad/s；实际转速、推力为仿真状态真值。</p><table><thead><tr><th>电机</th><th>命令</th><th>实际</th><th>推力 N</th><th>效能 λ</th></tr></thead><tbody id="motors"></tbody></table></section>
+      <section class="card"><h2>已保存的连续诊断</h2><p id="diagnostic-note" class="small">加载诊断记录…</p><div class="diagnostic-result"><span id="prediction">—</span><strong id="fault-score">—</strong></div><canvas id="score-chart" aria-label="已保存网络的故障得分与报警时刻"></canvas><p id="alarm-summary" class="small">—</p></section>
+    </aside>
+  </div>
+  <details class="card metadata"><summary>任务配置与记录信息</summary><dl id="metadata"></dl></details>
+  <footer>研究模型记录回放。故障注入真值与网络预测分别显示；网络为开发原型，可靠报警尚未通过。回放不会修改飞控或数据。</footer>
+</main><script type="module" src="/viewer.js"></script></body></html>

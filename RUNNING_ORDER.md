@@ -1,3 +1,8 @@
+# 2026-10-10动画回放
+
+已有v5输出时，在项目根目录运行 `python view_hex_tasks.py` 即可打开完整任务动画。
+详细操作、数据依据与验证见[动画回放说明](docs/hex_next/ANIMATION_REPLAY.md)。
+
 # 2026-10-10任务库与连续诊断
 
 最新两批工作以[docs/hex_next/RUNNING_ORDER.md](docs/hex_next/RUNNING_ORDER.md)为准。

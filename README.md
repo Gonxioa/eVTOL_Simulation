@@ -1,3 +1,9 @@
+## 2026-10-10：完整任务动画回放
+
+在项目根目录运行 `python view_hex_tasks.py`，浏览器中选择八组任务和19种状态，查看轨迹、六旋翼姿态、电机响应及已保存连续诊断。
+支持播放、暂停、倍速、时间拖动、故障采样跳转、跟随放大和同组正常对照；提前结束的记录停在实际末尾。
+使用现有v5记录，不重新造数或训练。入口与显示依据见[动画回放说明](docs/hex_next/ANIMATION_REPLAY.md)。
+
 ## 2026-10-10：参数化任务库与连续诊断
 
 本轮分支`hex-tasks-continuous-diagnostics`，实际修改和未通过项见[第1、2批报告](docs/hex_next/VALIDATION_REPORT.md)。

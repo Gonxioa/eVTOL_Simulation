@@ -3,6 +3,9 @@
 在`hex-tasks-continuous-diagnostics`分支的项目根目录执行，使用本地现有Python3.11。
 依赖实际版本见`dependencies.lock.txt`。这些入口不需要原UAV-FD/RflyMAD数据。
 
+已有完整v5输出时，直接执行 `python view_hex_tasks.py` 打开任务动画，不需要再次生成或训练。
+播放、倍速、故障跳转和对照操作见[动画回放说明](ANIMATION_REPLAY.md)。
+
 ```powershell
 python -m unittest discover -s tests -v
 python -m hex_research.next_steps library
