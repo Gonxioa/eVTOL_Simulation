@@ -21,6 +21,7 @@ from sklearn.preprocessing import StandardScaler
 
 from provenance import code_hashes, runtime_info, sha256_file, stable_hash, write_json
 from scenario_config import LABEL_NAMES, NUM_ROTORS, SCENARIO_BY_LABEL, SCENARIOS
+from diagnostics.features import FEATURE_SETS as OBSERVATION_FEATURE_SETS
 
 
 PROJECT_ROOT = Path(__file__).resolve().parent
@@ -55,6 +56,7 @@ FEATURE_SETS = {
     "combined": STATE_COLS + IMU_COLS + COMMAND_COLS,
     "rotation_combined": ROTATION_COLS + ['p','q_body','r'] + IMU_COLS + COMMAND_COLS,
 }
+FEATURE_SETS.update(OBSERVATION_FEATURE_SETS)
 if FEATURE_SET not in FEATURE_SETS:
     raise ValueError(f"FEATURE_SET={FEATURE_SET!r} 无效；可选: {sorted(FEATURE_SETS)}")
 FEATURE_COLS = FEATURE_SETS[FEATURE_SET]
@@ -233,6 +235,17 @@ def main():
             f"缺少 {manifest_path}；数据集可能未完整生成，禁止预处理。"
         )
     dataset_manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    if dataset_manifest.get('dataset_version') == 'hex_v5_continuous_tasks':
+        from diagnostics.preprocessing import prepare
+        settings = dict(dataset_manifest['diagnostic_settings'])
+        selected = os.getenv('FEATURE_SET', 'imu_only').strip().lower()
+        if selected not in OBSERVATION_FEATURE_SETS:
+            raise RuntimeError('v5 requires imu_only / imu_attitude / imu_attitude_command; historical feature sets remain v4')
+        settings['feature_set'] = selected
+        settings['window'] = int(os.getenv('HEX_WINDOW', str(settings['window'])))
+        settings['step'] = int(os.getenv('HEX_STEP', str(settings['step'])))
+        destination = SAVE_DIR if os.getenv('DATA_PROCESS_DIR_OVERRIDE') else PROJECT_ROOT/'plots'/'hex_v5_continuous'/'data_process'/selected
+        return prepare(DATA_DIR, destination, settings)
     if dataset_manifest.get("dataset_version") != "hex_v4_research_cascade":
         raise RuntimeError("当前入口仅处理hex_v4_research_cascade，旧数据留在独立legacy入口")
     from hex_research.data import validate_dataset

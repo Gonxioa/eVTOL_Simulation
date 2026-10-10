@@ -1,0 +1,22 @@
+{
+  "core_tests": 37,
+  "dataset_records": 152,
+  "local_branch": "hex-tasks-continuous-diagnostics",
+  "model_weights": {
+    "epoch3": {
+      "path": "output_hex_next_20261009/batch2/diagnostics/imu_only/interface_model.pt",
+      "sha256": "6a20c1b46a8bd7a045620dea09bb1a112e1c7ddcda91aaa5467b0bf3b8f1cf9e"
+    },
+    "epoch30": {
+      "path": "output_hex_next_20261009/batch2/diagnostics/imu_only_epoch30/interface_model.pt",
+      "sha256": "be126e2d42283902828f9796007a6535ac854610e2d167045a6650e33933ecc9"
+    }
+  },
+  "normal_task_cases_passed": 32,
+  "reliable_alarm_passed": false,
+  "remote_publish_performed": false,
+  "requested_batches": [
+    1,
+    2
+  ]
+}

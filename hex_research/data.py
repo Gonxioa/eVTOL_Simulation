@@ -54,6 +54,9 @@ def generate(cfg,out,groups=2,duration=6.):
 
 def validate_dataset(folder):
     folder=Path(folder); manifest=json.loads((folder/'dataset_generation_manifest.json').read_text(encoding='utf-8'))
+    if manifest['dataset_version']=='hex_v5_continuous_tasks':
+        from .continuous_data import validate
+        return validate(folder)
     if manifest['dataset_version']!=VERSION: raise RuntimeError('Unsupported dataset version')
     if set(manifest['csv_sha256'])!={p.name for p in folder.glob('*.csv')}: raise RuntimeError('CSV inventory mismatch')
     statuses=[]

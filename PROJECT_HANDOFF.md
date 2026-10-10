@@ -1,3 +1,11 @@
+## 2026-10-10：第1、2批交接
+
+参数化悬停/直线/绕圈/升降、v5配对完整记录、6/12/18维白名单及因果诊断已经实际实现。
+当前37项检查、32项新正常机动通过，152条记录包含96条明确早停。
+连续接口通过；30轮开发原型59/72事件检出、32s健康误报5次，可靠报警门禁未通过。
+先阅读[实际报告](docs/hex_next/VALIDATION_REPORT.md)及[复现命令](docs/hex_next/RUNNING_ORDER.md)。
+下一步为开发集特征和报警校准检查、分组小样本协议；尚不进行正式GAN扩增比较。
+
 ## 2026-10-06：研究六旋翼审计与自有飞控
 
 最新主线恢复正常+六个位置×Full/Severe/Partial的19类执行器效能下降任务。默认入口为`python main.py validate`，说明和实际结果见[docs/hex_audit/README.md](docs/hex_audit/README.md)。当前核心为自有ENU/FLU、19状态动力学与SI串级控制，旧SE3/RotorPy入口和原24项测试隔离保存在`legacy_reference/`。

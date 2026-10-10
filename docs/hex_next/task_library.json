@@ -1,0 +1,474 @@
+{
+  "groups": [
+    {
+      "fault_time_s": 3.2345250698781967,
+      "group_id": 1,
+      "initial_attitude_rotvec_rad": [
+        -0.0034555383949360034,
+        0.0036389473064771345,
+        -0.0002956855127249705
+      ],
+      "initial_position_offset_m": [
+        -0.009072276877496151,
+        -0.0019368093292006679,
+        -0.006847519874725019
+      ],
+      "repeat": 0,
+      "seed_streams": {
+        "fault": 1162840837,
+        "initial": 2086979157,
+        "sensor": 360926267,
+        "task": 556453477,
+        "wind": 4138032981
+      },
+      "task": {
+        "duration_s": 8.0,
+        "family": "hover",
+        "heading_rad": 0.08506063010456133,
+        "limits": {
+          "acceleration_m_s2": 1.5,
+          "altitude_m": [
+            1.0,
+            4.0
+          ],
+          "horizontal_radius_m": 2.5,
+          "speed_m_s": 1.0,
+          "yaw_rate_rad_s": 0.3
+        },
+        "motion_end_s": 7.0,
+        "motion_start_s": 1.0,
+        "origin_m": [
+          0.0,
+          0.0,
+          2.56053648366428
+        ],
+        "yaw_change_rad": 0.19100822966205816,
+        "yaw_start_rad": -0.06871162592387689
+      }
+    },
+    {
+      "fault_time_s": 2.7484842630895168,
+      "group_id": 2,
+      "initial_attitude_rotvec_rad": [
+        -8.281218733703632e-07,
+        0.004285531466853077,
+        -0.003993381859265197
+      ],
+      "initial_position_offset_m": [
+        0.0021288192541089063,
+        0.0060713363905726975,
+        0.0012465233995056033
+      ],
+      "repeat": 1,
+      "seed_streams": {
+        "fault": 4276081234,
+        "initial": 3089426228,
+        "sensor": 254292195,
+        "task": 3457598551,
+        "wind": 1999045140
+      },
+      "task": {
+        "duration_s": 8.0,
+        "family": "hover",
+        "heading_rad": 2.5817537268743953,
+        "limits": {
+          "acceleration_m_s2": 1.5,
+          "altitude_m": [
+            1.0,
+            4.0
+          ],
+          "horizontal_radius_m": 2.5,
+          "speed_m_s": 1.0,
+          "yaw_rate_rad_s": 0.3
+        },
+        "motion_end_s": 7.0,
+        "motion_start_s": 1.0,
+        "origin_m": [
+          0.0,
+          0.0,
+          2.6260157841327927
+        ],
+        "yaw_change_rad": 0.13647539003647713,
+        "yaw_start_rad": 0.030688496605970395
+      }
+    },
+    {
+      "fault_time_s": 2.686436637273427,
+      "group_id": 3,
+      "initial_attitude_rotvec_rad": [
+        0.0006584811962888834,
+        -0.0019459694396960015,
+        0.0008988238656903284
+      ],
+      "initial_position_offset_m": [
+        0.001915167527898035,
+        0.0011347751372863153,
+        -0.007639974185628357
+      ],
+      "repeat": 0,
+      "seed_streams": {
+        "fault": 2118713477,
+        "initial": 2962062868,
+        "sensor": 3321097873,
+        "task": 3304109432,
+        "wind": 3816021033
+      },
+      "task": {
+        "displacement_m": 1.2537920182299558,
+        "duration_s": 8.0,
+        "family": "line",
+        "heading_rad": 0.5427235999501705,
+        "limits": {
+          "acceleration_m_s2": 1.5,
+          "altitude_m": [
+            1.0,
+            4.0
+          ],
+          "horizontal_radius_m": 2.5,
+          "speed_m_s": 1.0,
+          "yaw_rate_rad_s": 0.3
+        },
+        "motion_end_s": 7.0,
+        "motion_start_s": 1.0,
+        "origin_m": [
+          0.0,
+          0.0,
+          2.3996390135712056
+        ],
+        "yaw_change_rad": -0.2880433105865955,
+        "yaw_start_rad": 0.040340610074831196
+      }
+    },
+    {
+      "fault_time_s": 2.78168555761707,
+      "group_id": 4,
+      "initial_attitude_rotvec_rad": [
+        0.0005654306218056404,
+        -0.0012625936303283514,
+        0.0003861720432899599
+      ],
+      "initial_position_offset_m": [
+        0.009542461104550181,
+        -0.0026022130469212515,
+        0.0035127493876075406
+      ],
+      "repeat": 1,
+      "seed_streams": {
+        "fault": 496795372,
+        "initial": 2032129835,
+        "sensor": 2638270962,
+        "task": 119630156,
+        "wind": 3099643146
+      },
+      "task": {
+        "displacement_m": 1.2308262874340328,
+        "duration_s": 8.0,
+        "family": "line",
+        "heading_rad": 1.6128084256692592,
+        "limits": {
+          "acceleration_m_s2": 1.5,
+          "altitude_m": [
+            1.0,
+            4.0
+          ],
+          "horizontal_radius_m": 2.5,
+          "speed_m_s": 1.0,
+          "yaw_rate_rad_s": 0.3
+        },
+        "motion_end_s": 7.0,
+        "motion_start_s": 1.0,
+        "origin_m": [
+          0.0,
+          0.0,
+          2.5889846637976235
+        ],
+        "yaw_change_rad": -0.0562455176858688,
+        "yaw_start_rad": 0.058880190075996264
+      }
+    },
+    {
+      "fault_time_s": 3.4107570138304584,
+      "group_id": 5,
+      "initial_attitude_rotvec_rad": [
+        -0.000517013674770788,
+        0.002836963284511873,
+        -0.0029206096908823997
+      ],
+      "initial_position_offset_m": [
+        0.00459222138103243,
+        0.008912228271857942,
+        -0.006731505127218056
+      ],
+      "repeat": 0,
+      "seed_streams": {
+        "fault": 1381646427,
+        "initial": 845159822,
+        "sensor": 4113154062,
+        "task": 3754590630,
+        "wind": 349322757
+      },
+      "task": {
+        "duration_s": 8.0,
+        "family": "circle",
+        "heading_rad": 2.3812078389802664,
+        "limits": {
+          "acceleration_m_s2": 1.5,
+          "altitude_m": [
+            1.0,
+            4.0
+          ],
+          "horizontal_radius_m": 2.5,
+          "speed_m_s": 1.0,
+          "yaw_rate_rad_s": 0.3
+        },
+        "motion_end_s": 7.0,
+        "motion_start_s": 1.0,
+        "origin_m": [
+          0.0,
+          0.0,
+          2.4090657041846644
+        ],
+        "radius_m": 0.3058128483609186,
+        "turn_rad": 6.283185307179586,
+        "yaw_change_rad": 0.28091651948644075,
+        "yaw_start_rad": 0.0888802324327439
+      }
+    },
+    {
+      "fault_time_s": 2.586998495443641,
+      "group_id": 6,
+      "initial_attitude_rotvec_rad": [
+        -0.004407005169811988,
+        0.0011881790324746004,
+        -0.0006545240352740581
+      ],
+      "initial_position_offset_m": [
+        -0.0029855668889230413,
+        -0.007485585736164309,
+        -0.007077535705895588
+      ],
+      "repeat": 1,
+      "seed_streams": {
+        "fault": 3657007670,
+        "initial": 1494457385,
+        "sensor": 3231300593,
+        "task": 4232838016,
+        "wind": 2425901041
+      },
+      "task": {
+        "duration_s": 8.0,
+        "family": "circle",
+        "heading_rad": 1.874275332635765,
+        "limits": {
+          "acceleration_m_s2": 1.5,
+          "altitude_m": [
+            1.0,
+            4.0
+          ],
+          "horizontal_radius_m": 2.5,
+          "speed_m_s": 1.0,
+          "yaw_rate_rad_s": 0.3
+        },
+        "motion_end_s": 7.0,
+        "motion_start_s": 1.0,
+        "origin_m": [
+          0.0,
+          0.0,
+          2.655837228622846
+        ],
+        "radius_m": 0.32655249982049384,
+        "turn_rad": -6.283185307179586,
+        "yaw_change_rad": -0.27189419847290536,
+        "yaw_start_rad": -0.029901800809107953
+      }
+    },
+    {
+      "fault_time_s": 3.3087479392222097,
+      "group_id": 7,
+      "initial_attitude_rotvec_rad": [
+        0.004937687157801621,
+        0.0017771182925971178,
+        -0.002404976062406882
+      ],
+      "initial_position_offset_m": [
+        -0.0028554365531316293,
+        0.0030314587286967825,
+        0.0009760219805031098
+      ],
+      "repeat": 0,
+      "seed_streams": {
+        "fault": 3851527352,
+        "initial": 1751807948,
+        "sensor": 35406419,
+        "task": 1876728552,
+        "wind": 2595208704
+      },
+      "task": {
+        "displacement_m": 0.2780963094751242,
+        "duration_s": 8.0,
+        "family": "vertical",
+        "heading_rad": 0.5423505408362206,
+        "limits": {
+          "acceleration_m_s2": 1.5,
+          "altitude_m": [
+            1.0,
+            4.0
+          ],
+          "horizontal_radius_m": 2.5,
+          "speed_m_s": 1.0,
+          "yaw_rate_rad_s": 0.3
+        },
+        "motion_end_s": 7.0,
+        "motion_start_s": 1.0,
+        "origin_m": [
+          0.0,
+          0.0,
+          2.3699422345977332
+        ],
+        "yaw_change_rad": -0.21426901272386611,
+        "yaw_start_rad": -0.1553798802956192
+      }
+    },
+    {
+      "fault_time_s": 2.7497438335000397,
+      "group_id": 8,
+      "initial_attitude_rotvec_rad": [
+        -0.00012744768951940526,
+        -0.0024146073821753136,
+        0.002507918772657364
+      ],
+      "initial_position_offset_m": [
+        -0.00764200379080944,
+        0.007915548349154143,
+        0.005056164380904534
+      ],
+      "repeat": 1,
+      "seed_streams": {
+        "fault": 2890990642,
+        "initial": 3248948665,
+        "sensor": 2383973533,
+        "task": 2562419939,
+        "wind": 3975131930
+      },
+      "task": {
+        "displacement_m": -0.2812555613828946,
+        "duration_s": 8.0,
+        "family": "vertical",
+        "heading_rad": 2.9532653793954813,
+        "limits": {
+          "acceleration_m_s2": 1.5,
+          "altitude_m": [
+            1.0,
+            4.0
+          ],
+          "horizontal_radius_m": 2.5,
+          "speed_m_s": 1.0,
+          "yaw_rate_rad_s": 0.3
+        },
+        "motion_end_s": 7.0,
+        "motion_start_s": 1.0,
+        "origin_m": [
+          0.0,
+          0.0,
+          2.5348087882758814
+        ],
+        "yaw_change_rad": -0.17589877939368287,
+        "yaw_start_rad": 0.1243509149439061
+      }
+    }
+  ],
+  "settings": {
+    "diagnostics": {
+      "consecutive_windows": 3,
+      "cooldown_s": 1.0,
+      "fault_probability_threshold": 0.8,
+      "feature_set": "imu_only",
+      "gap_tolerance_s": 1e-06,
+      "sample_hz": 100.0,
+      "schema_version": "diagnostic_packet_v1",
+      "selection_status": "initial_design_not_tuned_or_calibrated",
+      "step": 10,
+      "window": 50
+    },
+    "duration_s": 8.0,
+    "evidence_status": "predeclared_research_design_not_real_aircraft_or_formal_performance",
+    "experiment_version": "hex_tasks_continuous_v1",
+    "families": [
+      "hover",
+      "line",
+      "circle",
+      "vertical"
+    ],
+    "fault_time_range_s": [
+      2.5,
+      3.5
+    ],
+    "groups_per_family": 2,
+    "initial_attitude_jitter_rad": 0.005,
+    "initial_position_jitter_m": 0.01,
+    "interface_fit": {
+      "epochs": 3,
+      "hidden_dim": 32,
+      "layers": 1,
+      "learning_rate": 0.001,
+      "max_windows_per_class": 160,
+      "purpose": "development_continuous_interface_check_not_formal_accuracy",
+      "replay_repeat": 1,
+      "seed": 91009,
+      "training_repeat": 0
+    },
+    "motion_end_s": 7.0,
+    "motion_start_s": 1.0,
+    "normal_acceptance": {
+      "basis": "RMSE and tilt reuse old research gates; final/rate/saturation are new predeclared research requirements",
+      "final_position_error_m": 0.1,
+      "maximum_body_rate_rad_s": 3.0,
+      "maximum_nominal_bound_fraction": 0.05,
+      "maximum_tilt_deg": 35.0,
+      "position_rmse_m": 0.25
+    },
+    "normal_validation_delay_s": 0.03,
+    "ranges": {
+      "circle_radius_m": [
+        0.25,
+        0.35
+      ],
+      "heading_rad": [
+        -3.141592653589793,
+        3.141592653589793
+      ],
+      "height_m": [
+        2.3,
+        2.7
+      ],
+      "line_distance_m": [
+        1.0,
+        1.6
+      ],
+      "vertical_distance_m": [
+        -0.6,
+        0.6
+      ],
+      "yaw_change_rad": [
+        -0.3,
+        0.3
+      ],
+      "yaw_rad": [
+        -0.2,
+        0.2
+      ]
+    },
+    "reference_limits": {
+      "acceleration_m_s2": 1.5,
+      "altitude_m": [
+        1.0,
+        4.0
+      ],
+      "horizontal_radius_m": 2.5,
+      "speed_m_s": 1.0,
+      "yaw_rate_rad_s": 0.3
+    },
+    "reference_preflight_samples": 1001,
+    "seed": 20261009
+  }
+}

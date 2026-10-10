@@ -69,9 +69,9 @@ def simulate(cfg,duration=8.,schedule=None,seed=None,feedback='ideal_feedback',n
     force_fn=force_fn or (lambda t:np.zeros(3)); torque_fn=torque_fn or (lambda t:np.zeros(3))
     for i,t in enumerate(events):
         eta=schedule.at(t); force=force_fn(t); torque=torque_fn(t)
-        # Exactly one task call per union of control/export clocks. Never call
-        # a stateful/random provider from integration stages or twice for logs.
-        ref=deepcopy(provider.at(float(t))) if t in control_times or t in export_times else None
+        # The task clock equals the control clock. Exporting faster/slower must
+        # not advance a stateful/random provider; logs share the held reference.
+        ref=deepcopy(provider.at(float(t))) if t in control_times else deepcopy(control_reference)
         if t in sensor_times:
             wind_value=wind_process.update(t)
             derivative=plant.derivative(t,s,command,eta,wind_value,force,torque)
@@ -85,6 +85,9 @@ def simulate(cfg,duration=8.,schedule=None,seed=None,feedback='ideal_feedback',n
                 observed=eligible[-1] if eligible else history[0]
             control_reference=deepcopy(ref); control_reference_time=float(t)
             controls=controller.update(float(t),observed,control_reference); command=controls['cmd_motor_speeds']; evaluations+=1
+        if t in sensor_times and diagnostic_sink is not None:
+            from diagnostics.features import from_observation
+            diagnostic_sink(from_observation(last_measurement,command))
         if t in export_times:
             _,_,audit=plant.wrench(s,wind_value,force)
             actual=plant.derivative(t,s,command,eta,wind_value,force,torque)
@@ -94,9 +97,6 @@ def simulate(cfg,duration=8.,schedule=None,seed=None,feedback='ideal_feedback',n
                          'control_reference':deepcopy(control_reference),'control_reference_time':control_reference_time,
                          'acceleration_world':actual[3:6].copy(),'body_alpha':actual[10:13].copy(),
                          'audit':audit,'total_moment_body':plant.wrench(s,wind_value,force)[1]+torque})
-            if diagnostic_sink is not None:
-                from diagnostics.features import from_observation
-                diagnostic_sink(from_observation(last_measurement,command))
         bound=cfg['termination']
         if not np.isfinite(s).all(): raise FloatingPointError('Nonfinite physical state; never fabricate output')
         if np.linalg.norm(s[:3])>bound['position_norm_m'] or np.linalg.norm(s[3:6])>bound['speed_m_s'] or np.linalg.norm(s[10:13])>bound['body_rate_rad_s'] or s[2]<bound['minimum_altitude_m']:

@@ -1,3 +1,9 @@
+# 2026-10-10任务库与连续诊断
+
+最新两批工作以[docs/hex_next/RUNNING_ORDER.md](docs/hex_next/RUNNING_ORDER.md)为准。
+新任务/数据/诊断接口已实现并检查；可靠报警仍未通过，详细误报、漏检见[实际报告](docs/hex_next/VALIDATION_REPORT.md)。
+下列2026-10-06入口保留用于旧回归，不能代替新机动或连续诊断验证。
+
 # 2026-10-06研究六旋翼运行入口
 
 当前操作和版本边界以[docs/hex_audit/README.md](docs/hex_audit/README.md)为准。不要覆盖旧output_hex_v3或将旧模型训练结果移作新模型结论。

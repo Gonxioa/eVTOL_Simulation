@@ -1,7 +1,7 @@
 """Declared deterministic tasks. Quintic progress gives consistent p/v/a.
 
 All numbers here are research experiment designs, not measured flight limits.
-The provider may only be sampled once at each control/export task clock tick.
+The provider is sampled once at each control task clock tick; logs use its cache.
 """
 from copy import deepcopy
 import numpy as np
@@ -121,7 +121,7 @@ def task_library(settings, groups_per_family=None):
                 spec['radius_m'] = draw('circle_radius_m')
                 spec['turn_rad'] = float(rng.choice([-1, 1])) * 2*np.pi
             provider = ParameterizedTask(spec)
-            for t in np.linspace(0, settings['duration_s'], 1001):
+            for t in np.linspace(0, settings['duration_s'], settings['reference_preflight_samples']):
                 provider.at(t)
             initial_rng = np.random.default_rng(seeds['initial'])
             result.append({'group_id': group, 'task': spec, 'seed_streams': seeds,

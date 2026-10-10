@@ -1,0 +1,155 @@
+{
+  "epoch3": {
+    "all_replay_offline_equal": true,
+    "delay_median_s": null,
+    "delay_range_s": null,
+    "detected_before_stop": 0,
+    "evaluable_fault_events": 72,
+    "fault_events": 72,
+    "first_alarm_correct_joint_class": 0,
+    "first_alarm_correct_motor": 0,
+    "first_alarm_correct_severity": 0,
+    "healthy_normal_only_seconds": 32.0,
+    "missed_evaluable_fault_events": 72,
+    "missed_record_ids": [
+      "g002_c01",
+      "g002_c02",
+      "g002_c03",
+      "g002_c04",
+      "g002_c05",
+      "g002_c06",
+      "g002_c07",
+      "g002_c08",
+      "g002_c09",
+      "g002_c10",
+      "g002_c11",
+      "g002_c12",
+      "g002_c13",
+      "g002_c14",
+      "g002_c15",
+      "g002_c16",
+      "g002_c17",
+      "g002_c18",
+      "g004_c01",
+      "g004_c02",
+      "g004_c03",
+      "g004_c04",
+      "g004_c05",
+      "g004_c06",
+      "g004_c07",
+      "g004_c08",
+      "g004_c09",
+      "g004_c10",
+      "g004_c11",
+      "g004_c12",
+      "g004_c13",
+      "g004_c14",
+      "g004_c15",
+      "g004_c16",
+      "g004_c17",
+      "g004_c18",
+      "g006_c01",
+      "g006_c02",
+      "g006_c03",
+      "g006_c04",
+      "g006_c05",
+      "g006_c06",
+      "g006_c07",
+      "g006_c08",
+      "g006_c09",
+      "g006_c10",
+      "g006_c11",
+      "g006_c12",
+      "g006_c13",
+      "g006_c14",
+      "g006_c15",
+      "g006_c16",
+      "g006_c17",
+      "g006_c18",
+      "g008_c01",
+      "g008_c02",
+      "g008_c03",
+      "g008_c04",
+      "g008_c05",
+      "g008_c06",
+      "g008_c07",
+      "g008_c08",
+      "g008_c09",
+      "g008_c10",
+      "g008_c11",
+      "g008_c12",
+      "g008_c13",
+      "g008_c14",
+      "g008_c15",
+      "g008_c16",
+      "g008_c17",
+      "g008_c18"
+    ],
+    "normal_alarm_times": {
+      "g002_c00": [
+        0.69
+      ],
+      "g004_c00": [
+        0.69
+      ],
+      "g006_c00": [
+        0.69
+      ],
+      "g008_c00": [
+        0.69
+      ]
+    },
+    "normal_only_false_alarm_events": 4,
+    "pure_window_accuracy": 0.1347661922741795,
+    "pure_window_macro_f1": 0.3178518436536047
+  },
+  "epoch30": {
+    "all_replay_offline_equal": true,
+    "delay_median_s": 0.5402561664999603,
+    "delay_range_s": [
+      0.34025616649996016,
+      4.10831444238293
+    ],
+    "detected_before_stop": 59,
+    "evaluable_fault_events": 72,
+    "fault_events": 72,
+    "first_alarm_correct_joint_class": 35,
+    "first_alarm_correct_motor": 39,
+    "first_alarm_correct_severity": 50,
+    "healthy_normal_only_seconds": 32.0,
+    "missed_evaluable_fault_events": 13,
+    "missed_record_ids": [
+      "g004_c01",
+      "g004_c02",
+      "g004_c03",
+      "g004_c04",
+      "g004_c05",
+      "g004_c06",
+      "g004_c07",
+      "g004_c08",
+      "g004_c09",
+      "g004_c10",
+      "g004_c11",
+      "g004_c12",
+      "g004_c14"
+    ],
+    "normal_alarm_times": {
+      "g002_c00": [
+        1.79
+      ],
+      "g004_c00": [
+        2.49
+      ],
+      "g006_c00": [
+        4.29,
+        7.59
+      ],
+      "g008_c00": [
+        3.49
+      ]
+    },
+    "normal_only_false_alarm_events": 5,
+    "pure_window_accuracy": 0.6912576241649724,
+    "pure_window_macro_f1": 0.7730884269416074
+  }
+}

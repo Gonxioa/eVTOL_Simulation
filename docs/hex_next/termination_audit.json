@@ -1,0 +1,1164 @@
+{
+  "cause_counts": {
+    "minimum_altitude_m": 96
+  },
+  "early_stops": 96,
+  "meaning": "Sampled simulation envelope exit; no ground-contact or real crash claim",
+  "min_fault_to_end_s": 1.1492429861695412,
+  "min_post_fault_samples": 115,
+  "min_pure_fault_windows": 6,
+  "records": [
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 4.43,
+      "family": "hover",
+      "fault_to_end_s": 1.195474930121803,
+      "label": 1,
+      "post_fault_samples": 120,
+      "pure_fault_windows": 7,
+      "record_id": "g001_c01"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 4.42,
+      "family": "hover",
+      "fault_to_end_s": 1.1854749301218033,
+      "label": 2,
+      "post_fault_samples": 119,
+      "pure_fault_windows": 7,
+      "record_id": "g001_c02"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 4.42,
+      "family": "hover",
+      "fault_to_end_s": 1.1854749301218033,
+      "label": 3,
+      "post_fault_samples": 119,
+      "pure_fault_windows": 7,
+      "record_id": "g001_c03"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 4.44,
+      "family": "hover",
+      "fault_to_end_s": 1.2054749301218037,
+      "label": 4,
+      "post_fault_samples": 121,
+      "pure_fault_windows": 7,
+      "record_id": "g001_c04"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 4.42,
+      "family": "hover",
+      "fault_to_end_s": 1.1854749301218033,
+      "label": 5,
+      "post_fault_samples": 119,
+      "pure_fault_windows": 7,
+      "record_id": "g001_c05"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 4.43,
+      "family": "hover",
+      "fault_to_end_s": 1.195474930121803,
+      "label": 6,
+      "post_fault_samples": 120,
+      "pure_fault_windows": 7,
+      "record_id": "g001_c06"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 4.46,
+      "family": "hover",
+      "fault_to_end_s": 1.2254749301218033,
+      "label": 7,
+      "post_fault_samples": 123,
+      "pure_fault_windows": 7,
+      "record_id": "g001_c07"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 4.46,
+      "family": "hover",
+      "fault_to_end_s": 1.2254749301218033,
+      "label": 8,
+      "post_fault_samples": 123,
+      "pure_fault_windows": 7,
+      "record_id": "g001_c08"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 4.46,
+      "family": "hover",
+      "fault_to_end_s": 1.2254749301218033,
+      "label": 9,
+      "post_fault_samples": 123,
+      "pure_fault_windows": 7,
+      "record_id": "g001_c09"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 4.46,
+      "family": "hover",
+      "fault_to_end_s": 1.2254749301218033,
+      "label": 10,
+      "post_fault_samples": 123,
+      "pure_fault_windows": 7,
+      "record_id": "g001_c10"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 4.46,
+      "family": "hover",
+      "fault_to_end_s": 1.2254749301218033,
+      "label": 11,
+      "post_fault_samples": 123,
+      "pure_fault_windows": 7,
+      "record_id": "g001_c11"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 4.46,
+      "family": "hover",
+      "fault_to_end_s": 1.2254749301218033,
+      "label": 12,
+      "post_fault_samples": 123,
+      "pure_fault_windows": 7,
+      "record_id": "g001_c12"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.96,
+      "family": "hover",
+      "fault_to_end_s": 1.2115157369104832,
+      "label": 1,
+      "post_fault_samples": 122,
+      "pure_fault_windows": 7,
+      "record_id": "g002_c01"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.94,
+      "family": "hover",
+      "fault_to_end_s": 1.1915157369104832,
+      "label": 2,
+      "post_fault_samples": 120,
+      "pure_fault_windows": 7,
+      "record_id": "g002_c02"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.94,
+      "family": "hover",
+      "fault_to_end_s": 1.1915157369104832,
+      "label": 3,
+      "post_fault_samples": 120,
+      "pure_fault_windows": 7,
+      "record_id": "g002_c03"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.96,
+      "family": "hover",
+      "fault_to_end_s": 1.2115157369104832,
+      "label": 4,
+      "post_fault_samples": 122,
+      "pure_fault_windows": 7,
+      "record_id": "g002_c04"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.95,
+      "family": "hover",
+      "fault_to_end_s": 1.2015157369104834,
+      "label": 5,
+      "post_fault_samples": 121,
+      "pure_fault_windows": 7,
+      "record_id": "g002_c05"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.95,
+      "family": "hover",
+      "fault_to_end_s": 1.2015157369104834,
+      "label": 6,
+      "post_fault_samples": 121,
+      "pure_fault_windows": 7,
+      "record_id": "g002_c06"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.98,
+      "family": "hover",
+      "fault_to_end_s": 1.2315157369104832,
+      "label": 7,
+      "post_fault_samples": 124,
+      "pure_fault_windows": 7,
+      "record_id": "g002_c07"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.98,
+      "family": "hover",
+      "fault_to_end_s": 1.2315157369104832,
+      "label": 8,
+      "post_fault_samples": 124,
+      "pure_fault_windows": 7,
+      "record_id": "g002_c08"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.97,
+      "family": "hover",
+      "fault_to_end_s": 1.2215157369104834,
+      "label": 9,
+      "post_fault_samples": 123,
+      "pure_fault_windows": 7,
+      "record_id": "g002_c09"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.98,
+      "family": "hover",
+      "fault_to_end_s": 1.2315157369104832,
+      "label": 10,
+      "post_fault_samples": 124,
+      "pure_fault_windows": 7,
+      "record_id": "g002_c10"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.97,
+      "family": "hover",
+      "fault_to_end_s": 1.2215157369104834,
+      "label": 11,
+      "post_fault_samples": 123,
+      "pure_fault_windows": 7,
+      "record_id": "g002_c11"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.98,
+      "family": "hover",
+      "fault_to_end_s": 1.2315157369104832,
+      "label": 12,
+      "post_fault_samples": 124,
+      "pure_fault_windows": 7,
+      "record_id": "g002_c12"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.85,
+      "family": "line",
+      "fault_to_end_s": 1.1635633627265731,
+      "label": 1,
+      "post_fault_samples": 117,
+      "pure_fault_windows": 7,
+      "record_id": "g003_c01"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.84,
+      "family": "line",
+      "fault_to_end_s": 1.153563362726573,
+      "label": 2,
+      "post_fault_samples": 116,
+      "pure_fault_windows": 7,
+      "record_id": "g003_c02"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.84,
+      "family": "line",
+      "fault_to_end_s": 1.153563362726573,
+      "label": 3,
+      "post_fault_samples": 116,
+      "pure_fault_windows": 7,
+      "record_id": "g003_c03"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.86,
+      "family": "line",
+      "fault_to_end_s": 1.173563362726573,
+      "label": 4,
+      "post_fault_samples": 118,
+      "pure_fault_windows": 7,
+      "record_id": "g003_c04"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.86,
+      "family": "line",
+      "fault_to_end_s": 1.173563362726573,
+      "label": 5,
+      "post_fault_samples": 118,
+      "pure_fault_windows": 7,
+      "record_id": "g003_c05"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.85,
+      "family": "line",
+      "fault_to_end_s": 1.1635633627265731,
+      "label": 6,
+      "post_fault_samples": 117,
+      "pure_fault_windows": 7,
+      "record_id": "g003_c06"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.89,
+      "family": "line",
+      "fault_to_end_s": 1.2035633627265732,
+      "label": 7,
+      "post_fault_samples": 121,
+      "pure_fault_windows": 8,
+      "record_id": "g003_c07"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.88,
+      "family": "line",
+      "fault_to_end_s": 1.193563362726573,
+      "label": 8,
+      "post_fault_samples": 120,
+      "pure_fault_windows": 7,
+      "record_id": "g003_c08"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.89,
+      "family": "line",
+      "fault_to_end_s": 1.2035633627265732,
+      "label": 9,
+      "post_fault_samples": 121,
+      "pure_fault_windows": 8,
+      "record_id": "g003_c09"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.89,
+      "family": "line",
+      "fault_to_end_s": 1.2035633627265732,
+      "label": 10,
+      "post_fault_samples": 121,
+      "pure_fault_windows": 8,
+      "record_id": "g003_c10"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.89,
+      "family": "line",
+      "fault_to_end_s": 1.2035633627265732,
+      "label": 11,
+      "post_fault_samples": 121,
+      "pure_fault_windows": 8,
+      "record_id": "g003_c11"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.88,
+      "family": "line",
+      "fault_to_end_s": 1.193563362726573,
+      "label": 12,
+      "post_fault_samples": 120,
+      "pure_fault_windows": 7,
+      "record_id": "g003_c12"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.98,
+      "family": "line",
+      "fault_to_end_s": 1.1983144423829302,
+      "label": 1,
+      "post_fault_samples": 120,
+      "pure_fault_windows": 7,
+      "record_id": "g004_c01"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.97,
+      "family": "line",
+      "fault_to_end_s": 1.1883144423829304,
+      "label": 2,
+      "post_fault_samples": 119,
+      "pure_fault_windows": 7,
+      "record_id": "g004_c02"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.97,
+      "family": "line",
+      "fault_to_end_s": 1.1883144423829304,
+      "label": 3,
+      "post_fault_samples": 119,
+      "pure_fault_windows": 7,
+      "record_id": "g004_c03"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.98,
+      "family": "line",
+      "fault_to_end_s": 1.1983144423829302,
+      "label": 4,
+      "post_fault_samples": 120,
+      "pure_fault_windows": 7,
+      "record_id": "g004_c04"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.99,
+      "family": "line",
+      "fault_to_end_s": 1.2083144423829304,
+      "label": 5,
+      "post_fault_samples": 121,
+      "pure_fault_windows": 8,
+      "record_id": "g004_c05"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.99,
+      "family": "line",
+      "fault_to_end_s": 1.2083144423829304,
+      "label": 6,
+      "post_fault_samples": 121,
+      "pure_fault_windows": 8,
+      "record_id": "g004_c06"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 4.01,
+      "family": "line",
+      "fault_to_end_s": 1.22831444238293,
+      "label": 7,
+      "post_fault_samples": 123,
+      "pure_fault_windows": 8,
+      "record_id": "g004_c07"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 4.0,
+      "family": "line",
+      "fault_to_end_s": 1.2183144423829302,
+      "label": 8,
+      "post_fault_samples": 122,
+      "pure_fault_windows": 8,
+      "record_id": "g004_c08"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 4.0,
+      "family": "line",
+      "fault_to_end_s": 1.2183144423829302,
+      "label": 9,
+      "post_fault_samples": 122,
+      "pure_fault_windows": 8,
+      "record_id": "g004_c09"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 4.01,
+      "family": "line",
+      "fault_to_end_s": 1.22831444238293,
+      "label": 10,
+      "post_fault_samples": 123,
+      "pure_fault_windows": 8,
+      "record_id": "g004_c10"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 4.01,
+      "family": "line",
+      "fault_to_end_s": 1.22831444238293,
+      "label": 11,
+      "post_fault_samples": 123,
+      "pure_fault_windows": 8,
+      "record_id": "g004_c11"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 4.01,
+      "family": "line",
+      "fault_to_end_s": 1.22831444238293,
+      "label": 12,
+      "post_fault_samples": 123,
+      "pure_fault_windows": 8,
+      "record_id": "g004_c12"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 4.57,
+      "family": "circle",
+      "fault_to_end_s": 1.159242986169542,
+      "label": 1,
+      "post_fault_samples": 116,
+      "pure_fault_windows": 6,
+      "record_id": "g005_c01"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 4.56,
+      "family": "circle",
+      "fault_to_end_s": 1.1492429861695412,
+      "label": 2,
+      "post_fault_samples": 115,
+      "pure_fault_windows": 6,
+      "record_id": "g005_c02"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 4.58,
+      "family": "circle",
+      "fault_to_end_s": 1.1692429861695417,
+      "label": 3,
+      "post_fault_samples": 117,
+      "pure_fault_windows": 6,
+      "record_id": "g005_c03"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 4.6,
+      "family": "circle",
+      "fault_to_end_s": 1.1892429861695413,
+      "label": 4,
+      "post_fault_samples": 119,
+      "pure_fault_windows": 7,
+      "record_id": "g005_c04"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 4.59,
+      "family": "circle",
+      "fault_to_end_s": 1.1792429861695415,
+      "label": 5,
+      "post_fault_samples": 118,
+      "pure_fault_windows": 7,
+      "record_id": "g005_c05"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 4.57,
+      "family": "circle",
+      "fault_to_end_s": 1.159242986169542,
+      "label": 6,
+      "post_fault_samples": 116,
+      "pure_fault_windows": 6,
+      "record_id": "g005_c06"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 4.6,
+      "family": "circle",
+      "fault_to_end_s": 1.1892429861695413,
+      "label": 7,
+      "post_fault_samples": 119,
+      "pure_fault_windows": 7,
+      "record_id": "g005_c07"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 4.6,
+      "family": "circle",
+      "fault_to_end_s": 1.1892429861695413,
+      "label": 8,
+      "post_fault_samples": 119,
+      "pure_fault_windows": 7,
+      "record_id": "g005_c08"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 4.61,
+      "family": "circle",
+      "fault_to_end_s": 1.199242986169542,
+      "label": 9,
+      "post_fault_samples": 120,
+      "pure_fault_windows": 7,
+      "record_id": "g005_c09"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 4.64,
+      "family": "circle",
+      "fault_to_end_s": 1.2292429861695413,
+      "label": 10,
+      "post_fault_samples": 123,
+      "pure_fault_windows": 7,
+      "record_id": "g005_c10"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 4.63,
+      "family": "circle",
+      "fault_to_end_s": 1.2192429861695415,
+      "label": 11,
+      "post_fault_samples": 122,
+      "pure_fault_windows": 7,
+      "record_id": "g005_c11"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 4.62,
+      "family": "circle",
+      "fault_to_end_s": 1.2092429861695417,
+      "label": 12,
+      "post_fault_samples": 121,
+      "pure_fault_windows": 7,
+      "record_id": "g005_c12"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.8,
+      "family": "circle",
+      "fault_to_end_s": 1.2130015045563587,
+      "label": 1,
+      "post_fault_samples": 122,
+      "pure_fault_windows": 8,
+      "record_id": "g006_c01"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.79,
+      "family": "circle",
+      "fault_to_end_s": 1.203001504556359,
+      "label": 2,
+      "post_fault_samples": 121,
+      "pure_fault_windows": 8,
+      "record_id": "g006_c02"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.79,
+      "family": "circle",
+      "fault_to_end_s": 1.203001504556359,
+      "label": 3,
+      "post_fault_samples": 121,
+      "pure_fault_windows": 8,
+      "record_id": "g006_c03"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.8,
+      "family": "circle",
+      "fault_to_end_s": 1.2130015045563587,
+      "label": 4,
+      "post_fault_samples": 122,
+      "pure_fault_windows": 8,
+      "record_id": "g006_c04"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.8,
+      "family": "circle",
+      "fault_to_end_s": 1.2130015045563587,
+      "label": 5,
+      "post_fault_samples": 122,
+      "pure_fault_windows": 8,
+      "record_id": "g006_c05"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.78,
+      "family": "circle",
+      "fault_to_end_s": 1.1930015045563587,
+      "label": 6,
+      "post_fault_samples": 120,
+      "pure_fault_windows": 7,
+      "record_id": "g006_c06"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.82,
+      "family": "circle",
+      "fault_to_end_s": 1.2330015045563587,
+      "label": 7,
+      "post_fault_samples": 124,
+      "pure_fault_windows": 8,
+      "record_id": "g006_c07"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.83,
+      "family": "circle",
+      "fault_to_end_s": 1.243001504556359,
+      "label": 8,
+      "post_fault_samples": 125,
+      "pure_fault_windows": 8,
+      "record_id": "g006_c08"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.84,
+      "family": "circle",
+      "fault_to_end_s": 1.2530015045563587,
+      "label": 9,
+      "post_fault_samples": 126,
+      "pure_fault_windows": 8,
+      "record_id": "g006_c09"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.82,
+      "family": "circle",
+      "fault_to_end_s": 1.2330015045563587,
+      "label": 10,
+      "post_fault_samples": 124,
+      "pure_fault_windows": 8,
+      "record_id": "g006_c10"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.82,
+      "family": "circle",
+      "fault_to_end_s": 1.2330015045563587,
+      "label": 11,
+      "post_fault_samples": 124,
+      "pure_fault_windows": 8,
+      "record_id": "g006_c11"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.82,
+      "family": "circle",
+      "fault_to_end_s": 1.2330015045563587,
+      "label": 12,
+      "post_fault_samples": 124,
+      "pure_fault_windows": 8,
+      "record_id": "g006_c12"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 4.51,
+      "family": "vertical",
+      "fault_to_end_s": 1.2012520607777901,
+      "label": 1,
+      "post_fault_samples": 121,
+      "pure_fault_windows": 7,
+      "record_id": "g007_c01"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 4.49,
+      "family": "vertical",
+      "fault_to_end_s": 1.1812520607777905,
+      "label": 2,
+      "post_fault_samples": 119,
+      "pure_fault_windows": 7,
+      "record_id": "g007_c02"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 4.49,
+      "family": "vertical",
+      "fault_to_end_s": 1.1812520607777905,
+      "label": 3,
+      "post_fault_samples": 119,
+      "pure_fault_windows": 7,
+      "record_id": "g007_c03"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 4.5,
+      "family": "vertical",
+      "fault_to_end_s": 1.1912520607777903,
+      "label": 4,
+      "post_fault_samples": 120,
+      "pure_fault_windows": 7,
+      "record_id": "g007_c04"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 4.5,
+      "family": "vertical",
+      "fault_to_end_s": 1.1912520607777903,
+      "label": 5,
+      "post_fault_samples": 120,
+      "pure_fault_windows": 7,
+      "record_id": "g007_c05"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 4.5,
+      "family": "vertical",
+      "fault_to_end_s": 1.1912520607777903,
+      "label": 6,
+      "post_fault_samples": 120,
+      "pure_fault_windows": 7,
+      "record_id": "g007_c06"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 4.53,
+      "family": "vertical",
+      "fault_to_end_s": 1.2212520607777906,
+      "label": 7,
+      "post_fault_samples": 123,
+      "pure_fault_windows": 7,
+      "record_id": "g007_c07"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 4.53,
+      "family": "vertical",
+      "fault_to_end_s": 1.2212520607777906,
+      "label": 8,
+      "post_fault_samples": 123,
+      "pure_fault_windows": 7,
+      "record_id": "g007_c08"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 4.53,
+      "family": "vertical",
+      "fault_to_end_s": 1.2212520607777906,
+      "label": 9,
+      "post_fault_samples": 123,
+      "pure_fault_windows": 7,
+      "record_id": "g007_c09"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 4.53,
+      "family": "vertical",
+      "fault_to_end_s": 1.2212520607777906,
+      "label": 10,
+      "post_fault_samples": 123,
+      "pure_fault_windows": 7,
+      "record_id": "g007_c10"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 4.53,
+      "family": "vertical",
+      "fault_to_end_s": 1.2212520607777906,
+      "label": 11,
+      "post_fault_samples": 123,
+      "pure_fault_windows": 7,
+      "record_id": "g007_c11"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 4.53,
+      "family": "vertical",
+      "fault_to_end_s": 1.2212520607777906,
+      "label": 12,
+      "post_fault_samples": 123,
+      "pure_fault_windows": 7,
+      "record_id": "g007_c12"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.93,
+      "family": "vertical",
+      "fault_to_end_s": 1.1802561664999605,
+      "label": 1,
+      "post_fault_samples": 119,
+      "pure_fault_windows": 7,
+      "record_id": "g008_c01"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.92,
+      "family": "vertical",
+      "fault_to_end_s": 1.1702561664999602,
+      "label": 2,
+      "post_fault_samples": 118,
+      "pure_fault_windows": 7,
+      "record_id": "g008_c02"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.92,
+      "family": "vertical",
+      "fault_to_end_s": 1.1702561664999602,
+      "label": 3,
+      "post_fault_samples": 118,
+      "pure_fault_windows": 7,
+      "record_id": "g008_c03"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.93,
+      "family": "vertical",
+      "fault_to_end_s": 1.1802561664999605,
+      "label": 4,
+      "post_fault_samples": 119,
+      "pure_fault_windows": 7,
+      "record_id": "g008_c04"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.93,
+      "family": "vertical",
+      "fault_to_end_s": 1.1802561664999605,
+      "label": 5,
+      "post_fault_samples": 119,
+      "pure_fault_windows": 7,
+      "record_id": "g008_c05"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.92,
+      "family": "vertical",
+      "fault_to_end_s": 1.1702561664999602,
+      "label": 6,
+      "post_fault_samples": 118,
+      "pure_fault_windows": 7,
+      "record_id": "g008_c06"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.96,
+      "family": "vertical",
+      "fault_to_end_s": 1.2102561664999603,
+      "label": 7,
+      "post_fault_samples": 122,
+      "pure_fault_windows": 7,
+      "record_id": "g008_c07"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.96,
+      "family": "vertical",
+      "fault_to_end_s": 1.2102561664999603,
+      "label": 8,
+      "post_fault_samples": 122,
+      "pure_fault_windows": 7,
+      "record_id": "g008_c08"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.96,
+      "family": "vertical",
+      "fault_to_end_s": 1.2102561664999603,
+      "label": 9,
+      "post_fault_samples": 122,
+      "pure_fault_windows": 7,
+      "record_id": "g008_c09"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.96,
+      "family": "vertical",
+      "fault_to_end_s": 1.2102561664999603,
+      "label": 10,
+      "post_fault_samples": 122,
+      "pure_fault_windows": 7,
+      "record_id": "g008_c10"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.96,
+      "family": "vertical",
+      "fault_to_end_s": 1.2102561664999603,
+      "label": 11,
+      "post_fault_samples": 122,
+      "pure_fault_windows": 7,
+      "record_id": "g008_c11"
+    },
+    {
+      "causes": [
+        "minimum_altitude_m"
+      ],
+      "end_s": 3.96,
+      "family": "vertical",
+      "fault_to_end_s": 1.2102561664999603,
+      "label": 12,
+      "post_fault_samples": 122,
+      "pure_fault_windows": 7,
+      "record_id": "g008_c12"
+    }
+  ]
+}

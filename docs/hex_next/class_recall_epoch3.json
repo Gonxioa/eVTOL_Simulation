@@ -1,0 +1,119 @@
+{
+  "meaning": "Correlated pure development windows, not independent flight accuracy",
+  "rows": [
+    {
+      "correct": 0,
+      "label": 0,
+      "recall": 0.0,
+      "samples": 1924
+    },
+    {
+      "correct": 28,
+      "label": 1,
+      "recall": 0.9655172413793104,
+      "samples": 29
+    },
+    {
+      "correct": 25,
+      "label": 2,
+      "recall": 0.8620689655172413,
+      "samples": 29
+    },
+    {
+      "correct": 21,
+      "label": 3,
+      "recall": 0.7241379310344828,
+      "samples": 29
+    },
+    {
+      "correct": 20,
+      "label": 4,
+      "recall": 0.6896551724137931,
+      "samples": 29
+    },
+    {
+      "correct": 4,
+      "label": 5,
+      "recall": 0.13333333333333333,
+      "samples": 30
+    },
+    {
+      "correct": 27,
+      "label": 6,
+      "recall": 0.9310344827586207,
+      "samples": 29
+    },
+    {
+      "correct": 0,
+      "label": 7,
+      "recall": 0.0,
+      "samples": 30
+    },
+    {
+      "correct": 16,
+      "label": 8,
+      "recall": 0.5333333333333333,
+      "samples": 30
+    },
+    {
+      "correct": 0,
+      "label": 9,
+      "recall": 0.0,
+      "samples": 30
+    },
+    {
+      "correct": 22,
+      "label": 10,
+      "recall": 0.7333333333333333,
+      "samples": 30
+    },
+    {
+      "correct": 0,
+      "label": 11,
+      "recall": 0.0,
+      "samples": 30
+    },
+    {
+      "correct": 0,
+      "label": 12,
+      "recall": 0.0,
+      "samples": 30
+    },
+    {
+      "correct": 66,
+      "label": 13,
+      "recall": 0.3402061855670103,
+      "samples": 194
+    },
+    {
+      "correct": 6,
+      "label": 14,
+      "recall": 0.030927835051546393,
+      "samples": 194
+    },
+    {
+      "correct": 22,
+      "label": 15,
+      "recall": 0.1134020618556701,
+      "samples": 194
+    },
+    {
+      "correct": 34,
+      "label": 16,
+      "recall": 0.17525773195876287,
+      "samples": 194
+    },
+    {
+      "correct": 169,
+      "label": 17,
+      "recall": 0.8711340206185567,
+      "samples": 194
+    },
+    {
+      "correct": 4,
+      "label": 18,
+      "recall": 0.020618556701030927,
+      "samples": 194
+    }
+  ]
+}

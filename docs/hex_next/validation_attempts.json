@@ -1,0 +1,9 @@
+{
+  "attempt_1": {
+    "normal_thresholds_changed": false,
+    "output": "output_hex_next_20261009",
+    "reason": "Task sampling depended on export frequency for stateful providers; use fixed control task clock and cached reference for logs",
+    "scope_note": "Existing trials used equal 100Hz clocks, but source identity was not reused after the fix",
+    "status": "interrupted_for_clock_correctness_fix"
+  }
+}

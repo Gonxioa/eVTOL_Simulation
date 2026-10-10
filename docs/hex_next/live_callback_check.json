@@ -1,0 +1,28 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "final_position_difference_m": 4.85722573273506e-17,
+      "max_probability_difference": 0.0,
+      "passed": true,
+      "predictions": 76,
+      "probability_tolerance_predeclared": 1e-06,
+      "record_id": "g004_c00",
+      "same_alarm_events": true,
+      "same_prediction_times": true,
+      "termination": "completed"
+    },
+    {
+      "final_position_difference_m": 0.0,
+      "max_probability_difference": 0.0,
+      "passed": true,
+      "predictions": 35,
+      "probability_tolerance_predeclared": 1e-06,
+      "record_id": "g004_c01",
+      "same_alarm_events": true,
+      "same_prediction_times": true,
+      "termination": "physical_envelope_exit"
+    }
+  ],
+  "scope": "Actual trained epoch30 model connected to simulation observation-only callback; does not alter flight control"
+}

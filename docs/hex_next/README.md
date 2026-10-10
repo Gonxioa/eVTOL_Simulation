@@ -1,5 +1,11 @@
 # 参数化任务与连续诊断（2026-10-09）
 
+2026-10-10实际交付：第1批完成；第2批任务、数据和因果诊断接口完成，可靠报警仍未通过。
+37项检查、32项新正常机动通过；152条来源、96条早停全部保留。
+30轮开发原型检出59/72事件，32s健康段误报5次、漏检13次。实际报告见[VALIDATION_REPORT.md](VALIDATION_REPORT.md)。
+运行命令见[RUNNING_ORDER.md](RUNNING_ORDER.md)，输入契约见[DATA_CONTRACT.md](DATA_CONTRACT.md)。
+三轮失败版本和所有后续结果分开保存；正式GAN比较尚未开始。
+
 基线 `63b9d7ee0dc47e11b5c1aee67e320458f36ed709`；独立实施分支 `hex-tasks-continuous-diagnostics`。
 当前按用户清单先执行第1、2批。真实飞机、完整导航估计、正式GAN扩增和最终测试不在已验证范围。
 

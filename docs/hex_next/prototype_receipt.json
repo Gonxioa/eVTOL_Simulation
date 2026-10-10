@@ -1,0 +1,32 @@
+{
+  "fit_wall_seconds": 9.517357699922286,
+  "fixed_condition_checks": {
+    "alarm_settings": true,
+    "model_config": true,
+    "replay_groups": true,
+    "scaler_mean": true,
+    "scaler_std": true,
+    "train_groups": true,
+    "training_window_ids": true
+  },
+  "formal_performance_claim": false,
+  "preset": {
+    "feature_set": "imu_only",
+    "interface_fit": {
+      "epochs": 30,
+      "purpose": "development_fitting_depth_check_not_formal_accuracy_or_augmentation_comparison"
+    },
+    "name": "imu_only_epoch30",
+    "reason": "Check whether more training on the same training-only groups resolves the initial alarm failure; preserve all initial results",
+    "status": "development_followup_after_failed_3_epoch_alarm_check_not_final_test",
+    "unchanged": [
+      "training_window_ids",
+      "initialization_seed",
+      "network_structure",
+      "scaler_training_groups",
+      "alarm_threshold",
+      "replay_groups"
+    ]
+  },
+  "script_sha256": "3e409b1b1de5ca496dee866dbb6ac2341eae129e52cb2f309dc3ef01cbe96d10"
+}

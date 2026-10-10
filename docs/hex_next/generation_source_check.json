@@ -1,0 +1,32 @@
+{
+  "all_record_source_hashes_match_plan": true,
+  "mismatches": [],
+  "plan_signature": "0d8b607e1c5e6c3cf89eac57f7caafeb63fad2fde753bded457d4c692814b724",
+  "records": 152,
+  "source_hashes": {
+    "control_allocation.py": "a8b942b05f51125146ea7b544e9fbdf0006ed8f8bf86886deeeead3e3eea26e3",
+    "diagnostics/__init__.py": "e44348eaad2080138e585933ce3adffac4ab7b07552eecff2d02b6a59c58a0e7",
+    "diagnostics/continuous.py": "232b68f8cc6a65fdb18a68782f5d1ee5c86bded6fa8af671eef0ee4af13a2c40",
+    "diagnostics/features.py": "4c648b155c3d72e4db55d529b8ece74ad19a49574f9ce30231547c9cd5331648",
+    "diagnostics/models.py": "69b9061824b04b7273429289959bbf8d339a9659540e38de5c084e193c18940d",
+    "diagnostics/preprocessing.py": "90cd0a39fd6e93e24cb2e83b1416d7be91b45155db3ea7e94d6790282b8cd9ca",
+    "diagnostics/workflow.py": "40c817833f5047a752df414eb832b3627cd2d8c73c22559a4b5618dc997b1c89",
+    "hex_research/__init__.py": "cc46472d04feb04d9789e8df3fd55dd194dcb4b79914693c1b087a24774134f2",
+    "hex_research/__main__.py": "b612f4e3dbe0804005f99ef9d5a147331cd4769782759cdda46ef6e1ccf0e71f",
+    "hex_research/commands.py": "093c39a0b19786260146e3a07e7ae6d635c33cd98b2e5fb08d1656802a544a67",
+    "hex_research/configs/continuous.json": "dd474edb3e040a74975d9dbfeb2a5b2b05b7a68bb963acb22e30d451831f55ef",
+    "hex_research/configs/research.json": "a702049678cb06804f8a81edd25fdd965f2002e0207326ad68c9a4a0de2d662d",
+    "hex_research/configuration.py": "cc32d7aacdca877c572a3918b7e9f02fd987affbfe0e244b2f7f2bd159bd3e76",
+    "hex_research/continuous_data.py": "9df6f54f046f9842d33a4aae3dfd1035443f760adf95139f9ef6aff0127962d8",
+    "hex_research/control.py": "6fafd36e3c81db94518f6d56f0f2c91bdb17378353b1924f379a68431b8d497a",
+    "hex_research/data.py": "478477ef62786e06c85651f0e8260dcb4426a801e2585bd210a399ec7d39fa85",
+    "hex_research/dynamics.py": "c44c78ef55e126ac1428db5f8dbc0e26b498bbba3ebb8bfc2e3fb71292f9e9d2",
+    "hex_research/math3d.py": "74ed58f34f337cb5e813e551662b8046b0ce26e6a2baa72baea0323c4fea60ed",
+    "hex_research/next_steps.py": "8559b006f5ae5070d585382b55b31c3f36f1fa0e32d44bc4d69de166c4a382c7",
+    "hex_research/observation.py": "0e2a22343c2f69663452acb7adc9302cd54e56f31972f21b56a16561e4dda446",
+    "hex_research/simulation.py": "3da7569b899678f54568c5a4a0396d9d3a21cbc76bb5695746e9d609e6703304",
+    "hex_research/validation.py": "7eaead0e4ada8b4ca37b09285b91edc9cb3419be52655e25f1d16f4223ed5fe0",
+    "main.py": "f5ecb91e9ffea5a1eedb5bec76814d1f69d1f8cd52c0e4b167ee71f69251e7a1",
+    "scenario_config.py": "d49b328b4325bf7fc456cbd62b3c48c9541ec9fb3914c081d4d470bded2389e1"
+  }
+}

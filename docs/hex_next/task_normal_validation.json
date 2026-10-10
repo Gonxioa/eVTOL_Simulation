@@ -1,0 +1,976 @@
+{
+  "acceptance": {
+    "basis": "RMSE and tilt reuse old research gates; final/rate/saturation are new predeclared research requirements",
+    "final_position_error_m": 0.1,
+    "maximum_body_rate_rad_s": 3.0,
+    "maximum_nominal_bound_fraction": 0.05,
+    "maximum_tilt_deg": 35.0,
+    "position_rmse_m": 0.25
+  },
+  "all_normal_passed": true,
+  "cases": [
+    {
+      "actual_duration_s": 8.0,
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tilt": true
+      },
+      "condition": "ideal",
+      "controller_evaluations": 801,
+      "elapsed_s": 6.348183900001459,
+      "family": "hover",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.00023695488616784139,
+      "final_velocity_integral": [
+        -0.000373447630728371,
+        -0.00033769191211845595,
+        0.00012068874510991883
+      ],
+      "group_id": 1,
+      "maximum_rate_rad_s": 0.14377196551732518,
+      "maximum_speed_m_s": 0.015527906239410466,
+      "maximum_tilt_deg": 0.2875236883853617,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "position_rmse_m": 0.002988112961979045,
+      "termination": "completed"
+    },
+    {
+      "actual_duration_s": 8.0,
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tilt": true
+      },
+      "condition": "wind",
+      "controller_evaluations": 801,
+      "elapsed_s": 6.336887100012973,
+      "family": "hover",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.010731085336144117,
+      "final_velocity_integral": [
+        0.013389628500540205,
+        0.015845909590016086,
+        0.012918928269465035
+      ],
+      "group_id": 1,
+      "maximum_rate_rad_s": 0.14415645168447166,
+      "maximum_speed_m_s": 0.04731352904184341,
+      "maximum_tilt_deg": 0.8062142847386625,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "position_rmse_m": 0.016752414462499535,
+      "termination": "completed"
+    },
+    {
+      "actual_duration_s": 8.0,
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tilt": true
+      },
+      "condition": "noise_wind",
+      "controller_evaluations": 801,
+      "elapsed_s": 6.3916364999022335,
+      "family": "hover",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.010049367684152096,
+      "final_velocity_integral": [
+        0.012795858423804929,
+        0.0159472635559209,
+        0.013327938324141688
+      ],
+      "group_id": 1,
+      "maximum_rate_rad_s": 0.14997133793850775,
+      "maximum_speed_m_s": 0.047679942051104006,
+      "maximum_tilt_deg": 0.8212263834208334,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "position_rmse_m": 0.016880902578138287,
+      "termination": "completed"
+    },
+    {
+      "actual_duration_s": 8.0,
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tilt": true
+      },
+      "condition": "delay_noise_wind",
+      "controller_evaluations": 801,
+      "elapsed_s": 6.578835999942385,
+      "family": "hover",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.009770916864263155,
+      "final_velocity_integral": [
+        0.012752661589790156,
+        0.01578561397058221,
+        0.0129801236414455
+      ],
+      "group_id": 1,
+      "maximum_rate_rad_s": 0.16391211059815036,
+      "maximum_speed_m_s": 0.04741890806756126,
+      "maximum_tilt_deg": 0.8196672480246683,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "position_rmse_m": 0.016891188922072437,
+      "termination": "completed"
+    },
+    {
+      "actual_duration_s": 8.0,
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tilt": true
+      },
+      "condition": "ideal",
+      "controller_evaluations": 801,
+      "elapsed_s": 6.697622300009243,
+      "family": "hover",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.0001977642383501622,
+      "final_velocity_integral": [
+        -0.0004287357014394227,
+        1.7584460592998087e-06,
+        1.5679168424553713e-05
+      ],
+      "group_id": 2,
+      "maximum_rate_rad_s": 0.07509562157327321,
+      "maximum_speed_m_s": 0.011682006674490384,
+      "maximum_tilt_deg": 0.24554270745030676,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "position_rmse_m": 0.0027154846315754723,
+      "termination": "completed"
+    },
+    {
+      "actual_duration_s": 8.0,
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tilt": true
+      },
+      "condition": "wind",
+      "controller_evaluations": 801,
+      "elapsed_s": 7.20295399997849,
+      "family": "hover",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.006548023260516549,
+      "final_velocity_integral": [
+        -0.0014759270688740186,
+        -0.0069084280721569465,
+        -0.006913982078941754
+      ],
+      "group_id": 2,
+      "maximum_rate_rad_s": 0.0741180785112218,
+      "maximum_speed_m_s": 0.048182181929959,
+      "maximum_tilt_deg": 0.6826102871484794,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "position_rmse_m": 0.014192358163741994,
+      "termination": "completed"
+    },
+    {
+      "actual_duration_s": 8.0,
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tilt": true
+      },
+      "condition": "noise_wind",
+      "controller_evaluations": 801,
+      "elapsed_s": 7.139704399975017,
+      "family": "hover",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.007901186546207703,
+      "final_velocity_integral": [
+        -0.0022902259596358676,
+        -0.006225140277516436,
+        -0.0067866602952468946
+      ],
+      "group_id": 2,
+      "maximum_rate_rad_s": 0.07789656059058471,
+      "maximum_speed_m_s": 0.04708186527712802,
+      "maximum_tilt_deg": 0.6416100119197093,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "position_rmse_m": 0.014203779049228548,
+      "termination": "completed"
+    },
+    {
+      "actual_duration_s": 8.0,
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tilt": true
+      },
+      "condition": "delay_noise_wind",
+      "controller_evaluations": 801,
+      "elapsed_s": 7.819323800038546,
+      "family": "hover",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.0077893251235341,
+      "final_velocity_integral": [
+        -0.0022407108053022766,
+        -0.006229413898483175,
+        -0.006903350369718041
+      ],
+      "group_id": 2,
+      "maximum_rate_rad_s": 0.08494110268540259,
+      "maximum_speed_m_s": 0.04717456200578992,
+      "maximum_tilt_deg": 0.6426334853244404,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "position_rmse_m": 0.014183120534960002,
+      "termination": "completed"
+    },
+    {
+      "actual_duration_s": 8.0,
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tilt": true
+      },
+      "condition": "ideal",
+      "controller_evaluations": 801,
+      "elapsed_s": 7.17787989997305,
+      "family": "line",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.0018360950562245084,
+      "final_velocity_integral": [
+        0.018213437036836765,
+        0.011119905013679819,
+        0.0002634554399049446
+      ],
+      "group_id": 3,
+      "maximum_rate_rad_s": 0.09340678616693661,
+      "maximum_speed_m_s": 0.3976401618973852,
+      "maximum_tilt_deg": 1.7155012125886298,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "position_rmse_m": 0.009941180747370621,
+      "termination": "completed"
+    },
+    {
+      "actual_duration_s": 8.0,
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tilt": true
+      },
+      "condition": "wind",
+      "controller_evaluations": 801,
+      "elapsed_s": 6.840971800033003,
+      "family": "line",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.009850096932233411,
+      "final_velocity_integral": [
+        0.03490359928090794,
+        0.024113421692041406,
+        0.03185948167498522
+      ],
+      "group_id": 3,
+      "maximum_rate_rad_s": 0.09509459134500832,
+      "maximum_speed_m_s": 0.39536271553704,
+      "maximum_tilt_deg": 1.8797768098780931,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "position_rmse_m": 0.02231369803862218,
+      "termination": "completed"
+    },
+    {
+      "actual_duration_s": 8.0,
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tilt": true
+      },
+      "condition": "noise_wind",
+      "controller_evaluations": 801,
+      "elapsed_s": 7.532760999980383,
+      "family": "line",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.009249515997017815,
+      "final_velocity_integral": [
+        0.03502168755714465,
+        0.024331651629254908,
+        0.03202975840299822
+      ],
+      "group_id": 3,
+      "maximum_rate_rad_s": 0.09551901415117602,
+      "maximum_speed_m_s": 0.39834543568529523,
+      "maximum_tilt_deg": 1.8207556624433894,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "position_rmse_m": 0.02214195133664502,
+      "termination": "completed"
+    },
+    {
+      "actual_duration_s": 8.0,
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tilt": true
+      },
+      "condition": "delay_noise_wind",
+      "controller_evaluations": 801,
+      "elapsed_s": 7.05079319991637,
+      "family": "line",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.008646058927860736,
+      "final_velocity_integral": [
+        0.03487716001281561,
+        0.024254670672128775,
+        0.03184373863567166
+      ],
+      "group_id": 3,
+      "maximum_rate_rad_s": 0.09554716412170194,
+      "maximum_speed_m_s": 0.39813701881382746,
+      "maximum_tilt_deg": 1.8329613753024994,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "position_rmse_m": 0.02108950396594571,
+      "termination": "completed"
+    },
+    {
+      "actual_duration_s": 8.0,
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tilt": true
+      },
+      "condition": "ideal",
+      "controller_evaluations": 801,
+      "elapsed_s": 7.167391899973154,
+      "family": "line",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.0018702676348242493,
+      "final_velocity_integral": [
+        -0.0007785418836918033,
+        0.02078215244662076,
+        0.00022079362004878017
+      ],
+      "group_id": 4,
+      "maximum_rate_rad_s": 0.12237376886141793,
+      "maximum_speed_m_s": 0.3903500122487477,
+      "maximum_tilt_deg": 1.6951781367602632,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "position_rmse_m": 0.010034738374344996,
+      "termination": "completed"
+    },
+    {
+      "actual_duration_s": 8.0,
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tilt": true
+      },
+      "condition": "wind",
+      "controller_evaluations": 801,
+      "elapsed_s": 7.397828699904494,
+      "family": "line",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.013942043731256048,
+      "final_velocity_integral": [
+        -0.004655434919048587,
+        0.024828666493022476,
+        0.00411052217857054
+      ],
+      "group_id": 4,
+      "maximum_rate_rad_s": 0.12234034300257246,
+      "maximum_speed_m_s": 0.3995856745627707,
+      "maximum_tilt_deg": 2.1256806771991767,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "position_rmse_m": 0.02338829211215838,
+      "termination": "completed"
+    },
+    {
+      "actual_duration_s": 8.0,
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tilt": true
+      },
+      "condition": "noise_wind",
+      "controller_evaluations": 801,
+      "elapsed_s": 7.517090699984692,
+      "family": "line",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.012934252410079564,
+      "final_velocity_integral": [
+        -0.004337279337565085,
+        0.024309836466378517,
+        0.004489722422936108
+      ],
+      "group_id": 4,
+      "maximum_rate_rad_s": 0.12750806259276784,
+      "maximum_speed_m_s": 0.3962517285476186,
+      "maximum_tilt_deg": 2.096304442315202,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "position_rmse_m": 0.022037410468498022,
+      "termination": "completed"
+    },
+    {
+      "actual_duration_s": 8.0,
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tilt": true
+      },
+      "condition": "delay_noise_wind",
+      "controller_evaluations": 801,
+      "elapsed_s": 6.96289190009702,
+      "family": "line",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.012441220039093271,
+      "final_velocity_integral": [
+        -0.004419210451496742,
+        0.024174149731481097,
+        0.004613424118602626
+      ],
+      "group_id": 4,
+      "maximum_rate_rad_s": 0.13907756482075073,
+      "maximum_speed_m_s": 0.3955043886180874,
+      "maximum_tilt_deg": 2.064841195805119,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "position_rmse_m": 0.02014727845686943,
+      "termination": "completed"
+    },
+    {
+      "actual_duration_s": 8.0,
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tilt": true
+      },
+      "condition": "ideal",
+      "controller_evaluations": 801,
+      "elapsed_s": 6.9224759000353515,
+      "family": "circle",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.026538940431561842,
+      "final_velocity_integral": [
+        -0.006724002721899527,
+        -0.007509498460277352,
+        0.021333245243794815
+      ],
+      "group_id": 5,
+      "maximum_rate_rad_s": 0.46312586285442664,
+      "maximum_speed_m_s": 0.9256661586998317,
+      "maximum_tilt_deg": 11.337728442113692,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "position_rmse_m": 0.09548186299831185,
+      "termination": "completed"
+    },
+    {
+      "actual_duration_s": 8.0,
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tilt": true
+      },
+      "condition": "wind",
+      "controller_evaluations": 801,
+      "elapsed_s": 7.128795300028287,
+      "family": "circle",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.02263562239441627,
+      "final_velocity_integral": [
+        -0.029836176998914245,
+        -0.03213254881798388,
+        0.037540959654877186
+      ],
+      "group_id": 5,
+      "maximum_rate_rad_s": 0.45863763339639824,
+      "maximum_speed_m_s": 0.9277333143537847,
+      "maximum_tilt_deg": 11.31039466948642,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "position_rmse_m": 0.09957047175963349,
+      "termination": "completed"
+    },
+    {
+      "actual_duration_s": 8.0,
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tilt": true
+      },
+      "condition": "noise_wind",
+      "controller_evaluations": 801,
+      "elapsed_s": 7.0833251000149176,
+      "family": "circle",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.021798084345174665,
+      "final_velocity_integral": [
+        -0.029473336349659856,
+        -0.03164213201216382,
+        0.03778680960570062
+      ],
+      "group_id": 5,
+      "maximum_rate_rad_s": 0.46508737888637475,
+      "maximum_speed_m_s": 0.9279079882463149,
+      "maximum_tilt_deg": 11.287684562858562,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "position_rmse_m": 0.09780404673371125,
+      "termination": "completed"
+    },
+    {
+      "actual_duration_s": 8.0,
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tilt": true
+      },
+      "condition": "delay_noise_wind",
+      "controller_evaluations": 801,
+      "elapsed_s": 7.165521599934436,
+      "family": "circle",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.020342761183814798,
+      "final_velocity_integral": [
+        -0.029136921616556115,
+        -0.030888894033324305,
+        0.037669279396914675
+      ],
+      "group_id": 5,
+      "maximum_rate_rad_s": 0.4688546043577159,
+      "maximum_speed_m_s": 0.9285053873407478,
+      "maximum_tilt_deg": 11.326945208645752,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "position_rmse_m": 0.09560480493797399,
+      "termination": "completed"
+    },
+    {
+      "actual_duration_s": 8.0,
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tilt": true
+      },
+      "condition": "ideal",
+      "controller_evaluations": 801,
+      "elapsed_s": 5.550553599954583,
+      "family": "circle",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.028424077848439804,
+      "final_velocity_integral": [
+        0.010129390090643252,
+        0.0021034349414824622,
+        0.024134551433036208
+      ],
+      "group_id": 6,
+      "maximum_rate_rad_s": 0.496944132722341,
+      "maximum_speed_m_s": 0.9885148365956576,
+      "maximum_tilt_deg": 12.115650543785948,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "position_rmse_m": 0.10219672779845823,
+      "termination": "completed"
+    },
+    {
+      "actual_duration_s": 8.0,
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tilt": true
+      },
+      "condition": "wind",
+      "controller_evaluations": 801,
+      "elapsed_s": 4.80196299997624,
+      "family": "circle",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.04327809966049136,
+      "final_velocity_integral": [
+        0.008187840634300933,
+        0.016455892250372667,
+        0.030219574951291992
+      ],
+      "group_id": 6,
+      "maximum_rate_rad_s": 0.51533663558318,
+      "maximum_speed_m_s": 1.0219714424993824,
+      "maximum_tilt_deg": 12.449393251473598,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "position_rmse_m": 0.10953819532848863,
+      "termination": "completed"
+    },
+    {
+      "actual_duration_s": 8.0,
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tilt": true
+      },
+      "condition": "noise_wind",
+      "controller_evaluations": 801,
+      "elapsed_s": 6.658985099988058,
+      "family": "circle",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.0421460143411902,
+      "final_velocity_integral": [
+        0.007457305489781947,
+        0.016656352588194544,
+        0.03058569208188894
+      ],
+      "group_id": 6,
+      "maximum_rate_rad_s": 0.5240164232467374,
+      "maximum_speed_m_s": 1.0247435250128043,
+      "maximum_tilt_deg": 12.46243108547677,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "position_rmse_m": 0.10804283842245353,
+      "termination": "completed"
+    },
+    {
+      "actual_duration_s": 8.0,
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tilt": true
+      },
+      "condition": "delay_noise_wind",
+      "controller_evaluations": 801,
+      "elapsed_s": 7.007583500002511,
+      "family": "circle",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.03939482454881047,
+      "final_velocity_integral": [
+        0.0062284061201125385,
+        0.016830681102416863,
+        0.030273081384419476
+      ],
+      "group_id": 6,
+      "maximum_rate_rad_s": 0.5316780862799375,
+      "maximum_speed_m_s": 1.026277072910501,
+      "maximum_tilt_deg": 12.50820639826548,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "position_rmse_m": 0.10545889504596816,
+      "termination": "completed"
+    },
+    {
+      "actual_duration_s": 8.0,
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tilt": true
+      },
+      "condition": "ideal",
+      "controller_evaluations": 801,
+      "elapsed_s": 6.60000640002545,
+      "family": "vertical",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.0024724953002371966,
+      "final_velocity_integral": [
+        -0.0001753005357923127,
+        0.0004958846635887111,
+        0.008951875840442996
+      ],
+      "group_id": 7,
+      "maximum_rate_rad_s": 0.3202973682035864,
+      "maximum_speed_m_s": 0.08674905013689034,
+      "maximum_tilt_deg": 0.3006739845767296,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "position_rmse_m": 0.003070790734232897,
+      "termination": "completed"
+    },
+    {
+      "actual_duration_s": 8.0,
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tilt": true
+      },
+      "condition": "wind",
+      "controller_evaluations": 801,
+      "elapsed_s": 6.891434999997728,
+      "family": "vertical",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.022734480365227586,
+      "final_velocity_integral": [
+        0.022387514071908265,
+        0.015304759115377325,
+        0.04627759261139081
+      ],
+      "group_id": 7,
+      "maximum_rate_rad_s": 0.3199706334082936,
+      "maximum_speed_m_s": 0.08958248847966518,
+      "maximum_tilt_deg": 0.5328785630294226,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "position_rmse_m": 0.016852340559900578,
+      "termination": "completed"
+    },
+    {
+      "actual_duration_s": 8.0,
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tilt": true
+      },
+      "condition": "noise_wind",
+      "controller_evaluations": 801,
+      "elapsed_s": 6.28540900000371,
+      "family": "vertical",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.02177075748301415,
+      "final_velocity_integral": [
+        0.022020264449495768,
+        0.01519346429871137,
+        0.04668932888251009
+      ],
+      "group_id": 7,
+      "maximum_rate_rad_s": 0.33299748788440126,
+      "maximum_speed_m_s": 0.09147988884673185,
+      "maximum_tilt_deg": 0.5614411304575139,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "position_rmse_m": 0.016754843778710234,
+      "termination": "completed"
+    },
+    {
+      "actual_duration_s": 8.0,
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tilt": true
+      },
+      "condition": "delay_noise_wind",
+      "controller_evaluations": 801,
+      "elapsed_s": 6.307360099977814,
+      "family": "vertical",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.021888535843936206,
+      "final_velocity_integral": [
+        0.022177286188417696,
+        0.015049705218818881,
+        0.046469587190959206
+      ],
+      "group_id": 7,
+      "maximum_rate_rad_s": 0.36337808110756353,
+      "maximum_speed_m_s": 0.09183493366006394,
+      "maximum_tilt_deg": 0.5616888918425058,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "position_rmse_m": 0.016544307859469996,
+      "termination": "completed"
+    },
+    {
+      "actual_duration_s": 8.0,
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tilt": true
+      },
+      "condition": "ideal",
+      "controller_evaluations": 801,
+      "elapsed_s": 6.277459100005217,
+      "family": "vertical",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.0023152331904477182,
+      "final_velocity_integral": [
+        0.0002480786669127946,
+        1.4821284961031678e-06,
+        -0.008427321207232
+      ],
+      "group_id": 8,
+      "maximum_rate_rad_s": 0.25525961226940935,
+      "maximum_speed_m_s": 0.08784431876365974,
+      "maximum_tilt_deg": 0.21700106202013134,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "position_rmse_m": 0.004973272656123826,
+      "termination": "completed"
+    },
+    {
+      "actual_duration_s": 8.0,
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tilt": true
+      },
+      "condition": "wind",
+      "controller_evaluations": 801,
+      "elapsed_s": 6.248038099962287,
+      "family": "vertical",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.02062469160634005,
+      "final_velocity_integral": [
+        -0.014272026174472076,
+        -0.019724013259387697,
+        0.028168102326678914
+      ],
+      "group_id": 8,
+      "maximum_rate_rad_s": 0.254937989982776,
+      "maximum_speed_m_s": 0.08420730815834525,
+      "maximum_tilt_deg": 0.731387908431285,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "position_rmse_m": 0.020054748561036343,
+      "termination": "completed"
+    },
+    {
+      "actual_duration_s": 8.0,
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tilt": true
+      },
+      "condition": "noise_wind",
+      "controller_evaluations": 801,
+      "elapsed_s": 6.540006699971855,
+      "family": "vertical",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.019936475494099097,
+      "final_velocity_integral": [
+        -0.015089714803370223,
+        -0.01982676749427625,
+        0.02818887421554935
+      ],
+      "group_id": 8,
+      "maximum_rate_rad_s": 0.2651936724075672,
+      "maximum_speed_m_s": 0.08283240185644968,
+      "maximum_tilt_deg": 0.7381693997877408,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "position_rmse_m": 0.02003173182658395,
+      "termination": "completed"
+    },
+    {
+      "actual_duration_s": 8.0,
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tilt": true
+      },
+      "condition": "delay_noise_wind",
+      "controller_evaluations": 801,
+      "elapsed_s": 6.560895000002347,
+      "family": "vertical",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.01964761965342238,
+      "final_velocity_integral": [
+        -0.015334832515280105,
+        -0.020096654031154272,
+        0.028126737534291752
+      ],
+      "group_id": 8,
+      "maximum_rate_rad_s": 0.2896887249602443,
+      "maximum_speed_m_s": 0.0832447332000359,
+      "maximum_tilt_deg": 0.7463961812572846,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "position_rmse_m": 0.019746930427104417,
+      "termination": "completed"
+    }
+  ],
+  "config_hash": "7bfa7b4ade91890b3191e76cadff64644de57f603a05be74f52dd3b39ad8d0ae",
+  "plan_signature": "0d8b607e1c5e6c3cf89eac57f7caafeb63fad2fde753bded457d4c692814b724",
+  "real_aircraft_validation": false
+}

@@ -1,0 +1,119 @@
+{
+  "meaning": "Correlated pure development windows, not independent flight accuracy",
+  "rows": [
+    {
+      "correct": 1677,
+      "label": 0,
+      "recall": 0.8716216216216216,
+      "samples": 1924
+    },
+    {
+      "correct": 29,
+      "label": 1,
+      "recall": 1.0,
+      "samples": 29
+    },
+    {
+      "correct": 28,
+      "label": 2,
+      "recall": 0.9655172413793104,
+      "samples": 29
+    },
+    {
+      "correct": 29,
+      "label": 3,
+      "recall": 1.0,
+      "samples": 29
+    },
+    {
+      "correct": 29,
+      "label": 4,
+      "recall": 1.0,
+      "samples": 29
+    },
+    {
+      "correct": 30,
+      "label": 5,
+      "recall": 1.0,
+      "samples": 30
+    },
+    {
+      "correct": 29,
+      "label": 6,
+      "recall": 1.0,
+      "samples": 29
+    },
+    {
+      "correct": 30,
+      "label": 7,
+      "recall": 1.0,
+      "samples": 30
+    },
+    {
+      "correct": 30,
+      "label": 8,
+      "recall": 1.0,
+      "samples": 30
+    },
+    {
+      "correct": 30,
+      "label": 9,
+      "recall": 1.0,
+      "samples": 30
+    },
+    {
+      "correct": 30,
+      "label": 10,
+      "recall": 1.0,
+      "samples": 30
+    },
+    {
+      "correct": 30,
+      "label": 11,
+      "recall": 1.0,
+      "samples": 30
+    },
+    {
+      "correct": 30,
+      "label": 12,
+      "recall": 1.0,
+      "samples": 30
+    },
+    {
+      "correct": 63,
+      "label": 13,
+      "recall": 0.3247422680412371,
+      "samples": 194
+    },
+    {
+      "correct": 15,
+      "label": 14,
+      "recall": 0.07731958762886598,
+      "samples": 194
+    },
+    {
+      "correct": 36,
+      "label": 15,
+      "recall": 0.18556701030927836,
+      "samples": 194
+    },
+    {
+      "correct": 89,
+      "label": 16,
+      "recall": 0.4587628865979381,
+      "samples": 194
+    },
+    {
+      "correct": 72,
+      "label": 17,
+      "recall": 0.3711340206185567,
+      "samples": 194
+    },
+    {
+      "correct": 74,
+      "label": 18,
+      "recall": 0.38144329896907214,
+      "samples": 194
+    }
+  ]
+}

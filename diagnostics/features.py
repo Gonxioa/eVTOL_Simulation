@@ -16,9 +16,9 @@ FEATURE_SETS = {'imu_only': IMU, 'imu_attitude': IMU+ROTATION,
 QUATERNION = ['observed_qx', 'observed_qy', 'observed_qz', 'observed_qw']
 
 
-def array(value, n, name):
+def array(value, n, name, finite=True):
     result = np.array(value, dtype=float, copy=True)
-    if result.shape != (n,) or not np.isfinite(result).all():
+    if result.shape != (n,) or finite and not np.isfinite(result).all():
         raise ValueError('Invalid observable ' + name)
     result.setflags(write=False)
     return result
@@ -37,20 +37,20 @@ class ObservationPacket:
     def __post_init__(self):
         if self.schema != SCHEMA or not np.isfinite(self.timestamp) or self.timestamp < 0:
             raise ValueError('Invalid diagnostic packet schema or time')
-        object.__setattr__(self, 'specific_force_body', array(self.specific_force_body, 3, 'specific force'))
-        object.__setattr__(self, 'gyro_body', array(self.gyro_body, 3, 'gyro'))
+        if type(self.valid) is not bool:
+            raise ValueError('Validity must be a boolean')
+        object.__setattr__(self, 'specific_force_body', array(self.specific_force_body, 3, 'specific force', self.valid))
+        object.__setattr__(self, 'gyro_body', array(self.gyro_body, 3, 'gyro', self.valid))
         if self.attitude_xyzw is not None:
-            q = array(self.attitude_xyzw, 4, 'observed attitude')
-            if abs(np.linalg.norm(q)-1) > 1e-6:
+            q = array(self.attitude_xyzw, 4, 'observed attitude', self.valid)
+            if self.valid and abs(np.linalg.norm(q)-1) > 1e-6:
                 raise ValueError('Observed attitude must be a unit quaternion')
             object.__setattr__(self, 'attitude_xyzw', q)
         if self.motor_command_rad_s is not None:
-            command = array(self.motor_command_rad_s, 6, 'motor command')
-            if np.any(command < 0):
+            command = array(self.motor_command_rad_s, 6, 'motor command', self.valid)
+            if self.valid and np.any(command < 0):
                 raise ValueError('Unsigned motor command required')
             object.__setattr__(self, 'motor_command_rad_s', command)
-        if type(self.valid) is not bool:
-            raise ValueError('Validity must be a boolean')
 
 
 def from_observation(observation, command):
@@ -71,6 +71,8 @@ def from_csv_row(row):
 def extract(packet, feature_set='imu_only'):
     if not isinstance(packet, ObservationPacket):
         raise TypeError('Diagnostic feature input must be an ObservationPacket')
+    if not packet.valid:
+        raise ValueError('Invalid packet cannot become classifier features')
     if feature_set not in FEATURE_SETS:
         raise ValueError('Unknown diagnostic feature set')
     parts = [packet.specific_force_body, packet.gyro_body]

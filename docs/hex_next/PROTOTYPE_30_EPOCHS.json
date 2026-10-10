@@ -1,0 +1,11 @@
+{
+  "name": "imu_only_epoch30",
+  "feature_set": "imu_only",
+  "status": "development_followup_after_failed_3_epoch_alarm_check_not_final_test",
+  "reason": "Check whether more training on the same training-only groups resolves the initial alarm failure; preserve all initial results",
+  "interface_fit": {
+    "epochs": 30,
+    "purpose": "development_fitting_depth_check_not_formal_accuracy_or_augmentation_comparison"
+  },
+  "unchanged": ["training_window_ids", "initialization_seed", "network_structure", "scaler_training_groups", "alarm_threshold", "replay_groups"]
+}

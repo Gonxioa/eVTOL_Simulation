@@ -1,0 +1,17 @@
+{
+  "max_probability_difference": 0.0,
+  "no_labels_reference_or_schedule_columns": [
+    "time",
+    "data_valid",
+    "packet_schema",
+    "ax_body",
+    "ay_body",
+    "az_body",
+    "gx_body",
+    "gy_body",
+    "gz_body"
+  ],
+  "passed": true,
+  "predictions": 35,
+  "same_alarm_events": true
+}

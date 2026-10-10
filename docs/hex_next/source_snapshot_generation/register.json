@@ -1,0 +1,48 @@
+{
+  "entries": [
+    {
+      "change": "Explicit UTF-8 JSON decoding; numerical models and settings unchanged",
+      "current_sha256": "53235428e6dff046d6a7f477cf3b8cdb174949c7e6264320740f4eed8c5a4084",
+      "executed_sha256": "9df6f54f046f9842d33a4aae3dfd1035443f760adf95139f9ef6aff0127962d8",
+      "executed_snapshot_path": "docs/hex_next/source_snapshot_generation/hex_research/continuous_data.py",
+      "original_path": "hex_research/continuous_data.py"
+    },
+    {
+      "change": "Explicit UTF-8 JSON decoding; numerical models and settings unchanged",
+      "current_sha256": "5e5b0608f865d60ba0a442e61075051f18360352dc307b859a7d334ede4951e6",
+      "executed_sha256": "8559b006f5ae5070d585382b55b31c3f36f1fa0e32d44bc4d69de166c4a382c7",
+      "executed_snapshot_path": "docs/hex_next/source_snapshot_generation/hex_research/next_steps.py",
+      "original_path": "hex_research/next_steps.py"
+    },
+    {
+      "change": "Explicit UTF-8 JSON decoding; numerical models and settings unchanged",
+      "current_sha256": "9f0866f12497a1f4f37fcd53ca95a35817429e03638995a89ceabdee110db3be",
+      "executed_sha256": "90cd0a39fd6e93e24cb2e83b1416d7be91b45155db3ea7e94d6790282b8cd9ca",
+      "executed_snapshot_path": "docs/hex_next/source_snapshot_generation/diagnostics/preprocessing.py",
+      "original_path": "diagnostics/preprocessing.py"
+    },
+    {
+      "change": "Explicit UTF-8 JSON decoding; numerical models and settings unchanged",
+      "current_sha256": "6fd099d953c0550d39f02cdaa6f334e87da703f44495cec586dcbef2518bb84c",
+      "executed_sha256": "40c817833f5047a752df414eb832b3627cd2d8c73c22559a4b5618dc997b1c89",
+      "executed_snapshot_path": "docs/hex_next/source_snapshot_generation/diagnostics/workflow.py",
+      "original_path": "diagnostics/workflow.py"
+    },
+    {
+      "change": "Explicit UTF-8 JSON decoding; numerical models and settings unchanged",
+      "current_sha256": "bd3b0fcfd76dd0963e3b187c2fdef5bdd90aded5da32f5e37deac6fe8f38db65",
+      "executed_sha256": "3e409b1b1de5ca496dee866dbb6ac2341eae129e52cb2f309dc3ef01cbe96d10",
+      "executed_snapshot_path": "docs/hex_next/source_snapshot_generation/docs/hex_next/run_prototype.py",
+      "original_path": "docs/hex_next/run_prototype.py"
+    },
+    {
+      "change": "Explicit UTF-8 JSON decoding; numerical models and settings unchanged",
+      "current_sha256": "662ca4b47e780cd4e6f4beadc30f918ba38a7fa41a9977635170d76ad2efc7a6",
+      "executed_sha256": "f7592da3c57261c7945404411777071d64efa15848286bec8c85a8cd5423bed6",
+      "executed_snapshot_path": "docs/hex_next/source_snapshot_generation/diagnose_hex.py",
+      "original_path": "diagnose_hex.py"
+    }
+  ],
+  "old_data_resigned": false,
+  "reason": "Preserve exact executed source before fixing Windows default-GBK JSON decoding for CJK paths/metadata"
+}

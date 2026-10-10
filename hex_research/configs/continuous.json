@@ -10,6 +10,8 @@
   "fault_time_range_s": [2.5, 3.5],
   "initial_position_jitter_m": 0.01,
   "initial_attitude_jitter_rad": 0.005,
+  "normal_validation_delay_s": 0.03,
+  "reference_preflight_samples": 1001,
   "ranges": {
     "height_m": [2.3, 2.7], "heading_rad": [-3.141592653589793, 3.141592653589793],
     "yaw_rad": [-0.2, 0.2], "yaw_change_rad": [-0.3, 0.3],

@@ -1,0 +1,31 @@
+{
+  "batch1": {
+    "baseline_tests": 27,
+    "commit": "ab62312",
+    "new_initial_tests": 7,
+    "status": "passed"
+  },
+  "batch2": {
+    "causal_replay_and_live_input_checks": "passed",
+    "core_checks_passed": 37,
+    "early_stops_retained": 96,
+    "epoch30_detected_fault_events": 59,
+    "epoch30_normal_false_alarms": 5,
+    "epoch30_total_fault_events": 72,
+    "healthy_exposure_seconds": 32,
+    "implementation": "complete",
+    "normal_cases_passed": 32,
+    "paired_groups": 8,
+    "records_generated": 152,
+    "reliable_alarm_acceptance": "not_passed",
+    "unevaluable_fault_records": 0
+  },
+  "batches3_to5": {
+    "next_gate": "Development feature/threshold/calibration checks and grouped small-sample protocol before formal augmentation comparison",
+    "status": "not_started"
+  },
+  "branch": "hex-tasks-continuous-diagnostics",
+  "execution_date_Asia_Shanghai": "2026-10-10",
+  "real_aircraft_validation": false,
+  "request_date": "2026-10-09"
+}

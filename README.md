@@ -1,3 +1,10 @@
+## 2026-10-10：参数化任务库与连续诊断
+
+本轮分支`hex-tasks-continuous-diagnostics`，实际修改和未通过项见[第1、2批报告](docs/hex_next/VALIDATION_REPORT.md)。
+新入口`python -m hex_research.next_steps`，覆盖四类参数化任务、v5完整时序和观测白名单因果滑窗。
+37项检查及32项新正常机动通过。连续输入/回放一致性通过，30轮开发模型仍有5次健康误报、13/72故障漏检；可靠报警尚未通过。
+无标签日志诊断入口`python diagnose_hex.py --help`；完整[运行顺序](docs/hex_next/RUNNING_ORDER.md)。
+
 ## 2026-10-06：研究六旋翼审计与自有飞控
 
 最新主线恢复正常+六个位置×Full/Severe/Partial的19类执行器效能下降任务。默认入口为`python main.py validate`，说明和实际结果见[docs/hex_audit/README.md](docs/hex_audit/README.md)。当前核心为自有ENU/FLU、19状态动力学与SI串级控制，旧SE3/RotorPy入口和原24项测试隔离保存在`legacy_reference/`。
