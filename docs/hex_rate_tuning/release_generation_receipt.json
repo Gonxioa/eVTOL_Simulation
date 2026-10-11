@@ -1,0 +1,12 @@
+{
+  "candidate": "velocity_z09",
+  "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+  "executed_utc": "2026-10-11T02:27:15.679250+00:00",
+  "long_summary_sha256": "83082d73709e5d9f7582f0c6f2df84bcd57dd9be354868daa4787a8486cabca2",
+  "old_data_modified": false,
+  "plan_signature": "bd29b238399aa20126031e168f40c77e54129eb85a0267e78ef030605d8ad823",
+  "records": 152,
+  "runner_sha256": "f34b4d309353bc8ecf5285e081a1134d729e302cd712a5d2f41ef045279104f0",
+  "validation_summary_sha256": "b3a4cacfac56f249e3157eaa42ee0249176879f889950a759a9ae7af6f0408f9",
+  "workers": 8
+}

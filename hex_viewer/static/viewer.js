@@ -50,6 +50,7 @@ function metadata(meta){
     s.family==='vertical'?`竖直位移 ${fmt(s.displacement_m,6)} m`:`半径 ${fmt(s.radius_m,6)} m，${s.turn_rad>0?'逆时针':'顺时针'}一圈`;
   const entries=[['任务',description],['参考起点，m',vec(s.origin_m,6)],['运动 / 偏航时段',`${s.motion_start_s}–${s.motion_end_s} s`],
     ['偏航参考',`${fmt(s.yaw_start_rad*180/Math.PI,3)}° → ${fmt((s.yaw_start_rad+s.yaw_change_rad)*180/Math.PI,3)}°`],
+    ['模型版本',meta.model_version??'当前接口未提供'],['配置SHA256',meta.config_hash??'当前接口未提供'],
     ['数据身份','ENU / FLU，轨迹和姿态为仿真真值，参数为研究设计'],['结束状态',meta.termination==='completed'?'达到计划时长':meta.termination_reasons.join('；')],
     ['源记录',meta.csv],['CSV SHA256',meta.csv_sha256]];
   $('metadata').replaceChildren();for(const [label,value] of entries){const dt=document.createElement('dt'),dd=document.createElement('dd');dt.textContent=label;dd.textContent=value;$('metadata').append(dt,dd);}

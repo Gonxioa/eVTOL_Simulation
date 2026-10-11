@@ -1,0 +1,20 @@
+{
+  "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+  "epochs": 30,
+  "executed_utc": "2026-10-11T02:32:06.456388+00:00",
+  "feature_set": "imu_only",
+  "formal_performance_claim": false,
+  "replay_groups": [
+    2,
+    4,
+    6,
+    8
+  ],
+  "runner_sha256": "f34b4d309353bc8ecf5285e081a1134d729e302cd712a5d2f41ef045279104f0",
+  "train_groups": [
+    1,
+    3,
+    5,
+    7
+  ]
+}

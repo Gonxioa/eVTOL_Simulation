@@ -1,0 +1,94 @@
+{
+  "diagnostics": {
+    "consecutive_windows": 3,
+    "cooldown_s": 1.0,
+    "fault_probability_threshold": 0.8,
+    "feature_set": "imu_only",
+    "gap_tolerance_s": 1e-06,
+    "sample_hz": 100.0,
+    "schema_version": "diagnostic_packet_v1",
+    "selection_status": "initial_design_not_tuned_or_calibrated",
+    "step": 10,
+    "window": 50
+  },
+  "duration_s": 8.0,
+  "evidence_status": "predeclared_research_design_not_real_aircraft_or_formal_performance",
+  "experiment_version": "hex_tasks_continuous_v1",
+  "families": [
+    "hover",
+    "line",
+    "circle",
+    "vertical"
+  ],
+  "fault_time_range_s": [
+    2.5,
+    3.5
+  ],
+  "groups_per_family": 2,
+  "initial_attitude_jitter_rad": 0.005,
+  "initial_position_jitter_m": 0.01,
+  "interface_fit": {
+    "epochs": 30,
+    "hidden_dim": 32,
+    "layers": 1,
+    "learning_rate": 0.001,
+    "max_windows_per_class": 160,
+    "purpose": "development_continuous_interface_check_not_formal_accuracy",
+    "replay_repeat": 1,
+    "seed": 91009,
+    "training_repeat": 0
+  },
+  "motion_end_s": 7.0,
+  "motion_start_s": 1.0,
+  "normal_acceptance": {
+    "basis": "RMSE and tilt reuse old research gates; final/rate/saturation are new predeclared research requirements",
+    "final_position_error_m": 0.1,
+    "maximum_body_rate_rad_s": 3.0,
+    "maximum_nominal_bound_fraction": 0.05,
+    "maximum_tilt_deg": 35.0,
+    "position_rmse_m": 0.25
+  },
+  "normal_validation_delay_s": 0.03,
+  "ranges": {
+    "circle_radius_m": [
+      0.25,
+      0.35
+    ],
+    "heading_rad": [
+      -3.141592653589793,
+      3.141592653589793
+    ],
+    "height_m": [
+      2.3,
+      2.7
+    ],
+    "line_distance_m": [
+      1.0,
+      1.6
+    ],
+    "vertical_distance_m": [
+      -0.6,
+      0.6
+    ],
+    "yaw_change_rad": [
+      -0.3,
+      0.3
+    ],
+    "yaw_rad": [
+      -0.2,
+      0.2
+    ]
+  },
+  "reference_limits": {
+    "acceleration_m_s2": 1.5,
+    "altitude_m": [
+      1.0,
+      4.0
+    ],
+    "horizontal_radius_m": 2.5,
+    "speed_m_s": 1.0,
+    "yaw_rate_rad_s": 0.3
+  },
+  "reference_preflight_samples": 1001,
+  "seed": 20261009
+}

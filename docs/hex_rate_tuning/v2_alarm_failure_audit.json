@@ -1,0 +1,616 @@
+{
+  "interpretation": "All first alarms occur during the healthy prefix, then remain latched. They cannot be counted as post-injection detections. Low Normal confidence and event reliability require separate development; no threshold or reset logic changed.",
+  "prediction_records": 76,
+  "records": [
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8288261294364929,
+      "record": "g002_c00"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8288261294364929,
+      "record": "g002_c01"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8288261294364929,
+      "record": "g002_c02"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8288261294364929,
+      "record": "g002_c03"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8288261294364929,
+      "record": "g002_c04"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8215902298688889,
+      "record": "g002_c05"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8288261294364929,
+      "record": "g002_c06"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8288261294364929,
+      "record": "g002_c07"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8288261294364929,
+      "record": "g002_c08"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8288261294364929,
+      "record": "g002_c09"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8288261294364929,
+      "record": "g002_c10"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8206740468740463,
+      "record": "g002_c11"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8288261294364929,
+      "record": "g002_c12"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8275449424982071,
+      "record": "g002_c13"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8257133364677429,
+      "record": "g002_c14"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8283745348453522,
+      "record": "g002_c15"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8278414756059647,
+      "record": "g002_c16"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8278566002845764,
+      "record": "g002_c17"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8268672078847885,
+      "record": "g002_c18"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8225133866071701,
+      "record": "g004_c00"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8225133866071701,
+      "record": "g004_c01"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8225133866071701,
+      "record": "g004_c02"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8225133866071701,
+      "record": "g004_c03"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8225133866071701,
+      "record": "g004_c04"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8225133866071701,
+      "record": "g004_c05"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8225133866071701,
+      "record": "g004_c06"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8225133866071701,
+      "record": "g004_c07"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8225133866071701,
+      "record": "g004_c08"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8225133866071701,
+      "record": "g004_c09"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8225133866071701,
+      "record": "g004_c10"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8225133866071701,
+      "record": "g004_c11"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8225133866071701,
+      "record": "g004_c12"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8225133866071701,
+      "record": "g004_c13"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8225133866071701,
+      "record": "g004_c14"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8225133866071701,
+      "record": "g004_c15"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8225133866071701,
+      "record": "g004_c16"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8225133866071701,
+      "record": "g004_c17"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8225133866071701,
+      "record": "g004_c18"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8233565539121628,
+      "record": "g006_c00"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8368145525455475,
+      "record": "g006_c01"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8368145525455475,
+      "record": "g006_c02"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8368145525455475,
+      "record": "g006_c03"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8368145525455475,
+      "record": "g006_c04"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8276544362306595,
+      "record": "g006_c05"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.835351899266243,
+      "record": "g006_c06"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8368145525455475,
+      "record": "g006_c07"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8368145525455475,
+      "record": "g006_c08"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8368145525455475,
+      "record": "g006_c09"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8368145525455475,
+      "record": "g006_c10"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8165897727012634,
+      "record": "g006_c11"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8329323828220367,
+      "record": "g006_c12"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8314127177000046,
+      "record": "g006_c13"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8193711340427399,
+      "record": "g006_c14"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8352148085832596,
+      "record": "g006_c15"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.821878507733345,
+      "record": "g006_c16"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8195990771055222,
+      "record": "g006_c17"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8263782262802124,
+      "record": "g006_c18"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8209958225488663,
+      "record": "g008_c00"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.821942001581192,
+      "record": "g008_c01"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.821942001581192,
+      "record": "g008_c02"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.821942001581192,
+      "record": "g008_c03"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.821942001581192,
+      "record": "g008_c04"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.821942001581192,
+      "record": "g008_c05"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.821942001581192,
+      "record": "g008_c06"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.821942001581192,
+      "record": "g008_c07"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.821942001581192,
+      "record": "g008_c08"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.821942001581192,
+      "record": "g008_c09"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.821942001581192,
+      "record": "g008_c10"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.821942001581192,
+      "record": "g008_c11"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.821942001581192,
+      "record": "g008_c12"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8199266046285629,
+      "record": "g008_c13"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8202604204416275,
+      "record": "g008_c14"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.821942001581192,
+      "record": "g008_c15"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8217610567808151,
+      "record": "g008_c16"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8198411464691162,
+      "record": "g008_c17"
+    },
+    {
+      "alarms": [
+        0.69
+      ],
+      "all_windows_above_alarm_threshold": true,
+      "minimum_fault_score": 0.8187364041805267,
+      "record": "g008_c18"
+    }
+  ],
+  "records_never_below_threshold": 76,
+  "records_with_first_alarm_at_0_69s": 76
+}

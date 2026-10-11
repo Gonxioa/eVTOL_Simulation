@@ -1,0 +1,2186 @@
+{
+  "alarm_delays_s": [],
+  "all_replay_offline_equal": true,
+  "confusion_matrix": [
+    [
+      1244,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      288,
+      0,
+      214,
+      1,
+      177,
+      0
+    ],
+    [
+      0,
+      28,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      28,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      28,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      28,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      28,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      28,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      31,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      30,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      32,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      31,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      37,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      42,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      118,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      59,
+      0,
+      8,
+      1,
+      8,
+      0
+    ],
+    [
+      130,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      57,
+      0,
+      1,
+      1,
+      5,
+      0
+    ],
+    [
+      107,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      59,
+      0,
+      15,
+      1,
+      12,
+      0
+    ],
+    [
+      119,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      62,
+      0,
+      0,
+      1,
+      12,
+      0
+    ],
+    [
+      120,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      55,
+      0,
+      9,
+      1,
+      9,
+      0
+    ],
+    [
+      108,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      55,
+      0,
+      11,
+      2,
+      9,
+      9
+    ]
+  ],
+  "detected_before_stop": 0,
+  "evaluable_fault_events": 72,
+  "false_alarms_per_healthy_hour": 450.0,
+  "fault_events": 72,
+  "formal_accuracy_claim": false,
+  "healthy_normal_only_seconds": 32.0,
+  "healthy_time_note": "Only Normal records count; paired identical healthy prefixes are not multiplied into exposure",
+  "missed_evaluable_fault_events": 72,
+  "normal_only_false_alarm_events": 4,
+  "pure_window_accuracy": 0.49335644136337375,
+  "pure_window_macro_f1": 0.6789822592147798,
+  "purpose": "development_replay_interface_not_formal_performance",
+  "records": [
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": null,
+      "duration_s": 8.0,
+      "family": "hover",
+      "fault_evaluable": true,
+      "fault_start_s": null,
+      "fault_to_end_s": null,
+      "first_alarm_label": null,
+      "group_id": 2,
+      "label": 0,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 76,
+      "record_id": "g002_c00",
+      "termination": "completed"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 3.92,
+      "family": "hover",
+      "fault_evaluable": true,
+      "fault_start_s": 2.7484842630895168,
+      "fault_to_end_s": 1.1715157369104832,
+      "first_alarm_label": null,
+      "group_id": 2,
+      "label": 1,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 35,
+      "record_id": "g002_c01",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 3.92,
+      "family": "hover",
+      "fault_evaluable": true,
+      "fault_start_s": 2.7484842630895168,
+      "fault_to_end_s": 1.1715157369104832,
+      "first_alarm_label": null,
+      "group_id": 2,
+      "label": 2,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 35,
+      "record_id": "g002_c02",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 3.92,
+      "family": "hover",
+      "fault_evaluable": true,
+      "fault_start_s": 2.7484842630895168,
+      "fault_to_end_s": 1.1715157369104832,
+      "first_alarm_label": null,
+      "group_id": 2,
+      "label": 3,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 35,
+      "record_id": "g002_c03",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 3.92,
+      "family": "hover",
+      "fault_evaluable": true,
+      "fault_start_s": 2.7484842630895168,
+      "fault_to_end_s": 1.1715157369104832,
+      "first_alarm_label": null,
+      "group_id": 2,
+      "label": 4,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 35,
+      "record_id": "g002_c04",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 3.92,
+      "family": "hover",
+      "fault_evaluable": true,
+      "fault_start_s": 2.7484842630895168,
+      "fault_to_end_s": 1.1715157369104832,
+      "first_alarm_label": null,
+      "group_id": 2,
+      "label": 5,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 35,
+      "record_id": "g002_c05",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 3.92,
+      "family": "hover",
+      "fault_evaluable": true,
+      "fault_start_s": 2.7484842630895168,
+      "fault_to_end_s": 1.1715157369104832,
+      "first_alarm_label": null,
+      "group_id": 2,
+      "label": 6,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 35,
+      "record_id": "g002_c06",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 3.99,
+      "family": "hover",
+      "fault_evaluable": true,
+      "fault_start_s": 2.7484842630895168,
+      "fault_to_end_s": 1.2415157369104834,
+      "first_alarm_label": null,
+      "group_id": 2,
+      "label": 7,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 36,
+      "record_id": "g002_c07",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 4.01,
+      "family": "hover",
+      "fault_evaluable": true,
+      "fault_start_s": 2.7484842630895168,
+      "fault_to_end_s": 1.261515736910483,
+      "first_alarm_label": null,
+      "group_id": 2,
+      "label": 8,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 36,
+      "record_id": "g002_c08",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 4.01,
+      "family": "hover",
+      "fault_evaluable": true,
+      "fault_start_s": 2.7484842630895168,
+      "fault_to_end_s": 1.261515736910483,
+      "first_alarm_label": null,
+      "group_id": 2,
+      "label": 9,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 36,
+      "record_id": "g002_c09",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 3.99,
+      "family": "hover",
+      "fault_evaluable": true,
+      "fault_start_s": 2.7484842630895168,
+      "fault_to_end_s": 1.2415157369104834,
+      "first_alarm_label": null,
+      "group_id": 2,
+      "label": 10,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 36,
+      "record_id": "g002_c10",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 4.23,
+      "family": "hover",
+      "fault_evaluable": true,
+      "fault_start_s": 2.7484842630895168,
+      "fault_to_end_s": 1.4815157369104837,
+      "first_alarm_label": null,
+      "group_id": 2,
+      "label": 11,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 38,
+      "record_id": "g002_c11",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 4.21,
+      "family": "hover",
+      "fault_evaluable": true,
+      "fault_start_s": 2.7484842630895168,
+      "fault_to_end_s": 1.4615157369104832,
+      "first_alarm_label": null,
+      "group_id": 2,
+      "label": 12,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 38,
+      "record_id": "g002_c12",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 8.0,
+      "family": "hover",
+      "fault_evaluable": true,
+      "fault_start_s": 2.7484842630895168,
+      "fault_to_end_s": 5.251515736910483,
+      "first_alarm_label": null,
+      "group_id": 2,
+      "label": 13,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 76,
+      "record_id": "g002_c13",
+      "termination": "completed"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 8.0,
+      "family": "hover",
+      "fault_evaluable": true,
+      "fault_start_s": 2.7484842630895168,
+      "fault_to_end_s": 5.251515736910483,
+      "first_alarm_label": null,
+      "group_id": 2,
+      "label": 14,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 76,
+      "record_id": "g002_c14",
+      "termination": "completed"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 8.0,
+      "family": "hover",
+      "fault_evaluable": true,
+      "fault_start_s": 2.7484842630895168,
+      "fault_to_end_s": 5.251515736910483,
+      "first_alarm_label": null,
+      "group_id": 2,
+      "label": 15,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 76,
+      "record_id": "g002_c15",
+      "termination": "completed"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 8.0,
+      "family": "hover",
+      "fault_evaluable": true,
+      "fault_start_s": 2.7484842630895168,
+      "fault_to_end_s": 5.251515736910483,
+      "first_alarm_label": null,
+      "group_id": 2,
+      "label": 16,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 76,
+      "record_id": "g002_c16",
+      "termination": "completed"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 8.0,
+      "family": "hover",
+      "fault_evaluable": true,
+      "fault_start_s": 2.7484842630895168,
+      "fault_to_end_s": 5.251515736910483,
+      "first_alarm_label": null,
+      "group_id": 2,
+      "label": 17,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 76,
+      "record_id": "g002_c17",
+      "termination": "completed"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 8.0,
+      "family": "hover",
+      "fault_evaluable": true,
+      "fault_start_s": 2.7484842630895168,
+      "fault_to_end_s": 5.251515736910483,
+      "first_alarm_label": null,
+      "group_id": 2,
+      "label": 18,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 76,
+      "record_id": "g002_c18",
+      "termination": "completed"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": null,
+      "duration_s": 8.0,
+      "family": "line",
+      "fault_evaluable": true,
+      "fault_start_s": null,
+      "fault_to_end_s": null,
+      "first_alarm_label": null,
+      "group_id": 4,
+      "label": 0,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 76,
+      "record_id": "g004_c00",
+      "termination": "completed"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 3.95,
+      "family": "line",
+      "fault_evaluable": true,
+      "fault_start_s": 2.78168555761707,
+      "fault_to_end_s": 1.1683144423829304,
+      "first_alarm_label": null,
+      "group_id": 4,
+      "label": 1,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 35,
+      "record_id": "g004_c01",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 3.95,
+      "family": "line",
+      "fault_evaluable": true,
+      "fault_start_s": 2.78168555761707,
+      "fault_to_end_s": 1.1683144423829304,
+      "first_alarm_label": null,
+      "group_id": 4,
+      "label": 2,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 35,
+      "record_id": "g004_c02",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 3.95,
+      "family": "line",
+      "fault_evaluable": true,
+      "fault_start_s": 2.78168555761707,
+      "fault_to_end_s": 1.1683144423829304,
+      "first_alarm_label": null,
+      "group_id": 4,
+      "label": 3,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 35,
+      "record_id": "g004_c03",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 3.95,
+      "family": "line",
+      "fault_evaluable": true,
+      "fault_start_s": 2.78168555761707,
+      "fault_to_end_s": 1.1683144423829304,
+      "first_alarm_label": null,
+      "group_id": 4,
+      "label": 4,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 35,
+      "record_id": "g004_c04",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 3.96,
+      "family": "line",
+      "fault_evaluable": true,
+      "fault_start_s": 2.78168555761707,
+      "fault_to_end_s": 1.1783144423829301,
+      "first_alarm_label": null,
+      "group_id": 4,
+      "label": 5,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 35,
+      "record_id": "g004_c05",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 3.96,
+      "family": "line",
+      "fault_evaluable": true,
+      "fault_start_s": 2.78168555761707,
+      "fault_to_end_s": 1.1783144423829301,
+      "first_alarm_label": null,
+      "group_id": 4,
+      "label": 6,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 35,
+      "record_id": "g004_c06",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 4.02,
+      "family": "line",
+      "fault_evaluable": true,
+      "fault_start_s": 2.78168555761707,
+      "fault_to_end_s": 1.2383144423829298,
+      "first_alarm_label": null,
+      "group_id": 4,
+      "label": 7,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 36,
+      "record_id": "g004_c07",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 4.04,
+      "family": "line",
+      "fault_evaluable": true,
+      "fault_start_s": 2.78168555761707,
+      "fault_to_end_s": 1.2583144423829302,
+      "first_alarm_label": null,
+      "group_id": 4,
+      "label": 8,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 36,
+      "record_id": "g004_c08",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 4.04,
+      "family": "line",
+      "fault_evaluable": true,
+      "fault_start_s": 2.78168555761707,
+      "fault_to_end_s": 1.2583144423829302,
+      "first_alarm_label": null,
+      "group_id": 4,
+      "label": 9,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 36,
+      "record_id": "g004_c09",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 4.02,
+      "family": "line",
+      "fault_evaluable": true,
+      "fault_start_s": 2.78168555761707,
+      "fault_to_end_s": 1.2383144423829298,
+      "first_alarm_label": null,
+      "group_id": 4,
+      "label": 10,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 36,
+      "record_id": "g004_c10",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 4.28,
+      "family": "line",
+      "fault_evaluable": true,
+      "fault_start_s": 2.78168555761707,
+      "fault_to_end_s": 1.4983144423829304,
+      "first_alarm_label": null,
+      "group_id": 4,
+      "label": 11,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 38,
+      "record_id": "g004_c11",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 4.3,
+      "family": "line",
+      "fault_evaluable": true,
+      "fault_start_s": 2.78168555761707,
+      "fault_to_end_s": 1.51831444238293,
+      "first_alarm_label": null,
+      "group_id": 4,
+      "label": 12,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 39,
+      "record_id": "g004_c12",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 8.0,
+      "family": "line",
+      "fault_evaluable": true,
+      "fault_start_s": 2.78168555761707,
+      "fault_to_end_s": 5.21831444238293,
+      "first_alarm_label": null,
+      "group_id": 4,
+      "label": 13,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 76,
+      "record_id": "g004_c13",
+      "termination": "completed"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 8.0,
+      "family": "line",
+      "fault_evaluable": true,
+      "fault_start_s": 2.78168555761707,
+      "fault_to_end_s": 5.21831444238293,
+      "first_alarm_label": null,
+      "group_id": 4,
+      "label": 14,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 76,
+      "record_id": "g004_c14",
+      "termination": "completed"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 8.0,
+      "family": "line",
+      "fault_evaluable": true,
+      "fault_start_s": 2.78168555761707,
+      "fault_to_end_s": 5.21831444238293,
+      "first_alarm_label": null,
+      "group_id": 4,
+      "label": 15,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 76,
+      "record_id": "g004_c15",
+      "termination": "completed"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 8.0,
+      "family": "line",
+      "fault_evaluable": true,
+      "fault_start_s": 2.78168555761707,
+      "fault_to_end_s": 5.21831444238293,
+      "first_alarm_label": null,
+      "group_id": 4,
+      "label": 16,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 76,
+      "record_id": "g004_c16",
+      "termination": "completed"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 8.0,
+      "family": "line",
+      "fault_evaluable": true,
+      "fault_start_s": 2.78168555761707,
+      "fault_to_end_s": 5.21831444238293,
+      "first_alarm_label": null,
+      "group_id": 4,
+      "label": 17,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 76,
+      "record_id": "g004_c17",
+      "termination": "completed"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 8.0,
+      "family": "line",
+      "fault_evaluable": true,
+      "fault_start_s": 2.78168555761707,
+      "fault_to_end_s": 5.21831444238293,
+      "first_alarm_label": null,
+      "group_id": 4,
+      "label": 18,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 76,
+      "record_id": "g004_c18",
+      "termination": "completed"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": null,
+      "duration_s": 8.0,
+      "family": "circle",
+      "fault_evaluable": true,
+      "fault_start_s": null,
+      "fault_to_end_s": null,
+      "first_alarm_label": null,
+      "group_id": 6,
+      "label": 0,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 76,
+      "record_id": "g006_c00",
+      "termination": "completed"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 3.77,
+      "family": "circle",
+      "fault_evaluable": true,
+      "fault_start_s": 2.586998495443641,
+      "fault_to_end_s": 1.1830015045563589,
+      "first_alarm_label": null,
+      "group_id": 6,
+      "label": 1,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 33,
+      "record_id": "g006_c01",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 3.77,
+      "family": "circle",
+      "fault_evaluable": true,
+      "fault_start_s": 2.586998495443641,
+      "fault_to_end_s": 1.1830015045563589,
+      "first_alarm_label": null,
+      "group_id": 6,
+      "label": 2,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 33,
+      "record_id": "g006_c02",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 3.78,
+      "family": "circle",
+      "fault_evaluable": true,
+      "fault_start_s": 2.586998495443641,
+      "fault_to_end_s": 1.1930015045563587,
+      "first_alarm_label": null,
+      "group_id": 6,
+      "label": 3,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 33,
+      "record_id": "g006_c03",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 3.77,
+      "family": "circle",
+      "fault_evaluable": true,
+      "fault_start_s": 2.586998495443641,
+      "fault_to_end_s": 1.1830015045563589,
+      "first_alarm_label": null,
+      "group_id": 6,
+      "label": 4,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 33,
+      "record_id": "g006_c04",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 3.77,
+      "family": "circle",
+      "fault_evaluable": true,
+      "fault_start_s": 2.586998495443641,
+      "fault_to_end_s": 1.1830015045563589,
+      "first_alarm_label": null,
+      "group_id": 6,
+      "label": 5,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 33,
+      "record_id": "g006_c05",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 3.76,
+      "family": "circle",
+      "fault_evaluable": true,
+      "fault_start_s": 2.586998495443641,
+      "fault_to_end_s": 1.1730015045563587,
+      "first_alarm_label": null,
+      "group_id": 6,
+      "label": 6,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 33,
+      "record_id": "g006_c06",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 3.84,
+      "family": "circle",
+      "fault_evaluable": true,
+      "fault_start_s": 2.586998495443641,
+      "fault_to_end_s": 1.2530015045563587,
+      "first_alarm_label": null,
+      "group_id": 6,
+      "label": 7,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 34,
+      "record_id": "g006_c07",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 3.87,
+      "family": "circle",
+      "fault_evaluable": true,
+      "fault_start_s": 2.586998495443641,
+      "fault_to_end_s": 1.283001504556359,
+      "first_alarm_label": null,
+      "group_id": 6,
+      "label": 8,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 34,
+      "record_id": "g006_c08",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 3.88,
+      "family": "circle",
+      "fault_evaluable": true,
+      "fault_start_s": 2.586998495443641,
+      "fault_to_end_s": 1.2930015045563588,
+      "first_alarm_label": null,
+      "group_id": 6,
+      "label": 9,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 34,
+      "record_id": "g006_c09",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 3.84,
+      "family": "circle",
+      "fault_evaluable": true,
+      "fault_start_s": 2.586998495443641,
+      "fault_to_end_s": 1.2530015045563587,
+      "first_alarm_label": null,
+      "group_id": 6,
+      "label": 10,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 34,
+      "record_id": "g006_c10",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 3.89,
+      "family": "circle",
+      "fault_evaluable": true,
+      "fault_start_s": 2.586998495443641,
+      "fault_to_end_s": 1.303001504556359,
+      "first_alarm_label": null,
+      "group_id": 6,
+      "label": 11,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 35,
+      "record_id": "g006_c11",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 4.14,
+      "family": "circle",
+      "fault_evaluable": true,
+      "fault_start_s": 2.586998495443641,
+      "fault_to_end_s": 1.5530015045563585,
+      "first_alarm_label": null,
+      "group_id": 6,
+      "label": 12,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 37,
+      "record_id": "g006_c12",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 8.0,
+      "family": "circle",
+      "fault_evaluable": true,
+      "fault_start_s": 2.586998495443641,
+      "fault_to_end_s": 5.413001504556359,
+      "first_alarm_label": null,
+      "group_id": 6,
+      "label": 13,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 76,
+      "record_id": "g006_c13",
+      "termination": "completed"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 8.0,
+      "family": "circle",
+      "fault_evaluable": true,
+      "fault_start_s": 2.586998495443641,
+      "fault_to_end_s": 5.413001504556359,
+      "first_alarm_label": null,
+      "group_id": 6,
+      "label": 14,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 76,
+      "record_id": "g006_c14",
+      "termination": "completed"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 8.0,
+      "family": "circle",
+      "fault_evaluable": true,
+      "fault_start_s": 2.586998495443641,
+      "fault_to_end_s": 5.413001504556359,
+      "first_alarm_label": null,
+      "group_id": 6,
+      "label": 15,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 76,
+      "record_id": "g006_c15",
+      "termination": "completed"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 8.0,
+      "family": "circle",
+      "fault_evaluable": true,
+      "fault_start_s": 2.586998495443641,
+      "fault_to_end_s": 5.413001504556359,
+      "first_alarm_label": null,
+      "group_id": 6,
+      "label": 16,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 76,
+      "record_id": "g006_c16",
+      "termination": "completed"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 8.0,
+      "family": "circle",
+      "fault_evaluable": true,
+      "fault_start_s": 2.586998495443641,
+      "fault_to_end_s": 5.413001504556359,
+      "first_alarm_label": null,
+      "group_id": 6,
+      "label": 17,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 76,
+      "record_id": "g006_c17",
+      "termination": "completed"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 8.0,
+      "family": "circle",
+      "fault_evaluable": true,
+      "fault_start_s": 2.586998495443641,
+      "fault_to_end_s": 5.413001504556359,
+      "first_alarm_label": null,
+      "group_id": 6,
+      "label": 18,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 76,
+      "record_id": "g006_c18",
+      "termination": "completed"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": null,
+      "duration_s": 8.0,
+      "family": "vertical",
+      "fault_evaluable": true,
+      "fault_start_s": null,
+      "fault_to_end_s": null,
+      "first_alarm_label": null,
+      "group_id": 8,
+      "label": 0,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 76,
+      "record_id": "g008_c00",
+      "termination": "completed"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 3.91,
+      "family": "vertical",
+      "fault_evaluable": true,
+      "fault_start_s": 2.7497438335000397,
+      "fault_to_end_s": 1.1602561664999604,
+      "first_alarm_label": null,
+      "group_id": 8,
+      "label": 1,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 35,
+      "record_id": "g008_c01",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 3.9,
+      "family": "vertical",
+      "fault_evaluable": true,
+      "fault_start_s": 2.7497438335000397,
+      "fault_to_end_s": 1.1502561664999602,
+      "first_alarm_label": null,
+      "group_id": 8,
+      "label": 2,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 35,
+      "record_id": "g008_c02",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 3.9,
+      "family": "vertical",
+      "fault_evaluable": true,
+      "fault_start_s": 2.7497438335000397,
+      "fault_to_end_s": 1.1502561664999602,
+      "first_alarm_label": null,
+      "group_id": 8,
+      "label": 3,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 35,
+      "record_id": "g008_c03",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 3.9,
+      "family": "vertical",
+      "fault_evaluable": true,
+      "fault_start_s": 2.7497438335000397,
+      "fault_to_end_s": 1.1502561664999602,
+      "first_alarm_label": null,
+      "group_id": 8,
+      "label": 4,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 35,
+      "record_id": "g008_c04",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 3.9,
+      "family": "vertical",
+      "fault_evaluable": true,
+      "fault_start_s": 2.7497438335000397,
+      "fault_to_end_s": 1.1502561664999602,
+      "first_alarm_label": null,
+      "group_id": 8,
+      "label": 5,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 35,
+      "record_id": "g008_c05",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 3.9,
+      "family": "vertical",
+      "fault_evaluable": true,
+      "fault_start_s": 2.7497438335000397,
+      "fault_to_end_s": 1.1502561664999602,
+      "first_alarm_label": null,
+      "group_id": 8,
+      "label": 6,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 35,
+      "record_id": "g008_c06",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 3.97,
+      "family": "vertical",
+      "fault_evaluable": true,
+      "fault_start_s": 2.7497438335000397,
+      "fault_to_end_s": 1.2202561664999605,
+      "first_alarm_label": null,
+      "group_id": 8,
+      "label": 7,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 35,
+      "record_id": "g008_c07",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 3.99,
+      "family": "vertical",
+      "fault_evaluable": true,
+      "fault_start_s": 2.7497438335000397,
+      "fault_to_end_s": 1.2402561664999605,
+      "first_alarm_label": null,
+      "group_id": 8,
+      "label": 8,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 36,
+      "record_id": "g008_c08",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 4.0,
+      "family": "vertical",
+      "fault_evaluable": true,
+      "fault_start_s": 2.7497438335000397,
+      "fault_to_end_s": 1.2502561664999603,
+      "first_alarm_label": null,
+      "group_id": 8,
+      "label": 9,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 36,
+      "record_id": "g008_c09",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 3.97,
+      "family": "vertical",
+      "fault_evaluable": true,
+      "fault_start_s": 2.7497438335000397,
+      "fault_to_end_s": 1.2202561664999605,
+      "first_alarm_label": null,
+      "group_id": 8,
+      "label": 10,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 35,
+      "record_id": "g008_c10",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 4.17,
+      "family": "vertical",
+      "fault_evaluable": true,
+      "fault_start_s": 2.7497438335000397,
+      "fault_to_end_s": 1.4202561664999602,
+      "first_alarm_label": null,
+      "group_id": 8,
+      "label": 11,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 37,
+      "record_id": "g008_c11",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 4.22,
+      "family": "vertical",
+      "fault_evaluable": true,
+      "fault_start_s": 2.7497438335000397,
+      "fault_to_end_s": 1.47025616649996,
+      "first_alarm_label": null,
+      "group_id": 8,
+      "label": 12,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 38,
+      "record_id": "g008_c12",
+      "termination": "physical_envelope_exit"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 8.0,
+      "family": "vertical",
+      "fault_evaluable": true,
+      "fault_start_s": 2.7497438335000397,
+      "fault_to_end_s": 5.250256166499961,
+      "first_alarm_label": null,
+      "group_id": 8,
+      "label": 13,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 76,
+      "record_id": "g008_c13",
+      "termination": "completed"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 8.0,
+      "family": "vertical",
+      "fault_evaluable": true,
+      "fault_start_s": 2.7497438335000397,
+      "fault_to_end_s": 5.250256166499961,
+      "first_alarm_label": null,
+      "group_id": 8,
+      "label": 14,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 76,
+      "record_id": "g008_c14",
+      "termination": "completed"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 8.0,
+      "family": "vertical",
+      "fault_evaluable": true,
+      "fault_start_s": 2.7497438335000397,
+      "fault_to_end_s": 5.250256166499961,
+      "first_alarm_label": null,
+      "group_id": 8,
+      "label": 15,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 76,
+      "record_id": "g008_c15",
+      "termination": "completed"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 8.0,
+      "family": "vertical",
+      "fault_evaluable": true,
+      "fault_start_s": 2.7497438335000397,
+      "fault_to_end_s": 5.250256166499961,
+      "first_alarm_label": null,
+      "group_id": 8,
+      "label": 16,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 76,
+      "record_id": "g008_c16",
+      "termination": "completed"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 8.0,
+      "family": "vertical",
+      "fault_evaluable": true,
+      "fault_start_s": 2.7497438335000397,
+      "fault_to_end_s": 5.250256166499961,
+      "first_alarm_label": null,
+      "group_id": 8,
+      "label": 17,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 76,
+      "record_id": "g008_c17",
+      "termination": "completed"
+    },
+    {
+      "alarm_delay_s": null,
+      "alarm_times_s": [
+        0.69
+      ],
+      "detected_before_stop": false,
+      "duration_s": 8.0,
+      "family": "vertical",
+      "fault_evaluable": true,
+      "fault_start_s": 2.7497438335000397,
+      "fault_to_end_s": 5.250256166499961,
+      "first_alarm_label": null,
+      "group_id": 8,
+      "label": 18,
+      "pre_fault_false_alarms": 1,
+      "prediction_count": 76,
+      "record_id": "g008_c18",
+      "termination": "completed"
+    }
+  ],
+  "replay_groups": [
+    2,
+    4,
+    6,
+    8
+  ],
+  "replay_offline_probability_checks": [
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g002_c00"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g002_c01"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g002_c02"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g002_c03"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g002_c04"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g002_c05"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g002_c06"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g002_c07"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g002_c08"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g002_c09"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g002_c10"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g002_c11"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g002_c12"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g002_c13"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g002_c14"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g002_c15"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g002_c16"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g002_c17"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g002_c18"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g004_c00"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g004_c01"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g004_c02"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g004_c03"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g004_c04"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g004_c05"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g004_c06"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g004_c07"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g004_c08"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g004_c09"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g004_c10"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g004_c11"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g004_c12"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g004_c13"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g004_c14"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g004_c15"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g004_c16"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g004_c17"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g004_c18"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g006_c00"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g006_c01"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g006_c02"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g006_c03"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g006_c04"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g006_c05"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g006_c06"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g006_c07"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g006_c08"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g006_c09"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g006_c10"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g006_c11"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g006_c12"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g006_c13"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g006_c14"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g006_c15"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g006_c16"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g006_c17"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g006_c18"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g008_c00"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g008_c01"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g008_c02"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g008_c03"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g008_c04"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g008_c05"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g008_c06"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g008_c07"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g008_c08"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g008_c09"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g008_c10"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g008_c11"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g008_c12"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g008_c13"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g008_c14"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g008_c15"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g008_c16"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g008_c17"
+    },
+    {
+      "max_probability_difference": 0.0,
+      "record_id": "g008_c18"
+    }
+  ],
+  "train_groups": [
+    1,
+    3,
+    5,
+    7
+  ],
+  "unevaluable_fault_events": 0,
+  "unpassed_or_unvalidated": [
+    "Formal recognition performance, probability calibration and augmentation improvement are not established",
+    "Short development healthy exposure cannot establish a reliable operational false-alarm rate"
+  ]
+}

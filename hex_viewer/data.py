@@ -138,6 +138,8 @@ class ReplayDataset:
                          'first_fault_sample_s': first_fault, 'termination': side['termination'],
                          'termination_reasons': reasons, 'csv': path.name, 'csv_sha256': digest,
                          'parameter_status': config['parameter_status'], 'metrics': side['flight_metrics'],
+                         'model_version': config.get('model_version'),
+                         'config_hash': side.get('provenance', {}).get('config_hash'),
                          'geometry': {'arm_radius_m': config['airframe']['arm_radius_m'],
                                       'rotor_radius_m': config['airframe']['rotor_radius_m'],
                                       'body_radius_m': config['airframe']['center_radius_m'],

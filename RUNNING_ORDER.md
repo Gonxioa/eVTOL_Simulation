@@ -2,6 +2,7 @@
 
 本轮参数、完整工况、长期保持及独立新版输出，以[docs/hex_rate_tuning/README.md](docs/hex_rate_tuning/README.md)为准。
 源码/参数改变后使用新输出目录；验证入口拒绝覆盖另一个生成签名下的旧报告。
+新版152条记录与30轮开发诊断已执行；控制检查通过，可靠报警未通过。新版8766回放命令和实际失败指标见[验证报告](docs/hex_rate_tuning/VALIDATION_REPORT.md)。
 
 # 2026-10-10动画回放
 

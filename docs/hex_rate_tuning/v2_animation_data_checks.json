@@ -1,0 +1,2271 @@
+{
+  "executed_utc": "2026-10-11T02:35:52.011421+00:00",
+  "data_dir": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5",
+  "records": 152,
+  "groups": 8,
+  "samples": 85062,
+  "completed": 56,
+  "early_endings": 96,
+  "saved_prediction_records": 76,
+  "prediction_errors": [],
+  "source_files_hashed_before_and_after": 383,
+  "source_changed_files": 0,
+  "all_csv_series_equal_to_source": true,
+  "padded_flight_samples": 0,
+  "maximum_reference_error_m": 0.0,
+  "generation_code_hashes_match": true,
+  "generation_code_mismatches": [],
+  "generation_provenance_resolved_with_registered_snapshots": true,
+  "registered_source_differences": [],
+  "source_sha256": {
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\dataset_generation_manifest.json": "a3a10fa99902556f20abbbe4052bc00c1486b21df5209559453840e09b0a963e",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g001_hover_c00.csv": "07d36561f52536ba84f25651d57a6ef4d264bf7588c60a83a0327d5dfa71606a",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g001_hover_c00.json": "e9b263a08846fc10f195f68633bda317f671520ce3bf9f80f95539e01cdc62a7",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g001_hover_c01.csv": "edfa8f129aa2f9531355e7333f15478f6f5787883008b2ac1a78ec5d083d6759",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g001_hover_c01.json": "ec4647c66456f2e14a36a75d1032b08551d12b3f0be9a73ae505619083fcf5a5",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g001_hover_c02.csv": "83ff870f45c9811704266792cb7c3716e315fa95df1215e9abae9eb427f8d2d1",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g001_hover_c02.json": "ef05a3407a88b9f2fe086348a010803b1882b9c359ea84f15468e1a0754190c4",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g001_hover_c03.csv": "0cb295817558179a039118954a3fddc767add82e2b7c329f8a69736f4dad9486",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g001_hover_c03.json": "d501cf9bcf59d7606f276573a7179a602d9e0d2f34319125b7df20bb39d86568",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g001_hover_c04.csv": "2c3c5308855c50a37ee729edb8b539a8eb32c265dfe3db621d6b1469e9bb11de",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g001_hover_c04.json": "99d1a3030ba3d7b0a2bbce2189471bfd797e7b5db67b98010510eb65bf82477c",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g001_hover_c05.csv": "081622fae59c18369bb6d8dfa4cc7959cca98f8c415f24700dd3d13fb7d7e235",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g001_hover_c05.json": "0f84d04007c2a7b4b9bc4711b5f60b94bc1f2ab48884e84314280027c8073bf4",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g001_hover_c06.csv": "4452eedc1cd2e9f5dfd936b4045661c8c9f1e4a8614f60b2d1d6bca8f2981a01",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g001_hover_c06.json": "dcd333a6abb24434e50643e86ac990237fde397be1035abd5ff65fe2099b652b",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g001_hover_c07.csv": "5f9417e595a219f370f4a3203e25d1d4f2db2e50fe708d59d8748a30c120f20b",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g001_hover_c07.json": "0e56870ecc6b4993417bc72bb728cfea7fafc5319a458b76b005ad324c8748db",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g001_hover_c08.csv": "8d6a3f7395c245f4327b037a1d5a1ee23e3d15a959086519ff9b17ebab662041",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g001_hover_c08.json": "7308243a6975e79ab86af63307217b7b18c76133d0ccd39c9b5309dc349cc5a3",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g001_hover_c09.csv": "010802975ead82a515886e2a65999dcee3087a962a628b8ef24c53d3a38fac90",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g001_hover_c09.json": "21e76c499b7516f87bd39d953ec96a3b39c0210edd64a816ccb4ac96a096a162",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g001_hover_c10.csv": "1113f8e7b225105176b63c92304d9247610bb46d0c0f14bb7ecbda02f0b38322",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g001_hover_c10.json": "825a15f66522a885bff062af2a92823f8ff71a0bd5fbf01b48fc3c7f9bb099f2",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g001_hover_c11.csv": "192ef354c460092df5201e2dfce2bab1a27921ba99c210b1cef219ef5a291c5e",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g001_hover_c11.json": "a3a0748a6d043c8a3cddaad152053c3b58d547b2225a118f089d1ae0f12c0f7a",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g001_hover_c12.csv": "45342a2b0d0994489ab0895dd3f7f773e7c617d571a4c377a71d514cd772f328",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g001_hover_c12.json": "b65ba60c3f7796f85b41f4f3a0a5866c0f869c3368f3b199d6ab7d155e028fc9",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g001_hover_c13.csv": "fba4d3c14dc194e3310de44af90de425a0ababb2fe5a469a35e11e0d81216236",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g001_hover_c13.json": "3a68a0d8dbbb91c8962193312a29ce603398c7799bcbd3d864850b5a895bec54",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g001_hover_c14.csv": "4197c655162ef696c4e98e462cf962f6757c4bcc376ae1b653cbf5a556058eca",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g001_hover_c14.json": "deed4d8a39ce2081fb1c8d341201bbd3d19549c2609362843daa059126f12275",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g001_hover_c15.csv": "4a6c87458e7d0d469cd5ef06da1f3734d7c6c49909abb79bdaf24aa617606192",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g001_hover_c15.json": "17dac85ec61f909bf75f8ee69142b2d32ed73cfd25e58f6ea36a35aaab52f63a",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g001_hover_c16.csv": "e7e1e1d11f1d70cfbbf66f16c50b2e044ebb31780d8c7af31fd1c503c687f6f9",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g001_hover_c16.json": "14d70ba2833cebf2f3b307c240662bf3f15f02895eb72027e876873d8fc48502",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g001_hover_c17.csv": "ea0df97396b421fd5d94eab0382ec7ae7a6e2b6b30be8a9bd88b23124ebc1f2e",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g001_hover_c17.json": "97481cb9574f88034c5cf38c07b523a41892c6be93c46c75891d83146c477bc1",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g001_hover_c18.csv": "0f5e74ea2c35ff1877ad150deb1aaa45fe5e1094d0c72a2ec6f37dc97ef38734",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g001_hover_c18.json": "0a94dc899551253eda763abed0c81c33b7c99ffeb3c30c3f1fdd175e9c52d4af",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g002_hover_c00.csv": "721095c56386fb4e84c7d600906be536c3627b5757abd64f050c2514d01fae24",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g002_hover_c00.json": "8f6b0629aa2f100cd77f0d592b0285084552116604c4aae548ad3b6acefb30a5",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g002_hover_c01.csv": "026b97d38e338103476628f4d0d1f0a4c535e42f489a2586df0cf97eb4417ed4",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g002_hover_c01.json": "ad8f8c2f6b91a26a3a45084b47cbf1df22b9409ccdffde1fa832e853c7b573bc",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g002_hover_c02.csv": "ddf50c1eb3d9d264f4ccb14d0191c97c9c261476aed9e4d3a81a41172295efef",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g002_hover_c02.json": "add1eb750aba9bc83f1e1a728f7f9e6d139674d981463a86f8610c452bd5beef",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g002_hover_c03.csv": "3ac38545c838cd35ec93946b5b6394fa5dd4207c43825d0b29a0b477afcff399",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g002_hover_c03.json": "f5dd59709579c0b45fe02ab03638a949134f02ff2ec3014453a8b7230c29b30e",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g002_hover_c04.csv": "db13fa85a3c46bb487ed685c31bdb7dff2df1018d13fa6d6b95bbf3b1ab9f31a",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g002_hover_c04.json": "ca947275e8b02742b11ff2d3d0262924bace49458c8a207c0bfe694846e047b0",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g002_hover_c05.csv": "bae4d568b83dd6ff69d28e1b2265459e0355e7e3411d5e4e8841cd9e08608400",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g002_hover_c05.json": "6487f7c39acd02f1e3ed42402eb3c97621eba25d71120c84dd8d101e9b2c70b2",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g002_hover_c06.csv": "0dcbfd66ef2c5f0062a95aaa7dd919a20f00b3698ae33aa70faa101a2b0bac8f",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g002_hover_c06.json": "d86a46614fc7335adfced8a7e2fef005e874b59cd37eb1afa7fb305f17f1c019",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g002_hover_c07.csv": "c19bb4bed16c81baf4f937c797597d91be14a0b563ad655c63f063fae1a18628",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g002_hover_c07.json": "5006b36758fa2420caf0ce89aa578afe433c7ba6eed8f6adace660ea8a13caf1",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g002_hover_c08.csv": "37be264b87ea733833d5f7a2f8de93e38763a9efbdfc85311dedbfded6a873c3",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g002_hover_c08.json": "e352c057c3f47ed3545f9bd9ed991127fee2fca9642825865c2f915cbca175ba",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g002_hover_c09.csv": "6d64c026f91eb4f4355c1070d3800c4d9a9469394d0512c256178cb49d225300",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g002_hover_c09.json": "3ff12d0a0a6c74e17faa87ed12479ad462b28d0f9a363b51e9999aa964cf1e1a",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g002_hover_c10.csv": "26795d7e26ae2d57df49c667f5bc2206bb02ceb6e7a94d4c3bade38aec81b573",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g002_hover_c10.json": "a67a7c06592221858ac0e0029206aa5724a5e7408c341526cb0b9287841cb952",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g002_hover_c11.csv": "2aef34d6d208f84df2b8d57944f4c69f761cf05491f21af87ae73a8d5fc9cb54",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g002_hover_c11.json": "364f0d61bec16f6a2bf67776f54d8872ec0316889e419e257f63daa31f0d8a38",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g002_hover_c12.csv": "d7ff3f2642698989167cab5600ac0f5b1d090fc7d50d4ff85df5f4bb8c548087",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g002_hover_c12.json": "06347a11a4f830baca795bfe08c4e13456a3b9ace13992baef3f3f97dce70c3c",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g002_hover_c13.csv": "63b65a81294739b556142adea136824eed2e1f47a77a02217a234246e32cd4dc",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g002_hover_c13.json": "44ccb25259e9c13c474cc5ee1f44050346cbd17696bb5fc5d7d9cf5489e3ee56",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g002_hover_c14.csv": "16721637b0b1c33c0611f8255e268ad75edc7f3b0e4932c3f80449467d150d68",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g002_hover_c14.json": "f3fd27a0158f5a3f82e1c261bc1341ce45dde0bd69e460ca6171e8d233d31187",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g002_hover_c15.csv": "667de5403c54df2aec23359b45d075617be2e45eb9fee2a708280af16c0bc09e",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g002_hover_c15.json": "640b40a744dd9117b164d334f185edcf01eda41f15aaff0df373620c9c5c757e",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g002_hover_c16.csv": "d89887f53b925b7716282258cc03fdba439fc32dab7bd8ba285acca6efabc784",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g002_hover_c16.json": "17a75bd4e8f7cb897d3a9cbd86edb222c6e3b6711d78ac0d96f9697b16ca8978",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g002_hover_c17.csv": "2f020c84c29056a54f8a58a4faf0405d9c12be5648bc7e30d6a683dda58aaa6f",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g002_hover_c17.json": "fff577d4e58d7164e85f67030f0a1c39bb8bd687d03207c4c805bb44af5e48d2",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g002_hover_c18.csv": "04e4cae74d804654057b2efc905a2ec7f2839f08403ba4bfa2ea4b706cfb7872",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g002_hover_c18.json": "7f91f7abfe406f155efb55fb8f4e7eca6eb7adab78072204583168109cf0cfce",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g003_line_c00.csv": "3443c7f9796b200243baee32913d617daba70994aefef0dea67f01c76d3a91ce",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g003_line_c00.json": "6410264eccddd23bcf883b39d3ba3090cfc15494b65e22f3e19e35daa28a659a",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g003_line_c01.csv": "04047203eea7658de8ec8f0aff3926860471b1585e305598cca22d3ca0358239",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g003_line_c01.json": "0ab8ce802cf57924d0e059513b0827e8f83c2207d69041114287f05703a6d438",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g003_line_c02.csv": "88734195bfa5e9a7965007f8bbdeed51ee0cd3def5e73df47ff63503c22a2381",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g003_line_c02.json": "1350c881aca0ebbe8a2c7815bb8c25f95e0881dbd383726250e35e87472cc911",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g003_line_c03.csv": "8f41a361ee3d24fdd812dc35fd76f80e701e56f48e39ccf553ad4de8cad8858b",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g003_line_c03.json": "5fc8222f7492947a3f4b823822dbb4d955d2c707f218373a68111779a4be00e8",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g003_line_c04.csv": "f32dca41d2bc4653490b54aebb108a4bc8a3c93aedde18256d892c15fea66437",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g003_line_c04.json": "7a73359f06353e265d549bd763700f627863af0e9bd7b434bf43e449bda77fd8",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g003_line_c05.csv": "a3bcf3a799baa51f6313c9e04e0e4d072e59ee7270bc5deff0124e9c64ac296b",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g003_line_c05.json": "4543db33c533f6e7cad16946bafab62b36962b54b1e4e655cb781beb44797869",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g003_line_c06.csv": "96b33ec20a74217ae9b0469cf95bcbb21a1a33639dc6d33dc7170cda7bc8cc05",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g003_line_c06.json": "fffbebe720c3d7087dec7004afbf7c5d398a45bdf0599a9f763764d903c402c3",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g003_line_c07.csv": "0bf6a180aab5954882ff8a77f5be31fd7f2d45e64dc72490b176690e75b7be18",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g003_line_c07.json": "4af371e3dfebf854919c05974f18652333df7cca198fe9086e99b6ccd03e12bd",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g003_line_c08.csv": "882021a8d6e0a62f372f132b1c2829df94cdee51718885aef8ca23481cf0b99e",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g003_line_c08.json": "714cb2e5547d10e4d8794c2b1455007dfedfa0e205138031fd923f0523eb1781",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g003_line_c09.csv": "499c6d5ebf268a2f87615cca53919f7c515e4fb8384a7753ac0518fb8047eff6",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g003_line_c09.json": "e1f757053053f46ad05973510e5bfaae1b47af0bdc7eada6abfd879d7ee6aba4",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g003_line_c10.csv": "9fef4a10a695778ff81d9cae3f12f07f67b28ae193d87f7e7a8a03f508f5dd8a",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g003_line_c10.json": "336429bfba843908bb95f3462510ad7a86c2c47b2aecc4f11d8ad53d83c95267",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g003_line_c11.csv": "67c02b40c02646b7c99f85a84dade0307c74de9aef92b882ed39ab1ac9709dc6",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g003_line_c11.json": "97725313507ae8af8e735ccead840ae9e399c9df71e602e5b55c6345a735a9eb",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g003_line_c12.csv": "e1d25afda4f42dafd226b57a1bc1d0e5f6a737533f389d0dfa5f3601a6cb7001",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g003_line_c12.json": "4b6795684b7daf6ec9643405db1da957ee1290861003b80ecf20e3b2c9822061",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g003_line_c13.csv": "bf1ca563cac4907c6f967bc957230b310ebccd96f220022b31eef4c0fd0f1836",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g003_line_c13.json": "e62957dcb3b108c3a794d1576bd85ec955145d1900423a3eb1438a5faafa21f4",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g003_line_c14.csv": "3f8c71fd789cad68911927ff252c8fea2493f6b323984a42f1dbb4b5f636aba4",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g003_line_c14.json": "6c27991d8f888248e3678f07e7b0fd33144bab12f3e453c79691e50c93bff521",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g003_line_c15.csv": "0dea708a299ef4c69d0653843efe6a76f008eb52b88371af1e027447facce13c",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g003_line_c15.json": "92e29d47f5b48efc79796237c0b229c213c80a7178a5f47ece471db44565d85d",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g003_line_c16.csv": "cc65cb76121ad2e5050aa2fdc62df1e226063fb3a3f4e8a39012520037595b66",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g003_line_c16.json": "56c040052aeac362fa42ffa431371a0d9b308ee2f4a5d1bbe3fff5fe96974f94",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g003_line_c17.csv": "ac1c07ea08e5e3bed356dd873517dbbaea8ba6da0d8e173c87827359892713ff",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g003_line_c17.json": "c4065b0205b5b25e947c31b1af6bc383d5dff738bdbcc3038fa16ebd789e439b",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g003_line_c18.csv": "b3f60d8da4b68559e5d04a6002d0480166b8344785ad21a571a71519df0e4f6d",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g003_line_c18.json": "589a18987ee541cf141efc4894ca3920e5a1fbd78aef0ede6cb76e0e62e80b95",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g004_line_c00.csv": "a9205e771ec769d234da2c306dc007383029cfb2314cca3341cca7f9d2ff0dd7",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g004_line_c00.json": "5ef65a8c84288610151c529de39855a2a5e70142cf9fcbf7ab613bf244982ffd",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g004_line_c01.csv": "7a9715a910d37585d9d63c4a652cc182e1b43004869431c3ea156c0570862e82",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g004_line_c01.json": "dc077270ecf69e2187040057341fa1b0eeb02a13850cdbb1f98e0d78fcdc3714",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g004_line_c02.csv": "709771ab4e0670840fdd168c440765a32a4d56708bcdc91198bb4428c175b93f",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g004_line_c02.json": "8783bef9927717e8f97b3d57f2be969670a1e0fab0c2c9d1bb3f70166b33a935",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g004_line_c03.csv": "2ac428a565b178241cecf84e417d5ad92932e7e27da52df36c0f673190d8f55b",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g004_line_c03.json": "3196da2fcded62235ce0d62f46e379337cd32103cafa85a8ca6a52acd33e7071",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g004_line_c04.csv": "279eed5bb1b5bf4aa1fc33cf4b8ad45ec8160f12180cb6e5e132217cd1c979f4",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g004_line_c04.json": "c6fb34a11e90273311c94742c12b04cf434d1274cf796b292d9a410e38ab8e31",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g004_line_c05.csv": "a2d2193922746b2ddf04a5840c28ffff0a4544b6336e135a3d0f596b8c802805",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g004_line_c05.json": "8a5457bbfab5bd282c5fcb6308446b729dd441d63ece648a998cd27bebdb3496",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g004_line_c06.csv": "d528b48c9d4296285844d13f91d1afde0c6d96ef339061d34e62533c5d03d9f0",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g004_line_c06.json": "018cc5bbfe37440c376fc8a81a1c61f32e9f2199bc1cda3d22837e1a519a4274",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g004_line_c07.csv": "25d1210f1fd8f8d9a9585600ef2056fc31a3a67214cd30e1bef6d051c66c83eb",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g004_line_c07.json": "f2f48b7fc4b14b6af9ec09785c3b1614e0cf7458a0af4e2a8ec0d995feae5121",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g004_line_c08.csv": "6f47411ff03ac7ee726e7feb67b1ade79976f302002ca7c8e7e051f19365b811",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g004_line_c08.json": "493c4151cf502c1ca6ffbc6afe65985ee79c96846a9a8d30c715ab91db845ae0",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g004_line_c09.csv": "bc4ec5ed77e7104f74ed097a98d32111b0fbfe6ea16578401bd0849cb76fb122",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g004_line_c09.json": "19f776abc7a5479a13e8af7cb6cba5518ecba72d48bf69a7c46a0b9e8c84aa27",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g004_line_c10.csv": "dbd5c6872daf459ccbacd59b45e6c224f3d254dc3893576d749dd69b01dfe541",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g004_line_c10.json": "9884726a001aa0c46eab2a71e2e7edec9874bc5ed6505c2e4d00965db3f54ba1",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g004_line_c11.csv": "cb5669c496fdd21f400c15ab26793b75771873e80c97f8e38a6c2b15c47c1d09",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g004_line_c11.json": "9149e3a71d47d0c32d9e7ab96a8b7b0ee04e1c978a9333455dce3ea8df256189",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g004_line_c12.csv": "b870922ed6fa0098c26a816d32260df799b16ebe92f5936b9ea42ed8d1f314ce",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g004_line_c12.json": "06fee339bb8e298a68060607f058e10d03bec60af540cd2bc1b13ad004b5c39e",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g004_line_c13.csv": "ba76b30ba0df923ed55ed85187d6d3665d07a81a3f12988e5578d9ee5e37dd3c",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g004_line_c13.json": "774aa06d45193932a568dc6088cb34d86ff04154a04700dd2454b889c7a96e31",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g004_line_c14.csv": "70a62fd5bef60a4a90cec395c8db4014c76d7d178fdbb328b30b756f54ed162d",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g004_line_c14.json": "f88908ac223f89ef9f3248e6b2fe64564a229ea7f462b2fb052fa8671281c993",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g004_line_c15.csv": "745897c5f95e9c9d8b33c055701ee2956f7e0378554742e2c52c8cc4b385549c",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g004_line_c15.json": "4be99ab4b53d9be3b3efa98da74eb983c54ca1685ae3b5125dc6dfd3bf78f32e",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g004_line_c16.csv": "c00b646fcae46664b314b6a905c15e366a7275af81725ab637a2cdf63b5a95db",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g004_line_c16.json": "cbeba6491f68ead8915f1c1bfb586f6063cdb6a6cd3f188e87d21bb6b3918094",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g004_line_c17.csv": "efb162dc22d0e69d936ee5900004ea584b0c4a62ecf317d7cad5b0c7ced292c4",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g004_line_c17.json": "22f111933088fb9e449e5afae20a685bb77ee07feed18d85ee6393de454adefe",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g004_line_c18.csv": "e80275c1946da62e45c1e8a9c26e8014b1f14bb0b56479d75de019faacf7c42d",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g004_line_c18.json": "7f685b9a61a7519a1e56c1eea8bb6d529d711314177a6864e144cd4b69b4eb8d",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g005_circle_c00.csv": "d76e9a3c889799a00461f3d2c240bf79366e7c4bc2539bb5eed4ece5b11cbe2d",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g005_circle_c00.json": "93a7064b73ba0eb5ef737277d586756f143ae3e43b934f392055f46045d8da4c",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g005_circle_c01.csv": "b521ae2415f6748c7f95c1df96e8900afe568d33b79734189c86be2a8022e981",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g005_circle_c01.json": "106c9dd2353a9655df815428c87e0ed9087b17c91c2db04e95ec0ecb4f01c738",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g005_circle_c02.csv": "25ca3b080338d28b5a077d5bb7148578bf77b501933300b01d5839fde65bf3f7",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g005_circle_c02.json": "46c0775820c9cfb610fc188b81bd473fc5e36ac3552d47c1cf0738bd46112557",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g005_circle_c03.csv": "36bea17cf5b4c97f755b057ca5200c394e10ccec7c8ab9c2e85d6ddfe45ecf38",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g005_circle_c03.json": "68bb3119b6e09764f554c3600e1aabcdf5079cf56d754be6e0d3ddb32e389a9c",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g005_circle_c04.csv": "76bffdf8d816d796ccf48fb612d93cf0648243014500b5bdf7d71e50e98a69a3",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g005_circle_c04.json": "fb127cb965f279cb02039a9222ecddbeb5ff174c9f18fa58a6c074d119378295",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g005_circle_c05.csv": "c34e443ae0b6b275930ba42fd2f2135c7963ab006e405555f17b715fa213c2b6",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g005_circle_c05.json": "eb2fcef372123cf555663c5bd1e3e6dbeceb5981c8c6a267ada974000b870108",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g005_circle_c06.csv": "13a176974e35acb6257d697bf0e32f4979e1f78536f3aad430485df785aed16d",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g005_circle_c06.json": "85a4090ad2006d7f40c6230b5466b7500b9e91b1e353427de819db2fde5f1719",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g005_circle_c07.csv": "7a2d3d5a1c84257a834c300d7acdfa43155bc234366c633b810542f6d393d611",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g005_circle_c07.json": "03dfe48755b02c98154b59211d50b12f956d09a1465c16e8418d9bec9e3d016a",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g005_circle_c08.csv": "f8a6cb1744cdf6bea3d433b0519e6b68f077d3cf0f0501275d2c7998c3defc3c",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g005_circle_c08.json": "147f33a1f633dcbcebca02b68c673a791d7f073a30c794bfe244ee9db269bc27",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g005_circle_c09.csv": "39c4b3bb16be847360dd5d39c8f40e774a6dddf76f8a0b2fb09db34b7ee3d01e",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g005_circle_c09.json": "531f400b1e4b576d6fc1898c4b5b919e2ba24d86ed74c6dd8455825b50d9d7de",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g005_circle_c10.csv": "46f140854b9b0b437bbefd9f46182a8945a1ef477c41b1df09433beb424ec003",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g005_circle_c10.json": "18e939324c22a822d19fc97bbd1ef0a8d5bfc8efe45fb811b84ffd0a7beb58f6",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g005_circle_c11.csv": "5c02eaed5defbd237bec1636674736c86ac9b69fc1d34b658743ceba3036eb9c",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g005_circle_c11.json": "ce3e3e8f64cabda0a2e53c77ca24300eabb5e2e911b9236f42d84fed31cf2830",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g005_circle_c12.csv": "2467a0dd1a81a5bd54aef7fb2c6ef35614dc9a04ec0544a3e6df9fbf12d2074c",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g005_circle_c12.json": "fa5fff48bf98365ef6125fb250f701972837000068e9e6a0cebb3cee12e308ad",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g005_circle_c13.csv": "9b0047537cf643f7186f587b21f3108801de457f7f40c36e8172eb49b7b7d154",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g005_circle_c13.json": "22bef9aa8983d999c0d4c332a9b64da68e06920f39041052dbbe1b46aa36d4c6",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g005_circle_c14.csv": "39ca13d5afce0d21951a79cf1d05f8482bd4f0fe9f3509a8b2b6dc2eb3aa5d7e",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g005_circle_c14.json": "b2cda8b1a1a4e64d89e45daf2fee0c9a33900c48f68b48f244f072ea94894f77",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g005_circle_c15.csv": "ac5b1a9728f21d408049145e3e151479e5378bf306c3ca3bd4d5a8e10f06667d",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g005_circle_c15.json": "91ed83d19ed12bb929ebe1df244819754db3bfabb6297a182fec2e29e4651997",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g005_circle_c16.csv": "b1d9cf523d8cd9f75c79592a29d822e3e0bae8ea7a85014aa0b70b2b04607769",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g005_circle_c16.json": "a7be716e6a0993396046ea7c9f4bdcc08a3e9047d3042ff5ac09b4595d30d334",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g005_circle_c17.csv": "48243c020e9a44be0bfcd0dddca42a8ed7c824435731b1f81c0f8b1ab9d9131d",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g005_circle_c17.json": "ac89522f83b4d195d4de44d2eced5657e2ce3287a205fbffd82a1067309cb9ae",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g005_circle_c18.csv": "d483e4ca0448c180300969ab5a567e1468411e87d86b80e97166664024ce9384",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g005_circle_c18.json": "323dfd0e6978372deb865d5deefbda240e3748df9ab9bfaa28980267a835f260",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g006_circle_c00.csv": "095c70b39575e4c8928cab03bc2b2882c6dab617e796e84dac3297683149b6df",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g006_circle_c00.json": "9e2b7f2b1377eb433a346d5140f6da2c066edcb4b57a6a2d8168d4bf2d6f4c8b",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g006_circle_c01.csv": "c794de579155ecd78723b5f8ab21228aa068947b9fd2d8acb6674a1be527bd26",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g006_circle_c01.json": "80f68fc250ff3c365e0a869a8bcaa910bc685a9de9d55126210f9791ace6d75b",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g006_circle_c02.csv": "8d8ae8217adcad95046e80db1c7e6bfa360c224f4d0c57fa3a976adf5c5b6331",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g006_circle_c02.json": "c3395f1678695c1f2dee9a797e32fbbcccdf694c34a3fe4e7f0562a7b8dbc474",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g006_circle_c03.csv": "4740fbdd3bfe9185dbd50fc437a78e9308b0ba7d973ff2617494f8d10cef9b34",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g006_circle_c03.json": "c31612e4fcb42445d2d9168465500b7eb2c8f722a25f118bc33a9663b463646d",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g006_circle_c04.csv": "4792ff9ade28cbb40474d0aca2b0c5fdef574a2d5d1a6e4a2d77398aeac977d1",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g006_circle_c04.json": "c41bfcf13a3a1cf153703a6da8f7d0c1cfb9209deb18ab6939728b0e581cca64",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g006_circle_c05.csv": "f5c0d992b06d00f250dd158da0a80befb5ed003e310dbe6f2253dce7c36ce374",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g006_circle_c05.json": "c7d9ba7159b1e4bb98ae9c56dfbf0d8db4e323ffb61c5ceca1055a2c0ea73ae0",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g006_circle_c06.csv": "bd1bfbf362d53973d685da0f90d667dbde3310759d16a8754f8badafdd6ddc36",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g006_circle_c06.json": "c4dd1db7b2747ae33c6763a87a75e085f2824ac2b624aa2522b2de9aede57561",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g006_circle_c07.csv": "2add0c821ca001ac50a11615a561da6627ad8488c99983868f6357b5ae81d0a1",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g006_circle_c07.json": "6f3c0aaea1dff0104c1c8cb1bbd5bd809eb31d3846777f697844c9e4b3d6b2b1",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g006_circle_c08.csv": "c8eff58bb7829fffcac19a4ba7f53f4591150bac30f88ebfd6a93f7f3e27b354",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g006_circle_c08.json": "4a9a3bb5bd3008b3064308ed1616a0427611deb73bfccf1145d277a46c99ae9b",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g006_circle_c09.csv": "9f566d31080e5b45f66b85d9a19c90270165f38a58ad06d5464687aa13c792a4",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g006_circle_c09.json": "bb147b0981d52ee0e88a6dde791bea7017114f4307cba901087627fa2e8fc549",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g006_circle_c10.csv": "7fe7b8616a78792e949313e66dbe0e1e62f827c30d13a3a1f5c81e2c9ae42340",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g006_circle_c10.json": "7eb3cc627b5be815dbc5cc294c1f3689034d128add90d3ad0b00f8a8581ee6e3",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g006_circle_c11.csv": "58be057292504f52bf3a3aece503548383f019649ec36f6b239d7ab57d3c7a38",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g006_circle_c11.json": "986ed7b103e09c0bc665478fa98902cb26c8bfe29880c87db6ce1425877fb20a",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g006_circle_c12.csv": "9467f4d35065d824931ed132c6f8411031ebc479f6f6f543934a5b6fa68761ba",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g006_circle_c12.json": "1f41708613b7c3c7915727688a12c4d49a8cdad7acf707065958ea0f3c5830d2",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g006_circle_c13.csv": "9ba1bda4380415fb86fc6bbc361b1f2b75e16df9373fae0205f8df8dd499baf2",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g006_circle_c13.json": "ddb2a0f61dc9d3e8a4f567aca002a72543da9c2369c1a6baf84745782ab4597b",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g006_circle_c14.csv": "8b4b5c3b5a320eb6aa1e2ed3d69dda250a4c708a96f5406593c4663f488e580f",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g006_circle_c14.json": "238312975900ffadddf03397d9c4e26ab6a914036b3f4d915dcef47fb916b11a",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g006_circle_c15.csv": "25711c678d13d2b2e1bdaa175c09f8e8f10614631be65b1054a326de28289ba7",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g006_circle_c15.json": "0a95d123a1e4996d748cd488ece9f1b4642fcb9a2272988593a8d51ac1a162d9",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g006_circle_c16.csv": "7ba57e19a5690b44e5ebdbd98f48bfb1c03aa6597ab065da98d2d9f9aada0619",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g006_circle_c16.json": "fc3cc2248407317f85f02e0887095d8ac30b1ca4f2e52b50a4908b9ed5ece9ad",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g006_circle_c17.csv": "adf8761e6cc5a17e6f369cd1503b191713cc759dd1f7b471415b57c443ef1576",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g006_circle_c17.json": "09f71e3fafe64176bfa536b868d539646da1c2a0a5c7a021bd519d2ffb8c3306",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g006_circle_c18.csv": "572b1f8df598e8fdcc574ce217b673b623a4b60f17b8fb3d8a7297202cf23521",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g006_circle_c18.json": "2dda35a2a27a166833bdf5cb1ffa1e054cd43f76883c6656241f4fcdd500cf3d",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g007_vertical_c00.csv": "f9adda9437235ecd0acba410a24b90768d2109f2e8d84811df047059e8b08978",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g007_vertical_c00.json": "c512c923c561a95a4dd4f779562c47c255e8c6c2d9a8abb9e636ca20845cad86",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g007_vertical_c01.csv": "05d157be30159db20cd879832396cf21abb89a2ed2a31f0d5a9b1498b26de814",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g007_vertical_c01.json": "b052f68cfcef282f71ad1d9184062eb8a9703d24f9a3c4047db33e7f45ed5dbc",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g007_vertical_c02.csv": "aed952659842d5ad9d93ba265f33b66a64985d1fe9916b50fc5975ffcfb893f9",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g007_vertical_c02.json": "473df93cf661628c1aca49821208704a1e27e7665cb2e53baefd4cb3791f48dc",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g007_vertical_c03.csv": "48816f59c729ae9befd28bc8edb6a248a141dc41824ffb80cdf4b238ff3e2fd9",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g007_vertical_c03.json": "492bab93177277007d1144b03715212b3f47618e98e249fb4df91ac5bc6c6b4e",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g007_vertical_c04.csv": "708368227aa573678edddcc90f363c1382aa8d993eccb5a5175b507ece162297",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g007_vertical_c04.json": "59e8d9b93ba7bfdca15da4d832326f4081fac855c91d25a2f197456c017decfe",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g007_vertical_c05.csv": "f7b21c4012f72da1674b7d291e98232250f809d88c4b3f507e144da2c8133528",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g007_vertical_c05.json": "9da66c811d3351c1fdc9fa52c51f449b6bf011c97fe0dd86ac8827cfa2d24d06",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g007_vertical_c06.csv": "80c46aa8fa28a95f33a4bbdaebd8ab2bb256c336f12c8b2138acaae57da88069",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g007_vertical_c06.json": "ba4c0fbf5e428b91ded5ebee7f62cc4ebbb3cb0e1044969e5e025f46c21b2841",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g007_vertical_c07.csv": "85927e04f66786c3e4446388e08142096730211eb75a0600cc59efc5c5fd60ea",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g007_vertical_c07.json": "038f6e3eada57726674f385d5b90b3a5ee83580dc2dbe4c72f8a69503bfb871d",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g007_vertical_c08.csv": "dd7232b4be2d607db5e2d812bcecaba68df31592a54864b8320a1dfe76538029",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g007_vertical_c08.json": "dbb3f5236b867f18ac2aef56dd40f896b7c9d8b6785bc5381be6e845509e9245",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g007_vertical_c09.csv": "1b310d7e3dad5b332774abd94ab6a9bf890eca87ea68a339e64f3c147ea9b431",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g007_vertical_c09.json": "f98c85ff7900fab1e0411a8e390bed40fee74f314fa5404fbb52d88fd759d744",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g007_vertical_c10.csv": "563a7e3ee5362b861881acc5490dd00e7eb18a6be34d0ac3e8cb9bef3636b39e",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g007_vertical_c10.json": "dc17115410790e87b9b5e61c7682357eba5b6760361a932387cf54c6a0a37504",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g007_vertical_c11.csv": "3ab2be65e700da3ba59fa47654c9db0e805d3fd3b59c7b0d3e73f15e693a1bba",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g007_vertical_c11.json": "f9deaccac0c7bd085f044a072c0ac8e1e36ad5105c565ef17d912eea0201435a",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g007_vertical_c12.csv": "28cb3debd7f7da4310280a44936df4d2a6db2337981962f1f03c819cd2824079",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g007_vertical_c12.json": "0e2c346867186494fa092224678eaff407f500f0f1b00f740c065fa0b4b2ef10",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g007_vertical_c13.csv": "d0afeaec70aca8315ef0eba357fbc31127b1895452be915d8039608ef6d3e894",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g007_vertical_c13.json": "890f9a214df6975ba748362bf8e93d198f9904255172a01f8d5f903620e60586",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g007_vertical_c14.csv": "d3ed063347e268059c859a65711850e66ed0f5ada23f99501a8cc87293a056d7",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g007_vertical_c14.json": "8a271485f9afbc5a2010dfadc9908e2382d928a34ed8549774847312687e3412",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g007_vertical_c15.csv": "1ed25b6a423d9ce726f24bfa85b30e5e7b36ac8bbbe1446feb6df80bd97a1074",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g007_vertical_c15.json": "dc71d2ea4fa97166d9c87b88f1ee71c360a79ea293066128b5f38604c3c67752",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g007_vertical_c16.csv": "be6a4d9ebbc8197f77ec828797bf1defa13d409df38e00ac48f0c48453afa088",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g007_vertical_c16.json": "b9472bf4678c40ef8f15e7ea226cbfc17745db299a7df8859cda6f6284a650b7",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g007_vertical_c17.csv": "a5fe29bd2a4376add245a91e3445b495089acab322277ce06f284d2accc1a545",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g007_vertical_c17.json": "05a2780f9aadd0179ce6c61917e2ed1ffe36243e2c80ffbe556b750b24b207b4",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g007_vertical_c18.csv": "94e9e7f0cf4b717205736cfe07e896efa4a67d9cad672df4aa0300ed8a5e8d16",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g007_vertical_c18.json": "7b6e82b340f5956dcb01500337286d7b28e0f1f3005befa8a4763b5bc598b2d9",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g008_vertical_c00.csv": "f9e6dba7b624cc5ce456d6f9cd880dd23fe7837c1812eecefa857ef3b93693ce",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g008_vertical_c00.json": "75e47ea77ec35310c6efe7305d238450ef5b1c2b9093a898c910e67791266915",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g008_vertical_c01.csv": "a9e88f931a0e5e9ddfaad3a1ac554368003872d8108eba9ca4d4d22647aa16bf",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g008_vertical_c01.json": "76a8c4e99c0f17338e7384741a50ddffd9c1e85582e18730b72afccbddcf1c80",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g008_vertical_c02.csv": "db4ca94e3a489c877d4a15519d13954a167d3db88b59669e02018547c5754816",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g008_vertical_c02.json": "6a0c24e6593dff6fdab199fa6c4e85805c7798c14822309837c618aa4346de1a",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g008_vertical_c03.csv": "eb49c17324abb1e088e5a02077d540d5ac5e1cef9953aef497e1bcf495a0bf5e",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g008_vertical_c03.json": "7e643fe32a4b5a360f84e7341b2056ef2a1769514f189c83fcdbb8c295128741",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g008_vertical_c04.csv": "55e43a1ff055926a8af3bd3a3b323b10a7079552bc35a00bd10da755e0247b6d",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g008_vertical_c04.json": "03fd4aeab57bb12abc8f536754fc7ca3318112619255381013e36bf9a23e4dce",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g008_vertical_c05.csv": "700e531c4ccefca2d449131dbead43d45e64d8221e29243cdf98b4095ae308b5",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g008_vertical_c05.json": "d8a7a7807b0cf9f73bfbb2a237ebe929bdf97a2998c678f06ad649f1473c4d3f",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g008_vertical_c06.csv": "be151a78aebdfa2cf83be70c7b51e0c801b39a69e142601f8be186536c63088b",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g008_vertical_c06.json": "828f6aa38b27693f3f3d276bc7442d108d9b02d2b4324642a3607aef53e3bdc3",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g008_vertical_c07.csv": "798bac90ac2894c9c978a882d14a969dc237acba1ec9082b4aaaa86c7f53fb44",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g008_vertical_c07.json": "2614aed5d60626fd7d11df74da26866963496d190beecfd354d1d59db280879b",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g008_vertical_c08.csv": "064f3d182544c8eafa0dedc95c0fdd71c865fb5192a2622b0b4084f93f0ecb66",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g008_vertical_c08.json": "3cffc49737a7f4c095eab784ed4d6ec55f5ed9b016453fc11a97faf1a0f2fbbe",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g008_vertical_c09.csv": "33105c155912ebb8a3687b05f1656fcb79d2bad03e04a91770f201c360869684",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g008_vertical_c09.json": "8e1dcf10abbb34a03906bd9ec706efe8b732f93883c0431a06d49b14e276d466",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g008_vertical_c10.csv": "730eecb20242376ccbb3b071a6fc5945cf6afd6c2dd86a8732fd6fb3be2e0ffe",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g008_vertical_c10.json": "d0951c28a46e55bf0fa28717a40435da9324339361d5f6b549f7fbafde469a1b",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g008_vertical_c11.csv": "66d9c47bdf3d851329742da6ef15f486ae9efa4906438f67944a5e6c75d835c5",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g008_vertical_c11.json": "0b2205c6118445716b876f13c78499f137fc7414da8670cce543356d82f8e928",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g008_vertical_c12.csv": "35b9d05d9bc33ecef845c36e9dc0c2ed685cca4cb2eeb2e53a5d93fae7785d05",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g008_vertical_c12.json": "75fe64c00836d93b4e5ff9f6448a53d93671a861d7512a484adf5186c79d950f",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g008_vertical_c13.csv": "d4c7af952eae834d38574e746f5a28ae33d0b5500de4d621d0fdeca4c9fe9669",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g008_vertical_c13.json": "4aa65a61d5027c00d24541b6a522cdfe806f2c18a9f12f2daf9df85bd5e5452b",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g008_vertical_c14.csv": "2a8fe3f0bdb3c7cb85a65fd8c0c472990b55fefe3f9ad35845b3fa420c301554",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g008_vertical_c14.json": "d3552c2eb0c1563e977ca0b597d4e87c3bfdff59ba1f5ea7cc260799e0adb2fa",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g008_vertical_c15.csv": "076891b2d19fef4781e254c9a77f2269343f50eb4886fd03540623e2371b0c61",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g008_vertical_c15.json": "a7de367295aa24b1bca3e028a9441fa435665cb6a289f6613d85d8d4d59229b5",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g008_vertical_c16.csv": "7ce41b8e358b19467efcb47b4760b9972fc9804826408793c686c51987fd10c1",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g008_vertical_c16.json": "b6e66533c38a400f1bf94486255b4cf494c05ec8238f8230f55b099668bd769d",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g008_vertical_c17.csv": "4c35ffba57a7f628a2f2d89dbd419b000b1556b8d4255e2be425f4d7605003a5",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g008_vertical_c17.json": "7412c79d8bdb2f2e2c5c178fedcf15431a9404544263b8b26e4ffe8559539662",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g008_vertical_c18.csv": "e78bc862f77189935785bf194121d7c8adfca7a39cfdc6c28fce191e3b268f2a",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\g008_vertical_c18.json": "074ea5458eff3a4acbd843b8956f14ea2247014e763e20b7d5d5a25ab76693ef",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\generation_plan.json": "14ccb563cb4013b327d886a3ab7039c9a199aeb3d9af6507d0e9c21e7a9451a5",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\dataset_v5\\integrity_report.json": "a2e6ceed4ae0e5d557e6642cba04b28216a956f7ed03e1874448d81fc322f195",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g002_c00.json": "2c3da8f72ececad5b26179be433e0368286ec6ee5aeb78da0aa23e01b732a8b8",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g002_c01.json": "144531dad5935d2fa59033c0192221c7157213bae6a06c9c40553e1852155d5c",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g002_c02.json": "ae2fb9fd87c1097e1bc1f0d56dd65abbf2f04d94020ee9f61fb649a83f222ee5",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g002_c03.json": "42971328631e9dc947525118015607db41cddebb9d455c9fd7d13b404ac30091",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g002_c04.json": "fb00cc8e38d5a64bc640424b07772f3dc96668d10d6719d295c1ae352389655f",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g002_c05.json": "5cbc76857409661eec07fc427b64cd8cb7f75bf0a81f3490ebed8e8cc92f0e10",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g002_c06.json": "c5bcc82c375626fbadf9a752ff192666af94365ff77eb01f306d8c43f8e7a806",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g002_c07.json": "83583cea083ba76ad50d2de8ae8146fa5c31db0998688e5ec168fae5b579524c",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g002_c08.json": "2eae0034a2b5012df4f5bc8296077b0ce4ecb3ac1ce2e3d00172dcd9f5a16c7c",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g002_c09.json": "4a4eb09a8ac51fb40f1c87f3f1b72dc31774f74eecb744d8e09cbc5851e44ab7",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g002_c10.json": "2c7ec970dd16e9c4df6ca0292bca39e8bc8c144c9a9fd23b4084adecc499a2f2",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g002_c11.json": "3f16640b5f2765e68eda22eb31a23d0f2920c62820d74d158bf47ac772fb32e6",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g002_c12.json": "20e9bb276007eb5fba39aea695f4f5b2b9f820ba5da3e0ec4483f357b2f3c5d6",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g002_c13.json": "8037bdc00875cde736750d6e8b16cdaeed219e25411154dbbe1341796d401200",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g002_c14.json": "ab535f7cb16866f44fab0dca6eb59e116b69cc42a9fa6f8f7dcf13f18e38ad50",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g002_c15.json": "56a2bfdf305ddb716164de6a64c237bf62e4193e61792fc0682cc6578406126a",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g002_c16.json": "affaca7b688d172ef86046efb465a8a3b1126b571a4fc427724c714dac376cec",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g002_c17.json": "1ce8ebab9c5829a834749813a205fe61d122d2ea73a4e546bbc9bebd9c80ad70",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g002_c18.json": "84f89456e3b85e74456bac55b7f3f548eb479751a3097b14eb978b358a005662",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g004_c00.json": "db1d696cbdd5f6141a3c8c21164200efbc7e4ea079486ebc2f68aa35bbd1b47c",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g004_c01.json": "24fd36d3a66caeb906db127930fe8d0468facd6a8d62d63860528b1059d401a4",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g004_c02.json": "d35d94aba195feac9c18764b45b153edf11b00012c9bfa58a129c6d509c4f005",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g004_c03.json": "f4d6577fdc3984aac5acbf4baba485bf4161b9a9605c063cfcc7e6402bd8f9f5",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g004_c04.json": "58a22059daf83e5cad94c01dc66916b75a19a75e100730ab32f1741f857a1da1",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g004_c05.json": "caa18eba49ebbcc7c3ec46b3a119f8aa9e1fcc548b788cae7aee59b8ecdd7e50",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g004_c06.json": "89217add834a29947a85ebb9385501a305703a2e4ba70c9cb8241b8500ee1c10",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g004_c07.json": "e687bcdc2aacc1d5b49f5b476173b55089210a921bdef928758df62eba0443bc",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g004_c08.json": "6f71fcde4697d83955e665897b43d88652a7afbe72cc9f50df090acd20b12fd2",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g004_c09.json": "675c98666eeb9618ffc761b08be556839278291390c6f8e158c9e8a6d756e002",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g004_c10.json": "83453ee4554a33bbbc45247d55978e07d3b42a5a5461a157716b6e489aa8a17d",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g004_c11.json": "b89211655c004b1159d98e70dc175c2ac3248a0243be06d3423a62ae76d96b59",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g004_c12.json": "ace87942cc6015ed669a73b4a8e1edd90ac9a52f22e13ffb85283eebea379854",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g004_c13.json": "c388ed01d176a18e364384f305bfd9a7537f1634b004db434c70190dd5b4c2c6",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g004_c14.json": "cf826883634898fdac511c0e35cb6284a91e7cd2a67c1980fd337b1ec0d67cac",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g004_c15.json": "6b4678361da8549207db33e52fb131423e6c6dd961d2c460926a650b4efe2550",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g004_c16.json": "bd2bd4531eb68ef2d85fdf786d308ead2eabf29c74d056ef2e4755b44e807f94",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g004_c17.json": "ad9a8c14b4ec1368e57c921520fddb814d2c6183044e6ed6d724a18789d975ba",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g004_c18.json": "250312533482606b7365937b65e95065769f4433b5ca19220eeaa3e7ff998d99",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g006_c00.json": "2ecb3124c00105b57ea62cbe81f302a9093f4e5a7f2f709e92d83885f0877873",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g006_c01.json": "0c0946260022a07550c78a9013be7f8ef56ef3190c259d80d50648a7c7a71acd",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g006_c02.json": "a5a16ab75efc4d1cc4d35b6f14b31b17a1a9acddf43044625b78b6f1bc1bc386",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g006_c03.json": "e7d49436a1d2dcf47558632ed54c75627e692be819a493d7e8a02fa069675fab",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g006_c04.json": "eff3795486c44c590315fad7cfb1920b7d90823ced287ab341b0037797378ec3",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g006_c05.json": "6d877f5a14b56af4221d27e6a155d2c566edd1b3759469e6b1916556b4802bae",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g006_c06.json": "cfa6751f95b7b333ebc4b1f76d87a92d1bbafcc9d5b51b7c3e401b3225e609bd",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g006_c07.json": "e55b18ef4dfb7ee7024522b30af5e97aa71d2955b6c9dcf8cc21c903bec57da4",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g006_c08.json": "a44711b854ce1c4e825dbf1883b857bfd84f932d6d3021c9230f15cd1caa74c7",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g006_c09.json": "ea05fb1cdf1eeed92b6a80ca1d437ce07be0664eee9997dc6ffb0d62db7b26f6",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g006_c10.json": "68ff24f502ba5db87120ba0cf54c754f2967559bdab5ebe405e976f25ded4e1a",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g006_c11.json": "df0086edccfa60ca314e76e8e5f80b82e7157186db00533d562932c920459867",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g006_c12.json": "80597c0b44e88926c4f5fec8ca337c89acc9f7c1b0e05885f5a54c125017e2d8",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g006_c13.json": "2c1477b7d7091ceb9b911ea145f987f1653fa9ecaea6b813972540b79ee34055",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g006_c14.json": "a53329ea7fad1c700c2e19724d3786ea58f2c233bc7e77a650ba1917bdeda841",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g006_c15.json": "23687809fba78fbe791f57f9c269fb78e22284cedee66e61a066082fa4966874",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g006_c16.json": "77126eb4314c472de810de692191f0bc6084f9599dd5eb0013f50862b2430362",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g006_c17.json": "24a73acdcb447efbaed62a5c97eff9125b2020bdcdcf80d5b4f14f94c4b091ac",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g006_c18.json": "966f39eabbe349d900c7944556c76ce913458767764e57311f147868c26e2800",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g008_c00.json": "9ae1d2895de3bc52bc3086a6c86b4209546538c4938ac1c4fddb33fb5b777548",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g008_c01.json": "0aa25773cf394aa8a2b169813b0c356e1c7d10b1c3a05d1e4ffbe65b8dca3d0a",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g008_c02.json": "3d5133422d80a4da170162e671703efa103ad616c4608c2216f962788eb1a393",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g008_c03.json": "76f9875991dab5d1cfa222df6b4ff9621f94d976bab344cb56f02289cb413eeb",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g008_c04.json": "4a2ab60233db0413086b8a429261c25bd4053156b237c402004a35d5c0153e5c",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g008_c05.json": "e978194c4607b1ed24155052bae3092900bcb8941e541047d62fdc443a834192",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g008_c06.json": "30d6b16851864d1cb2a585cfe6afce433eeeaf9cdc76774899e378e113749094",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g008_c07.json": "2eec22541956d9e6b8f72dd64da93fbd0bbe653ea2c69a532837c4096fb08558",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g008_c08.json": "480d0c66342e4660e8db536497677cfcb8e302dd666086fd6a1d66284acb86ed",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g008_c09.json": "b62cbb5c9fd1cd108a0e5c9190b1ade32c60ef9dc26922a0267b5f790cf23332",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g008_c10.json": "a0692b60086c1085155e4f46accc91f196c79dbaeca44da032337859663b6849",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g008_c11.json": "ed4d0ea9f47b3d6f82d54bd5ad3d6a3dc067fdde465c5f44c055856573c41644",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g008_c12.json": "3dd939f9cb400e9c2e7c71b8c41edfc037b1be498a2e6ab14c50992524883455",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g008_c13.json": "4a4089985138f269a7870611cadfa1e63117f8491d8fa1ca9ead156e63caaf26",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g008_c14.json": "0e4882dcc72d1a8610509f62256788e3c4e5af8fc8278c73652c4e0da773d442",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g008_c15.json": "e44974fb8512d925fd228f89d0b8d92dc433b234467c92868d19bbf33881466f",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g008_c16.json": "2a13646e64a63c23c4e07a9a953fad7fc5fe3e97b4ac2e3498faae82b62df0e4",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g008_c17.json": "e704d9a04956e57d7c712fc710ac5a52c7aa2c645952af36e2bc443d30f154cd",
+    "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\predictions\\g008_c18.json": "9ab6ddc1434ac95a7d67b42e04084f35fda3b101c98cb3df23d6c2bb06a030fa"
+  },
+  "checks": [
+    {
+      "record": "g001_c00",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": null,
+      "first_fault_sample_s": null,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g001_c01",
+      "rows": 441,
+      "end_s": 4.4,
+      "fault_time_s": 3.2345250698781967,
+      "first_fault_sample_s": 3.24,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g001_c02",
+      "rows": 441,
+      "end_s": 4.4,
+      "fault_time_s": 3.2345250698781967,
+      "first_fault_sample_s": 3.24,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g001_c03",
+      "rows": 441,
+      "end_s": 4.4,
+      "fault_time_s": 3.2345250698781967,
+      "first_fault_sample_s": 3.24,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g001_c04",
+      "rows": 441,
+      "end_s": 4.4,
+      "fault_time_s": 3.2345250698781967,
+      "first_fault_sample_s": 3.24,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g001_c05",
+      "rows": 441,
+      "end_s": 4.4,
+      "fault_time_s": 3.2345250698781967,
+      "first_fault_sample_s": 3.24,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g001_c06",
+      "rows": 441,
+      "end_s": 4.4,
+      "fault_time_s": 3.2345250698781967,
+      "first_fault_sample_s": 3.24,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g001_c07",
+      "rows": 448,
+      "end_s": 4.47,
+      "fault_time_s": 3.2345250698781967,
+      "first_fault_sample_s": 3.24,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g001_c08",
+      "rows": 451,
+      "end_s": 4.5,
+      "fault_time_s": 3.2345250698781967,
+      "first_fault_sample_s": 3.24,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g001_c09",
+      "rows": 451,
+      "end_s": 4.5,
+      "fault_time_s": 3.2345250698781967,
+      "first_fault_sample_s": 3.24,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g001_c10",
+      "rows": 448,
+      "end_s": 4.47,
+      "fault_time_s": 3.2345250698781967,
+      "first_fault_sample_s": 3.24,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g001_c11",
+      "rows": 474,
+      "end_s": 4.73,
+      "fault_time_s": 3.2345250698781967,
+      "first_fault_sample_s": 3.24,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g001_c12",
+      "rows": 467,
+      "end_s": 4.66,
+      "fault_time_s": 3.2345250698781967,
+      "first_fault_sample_s": 3.24,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g001_c13",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 3.2345250698781967,
+      "first_fault_sample_s": 3.24,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g001_c14",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 3.2345250698781967,
+      "first_fault_sample_s": 3.24,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g001_c15",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 3.2345250698781967,
+      "first_fault_sample_s": 3.24,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g001_c16",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 3.2345250698781967,
+      "first_fault_sample_s": 3.24,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g001_c17",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 3.2345250698781967,
+      "first_fault_sample_s": 3.24,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g001_c18",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 3.2345250698781967,
+      "first_fault_sample_s": 3.24,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g002_c00",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": null,
+      "first_fault_sample_s": null,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 76,
+      "prediction_error": null
+    },
+    {
+      "record": "g002_c01",
+      "rows": 393,
+      "end_s": 3.92,
+      "fault_time_s": 2.7484842630895168,
+      "first_fault_sample_s": 2.75,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 35,
+      "prediction_error": null
+    },
+    {
+      "record": "g002_c02",
+      "rows": 393,
+      "end_s": 3.92,
+      "fault_time_s": 2.7484842630895168,
+      "first_fault_sample_s": 2.75,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 35,
+      "prediction_error": null
+    },
+    {
+      "record": "g002_c03",
+      "rows": 393,
+      "end_s": 3.92,
+      "fault_time_s": 2.7484842630895168,
+      "first_fault_sample_s": 2.75,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 35,
+      "prediction_error": null
+    },
+    {
+      "record": "g002_c04",
+      "rows": 393,
+      "end_s": 3.92,
+      "fault_time_s": 2.7484842630895168,
+      "first_fault_sample_s": 2.75,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 35,
+      "prediction_error": null
+    },
+    {
+      "record": "g002_c05",
+      "rows": 393,
+      "end_s": 3.92,
+      "fault_time_s": 2.7484842630895168,
+      "first_fault_sample_s": 2.75,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 35,
+      "prediction_error": null
+    },
+    {
+      "record": "g002_c06",
+      "rows": 393,
+      "end_s": 3.92,
+      "fault_time_s": 2.7484842630895168,
+      "first_fault_sample_s": 2.75,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 35,
+      "prediction_error": null
+    },
+    {
+      "record": "g002_c07",
+      "rows": 400,
+      "end_s": 3.99,
+      "fault_time_s": 2.7484842630895168,
+      "first_fault_sample_s": 2.75,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 36,
+      "prediction_error": null
+    },
+    {
+      "record": "g002_c08",
+      "rows": 402,
+      "end_s": 4.01,
+      "fault_time_s": 2.7484842630895168,
+      "first_fault_sample_s": 2.75,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 36,
+      "prediction_error": null
+    },
+    {
+      "record": "g002_c09",
+      "rows": 402,
+      "end_s": 4.01,
+      "fault_time_s": 2.7484842630895168,
+      "first_fault_sample_s": 2.75,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 36,
+      "prediction_error": null
+    },
+    {
+      "record": "g002_c10",
+      "rows": 400,
+      "end_s": 3.99,
+      "fault_time_s": 2.7484842630895168,
+      "first_fault_sample_s": 2.75,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 36,
+      "prediction_error": null
+    },
+    {
+      "record": "g002_c11",
+      "rows": 424,
+      "end_s": 4.23,
+      "fault_time_s": 2.7484842630895168,
+      "first_fault_sample_s": 2.75,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 38,
+      "prediction_error": null
+    },
+    {
+      "record": "g002_c12",
+      "rows": 422,
+      "end_s": 4.21,
+      "fault_time_s": 2.7484842630895168,
+      "first_fault_sample_s": 2.75,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 38,
+      "prediction_error": null
+    },
+    {
+      "record": "g002_c13",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 2.7484842630895168,
+      "first_fault_sample_s": 2.75,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 76,
+      "prediction_error": null
+    },
+    {
+      "record": "g002_c14",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 2.7484842630895168,
+      "first_fault_sample_s": 2.75,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 76,
+      "prediction_error": null
+    },
+    {
+      "record": "g002_c15",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 2.7484842630895168,
+      "first_fault_sample_s": 2.75,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 76,
+      "prediction_error": null
+    },
+    {
+      "record": "g002_c16",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 2.7484842630895168,
+      "first_fault_sample_s": 2.75,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 76,
+      "prediction_error": null
+    },
+    {
+      "record": "g002_c17",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 2.7484842630895168,
+      "first_fault_sample_s": 2.75,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 76,
+      "prediction_error": null
+    },
+    {
+      "record": "g002_c18",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 2.7484842630895168,
+      "first_fault_sample_s": 2.75,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 76,
+      "prediction_error": null
+    },
+    {
+      "record": "g003_c00",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": null,
+      "first_fault_sample_s": null,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g003_c01",
+      "rows": 384,
+      "end_s": 3.83,
+      "fault_time_s": 2.686436637273427,
+      "first_fault_sample_s": 2.69,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g003_c02",
+      "rows": 384,
+      "end_s": 3.83,
+      "fault_time_s": 2.686436637273427,
+      "first_fault_sample_s": 2.69,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g003_c03",
+      "rows": 384,
+      "end_s": 3.83,
+      "fault_time_s": 2.686436637273427,
+      "first_fault_sample_s": 2.69,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g003_c04",
+      "rows": 384,
+      "end_s": 3.83,
+      "fault_time_s": 2.686436637273427,
+      "first_fault_sample_s": 2.69,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g003_c05",
+      "rows": 385,
+      "end_s": 3.84,
+      "fault_time_s": 2.686436637273427,
+      "first_fault_sample_s": 2.69,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g003_c06",
+      "rows": 384,
+      "end_s": 3.83,
+      "fault_time_s": 2.686436637273427,
+      "first_fault_sample_s": 2.69,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g003_c07",
+      "rows": 391,
+      "end_s": 3.9,
+      "fault_time_s": 2.686436637273427,
+      "first_fault_sample_s": 2.69,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g003_c08",
+      "rows": 393,
+      "end_s": 3.92,
+      "fault_time_s": 2.686436637273427,
+      "first_fault_sample_s": 2.69,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g003_c09",
+      "rows": 393,
+      "end_s": 3.92,
+      "fault_time_s": 2.686436637273427,
+      "first_fault_sample_s": 2.69,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g003_c10",
+      "rows": 392,
+      "end_s": 3.91,
+      "fault_time_s": 2.686436637273427,
+      "first_fault_sample_s": 2.69,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g003_c11",
+      "rows": 412,
+      "end_s": 4.11,
+      "fault_time_s": 2.686436637273427,
+      "first_fault_sample_s": 2.69,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g003_c12",
+      "rows": 412,
+      "end_s": 4.11,
+      "fault_time_s": 2.686436637273427,
+      "first_fault_sample_s": 2.69,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g003_c13",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 2.686436637273427,
+      "first_fault_sample_s": 2.69,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g003_c14",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 2.686436637273427,
+      "first_fault_sample_s": 2.69,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g003_c15",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 2.686436637273427,
+      "first_fault_sample_s": 2.69,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g003_c16",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 2.686436637273427,
+      "first_fault_sample_s": 2.69,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g003_c17",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 2.686436637273427,
+      "first_fault_sample_s": 2.69,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g003_c18",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 2.686436637273427,
+      "first_fault_sample_s": 2.69,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g004_c00",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": null,
+      "first_fault_sample_s": null,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 76,
+      "prediction_error": null
+    },
+    {
+      "record": "g004_c01",
+      "rows": 396,
+      "end_s": 3.95,
+      "fault_time_s": 2.78168555761707,
+      "first_fault_sample_s": 2.79,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 35,
+      "prediction_error": null
+    },
+    {
+      "record": "g004_c02",
+      "rows": 396,
+      "end_s": 3.95,
+      "fault_time_s": 2.78168555761707,
+      "first_fault_sample_s": 2.79,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 35,
+      "prediction_error": null
+    },
+    {
+      "record": "g004_c03",
+      "rows": 396,
+      "end_s": 3.95,
+      "fault_time_s": 2.78168555761707,
+      "first_fault_sample_s": 2.79,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 35,
+      "prediction_error": null
+    },
+    {
+      "record": "g004_c04",
+      "rows": 396,
+      "end_s": 3.95,
+      "fault_time_s": 2.78168555761707,
+      "first_fault_sample_s": 2.79,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 35,
+      "prediction_error": null
+    },
+    {
+      "record": "g004_c05",
+      "rows": 397,
+      "end_s": 3.96,
+      "fault_time_s": 2.78168555761707,
+      "first_fault_sample_s": 2.79,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 35,
+      "prediction_error": null
+    },
+    {
+      "record": "g004_c06",
+      "rows": 397,
+      "end_s": 3.96,
+      "fault_time_s": 2.78168555761707,
+      "first_fault_sample_s": 2.79,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 35,
+      "prediction_error": null
+    },
+    {
+      "record": "g004_c07",
+      "rows": 403,
+      "end_s": 4.02,
+      "fault_time_s": 2.78168555761707,
+      "first_fault_sample_s": 2.79,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 36,
+      "prediction_error": null
+    },
+    {
+      "record": "g004_c08",
+      "rows": 405,
+      "end_s": 4.04,
+      "fault_time_s": 2.78168555761707,
+      "first_fault_sample_s": 2.79,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 36,
+      "prediction_error": null
+    },
+    {
+      "record": "g004_c09",
+      "rows": 405,
+      "end_s": 4.04,
+      "fault_time_s": 2.78168555761707,
+      "first_fault_sample_s": 2.79,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 36,
+      "prediction_error": null
+    },
+    {
+      "record": "g004_c10",
+      "rows": 403,
+      "end_s": 4.02,
+      "fault_time_s": 2.78168555761707,
+      "first_fault_sample_s": 2.79,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 36,
+      "prediction_error": null
+    },
+    {
+      "record": "g004_c11",
+      "rows": 429,
+      "end_s": 4.28,
+      "fault_time_s": 2.78168555761707,
+      "first_fault_sample_s": 2.79,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 38,
+      "prediction_error": null
+    },
+    {
+      "record": "g004_c12",
+      "rows": 431,
+      "end_s": 4.3,
+      "fault_time_s": 2.78168555761707,
+      "first_fault_sample_s": 2.79,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 39,
+      "prediction_error": null
+    },
+    {
+      "record": "g004_c13",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 2.78168555761707,
+      "first_fault_sample_s": 2.79,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 76,
+      "prediction_error": null
+    },
+    {
+      "record": "g004_c14",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 2.78168555761707,
+      "first_fault_sample_s": 2.79,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 76,
+      "prediction_error": null
+    },
+    {
+      "record": "g004_c15",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 2.78168555761707,
+      "first_fault_sample_s": 2.79,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 76,
+      "prediction_error": null
+    },
+    {
+      "record": "g004_c16",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 2.78168555761707,
+      "first_fault_sample_s": 2.79,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 76,
+      "prediction_error": null
+    },
+    {
+      "record": "g004_c17",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 2.78168555761707,
+      "first_fault_sample_s": 2.79,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 76,
+      "prediction_error": null
+    },
+    {
+      "record": "g004_c18",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 2.78168555761707,
+      "first_fault_sample_s": 2.79,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 76,
+      "prediction_error": null
+    },
+    {
+      "record": "g005_c00",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": null,
+      "first_fault_sample_s": null,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g005_c01",
+      "rows": 456,
+      "end_s": 4.55,
+      "fault_time_s": 3.4107570138304584,
+      "first_fault_sample_s": 3.42,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g005_c02",
+      "rows": 456,
+      "end_s": 4.55,
+      "fault_time_s": 3.4107570138304584,
+      "first_fault_sample_s": 3.42,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g005_c03",
+      "rows": 457,
+      "end_s": 4.56,
+      "fault_time_s": 3.4107570138304584,
+      "first_fault_sample_s": 3.42,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g005_c04",
+      "rows": 458,
+      "end_s": 4.57,
+      "fault_time_s": 3.4107570138304584,
+      "first_fault_sample_s": 3.42,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g005_c05",
+      "rows": 458,
+      "end_s": 4.57,
+      "fault_time_s": 3.4107570138304584,
+      "first_fault_sample_s": 3.42,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g005_c06",
+      "rows": 457,
+      "end_s": 4.56,
+      "fault_time_s": 3.4107570138304584,
+      "first_fault_sample_s": 3.42,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g005_c07",
+      "rows": 465,
+      "end_s": 4.64,
+      "fault_time_s": 3.4107570138304584,
+      "first_fault_sample_s": 3.42,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g005_c08",
+      "rows": 464,
+      "end_s": 4.63,
+      "fault_time_s": 3.4107570138304584,
+      "first_fault_sample_s": 3.42,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g005_c09",
+      "rows": 465,
+      "end_s": 4.64,
+      "fault_time_s": 3.4107570138304584,
+      "first_fault_sample_s": 3.42,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g005_c10",
+      "rows": 466,
+      "end_s": 4.65,
+      "fault_time_s": 3.4107570138304584,
+      "first_fault_sample_s": 3.42,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g005_c11",
+      "rows": 484,
+      "end_s": 4.83,
+      "fault_time_s": 3.4107570138304584,
+      "first_fault_sample_s": 3.42,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g005_c12",
+      "rows": 502,
+      "end_s": 5.01,
+      "fault_time_s": 3.4107570138304584,
+      "first_fault_sample_s": 3.42,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g005_c13",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 3.4107570138304584,
+      "first_fault_sample_s": 3.42,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g005_c14",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 3.4107570138304584,
+      "first_fault_sample_s": 3.42,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g005_c15",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 3.4107570138304584,
+      "first_fault_sample_s": 3.42,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g005_c16",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 3.4107570138304584,
+      "first_fault_sample_s": 3.42,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g005_c17",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 3.4107570138304584,
+      "first_fault_sample_s": 3.42,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g005_c18",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 3.4107570138304584,
+      "first_fault_sample_s": 3.42,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g006_c00",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": null,
+      "first_fault_sample_s": null,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 76,
+      "prediction_error": null
+    },
+    {
+      "record": "g006_c01",
+      "rows": 378,
+      "end_s": 3.77,
+      "fault_time_s": 2.586998495443641,
+      "first_fault_sample_s": 2.59,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 33,
+      "prediction_error": null
+    },
+    {
+      "record": "g006_c02",
+      "rows": 378,
+      "end_s": 3.77,
+      "fault_time_s": 2.586998495443641,
+      "first_fault_sample_s": 2.59,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 33,
+      "prediction_error": null
+    },
+    {
+      "record": "g006_c03",
+      "rows": 379,
+      "end_s": 3.78,
+      "fault_time_s": 2.586998495443641,
+      "first_fault_sample_s": 2.59,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 33,
+      "prediction_error": null
+    },
+    {
+      "record": "g006_c04",
+      "rows": 378,
+      "end_s": 3.77,
+      "fault_time_s": 2.586998495443641,
+      "first_fault_sample_s": 2.59,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 33,
+      "prediction_error": null
+    },
+    {
+      "record": "g006_c05",
+      "rows": 378,
+      "end_s": 3.77,
+      "fault_time_s": 2.586998495443641,
+      "first_fault_sample_s": 2.59,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 33,
+      "prediction_error": null
+    },
+    {
+      "record": "g006_c06",
+      "rows": 377,
+      "end_s": 3.76,
+      "fault_time_s": 2.586998495443641,
+      "first_fault_sample_s": 2.59,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 33,
+      "prediction_error": null
+    },
+    {
+      "record": "g006_c07",
+      "rows": 385,
+      "end_s": 3.84,
+      "fault_time_s": 2.586998495443641,
+      "first_fault_sample_s": 2.59,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 34,
+      "prediction_error": null
+    },
+    {
+      "record": "g006_c08",
+      "rows": 388,
+      "end_s": 3.87,
+      "fault_time_s": 2.586998495443641,
+      "first_fault_sample_s": 2.59,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 34,
+      "prediction_error": null
+    },
+    {
+      "record": "g006_c09",
+      "rows": 389,
+      "end_s": 3.88,
+      "fault_time_s": 2.586998495443641,
+      "first_fault_sample_s": 2.59,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 34,
+      "prediction_error": null
+    },
+    {
+      "record": "g006_c10",
+      "rows": 385,
+      "end_s": 3.84,
+      "fault_time_s": 2.586998495443641,
+      "first_fault_sample_s": 2.59,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 34,
+      "prediction_error": null
+    },
+    {
+      "record": "g006_c11",
+      "rows": 390,
+      "end_s": 3.89,
+      "fault_time_s": 2.586998495443641,
+      "first_fault_sample_s": 2.59,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 35,
+      "prediction_error": null
+    },
+    {
+      "record": "g006_c12",
+      "rows": 415,
+      "end_s": 4.14,
+      "fault_time_s": 2.586998495443641,
+      "first_fault_sample_s": 2.59,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 37,
+      "prediction_error": null
+    },
+    {
+      "record": "g006_c13",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 2.586998495443641,
+      "first_fault_sample_s": 2.59,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 76,
+      "prediction_error": null
+    },
+    {
+      "record": "g006_c14",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 2.586998495443641,
+      "first_fault_sample_s": 2.59,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 76,
+      "prediction_error": null
+    },
+    {
+      "record": "g006_c15",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 2.586998495443641,
+      "first_fault_sample_s": 2.59,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 76,
+      "prediction_error": null
+    },
+    {
+      "record": "g006_c16",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 2.586998495443641,
+      "first_fault_sample_s": 2.59,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 76,
+      "prediction_error": null
+    },
+    {
+      "record": "g006_c17",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 2.586998495443641,
+      "first_fault_sample_s": 2.59,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 76,
+      "prediction_error": null
+    },
+    {
+      "record": "g006_c18",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 2.586998495443641,
+      "first_fault_sample_s": 2.59,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 76,
+      "prediction_error": null
+    },
+    {
+      "record": "g007_c00",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": null,
+      "first_fault_sample_s": null,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g007_c01",
+      "rows": 449,
+      "end_s": 4.48,
+      "fault_time_s": 3.3087479392222097,
+      "first_fault_sample_s": 3.31,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g007_c02",
+      "rows": 448,
+      "end_s": 4.47,
+      "fault_time_s": 3.3087479392222097,
+      "first_fault_sample_s": 3.31,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g007_c03",
+      "rows": 448,
+      "end_s": 4.47,
+      "fault_time_s": 3.3087479392222097,
+      "first_fault_sample_s": 3.31,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g007_c04",
+      "rows": 448,
+      "end_s": 4.47,
+      "fault_time_s": 3.3087479392222097,
+      "first_fault_sample_s": 3.31,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g007_c05",
+      "rows": 449,
+      "end_s": 4.48,
+      "fault_time_s": 3.3087479392222097,
+      "first_fault_sample_s": 3.31,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g007_c06",
+      "rows": 448,
+      "end_s": 4.47,
+      "fault_time_s": 3.3087479392222097,
+      "first_fault_sample_s": 3.31,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g007_c07",
+      "rows": 455,
+      "end_s": 4.54,
+      "fault_time_s": 3.3087479392222097,
+      "first_fault_sample_s": 3.31,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g007_c08",
+      "rows": 457,
+      "end_s": 4.56,
+      "fault_time_s": 3.3087479392222097,
+      "first_fault_sample_s": 3.31,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g007_c09",
+      "rows": 457,
+      "end_s": 4.56,
+      "fault_time_s": 3.3087479392222097,
+      "first_fault_sample_s": 3.31,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g007_c10",
+      "rows": 455,
+      "end_s": 4.54,
+      "fault_time_s": 3.3087479392222097,
+      "first_fault_sample_s": 3.31,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g007_c11",
+      "rows": 475,
+      "end_s": 4.74,
+      "fault_time_s": 3.3087479392222097,
+      "first_fault_sample_s": 3.31,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g007_c12",
+      "rows": 479,
+      "end_s": 4.78,
+      "fault_time_s": 3.3087479392222097,
+      "first_fault_sample_s": 3.31,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g007_c13",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 3.3087479392222097,
+      "first_fault_sample_s": 3.31,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g007_c14",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 3.3087479392222097,
+      "first_fault_sample_s": 3.31,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g007_c15",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 3.3087479392222097,
+      "first_fault_sample_s": 3.31,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g007_c16",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 3.3087479392222097,
+      "first_fault_sample_s": 3.31,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g007_c17",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 3.3087479392222097,
+      "first_fault_sample_s": 3.31,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g007_c18",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 3.3087479392222097,
+      "first_fault_sample_s": 3.31,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 0,
+      "prediction_error": null
+    },
+    {
+      "record": "g008_c00",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": null,
+      "first_fault_sample_s": null,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 76,
+      "prediction_error": null
+    },
+    {
+      "record": "g008_c01",
+      "rows": 392,
+      "end_s": 3.91,
+      "fault_time_s": 2.7497438335000397,
+      "first_fault_sample_s": 2.75,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 35,
+      "prediction_error": null
+    },
+    {
+      "record": "g008_c02",
+      "rows": 391,
+      "end_s": 3.9,
+      "fault_time_s": 2.7497438335000397,
+      "first_fault_sample_s": 2.75,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 35,
+      "prediction_error": null
+    },
+    {
+      "record": "g008_c03",
+      "rows": 391,
+      "end_s": 3.9,
+      "fault_time_s": 2.7497438335000397,
+      "first_fault_sample_s": 2.75,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 35,
+      "prediction_error": null
+    },
+    {
+      "record": "g008_c04",
+      "rows": 391,
+      "end_s": 3.9,
+      "fault_time_s": 2.7497438335000397,
+      "first_fault_sample_s": 2.75,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 35,
+      "prediction_error": null
+    },
+    {
+      "record": "g008_c05",
+      "rows": 391,
+      "end_s": 3.9,
+      "fault_time_s": 2.7497438335000397,
+      "first_fault_sample_s": 2.75,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 35,
+      "prediction_error": null
+    },
+    {
+      "record": "g008_c06",
+      "rows": 391,
+      "end_s": 3.9,
+      "fault_time_s": 2.7497438335000397,
+      "first_fault_sample_s": 2.75,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 35,
+      "prediction_error": null
+    },
+    {
+      "record": "g008_c07",
+      "rows": 398,
+      "end_s": 3.97,
+      "fault_time_s": 2.7497438335000397,
+      "first_fault_sample_s": 2.75,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 35,
+      "prediction_error": null
+    },
+    {
+      "record": "g008_c08",
+      "rows": 400,
+      "end_s": 3.99,
+      "fault_time_s": 2.7497438335000397,
+      "first_fault_sample_s": 2.75,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 36,
+      "prediction_error": null
+    },
+    {
+      "record": "g008_c09",
+      "rows": 401,
+      "end_s": 4.0,
+      "fault_time_s": 2.7497438335000397,
+      "first_fault_sample_s": 2.75,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 36,
+      "prediction_error": null
+    },
+    {
+      "record": "g008_c10",
+      "rows": 398,
+      "end_s": 3.97,
+      "fault_time_s": 2.7497438335000397,
+      "first_fault_sample_s": 2.75,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 35,
+      "prediction_error": null
+    },
+    {
+      "record": "g008_c11",
+      "rows": 418,
+      "end_s": 4.17,
+      "fault_time_s": 2.7497438335000397,
+      "first_fault_sample_s": 2.75,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 37,
+      "prediction_error": null
+    },
+    {
+      "record": "g008_c12",
+      "rows": 423,
+      "end_s": 4.22,
+      "fault_time_s": 2.7497438335000397,
+      "first_fault_sample_s": 2.75,
+      "termination": "physical_envelope_exit",
+      "reasons": [
+        "z < -2 m"
+      ],
+      "prediction_windows": 38,
+      "prediction_error": null
+    },
+    {
+      "record": "g008_c13",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 2.7497438335000397,
+      "first_fault_sample_s": 2.75,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 76,
+      "prediction_error": null
+    },
+    {
+      "record": "g008_c14",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 2.7497438335000397,
+      "first_fault_sample_s": 2.75,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 76,
+      "prediction_error": null
+    },
+    {
+      "record": "g008_c15",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 2.7497438335000397,
+      "first_fault_sample_s": 2.75,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 76,
+      "prediction_error": null
+    },
+    {
+      "record": "g008_c16",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 2.7497438335000397,
+      "first_fault_sample_s": 2.75,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 76,
+      "prediction_error": null
+    },
+    {
+      "record": "g008_c17",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 2.7497438335000397,
+      "first_fault_sample_s": 2.75,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 76,
+      "prediction_error": null
+    },
+    {
+      "record": "g008_c18",
+      "rows": 801,
+      "end_s": 8.0,
+      "fault_time_s": 2.7497438335000397,
+      "first_fault_sample_s": 2.75,
+      "termination": "completed",
+      "reasons": [],
+      "prediction_windows": 76,
+      "prediction_error": null
+    }
+  ]
+}
