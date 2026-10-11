@@ -1,0 +1,364 @@
+{
+  "basis": "16s collective-saturation recovery has final Iz=0.1349862307 m/s2, above preregistered 0.1; final position recovery already passed",
+  "candidates": {
+    "velocity_z09": {
+      "config": {
+        "acceptance": {
+          "control_half_step_position_difference_m": 0.03,
+          "hover_final_position_error_m": 0.05,
+          "integration_half_step_position_difference_m": 0.02,
+          "maximum_normal_tilt_deg": 35.0,
+          "post_saturation_recovery_error_m": 0.25,
+          "status": "predeclared_research_requirement_not_regulatory",
+          "tracking_rmse_m": 0.25
+        },
+        "aerodynamics": {
+          "body_drag_kg_m": [
+            0.005,
+            0.005,
+            0.01
+          ],
+          "model": "body_quadratic_and_rotating_rotor_drag",
+          "rotor_drag_kg_per_rad": [
+            0.000119,
+            0.000119,
+            0.000232
+          ]
+        },
+        "airframe": {
+          "arm_radius_m": 0.275,
+          "center_height_m": 0.06,
+          "center_mass_kg": 2.8,
+          "center_radius_m": 0.1,
+          "gravity_m_s2": 9.81,
+          "hub_mass_kg": 0.1,
+          "rotor_radius_m": 0.12065
+        },
+        "allocator": {
+          "bound_tolerance": 1e-08,
+          "feasibility_tolerance": 1e-06,
+          "max_iterations": 200,
+          "regularization": 0.0,
+          "solver_tolerance": 1e-10,
+          "wrench_priority": [
+            2.0,
+            1.0,
+            1.0,
+            0.2
+          ]
+        },
+        "control": {
+          "acceleration_limit_m_s2": [
+            4.0,
+            4.0,
+            4.0
+          ],
+          "antiwindup_gain_s_inv": 2.0,
+          "attitude_p": [
+            4.0,
+            4.0,
+            3.0
+          ],
+          "derivative_filter_hz": 20.0,
+          "position_p": [
+            1.2,
+            1.2,
+            1.4
+          ],
+          "rate_d": [
+            0.1,
+            0.1,
+            0.06
+          ],
+          "rate_i": [
+            30,
+            30,
+            0.6
+          ],
+          "rate_integral_limit_rad_s2": [
+            20,
+            20,
+            2
+          ],
+          "rate_limit_rad_s": [
+            3.0,
+            3.0,
+            1.5
+          ],
+          "rate_p": [
+            8.0,
+            8.0,
+            6.0
+          ],
+          "tilt_limit_deg": 25.0,
+          "velocity_d": [
+            0.1,
+            0.1,
+            0.1
+          ],
+          "velocity_i": [
+            0.4,
+            0.4,
+            0.9
+          ],
+          "velocity_integral_limit_m_s2": [
+            2.0,
+            2.0,
+            2.0
+          ],
+          "velocity_limit_m_s": [
+            3.0,
+            3.0,
+            2.0
+          ],
+          "velocity_p": [
+            2.5,
+            2.5,
+            3.0
+          ]
+        },
+        "frame": "ENU_world_FLU_body_xyzw_body_to_world",
+        "model_version": "hex_research_v2_integral_recovery",
+        "parameter_status": "research_design_not_real_aircraft",
+        "propulsion": {
+          "Q_over_T_m": 0.01315,
+          "kT": 7.45e-06,
+          "omega_max_rad_s": 1100.0,
+          "omega_min_rad_s": 0.0,
+          "tau_s": 0.05
+        },
+        "seed": 20261006,
+        "sensor": {
+          "accel_bias_diffusion": 0.002,
+          "accel_noise_density": 0.0035,
+          "additional_accel_sample_std": 0.008,
+          "attitude_sample_std_rad": 0.0008,
+          "feedback_delay_s": 0.01,
+          "gyro_bias_diffusion": 2e-05,
+          "gyro_noise_density": 0.0003,
+          "installation_rotation_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "lever_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "position_sample_std_m": 0.003,
+          "rate_hz": 100.0,
+          "rpm_sample_std_rad_s": 1.0,
+          "velocity_sample_std_m_s": 0.01
+        },
+        "termination": {
+          "body_rate_rad_s": 15.0,
+          "minimum_altitude_m": -2.0,
+          "position_norm_m": 25.0,
+          "speed_m_s": 20.0
+        },
+        "timing": {
+          "control_hz": 100.0,
+          "export_hz": 100.0,
+          "integration_hz": 500.0
+        },
+        "wind": {
+          "mean_m_s": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "ou_correlation_time_s": 1.0,
+          "ou_stationary_std_m_s": 0.2,
+          "update_rate_hz": 100.0
+        }
+      },
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0"
+    },
+    "velocity_z12": {
+      "config": {
+        "acceptance": {
+          "control_half_step_position_difference_m": 0.03,
+          "hover_final_position_error_m": 0.05,
+          "integration_half_step_position_difference_m": 0.02,
+          "maximum_normal_tilt_deg": 35.0,
+          "post_saturation_recovery_error_m": 0.25,
+          "status": "predeclared_research_requirement_not_regulatory",
+          "tracking_rmse_m": 0.25
+        },
+        "aerodynamics": {
+          "body_drag_kg_m": [
+            0.005,
+            0.005,
+            0.01
+          ],
+          "model": "body_quadratic_and_rotating_rotor_drag",
+          "rotor_drag_kg_per_rad": [
+            0.000119,
+            0.000119,
+            0.000232
+          ]
+        },
+        "airframe": {
+          "arm_radius_m": 0.275,
+          "center_height_m": 0.06,
+          "center_mass_kg": 2.8,
+          "center_radius_m": 0.1,
+          "gravity_m_s2": 9.81,
+          "hub_mass_kg": 0.1,
+          "rotor_radius_m": 0.12065
+        },
+        "allocator": {
+          "bound_tolerance": 1e-08,
+          "feasibility_tolerance": 1e-06,
+          "max_iterations": 200,
+          "regularization": 0.0,
+          "solver_tolerance": 1e-10,
+          "wrench_priority": [
+            2.0,
+            1.0,
+            1.0,
+            0.2
+          ]
+        },
+        "control": {
+          "acceleration_limit_m_s2": [
+            4.0,
+            4.0,
+            4.0
+          ],
+          "antiwindup_gain_s_inv": 2.0,
+          "attitude_p": [
+            4.0,
+            4.0,
+            3.0
+          ],
+          "derivative_filter_hz": 20.0,
+          "position_p": [
+            1.2,
+            1.2,
+            1.4
+          ],
+          "rate_d": [
+            0.1,
+            0.1,
+            0.06
+          ],
+          "rate_i": [
+            30,
+            30,
+            0.6
+          ],
+          "rate_integral_limit_rad_s2": [
+            20,
+            20,
+            2
+          ],
+          "rate_limit_rad_s": [
+            3.0,
+            3.0,
+            1.5
+          ],
+          "rate_p": [
+            8.0,
+            8.0,
+            6.0
+          ],
+          "tilt_limit_deg": 25.0,
+          "velocity_d": [
+            0.1,
+            0.1,
+            0.1
+          ],
+          "velocity_i": [
+            0.4,
+            0.4,
+            1.2
+          ],
+          "velocity_integral_limit_m_s2": [
+            2.0,
+            2.0,
+            2.0
+          ],
+          "velocity_limit_m_s": [
+            3.0,
+            3.0,
+            2.0
+          ],
+          "velocity_p": [
+            2.5,
+            2.5,
+            3.0
+          ]
+        },
+        "frame": "ENU_world_FLU_body_xyzw_body_to_world",
+        "model_version": "hex_research_v2_integral_recovery",
+        "parameter_status": "research_design_not_real_aircraft",
+        "propulsion": {
+          "Q_over_T_m": 0.01315,
+          "kT": 7.45e-06,
+          "omega_max_rad_s": 1100.0,
+          "omega_min_rad_s": 0.0,
+          "tau_s": 0.05
+        },
+        "seed": 20261006,
+        "sensor": {
+          "accel_bias_diffusion": 0.002,
+          "accel_noise_density": 0.0035,
+          "additional_accel_sample_std": 0.008,
+          "attitude_sample_std_rad": 0.0008,
+          "feedback_delay_s": 0.01,
+          "gyro_bias_diffusion": 2e-05,
+          "gyro_noise_density": 0.0003,
+          "installation_rotation_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "lever_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "position_sample_std_m": 0.003,
+          "rate_hz": 100.0,
+          "rpm_sample_std_rad_s": 1.0,
+          "velocity_sample_std_m_s": 0.01
+        },
+        "termination": {
+          "body_rate_rad_s": 15.0,
+          "minimum_altitude_m": -2.0,
+          "position_norm_m": 25.0,
+          "speed_m_s": 20.0
+        },
+        "timing": {
+          "control_hz": 100.0,
+          "export_hz": 100.0,
+          "integration_hz": 500.0
+        },
+        "wind": {
+          "mean_m_s": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "ou_correlation_time_s": 1.0,
+          "ou_stationary_std_m_s": 0.2,
+          "update_rate_hz": 100.0
+        }
+      },
+      "config_hash": "af1854432c2f1137f6ef3c6257e5fe8993192391b741cfcc61ccda222d3593be"
+    }
+  },
+  "criteria_unchanged": true,
+  "limits_unchanged": [
+    2,
+    2,
+    2
+  ],
+  "prior": 0.6,
+  "selection": "smallest tested Ki_z with both stress cases passed; then rerun 224 and64 original gates, require original positional reserve",
+  "vary_only": "velocity_i[2]"
+}

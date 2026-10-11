@@ -1,0 +1,14 @@
+{
+  "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+  "control_algorithm_changed": false,
+  "executed_utc": "2026-10-11T02:20:04.905571+00:00",
+  "model_version": "hex_research_v2_integral_recovery",
+  "new_active_config_sha256": "c27fc0caa3213aec7b58b00447db35e3f44b3f6be2ddf5df4f79af0c38b637ba",
+  "old_active_config_sha256": "a702049678cb06804f8a81edd25fdd965f2002e0207326ad68c9a4a0de2d662d",
+  "old_gains_preserved": "docs\\hex_rate_tuning\\baseline_source\\hex_research\\configs\\research.json",
+  "selected": "velocity_z09",
+  "stress_all_passed": true,
+  "validated_healthy": 32,
+  "validated_long_hold": 64,
+  "validated_partial": 192
+}

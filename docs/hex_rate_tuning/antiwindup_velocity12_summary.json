@@ -1,0 +1,117 @@
+{
+  "all_passed": true,
+  "results": [
+    {
+      "actual_duration_s": 16.0,
+      "bound_samples": 51,
+      "checks": {
+        "actual_rate_block_observed": true,
+        "blocked_rate_integral_steps_zero": true,
+        "completed": true,
+        "final_recovery": true,
+        "yaw_integral_returns_near_zero": true
+      },
+      "config_hash": "af1854432c2f1137f6ef3c6257e5fe8993192391b741cfcc61ccda222d3593be",
+      "controller_evaluations": 1601,
+      "elapsed_s": 11.754654000047594,
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 2.4726691234544518e-05,
+      "final_rate_integral": [
+        -2.002240979229619e-15,
+        -3.45232060443385e-14,
+        0.00836974821572767
+      ],
+      "final_velocity_integral": [
+        -1.2404228776180913e-16,
+        -4.551557270980339e-17,
+        -7.494148486320669e-05
+      ],
+      "maximum_abs_rate_integral": [
+        2.7640520442536362e-14,
+        5.510739840219429e-14,
+        0.03787438911589056
+      ],
+      "maximum_abs_velocity_integral": [
+        6.336105750015336e-16,
+        1.7509050061382932e-16,
+        0.05462613058418928
+      ],
+      "maximum_rate_rad_s": 2.0,
+      "maximum_speed_m_s": 0.03340238736956135,
+      "maximum_tilt_deg": 8.537736462515939e-07,
+      "name": "yaw_rate_recovery",
+      "nominal_bound_fraction": 0.03185509056839475,
+      "passed": true,
+      "position_rmse_m": 0.005739405851365202,
+      "rate_blocked_samples": [
+        0,
+        0,
+        51
+      ],
+      "termination": "completed",
+      "trace_sha256": "6f31a71b1a1e67f1403da968984ecbc0f4ae102601bd55c7d2dd7dfbfddcfbba"
+    },
+    {
+      "actual_duration_s": 16.0,
+      "bound_samples": 58,
+      "checks": {
+        "actual_motor_saturation_observed": true,
+        "blocked_rate_integral_steps_zero": true,
+        "completed": true,
+        "final_recovery": true,
+        "last_two_seconds_unsaturated": true,
+        "velocity_integral_returns_near_zero": true
+      },
+      "config_hash": "0cd44bb99746ab07bee1da89cc67573bee9cccce07a9274f38b6172de2be9db0",
+      "controller_evaluations": 1601,
+      "elapsed_s": 11.803569300100207,
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.005197760252484862,
+      "final_rate_integral": [
+        -8.410395214098578e-15,
+        -3.566058727349634e-14,
+        -1.502627339010953e-16
+      ],
+      "final_velocity_integral": [
+        1.096977454773003e-16,
+        1.5260670698964842e-15,
+        0.01575497461858536
+      ],
+      "maximum_abs_rate_integral": [
+        5.735047492889256e-13,
+        1.0707742262035798e-13,
+        1.6810415125269391e-16
+      ],
+      "maximum_abs_velocity_integral": [
+        6.9861094628556565e-16,
+        1.1496463169174207e-14,
+        1.5264371846388123
+      ],
+      "maximum_rate_rad_s": 1.216122139444099e-13,
+      "maximum_speed_m_s": 1.730338513169435,
+      "maximum_tilt_deg": 0.0,
+      "name": "collective_saturation_recovery",
+      "nominal_bound_fraction": 0.03622735790131168,
+      "passed": true,
+      "position_rmse_m": 17.36728241596344,
+      "rate_blocked_samples": [
+        0,
+        0,
+        0
+      ],
+      "termination": "completed",
+      "trace_sha256": "b1226257187d9f0af7910fb12641e8f650b0b1c810195f4c0bd38c51fb958aa3"
+    }
+  ],
+  "spec": {
+    "final_position_error_m": 0.25,
+    "initial_yaw_rate_rad_s": 2.0,
+    "note": "research stress cases, not a new physical calibration or operational maneuver",
+    "rate_recovery_duration_s": 16.0,
+    "saturation_omega_max_rad_s": 950.0,
+    "saturation_recovery_duration_s": 16.0,
+    "saturation_task": "legacy saturation: z reference50m from2s to4s, then2.5m",
+    "velocity_integral_tail_norm_m_s2": 0.1,
+    "yaw_integral_tail_absolute_rad_s2": 0.1
+  }
+}

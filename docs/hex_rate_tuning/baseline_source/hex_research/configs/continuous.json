@@ -1,0 +1,43 @@
+{
+  "experiment_version": "hex_tasks_continuous_v1",
+  "evidence_status": "predeclared_research_design_not_real_aircraft_or_formal_performance",
+  "seed": 20261009,
+  "groups_per_family": 2,
+  "families": ["hover", "line", "circle", "vertical"],
+  "duration_s": 8.0,
+  "motion_start_s": 1.0,
+  "motion_end_s": 7.0,
+  "fault_time_range_s": [2.5, 3.5],
+  "initial_position_jitter_m": 0.01,
+  "initial_attitude_jitter_rad": 0.005,
+  "normal_validation_delay_s": 0.03,
+  "reference_preflight_samples": 1001,
+  "ranges": {
+    "height_m": [2.3, 2.7], "heading_rad": [-3.141592653589793, 3.141592653589793],
+    "yaw_rad": [-0.2, 0.2], "yaw_change_rad": [-0.3, 0.3],
+    "line_distance_m": [1.0, 1.6], "circle_radius_m": [0.25, 0.35],
+    "vertical_distance_m": [-0.6, 0.6]
+  },
+  "reference_limits": {
+    "speed_m_s": 1.0, "acceleration_m_s2": 1.5, "yaw_rate_rad_s": 0.3,
+    "horizontal_radius_m": 2.5, "altitude_m": [1.0, 4.0]
+  },
+  "normal_acceptance": {
+    "position_rmse_m": 0.25, "final_position_error_m": 0.10,
+    "maximum_tilt_deg": 35.0, "maximum_body_rate_rad_s": 3.0,
+    "maximum_nominal_bound_fraction": 0.05,
+    "basis": "RMSE and tilt reuse old research gates; final/rate/saturation are new predeclared research requirements"
+  },
+  "diagnostics": {
+    "schema_version": "diagnostic_packet_v1", "feature_set": "imu_only",
+    "sample_hz": 100.0, "window": 50, "step": 10, "gap_tolerance_s": 0.000001,
+    "fault_probability_threshold": 0.8, "consecutive_windows": 3, "cooldown_s": 1.0,
+    "selection_status": "initial_design_not_tuned_or_calibrated"
+  },
+  "interface_fit": {
+    "purpose": "development_continuous_interface_check_not_formal_accuracy",
+    "epochs": 3, "hidden_dim": 32, "layers": 1, "learning_rate": 0.001,
+    "seed": 91009, "max_windows_per_class": 160,
+    "training_repeat": 0, "replay_repeat": 1
+  }
+}

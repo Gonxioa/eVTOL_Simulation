@@ -36,6 +36,9 @@ def plan_for(cfg, settings):
 def validate_tasks(cfg, settings, out):
     """Run declared configurations before any fault generation; no retuning."""
     out = Path(out); out.mkdir(parents=True, exist_ok=True); plan = plan_for(cfg, settings)
+    existing_plan = out/'dataset_v5/generation_plan.json'
+    if existing_plan.is_file() and json.loads(existing_plan.read_text(encoding='utf-8')) != plan:
+        raise RuntimeError('Existing dataset uses another source/configuration; validate into a fresh --out and keep old reports read-only')
     acceptance = settings['normal_acceptance']
     write_json(out/'task_predeclared_acceptance.json', {'criteria': acceptance, 'settings': settings,
                                                       'plan_signature': plan['plan_signature'], 'written_before_runs': True})

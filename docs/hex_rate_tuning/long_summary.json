@@ -1,0 +1,5330 @@
+{
+  "executed_utc": "2026-10-11T02:16:59.357255+00:00",
+  "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+  "results": [
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g001_m0_delay_noise_wind_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "delay_noise_wind",
+      "config_hash": "9dbd52346a7caa8f3a6ad59ab4dcaab919b793d67dab187f94919996a4230474",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 34.41538910008967,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.024122376612945615,
+      "final_speed_m_s": 0.015986289596347486,
+      "final_velocity_integral": [
+        -0.0031906890986672866,
+        0.014644244758311085,
+        0.40709925357748067
+      ],
+      "group_id": 1,
+      "maximum_abs_rate_integral": [
+        0.2708887784376668,
+        16.23531181744805,
+        0.26565302756122566
+      ],
+      "maximum_abs_velocity_integral": [
+        0.17151343408204472,
+        0.027829936017982667,
+        0.40723246179516337
+      ],
+      "maximum_attitude_error_deg": 21.421209180992143,
+      "maximum_position_error_m": 0.30225249089274103,
+      "maximum_rate_rad_s": 1.5908842226808517,
+      "maximum_speed_m_s": 0.6747498834189107,
+      "maximum_tilt_deg": 14.600856127285123,
+      "motor": 0,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.05696830962522319,
+      "post_fault_position_rmse_m": 0.060130640193728685,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.025765856178728414,
+      "tail_position_peak_m": 0.038649139534608856,
+      "tail_position_rmse_m": 0.02144175178859853,
+      "termination": "completed",
+      "trace_sha256": "c62004adb5653980be1f2195e919ed6345b608592dbb544955d63489b15d9f47",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g001_m0_ideal_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "ideal",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 32.44611909997184,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.0008617046876958391,
+      "final_speed_m_s": 0.00013825302665851997,
+      "final_velocity_integral": [
+        -0.0022334877064100716,
+        4.782650934822287e-06,
+        0.37722033035043917
+      ],
+      "group_id": 1,
+      "maximum_abs_rate_integral": [
+        0.11059091357045502,
+        14.466332838965624,
+        0.26551839181438375
+      ],
+      "maximum_abs_velocity_integral": [
+        0.19507105081932088,
+        0.001337940945002215,
+        0.37722033035043917
+      ],
+      "maximum_attitude_error_deg": 17.648415303088253,
+      "maximum_position_error_m": 0.31103906703981765,
+      "maximum_rate_rad_s": 1.1112155921904459,
+      "maximum_speed_m_s": 0.607808011905304,
+      "maximum_tilt_deg": 11.330485293802994,
+      "motor": 0,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.05486036789853417,
+      "post_fault_position_rmse_m": 0.05806362810379261,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.00021250220576154736,
+      "tail_position_peak_m": 0.0019230388851362767,
+      "tail_position_rmse_m": 0.0013568229217724409,
+      "termination": "completed",
+      "trace_sha256": "bea517d084f1c114539d1a5aea9131938271dcf5ed9f2cb89d3a8737ce05b604",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g001_m0_noise_wind_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "noise_wind",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 34.26915569999255,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.024349214097018332,
+      "final_speed_m_s": 0.016538375971475276,
+      "final_velocity_integral": [
+        -0.003131299312945172,
+        0.014579225631098452,
+        0.4072481157215746
+      ],
+      "group_id": 1,
+      "maximum_abs_rate_integral": [
+        0.1384863368257315,
+        14.872407354330887,
+        0.265717694564272
+      ],
+      "maximum_abs_velocity_integral": [
+        0.17510170753495075,
+        0.027796132115013916,
+        0.4072481157215746
+      ],
+      "maximum_attitude_error_deg": 19.171873768550416,
+      "maximum_position_error_m": 0.29758838908674323,
+      "maximum_rate_rad_s": 1.229156917073643,
+      "maximum_speed_m_s": 0.6146336913051765,
+      "maximum_tilt_deg": 11.760597011055644,
+      "motor": 0,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.05592305484837807,
+      "post_fault_position_rmse_m": 0.05902396744737734,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.025120024595975017,
+      "tail_position_peak_m": 0.038075551456121716,
+      "tail_position_rmse_m": 0.02131164240226603,
+      "termination": "completed",
+      "trace_sha256": "40751f5c660cfe8748ebb12e86bc1149030704ef10a420088d605c9b34d99f31",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g001_m0_wind_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "wind",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 32.02130409993697,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.025047960117587257,
+      "final_speed_m_s": 0.016299512068391687,
+      "final_velocity_integral": [
+        -0.003406636985323658,
+        0.01544063436720271,
+        0.40646871942623775
+      ],
+      "group_id": 1,
+      "maximum_abs_rate_integral": [
+        0.10648260758438675,
+        14.443081044024437,
+        0.26552692386090426
+      ],
+      "maximum_abs_velocity_integral": [
+        0.1765286864163416,
+        0.028386885319229182,
+        0.40646871942623775
+      ],
+      "maximum_attitude_error_deg": 17.572093990202756,
+      "maximum_position_error_m": 0.2957918918177651,
+      "maximum_rate_rad_s": 1.1076903396686195,
+      "maximum_speed_m_s": 0.5929020153557207,
+      "maximum_tilt_deg": 10.94528572204194,
+      "motor": 0,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.05564170688041528,
+      "post_fault_position_rmse_m": 0.058733221915785463,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.024153695857314385,
+      "tail_position_peak_m": 0.03657167665998824,
+      "tail_position_rmse_m": 0.02079139140181456,
+      "termination": "completed",
+      "trace_sha256": "6985f0cdca7c253584bda8595b6b2ddd078a0fdff3ae424cec22338572519776",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g001_m1_delay_noise_wind_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "delay_noise_wind",
+      "config_hash": "9dbd52346a7caa8f3a6ad59ab4dcaab919b793d67dab187f94919996a4230474",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 34.13902250002138,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.022078814752265256,
+      "final_speed_m_s": 0.016256554468731733,
+      "final_velocity_integral": [
+        -0.0016775650772939182,
+        0.011963969759722434,
+        0.407121346302841
+      ],
+      "group_id": 1,
+      "maximum_abs_rate_integral": [
+        13.727899449675768,
+        8.102562944889312,
+        0.26393383240521556
+      ],
+      "maximum_abs_velocity_integral": [
+        0.07720948914100023,
+        0.16546916624075042,
+        0.407121346302841
+      ],
+      "maximum_attitude_error_deg": 21.679269098787564,
+      "maximum_position_error_m": 0.3098585013335126,
+      "maximum_rate_rad_s": 1.5405480741595867,
+      "maximum_speed_m_s": 0.6691016624546848,
+      "maximum_tilt_deg": 14.661237840342421,
+      "motor": 1,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.05780949609582466,
+      "post_fault_position_rmse_m": 0.06102400277696547,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.02537896444417818,
+      "tail_position_peak_m": 0.03843867139420318,
+      "tail_position_rmse_m": 0.021273249635044882,
+      "termination": "completed",
+      "trace_sha256": "9222f43500124789aaafa2c6ee7a57dc1db09ce35c5d847b9d3cbd0a236b057f",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g001_m1_ideal_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "ideal",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 32.12949339998886,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.0008642294611607411,
+      "final_speed_m_s": 0.00013866318703029267,
+      "final_velocity_integral": [
+        -0.0011433227660536537,
+        -0.0019261775949387491,
+        0.37721991482422623
+      ],
+      "group_id": 1,
+      "maximum_abs_rate_integral": [
+        12.336213317503649,
+        7.205642614595444,
+        0.2640434657294905
+      ],
+      "maximum_abs_velocity_integral": [
+        0.09798228450096241,
+        0.16621161765274745,
+        0.37721991482422623
+      ],
+      "maximum_attitude_error_deg": 17.402674416957034,
+      "maximum_position_error_m": 0.3074696393113766,
+      "maximum_rate_rad_s": 1.0914302994960918,
+      "maximum_speed_m_s": 0.5998249305847394,
+      "maximum_tilt_deg": 11.218660924302453,
+      "motor": 1,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.05407193387494818,
+      "post_fault_position_rmse_m": 0.05722852535945261,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.00021314071471260568,
+      "tail_position_peak_m": 0.0019287388105714868,
+      "tail_position_rmse_m": 0.0013608246825085224,
+      "termination": "completed",
+      "trace_sha256": "de9b149d4fcb77e3679188352a7f7c893452fc495a820c20db712e2a0aa43266",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g001_m1_noise_wind_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "noise_wind",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 34.25476190005429,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.02248294749632469,
+      "final_speed_m_s": 0.0161522202777182,
+      "final_velocity_integral": [
+        -0.0015402123690236452,
+        0.011834760932660714,
+        0.40727642159120403
+      ],
+      "group_id": 1,
+      "maximum_abs_rate_integral": [
+        12.62827186122722,
+        7.400753277107069,
+        0.2638960927117299
+      ],
+      "maximum_abs_velocity_integral": [
+        0.07964097446594581,
+        0.17021686517527654,
+        0.40727642159120403
+      ],
+      "maximum_attitude_error_deg": 19.415299147827156,
+      "maximum_position_error_m": 0.3042425589838671,
+      "maximum_rate_rad_s": 1.193726233022233,
+      "maximum_speed_m_s": 0.6104234780207523,
+      "maximum_tilt_deg": 11.943565148623971,
+      "motor": 1,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.056792179387987966,
+      "post_fault_position_rmse_m": 0.05994705113132704,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.02489231468158831,
+      "tail_position_peak_m": 0.03789625401115709,
+      "tail_position_rmse_m": 0.021156462150981728,
+      "termination": "completed",
+      "trace_sha256": "172322f563cd50a342b3495d2aefb9ac8884fef25a54fef1a1c185e05b648e63",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g001_m1_wind_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "wind",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 32.68369630002417,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.02346913373736997,
+      "final_speed_m_s": 0.015640799619956656,
+      "final_velocity_integral": [
+        -0.0017129820473020573,
+        0.012694995299432618,
+        0.40648488347212036
+      ],
+      "group_id": 1,
+      "maximum_abs_rate_integral": [
+        12.27607229964456,
+        7.1802383712980875,
+        0.26404764764497657
+      ],
+      "maximum_abs_velocity_integral": [
+        0.07979023037490397,
+        0.17113168453266844,
+        0.40648488347212036
+      ],
+      "maximum_attitude_error_deg": 17.298132415838747,
+      "maximum_position_error_m": 0.30117371770746965,
+      "maximum_rate_rad_s": 1.0831139854409473,
+      "maximum_speed_m_s": 0.5911722485305655,
+      "maximum_tilt_deg": 11.083164133649651,
+      "motor": 1,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.05634642449544964,
+      "post_fault_position_rmse_m": 0.059481620131258,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.02406238900267613,
+      "tail_position_peak_m": 0.036470319835711154,
+      "tail_position_rmse_m": 0.020627692863011294,
+      "termination": "completed",
+      "trace_sha256": "767e1dcf4f029375ce20bb5093d5b5fe0d36fd02400f8a595624d29c801c69ef",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g001_m2_delay_noise_wind_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "delay_noise_wind",
+      "config_hash": "9dbd52346a7caa8f3a6ad59ab4dcaab919b793d67dab187f94919996a4230474",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 36.03444620000664,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.0194383759966001,
+      "final_speed_m_s": 0.01591554904188003,
+      "final_velocity_integral": [
+        0.0014321302829238022,
+        0.012141841181604572,
+        0.4071536973888369
+      ],
+      "group_id": 1,
+      "maximum_abs_rate_integral": [
+        14.047738713591466,
+        7.998263067567989,
+        0.2656287750647362
+      ],
+      "maximum_abs_velocity_integral": [
+        0.1098295326620746,
+        0.167772400640235,
+        0.4071536973888369
+      ],
+      "maximum_attitude_error_deg": 21.42427209766239,
+      "maximum_position_error_m": 0.32625433453124236,
+      "maximum_rate_rad_s": 1.5759204621826761,
+      "maximum_speed_m_s": 0.6933736913954479,
+      "maximum_tilt_deg": 15.254908159928796,
+      "motor": 2,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.0607397142770831,
+      "post_fault_position_rmse_m": 0.0641353811720938,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.02449558142652739,
+      "tail_position_peak_m": 0.03827283109714719,
+      "tail_position_rmse_m": 0.0209950903130088,
+      "termination": "completed",
+      "trace_sha256": "238228464c74f900528211278fe3b468ba5c4470d39aa1e63f87ec57b716ac7d",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g001_m2_ideal_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "ideal",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 33.92751239996869,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.0008584844308434464,
+      "final_speed_m_s": 0.00013773679394943702,
+      "final_velocity_integral": [
+        0.0010913632622212483,
+        -0.0019391182409807283,
+        0.377220596710051
+      ],
+      "group_id": 1,
+      "maximum_abs_rate_integral": [
+        12.578269209576606,
+        7.202539310548706,
+        0.26551595374884557
+      ],
+      "maximum_abs_velocity_integral": [
+        0.09718799488383083,
+        0.16896645736466642,
+        0.377220596710051
+      ],
+      "maximum_attitude_error_deg": 17.670169666900115,
+      "maximum_position_error_m": 0.3122794231459996,
+      "maximum_rate_rad_s": 1.1077263416985144,
+      "maximum_speed_m_s": 0.6087315971895816,
+      "maximum_tilt_deg": 11.376092418639576,
+      "motor": 2,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.0548841995379542,
+      "post_fault_position_rmse_m": 0.058088870234950914,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.0002117097483616848,
+      "tail_position_peak_m": 0.001915858854345211,
+      "tail_position_rmse_m": 0.0013517548311738313,
+      "termination": "completed",
+      "trace_sha256": "f4be629ffaf5961d1e7f68c92e60e306fd0b22cc9d1573fd0bd4060f49e7a604",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g001_m2_noise_wind_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "noise_wind",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 36.39983789995313,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.019955715349075344,
+      "final_speed_m_s": 0.01595175924492908,
+      "final_velocity_integral": [
+        0.0016214763286815713,
+        0.012036345677406675,
+        0.40729615675835484
+      ],
+      "group_id": 1,
+      "maximum_abs_rate_integral": [
+        12.890235877238856,
+        7.4040811796435335,
+        0.26569932555334574
+      ],
+      "maximum_abs_velocity_integral": [
+        0.11262858405367636,
+        0.17266195752496918,
+        0.40729615675835484
+      ],
+      "maximum_attitude_error_deg": 19.139023589217683,
+      "maximum_position_error_m": 0.3210925969930117,
+      "maximum_rate_rad_s": 1.221635773814308,
+      "maximum_speed_m_s": 0.6343084837305457,
+      "maximum_tilt_deg": 12.496769718177596,
+      "motor": 2,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.059728832176154115,
+      "post_fault_position_rmse_m": 0.06306540489285734,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.023935928550480417,
+      "tail_position_peak_m": 0.0377020099760902,
+      "tail_position_rmse_m": 0.020883838797860536,
+      "termination": "completed",
+      "trace_sha256": "54349e35149d71e5605e8448f78e18197c31005ef98317a0f8bd690156f57053",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g001_m2_wind_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "wind",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 34.046487700077705,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.02100807733153106,
+      "final_speed_m_s": 0.015351676960440147,
+      "final_velocity_integral": [
+        0.0015213924681646714,
+        0.012816476510113988,
+        0.4065139899390621
+      ],
+      "group_id": 1,
+      "maximum_abs_rate_integral": [
+        12.527483010888249,
+        7.186681039799997,
+        0.2655121895647635
+      ],
+      "maximum_abs_velocity_integral": [
+        0.1143290155561568,
+        0.17367151197279063,
+        0.4065139899390621
+      ],
+      "maximum_attitude_error_deg": 17.660659759722304,
+      "maximum_position_error_m": 0.3185486711336103,
+      "maximum_rate_rad_s": 1.1079802181643523,
+      "maximum_speed_m_s": 0.6147096662357279,
+      "maximum_tilt_deg": 11.692821969929978,
+      "motor": 2,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.05935546607961756,
+      "post_fault_position_rmse_m": 0.06267656735779302,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.0230560041018001,
+      "tail_position_peak_m": 0.03620428999653173,
+      "tail_position_rmse_m": 0.020344309212623538,
+      "termination": "completed",
+      "trace_sha256": "58fade9009ba8eb8c9d9985a3e7ac9d949ab7003325066288b30b6f47f5a0e30",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g001_m3_delay_noise_wind_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "delay_noise_wind",
+      "config_hash": "9dbd52346a7caa8f3a6ad59ab4dcaab919b793d67dab187f94919996a4230474",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 35.91646590002347,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.018888431633905224,
+      "final_speed_m_s": 0.016148494964167787,
+      "final_velocity_integral": [
+        0.0029577820257243917,
+        0.014821155767791467,
+        0.4071815102190999
+      ],
+      "group_id": 1,
+      "maximum_abs_rate_integral": [
+        0.31220903599849414,
+        15.924690353711998,
+        0.26391428084296825
+      ],
+      "maximum_abs_velocity_integral": [
+        0.20228197519157512,
+        0.02734580088534914,
+        0.4071815102190999
+      ],
+      "maximum_attitude_error_deg": 20.921243629771936,
+      "maximum_position_error_m": 0.32189791380329374,
+      "maximum_rate_rad_s": 1.5671123654077264,
+      "maximum_speed_m_s": 0.6904252825705289,
+      "maximum_tilt_deg": 15.162579937809955,
+      "motor": 3,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.06064505056957443,
+      "post_fault_position_rmse_m": 0.06403487839754904,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.023923460108798762,
+      "tail_position_peak_m": 0.03823807023966996,
+      "tail_position_rmse_m": 0.020862301860451377,
+      "termination": "completed",
+      "trace_sha256": "4f7ca44dfff3c266ee0fc471e88eb3f462d13d32605d4fa2794e81cb44afe66d",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g001_m3_ideal_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "ideal",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 33.8070026000496,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.0008540944237606102,
+      "final_speed_m_s": 0.00013704317352594234,
+      "final_velocity_integral": [
+        0.0022134729995235357,
+        -2.6041533145659416e-05,
+        0.37721964180560374
+      ],
+      "group_id": 1,
+      "maximum_abs_rate_integral": [
+        0.09858137213160723,
+        14.257280752221192,
+        0.2640459036609825
+      ],
+      "maximum_abs_velocity_integral": [
+        0.19095280216153449,
+        0.0021477435842177975,
+        0.37721964180560374
+      ],
+      "maximum_attitude_error_deg": 17.381549230031574,
+      "maximum_position_error_m": 0.3069331876095373,
+      "maximum_rate_rad_s": 1.0966860725491734,
+      "maximum_speed_m_s": 0.5982671657245389,
+      "maximum_tilt_deg": 11.17531811904712,
+      "motor": 3,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.054135514419078726,
+      "post_fault_position_rmse_m": 0.057295869685959004,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.00021066754218393414,
+      "tail_position_peak_m": 0.0019062202968436537,
+      "tail_position_rmse_m": 0.0013449029157304637,
+      "termination": "completed",
+      "trace_sha256": "b0b68c540454f6fd7ee31766a5962767f9e62890871a4acf61bb2252fdec95ef",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g001_m3_noise_wind_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "noise_wind",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 35.87403529998846,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.019409752941393698,
+      "final_speed_m_s": 0.01662707799866634,
+      "final_velocity_integral": [
+        0.003183469032464909,
+        0.014775868348812348,
+        0.40732499333176486
+      ],
+      "group_id": 1,
+      "maximum_abs_rate_integral": [
+        0.20649498588865775,
+        14.672671985470169,
+        0.2638905979454425
+      ],
+      "maximum_abs_velocity_integral": [
+        0.20484520587829338,
+        0.027332954949849827,
+        0.40732499333176486
+      ],
+      "maximum_attitude_error_deg": 18.809351709039195,
+      "maximum_position_error_m": 0.3182365547979337,
+      "maximum_rate_rad_s": 1.22176412609926,
+      "maximum_speed_m_s": 0.6331807037535311,
+      "maximum_tilt_deg": 12.43265601390002,
+      "motor": 3,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.059711134673607676,
+      "post_fault_position_rmse_m": 0.0630466150650582,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.023296653063776457,
+      "tail_position_peak_m": 0.03764241917970937,
+      "tail_position_rmse_m": 0.0207423253036263,
+      "termination": "completed",
+      "trace_sha256": "d6c2f9b6b3035fe85a6ada4980b226bc4420f3934e6efa39932ba10dd25ef73b",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g001_m3_wind_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "wind",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 33.773763399920426,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.02019361743794239,
+      "final_speed_m_s": 0.015921758808874628,
+      "final_velocity_integral": [
+        0.0030299354516850016,
+        0.015651015364183084,
+        0.40653032024446134
+      ],
+      "group_id": 1,
+      "maximum_abs_rate_integral": [
+        0.1437636243494643,
+        14.219522093152051,
+        0.26404737721692073
+      ],
+      "maximum_abs_velocity_integral": [
+        0.2078220592524595,
+        0.027865901201649973,
+        0.40653032024446134
+      ],
+      "maximum_attitude_error_deg": 17.434462433833037,
+      "maximum_position_error_m": 0.31676549895024303,
+      "maximum_rate_rad_s": 1.1031577705073203,
+      "maximum_speed_m_s": 0.6109809253451425,
+      "maximum_tilt_deg": 11.58987407908494,
+      "motor": 3,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.0595219161329873,
+      "post_fault_position_rmse_m": 0.06285327438254597,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.02219043690513166,
+      "tail_position_peak_m": 0.03603341084204731,
+      "tail_position_rmse_m": 0.020216129685748242,
+      "termination": "completed",
+      "trace_sha256": "473430f38427d481e3e9b6e62105a02c7f3d88010dce83c034795434191f462f",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g001_m4_delay_noise_wind_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "delay_noise_wind",
+      "config_hash": "9dbd52346a7caa8f3a6ad59ab4dcaab919b793d67dab187f94919996a4230474",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 36.34842719999142,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.0211016169762427,
+      "final_speed_m_s": 0.017218106737474554,
+      "final_velocity_integral": [
+        0.001255756902038385,
+        0.01737167593097662,
+        0.4071551713069224
+      ],
+      "group_id": 1,
+      "maximum_abs_rate_integral": [
+        13.992580574714962,
+        8.094777194221713,
+        0.2656638286006548
+      ],
+      "maximum_abs_velocity_integral": [
+        0.11235574941573895,
+        0.16499864182883175,
+        0.4073688675462835
+      ],
+      "maximum_attitude_error_deg": 21.908646906105265,
+      "maximum_position_error_m": 0.31468948882570275,
+      "maximum_rate_rad_s": 1.60247369414399,
+      "maximum_speed_m_s": 0.6942605517757214,
+      "maximum_tilt_deg": 14.951157841995972,
+      "motor": 4,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.05988514161879547,
+      "post_fault_position_rmse_m": 0.06322806505905487,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.02398813153253188,
+      "tail_position_peak_m": 0.038453555017435,
+      "tail_position_rmse_m": 0.021003482291067365,
+      "termination": "completed",
+      "trace_sha256": "59e98e96f293349f497518cdc620ad4b412a901a2080829bdcfdc26dc3fc032a",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g001_m4_ideal_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "ideal",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 33.86879219999537,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.000851674140954028,
+      "final_speed_m_s": 0.00013664958503458967,
+      "final_velocity_integral": [
+        0.0011189970630409883,
+        0.0019028067390944037,
+        0.37722007566433224
+      ],
+      "group_id": 1,
+      "maximum_abs_rate_integral": [
+        12.486157372276296,
+        7.24705478493472,
+        0.2655211876867262
+      ],
+      "maximum_abs_velocity_integral": [
+        0.09642927844584288,
+        0.16738238936406222,
+        0.37722007566433224
+      ],
+      "maximum_attitude_error_deg": 17.62506086220766,
+      "maximum_position_error_m": 0.31050276176036323,
+      "maximum_rate_rad_s": 1.1153953823647458,
+      "maximum_speed_m_s": 0.6062726671991787,
+      "maximum_tilt_deg": 11.280343194143063,
+      "motor": 4,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.05493100085411315,
+      "post_fault_position_rmse_m": 0.05813844149476601,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.00021005402401106277,
+      "tail_position_peak_m": 0.0019007505552939277,
+      "tail_position_rmse_m": 0.0013410645572372465,
+      "termination": "completed",
+      "trace_sha256": "00c509cec46752e22df217857c22567b9619db331fe871a41f09daef2cc6bece",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g001_m4_noise_wind_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "noise_wind",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 36.04206999996677,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.02144432369688532,
+      "final_speed_m_s": 0.017384655120011066,
+      "final_velocity_integral": [
+        0.001455769580566603,
+        0.01740230351182321,
+        0.40729915699942804
+      ],
+      "group_id": 1,
+      "maximum_abs_rate_integral": [
+        12.868429761729447,
+        7.46137549442978,
+        0.2657242540311409
+      ],
+      "maximum_abs_velocity_integral": [
+        0.11223894863749809,
+        0.1607219047570364,
+        0.40729915699942804
+      ],
+      "maximum_attitude_error_deg": 19.779163832676556,
+      "maximum_position_error_m": 0.31206839632883276,
+      "maximum_rate_rad_s": 1.2471915829546623,
+      "maximum_speed_m_s": 0.6359783290712595,
+      "maximum_tilt_deg": 12.182917846411785,
+      "motor": 4,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.05891219340586935,
+      "post_fault_position_rmse_m": 0.0621983289075404,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.023420903018136575,
+      "tail_position_peak_m": 0.03782106386401353,
+      "tail_position_rmse_m": 0.020870376901759406,
+      "termination": "completed",
+      "trace_sha256": "7fe60d143b3fba5c7cfb800cb377d953fd04f0eea3eb5b6caf6acbe5a15a28a7",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g001_m4_wind_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "wind",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 33.86836579989176,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.022047933020190598,
+      "final_speed_m_s": 0.016798097416831904,
+      "final_velocity_integral": [
+        0.0013325377526191401,
+        0.018376212647666704,
+        0.4065149219296818
+      ],
+      "group_id": 1,
+      "maximum_abs_rate_integral": [
+        12.465359754136523,
+        7.2246819826189945,
+        0.26553191496661016
+      ],
+      "maximum_abs_velocity_integral": [
+        0.11399867041669808,
+        0.16229992952775021,
+        0.4065149219296818
+      ],
+      "maximum_attitude_error_deg": 17.652620098115385,
+      "maximum_position_error_m": 0.31186373143747537,
+      "maximum_rate_rad_s": 1.1193124243253147,
+      "maximum_speed_m_s": 0.6116273697981968,
+      "maximum_tilt_deg": 11.39309706862606,
+      "motor": 4,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.058890209837839456,
+      "post_fault_position_rmse_m": 0.062182626931172574,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.02244101149071222,
+      "tail_position_peak_m": 0.03613140490807154,
+      "tail_position_rmse_m": 0.02037329381509804,
+      "termination": "completed",
+      "trace_sha256": "b7f26d8f2a9f36902ddd46b3c3b234fb3271753ec22008d41b2ee7f4de20645d",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g001_m5_delay_noise_wind_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "delay_noise_wind",
+      "config_hash": "9dbd52346a7caa8f3a6ad59ab4dcaab919b793d67dab187f94919996a4230474",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 36.03988820000086,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.023594570689302066,
+      "final_speed_m_s": 0.016906716642674444,
+      "final_velocity_integral": [
+        -0.0018064466170276759,
+        0.017354761162339145,
+        0.40713524505407417
+      ],
+      "group_id": 1,
+      "maximum_abs_rate_integral": [
+        13.93242739034809,
+        7.904503388942457,
+        0.2638972635252788
+      ],
+      "maximum_abs_velocity_integral": [
+        0.07700861931885412,
+        0.16321191064237672,
+        0.40733277524895206
+      ],
+      "maximum_attitude_error_deg": 21.061764037063515,
+      "maximum_position_error_m": 0.2986729062017175,
+      "maximum_rate_rad_s": 1.5804056010581267,
+      "maximum_speed_m_s": 0.6727306356849568,
+      "maximum_tilt_deg": 14.54598043658185,
+      "motor": 5,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.05696105871518766,
+      "post_fault_position_rmse_m": 0.060122939181405106,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.02484761072251947,
+      "tail_position_peak_m": 0.03863755556503046,
+      "tail_position_rmse_m": 0.021285548457115618,
+      "termination": "completed",
+      "trace_sha256": "52633765661ef4e4ce92e5e0d3cd440b022431e3da66beebb85c220484196438",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g001_m5_ideal_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "ideal",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 34.34185460000299,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.0008572386366167726,
+      "final_speed_m_s": 0.00013754713316917406,
+      "final_velocity_integral": [
+        -0.0011157750268468278,
+        0.0019212896846002572,
+        0.3772194082665475
+      ],
+      "group_id": 1,
+      "maximum_abs_rate_integral": [
+        12.369786496106423,
+        7.035272097458287,
+        0.26404793272524657
+      ],
+      "maximum_abs_velocity_integral": [
+        0.09561491052446063,
+        0.16552881138634445,
+        0.3772194082665475
+      ],
+      "maximum_attitude_error_deg": 17.366169257377233,
+      "maximum_position_error_m": 0.3057166107139007,
+      "maximum_rate_rad_s": 1.1013335096613273,
+      "maximum_speed_m_s": 0.5973715620875288,
+      "maximum_tilt_deg": 11.126020609362236,
+      "motor": 5,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.05411037285533464,
+      "post_fault_position_rmse_m": 0.05726923982244544,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.00021144082928962365,
+      "tail_position_peak_m": 0.0019132291409579246,
+      "tail_position_rmse_m": 0.0013498507621341111,
+      "termination": "completed",
+      "trace_sha256": "0b1afc023c94068b2a152ac7db2967829a2e993e4fc82754813ed168daf49487",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g001_m5_noise_wind_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "noise_wind",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 35.70199249999132,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.023759329097236208,
+      "final_speed_m_s": 0.017434387864670157,
+      "final_velocity_integral": [
+        -0.0017165810602491306,
+        0.01739014988435276,
+        0.4072753205088638
+      ],
+      "group_id": 1,
+      "maximum_abs_rate_integral": [
+        12.798173741324279,
+        7.232981996071715,
+        0.2638758005277567
+      ],
+      "maximum_abs_velocity_integral": [
+        0.077224113492884,
+        0.15893363544423536,
+        0.4072753205088638
+      ],
+      "maximum_attitude_error_deg": 18.927511290519593,
+      "maximum_position_error_m": 0.2952955214987245,
+      "maximum_rate_rad_s": 1.2303656654595476,
+      "maximum_speed_m_s": 0.6142976487538986,
+      "maximum_tilt_deg": 11.742717120669402,
+      "motor": 5,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.05593973566707518,
+      "post_fault_position_rmse_m": 0.059041684728035546,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.024264129824717127,
+      "tail_position_peak_m": 0.03802310378617978,
+      "tail_position_rmse_m": 0.0211467502022217,
+      "termination": "completed",
+      "trace_sha256": "e90e20756f5168bddf3c8de2faff20f8f40fcc6b7ee306001d0940461c7af197",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g001_m5_wind_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "wind",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 34.09340369992424,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.024427548383642313,
+      "final_speed_m_s": 0.01689267323931118,
+      "final_velocity_integral": [
+        -0.0018913509515002063,
+        0.018272180707027463,
+        0.40647970260654204
+      ],
+      "group_id": 1,
+      "maximum_abs_rate_integral": [
+        12.374353343843998,
+        7.024969141056952,
+        0.26403476230162964
+      ],
+      "maximum_abs_velocity_integral": [
+        0.07755914453519987,
+        0.1605085177836528,
+        0.40647970260654204
+      ],
+      "maximum_attitude_error_deg": 17.357415871974034,
+      "maximum_position_error_m": 0.2946025624990517,
+      "maximum_rate_rad_s": 1.1036751806083531,
+      "maximum_speed_m_s": 0.5898663746638959,
+      "maximum_tilt_deg": 10.873780170337167,
+      "motor": 5,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.05586091443789764,
+      "post_fault_position_rmse_m": 0.05896602275885937,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.023383928067019617,
+      "tail_position_peak_m": 0.03640467832767887,
+      "tail_position_rmse_m": 0.020667065692616955,
+      "termination": "completed",
+      "trace_sha256": "56d5b24e1ab35a8de137ba6bddb835e6acabec352f9129922411ee73df13160b",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g002_m0_delay_noise_wind_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "delay_noise_wind",
+      "config_hash": "9dbd52346a7caa8f3a6ad59ab4dcaab919b793d67dab187f94919996a4230474",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 35.63762110006064,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.014446464867458944,
+      "final_speed_m_s": 0.040190012620829337,
+      "final_velocity_integral": [
+        -0.0036264718919042844,
+        0.0025118338562143735,
+        0.41644189840238144
+      ],
+      "group_id": 2,
+      "maximum_abs_rate_integral": [
+        0.2235824869359047,
+        16.301101640511664,
+        0.26712754094122615
+      ],
+      "maximum_abs_velocity_integral": [
+        0.183028590985564,
+        0.028370040402410094,
+        0.4197299322936493
+      ],
+      "maximum_attitude_error_deg": 21.276255598036,
+      "maximum_position_error_m": 0.32983484778215394,
+      "maximum_rate_rad_s": 1.5937446844326013,
+      "maximum_speed_m_s": 0.6942861201685895,
+      "maximum_tilt_deg": 15.10525281088475,
+      "motor": 0,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.059475120143705304,
+      "post_fault_position_rmse_m": 0.06219166018486584,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.025898710793757575,
+      "tail_position_peak_m": 0.025291529943622968,
+      "tail_position_rmse_m": 0.01831169612727635,
+      "termination": "completed",
+      "trace_sha256": "eeecad7b853a8d731647c03cdbbddb39200d86275a0fc17c7ef3958b8ae8727f",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g002_m0_ideal_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "ideal",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 33.68632580002304,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.0007978610494483489,
+      "final_speed_m_s": 0.00012798818309114348,
+      "final_velocity_integral": [
+        -0.002064765658463164,
+        -0.00011796587698815129,
+        0.377232610989848
+      ],
+      "group_id": 2,
+      "maximum_abs_rate_integral": [
+        0.07972436679389658,
+        14.443014308683257,
+        0.26652426209067126
+      ],
+      "maximum_abs_velocity_integral": [
+        0.19463095404461497,
+        0.012353521014428069,
+        0.377232610989848
+      ],
+      "maximum_attitude_error_deg": 17.618754697530893,
+      "maximum_position_error_m": 0.3105976762295011,
+      "maximum_rate_rad_s": 1.108556126727276,
+      "maximum_speed_m_s": 0.6071030082370436,
+      "maximum_tilt_deg": 11.307626784862027,
+      "motor": 0,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.054803722802055796,
+      "post_fault_position_rmse_m": 0.05748687259906493,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.00019665831103485475,
+      "tail_position_peak_m": 0.00178018773406373,
+      "tail_position_rmse_m": 0.0012561606419976144,
+      "termination": "completed",
+      "trace_sha256": "d7f1797d6d8142059ebfbef0bc55d63a6863178d557201da7a132842977f2ed0",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g002_m0_noise_wind_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "noise_wind",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 35.09299600007944,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.01461513840091292,
+      "final_speed_m_s": 0.040158301920962376,
+      "final_velocity_integral": [
+        -0.003882490430053765,
+        0.002546878868872962,
+        0.41609175367503776
+      ],
+      "group_id": 2,
+      "maximum_abs_rate_integral": [
+        0.12982227984724476,
+        14.980017081797437,
+        0.2670804759484225
+      ],
+      "maximum_abs_velocity_integral": [
+        0.18969830119866285,
+        0.02827050495452556,
+        0.41963412659432364
+      ],
+      "maximum_attitude_error_deg": 18.9785294934738,
+      "maximum_position_error_m": 0.3238929043361583,
+      "maximum_rate_rad_s": 1.2338822385568757,
+      "maximum_speed_m_s": 0.6342615866012142,
+      "maximum_tilt_deg": 12.287775699218233,
+      "motor": 0,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.058520329440024374,
+      "post_fault_position_rmse_m": 0.061184999823169786,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.025769056653635037,
+      "tail_position_peak_m": 0.025291788241345287,
+      "tail_position_rmse_m": 0.018304958194207133,
+      "termination": "completed",
+      "trace_sha256": "490c947e936cf99e43390d2f2fb91ce435433c3f7c4873adff949e46a1f3c3e3",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g002_m0_wind_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "wind",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 33.50590139999986,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.013664147292700525,
+      "final_speed_m_s": 0.03662869952391369,
+      "final_velocity_integral": [
+        -0.004453664363568582,
+        0.0021557490875157084,
+        0.4157775978775139
+      ],
+      "group_id": 2,
+      "maximum_abs_rate_integral": [
+        0.08400534631276604,
+        14.512248786275748,
+        0.26711940194684536
+      ],
+      "maximum_abs_velocity_integral": [
+        0.1914813376993562,
+        0.028002769364718825,
+        0.4188038469562433
+      ],
+      "maximum_attitude_error_deg": 17.675012069669222,
+      "maximum_position_error_m": 0.3214386343599388,
+      "maximum_rate_rad_s": 1.1078643536122748,
+      "maximum_speed_m_s": 0.6135365327402214,
+      "maximum_tilt_deg": 11.426631621114621,
+      "motor": 0,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.058275002928406316,
+      "post_fault_position_rmse_m": 0.06090611316873866,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.02603877608781407,
+      "tail_position_peak_m": 0.024706542384257218,
+      "tail_position_rmse_m": 0.01835232754707683,
+      "termination": "completed",
+      "trace_sha256": "1255b45d23c4537df9c7739a84980b7a955cc699d6461e4e6f46e93177e2ca76",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g002_m1_delay_noise_wind_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "delay_noise_wind",
+      "config_hash": "9dbd52346a7caa8f3a6ad59ab4dcaab919b793d67dab187f94919996a4230474",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 35.71969120006543,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.016064159447612462,
+      "final_speed_m_s": 0.03980955617462878,
+      "final_velocity_integral": [
+        -0.0023048644857636136,
+        0.00046634061522398583,
+        0.41645027830078973
+      ],
+      "group_id": 2,
+      "maximum_abs_rate_integral": [
+        13.95552005290916,
+        8.149017592135273,
+        0.26546611686028226
+      ],
+      "maximum_abs_velocity_integral": [
+        0.0813339476646683,
+        0.16782976037733777,
+        0.4197272316475219
+      ],
+      "maximum_attitude_error_deg": 21.138221191941543,
+      "maximum_position_error_m": 0.31498315474558297,
+      "maximum_rate_rad_s": 1.5676531897290646,
+      "maximum_speed_m_s": 0.6795116977606254,
+      "maximum_tilt_deg": 14.699369690071906,
+      "motor": 1,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.05713751875201301,
+      "post_fault_position_rmse_m": 0.05973030510788235,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.02663067268027896,
+      "tail_position_peak_m": 0.026054167985767485,
+      "tail_position_rmse_m": 0.01881212862708712,
+      "termination": "completed",
+      "trace_sha256": "62183aa7eb4f5ee109f466c7fce3fedc0bc7c26991c6c8b01ebf4fc31378cb91",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g002_m1_ideal_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "ideal",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 33.61229040008038,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.0007967676028017527,
+      "final_speed_m_s": 0.00012781900903502264,
+      "final_velocity_integral": [
+        -0.0009451539766810441,
+        -0.0018362130774863743,
+        0.37723241989052164
+      ],
+      "group_id": 2,
+      "maximum_abs_rate_integral": [
+        12.369775200424776,
+        7.199067168884051,
+        0.2648806129950954
+      ],
+      "maximum_abs_velocity_integral": [
+        0.08781486580436039,
+        0.17152157706038462,
+        0.37723241989052164
+      ],
+      "maximum_attitude_error_deg": 17.437113910219743,
+      "maximum_position_error_m": 0.3082140798928258,
+      "maximum_rate_rad_s": 1.0932775531490104,
+      "maximum_speed_m_s": 0.6011043054745313,
+      "maximum_tilt_deg": 11.246600034574323,
+      "motor": 1,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.054155205972326224,
+      "post_fault_position_rmse_m": 0.056806253537164,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.00019640855168923848,
+      "tail_position_peak_m": 0.0017778291872271106,
+      "tail_position_rmse_m": 0.001254471585022178,
+      "termination": "completed",
+      "trace_sha256": "6c973f05f174f4ccb35a46acffe3be837e80b8ff4e6a086068826569db9e89c9",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g002_m1_noise_wind_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "noise_wind",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 35.575130000011995,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.01643870723468924,
+      "final_speed_m_s": 0.03995390943103698,
+      "final_velocity_integral": [
+        -0.0025300967008430415,
+        0.0005672402508211539,
+        0.4160664369617704
+      ],
+      "group_id": 2,
+      "maximum_abs_rate_integral": [
+        12.835197250200249,
+        7.488148452958156,
+        0.2654894458331495
+      ],
+      "maximum_abs_velocity_integral": [
+        0.08364774042695337,
+        0.17368742442294216,
+        0.41960652553156674
+      ],
+      "maximum_attitude_error_deg": 18.914206448244244,
+      "maximum_position_error_m": 0.3095563490325305,
+      "maximum_rate_rad_s": 1.2171512232790467,
+      "maximum_speed_m_s": 0.6209524197522728,
+      "maximum_tilt_deg": 11.968008361756302,
+      "motor": 1,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.05627018841679032,
+      "post_fault_position_rmse_m": 0.058815410048124926,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.02634800827966072,
+      "tail_position_peak_m": 0.0259246192096957,
+      "tail_position_rmse_m": 0.018791437794488445,
+      "termination": "completed",
+      "trace_sha256": "46a9e663b0e0a7232e5a0f5b5019dafa72bca46d0afcc35ff644b33b92cc3958",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g002_m1_wind_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "wind",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 33.96037340001203,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.0153805663821596,
+      "final_speed_m_s": 0.03679446234635643,
+      "final_velocity_integral": [
+        -0.003066431154931996,
+        0.0001206063883932363,
+        0.4157516465146224
+      ],
+      "group_id": 2,
+      "maximum_abs_rate_integral": [
+        12.476577942329898,
+        7.236247076521044,
+        0.26546413332187824
+      ],
+      "maximum_abs_velocity_integral": [
+        0.08375426604150184,
+        0.17625099624409474,
+        0.418767557796984
+      ],
+      "maximum_attitude_error_deg": 17.57546693592886,
+      "maximum_position_error_m": 0.307503111333657,
+      "maximum_rate_rad_s": 1.1015379412362054,
+      "maximum_speed_m_s": 0.6007748337579897,
+      "maximum_tilt_deg": 11.156405549958711,
+      "motor": 1,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.056080700075524105,
+      "post_fault_position_rmse_m": 0.058594449814182985,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.026547800469189028,
+      "tail_position_peak_m": 0.025343230483808862,
+      "tail_position_rmse_m": 0.01882359595643164,
+      "termination": "completed",
+      "trace_sha256": "5aae0337a8ce40f07ded86779e3a9aea7043fd68e43272a7d844b930b1658457",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g002_m2_delay_noise_wind_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "delay_noise_wind",
+      "config_hash": "9dbd52346a7caa8f3a6ad59ab4dcaab919b793d67dab187f94919996a4230474",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 42.00946600001771,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.01704501762107908,
+      "final_speed_m_s": 0.03935741507723578,
+      "final_velocity_integral": [
+        4.794925588728745e-05,
+        0.0008215408176257162,
+        0.41644080680936174
+      ],
+      "group_id": 2,
+      "maximum_abs_rate_integral": [
+        14.164868590485094,
+        8.10697639053145,
+        0.26708781129487014
+      ],
+      "maximum_abs_velocity_integral": [
+        0.1098615584797638,
+        0.15905657803556902,
+        0.4197032618759209
+      ],
+      "maximum_attitude_error_deg": 20.904036776049843,
+      "maximum_position_error_m": 0.3114592056669642,
+      "maximum_rate_rad_s": 1.5851628561456568,
+      "maximum_speed_m_s": 0.6881812041097862,
+      "maximum_tilt_deg": 14.638254563950136,
+      "motor": 2,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.05709271504945353,
+      "post_fault_position_rmse_m": 0.059683122499016805,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.027695718288468636,
+      "tail_position_peak_m": 0.02601319836043561,
+      "tail_position_rmse_m": 0.018774318619796924,
+      "termination": "completed",
+      "trace_sha256": "cf9e0613bfb89061d8bfd6ee06953390a99e2672f3757fbe63e84e22b66ebe15",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g002_m2_ideal_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "ideal",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 38.0607474000426,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.0007899668593296977,
+      "final_speed_m_s": 0.00012672436615531184,
+      "final_velocity_integral": [
+        0.0011191407527262472,
+        -0.0017147539662730692,
+        0.37723283432920784
+      ],
+      "group_id": 2,
+      "maximum_abs_rate_integral": [
+        12.54672734294596,
+        7.210632369214342,
+        0.2665216296361464
+      ],
+      "maximum_abs_velocity_integral": [
+        0.10713075103603435,
+        0.1618069415733864,
+        0.37723283432920784
+      ],
+      "maximum_attitude_error_deg": 17.63495625234436,
+      "maximum_position_error_m": 0.3121029246479682,
+      "maximum_rate_rad_s": 1.1046725245753677,
+      "maximum_speed_m_s": 0.6076215028767115,
+      "maximum_tilt_deg": 11.351742890094618,
+      "motor": 2,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.054850066786216595,
+      "post_fault_position_rmse_m": 0.05753551049676994,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.00019472302425412426,
+      "tail_position_peak_m": 0.0017626144000796365,
+      "tail_position_rmse_m": 0.0012437468971584137,
+      "termination": "completed",
+      "trace_sha256": "43b7c71e6154514ce19761205f8c9223a2ccf4241a1ecc70bf2d677d9c60ae63",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g002_m2_noise_wind_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "noise_wind",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 41.63526289991569,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.0171594569031067,
+      "final_speed_m_s": 0.03969352295321467,
+      "final_velocity_integral": [
+        -0.00016582687528871455,
+        0.0007889651216847533,
+        0.4160846018484856
+      ],
+      "group_id": 2,
+      "maximum_abs_rate_integral": [
+        13.014899526698752,
+        7.466774378221613,
+        0.2670617251741879
+      ],
+      "maximum_abs_velocity_integral": [
+        0.11106851189210233,
+        0.16405772502642943,
+        0.4196111811592332
+      ],
+      "maximum_attitude_error_deg": 18.91553067561893,
+      "maximum_position_error_m": 0.30703606284721435,
+      "maximum_rate_rad_s": 1.2325791190984736,
+      "maximum_speed_m_s": 0.6299006035254128,
+      "maximum_tilt_deg": 11.945720452203773,
+      "motor": 2,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.056266095321700356,
+      "post_fault_position_rmse_m": 0.05881109903505686,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.02753683450604352,
+      "tail_position_peak_m": 0.02597719402741666,
+      "tail_position_rmse_m": 0.018752418826377175,
+      "termination": "completed",
+      "trace_sha256": "ec3d7877974875b3a933e8c23ce1f78207aa121ba418ca9d76b93e93158c642b",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g002_m2_wind_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "wind",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 38.06569960003253,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.01610477608878282,
+      "final_speed_m_s": 0.037229811290609274,
+      "final_velocity_integral": [
+        -0.0006132051143327361,
+        0.0003237858546723807,
+        0.41576226027973434
+      ],
+      "group_id": 2,
+      "maximum_abs_rate_integral": [
+        12.647420098094104,
+        7.258185670989947,
+        0.2671026622594469
+      ],
+      "maximum_abs_velocity_integral": [
+        0.11336355117636716,
+        0.1665493071736785,
+        0.41878222030305096
+      ],
+      "maximum_attitude_error_deg": 17.775402656449632,
+      "maximum_position_error_m": 0.30653184799808014,
+      "maximum_rate_rad_s": 1.1138532106556231,
+      "maximum_speed_m_s": 0.6079611980070613,
+      "maximum_tilt_deg": 11.181229629475881,
+      "motor": 2,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.056280875453078895,
+      "post_fault_position_rmse_m": 0.05880536178045884,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.027720455170693437,
+      "tail_position_peak_m": 0.025148863843973197,
+      "tail_position_rmse_m": 0.018804321590944903,
+      "termination": "completed",
+      "trace_sha256": "902e1ce14b9dd80520858e75a9411c041ee1661b212c5e97c269cf05b4d91ae2",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g002_m3_delay_noise_wind_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "delay_noise_wind",
+      "config_hash": "9dbd52346a7caa8f3a6ad59ab4dcaab919b793d67dab187f94919996a4230474",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 42.757723100017756,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.0159480435584923,
+      "final_speed_m_s": 0.03894223277562747,
+      "final_velocity_integral": [
+        0.0010465786012307905,
+        0.002844577413223151,
+        0.4164763752358256
+      ],
+      "group_id": 2,
+      "maximum_abs_rate_integral": [
+        0.19448057196461754,
+        16.110495455332973,
+        0.26547941675869574
+      ],
+      "maximum_abs_velocity_integral": [
+        0.1923699110293489,
+        0.024490512225283173,
+        0.41978311598601703
+      ],
+      "maximum_attitude_error_deg": 21.86589128164358,
+      "maximum_position_error_m": 0.3128299475589037,
+      "maximum_rate_rad_s": 1.5732329954020656,
+      "maximum_speed_m_s": 0.6890123537186088,
+      "maximum_tilt_deg": 14.719941268616344,
+      "motor": 3,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.05748211311939664,
+      "post_fault_position_rmse_m": 0.06009318704813729,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.02815203290314253,
+      "tail_position_peak_m": 0.025171524440804983,
+      "tail_position_rmse_m": 0.01818297860744907,
+      "termination": "completed",
+      "trace_sha256": "b51ffa8ea8aaa6152bd43e7eb872e7519f35f9900acc15d7347d23d56c5121d0",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g002_m3_ideal_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "ideal",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 39.55814730003476,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.0007892773735786637,
+      "final_speed_m_s": 0.0001266216882514175,
+      "final_velocity_integral": [
+        0.0020424032293355336,
+        0.00011672894518650344,
+        0.37723217621151034
+      ],
+      "group_id": 2,
+      "maximum_abs_rate_integral": [
+        0.073356872040191,
+        14.28165145209581,
+        0.2648828981978356
+      ],
+      "maximum_abs_velocity_integral": [
+        0.19071861905976117,
+        0.010807774744018174,
+        0.37723217621151034
+      ],
+      "maximum_attitude_error_deg": 17.41045407327553,
+      "maximum_position_error_m": 0.3074300608861228,
+      "maximum_rate_rad_s": 1.0977066762533891,
+      "maximum_speed_m_s": 0.5991467045758097,
+      "maximum_tilt_deg": 11.194355383679923,
+      "motor": 3,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.054185360923569105,
+      "post_fault_position_rmse_m": 0.05683790128249294,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.00019458040639993844,
+      "tail_position_peak_m": 0.0017611857305914243,
+      "tail_position_rmse_m": 0.0012427042703598414,
+      "termination": "completed",
+      "trace_sha256": "229340de72a5ba8c443be752ab4a3fc8ae9208c490ed5dcb20b8a26badfcb0f7",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g002_m3_noise_wind_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "noise_wind",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 42.950157599989325,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.016083217157301193,
+      "final_speed_m_s": 0.03976748107537743,
+      "final_velocity_integral": [
+        0.0008662316219550146,
+        0.0028902542593327927,
+        0.416110942388968
+      ],
+      "group_id": 2,
+      "maximum_abs_rate_integral": [
+        0.13537171388176403,
+        14.809910307963895,
+        0.26550219656984253
+      ],
+      "maximum_abs_velocity_integral": [
+        0.19439298670578462,
+        0.024454044380981067,
+        0.4196750002501679
+      ],
+      "maximum_attitude_error_deg": 19.648989262735522,
+      "maximum_position_error_m": 0.3087245259621425,
+      "maximum_rate_rad_s": 1.2268331354039006,
+      "maximum_speed_m_s": 0.6316071268193678,
+      "maximum_tilt_deg": 11.999618596116596,
+      "motor": 3,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.05665473320343184,
+      "post_fault_position_rmse_m": 0.05922041750593821,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.027955204934244176,
+      "tail_position_peak_m": 0.025210406496876416,
+      "tail_position_rmse_m": 0.018173759370303452,
+      "termination": "completed",
+      "trace_sha256": "e6cb54f2d913ef61a35667dafa8c0da23dda60f22c40283097149551e2a67b79",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g002_m3_wind_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "wind",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 39.964599399943836,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.015292687076522633,
+      "final_speed_m_s": 0.03742089170423383,
+      "final_velocity_integral": [
+        0.00041464636669330936,
+        0.002518221769068097,
+        0.415792369787438
+      ],
+      "group_id": 2,
+      "maximum_abs_rate_integral": [
+        0.09396527834079767,
+        14.365564854306578,
+        0.2654744489801014
+      ],
+      "maximum_abs_velocity_integral": [
+        0.19789916884566244,
+        0.024032649679288372,
+        0.4188275868422178
+      ],
+      "maximum_attitude_error_deg": 17.495553496087496,
+      "maximum_position_error_m": 0.3088579631929095,
+      "maximum_rate_rad_s": 1.10164087513596,
+      "maximum_speed_m_s": 0.6074858082522909,
+      "maximum_tilt_deg": 11.17943123723784,
+      "motor": 3,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.056792865985844085,
+      "post_fault_position_rmse_m": 0.05934478491925323,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.02826370069044241,
+      "tail_position_peak_m": 0.024431822095294195,
+      "tail_position_rmse_m": 0.018274781151672557,
+      "termination": "completed",
+      "trace_sha256": "a55142d3512c275d12306b6cc6026b181ffc7109732cd5a86415517e09364edb",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g002_m4_delay_noise_wind_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "delay_noise_wind",
+      "config_hash": "9dbd52346a7caa8f3a6ad59ab4dcaab919b793d67dab187f94919996a4230474",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 44.340273099951446,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.013740612692956474,
+      "final_speed_m_s": 0.03866934610133887,
+      "final_velocity_integral": [
+        -0.0002477897812467849,
+        0.004664088708706777,
+        0.41656168183994474
+      ],
+      "group_id": 2,
+      "maximum_abs_rate_integral": [
+        14.086500568783569,
+        8.14970062711253,
+        0.2670942415742754
+      ],
+      "maximum_abs_velocity_integral": [
+        0.09187475256481734,
+        0.16662323740861026,
+        0.4198774163907891
+      ],
+      "maximum_attitude_error_deg": 21.99007391668643,
+      "maximum_position_error_m": 0.3273586830128582,
+      "maximum_rate_rad_s": 1.6073256635912363,
+      "maximum_speed_m_s": 0.7041859816369812,
+      "maximum_tilt_deg": 15.201607922957626,
+      "motor": 4,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.05980536952774485,
+      "post_fault_position_rmse_m": 0.06253933815633059,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.02743060534421976,
+      "tail_position_peak_m": 0.025205410236550572,
+      "tail_position_rmse_m": 0.017616773188866796,
+      "termination": "completed",
+      "trace_sha256": "d97922a258a9e346145d890850e489b24c5461f8f287ce9494466d548fca6eb7",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g002_m4_ideal_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "ideal",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 42.55782819993328,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.000790467317580388,
+      "final_speed_m_s": 0.0001268061586498429,
+      "final_velocity_integral": [
+        0.0009164743646110171,
+        0.0018325414216330826,
+        0.37723238649229923
+      ],
+      "group_id": 2,
+      "maximum_abs_rate_integral": [
+        12.477228011724709,
+        7.213945775725707,
+        0.2665267875745961
+      ],
+      "maximum_abs_velocity_integral": [
+        0.08555066735922959,
+        0.17347329439637124,
+        0.37723238649229923
+      ],
+      "maximum_attitude_error_deg": 17.591402350471324,
+      "maximum_position_error_m": 0.3098095493229532,
+      "maximum_rate_rad_s": 1.1123264075318557,
+      "maximum_speed_m_s": 0.6051152927588106,
+      "maximum_tilt_deg": 11.255947706365532,
+      "motor": 4,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.0548395271404592,
+      "post_fault_position_rmse_m": 0.05752444916625125,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.00019485321284498712,
+      "tail_position_peak_m": 0.0017637567300165544,
+      "tail_position_rmse_m": 0.0012445441837270086,
+      "termination": "completed",
+      "trace_sha256": "f009ca8de9a76d430d295c9f382eb150574fdf2ed70239acca2a482f156c8f83",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g002_m4_noise_wind_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "noise_wind",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 44.793758400017396,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.014128079582872563,
+      "final_speed_m_s": 0.039668427407341916,
+      "final_velocity_integral": [
+        -0.0004476005886320489,
+        0.004840670362338062,
+        0.4161543200291174
+      ],
+      "group_id": 2,
+      "maximum_abs_rate_integral": [
+        12.940753443155062,
+        7.482473171348712,
+        0.26706059164708335
+      ],
+      "maximum_abs_velocity_integral": [
+        0.08999416726118237,
+        0.16981520970948105,
+        0.41972192723668456
+      ],
+      "maximum_attitude_error_deg": 19.743278000492975,
+      "maximum_position_error_m": 0.3228078143431999,
+      "maximum_rate_rad_s": 1.2485949700039607,
+      "maximum_speed_m_s": 0.6451353551994593,
+      "maximum_tilt_deg": 12.337834761233934,
+      "motor": 4,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.058892044543472626,
+      "post_fault_position_rmse_m": 0.06157638326490687,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.027173715136587236,
+      "tail_position_peak_m": 0.024841844795172624,
+      "tail_position_rmse_m": 0.01761465387154832,
+      "termination": "completed",
+      "trace_sha256": "92497b0c492fa992989c4a98466c039bee74463e099061dd52d5c77382e468a2",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g002_m4_wind_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "wind",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 41.98116179998033,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.013492284316635681,
+      "final_speed_m_s": 0.03749888792606288,
+      "final_velocity_integral": [
+        -0.000941919109336117,
+        0.004507379547950745,
+        0.41581908368240567
+      ],
+      "group_id": 2,
+      "maximum_abs_rate_integral": [
+        12.51540146767118,
+        7.260230061497743,
+        0.2671052476282063
+      ],
+      "maximum_abs_velocity_integral": [
+        0.09183437180182566,
+        0.1720762409811542,
+        0.4188659874368059
+      ],
+      "maximum_attitude_error_deg": 17.619144831263764,
+      "maximum_position_error_m": 0.3226333642888792,
+      "maximum_rate_rad_s": 1.111728099256928,
+      "maximum_speed_m_s": 0.6207465142500754,
+      "maximum_tilt_deg": 11.473574642685886,
+      "motor": 4,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.05897637456875602,
+      "post_fault_position_rmse_m": 0.061644849692023926,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.02757245911018069,
+      "tail_position_peak_m": 0.023966551480572817,
+      "tail_position_rmse_m": 0.017739765211131082,
+      "termination": "completed",
+      "trace_sha256": "ef1826f525e1cf5e733557743281c2e3017438ccb60ecebf951837bf24b7cf48",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g002_m5_delay_noise_wind_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "delay_noise_wind",
+      "config_hash": "9dbd52346a7caa8f3a6ad59ab4dcaab919b793d67dab187f94919996a4230474",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 44.69864249997772,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.013179415919082003,
+      "final_speed_m_s": 0.039472520231023815,
+      "final_velocity_integral": [
+        -0.002580108496502067,
+        0.004687471727015809,
+        0.41648750622640424
+      ],
+      "group_id": 2,
+      "maximum_abs_rate_integral": [
+        13.995081662251645,
+        7.979537329610609,
+        0.26546342908055287
+      ],
+      "maximum_abs_velocity_integral": [
+        0.09771582452358711,
+        0.1533989600140117,
+        0.41981968768156663
+      ],
+      "maximum_attitude_error_deg": 21.109981733931647,
+      "maximum_position_error_m": 0.33052975612012864,
+      "maximum_rate_rad_s": 1.5869724736801847,
+      "maximum_speed_m_s": 0.6950194798649147,
+      "maximum_tilt_deg": 15.21948971572412,
+      "motor": 5,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.05979708481298799,
+      "post_fault_position_rmse_m": 0.06253061638283225,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.02625690246698238,
+      "tail_position_peak_m": 0.025142344133947184,
+      "tail_position_rmse_m": 0.017702372910052,
+      "termination": "completed",
+      "trace_sha256": "076c7e3919c83e972d25bbceaa72e9c35ffa7e20873383fb015e2a9d23588f31",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g002_m5_ideal_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "ideal",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 41.842246799962595,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.000797136581807622,
+      "final_speed_m_s": 0.0001278798018497316,
+      "final_velocity_integral": [
+        -0.0011471945689850908,
+        0.0017183841207501502,
+        0.3772319787852361
+      ],
+      "group_id": 2,
+      "maximum_abs_rate_integral": [
+        12.378102119960648,
+        7.066542952046585,
+        0.26488468357828016
+      ],
+      "maximum_abs_velocity_integral": [
+        0.10602197550879401,
+        0.16010105694386575,
+        0.3772319787852361
+      ],
+      "maximum_attitude_error_deg": 17.39913637267577,
+      "maximum_position_error_m": 0.3059355719444895,
+      "maximum_rate_rad_s": 1.1024269039041237,
+      "maximum_speed_m_s": 0.5986171930521099,
+      "maximum_tilt_deg": 11.152167465175069,
+      "motor": 5,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.05413779749111395,
+      "post_fault_position_rmse_m": 0.05678798326032942,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.00019650658997691882,
+      "tail_position_peak_m": 0.0017786792732812416,
+      "tail_position_rmse_m": 0.0012550623304769665,
+      "termination": "completed",
+      "trace_sha256": "23683ceb0fd413ae6d50d178df0337e45cdc564c4a51d7b58e5ef8132c61639a",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g002_m5_noise_wind_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "noise_wind",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 44.9836207999615,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.013371480021041103,
+      "final_speed_m_s": 0.03978496284711047,
+      "final_velocity_integral": [
+        -0.0028388262214316343,
+        0.004720306383865287,
+        0.41612659263619556
+      ],
+      "group_id": 2,
+      "maximum_abs_rate_integral": [
+        12.848137240620002,
+        7.332073812704438,
+        0.2654971609106356
+      ],
+      "maximum_abs_velocity_integral": [
+        0.10150844849191393,
+        0.1564491540464329,
+        0.41970703070064946
+      ],
+      "maximum_attitude_error_deg": 18.946828755037153,
+      "maximum_position_error_m": 0.32501343811767697,
+      "maximum_rate_rad_s": 1.2316023365679059,
+      "maximum_speed_m_s": 0.6357396813094358,
+      "maximum_tilt_deg": 12.335097713679724,
+      "motor": 5,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.05883875652968289,
+      "post_fault_position_rmse_m": 0.06152027672238861,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.02614855178966725,
+      "tail_position_peak_m": 0.02495800908437371,
+      "tail_position_rmse_m": 0.01770666001008546,
+      "termination": "completed",
+      "trace_sha256": "2e79b0f9738080e3462bedeeaec9fcfac9fe5d98a342b614ccf59b12e1cdff6f",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 30.0,
+      "candidate": "velocity_z09",
+      "case_id": "g002_m5_wind_30s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "wind",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 3001,
+      "duration_s": 30.0,
+      "elapsed_s": 41.81634929997381,
+      "failed_checks": [],
+      "family": "hover",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.012574069652523265,
+      "final_speed_m_s": 0.0371419725697005,
+      "final_velocity_integral": [
+        -0.003362728466211964,
+        0.004350699055831006,
+        0.41580922760228434
+      ],
+      "group_id": 2,
+      "maximum_abs_rate_integral": [
+        12.409781768708449,
+        7.094872594344373,
+        0.26546829916317616
+      ],
+      "maximum_abs_velocity_integral": [
+        0.10209416077801187,
+        0.1584288327312803,
+        0.4188519696123525
+      ],
+      "maximum_attitude_error_deg": 17.401034529967756,
+      "maximum_position_error_m": 0.323273395765282,
+      "maximum_rate_rad_s": 1.0982672671547729,
+      "maximum_speed_m_s": 0.6128952021557958,
+      "maximum_tilt_deg": 11.42610521507126,
+      "motor": 5,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.05872851879491839,
+      "post_fault_position_rmse_m": 0.06138379743398845,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.026507288745143485,
+      "tail_position_peak_m": 0.024030911244810944,
+      "tail_position_rmse_m": 0.01780398305663146,
+      "termination": "completed",
+      "trace_sha256": "baff3da873648d26c6878013f1189a74de298cae08499aa744c3ffd7ef272722",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 20.0,
+      "candidate": "velocity_z09",
+      "case_id": "g003_m0_delay_noise_wind_20s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "delay_noise_wind",
+      "config_hash": "9dbd52346a7caa8f3a6ad59ab4dcaab919b793d67dab187f94919996a4230474",
+      "controller_evaluations": 2001,
+      "duration_s": 20.0,
+      "elapsed_s": 29.293186300084926,
+      "failed_checks": [],
+      "family": "line",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.016094686934454965,
+      "final_speed_m_s": 0.023954910139365758,
+      "final_velocity_integral": [
+        0.0024727056469271533,
+        -0.0007333004094231819,
+        0.34395391843522716
+      ],
+      "group_id": 3,
+      "maximum_abs_rate_integral": [
+        0.27692819706510297,
+        16.083272743445,
+        0.23019214417760725
+      ],
+      "maximum_abs_velocity_integral": [
+        0.14622814131089512,
+        0.029884852487213072,
+        0.39680949379768576
+      ],
+      "maximum_attitude_error_deg": 21.545626385611612,
+      "maximum_position_error_m": 0.31326828525392597,
+      "maximum_rate_rad_s": 1.5750787695961204,
+      "maximum_speed_m_s": 0.9981847341500885,
+      "maximum_tilt_deg": 13.976197554088175,
+      "motor": 0,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.06851371238401008,
+      "post_fault_position_rmse_m": 0.07324002410203698,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.029404822281986168,
+      "tail_position_peak_m": 0.038231503151091153,
+      "tail_position_rmse_m": 0.022129997759122808,
+      "termination": "completed",
+      "trace_sha256": "941339ed95864bf83e90e27637fb88d00bab9e624347147daaa5bfa62de37247",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 20.0,
+      "candidate": "velocity_z09",
+      "case_id": "g003_m0_ideal_20s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "ideal",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 2001,
+      "duration_s": 20.0,
+      "elapsed_s": 27.69195930007845,
+      "failed_checks": [],
+      "family": "line",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.0031655718384968135,
+      "final_speed_m_s": 0.0005221451200382244,
+      "final_velocity_integral": [
+        -0.007982727990414875,
+        0.0014468660451743324,
+        0.37572759903718855
+      ],
+      "group_id": 3,
+      "maximum_abs_rate_integral": [
+        0.1164638749022486,
+        14.227290813535275,
+        0.23047859124332032
+      ],
+      "maximum_abs_velocity_integral": [
+        0.17081883161725922,
+        0.01581526273295686,
+        0.37572759903718855
+      ],
+      "maximum_attitude_error_deg": 17.4716606739024,
+      "maximum_position_error_m": 0.2968680302168867,
+      "maximum_rate_rad_s": 1.104146758706715,
+      "maximum_speed_m_s": 0.915264181177914,
+      "maximum_tilt_deg": 11.5403794661711,
+      "motor": 0,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.06351214215964099,
+      "post_fault_position_rmse_m": 0.06812736188277865,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.0008430643341915283,
+      "tail_position_peak_m": 0.007306585380932196,
+      "tail_position_rmse_m": 0.005073200254421077,
+      "termination": "completed",
+      "trace_sha256": "aba1219b40b2d76d7555fa59ad333c25286daef1400fb89dc349a12748dd4deb",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 20.0,
+      "candidate": "velocity_z09",
+      "case_id": "g003_m0_noise_wind_20s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "noise_wind",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 2001,
+      "duration_s": 20.0,
+      "elapsed_s": 29.047941399971023,
+      "failed_checks": [],
+      "family": "line",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.015421722013266586,
+      "final_speed_m_s": 0.0238578312159293,
+      "final_velocity_integral": [
+        0.002465698333865521,
+        -0.0007091706584588004,
+        0.3433493690520038
+      ],
+      "group_id": 3,
+      "maximum_abs_rate_integral": [
+        0.13652789997621428,
+        14.785082381753396,
+        0.23015912908096395
+      ],
+      "maximum_abs_velocity_integral": [
+        0.15236278421501462,
+        0.030419060589247145,
+        0.38950056761788715
+      ],
+      "maximum_attitude_error_deg": 19.529951854702926,
+      "maximum_position_error_m": 0.3022842884511166,
+      "maximum_rate_rad_s": 1.2303858900973166,
+      "maximum_speed_m_s": 0.9430504069548714,
+      "maximum_tilt_deg": 12.477474866764332,
+      "motor": 0,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.06611198634745213,
+      "post_fault_position_rmse_m": 0.0705782491669192,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.028937991159375988,
+      "tail_position_peak_m": 0.03828617264376724,
+      "tail_position_rmse_m": 0.022027095810134113,
+      "termination": "completed",
+      "trace_sha256": "e4fb5cdf78cccca09c716eb8924f4c0184dd6324bccfba785e841fcda9ef6ce7",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 20.0,
+      "candidate": "velocity_z09",
+      "case_id": "g003_m0_wind_20s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "wind",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 2001,
+      "duration_s": 20.0,
+      "elapsed_s": 27.794437399948947,
+      "failed_checks": [],
+      "family": "line",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.014655410032799793,
+      "final_speed_m_s": 0.02429892956283075,
+      "final_velocity_integral": [
+        0.002464580993848758,
+        -0.00011594457155109919,
+        0.34275473884601154
+      ],
+      "group_id": 3,
+      "maximum_abs_rate_integral": [
+        0.09928575988083169,
+        14.363080824630185,
+        0.2300494697946255
+      ],
+      "maximum_abs_velocity_integral": [
+        0.15499368812386324,
+        0.030245863702433536,
+        0.388290637830833
+      ],
+      "maximum_attitude_error_deg": 17.613817872278,
+      "maximum_position_error_m": 0.29761400556611506,
+      "maximum_rate_rad_s": 1.112685510799525,
+      "maximum_speed_m_s": 0.9225958386162346,
+      "maximum_tilt_deg": 11.877270073506857,
+      "motor": 0,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.06524774018624342,
+      "post_fault_position_rmse_m": 0.06962443829706215,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.028304436606768738,
+      "tail_position_peak_m": 0.037414637729833514,
+      "tail_position_rmse_m": 0.022090479582230878,
+      "termination": "completed",
+      "trace_sha256": "0c82fb7c19c72807f342778c0c502fc7d188cb20ca4700fb816d0377273abe8f",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 20.0,
+      "candidate": "velocity_z09",
+      "case_id": "g004_m0_delay_noise_wind_20s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "delay_noise_wind",
+      "config_hash": "9dbd52346a7caa8f3a6ad59ab4dcaab919b793d67dab187f94919996a4230474",
+      "controller_evaluations": 2001,
+      "duration_s": 20.0,
+      "elapsed_s": 28.83022600004915,
+      "failed_checks": [],
+      "family": "line",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.0030964484079851542,
+      "final_speed_m_s": 0.0296108315686696,
+      "final_velocity_integral": [
+        -0.01588486370651969,
+        -0.010567273426869247,
+        0.38678838535809884
+      ],
+      "group_id": 4,
+      "maximum_abs_rate_integral": [
+        0.23117525399571529,
+        16.054776396183303,
+        0.23353949352900283
+      ],
+      "maximum_abs_velocity_integral": [
+        0.19210465848148134,
+        0.035455004027279476,
+        0.4178896445557172
+      ],
+      "maximum_attitude_error_deg": 21.36432589159074,
+      "maximum_position_error_m": 0.3223374857605207,
+      "maximum_rate_rad_s": 1.5629223747916534,
+      "maximum_speed_m_s": 0.7744010073811125,
+      "maximum_tilt_deg": 14.991007983066524,
+      "motor": 0,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.07057010511319621,
+      "post_fault_position_rmse_m": 0.0758939787311973,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.02722785125690822,
+      "tail_position_peak_m": 0.03146486236665765,
+      "tail_position_rmse_m": 0.020483466828237498,
+      "termination": "completed",
+      "trace_sha256": "5face0566255eb344845ab2c0d76bd99ab50183bc70a346fdadf82d17223cd08",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 20.0,
+      "candidate": "velocity_z09",
+      "case_id": "g004_m0_ideal_20s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "ideal",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 2001,
+      "duration_s": 20.0,
+      "elapsed_s": 27.676281100022607,
+      "failed_checks": [],
+      "family": "line",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.0040904990052489315,
+      "final_speed_m_s": 0.000667886418857306,
+      "final_velocity_integral": [
+        -0.010347684539361704,
+        0.00194546717317296,
+        0.37566528347088846
+      ],
+      "group_id": 4,
+      "maximum_abs_rate_integral": [
+        0.1352967537921628,
+        14.33829858854937,
+        0.23343322680540146
+      ],
+      "maximum_abs_velocity_integral": [
+        0.1934191856159834,
+        0.019003358818550323,
+        0.37566528347088846
+      ],
+      "maximum_attitude_error_deg": 17.476284582651658,
+      "maximum_position_error_m": 0.3092652484388371,
+      "maximum_rate_rad_s": 1.0991918091825885,
+      "maximum_speed_m_s": 0.703384619966317,
+      "maximum_tilt_deg": 11.271125160112549,
+      "motor": 0,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.06695886046417407,
+      "post_fault_position_rmse_m": 0.07202641908473004,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.0010598940341100323,
+      "tail_position_peak_m": 0.009324523651092128,
+      "tail_position_rmse_m": 0.006512875512015034,
+      "termination": "completed",
+      "trace_sha256": "f2203d37dd36188b358d05b233f72ddd1f17f3a4a368b2a90b2ae032f9bcd09e",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 20.0,
+      "candidate": "velocity_z09",
+      "case_id": "g004_m0_noise_wind_20s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "noise_wind",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 2001,
+      "duration_s": 20.0,
+      "elapsed_s": 28.71701589995064,
+      "failed_checks": [],
+      "family": "line",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.0034289268071074712,
+      "final_speed_m_s": 0.028955117254733348,
+      "final_velocity_integral": [
+        -0.015937879098588927,
+        -0.010488676781411127,
+        0.38651999185987773
+      ],
+      "group_id": 4,
+      "maximum_abs_rate_integral": [
+        0.2112990486311375,
+        14.785354659332954,
+        0.23358050114588275
+      ],
+      "maximum_abs_velocity_integral": [
+        0.19926501765135068,
+        0.035568267706884815,
+        0.4164637155180955
+      ],
+      "maximum_attitude_error_deg": 19.194049280823304,
+      "maximum_position_error_m": 0.3184940361303625,
+      "maximum_rate_rad_s": 1.2165027121001286,
+      "maximum_speed_m_s": 0.7241734684174946,
+      "maximum_tilt_deg": 12.282261701398255,
+      "motor": 0,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.07007523298967268,
+      "post_fault_position_rmse_m": 0.07531363914658266,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.02709455306604561,
+      "tail_position_peak_m": 0.032013529395313066,
+      "tail_position_rmse_m": 0.0205332448360836,
+      "termination": "completed",
+      "trace_sha256": "b27d9dbff78978fd335f37d1a58f62565cca15886653e03148719703a1832fa9",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 20.0,
+      "candidate": "velocity_z09",
+      "case_id": "g004_m0_wind_20s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "wind",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 2001,
+      "duration_s": 20.0,
+      "elapsed_s": 27.862577899941243,
+      "failed_checks": [],
+      "family": "line",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.004810144961464258,
+      "final_speed_m_s": 0.02671143997697051,
+      "final_velocity_integral": [
+        -0.015308749181859586,
+        -0.009778319376384357,
+        0.3858694835991623
+      ],
+      "group_id": 4,
+      "maximum_abs_rate_integral": [
+        0.17720380555527854,
+        14.320549271764047,
+        0.23360481096328245
+      ],
+      "maximum_abs_velocity_integral": [
+        0.20227226230940465,
+        0.03529914099815523,
+        0.41576714994777125
+      ],
+      "maximum_attitude_error_deg": 17.431529933987417,
+      "maximum_position_error_m": 0.3177974201583235,
+      "maximum_rate_rad_s": 1.0914243328191549,
+      "maximum_speed_m_s": 0.7030602835272757,
+      "maximum_tilt_deg": 11.511946766525117,
+      "motor": 0,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.07004604051020527,
+      "post_fault_position_rmse_m": 0.07526700998413949,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.026516728583572673,
+      "tail_position_peak_m": 0.03212577437982722,
+      "tail_position_rmse_m": 0.020643848029946493,
+      "termination": "completed",
+      "trace_sha256": "48f9476b76957252bb293fd81cd22d398e3eb957b393cf55b45d23466d590d0a",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 20.0,
+      "candidate": "velocity_z09",
+      "case_id": "g005_m0_delay_noise_wind_20s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "delay_noise_wind",
+      "config_hash": "9dbd52346a7caa8f3a6ad59ab4dcaab919b793d67dab187f94919996a4230474",
+      "controller_evaluations": 2001,
+      "duration_s": 20.0,
+      "elapsed_s": 27.748883299995214,
+      "failed_checks": [],
+      "family": "circle",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.009802908509096025,
+      "final_speed_m_s": 0.028564127739509382,
+      "final_velocity_integral": [
+        -0.016100477521562965,
+        -0.009143080636068683,
+        0.3659029745697329
+      ],
+      "group_id": 5,
+      "maximum_abs_rate_integral": [
+        1.061705856413559,
+        16.93883974645403,
+        0.23384624957696618
+      ],
+      "maximum_abs_velocity_integral": [
+        0.24396794903328242,
+        0.08698179433734995,
+        0.43102379203951335
+      ],
+      "maximum_attitude_error_deg": 25.489662128495493,
+      "maximum_position_error_m": 0.3953158001097057,
+      "maximum_rate_rad_s": 1.9068041136119713,
+      "maximum_speed_m_s": 1.4075455549931686,
+      "maximum_tilt_deg": 21.627731256253966,
+      "motor": 0,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.0935155114410711,
+      "post_fault_position_rmse_m": 0.10169145844945769,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.02366120879558201,
+      "tail_position_peak_m": 0.03231434427638542,
+      "tail_position_rmse_m": 0.021227815110432834,
+      "termination": "completed",
+      "trace_sha256": "8da60af7304e42ecfbb9994e8b859d0f6a0364a180aa93d6e0bdc9d7de12d0dd",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 20.0,
+      "candidate": "velocity_z09",
+      "case_id": "g005_m0_ideal_20s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "ideal",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 2001,
+      "duration_s": 20.0,
+      "elapsed_s": 27.747694800025783,
+      "failed_checks": [],
+      "family": "circle",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.0047589473491760955,
+      "final_speed_m_s": 0.0007724963988975268,
+      "final_velocity_integral": [
+        -0.012150153993978247,
+        -0.0017772601450677392,
+        0.375721435206837
+      ],
+      "group_id": 5,
+      "maximum_abs_rate_integral": [
+        1.0164766253867064,
+        15.281231061451946,
+        0.2338062090198293
+      ],
+      "maximum_abs_velocity_integral": [
+        0.24442348711775744,
+        0.06035495416453766,
+        0.375721435206837
+      ],
+      "maximum_attitude_error_deg": 21.831381236162937,
+      "maximum_position_error_m": 0.41581739502728793,
+      "maximum_rate_rad_s": 1.4251305426139214,
+      "maximum_speed_m_s": 1.3423539537576168,
+      "maximum_tilt_deg": 18.94300719769419,
+      "motor": 0,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.09382952373063042,
+      "post_fault_position_rmse_m": 0.10207863886922705,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.0012127109196026942,
+      "tail_position_peak_m": 0.010768125463910497,
+      "tail_position_rmse_m": 0.00754857995972477,
+      "termination": "completed",
+      "trace_sha256": "f9ccd26aeb55b019fff2bd37ae7ba09422aae5928783400531745afcf3322212",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 20.0,
+      "candidate": "velocity_z09",
+      "case_id": "g005_m0_noise_wind_20s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "noise_wind",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 2001,
+      "duration_s": 20.0,
+      "elapsed_s": 27.76231939997524,
+      "failed_checks": [],
+      "family": "circle",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.009442845480801963,
+      "final_speed_m_s": 0.026907409553119026,
+      "final_velocity_integral": [
+        -0.016135616054360525,
+        -0.009165553363985774,
+        0.3654080183306873
+      ],
+      "group_id": 5,
+      "maximum_abs_rate_integral": [
+        1.027640209895334,
+        15.61907915713416,
+        0.2338500975083714
+      ],
+      "maximum_abs_velocity_integral": [
+        0.24954592073790605,
+        0.08838528700401647,
+        0.42751410328014244
+      ],
+      "maximum_attitude_error_deg": 23.31312835907773,
+      "maximum_position_error_m": 0.3981503112683478,
+      "maximum_rate_rad_s": 1.5482080599915553,
+      "maximum_speed_m_s": 1.356172584931201,
+      "maximum_tilt_deg": 19.342085457965936,
+      "motor": 0,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.09344658982434004,
+      "post_fault_position_rmse_m": 0.10145514477940643,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.022841632363467552,
+      "tail_position_peak_m": 0.03212156082513669,
+      "tail_position_rmse_m": 0.021122748471743225,
+      "termination": "completed",
+      "trace_sha256": "29a76f9a0cd8c24de7ac1ad5d97bb478e2bd3b5c52b5b6f48b66f7914c56d5fc",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 20.0,
+      "candidate": "velocity_z09",
+      "case_id": "g005_m0_wind_20s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "wind",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 2001,
+      "duration_s": 20.0,
+      "elapsed_s": 27.83537129999604,
+      "failed_checks": [],
+      "family": "circle",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.009073351764295115,
+      "final_speed_m_s": 0.029100935193548057,
+      "final_velocity_integral": [
+        -0.015252673787695722,
+        -0.009223042768730936,
+        0.3656321440873646
+      ],
+      "group_id": 5,
+      "maximum_abs_rate_integral": [
+        1.0134412484473363,
+        15.192715671811772,
+        0.2337775337052013
+      ],
+      "maximum_abs_velocity_integral": [
+        0.2532221799460905,
+        0.08960722577521646,
+        0.42628675708466357
+      ],
+      "maximum_attitude_error_deg": 21.77897745787669,
+      "maximum_position_error_m": 0.40216544857357717,
+      "maximum_rate_rad_s": 1.4248652201658538,
+      "maximum_speed_m_s": 1.3398503396428074,
+      "maximum_tilt_deg": 18.858431197082417,
+      "motor": 0,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.09420010559263059,
+      "post_fault_position_rmse_m": 0.10215355791390186,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.022596488199336243,
+      "tail_position_peak_m": 0.0333240374741357,
+      "tail_position_rmse_m": 0.021590706237140683,
+      "termination": "completed",
+      "trace_sha256": "205a71f06012ee5a41b2a76bde64cd2db62ce82a22676abcbbdf7339498e9a6e",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 20.0,
+      "candidate": "velocity_z09",
+      "case_id": "g006_m0_delay_noise_wind_20s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "delay_noise_wind",
+      "config_hash": "9dbd52346a7caa8f3a6ad59ab4dcaab919b793d67dab187f94919996a4230474",
+      "controller_evaluations": 2001,
+      "duration_s": 20.0,
+      "elapsed_s": 24.66884990001563,
+      "failed_checks": [],
+      "family": "circle",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.019404574022167408,
+      "final_speed_m_s": 0.014293285541829862,
+      "final_velocity_integral": [
+        -0.01626452653183855,
+        0.012416726684762059,
+        0.4518054608432072
+      ],
+      "group_id": 6,
+      "maximum_abs_rate_integral": [
+        1.00494838260084,
+        16.230516985869116,
+        0.23326598767865145
+      ],
+      "maximum_abs_velocity_integral": [
+        0.2801781311129049,
+        0.07417768325409703,
+        0.4518054608432072
+      ],
+      "maximum_attitude_error_deg": 23.549347733229897,
+      "maximum_position_error_m": 0.40087852986668887,
+      "maximum_rate_rad_s": 1.7582542193184219,
+      "maximum_speed_m_s": 1.259882844886575,
+      "maximum_tilt_deg": 21.603034113746602,
+      "motor": 0,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.09709706195587427,
+      "post_fault_position_rmse_m": 0.10382893492898375,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.019234738570229386,
+      "tail_position_peak_m": 0.027484212866243765,
+      "tail_position_rmse_m": 0.0184510735796109,
+      "termination": "completed",
+      "trace_sha256": "4340c69e43e6bd3908cc84d15b5d251666310fa3a7074941daf4e8bff070d9ce",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 20.0,
+      "candidate": "velocity_z09",
+      "case_id": "g006_m0_ideal_20s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "ideal",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 2001,
+      "duration_s": 20.0,
+      "elapsed_s": 26.421744199935347,
+      "failed_checks": [],
+      "family": "circle",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.004084012822445432,
+      "final_speed_m_s": 0.0006624694835266615,
+      "final_velocity_integral": [
+        -0.010478160685861177,
+        0.00114703283754971,
+        0.37598930244775614
+      ],
+      "group_id": 6,
+      "maximum_abs_rate_integral": [
+        0.9626931194368268,
+        14.734043773667489,
+        0.23243772290545378
+      ],
+      "maximum_abs_velocity_integral": [
+        0.25594130424692646,
+        0.0593876460253844,
+        0.37598930244775614
+      ],
+      "maximum_attitude_error_deg": 20.197663609448682,
+      "maximum_position_error_m": 0.4042716721874754,
+      "maximum_rate_rad_s": 1.3079090424796076,
+      "maximum_speed_m_s": 1.1491607916238817,
+      "maximum_tilt_deg": 18.154744183879142,
+      "motor": 0,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.09455688335781368,
+      "post_fault_position_rmse_m": 0.10111217229997377,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.0010398736544002772,
+      "tail_position_peak_m": 0.009239472574515973,
+      "tail_position_rmse_m": 0.006475896961987407,
+      "termination": "completed",
+      "trace_sha256": "66476dc4b31bb83eba965cb454a941a28206a27a76c97e1ea0c0ac072520fdb8",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 20.0,
+      "candidate": "velocity_z09",
+      "case_id": "g006_m0_noise_wind_20s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "noise_wind",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 2001,
+      "duration_s": 20.0,
+      "elapsed_s": 24.83391320006922,
+      "failed_checks": [],
+      "family": "circle",
+      "feedback_mode": "observed_feedback",
+      "final_position_error_m": 0.019326658718089283,
+      "final_speed_m_s": 0.015029447989654741,
+      "final_velocity_integral": [
+        -0.016519446336903252,
+        0.012291193023723087,
+        0.4513887126535434
+      ],
+      "group_id": 6,
+      "maximum_abs_rate_integral": [
+        0.955418952474304,
+        15.022317704319027,
+        0.23331169537861685
+      ],
+      "maximum_abs_velocity_integral": [
+        0.2817246039609017,
+        0.07567058213027535,
+        0.4513887126535434
+      ],
+      "maximum_attitude_error_deg": 21.532028035069878,
+      "maximum_position_error_m": 0.4081614682920133,
+      "maximum_rate_rad_s": 1.4248025293260054,
+      "maximum_speed_m_s": 1.1771208204742054,
+      "maximum_tilt_deg": 19.23113603792775,
+      "motor": 0,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.09843402538805372,
+      "post_fault_position_rmse_m": 0.10526337191070761,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.018721333769968866,
+      "tail_position_peak_m": 0.027381030130149347,
+      "tail_position_rmse_m": 0.018561818345145382,
+      "termination": "completed",
+      "trace_sha256": "fd299fce43cbd318271896e6d4a99edb1644f210d19d7957aedfc95d154a8a9d",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "actual_duration_s": 20.0,
+      "candidate": "velocity_z09",
+      "case_id": "g006_m0_wind_20s",
+      "checks": {
+        "completed": true,
+        "final_error": true,
+        "rate": true,
+        "rmse": true,
+        "saturation": true,
+        "tail_mean_speed_m_s": true,
+        "tail_position_peak_m": true,
+        "tail_position_rmse_m": true,
+        "tilt": true
+      },
+      "condition": "wind",
+      "config_hash": "bcf8e537fd9d2b36853cc0a5dbc97f776222d68a165e947109cb7d161c7ec8c0",
+      "controller_evaluations": 2001,
+      "duration_s": 20.0,
+      "elapsed_s": 26.82837370003108,
+      "failed_checks": [],
+      "family": "circle",
+      "feedback_mode": "ideal_feedback",
+      "final_position_error_m": 0.021269278674026948,
+      "final_speed_m_s": 0.01336266659357246,
+      "final_velocity_integral": [
+        -0.017261576601497193,
+        0.012538806687503429,
+        0.4507373198182629
+      ],
+      "group_id": 6,
+      "maximum_abs_rate_integral": [
+        0.9762655403640316,
+        14.56862847541296,
+        0.23332242198521566
+      ],
+      "maximum_abs_velocity_integral": [
+        0.2836769494003376,
+        0.07596321445219752,
+        0.4507373198182629
+      ],
+      "maximum_attitude_error_deg": 20.00210190608143,
+      "maximum_position_error_m": 0.4125116030346411,
+      "maximum_rate_rad_s": 1.3000469182910217,
+      "maximum_speed_m_s": 1.1696993820251367,
+      "maximum_tilt_deg": 18.62965214035701,
+      "motor": 0,
+      "nominal_bound_fraction": 0.0,
+      "passed": true,
+      "plan_signature": "40263ea7671b66cc8d6cf1b274fd34f7179f662c5026eacdbd10953c979ff1b3",
+      "position_rmse_m": 0.09947682415294505,
+      "post_fault_position_rmse_m": 0.10638553951416983,
+      "rate_integral_blocked_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rate_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "rate_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_mean_speed_m_s": 0.01858618548254684,
+      "tail_position_peak_m": 0.027045512908749944,
+      "tail_position_rmse_m": 0.01845545966223614,
+      "termination": "completed",
+      "trace_sha256": "ae745fdf451e731bcb66d9461549d9c832e421fe36a45878b9d148093b567eae",
+      "velocity_integral_first_limit_time_s": [
+        null,
+        null,
+        null
+      ],
+      "velocity_integral_limit_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "runner_sha256": "c93c40297a14f2bc4b6be29b953ce310f8859921d2bd78b819eed4d882d51822",
+  "stage": "long",
+  "summary": {
+    "velocity_z09": {
+      "cases": 64,
+      "failed_cases": [],
+      "passed": 64,
+      "position_reserve_fraction": 0.6020927033882197,
+      "worst_final_error_m": 0.025047960117587257,
+      "worst_rmse_m": 0.09947682415294505
+    }
+  }
+}

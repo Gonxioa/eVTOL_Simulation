@@ -1,0 +1,11 @@
+{
+  "executed_utc": "2026-10-11T02:05:42.035002+00:00",
+  "stage": "supplementary antiwindup stress export",
+  "error": "numpy.bool_ in acceptance dictionary not JSON serializable",
+  "numerical_results_rejected": false,
+  "physics_algorithm_changed": false,
+  "executed_script_sha256": "281277aeb156b174491cc76692bbbc167327a0e278aefe089d920f4557444b9a",
+  "retained_trace": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\antiwindup\\yaw_rate_recovery.csv",
+  "trace_sha256": "77c70e81d15b118fb993859fa29e1de748ed614eb0a7cef822ee2962c8d2e65c",
+  "repair": "Convert acceptance booleans to Python bool; repeat into fresh output"
+}

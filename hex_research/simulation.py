@@ -132,15 +132,29 @@ def export(run,path,scenario,group_id):
         for j,axis in enumerate('xyz'):
             row['truth_'+axis]=s[j]; row['truth_v'+axis]=s[j+3]; row['truth_w'+axis]=s[j+10]; row['wind_'+axis]=r['wind'][j]
             row['truth_angle_'+axis]=truth_euler[j]
+            for key in ('velocity_integral','rate_integral','velocity_integral_applied','rate_integral_applied',
+                        'position_error','velocity_error','attitude_error_vector','rate_reference','rate_error',
+                        'observed_velocity','observed_rate','rate_integral_requested_step','rate_integral_allowed_step',
+                        'rate_integral_actual_step','velocity_integral_feedback_step','velocity_integral_antiwindup_step',
+                        'velocity_integral_actual_step'):
+                row[f'control_{key}_{axis}']=float(c[key][j])
+            for key in ('rate_integral_blocked_nominal','rate_integral_limit_active','rate_integral_clipped_step',
+                        'velocity_integral_limit_active','velocity_integral_clipped_step'):
+                row[f'control_{key}_{axis}']=int(c[key][j])
             for prefix,values in [('desired_moment',c['desired_wrench'][1:]),('nominal_moment',c['nominal_allocated_wrench'][1:]),('steady_fault_moment',np.array([*np.cross(p['rotor_positions'],np.c_[np.zeros((6,2)),steady]).sum(axis=0)[:2],sum(p['yaw_sign']*p['kQ']/p['kT']*steady)])),('dynamic_propulsive_moment',actual['dynamic_propulsive_wrench'][1:]),('total_dynamic_moment',r['total_moment_body'])]: row[f'{prefix}_{axis}']=values[j]
         for motor in range(6):
             row[f'cmd_motor{motor}']=cmd[motor]; row[f'truth_rotor{motor}']=s[13+motor]
             row[f'measured_rotor{motor}']=obs['rotor_measurement'][motor]; row[f'effectiveness{motor}']=eta[motor]; row[f'dynamic_rotor_thrust{motor}']=actual['dynamic_rotor_thrusts'][motor]
+            row[f'control_allocator_lower_motor{motor}']=int(c['allocator_lower_active'][motor])
+            row[f'control_allocator_upper_motor{motor}']=int(c['allocator_upper_active'][motor])
+        row['control_attitude_error_angle_rad']=c['attitude_error_angle_rad']
+        for j,name in enumerate(('thrust','moment_x','moment_y','moment_z')):
+            row[f'control_nominal_residual_{name}']=float(c['nominal_residual_wrench'][j])
         rows.append(row)
     df=pd.DataFrame(rows); df['yaw']=np.unwrap(df['yaw'])
     if not np.isfinite(df.select_dtypes(include=np.number).drop(columns=['fault_time'],errors='ignore').to_numpy()).all(): raise ValueError('Nonfinite export')
     path=Path(path); path.parent.mkdir(parents=True,exist_ok=True); tmp=path.with_suffix('.csv.tmp'); df.to_csv(tmp,index=False); tmp.replace(path)
-    side={'schema_version':4,'config':run['config'],'provenance':fingerprint(run['config']),'csv_sha256':sha256_file(path),
+    side={'schema_version':4,'control_log_schema':'cascade_audit_v1','config':run['config'],'provenance':fingerprint(run['config']),'csv_sha256':sha256_file(path),
           'termination':run['termination'],'actual_duration_s':run['actual_duration_s'],'requested_duration_s':run['requested_duration_s'],
           'feedback_mode':run['feedback_mode'],'feature_state_identity':'direct_observation_not_truth_or_EKF',
           'physics_target_identity':'steady_fault_command_prediction_not_actual_dynamic_thrust','scenario':scenario.__dict__,

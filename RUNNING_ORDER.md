@@ -1,3 +1,8 @@
+# 2026-10-11控制积分整定
+
+本轮参数、完整工况、长期保持及独立新版输出，以[docs/hex_rate_tuning/README.md](docs/hex_rate_tuning/README.md)为准。
+源码/参数改变后使用新输出目录；验证入口拒绝覆盖另一个生成签名下的旧报告。
+
 # 2026-10-10动画回放
 
 已有v5输出时，在项目根目录运行 `python view_hex_tasks.py` 即可打开完整任务动画。
