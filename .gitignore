@@ -81,6 +81,10 @@ events.out.tfevents*
 *.hdf5
 *.mat
 
+# MATLAB/Simulink generated caches at the repository root
+/slprj/
+/*.slxc
+
 # Large/generated reference materials; keep the maintained Markdown in docs/
 /docs/literature/
 /docs/presentations/

@@ -1,10 +1,16 @@
-# RotorPy
+# eVTOL_Simulation
+
+完整设计与代码导航：[当前设计总览](CURRENT_DESIGN.md)。本发布包含当前 Python 代码、两套 Simulink 模型、物理参数说明、研究设计与验证记录。
+
+最新的单电机失效恢复实验位于 [`simulink/`](simulink/README.md)：按照“稳定姿态/高度 → 返回原轨迹附近 → 继续任务”的优先级控制，允许任务进度减慢或暂停。恢复参数版本为 `recovery_v3_20261023`，当前声明范围内的 106 个实际 Simulink 飞行工况通过恢复验收，详见 [结果汇总](simulink/validation/RECOVERY_SUMMARY.md) 与 [完整整定过程及限制](simulink/validation/RECOVERY_TUNING.md)。这不代表实飞有效性或多电机同时失效保证。
+
+在 MATLAB R2025b 中进入 `simulink` 文件夹，运行 `open_hex_recovery` 打开恢复模型；`open_hex_simulink` 打开保留的原模型。
 
 当前新增的 UAV-FD／F550 独立建模入口为 `python -m uavfd_f550`，说明和实际验证见
 [`docs/uavfd_f550/README.md`](docs/uavfd_f550/README.md)。该包自行实现动力学与振动模型；
 原 19 类管线保留供对照，本轮不运行其造数或训练。实飞组合基线仍未通过整体模型验证。
 
-## 本项目的六旋翼故障诊断扩展
+## Python 六旋翼故障诊断管线
 
 项目根目录在RotorPy之上增加了一条六旋翼专用验证链路：19类健康/单电机故障
 独立重复仿真 → 数据质量审查 → 独立来源分组滑窗 → Fold内WGAN-GP增广 →

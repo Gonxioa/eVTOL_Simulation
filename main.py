@@ -1,5 +1,6 @@
 import os
 import csv
+import threading
 import time as _time
 from pathlib import Path
 import numpy as np
@@ -30,24 +31,50 @@ from provenance import code_hashes, runtime_info, sha256_file, stable_hash, writ
 from scenario_config import NUM_ROTORS, SCENARIOS, serializable_scenarios
 
 
+_ROTORPY_INIT_LOCK = threading.RLock()
+
+
 def patch_rotorpy_for_redundant_multirotors():
     """
-    RotorPy's dynamics and SE3 controller are parameterized by num_rotors, but
-    this installed version still has two quadrotor assumptions:
-    - allocation uses inverse(), while a hexarotor needs a pseudoinverse;
-    - state packing is hardcoded to 16 + 4 states.
-    Patch them process-locally so six rotors run without editing site-packages.
+    Supply the two compatibility fixes needed by RotorPy 2.1.2.
+
+    The upstream classes otherwise honor ``num_rotors``, but their allocator
+    constructors call ``inv`` on a 4 x N matrix and ``_pack_state`` allocates
+    exactly 20 entries.  Keep the workaround process-local without leaving
+    ``numpy.linalg.inv`` globally replaced.  Future RotorPy versions that can
+    already pack six rotor states retain their own implementation.
     """
-    original_inv = getattr(np.linalg.inv, "_original_inv", np.linalg.inv)
 
-    def safe_inv(a):
-        arr = np.asarray(a)
-        if arr.shape[-2] == arr.shape[-1]:
-            return original_inv(arr)
-        return np.linalg.pinv(arr)
+    def wrap_constructor_with_rectangular_pinv(cls):
+        original_init = cls.__init__
+        if getattr(original_init, "_hex_pinv_compatible", False):
+            return
 
-    safe_inv._original_inv = original_inv
-    np.linalg.inv = safe_inv
+        def init_with_rectangular_pinv(self, *args, **kwargs):
+            # RotorPy resolves np.linalg.inv at call time.  Limit the shim to
+            # the synchronous constructor and restore NumPy even on failure.
+            with _ROTORPY_INIT_LOCK:
+                original_inv = np.linalg.inv
+
+                def inverse_or_pseudoinverse(a):
+                    arr = np.asarray(a)
+                    if arr.ndim < 2 or arr.shape[-2] == arr.shape[-1]:
+                        return original_inv(a)
+                    return np.linalg.pinv(arr)
+
+                np.linalg.inv = inverse_or_pseudoinverse
+                try:
+                    original_init(self, *args, **kwargs)
+                finally:
+                    np.linalg.inv = original_inv
+
+        init_with_rectangular_pinv._hex_pinv_compatible = True
+        init_with_rectangular_pinv.__name__ = original_init.__name__
+        init_with_rectangular_pinv.__doc__ = original_init.__doc__
+        cls.__init__ = init_with_rectangular_pinv
+
+    wrap_constructor_with_rectangular_pinv(Multirotor)
+    wrap_constructor_with_rectangular_pinv(SE3Control)
 
     def pack_state_dynamic(cls, state):
         rotor_speeds = np.asarray(state["rotor_speeds"])
@@ -60,7 +87,22 @@ def patch_rotorpy_for_redundant_multirotors():
         s[16:] = rotor_speeds
         return s
 
-    Multirotor._pack_state = classmethod(pack_state_dynamic)
+    probe_state = {
+        "x": np.zeros(3),
+        "v": np.zeros(3),
+        "q": np.array([0.0, 0.0, 0.0, 1.0]),
+        "w": np.zeros(3),
+        "wind": np.zeros(3),
+        "rotor_speeds": np.zeros(NUM_ROTORS),
+    }
+    try:
+        packed = Multirotor._pack_state(probe_state)
+        dynamic_pack_supported = packed.shape == (16 + NUM_ROTORS,)
+    except (TypeError, ValueError):
+        dynamic_pack_supported = False
+
+    if not dynamic_pack_supported:
+        Multirotor._pack_state = classmethod(pack_state_dynamic)
 
 
 patch_rotorpy_for_redundant_multirotors()

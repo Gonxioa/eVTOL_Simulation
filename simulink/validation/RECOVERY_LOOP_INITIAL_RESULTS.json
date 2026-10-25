@@ -1,0 +1,130 @@
+{
+  "bench": "translation-constrained rotational simulation, 30 ms measured-state delay",
+  "criteria": {
+    "maximum_overshoot_percent": 35,
+    "maximum_settling_5percent_s": 1.2
+  },
+  "cases": [
+    {
+      "mode": 1,
+      "axis": 1,
+      "rate_p": 16,
+      "overshoot_percent": 18.971601134044526,
+      "settling_5percent_s": 0.33000000000000007,
+      "rmse": 0.080750405544201945,
+      "selected": false,
+      "passed": true
+    },
+    {
+      "mode": 1,
+      "axis": 1,
+      "rate_p": 20,
+      "overshoot_percent": 29.634023371294148,
+      "settling_5percent_s": 0.24,
+      "rmse": 0.078015618961762859,
+      "selected": true,
+      "passed": true
+    },
+    {
+      "mode": 1,
+      "axis": 1,
+      "rate_p": 24,
+      "overshoot_percent": 41.376829228278652,
+      "settling_5percent_s": 0.45999999999999996,
+      "rmse": 0.079644795759938727,
+      "selected": false,
+      "passed": false
+    },
+    {
+      "mode": 1,
+      "axis": 2,
+      "rate_p": 16,
+      "overshoot_percent": 18.971601287054639,
+      "settling_5percent_s": 0.33000000000000007,
+      "rmse": 0.080750405290158436,
+      "selected": false,
+      "passed": true
+    },
+    {
+      "mode": 1,
+      "axis": 2,
+      "rate_p": 20,
+      "overshoot_percent": 29.634024107339087,
+      "settling_5percent_s": 0.24,
+      "rmse": 0.078015618586455962,
+      "selected": true,
+      "passed": true
+    },
+    {
+      "mode": 1,
+      "axis": 2,
+      "rate_p": 24,
+      "overshoot_percent": 41.376831036947316,
+      "settling_5percent_s": 0.45999999999999996,
+      "rmse": 0.079644795677498381,
+      "selected": false,
+      "passed": false
+    },
+    {
+      "mode": 2,
+      "axis": 1,
+      "rate_p": 16,
+      "overshoot_percent": 43.707509292911453,
+      "settling_5percent_s": 1.0899999999999999,
+      "rmse": 0.026766455793986812,
+      "selected": false,
+      "passed": false
+    },
+    {
+      "mode": 2,
+      "axis": 1,
+      "rate_p": 20,
+      "overshoot_percent": 39.1438446379184,
+      "settling_5percent_s": 0.90000000000000013,
+      "rmse": 0.024918645125305585,
+      "selected": true,
+      "passed": false
+    },
+    {
+      "mode": 2,
+      "axis": 1,
+      "rate_p": 24,
+      "overshoot_percent": 37.711478770555388,
+      "settling_5percent_s": 1.27,
+      "rmse": 0.024701135550777766,
+      "selected": false,
+      "passed": false
+    },
+    {
+      "mode": 2,
+      "axis": 2,
+      "rate_p": 16,
+      "overshoot_percent": 43.707509849492141,
+      "settling_5percent_s": 1.0899999999999999,
+      "rmse": 0.026766455562259442,
+      "selected": false,
+      "passed": false
+    },
+    {
+      "mode": 2,
+      "axis": 2,
+      "rate_p": 20,
+      "overshoot_percent": 39.143846662236868,
+      "settling_5percent_s": 0.90000000000000013,
+      "rmse": 0.024918644660068417,
+      "selected": true,
+      "passed": false
+    },
+    {
+      "mode": 2,
+      "axis": 2,
+      "rate_p": 24,
+      "overshoot_percent": 37.711482432500446,
+      "settling_5percent_s": 1.27,
+      "rmse": 0.024701136039354664,
+      "selected": false,
+      "passed": false
+    }
+  ],
+  "passed": false
+}

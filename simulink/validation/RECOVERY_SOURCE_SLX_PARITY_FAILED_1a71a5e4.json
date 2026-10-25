@@ -1,0 +1,15 @@
+{
+  "source_trace": "simulink\\output\\recovery_tuning\\20261023_182715_343\\task2_m1_eta00_observed1.mat",
+  "native_trace": "simulink\\output\\recovery\\recovery_v3_20261023\\core_task2_m1_eta00_seed20261006\\signals.csv",
+  "max_position_difference_m": 3.170983044753495e-07,
+  "max_command_difference_rad_s": 0.7628215281963548,
+  "max_phase_difference_s": 5.082197018779766e-07,
+  "max_estimated_rotor_force_difference_N": 0.011802316476737573,
+  "criteria": {
+    "position_m": 1e-06,
+    "command_rad_s": 0.5,
+    "estimated_rotor_force_N": 0.01
+  },
+  "note": "Initial 0.001 rad/s command criterion failed. Bounded allocation is underdetermined; retain initial result and check physical force as well as command/position differences. This is numerical agreement within stated tolerances, not bitwise parity.",
+  "passed": false
+}

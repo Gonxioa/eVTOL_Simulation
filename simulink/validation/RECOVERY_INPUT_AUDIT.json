@@ -1,0 +1,1066 @@
+{
+  "profile": "recovery_v3_20261023",
+  "cases": [
+    {
+      "name": "core_task0_m1_eta80_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 0.0,
+      "governed_reference_error": 0.0,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task0_m1_eta20_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 0.0,
+      "governed_reference_error": 0.0,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task0_m1_eta00_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 0.0,
+      "governed_reference_error": 0.0,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task0_m2_eta80_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 0.0,
+      "governed_reference_error": 0.0,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task0_m2_eta20_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 0.0,
+      "governed_reference_error": 0.0,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task0_m2_eta00_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 0.0,
+      "governed_reference_error": 0.0,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task0_m3_eta80_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 0.0,
+      "governed_reference_error": 0.0,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task0_m3_eta20_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 0.0,
+      "governed_reference_error": 0.0,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task0_m3_eta00_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 0.0,
+      "governed_reference_error": 0.0,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task0_m4_eta80_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 0.0,
+      "governed_reference_error": 0.0,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task0_m4_eta20_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 0.0,
+      "governed_reference_error": 0.0,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task0_m4_eta00_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 0.0,
+      "governed_reference_error": 0.0,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task0_m5_eta80_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 0.0,
+      "governed_reference_error": 0.0,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task0_m5_eta20_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 0.0,
+      "governed_reference_error": 0.0,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task0_m5_eta00_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 0.0,
+      "governed_reference_error": 0.0,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task0_m6_eta80_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 0.0,
+      "governed_reference_error": 0.0,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task0_m6_eta20_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 0.0,
+      "governed_reference_error": 0.0,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task0_m6_eta00_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 0.0,
+      "governed_reference_error": 0.0,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task1_m1_eta80_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 5.329070518200751e-15,
+      "governed_reference_error": 2.220446049250313e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task1_m1_eta20_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 5.329070518200751e-15,
+      "governed_reference_error": 4.218847493575595e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task1_m1_eta00_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 5.329070518200751e-15,
+      "governed_reference_error": 4.218847493575595e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task1_m2_eta80_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 5.329070518200751e-15,
+      "governed_reference_error": 3.1086244689504383e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task1_m2_eta20_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 5.329070518200751e-15,
+      "governed_reference_error": 4.218847493575595e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task1_m2_eta00_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 5.329070518200751e-15,
+      "governed_reference_error": 2.220446049250313e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task1_m3_eta80_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 5.329070518200751e-15,
+      "governed_reference_error": 3.1086244689504383e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task1_m3_eta20_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 5.329070518200751e-15,
+      "governed_reference_error": 2.220446049250313e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task1_m3_eta00_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 5.329070518200751e-15,
+      "governed_reference_error": 3.1086244689504383e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task1_m4_eta80_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 5.329070518200751e-15,
+      "governed_reference_error": 2.220446049250313e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task1_m4_eta20_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 5.329070518200751e-15,
+      "governed_reference_error": 3.1086244689504383e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task1_m4_eta00_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 5.329070518200751e-15,
+      "governed_reference_error": 3.3306690738754696e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task1_m5_eta80_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 5.329070518200751e-15,
+      "governed_reference_error": 2.220446049250313e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task1_m5_eta20_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 5.329070518200751e-15,
+      "governed_reference_error": 3.3306690738754696e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task1_m5_eta00_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 5.329070518200751e-15,
+      "governed_reference_error": 3.1086244689504383e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task1_m6_eta80_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 5.329070518200751e-15,
+      "governed_reference_error": 2.220446049250313e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task1_m6_eta20_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 5.329070518200751e-15,
+      "governed_reference_error": 3.1086244689504383e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task1_m6_eta00_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 5.329070518200751e-15,
+      "governed_reference_error": 2.6645352591003757e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task2_m1_eta80_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 5.060188379424346e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task2_m1_eta20_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 5.062682044421063e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task2_m1_eta00_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 5.0627904646383115e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task2_m2_eta80_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 6.661338147750939e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task2_m2_eta20_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 5.054984208996416e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task2_m2_eta00_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 5.0627904646383115e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task2_m3_eta80_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 3.4642427815256838e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task2_m3_eta20_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 6.9111383282915995e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task2_m3_eta00_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 3.4640259410911867e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task2_m4_eta80_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 3.4640259410911867e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task2_m4_eta20_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 3.4642427815256838e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task2_m4_eta00_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 6.661229727533691e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task2_m5_eta80_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 5.0584536559483695e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task2_m5_eta20_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 5.0627904646383115e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task2_m5_eta00_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 4.7960767302068774e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task2_m6_eta80_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 6.661338147750939e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task2_m6_eta20_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 5.0584536559483695e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task2_m6_eta00_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 5.0627904646383115e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task3_m1_eta80_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 5.329070518200751e-15,
+      "governed_reference_error": 3.552713678800501e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task3_m1_eta20_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 5.329070518200751e-15,
+      "governed_reference_error": 4.440892098500626e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task3_m1_eta00_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 5.329070518200751e-15,
+      "governed_reference_error": 2.6645352591003757e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task3_m2_eta80_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 5.329070518200751e-15,
+      "governed_reference_error": 3.552713678800501e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task3_m2_eta20_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 5.329070518200751e-15,
+      "governed_reference_error": 3.1086244689504383e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task3_m2_eta00_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 5.329070518200751e-15,
+      "governed_reference_error": 3.1086244689504383e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task3_m3_eta80_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 5.329070518200751e-15,
+      "governed_reference_error": 2.220446049250313e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task3_m3_eta20_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 5.329070518200751e-15,
+      "governed_reference_error": 2.220446049250313e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task3_m3_eta00_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 5.329070518200751e-15,
+      "governed_reference_error": 2.6645352591003757e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task3_m4_eta80_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 5.329070518200751e-15,
+      "governed_reference_error": 2.6645352591003757e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task3_m4_eta20_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 5.329070518200751e-15,
+      "governed_reference_error": 2.6645352591003757e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task3_m4_eta00_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 5.329070518200751e-15,
+      "governed_reference_error": 2.6645352591003757e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task3_m5_eta80_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 5.329070518200751e-15,
+      "governed_reference_error": 2.6645352591003757e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task3_m5_eta20_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 5.329070518200751e-15,
+      "governed_reference_error": 3.552713678800501e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task3_m5_eta00_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 5.329070518200751e-15,
+      "governed_reference_error": 3.9968028886505635e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task3_m6_eta80_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 5.329070518200751e-15,
+      "governed_reference_error": 2.6645352591003757e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task3_m6_eta20_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 5.329070518200751e-15,
+      "governed_reference_error": 3.1086244689504383e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "core_task3_m6_eta00_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 5.329070518200751e-15,
+      "governed_reference_error": 3.1086244689504383e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "healthy_task0_m0_eta100_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 0.0,
+      "governed_reference_error": 0.0,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "healthy_task1_m0_eta100_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 5.329070518200751e-15,
+      "governed_reference_error": 2.220446049250313e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "healthy_task2_m0_eta100_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 3.4638091006566896e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "healthy_task3_m0_eta100_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 5.329070518200751e-15,
+      "governed_reference_error": 2.6645352591003757e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "ideal_task2_m1_eta80_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 3.4638091006566896e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "ideal_task2_m1_eta20_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 6.928051882182373e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "ideal_task2_m1_eta00_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 4.794775687599895e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "ideal_task2_m2_eta80_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 3.4638091006566896e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "ideal_task2_m2_eta20_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 4.926614671774132e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "ideal_task2_m2_eta00_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 3.4640259410911867e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "ideal_task2_m3_eta80_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 3.4638091006566896e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "ideal_task2_m3_eta20_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 5.060188379424346e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "ideal_task2_m3_eta00_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 3.4633754197876954e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "ideal_task2_m4_eta80_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 3.4638091006566896e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "ideal_task2_m4_eta20_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 3.4642427815256838e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "ideal_task2_m4_eta00_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 6.612765890423589e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "ideal_task2_m5_eta80_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 3.4638091006566896e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "ideal_task2_m5_eta20_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 5.0627904646383115e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "ideal_task2_m5_eta00_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 3.4642427815256838e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "ideal_task2_m6_eta80_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 3.4638091006566896e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "ideal_task2_m6_eta20_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 6.660470786012951e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "ideal_task2_m6_eta00_seed20261006",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 3.4642427815256838e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "seeds_task2_m1_eta00_seed20261007",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 5.842548667089886e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "seeds_task2_m2_eta00_seed20261007",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 3.4638091006566896e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "seeds_task2_m3_eta00_seed20261007",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 3.463917520873938e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "seeds_task2_m4_eta00_seed20261007",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 5.0584536559483695e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "seeds_task2_m5_eta00_seed20261007",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 3.463897192083204e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "seeds_task2_m6_eta00_seed20261007",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 5.061923102900323e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "seeds_task2_m1_eta00_seed20261008",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 5.051514762044462e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "seeds_task2_m2_eta00_seed20261008",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 6.6405214660392176e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "seeds_task2_m3_eta00_seed20261008",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 3.4640259410911867e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "seeds_task2_m4_eta00_seed20261008",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 5.054984208996416e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "seeds_task2_m5_eta00_seed20261008",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 5.0584536559483695e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    },
+    {
+      "name": "seeds_task2_m6_eta00_seed20261008",
+      "effectiveness_error": 0.0,
+      "nominal_reference_error": 8.52443116095003e-15,
+      "governed_reference_error": 3.4642427815256838e-15,
+      "delayed_feedback_error": 0.0,
+      "wind_error": 0.0,
+      "causal_progress": true,
+      "passed": true
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,61 @@
+{
+  "observer_checks": [
+    {
+      "delay_s": 0,
+      "factor": 0.8,
+      "maximum_eta_error": 1.1102230246251565E-16,
+      "passed": true
+    },
+    {
+      "delay_s": 0,
+      "factor": 0.2,
+      "maximum_eta_error": 8.3266726846886741E-17,
+      "passed": true
+    },
+    {
+      "delay_s": 0,
+      "factor": 0,
+      "maximum_eta_error": 0,
+      "passed": true
+    },
+    {
+      "delay_s": 0.01,
+      "factor": 0.8,
+      "maximum_eta_error": 1.1102230246251565E-16,
+      "passed": true
+    },
+    {
+      "delay_s": 0.01,
+      "factor": 0.2,
+      "maximum_eta_error": 2.7755575615628914E-17,
+      "passed": true
+    },
+    {
+      "delay_s": 0.01,
+      "factor": 0,
+      "maximum_eta_error": 0,
+      "passed": true
+    },
+    {
+      "delay_s": 0.03,
+      "factor": 0.8,
+      "maximum_eta_error": 1.1102230246251565E-16,
+      "passed": true
+    },
+    {
+      "delay_s": 0.03,
+      "factor": 0.2,
+      "maximum_eta_error": 8.3266726846886741E-17,
+      "passed": true
+    },
+    {
+      "delay_s": 0.03,
+      "factor": 0,
+      "maximum_eta_error": 0,
+      "passed": true
+    }
+  ],
+  "truth_isolation_passed": true,
+  "governor_pause_passed": true,
+  "passed": true
+}

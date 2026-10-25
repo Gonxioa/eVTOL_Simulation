@@ -1,0 +1,31 @@
+{
+  "source_commit": "a6b9f1dd3d839416e469755490b8ff7733acd4ee",
+  "reference_mode": "position_velocity_fixed_heading",
+  "parameter_profile": "frozen_pre_retuning_gains",
+  "matlab_version": "25.2.0.2998904 (R2025b)",
+  "cases": {
+    "name": "normal_line",
+    "samples": 801,
+    "python_samples": 801,
+    "max_position_error_m": 1.6640963362586373E-15,
+    "max_state_error": 4.5474735088646412E-13,
+    "max_motor_command_error_rad_s": 5.6843418860808015E-13,
+    "max_motor_command_thrust_error_N": 7.80564732849598E-15,
+    "max_imu_error": 1.5374335735538008E-14,
+    "max_reference_error": 5.3290705182007514E-15,
+    "max_wind_error": 0,
+    "max_effectiveness_error": 0,
+    "max_integral_error": 9.8120966629924926E-14,
+    "termination": "completed",
+    "python_termination": "completed",
+    "position_tracking_rmse_m": 0.044510071558660692,
+    "maximum_tracking_error_m": 0.07209576484485547,
+    "legacy_position_tracking_rmse_m": 0.00874056785768573,
+    "legacy_actual_duration_s": 8,
+    "quaternion_norm_error": 2.2204460492503131E-16,
+    "commands_bounded": true,
+    "integrals_bounded": true,
+    "passed": true
+  },
+  "passed": true
+}

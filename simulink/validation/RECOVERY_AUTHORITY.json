@@ -1,0 +1,133 @@
+{
+  "weight_N": 33.354,
+  "motor_maximum_thrust_N": 9.0145,
+  "cases": [
+    {
+      "motor": 1,
+      "factor": 0.8,
+      "max_balanced_lift_fixed_yaw_N": 50.4812,
+      "max_balanced_lift_free_yaw_N": 50.4812,
+      "fixed_yaw_hover_feasible": true
+    },
+    {
+      "motor": 1,
+      "factor": 0.2,
+      "max_balanced_lift_fixed_yaw_N": 39.663799999999995,
+      "max_balanced_lift_free_yaw_N": 39.663799999999995,
+      "fixed_yaw_hover_feasible": true
+    },
+    {
+      "motor": 1,
+      "factor": 0.0,
+      "max_balanced_lift_fixed_yaw_N": 36.058,
+      "max_balanced_lift_free_yaw_N": 36.058,
+      "fixed_yaw_hover_feasible": true
+    },
+    {
+      "motor": 2,
+      "factor": 0.8,
+      "max_balanced_lift_fixed_yaw_N": 50.4812,
+      "max_balanced_lift_free_yaw_N": 50.4812,
+      "fixed_yaw_hover_feasible": true
+    },
+    {
+      "motor": 2,
+      "factor": 0.2,
+      "max_balanced_lift_fixed_yaw_N": 39.663799999999995,
+      "max_balanced_lift_free_yaw_N": 39.663799999999995,
+      "fixed_yaw_hover_feasible": true
+    },
+    {
+      "motor": 2,
+      "factor": 0.0,
+      "max_balanced_lift_fixed_yaw_N": 36.058,
+      "max_balanced_lift_free_yaw_N": 36.05800000000001,
+      "fixed_yaw_hover_feasible": true
+    },
+    {
+      "motor": 3,
+      "factor": 0.8,
+      "max_balanced_lift_fixed_yaw_N": 50.4812,
+      "max_balanced_lift_free_yaw_N": 50.4812,
+      "fixed_yaw_hover_feasible": true
+    },
+    {
+      "motor": 3,
+      "factor": 0.2,
+      "max_balanced_lift_fixed_yaw_N": 39.6638,
+      "max_balanced_lift_free_yaw_N": 39.6638,
+      "fixed_yaw_hover_feasible": true
+    },
+    {
+      "motor": 3,
+      "factor": 0.0,
+      "max_balanced_lift_fixed_yaw_N": 36.05800000000001,
+      "max_balanced_lift_free_yaw_N": 36.05800000000001,
+      "fixed_yaw_hover_feasible": true
+    },
+    {
+      "motor": 4,
+      "factor": 0.8,
+      "max_balanced_lift_fixed_yaw_N": 50.4812,
+      "max_balanced_lift_free_yaw_N": 50.4812,
+      "fixed_yaw_hover_feasible": true
+    },
+    {
+      "motor": 4,
+      "factor": 0.2,
+      "max_balanced_lift_fixed_yaw_N": 39.6638,
+      "max_balanced_lift_free_yaw_N": 39.6638,
+      "fixed_yaw_hover_feasible": true
+    },
+    {
+      "motor": 4,
+      "factor": 0.0,
+      "max_balanced_lift_fixed_yaw_N": 36.058,
+      "max_balanced_lift_free_yaw_N": 36.058,
+      "fixed_yaw_hover_feasible": true
+    },
+    {
+      "motor": 5,
+      "factor": 0.8,
+      "max_balanced_lift_fixed_yaw_N": 50.4812,
+      "max_balanced_lift_free_yaw_N": 50.4812,
+      "fixed_yaw_hover_feasible": true
+    },
+    {
+      "motor": 5,
+      "factor": 0.2,
+      "max_balanced_lift_fixed_yaw_N": 39.6638,
+      "max_balanced_lift_free_yaw_N": 39.663799999999995,
+      "fixed_yaw_hover_feasible": true
+    },
+    {
+      "motor": 5,
+      "factor": 0.0,
+      "max_balanced_lift_fixed_yaw_N": 36.058,
+      "max_balanced_lift_free_yaw_N": 36.058,
+      "fixed_yaw_hover_feasible": true
+    },
+    {
+      "motor": 6,
+      "factor": 0.8,
+      "max_balanced_lift_fixed_yaw_N": 50.481199999999994,
+      "max_balanced_lift_free_yaw_N": 50.481199999999994,
+      "fixed_yaw_hover_feasible": true
+    },
+    {
+      "motor": 6,
+      "factor": 0.2,
+      "max_balanced_lift_fixed_yaw_N": 39.6638,
+      "max_balanced_lift_free_yaw_N": 39.6638,
+      "fixed_yaw_hover_feasible": true
+    },
+    {
+      "motor": 6,
+      "factor": 0.0,
+      "max_balanced_lift_fixed_yaw_N": 36.058,
+      "max_balanced_lift_free_yaw_N": 36.058,
+      "fixed_yaw_hover_feasible": true
+    }
+  ],
+  "interpretation": "Static constrained trim feasibility only; not a nonlinear controllability proof."
+}

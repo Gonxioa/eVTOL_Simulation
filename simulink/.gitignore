@@ -1,0 +1,6 @@
+output/
+slprj/
+*.slxc
+*.autosave
+*.slx.r*
+*.mexw64

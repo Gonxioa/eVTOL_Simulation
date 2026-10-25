@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "analytical_checks": [
+    "hover_balance",
+    "six_individual_rotor_moments",
+    "freefall_imu",
+    "sensor_installation_and_lever_arm",
+    "motor_exponential_decay",
+    "controller_reset",
+    "yaw_feedforward_under_tilt",
+    "antipodal_quaternion_controller",
+    "independent_input_stream_reproducibility"
+  ]
+}

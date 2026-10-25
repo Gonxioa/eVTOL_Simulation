@@ -1,0 +1,18 @@
+{
+  "profile": "recovery_v3_20261023",
+  "native_cases": 106,
+  "suite_counts": [
+    72,
+    4,
+    18,
+    12
+  ],
+  "saved_model_readback_passed": true,
+  "embedded_sources_match": true,
+  "source_slx_behavioral_agreement": true,
+  "strict_rotor_command_parity": false,
+  "fault_truth_excluded_from_recovery_blocks": true,
+  "actual_inputs_audited": true,
+  "original_model_overwritten": false,
+  "passed": true
+}

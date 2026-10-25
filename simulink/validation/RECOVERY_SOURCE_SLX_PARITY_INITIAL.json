@@ -1,0 +1,8 @@
+{
+  "source_trace": "simulink\\output\\recovery_tuning\\20261023_180833_714\\task2_m1_eta00_observed1.mat",
+  "native_trace": "simulink\\output\\recovery\\first_native\\signals.csv",
+  "max_position_difference_m": 1.400508453097693e-07,
+  "max_command_difference_rad_s": 0.35623513950145025,
+  "max_phase_difference_s": 1.832444569416225e-07,
+  "passed": false
+}
