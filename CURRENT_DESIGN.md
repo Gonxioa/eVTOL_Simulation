@@ -44,6 +44,8 @@ r=run_hex_recovery(Task="circle",FaultMotor=1,FaultFactor=0);
 r=run_hex_recovery(Task="line",FaultMotor=4,FaultFactor=.2);
 ```
 
+恢复版默认仿真 24 秒，第 3 秒注入故障。常用入口 `my_simulation` 已同步到恢复模型，同样运行 24 秒，保留其圆轨迹、1 号电机剩余 20% 效能的可编辑示例，并输出总览、六台电机响应和陀螺仪对比图。该入口的结果保存到 `simulink/output/recovery/recovery_v3_20261023/my_circle_run/`；实际运行及 18 个输出文件检查通过，见[入口验证记录](simulink/validation/MY_SIMULATION_RECOVERY.json)。原模型仍可通过 `open_hex_simulink`、`run_hex_simulink` 运行，默认 8 秒。
+
 单独打开已保存的 `hex_recovery.slx` 也能运行默认示例。脚本化场景运行需要保留整个 `simulink/` 目录；块内数值代码已经嵌入模型。修改场景使用 `configure_hex_recovery(P)`，原模型使用 `configure_hex_simulink(P)`，不要混用两套入口。
 
 ## 4. 验证与复现

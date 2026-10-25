@@ -4,6 +4,10 @@
 
 恢复版的逐环整定、验收指标与限制见 [RECOVERY_TUNING.md](validation/RECOVERY_TUNING.md)，最终结果见 [RECOVERY_SUMMARY.md](validation/RECOVERY_SUMMARY.md)。恢复版参数在 `hex_recovery_parameters.m`，使用 `configure_hex_recovery(P)` 应用场景；不要把恢复版参数传给原 `configure_hex_simulink`。
 
+2026-10-25 常用入口同步：在本目录运行 `my_simulation`，现在使用 `hex_recovery.slx`，仿真 24 秒，第 3 秒注入故障。该可编辑示例保留圆轨迹、1 号电机剩余 20% 效能，带噪声、风和 30 ms 反馈延迟，输出总览、六台电机响应和陀螺仪对比图。结果目录为 `output/recovery/recovery_v3_20261023/my_circle_run/`。下文 `open_hex_simulink`、`run_hex_simulink` 的 8 秒设置属于保留的原模型。
+
+此入口已实际跑满 24 秒并通过恢复验收，CSV/MAT 以及八张图的 PNG/FIG 共 18 个输出文件均已检查；记录见 [MY_SIMULATION_RECOVERY.json](validation/MY_SIMULATION_RECOVERY.json)。
+
 第一阶段迁移：**仿真、串级控制、故障注入、传感器及结果绘图**。基线为最新已推送的 `codex/rate-integral-tuning` 分支，提交 `a6b9f1dd3d839416e469755490b8ff7733acd4ee`。原 Python 文件未修改。
 
 2026-10-21 基准调参：保持位置/速度六维接口、原任务几何及时序、物理参数和执行器限幅，重新调整水平位置/速度及滚转/俯仰控制增益。实际 SLX 的 8 秒正常直线/绕圈/升降位置 RMSE 分别为 **0.49 / 2.36 / 3.09 cm**，悬停接近数值精度。13 个当前增益工况、10 项物理/接口检查和 4 个独立 Python 对照通过。当前证据使用 `validation/BASELINE_*.json`；详见 `validation/BASELINE_TUNING.md`。原模型已就地更新并保留用户布局；今后需把该组已验收增益同步到已打开的旧副本时，可运行 `update_hex_baseline_model`。
@@ -106,7 +110,7 @@ r = run_hex_simulink(Parameters=P, OutputName="custom");
 
 上述绘图标注按 `plot_labels_review.txt` 返稿设置，时间横轴保留 `Time (s)`，速度、角速度等单位使用 `m/s`、`rad/s` 等符号；中文字体使用微软雅黑。
 
-`my_simulation.m` 中默认 `motor_to_plot=1:6` 一次输出全部电机，可改为 `3` 只看 3 号，或 `[1 3 6]` 查看指定几台。直接调用时使用 `run_hex_simulink(...,PlotMotor=1:6)`；已有结果可用 `plot_hex_results(r,'',1:6)` 重新绘图。默认共生成八张图（总览、六台电机、陀螺仪对比）。选择电机只影响绘图，MAT/CSV 始终保留六台电机的数据。
+`my_simulation.m` 现在使用 24 秒恢复版，默认 `motor_to_plot=1:6` 一次输出全部电机，可改为 `3` 只看 3 号，或 `[1 3 6]` 查看指定几台。恢复版直接调用 `run_hex_recovery` 后，用 `plot_hex_results(r,'',1:6)` 绘图；原模型支持 `run_hex_simulink(...,PlotMotor=1:6)`。默认共生成八张图（总览、六台电机、陀螺仪对比）。选择电机只影响绘图，MAT/CSV 始终保留六台电机的数据。
 
 扳手向量顺序为 `[总推力 N, Mx Nm, My Nm, Mz Nm]`；IMU 顺序为传感器系比力三轴、角速度三轴。CSV 中的 `observation_state_*` 与 `feedback_state_*` 都按前述 19 状态顺序排列，后者记录控制器实际使用的理想/延迟观测反馈。
 
