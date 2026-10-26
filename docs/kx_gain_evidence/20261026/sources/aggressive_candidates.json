@@ -1,0 +1,1248 @@
+[
+  {
+    "candidate": 1,
+    "name": "circle",
+    "gains": [
+      4,
+      10,
+      16,
+      40,
+      0.5
+    ],
+    "control": {
+      "yaw_hold_rad": 0,
+      "position_p": [
+        4,
+        4,
+        1.4
+      ],
+      "velocity_p": [
+        10,
+        10,
+        3
+      ],
+      "velocity_i": [
+        0.4,
+        0.4,
+        0.9
+      ],
+      "velocity_d": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "attitude_p": [
+        16,
+        16,
+        3
+      ],
+      "rate_p": [
+        40,
+        40,
+        6
+      ],
+      "rate_i": [
+        30,
+        30,
+        0.6
+      ],
+      "rate_d": [
+        0.5,
+        0.5,
+        0.06
+      ],
+      "velocity_limit_m_s": [
+        3,
+        3,
+        2
+      ],
+      "rate_limit_rad_s": [
+        3,
+        3,
+        1.5
+      ],
+      "velocity_integral_limit_m_s2": [
+        2,
+        2,
+        2
+      ],
+      "rate_integral_limit_rad_s2": [
+        20,
+        20,
+        2
+      ],
+      "acceleration_limit_m_s2": [
+        4,
+        4,
+        4
+      ],
+      "tilt_limit_deg": 25,
+      "derivative_filter_hz": 20,
+      "antiwindup_gain_s_inv": 2
+    },
+    "rmse_m": 0.015630996040582584,
+    "maximum_error_m": 0.031101198728068883,
+    "final_error_m": 0.00013430785937849525,
+    "maximum_tilt_deg": 7.58824961823563,
+    "maximum_command_rad_s": 875.049655290586,
+    "actual_duration_s": 8,
+    "completed": true
+  },
+  {
+    "candidate": 1,
+    "name": "line",
+    "gains": [
+      4,
+      10,
+      16,
+      40,
+      0.5
+    ],
+    "control": {
+      "yaw_hold_rad": 0,
+      "position_p": [
+        4,
+        4,
+        1.4
+      ],
+      "velocity_p": [
+        10,
+        10,
+        3
+      ],
+      "velocity_i": [
+        0.4,
+        0.4,
+        0.9
+      ],
+      "velocity_d": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "attitude_p": [
+        16,
+        16,
+        3
+      ],
+      "rate_p": [
+        40,
+        40,
+        6
+      ],
+      "rate_i": [
+        30,
+        30,
+        0.6
+      ],
+      "rate_d": [
+        0.5,
+        0.5,
+        0.06
+      ],
+      "velocity_limit_m_s": [
+        3,
+        3,
+        2
+      ],
+      "rate_limit_rad_s": [
+        3,
+        3,
+        1.5
+      ],
+      "velocity_integral_limit_m_s2": [
+        2,
+        2,
+        2
+      ],
+      "rate_integral_limit_rad_s2": [
+        20,
+        20,
+        2
+      ],
+      "acceleration_limit_m_s2": [
+        4,
+        4,
+        4
+      ],
+      "tilt_limit_deg": 25,
+      "derivative_filter_hz": 20,
+      "antiwindup_gain_s_inv": 2
+    },
+    "rmse_m": 0.003382288365273026,
+    "maximum_error_m": 0.0058741266074557015,
+    "final_error_m": 0.00013971913503844574,
+    "maximum_tilt_deg": 1.3613384272388342,
+    "maximum_command_rad_s": 865.6359486433621,
+    "actual_duration_s": 8,
+    "completed": true
+  },
+  {
+    "candidate": 1,
+    "name": "vertical",
+    "gains": [
+      4,
+      10,
+      16,
+      40,
+      0.5
+    ],
+    "control": {
+      "yaw_hold_rad": 0,
+      "position_p": [
+        4,
+        4,
+        1.4
+      ],
+      "velocity_p": [
+        10,
+        10,
+        3
+      ],
+      "velocity_i": [
+        0.4,
+        0.4,
+        0.9
+      ],
+      "velocity_d": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "attitude_p": [
+        16,
+        16,
+        3
+      ],
+      "rate_p": [
+        40,
+        40,
+        6
+      ],
+      "rate_i": [
+        30,
+        30,
+        0.6
+      ],
+      "rate_d": [
+        0.5,
+        0.5,
+        0.06
+      ],
+      "velocity_limit_m_s": [
+        3,
+        3,
+        2
+      ],
+      "rate_limit_rad_s": [
+        3,
+        3,
+        1.5
+      ],
+      "velocity_integral_limit_m_s2": [
+        2,
+        2,
+        2
+      ],
+      "rate_integral_limit_rad_s2": [
+        20,
+        20,
+        2
+      ],
+      "acceleration_limit_m_s2": [
+        4,
+        4,
+        4
+      ],
+      "tilt_limit_deg": 25,
+      "derivative_filter_hz": 20,
+      "antiwindup_gain_s_inv": 2
+    },
+    "rmse_m": 0.03093551028888298,
+    "maximum_error_m": 0.04978384260377622,
+    "final_error_m": 0.004937306731471303,
+    "maximum_tilt_deg": 0,
+    "maximum_command_rad_s": 877.3068290997492,
+    "actual_duration_s": 8,
+    "completed": true
+  },
+  {
+    "candidate": 1,
+    "name": "circle_large",
+    "gains": [
+      4,
+      10,
+      16,
+      40,
+      0.5
+    ],
+    "control": {
+      "yaw_hold_rad": 0,
+      "position_p": [
+        4,
+        4,
+        1.4
+      ],
+      "velocity_p": [
+        10,
+        10,
+        3
+      ],
+      "velocity_i": [
+        0.4,
+        0.4,
+        0.9
+      ],
+      "velocity_d": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "attitude_p": [
+        16,
+        16,
+        3
+      ],
+      "rate_p": [
+        40,
+        40,
+        6
+      ],
+      "rate_i": [
+        30,
+        30,
+        0.6
+      ],
+      "rate_d": [
+        0.5,
+        0.5,
+        0.06
+      ],
+      "velocity_limit_m_s": [
+        3,
+        3,
+        2
+      ],
+      "rate_limit_rad_s": [
+        3,
+        3,
+        1.5
+      ],
+      "velocity_integral_limit_m_s2": [
+        2,
+        2,
+        2
+      ],
+      "rate_integral_limit_rad_s2": [
+        20,
+        20,
+        2
+      ],
+      "acceleration_limit_m_s2": [
+        4,
+        4,
+        4
+      ],
+      "tilt_limit_deg": 25,
+      "derivative_filter_hz": 20,
+      "antiwindup_gain_s_inv": 2
+    },
+    "rmse_m": 0.026087947288254504,
+    "maximum_error_m": 0.05194661920200373,
+    "final_error_m": 0.00035424538743802437,
+    "maximum_tilt_deg": 12.526171335631668,
+    "maximum_command_rad_s": 889.132351566537,
+    "actual_duration_s": 8,
+    "completed": true
+  },
+  {
+    "candidate": 1,
+    "name": "circle_observed",
+    "gains": [
+      4,
+      10,
+      16,
+      40,
+      0.5
+    ],
+    "control": {
+      "yaw_hold_rad": 0,
+      "position_p": [
+        4,
+        4,
+        1.4
+      ],
+      "velocity_p": [
+        10,
+        10,
+        3
+      ],
+      "velocity_i": [
+        0.4,
+        0.4,
+        0.9
+      ],
+      "velocity_d": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "attitude_p": [
+        16,
+        16,
+        3
+      ],
+      "rate_p": [
+        40,
+        40,
+        6
+      ],
+      "rate_i": [
+        30,
+        30,
+        0.6
+      ],
+      "rate_d": [
+        0.5,
+        0.5,
+        0.06
+      ],
+      "velocity_limit_m_s": [
+        3,
+        3,
+        2
+      ],
+      "rate_limit_rad_s": [
+        3,
+        3,
+        1.5
+      ],
+      "velocity_integral_limit_m_s2": [
+        2,
+        2,
+        2
+      ],
+      "rate_integral_limit_rad_s2": [
+        20,
+        20,
+        2
+      ],
+      "acceleration_limit_m_s2": [
+        4,
+        4,
+        4
+      ],
+      "tilt_limit_deg": 25,
+      "derivative_filter_hz": 20,
+      "antiwindup_gain_s_inv": 2
+    },
+    "rmse_m": 0.2368824721121793,
+    "maximum_error_m": 0.39910143330183345,
+    "final_error_m": 0.3954460115756513,
+    "maximum_tilt_deg": 25.13207541587416,
+    "maximum_command_rad_s": 1100,
+    "actual_duration_s": 8,
+    "completed": true
+  },
+  {
+    "candidate": 1,
+    "name": "circle_noise_wind",
+    "gains": [
+      4,
+      10,
+      16,
+      40,
+      0.5
+    ],
+    "control": {
+      "yaw_hold_rad": 0,
+      "position_p": [
+        4,
+        4,
+        1.4
+      ],
+      "velocity_p": [
+        10,
+        10,
+        3
+      ],
+      "velocity_i": [
+        0.4,
+        0.4,
+        0.9
+      ],
+      "velocity_d": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "attitude_p": [
+        16,
+        16,
+        3
+      ],
+      "rate_p": [
+        40,
+        40,
+        6
+      ],
+      "rate_i": [
+        30,
+        30,
+        0.6
+      ],
+      "rate_d": [
+        0.5,
+        0.5,
+        0.06
+      ],
+      "velocity_limit_m_s": [
+        3,
+        3,
+        2
+      ],
+      "rate_limit_rad_s": [
+        3,
+        3,
+        1.5
+      ],
+      "velocity_integral_limit_m_s2": [
+        2,
+        2,
+        2
+      ],
+      "rate_integral_limit_rad_s2": [
+        20,
+        20,
+        2
+      ],
+      "acceleration_limit_m_s2": [
+        4,
+        4,
+        4
+      ],
+      "tilt_limit_deg": 25,
+      "derivative_filter_hz": 20,
+      "antiwindup_gain_s_inv": 2
+    },
+    "rmse_m": 0.3285351604433597,
+    "maximum_error_m": 0.4478376570077349,
+    "final_error_m": 0.4234103655611433,
+    "maximum_tilt_deg": 22.53908519348641,
+    "maximum_command_rad_s": 1100,
+    "actual_duration_s": 8,
+    "completed": true
+  },
+  {
+    "candidate": 1,
+    "name": "circle_delay_30ms",
+    "gains": [
+      4,
+      10,
+      16,
+      40,
+      0.5
+    ],
+    "control": {
+      "yaw_hold_rad": 0,
+      "position_p": [
+        4,
+        4,
+        1.4
+      ],
+      "velocity_p": [
+        10,
+        10,
+        3
+      ],
+      "velocity_i": [
+        0.4,
+        0.4,
+        0.9
+      ],
+      "velocity_d": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "attitude_p": [
+        16,
+        16,
+        3
+      ],
+      "rate_p": [
+        40,
+        40,
+        6
+      ],
+      "rate_i": [
+        30,
+        30,
+        0.6
+      ],
+      "rate_d": [
+        0.5,
+        0.5,
+        0.06
+      ],
+      "velocity_limit_m_s": [
+        3,
+        3,
+        2
+      ],
+      "rate_limit_rad_s": [
+        3,
+        3,
+        1.5
+      ],
+      "velocity_integral_limit_m_s2": [
+        2,
+        2,
+        2
+      ],
+      "rate_integral_limit_rad_s2": [
+        20,
+        20,
+        2
+      ],
+      "acceleration_limit_m_s2": [
+        4,
+        4,
+        4
+      ],
+      "tilt_limit_deg": 25,
+      "derivative_filter_hz": 20,
+      "antiwindup_gain_s_inv": 2
+    },
+    "rmse_m": 2.194768984203201,
+    "maximum_error_m": 4.236776482377129,
+    "final_error_m": 4.236776482377129,
+    "maximum_tilt_deg": 48.0633639633149,
+    "maximum_command_rad_s": 1100,
+    "actual_duration_s": 8,
+    "completed": true
+  },
+  {
+    "candidate": 2,
+    "name": "circle",
+    "gains": [
+      5,
+      12,
+      18,
+      45,
+      0.6
+    ],
+    "control": {
+      "yaw_hold_rad": 0,
+      "position_p": [
+        5,
+        5,
+        1.4
+      ],
+      "velocity_p": [
+        12,
+        12,
+        3
+      ],
+      "velocity_i": [
+        0.4,
+        0.4,
+        0.9
+      ],
+      "velocity_d": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "attitude_p": [
+        18,
+        18,
+        3
+      ],
+      "rate_p": [
+        45,
+        45,
+        6
+      ],
+      "rate_i": [
+        30,
+        30,
+        0.6
+      ],
+      "rate_d": [
+        0.6,
+        0.6,
+        0.06
+      ],
+      "velocity_limit_m_s": [
+        3,
+        3,
+        2
+      ],
+      "rate_limit_rad_s": [
+        3,
+        3,
+        1.5
+      ],
+      "velocity_integral_limit_m_s2": [
+        2,
+        2,
+        2
+      ],
+      "rate_integral_limit_rad_s2": [
+        20,
+        20,
+        2
+      ],
+      "acceleration_limit_m_s2": [
+        4,
+        4,
+        4
+      ],
+      "tilt_limit_deg": 25,
+      "derivative_filter_hz": 20,
+      "antiwindup_gain_s_inv": 2
+    },
+    "rmse_m": 0.010544830810757275,
+    "maximum_error_m": 0.02102797059445992,
+    "final_error_m": 9.851264165567656e-05,
+    "maximum_tilt_deg": 7.353461040458829,
+    "maximum_command_rad_s": 877.1708708234983,
+    "actual_duration_s": 8,
+    "completed": true
+  },
+  {
+    "candidate": 2,
+    "name": "line",
+    "gains": [
+      5,
+      12,
+      18,
+      45,
+      0.6
+    ],
+    "control": {
+      "yaw_hold_rad": 0,
+      "position_p": [
+        5,
+        5,
+        1.4
+      ],
+      "velocity_p": [
+        12,
+        12,
+        3
+      ],
+      "velocity_i": [
+        0.4,
+        0.4,
+        0.9
+      ],
+      "velocity_d": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "attitude_p": [
+        18,
+        18,
+        3
+      ],
+      "rate_p": [
+        45,
+        45,
+        6
+      ],
+      "rate_i": [
+        30,
+        30,
+        0.6
+      ],
+      "rate_d": [
+        0.6,
+        0.6,
+        0.06
+      ],
+      "velocity_limit_m_s": [
+        3,
+        3,
+        2
+      ],
+      "rate_limit_rad_s": [
+        3,
+        3,
+        1.5
+      ],
+      "velocity_integral_limit_m_s2": [
+        2,
+        2,
+        2
+      ],
+      "rate_integral_limit_rad_s2": [
+        20,
+        20,
+        2
+      ],
+      "acceleration_limit_m_s2": [
+        4,
+        4,
+        4
+      ],
+      "tilt_limit_deg": 25,
+      "derivative_filter_hz": 20,
+      "antiwindup_gain_s_inv": 2
+    },
+    "rmse_m": 0.0022640143571410263,
+    "maximum_error_m": 0.0039584443140002175,
+    "final_error_m": 8.015642927237068e-05,
+    "maximum_tilt_deg": 1.3974253394993046,
+    "maximum_command_rad_s": 867.3951455599987,
+    "actual_duration_s": 8,
+    "completed": true
+  },
+  {
+    "candidate": 2,
+    "name": "vertical",
+    "gains": [
+      5,
+      12,
+      18,
+      45,
+      0.6
+    ],
+    "control": {
+      "yaw_hold_rad": 0,
+      "position_p": [
+        5,
+        5,
+        1.4
+      ],
+      "velocity_p": [
+        12,
+        12,
+        3
+      ],
+      "velocity_i": [
+        0.4,
+        0.4,
+        0.9
+      ],
+      "velocity_d": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "attitude_p": [
+        18,
+        18,
+        3
+      ],
+      "rate_p": [
+        45,
+        45,
+        6
+      ],
+      "rate_i": [
+        30,
+        30,
+        0.6
+      ],
+      "rate_d": [
+        0.6,
+        0.6,
+        0.06
+      ],
+      "velocity_limit_m_s": [
+        3,
+        3,
+        2
+      ],
+      "rate_limit_rad_s": [
+        3,
+        3,
+        1.5
+      ],
+      "velocity_integral_limit_m_s2": [
+        2,
+        2,
+        2
+      ],
+      "rate_integral_limit_rad_s2": [
+        20,
+        20,
+        2
+      ],
+      "acceleration_limit_m_s2": [
+        4,
+        4,
+        4
+      ],
+      "tilt_limit_deg": 25,
+      "derivative_filter_hz": 20,
+      "antiwindup_gain_s_inv": 2
+    },
+    "rmse_m": 0.030935510288883084,
+    "maximum_error_m": 0.04978384260377622,
+    "final_error_m": 0.004937306731471303,
+    "maximum_tilt_deg": 0,
+    "maximum_command_rad_s": 877.3068290997511,
+    "actual_duration_s": 8,
+    "completed": true
+  },
+  {
+    "candidate": 2,
+    "name": "circle_large",
+    "gains": [
+      5,
+      12,
+      18,
+      45,
+      0.6
+    ],
+    "control": {
+      "yaw_hold_rad": 0,
+      "position_p": [
+        5,
+        5,
+        1.4
+      ],
+      "velocity_p": [
+        12,
+        12,
+        3
+      ],
+      "velocity_i": [
+        0.4,
+        0.4,
+        0.9
+      ],
+      "velocity_d": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "attitude_p": [
+        18,
+        18,
+        3
+      ],
+      "rate_p": [
+        45,
+        45,
+        6
+      ],
+      "rate_i": [
+        30,
+        30,
+        0.6
+      ],
+      "rate_d": [
+        0.6,
+        0.6,
+        0.06
+      ],
+      "velocity_limit_m_s": [
+        3,
+        3,
+        2
+      ],
+      "rate_limit_rad_s": [
+        3,
+        3,
+        1.5
+      ],
+      "velocity_integral_limit_m_s2": [
+        2,
+        2,
+        2
+      ],
+      "rate_integral_limit_rad_s2": [
+        20,
+        20,
+        2
+      ],
+      "acceleration_limit_m_s2": [
+        4,
+        4,
+        4
+      ],
+      "tilt_limit_deg": 25,
+      "derivative_filter_hz": 20,
+      "antiwindup_gain_s_inv": 2
+    },
+    "rmse_m": 0.017605640795735285,
+    "maximum_error_m": 0.03513167042117745,
+    "final_error_m": 0.000258254746312058,
+    "maximum_tilt_deg": 12.150400129837992,
+    "maximum_command_rad_s": 892.4393055209857,
+    "actual_duration_s": 8,
+    "completed": true
+  },
+  {
+    "candidate": 2,
+    "name": "circle_observed",
+    "gains": [
+      5,
+      12,
+      18,
+      45,
+      0.6
+    ],
+    "control": {
+      "yaw_hold_rad": 0,
+      "position_p": [
+        5,
+        5,
+        1.4
+      ],
+      "velocity_p": [
+        12,
+        12,
+        3
+      ],
+      "velocity_i": [
+        0.4,
+        0.4,
+        0.9
+      ],
+      "velocity_d": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "attitude_p": [
+        18,
+        18,
+        3
+      ],
+      "rate_p": [
+        45,
+        45,
+        6
+      ],
+      "rate_i": [
+        30,
+        30,
+        0.6
+      ],
+      "rate_d": [
+        0.6,
+        0.6,
+        0.06
+      ],
+      "velocity_limit_m_s": [
+        3,
+        3,
+        2
+      ],
+      "rate_limit_rad_s": [
+        3,
+        3,
+        1.5
+      ],
+      "velocity_integral_limit_m_s2": [
+        2,
+        2,
+        2
+      ],
+      "rate_integral_limit_rad_s2": [
+        20,
+        20,
+        2
+      ],
+      "acceleration_limit_m_s2": [
+        4,
+        4,
+        4
+      ],
+      "tilt_limit_deg": 25,
+      "derivative_filter_hz": 20,
+      "antiwindup_gain_s_inv": 2
+    },
+    "rmse_m": 0.4098679232971489,
+    "maximum_error_m": 0.6687958637384377,
+    "final_error_m": 0.6687958637384377,
+    "maximum_tilt_deg": 24.92448521266475,
+    "maximum_command_rad_s": 1100,
+    "actual_duration_s": 8,
+    "completed": true
+  },
+  {
+    "candidate": 2,
+    "name": "circle_noise_wind",
+    "gains": [
+      5,
+      12,
+      18,
+      45,
+      0.6
+    ],
+    "control": {
+      "yaw_hold_rad": 0,
+      "position_p": [
+        5,
+        5,
+        1.4
+      ],
+      "velocity_p": [
+        12,
+        12,
+        3
+      ],
+      "velocity_i": [
+        0.4,
+        0.4,
+        0.9
+      ],
+      "velocity_d": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "attitude_p": [
+        18,
+        18,
+        3
+      ],
+      "rate_p": [
+        45,
+        45,
+        6
+      ],
+      "rate_i": [
+        30,
+        30,
+        0.6
+      ],
+      "rate_d": [
+        0.6,
+        0.6,
+        0.06
+      ],
+      "velocity_limit_m_s": [
+        3,
+        3,
+        2
+      ],
+      "rate_limit_rad_s": [
+        3,
+        3,
+        1.5
+      ],
+      "velocity_integral_limit_m_s2": [
+        2,
+        2,
+        2
+      ],
+      "rate_integral_limit_rad_s2": [
+        20,
+        20,
+        2
+      ],
+      "acceleration_limit_m_s2": [
+        4,
+        4,
+        4
+      ],
+      "tilt_limit_deg": 25,
+      "derivative_filter_hz": 20,
+      "antiwindup_gain_s_inv": 2
+    },
+    "rmse_m": 0.49574901977033464,
+    "maximum_error_m": 0.5896683976996674,
+    "final_error_m": 0.5688524088940772,
+    "maximum_tilt_deg": 25.175495283932076,
+    "maximum_command_rad_s": 1100,
+    "actual_duration_s": 8,
+    "completed": true
+  },
+  {
+    "candidate": 2,
+    "name": "circle_delay_30ms",
+    "gains": [
+      5,
+      12,
+      18,
+      45,
+      0.6
+    ],
+    "control": {
+      "yaw_hold_rad": 0,
+      "position_p": [
+        5,
+        5,
+        1.4
+      ],
+      "velocity_p": [
+        12,
+        12,
+        3
+      ],
+      "velocity_i": [
+        0.4,
+        0.4,
+        0.9
+      ],
+      "velocity_d": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "attitude_p": [
+        18,
+        18,
+        3
+      ],
+      "rate_p": [
+        45,
+        45,
+        6
+      ],
+      "rate_i": [
+        30,
+        30,
+        0.6
+      ],
+      "rate_d": [
+        0.6,
+        0.6,
+        0.06
+      ],
+      "velocity_limit_m_s": [
+        3,
+        3,
+        2
+      ],
+      "rate_limit_rad_s": [
+        3,
+        3,
+        1.5
+      ],
+      "velocity_integral_limit_m_s2": [
+        2,
+        2,
+        2
+      ],
+      "rate_integral_limit_rad_s2": [
+        20,
+        20,
+        2
+      ],
+      "acceleration_limit_m_s2": [
+        4,
+        4,
+        4
+      ],
+      "tilt_limit_deg": 25,
+      "derivative_filter_hz": 20,
+      "antiwindup_gain_s_inv": 2
+    },
+    "rmse_m": 2.086244375908094,
+    "maximum_error_m": 4.548519547614338,
+    "final_error_m": 4.548519547614338,
+    "maximum_tilt_deg": 51.55523584143724,
+    "maximum_command_rad_s": 1100,
+    "actual_duration_s": 3.43,
+    "completed": false
+  }
+]

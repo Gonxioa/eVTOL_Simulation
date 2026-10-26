@@ -1,0 +1,36 @@
+{
+  "report_date": "2026-10-26",
+  "source_commit": "f5cb931fa5caa0a861949bf15e9d1db80ca4b2da",
+  "sources": {
+    "kx_candidates": {
+      "path": "simulink/output/baseline_tuning/robust_screen_3.json",
+      "sha256": "74c3a28d58810bacbd180e970fbd4734f39414fe174d78da4d2081897f550b04"
+    },
+    "aggressive_candidates": {
+      "path": "simulink/output/baseline_tuning/candidate_results.json",
+      "sha256": "62059533b267b039c0d15552258ec611880bb06f868187ea52b4f36df7d3ecbe"
+    },
+    "baseline_validation": {
+      "path": "simulink/validation/BASELINE_TUNING_RESULTS.json",
+      "sha256": "ee53f1fb5573435ecc66d1cbc348dc899564f903efa60d4279c6f7448debac77"
+    },
+    "paired_circle": {
+      "path": "simulink/output/kx_evidence_20261026/paired_circle_slx.mat",
+      "sha256": "5391a3d7c96b948e74f3fc5cc86714ce82a49160c08f293f950918a05b201bdd"
+    },
+    "paired_checks": {
+      "path": "simulink/output/kx_evidence_20261026/paired_circle_checks.json",
+      "sha256": "3b041ffada18984c0f9526d0a6797238eb562383a04695bc38fbbbedd1909fc7"
+    },
+    "source_hash_manifest": {
+      "path": "simulink/validation/RECOVERY_SOURCE_HASHES.json",
+      "sha256": "e7ec113f72f8adb3fa135b4952214aa629ad0a76acfb2dec607d91cd81d9a3af"
+    }
+  },
+  "verified_original_source_hashes": 35,
+  "statistical_scope": "One saved run per gain/condition; no confidence intervals or repeated-seed claims.",
+  "comparison_scope": "Fixed-inner Kx sweep is separate from whole-controller before/after.",
+  "plant_status": "Research model: kT=7.45e-6, Q/T=0.01315 m provisional proxy; not AIR Gear 355 refit.",
+  "vertical_gain_status": "Kz=1.4 inherited, validated in selected scenarios, not individually optimized.",
+  "fair_window": "All displayed tracking RMSE comparisons use [0,8] s, inclusive, at 100 Hz."
+}

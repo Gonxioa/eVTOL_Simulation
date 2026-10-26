@@ -1,0 +1,13 @@
+{
+  "same_time": true,
+  "same_reference": true,
+  "same_exogenous": true,
+  "before_rmse_m": 0.18265358099445694,
+  "after_rmse_m": 0.023636178034678934,
+  "wall_time_s": 133.1134518,
+  "scope": "Five horizontal gain groups changed; vertical gains unchanged.",
+  "replay_note": "MATLAB auto-upgraded model metadata/workspace on load. Numerical function ZIP members unchanged; source model restored byte-for-byte after replay; upgraded copy archived locally.",
+  "original_model_sha256": "2ca9caee06bf8d3d0897876c37d474ddd5e3ccf0483d6ca14265a89814b4868f",
+  "replay_model_sha256": "4fee9eda766e32f43adac0daa745904e0b59ec33c17ec30234b7e66188eb334d",
+  "source_model_restored": true
+}

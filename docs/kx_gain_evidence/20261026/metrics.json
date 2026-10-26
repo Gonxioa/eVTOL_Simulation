@@ -1,0 +1,34 @@
+{
+  "before_circle_rmse_cm": 18.265358099445688,
+  "after_circle_rmse_cm": 2.3636178034678936,
+  "whole_tuning_reduction_pct": 87.05955946442887,
+  "kx_3_to_4_ideal_reduction_pct": 20.81819253392886,
+  "kx_3_to_4_noise_wind_30ms_reduction_pct": 14.737966224420019,
+  "fixed_inner_rmse_cm": {
+    "3": {
+      "ideal": 2.985051590898182,
+      "observed_10ms": 2.8581449236305265,
+      "noise_wind_10ms": 2.8813462891771002,
+      "noise_wind_30ms": 2.744383922396298
+    },
+    "3.5": {
+      "ideal": 2.646889964423943,
+      "observed_10ms": 2.546381177462266,
+      "noise_wind_10ms": 2.5857182578360316,
+      "noise_wind_30ms": 2.5205847492517544
+    },
+    "4": {
+      "ideal": 2.363617803467892,
+      "observed_10ms": 2.285241569337393,
+      "noise_wind_10ms": 2.3429831194182493,
+      "noise_wind_30ms": 2.3399175468451183
+    }
+  },
+  "aggressive_ideal_rmse_cm": 1.5630996040582583,
+  "aggressive_delay_rmse_cm": 219.4768984203201,
+  "final_delay_first8_rmse_cm": 2.3399175468451183,
+  "baseline_cases_passed": 13,
+  "plot_count": 5,
+  "paired_samples": 801,
+  "vertical_gain_retuned": false
+}
