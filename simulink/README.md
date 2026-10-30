@@ -8,6 +8,8 @@
 
 此入口已实际跑满 24 秒并通过恢复验收，CSV/MAT 以及八张图的 PNG/FIG 共 18 个输出文件均已检查；记录见 [MY_SIMULATION_RECOVERY.json](validation/MY_SIMULATION_RECOVERY.json)。
 
+四个健康任务的指标与绘图入口：在本目录运行 `report=run_hex_healthy_assessment`。它使用当前恢复版模型，把电机设为健康，分别运行悬停、直线、绕圈、升降；默认每任务 24 秒，保留风、测量噪声、观测反馈和 30 ms 延迟。每任务输出轨迹与标量误差总览、稳定性总览、x/y/z 三张独立方向图及原始 CSV/MAT；方向图包含各自的位置、速度、欧拉角、机体角速度和滚动均方根。另有四任务总对比图、三个方向各自的对比图和指标表，共 24 张评估图，均保存 PNG/FIG。结果保存到 `output/recovery/recovery_v3_20261023/healthy_four_tasks_时间戳/`。绘图函数为 `plot_hex_healthy_assessment.m`，使用中文标注，时间轴保留 `Time (s)`。位置/速度误差采用模型实际输出的受控参考；真实角速度采用机体系状态，末段窗口为最后 3 秒，电机饱和按指令触及物理上下限的持续时间统计。图中注明实际运动结束时刻；位置进入 5 cm 观察带的时间仅作描述，不是稳定性判据。该入口不修改 `my_simulation.m` 或保存模型。已有结果可用 `ReuseSavedResults=true` 读取并重新绘图，参数须完全匹配；`diagnose_hex_healthy_tilt(结果目录)` 可执行同增益的健康悬停噪声/风/延迟对照。
+
 第一阶段迁移：**仿真、串级控制、故障注入、传感器及结果绘图**。基线为最新已推送的 `codex/rate-integral-tuning` 分支，提交 `a6b9f1dd3d839416e469755490b8ff7733acd4ee`。原 Python 文件未修改。
 
 2026-10-21 基准调参：保持位置/速度六维接口、原任务几何及时序、物理参数和执行器限幅，重新调整水平位置/速度及滚转/俯仰控制增益。实际 SLX 的 8 秒正常直线/绕圈/升降位置 RMSE 分别为 **0.49 / 2.36 / 3.09 cm**，悬停接近数值精度。13 个当前增益工况、10 项物理/接口检查和 4 个独立 Python 对照通过。当前证据使用 `validation/BASELINE_*.json`；详见 `validation/BASELINE_TUNING.md`。原模型已就地更新并保留用户布局；今后需把该组已验收增益同步到已打开的旧副本时，可运行 `update_hex_baseline_model`。
@@ -68,7 +70,7 @@ r = run_hex_simulink(Task="line", FaultMotor=2, FaultFactor=.8, ...
 
 ## 参数与时序
 
-世界系 ENU、机体系 FLU、四元数 Hamilton `[x y z w]`（机体到世界），全部为 SI。状态顺序为位置 3、速度 3、四元数 4、机体角速度 3、机械转速 6。
+地面系 ENU、机体系 FLU、四元数 Hamilton `[x y z w]`（机体到地面），全部为 SI。状态顺序为位置 3、速度 3、四元数 4、机体角速度 3、机械转速 6。
 
 默认控制、传感器和导出均 100 Hz；Simulink 固定离散周期 0.01 秒。动力学内部 RK4 最大步长 0.002 秒（500 Hz）。故障时刻可以落在采样点之间；动力学会按真实边界拆分积分，不会提前或推迟到下一个控制周期。积分器阶段不更新控制器、噪声或风。
 

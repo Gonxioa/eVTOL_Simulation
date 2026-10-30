@@ -47,9 +47,9 @@ end
 grid on; title('陀螺仪与真值'); ylabel('角速度（rad/s）');
 legend('Location','best','NumColumns',3,'FontSize',8,'FontName',plot_font);
 nexttile; plot(t,r.control_audit(:,13:15)); grid on; title('速度环积分项'); ylabel('补偿加速度（m/s²）'); xlabel('Time (s)');
-legend('东向','北向','竖直方向','FontName',plot_font);
+legend('x','y','z','FontName',plot_font);
 nexttile; plot(t,r.control_audit(:,16:18)); grid on; title('角速度环积分项'); ylabel('角加速度（rad/s²）'); xlabel('Time (s)');
-legend('横滚','俯仰','偏航','FontName',plot_font);
+legend('滚转','俯仰','偏航','FontName',plot_font);
 nexttile; stairs(t,r.effectiveness); ylim([-.05 1.05]); grid on; title('电机效能'); ylabel('失效系数'); xlabel('Time (s)');
 legend('1','2','3','4','5','6', ...
     'Location','best','NumColumns',3,'FontSize',8,'FontName',plot_font);
