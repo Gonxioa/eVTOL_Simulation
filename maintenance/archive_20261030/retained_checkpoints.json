@@ -1,0 +1,678 @@
+{
+  "protected_directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030",
+  "count": 84,
+  "files": [
+    {
+      "source": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\plots\\cwru\\classification\\fold_gan\\fold_1\\scaler.pkl",
+      "path": "project/plots/cwru/classification/fold_gan/fold_1/scaler.pkl",
+      "size": 440,
+      "sha256": "259609fa0f2c1982f14cc58d6a2a1d8e8940e4d324d93a8a4035b127ba946330",
+      "asset": "evtol-versions-results-08.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\project\\plots\\cwru\\classification\\fold_gan\\fold_1\\scaler.pkl"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_1\\D_final.pth",
+      "path": "project/plots/cwru/classification_1024_full_run1/fold_gan/fold_1/D_final.pth",
+      "size": 690236,
+      "sha256": "d4b3e6983fe36f9ff4a862d6096bb8ae561d80bc40c7731545ec3c8cd7804718",
+      "asset": "evtol-versions-results-08.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\project\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_1\\D_final.pth"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_1\\G_epoch200.pth",
+      "path": "project/plots/cwru/classification_1024_full_run1/fold_gan/fold_1/G_epoch200.pth",
+      "size": 962024,
+      "sha256": "8d44da9dafc5cc690b56cc45a26086b7f5fd562c873fd7de4535cc0776e87d38",
+      "asset": "evtol-versions-results-08.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\project\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_1\\G_epoch200.pth"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_1\\G_epoch400.pth",
+      "path": "project/plots/cwru/classification_1024_full_run1/fold_gan/fold_1/G_epoch400.pth",
+      "size": 962024,
+      "sha256": "1012ccb52f4437c7510805779eb39072b4f4c80a34f9d15c08802f701a00ed10",
+      "asset": "evtol-versions-results-08.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\project\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_1\\G_epoch400.pth"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_1\\G_epoch600.pth",
+      "path": "project/plots/cwru/classification_1024_full_run1/fold_gan/fold_1/G_epoch600.pth",
+      "size": 962024,
+      "sha256": "c9035244dabe548aceb7067d6650cfc2e0c408724c5ba4cf28de79d5d2cbfc97",
+      "asset": "evtol-versions-results-08.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\project\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_1\\G_epoch600.pth"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_1\\G_final.pth",
+      "path": "project/plots/cwru/classification_1024_full_run1/fold_gan/fold_1/G_final.pth",
+      "size": 961808,
+      "sha256": "67a43a30e58e39846a9eb4d71015c5e3b0e10592186c1c93616b7773ba0d09b7",
+      "asset": "evtol-versions-results-08.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\project\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_1\\G_final.pth"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_1\\fold_result.pkl",
+      "path": "project/plots/cwru/classification_1024_full_run1/fold_gan/fold_1/fold_result.pkl",
+      "size": 12012,
+      "sha256": "068dd96704f06363faf94016a3775f3087318dc5e50f92f1634fd72602bfd2f1",
+      "asset": "evtol-versions-results-08.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\project\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_1\\fold_result.pkl"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_1\\model_a_result.pkl",
+      "path": "project/plots/cwru/classification_1024_full_run1/fold_gan/fold_1/model_a_result.pkl",
+      "size": 11691,
+      "sha256": "03631b5f7aec1c8eb1f0b0454bc81d1751aa13258bd4b5ac08fd86f847ff0da0",
+      "asset": "evtol-versions-results-08.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\project\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_1\\model_a_result.pkl"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_1\\scaler.pkl",
+      "path": "project/plots/cwru/classification_1024_full_run1/fold_gan/fold_1/scaler.pkl",
+      "size": 440,
+      "sha256": "566a4e9d93460e748b8856b2366029c6096c6b168d1a5714da6a5c2c10d2c45f",
+      "asset": "evtol-versions-results-08.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\project\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_1\\scaler.pkl"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_2\\D_final.pth",
+      "path": "project/plots/cwru/classification_1024_full_run1/fold_gan/fold_2/D_final.pth",
+      "size": 690236,
+      "sha256": "931102e75143651629f7ed68617ce65c71269e90fc434d67903d823b776bbee1",
+      "asset": "evtol-versions-results-08.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\project\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_2\\D_final.pth"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_2\\G_epoch200.pth",
+      "path": "project/plots/cwru/classification_1024_full_run1/fold_gan/fold_2/G_epoch200.pth",
+      "size": 962024,
+      "sha256": "5d4a588fbafd6006ddf120cf93509b7cfe1974ddd94e2ceba2c709d91cdd8d0c",
+      "asset": "evtol-versions-results-08.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\project\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_2\\G_epoch200.pth"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_2\\G_epoch400.pth",
+      "path": "project/plots/cwru/classification_1024_full_run1/fold_gan/fold_2/G_epoch400.pth",
+      "size": 962024,
+      "sha256": "84ae2c45d302e8439e5b96a7a24ce6cb7a1dd461daf2dce0ebff751fee084255",
+      "asset": "evtol-versions-results-08.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\project\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_2\\G_epoch400.pth"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_2\\G_epoch600.pth",
+      "path": "project/plots/cwru/classification_1024_full_run1/fold_gan/fold_2/G_epoch600.pth",
+      "size": 962024,
+      "sha256": "83f831ba36e879a53ce403871ec91d4519ee0f1cf7ba08b20442389dc5c0f13a",
+      "asset": "evtol-versions-results-08.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\project\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_2\\G_epoch600.pth"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_2\\G_final.pth",
+      "path": "project/plots/cwru/classification_1024_full_run1/fold_gan/fold_2/G_final.pth",
+      "size": 961808,
+      "sha256": "74322d23f1539dd367b2be76bb3c42c44afdebe6f1f7be09740fc00076d7a9d7",
+      "asset": "evtol-versions-results-08.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\project\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_2\\G_final.pth"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_2\\fold_result.pkl",
+      "path": "project/plots/cwru/classification_1024_full_run1/fold_gan/fold_2/fold_result.pkl",
+      "size": 12012,
+      "sha256": "3d5970fcee14c88f15d7905e7e4d149ea6bfdfb4ae2bfaa882d1c2c3fcf285dc",
+      "asset": "evtol-versions-results-08.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\project\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_2\\fold_result.pkl"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_2\\model_a_result.pkl",
+      "path": "project/plots/cwru/classification_1024_full_run1/fold_gan/fold_2/model_a_result.pkl",
+      "size": 11691,
+      "sha256": "52a75582b4ddb62901a33dd14c1702614ffe1ffab08a74a7d05b698c75e09131",
+      "asset": "evtol-versions-results-08.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\project\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_2\\model_a_result.pkl"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_2\\scaler.pkl",
+      "path": "project/plots/cwru/classification_1024_full_run1/fold_gan/fold_2/scaler.pkl",
+      "size": 440,
+      "sha256": "57fa39cecf600752557a3370ccb93d129283e85c044593e05d07b1950c906c88",
+      "asset": "evtol-versions-results-08.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\project\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_2\\scaler.pkl"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_3\\D_final.pth",
+      "path": "project/plots/cwru/classification_1024_full_run1/fold_gan/fold_3/D_final.pth",
+      "size": 690236,
+      "sha256": "e87258add458bb2f6cd092c98bf8d1e84e535cc7ce13017a2e08c20feea4f9f0",
+      "asset": "evtol-versions-results-08.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\project\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_3\\D_final.pth"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_3\\G_epoch200.pth",
+      "path": "project/plots/cwru/classification_1024_full_run1/fold_gan/fold_3/G_epoch200.pth",
+      "size": 962024,
+      "sha256": "d12c101082c55a7cf305105d7fda251d3b1ec02aa04cc6227cce0182518b93fd",
+      "asset": "evtol-versions-results-08.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\project\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_3\\G_epoch200.pth"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_3\\G_epoch400.pth",
+      "path": "project/plots/cwru/classification_1024_full_run1/fold_gan/fold_3/G_epoch400.pth",
+      "size": 962024,
+      "sha256": "d26d19e0ab0ef7a517c822d73089bff333522a94ee76271860c28e1bf3c172df",
+      "asset": "evtol-versions-results-08.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\project\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_3\\G_epoch400.pth"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_3\\G_epoch600.pth",
+      "path": "project/plots/cwru/classification_1024_full_run1/fold_gan/fold_3/G_epoch600.pth",
+      "size": 962024,
+      "sha256": "ff4993d092f9d29f21b589aa2ce66e6cfb2425bb166a20a8b7e6ad2ba2af8746",
+      "asset": "evtol-versions-results-08.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\project\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_3\\G_epoch600.pth"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_3\\G_final.pth",
+      "path": "project/plots/cwru/classification_1024_full_run1/fold_gan/fold_3/G_final.pth",
+      "size": 961808,
+      "sha256": "e10d7e8a8163ea1739fac7f144bfca8cd5eb7701caa765192a33fb0e2c25b93e",
+      "asset": "evtol-versions-results-08.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\project\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_3\\G_final.pth"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_3\\fold_result.pkl",
+      "path": "project/plots/cwru/classification_1024_full_run1/fold_gan/fold_3/fold_result.pkl",
+      "size": 12012,
+      "sha256": "4617486c837cd54aa630a4d1aef3c7714fd2f9dd7159d852039c90323ac941a7",
+      "asset": "evtol-versions-results-08.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\project\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_3\\fold_result.pkl"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_3\\model_a_result.pkl",
+      "path": "project/plots/cwru/classification_1024_full_run1/fold_gan/fold_3/model_a_result.pkl",
+      "size": 11691,
+      "sha256": "974edbf78fb8894d2408f8449bc210748681227f564561294fb0e73e0cb4484e",
+      "asset": "evtol-versions-results-08.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\project\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_3\\model_a_result.pkl"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_3\\scaler.pkl",
+      "path": "project/plots/cwru/classification_1024_full_run1/fold_gan/fold_3/scaler.pkl",
+      "size": 440,
+      "sha256": "9800fac74fe4b6528b07eeca9341b884e8639aa96e635fe993622483e8cdc453",
+      "asset": "evtol-versions-results-08.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\project\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_3\\scaler.pkl"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_4\\D_final.pth",
+      "path": "project/plots/cwru/classification_1024_full_run1/fold_gan/fold_4/D_final.pth",
+      "size": 690236,
+      "sha256": "6f2a34575b2f8a8ea5011139abb644a09570f6242187fed080bad28b082d605c",
+      "asset": "evtol-versions-results-08.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\project\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_4\\D_final.pth"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_4\\G_epoch200.pth",
+      "path": "project/plots/cwru/classification_1024_full_run1/fold_gan/fold_4/G_epoch200.pth",
+      "size": 962024,
+      "sha256": "f72b1c61158e17e7bdf3d4e9f4be8224d59cc89f29e6366c0a72617f36a868c7",
+      "asset": "evtol-versions-results-08.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\project\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_4\\G_epoch200.pth"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_4\\G_epoch400.pth",
+      "path": "project/plots/cwru/classification_1024_full_run1/fold_gan/fold_4/G_epoch400.pth",
+      "size": 962024,
+      "sha256": "18d2caff34ac1d99f4d501aae409881c58ba3b6b74342bb63ce4bf09fc604647",
+      "asset": "evtol-versions-results-08.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\project\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_4\\G_epoch400.pth"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_4\\G_epoch600.pth",
+      "path": "project/plots/cwru/classification_1024_full_run1/fold_gan/fold_4/G_epoch600.pth",
+      "size": 962024,
+      "sha256": "1e2c0f1b500ab34bec92ba56ff257c32edd5b9dd37563624dbb6776da50278d4",
+      "asset": "evtol-versions-results-08.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\project\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_4\\G_epoch600.pth"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_4\\G_final.pth",
+      "path": "project/plots/cwru/classification_1024_full_run1/fold_gan/fold_4/G_final.pth",
+      "size": 961808,
+      "sha256": "b7194c07988af980719b7d0807545e4ffc55bb7bb1096f7fdfaeec12f6795923",
+      "asset": "evtol-versions-results-08.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\project\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_4\\G_final.pth"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_4\\fold_result.pkl",
+      "path": "project/plots/cwru/classification_1024_full_run1/fold_gan/fold_4/fold_result.pkl",
+      "size": 12012,
+      "sha256": "0807055fbc3c5d19fe7066a7c1675c9c82274b43369a70ce7368c10618a7a988",
+      "asset": "evtol-versions-results-08.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\project\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_4\\fold_result.pkl"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_4\\model_a_result.pkl",
+      "path": "project/plots/cwru/classification_1024_full_run1/fold_gan/fold_4/model_a_result.pkl",
+      "size": 11691,
+      "sha256": "c996cbe5e91abaced61997e09d5a3b84df7ab18bcd254d2b58cb5f18ea767dde",
+      "asset": "evtol-versions-results-08.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\project\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_4\\model_a_result.pkl"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_4\\scaler.pkl",
+      "path": "project/plots/cwru/classification_1024_full_run1/fold_gan/fold_4/scaler.pkl",
+      "size": 440,
+      "sha256": "4344476f0c564f76c0797e541006c648d0763fa0f9b8a86f749612646f06f4c9",
+      "asset": "evtol-versions-results-08.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\project\\plots\\cwru\\classification_1024_full_run1\\fold_gan\\fold_4\\scaler.pkl"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\plots\\cwru\\data_process\\scaler.pkl",
+      "path": "project/plots/cwru/data_process/scaler.pkl",
+      "size": 440,
+      "sha256": "1a852bd5362bb54f57f57453495f055757daf3030e331336fa25b3756c969284",
+      "asset": "evtol-versions-results-08.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\project\\plots\\cwru\\data_process\\scaler.pkl"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\plots\\cwru\\data_process_1024\\scaler.pkl",
+      "path": "project/plots/cwru/data_process_1024/scaler.pkl",
+      "size": 440,
+      "sha256": "4b2508533054de26ce09f184f8d52d6e46e3f3190012038ab55f7a842421b2c5",
+      "asset": "evtol-versions-results-08.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\project\\plots\\cwru\\data_process_1024\\scaler.pkl"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_audit\\learning_smoke\\folds\\fold_1\\classifier_scaler.pkl",
+      "path": "old_worktree/output_hex_audit/learning_smoke/folds/fold_1/classifier_scaler.pkl",
+      "size": 848,
+      "sha256": "af8a1923bbd5b17dc69824308b7423429591b3432e318b1bdd9c5ce150a147ef",
+      "asset": "evtol-versions-results-09.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_audit\\learning_smoke\\folds\\fold_1\\classifier_scaler.pkl"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_audit\\learning_smoke\\folds\\fold_1\\gan_minmax_scaler.pkl",
+      "path": "old_worktree/output_hex_audit/learning_smoke/folds/fold_1/gan_minmax_scaler.pkl",
+      "size": 845,
+      "sha256": "87ee44a88e0bcc9062dc9dbed2820865bf9819286e8bb810087be19aec065b3f",
+      "asset": "evtol-versions-results-09.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_audit\\learning_smoke\\folds\\fold_1\\gan_minmax_scaler.pkl"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_audit\\learning_smoke\\folds\\fold_1\\class_weighted\\classifier.pth",
+      "path": "old_worktree/output_hex_audit/learning_smoke/folds/fold_1/class_weighted/classifier.pth",
+      "size": 21861,
+      "sha256": "37666ee38f70563baf2b812a58c057d8e4d09775a629799e3647002f0c968739",
+      "asset": "evtol-versions-results-09.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_audit\\learning_smoke\\folds\\fold_1\\class_weighted\\classifier.pth"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_audit\\learning_smoke\\folds\\fold_1\\class_weighted\\result.pkl",
+      "path": "old_worktree/output_hex_audit/learning_smoke/folds/fold_1/class_weighted/result.pkl",
+      "size": 4481,
+      "sha256": "66840fb83517e6a88813e1b9d5f4d9891ad18bc6ccde37aafc68278b1ec06d20",
+      "asset": "evtol-versions-results-09.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_audit\\learning_smoke\\folds\\fold_1\\class_weighted\\result.pkl"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_audit\\learning_smoke\\folds\\fold_1\\no_gan\\classifier.pth",
+      "path": "old_worktree/output_hex_audit/learning_smoke/folds/fold_1/no_gan/classifier.pth",
+      "size": 21861,
+      "sha256": "525b41997744453bf179116a3acd2b16685f2ec4593876bbd268ff2768a6b9c5",
+      "asset": "evtol-versions-results-09.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_audit\\learning_smoke\\folds\\fold_1\\no_gan\\classifier.pth"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_audit\\learning_smoke\\folds\\fold_1\\no_gan\\result.pkl",
+      "path": "old_worktree/output_hex_audit/learning_smoke/folds/fold_1/no_gan/result.pkl",
+      "size": 4481,
+      "sha256": "6fd4d3cc7c761cd66443da819912eff7f0e5587732b120b062524ee3e8c09b49",
+      "asset": "evtol-versions-results-09.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_audit\\learning_smoke\\folds\\fold_1\\no_gan\\result.pkl"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_audit\\learning_smoke\\folds\\fold_1\\random_oversampling\\classifier.pth",
+      "path": "old_worktree/output_hex_audit/learning_smoke/folds/fold_1/random_oversampling/classifier.pth",
+      "size": 21861,
+      "sha256": "52f2d016e545eebaa78d591861544b71dd04baf82953b24b8f6af09a78d8becc",
+      "asset": "evtol-versions-results-09.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_audit\\learning_smoke\\folds\\fold_1\\random_oversampling\\classifier.pth"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_audit\\learning_smoke\\folds\\fold_1\\random_oversampling\\result.pkl",
+      "path": "old_worktree/output_hex_audit/learning_smoke/folds/fold_1/random_oversampling/result.pkl",
+      "size": 4481,
+      "sha256": "8a64bce0ffdcd208c8dbc77a1946b80abf2f4b480ad71ae0c334b60270bba804",
+      "asset": "evtol-versions-results-09.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_audit\\learning_smoke\\folds\\fold_1\\random_oversampling\\result.pkl"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_audit\\learning_smoke\\folds\\fold_1\\wgan_plain\\classifier.pth",
+      "path": "old_worktree/output_hex_audit/learning_smoke/folds/fold_1/wgan_plain/classifier.pth",
+      "size": 21861,
+      "sha256": "ec15ba8523c3cd5355dc5e1c23315530908006b4d6ec443bcb4e0ed1dfe6ba9f",
+      "asset": "evtol-versions-results-09.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_audit\\learning_smoke\\folds\\fold_1\\wgan_plain\\classifier.pth"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_audit\\learning_smoke\\folds\\fold_1\\wgan_plain\\result.pkl",
+      "path": "old_worktree/output_hex_audit/learning_smoke/folds/fold_1/wgan_plain/result.pkl",
+      "size": 4481,
+      "sha256": "14648e9d88f434e1da177276ac86e0516e90dab48c59b677411ea3cdcf6fd8ec",
+      "asset": "evtol-versions-results-09.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_audit\\learning_smoke\\folds\\fold_1\\wgan_plain\\result.pkl"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_audit\\learning_smoke\\folds\\fold_1\\wgan_plain\\synthetic_meta.pkl",
+      "path": "old_worktree/output_hex_audit/learning_smoke/folds/fold_1/wgan_plain/synthetic_meta.pkl",
+      "size": 361,
+      "sha256": "50b793d404827521ba1dcf84e24eec3d49b14d3f6abbd402be6d399b7ec49b25",
+      "asset": "evtol-versions-results-09.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_audit\\learning_smoke\\folds\\fold_1\\wgan_plain\\synthetic_meta.pkl"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_audit\\learning_smoke\\folds\\fold_2\\classifier_scaler.pkl",
+      "path": "old_worktree/output_hex_audit/learning_smoke/folds/fold_2/classifier_scaler.pkl",
+      "size": 848,
+      "sha256": "913ab8b0033d07f333654ca1226f1efc2851490064c61882e5ffd03212aa6680",
+      "asset": "evtol-versions-results-09.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_audit\\learning_smoke\\folds\\fold_2\\classifier_scaler.pkl"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_audit\\learning_smoke\\folds\\fold_2\\gan_minmax_scaler.pkl",
+      "path": "old_worktree/output_hex_audit/learning_smoke/folds/fold_2/gan_minmax_scaler.pkl",
+      "size": 845,
+      "sha256": "49b542ae1c8fc8efd1dd35b9aeb0fd5b93102f70946ebff750bb278646b5d328",
+      "asset": "evtol-versions-results-09.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_audit\\learning_smoke\\folds\\fold_2\\gan_minmax_scaler.pkl"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_audit\\learning_smoke\\folds\\fold_2\\class_weighted\\classifier.pth",
+      "path": "old_worktree/output_hex_audit/learning_smoke/folds/fold_2/class_weighted/classifier.pth",
+      "size": 21861,
+      "sha256": "fea8a96ca4c1c67e0bc96db74a5fd501ce00a8ec5926e8ff53f926211f4946dd",
+      "asset": "evtol-versions-results-09.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_audit\\learning_smoke\\folds\\fold_2\\class_weighted\\classifier.pth"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_audit\\learning_smoke\\folds\\fold_2\\class_weighted\\result.pkl",
+      "path": "old_worktree/output_hex_audit/learning_smoke/folds/fold_2/class_weighted/result.pkl",
+      "size": 4481,
+      "sha256": "5ab9a38d61cb34f51722722f30b49a056dfcdbdd22b1754ae8261a35b89874ee",
+      "asset": "evtol-versions-results-09.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_audit\\learning_smoke\\folds\\fold_2\\class_weighted\\result.pkl"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_audit\\learning_smoke\\folds\\fold_2\\no_gan\\classifier.pth",
+      "path": "old_worktree/output_hex_audit/learning_smoke/folds/fold_2/no_gan/classifier.pth",
+      "size": 21861,
+      "sha256": "2e868ad20e3a960ecbe53c1baeb5b38be330d5cc471941288e3278b2d9ce0e3f",
+      "asset": "evtol-versions-results-09.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_audit\\learning_smoke\\folds\\fold_2\\no_gan\\classifier.pth"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_audit\\learning_smoke\\folds\\fold_2\\no_gan\\result.pkl",
+      "path": "old_worktree/output_hex_audit/learning_smoke/folds/fold_2/no_gan/result.pkl",
+      "size": 4481,
+      "sha256": "d7a977a8d2156456658a83708b2c86799a30bd396766432d8a0716e338729d54",
+      "asset": "evtol-versions-results-09.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_audit\\learning_smoke\\folds\\fold_2\\no_gan\\result.pkl"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_audit\\learning_smoke\\folds\\fold_2\\random_oversampling\\classifier.pth",
+      "path": "old_worktree/output_hex_audit/learning_smoke/folds/fold_2/random_oversampling/classifier.pth",
+      "size": 21861,
+      "sha256": "6169bdb2487ba5a7a73b959a53f50f1b99e84ab44240c995c0df0b6b1dd7aec6",
+      "asset": "evtol-versions-results-09.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_audit\\learning_smoke\\folds\\fold_2\\random_oversampling\\classifier.pth"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_audit\\learning_smoke\\folds\\fold_2\\random_oversampling\\result.pkl",
+      "path": "old_worktree/output_hex_audit/learning_smoke/folds/fold_2/random_oversampling/result.pkl",
+      "size": 4481,
+      "sha256": "d27ad7a3c7a8305abb799d3b3d420d3984e4961191ec7ec3d0bd99841b264efa",
+      "asset": "evtol-versions-results-09.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_audit\\learning_smoke\\folds\\fold_2\\random_oversampling\\result.pkl"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_audit\\learning_smoke\\folds\\fold_2\\wgan_plain\\classifier.pth",
+      "path": "old_worktree/output_hex_audit/learning_smoke/folds/fold_2/wgan_plain/classifier.pth",
+      "size": 21861,
+      "sha256": "161f9ec5b28f1a27b169da266348d4a20bd5170d57c7567a2c90103d7ae61e6e",
+      "asset": "evtol-versions-results-09.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_audit\\learning_smoke\\folds\\fold_2\\wgan_plain\\classifier.pth"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_audit\\learning_smoke\\folds\\fold_2\\wgan_plain\\result.pkl",
+      "path": "old_worktree/output_hex_audit/learning_smoke/folds/fold_2/wgan_plain/result.pkl",
+      "size": 4481,
+      "sha256": "06b56cd216ef459b62da37dc1354014102071954eac09d3da9b10f9e6db269c3",
+      "asset": "evtol-versions-results-09.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_audit\\learning_smoke\\folds\\fold_2\\wgan_plain\\result.pkl"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_audit\\learning_smoke\\folds\\fold_2\\wgan_plain\\synthetic_meta.pkl",
+      "path": "old_worktree/output_hex_audit/learning_smoke/folds/fold_2/wgan_plain/synthetic_meta.pkl",
+      "size": 361,
+      "sha256": "e708a7ba67c260af99d108b7c8ebd9da94ed5d16553cf417f0c29c03d2577b5b",
+      "asset": "evtol-versions-results-09.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_audit\\learning_smoke\\folds\\fold_2\\wgan_plain\\synthetic_meta.pkl"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_audit\\learning_smoke_rotation_combined\\folds\\fold_1\\classifier_scaler.pkl",
+      "path": "old_worktree/output_hex_audit/learning_smoke_rotation_combined/folds/fold_1/classifier_scaler.pkl",
+      "size": 920,
+      "sha256": "6c215c1486fa5a948d9774ba6edf291d3b5ce409d4bd5b2e704b7321465f4304",
+      "asset": "evtol-versions-results-09.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_audit\\learning_smoke_rotation_combined\\folds\\fold_1\\classifier_scaler.pkl"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_audit\\learning_smoke_rotation_combined\\folds\\fold_1\\gan_minmax_scaler.pkl",
+      "path": "old_worktree/output_hex_audit/learning_smoke_rotation_combined/folds/fold_1/gan_minmax_scaler.pkl",
+      "size": 905,
+      "sha256": "7b92f97d73a9a7a37dd9a41df447a88cdccc2800a6372062095de17bc60d922e",
+      "asset": "evtol-versions-results-09.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_audit\\learning_smoke_rotation_combined\\folds\\fold_1\\gan_minmax_scaler.pkl"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_audit\\learning_smoke_rotation_combined\\folds\\fold_1\\class_weighted\\classifier.pth",
+      "path": "old_worktree/output_hex_audit/learning_smoke_rotation_combined/folds/fold_1/class_weighted/classifier.pth",
+      "size": 22629,
+      "sha256": "f6818643e1357f3b9c488058496467afdc687ea70c231f8fa942815b91ef0af9",
+      "asset": "evtol-versions-results-09.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_audit\\learning_smoke_rotation_combined\\folds\\fold_1\\class_weighted\\classifier.pth"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_audit\\learning_smoke_rotation_combined\\folds\\fold_1\\class_weighted\\result.pkl",
+      "path": "old_worktree/output_hex_audit/learning_smoke_rotation_combined/folds/fold_1/class_weighted/result.pkl",
+      "size": 4481,
+      "sha256": "129d79e014a4516f7634428f4ddf49ee00e22b905f9bb8e3902d0eefbabdaf50",
+      "asset": "evtol-versions-results-09.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_audit\\learning_smoke_rotation_combined\\folds\\fold_1\\class_weighted\\result.pkl"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_audit\\learning_smoke_rotation_combined\\folds\\fold_1\\no_gan\\classifier.pth",
+      "path": "old_worktree/output_hex_audit/learning_smoke_rotation_combined/folds/fold_1/no_gan/classifier.pth",
+      "size": 22629,
+      "sha256": "ad2ff9f51520deef457831aeebb1289a08d50dc1e56cfff20721059f676045a5",
+      "asset": "evtol-versions-results-09.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_audit\\learning_smoke_rotation_combined\\folds\\fold_1\\no_gan\\classifier.pth"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_audit\\learning_smoke_rotation_combined\\folds\\fold_1\\no_gan\\result.pkl",
+      "path": "old_worktree/output_hex_audit/learning_smoke_rotation_combined/folds/fold_1/no_gan/result.pkl",
+      "size": 4481,
+      "sha256": "ff1345f7fb26d9f5658c9d4f93ee15f3bc613dffcac25d50a7bbcf9be6498bf5",
+      "asset": "evtol-versions-results-09.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_audit\\learning_smoke_rotation_combined\\folds\\fold_1\\no_gan\\result.pkl"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_audit\\learning_smoke_rotation_combined\\folds\\fold_1\\random_oversampling\\classifier.pth",
+      "path": "old_worktree/output_hex_audit/learning_smoke_rotation_combined/folds/fold_1/random_oversampling/classifier.pth",
+      "size": 22629,
+      "sha256": "77bacbbe517ea45e98a5e9e361c5618963db40399a4fa9ced7fcfe98c325f338",
+      "asset": "evtol-versions-results-09.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_audit\\learning_smoke_rotation_combined\\folds\\fold_1\\random_oversampling\\classifier.pth"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_audit\\learning_smoke_rotation_combined\\folds\\fold_1\\random_oversampling\\result.pkl",
+      "path": "old_worktree/output_hex_audit/learning_smoke_rotation_combined/folds/fold_1/random_oversampling/result.pkl",
+      "size": 4481,
+      "sha256": "ddac2243bdec3bdf23d0f216be9d40da7292e7a3d2a3d73f6de0fccdc53c424e",
+      "asset": "evtol-versions-results-09.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_audit\\learning_smoke_rotation_combined\\folds\\fold_1\\random_oversampling\\result.pkl"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_audit\\learning_smoke_rotation_combined\\folds\\fold_1\\wgan_plain\\classifier.pth",
+      "path": "old_worktree/output_hex_audit/learning_smoke_rotation_combined/folds/fold_1/wgan_plain/classifier.pth",
+      "size": 22629,
+      "sha256": "0f039ae7da4282e1a899488d52299fe371121fd78ff786bff88705442145d375",
+      "asset": "evtol-versions-results-09.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_audit\\learning_smoke_rotation_combined\\folds\\fold_1\\wgan_plain\\classifier.pth"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_audit\\learning_smoke_rotation_combined\\folds\\fold_1\\wgan_plain\\result.pkl",
+      "path": "old_worktree/output_hex_audit/learning_smoke_rotation_combined/folds/fold_1/wgan_plain/result.pkl",
+      "size": 4481,
+      "sha256": "54e2a40b68ca30037073667296f2a699b5fc9467b04f398e52c08d87c876077a",
+      "asset": "evtol-versions-results-09.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_audit\\learning_smoke_rotation_combined\\folds\\fold_1\\wgan_plain\\result.pkl"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_audit\\learning_smoke_rotation_combined\\folds\\fold_1\\wgan_plain\\synthetic_meta.pkl",
+      "path": "old_worktree/output_hex_audit/learning_smoke_rotation_combined/folds/fold_1/wgan_plain/synthetic_meta.pkl",
+      "size": 361,
+      "sha256": "f58d8a319ec562c9eb1ea1feaf9c419aaa36ede3aad874ab125d17ccab1c6f7c",
+      "asset": "evtol-versions-results-09.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_audit\\learning_smoke_rotation_combined\\folds\\fold_1\\wgan_plain\\synthetic_meta.pkl"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_audit\\learning_smoke_rotation_combined\\folds\\fold_2\\classifier_scaler.pkl",
+      "path": "old_worktree/output_hex_audit/learning_smoke_rotation_combined/folds/fold_2/classifier_scaler.pkl",
+      "size": 920,
+      "sha256": "b2ddb3f2b8f4ad238982ab92d17825d642c51e966955c9e5ab021ae3b69d2635",
+      "asset": "evtol-versions-results-09.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_audit\\learning_smoke_rotation_combined\\folds\\fold_2\\classifier_scaler.pkl"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_audit\\learning_smoke_rotation_combined\\folds\\fold_2\\gan_minmax_scaler.pkl",
+      "path": "old_worktree/output_hex_audit/learning_smoke_rotation_combined/folds/fold_2/gan_minmax_scaler.pkl",
+      "size": 905,
+      "sha256": "ed92116aa070b135f6bf2648e9845cbf7b59311a8242ad324428f295d7f2ceb9",
+      "asset": "evtol-versions-results-09.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_audit\\learning_smoke_rotation_combined\\folds\\fold_2\\gan_minmax_scaler.pkl"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_audit\\learning_smoke_rotation_combined\\folds\\fold_2\\class_weighted\\classifier.pth",
+      "path": "old_worktree/output_hex_audit/learning_smoke_rotation_combined/folds/fold_2/class_weighted/classifier.pth",
+      "size": 22629,
+      "sha256": "a2a9077209f007af3201b625969e3e858ef58be505d2433d88c02035b704d7ca",
+      "asset": "evtol-versions-results-09.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_audit\\learning_smoke_rotation_combined\\folds\\fold_2\\class_weighted\\classifier.pth"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_audit\\learning_smoke_rotation_combined\\folds\\fold_2\\class_weighted\\result.pkl",
+      "path": "old_worktree/output_hex_audit/learning_smoke_rotation_combined/folds/fold_2/class_weighted/result.pkl",
+      "size": 4481,
+      "sha256": "c02636edb4b225d4b1efeb37c3f076780c01bb6c10da134ecd606ba004c1f46a",
+      "asset": "evtol-versions-results-09.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_audit\\learning_smoke_rotation_combined\\folds\\fold_2\\class_weighted\\result.pkl"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_audit\\learning_smoke_rotation_combined\\folds\\fold_2\\no_gan\\classifier.pth",
+      "path": "old_worktree/output_hex_audit/learning_smoke_rotation_combined/folds/fold_2/no_gan/classifier.pth",
+      "size": 22629,
+      "sha256": "35593f754a5511693c43095e313eed65057b3681032bec8dff90b63b5190a84d",
+      "asset": "evtol-versions-results-09.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_audit\\learning_smoke_rotation_combined\\folds\\fold_2\\no_gan\\classifier.pth"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_audit\\learning_smoke_rotation_combined\\folds\\fold_2\\no_gan\\result.pkl",
+      "path": "old_worktree/output_hex_audit/learning_smoke_rotation_combined/folds/fold_2/no_gan/result.pkl",
+      "size": 4481,
+      "sha256": "0d2f87760d1b8449e6fddcfbf7a6b9b0d6b54a0daae11fad3f1660989f4d6690",
+      "asset": "evtol-versions-results-09.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_audit\\learning_smoke_rotation_combined\\folds\\fold_2\\no_gan\\result.pkl"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_audit\\learning_smoke_rotation_combined\\folds\\fold_2\\random_oversampling\\classifier.pth",
+      "path": "old_worktree/output_hex_audit/learning_smoke_rotation_combined/folds/fold_2/random_oversampling/classifier.pth",
+      "size": 22629,
+      "sha256": "540ef34fa4045434c3efa01a39b497ace4f2cf45c2c47accb56d930c30a2f416",
+      "asset": "evtol-versions-results-09.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_audit\\learning_smoke_rotation_combined\\folds\\fold_2\\random_oversampling\\classifier.pth"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_audit\\learning_smoke_rotation_combined\\folds\\fold_2\\random_oversampling\\result.pkl",
+      "path": "old_worktree/output_hex_audit/learning_smoke_rotation_combined/folds/fold_2/random_oversampling/result.pkl",
+      "size": 4481,
+      "sha256": "e0dd7739a7a7358e33876debfc5be3cdbb8b5fe9301ff6516a1eb767fc1814b4",
+      "asset": "evtol-versions-results-09.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_audit\\learning_smoke_rotation_combined\\folds\\fold_2\\random_oversampling\\result.pkl"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_audit\\learning_smoke_rotation_combined\\folds\\fold_2\\wgan_plain\\classifier.pth",
+      "path": "old_worktree/output_hex_audit/learning_smoke_rotation_combined/folds/fold_2/wgan_plain/classifier.pth",
+      "size": 22629,
+      "sha256": "2ba2a5fffb087ae955708096f0653aaf13a91eba1370183da1ad4d0aa3d6af2f",
+      "asset": "evtol-versions-results-09.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_audit\\learning_smoke_rotation_combined\\folds\\fold_2\\wgan_plain\\classifier.pth"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_audit\\learning_smoke_rotation_combined\\folds\\fold_2\\wgan_plain\\result.pkl",
+      "path": "old_worktree/output_hex_audit/learning_smoke_rotation_combined/folds/fold_2/wgan_plain/result.pkl",
+      "size": 4481,
+      "sha256": "91ad8e74e911724da882a97413a39cf6651f78b90f5271ee9f3b243d4a1b77c6",
+      "asset": "evtol-versions-results-09.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_audit\\learning_smoke_rotation_combined\\folds\\fold_2\\wgan_plain\\result.pkl"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_audit\\learning_smoke_rotation_combined\\folds\\fold_2\\wgan_plain\\synthetic_meta.pkl",
+      "path": "old_worktree/output_hex_audit/learning_smoke_rotation_combined/folds/fold_2/wgan_plain/synthetic_meta.pkl",
+      "size": 361,
+      "sha256": "0ea93762f8d0a64a84eb5a586d975cb69c5b8c004485a4af6ac1c170440e2acc",
+      "asset": "evtol-versions-results-09.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_audit\\learning_smoke_rotation_combined\\folds\\fold_2\\wgan_plain\\synthetic_meta.pkl"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_audit\\preprocessed\\combined\\scaler.pkl",
+      "path": "old_worktree/output_hex_audit/preprocessed/combined/scaler.pkl",
+      "size": 848,
+      "sha256": "b8b8b11d3d214bfa0815a59fc6362b2dd0f568623537e9896f6266ebe84343c1",
+      "asset": "evtol-versions-results-09.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_audit\\preprocessed\\combined\\scaler.pkl"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_audit\\preprocessed\\rotation_combined\\scaler.pkl",
+      "path": "old_worktree/output_hex_audit/preprocessed/rotation_combined/scaler.pkl",
+      "size": 920,
+      "sha256": "4a4afdb2a733b71be98b2c108c95ffab68fde66403a4eaba3a6b38b93571b03a",
+      "asset": "evtol-versions-results-09.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_audit\\preprocessed\\rotation_combined\\scaler.pkl"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_next_20261009\\batch2\\diagnostics\\imu_only\\interface_model.pt",
+      "path": "old_worktree/output_hex_next_20261009/batch2/diagnostics/imu_only/interface_model.pt",
+      "size": 147042,
+      "sha256": "6a20c1b46a8bd7a045620dea09bb1a112e1c7ddcda91aaa5467b0bf3b8f1cf9e",
+      "asset": "evtol-versions-results-10.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_next_20261009\\batch2\\diagnostics\\imu_only\\interface_model.pt"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_next_20261009\\batch2\\diagnostics\\imu_only_epoch30\\interface_model.pt",
+      "path": "old_worktree/output_hex_next_20261009/batch2/diagnostics/imu_only_epoch30/interface_model.pt",
+      "size": 147106,
+      "sha256": "be126e2d42283902828f9796007a6535ac854610e2d167045a6650e33933ecc9",
+      "asset": "evtol-versions-results-10.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_next_20261009\\batch2\\diagnostics\\imu_only_epoch30\\interface_model.pt"
+    },
+    {
+      "source": "C:\\Users\\lenovo\\.codex\\worktrees\\hex-audit-control\\eVTOL_Simulation\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\interface_model.pt",
+      "path": "old_worktree/output_hex_rate_tuning_20261010/release_v2/diagnostics/imu_only_epoch30/interface_model.pt",
+      "size": 148194,
+      "sha256": "e4a163cfd57fd61c115328b12dfaa0a4cae19c17799ee218b82e934edd7aee4b",
+      "asset": "evtol-versions-results-13.zip",
+      "retained_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\模型\\retained_training_artifacts_20261030\\old_worktree\\output_hex_rate_tuning_20261010\\release_v2\\diagnostics\\imu_only_epoch30\\interface_model.pt"
+    }
+  ]
+}

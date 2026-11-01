@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "isolated_current_only_copy": true,
+  "native_scenario_task_family": 0,
+  "duration_s": 24,
+  "native_runs_compared": 2,
+  "state_error_below_1e_9": true,
+  "command_error_below_1e_8": true,
+  "observer_component_checks_passed": 9,
+  "saved_demo_readback_passed": true,
+  "main_workspace_model_modified": false
+}

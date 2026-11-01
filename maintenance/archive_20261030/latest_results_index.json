@@ -1,0 +1,13 @@
+{
+  "profile": "recovery_v3_20261023",
+  "local_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\recovery\\recovery_v3_20261023",
+  "archive_url": "https://github.com/Gonxioa/eVTOL_Simulation/releases/tag/archive-20261030",
+  "needed_parts": [
+    "evtol-versions-results-04.zip",
+    "evtol-versions-results-05.zip",
+    "evtol-versions-results-06.zip",
+    "evtol-versions-results-07.zip"
+  ],
+  "file_count": 311,
+  "note": "These are the archived current-version results. Historical results are in the other parts. Each ZIP is independent."
+}

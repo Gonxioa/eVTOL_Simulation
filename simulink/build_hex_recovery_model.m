@@ -1,6 +1,6 @@
 function model_path=build_hex_recovery_model()
-%BUILD_HEX_RECOVERY_MODEL Copy the existing layout into an independent model.
-% The user's original SLX and open MATLAB session are never replaced.
+%BUILD_HEX_RECOVERY_MODEL Build the current model from its internal layout.
+% Historical runnable models are archived on GitHub, not kept as entry points.
 root=fileparts(mfilename('fullpath')); mdl='hex_recovery';
 model_path=fullfile(root,[mdl '.slx']);
 if bdIsLoaded(mdl)
@@ -13,7 +13,9 @@ if isfile(model_path)
     backup=fullfile(root,'output','recovery_tuning',['model_backup_' char(datetime('now','Format','yyyyMMdd_HHmmss_SSS'))]);
     mkdir(backup); copyfile(model_path,fullfile(backup,[mdl '.slx']));
 end
-copyfile(fullfile(root,'hex_evtol.slx'),model_path);
+template=fullfile(root,'internal','recovery_layout_template.slx');
+assert(isfile(template),'The internal recovery layout template is missing.');
+copyfile(template,model_path);
 load_system(model_path); ws=get_param(mdl,'ModelWorkspace');
 P=hex_recovery_parameters(); ws.assignin('P',P);
 groups=hex_recovery_block_parameters(P); fields=fieldnames(groups);

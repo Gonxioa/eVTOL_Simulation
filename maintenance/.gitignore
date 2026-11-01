@@ -1,0 +1,5 @@
+# Intermediate records retained locally; the final manifest and receipt are tracked.
+archive_20261030/sources.json
+archive_20261030/deletion_preflight_draft.json
+archive_20261030/upload_errors.json
+__pycache__/

@@ -1,0 +1,30 @@
+[
+  {
+    "branch": "codex/current-design-and-recovery",
+    "commit": "2eb54a46b4979e34a1098fa1fd9ed79d4943cddd"
+  },
+  {
+    "branch": "codex/rate-integral-tuning",
+    "commit": "a6b9f1dd3d839416e469755490b8ff7733acd4ee"
+  },
+  {
+    "branch": "fix/simulation-physics",
+    "commit": "af9b45ae3e0d77987a051494ba68962964a38832"
+  },
+  {
+    "branch": "hex-audit-control",
+    "commit": "63b9d7ee0dc47e11b5c1aee67e320458f36ed709"
+  },
+  {
+    "branch": "hex-tasks-continuous-diagnostics",
+    "commit": "f44cdbc245e07c169edb8b7e331253b56c202c27"
+  },
+  {
+    "branch": "main",
+    "commit": "d406af5ec8ad8ba4f9ff89106bed9a538a42e9ae"
+  },
+  {
+    "branch": "uavfd-f550-model",
+    "commit": "ef5fa5b0d7e00e63f9a4afe06e78128c1886b82b"
+  }
+]

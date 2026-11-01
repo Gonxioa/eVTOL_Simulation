@@ -236,7 +236,7 @@ def summary():
              "逐环整定、指标、算法、未通过候选和适用限制见 [RECOVERY_TUNING.md](RECOVERY_TUNING.md)。逐工况值见 [RECOVERY_CORE_RESULTS.json](RECOVERY_CORE_RESULTS.json)。", "",
              "这是所声明研究模型与测试范围内的结果，不代表多电机同时失效、任意风/延迟或真实飞行器保证。"]
     (ROOT/"validation/RECOVERY_SUMMARY.md").write_text("\n".join(text)+"\n",encoding="utf-8")
-    source_files=[ROOT/"hex_recovery.slx",ROOT/"hex_evtol.slx"]
+    source_files=[ROOT/"hex_recovery.slx",ROOT/"internal"/"recovery_layout_template.slx"]
     source_files+=list(ROOT.glob("*recovery*.m"))+list((ROOT/"blocks").glob("recovery*.m"))
     source_files+=list((ROOT/"validation").glob("*hex_recovery*.m"))
     source_files+=[Path(__file__),ROOT/"validation/RECOVERY_TUNING.md"]

@@ -1,5 +1,12 @@
 # eVTOL_Simulation — Project Handoff
 
+## 2026-11-01 当前状态优先
+
+所有本地代码分支与旧仿真结果已按用户要求归档到 GitHub；当前使用方式以 `CURRENT_DESIGN.md` 和 `simulink/README.md` 为准。
+本地日常模型为 `hex_recovery.slx`，保留当前 v3 结果；旧原模型及旧入口改从 `archive-20261030` 标签恢复。
+`simulink/internal/recovery_layout_template.slx` 是当前重建依赖，不能当作旧副本删除。
+下面各日期内容是历史交接记录，涉及旧文件或旧路径时必须结合归档标签阅读。
+
 ## 2026-10-25：当前设计与代码发布整理
 
 用户授权将当前全部维护的设计与代码上传 GitHub。整理分支为

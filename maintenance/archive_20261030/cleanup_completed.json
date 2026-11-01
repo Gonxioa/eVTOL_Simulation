@@ -1,0 +1,21 @@
+{
+  "completed_date": "2026-11-01",
+  "passed": true,
+  "active_model": "hex_recovery.slx",
+  "profile": "recovery_v3_20261023",
+  "main_model_unchanged": true,
+  "physics_and_controller_sources_unchanged": true,
+  "internal_template_identical_to_archived_layout": true,
+  "retained_training_artifacts": 84,
+  "current_cases": {
+    "core": 72,
+    "healthy_task": 4,
+    "ideal": 18,
+    "seeds": 12
+  },
+  "current_healthy_plots": 24,
+  "remote_verified_assets": 18,
+  "deleted_targets": 204,
+  "old_source_bytes_removed": 3361587423,
+  "old_worktree_removed": true
+}

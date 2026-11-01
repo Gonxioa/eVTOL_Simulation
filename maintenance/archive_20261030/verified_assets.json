@@ -1,0 +1,151 @@
+{
+  "release_url": "https://github.com/Gonxioa/eVTOL_Simulation/releases/tag/archive-20261030",
+  "verified": [
+    {
+      "name": "all-code-history.bundle",
+      "size": 7992808,
+      "sha256": "64146614c5407f3add3104def69f208e5934d4b1deba6672f9ca244ba609f0f7",
+      "id": 692030896,
+      "download_url": "https://github.com/Gonxioa/eVTOL_Simulation/releases/download/archive-20261030/all-code-history.bundle",
+      "server_digest": "sha256:64146614c5407f3add3104def69f208e5934d4b1deba6672f9ca244ba609f0f7"
+    },
+    {
+      "name": "archive-manifest.json",
+      "size": 1670524,
+      "sha256": "9b4e23a8c0e6b84dd769d456ee96060c8448fe47ddb7ddd91f8e418d6c906a51",
+      "id": 697180885,
+      "download_url": "https://github.com/Gonxioa/eVTOL_Simulation/releases/download/archive-20261030/archive-manifest.json",
+      "server_digest": "sha256:9b4e23a8c0e6b84dd769d456ee96060c8448fe47ddb7ddd91f8e418d6c906a51"
+    },
+    {
+      "name": "evtol-versions-results-01.zip",
+      "size": 159548446,
+      "sha256": "5d74c56385615ec8367967b33dec5addbf5e1474e81bdc2299e860f5157be5f3",
+      "id": 691992965,
+      "download_url": "https://github.com/Gonxioa/eVTOL_Simulation/releases/download/archive-20261030/evtol-versions-results-01.zip",
+      "server_digest": "sha256:5d74c56385615ec8367967b33dec5addbf5e1474e81bdc2299e860f5157be5f3"
+    },
+    {
+      "name": "evtol-versions-results-02.zip",
+      "size": 147643773,
+      "sha256": "4d0f7268c06317e27bf67a0fffd66a389521778521280dafa6bbe1d735d0a6e1",
+      "id": 692015950,
+      "download_url": "https://github.com/Gonxioa/eVTOL_Simulation/releases/download/archive-20261030/evtol-versions-results-02.zip",
+      "server_digest": "sha256:4d0f7268c06317e27bf67a0fffd66a389521778521280dafa6bbe1d735d0a6e1"
+    },
+    {
+      "name": "evtol-versions-results-03.zip",
+      "size": 134040434,
+      "sha256": "55193c2e7e37308f37b185e0a486148af41abecf42713bb298da8fa263dc75dd",
+      "id": 692007691,
+      "download_url": "https://github.com/Gonxioa/eVTOL_Simulation/releases/download/archive-20261030/evtol-versions-results-03.zip",
+      "server_digest": "sha256:55193c2e7e37308f37b185e0a486148af41abecf42713bb298da8fa263dc75dd"
+    },
+    {
+      "name": "evtol-versions-results-04.zip",
+      "size": 144251755,
+      "sha256": "bf99eb570feb6d6cce6012fdef2216904cdbf68cf923827629cba85e7a7738fe",
+      "id": 692007688,
+      "download_url": "https://github.com/Gonxioa/eVTOL_Simulation/releases/download/archive-20261030/evtol-versions-results-04.zip",
+      "server_digest": "sha256:bf99eb570feb6d6cce6012fdef2216904cdbf68cf923827629cba85e7a7738fe"
+    },
+    {
+      "name": "evtol-versions-results-05.zip",
+      "size": 147665195,
+      "sha256": "414e34ea3caef34141d9fc3cf6b6bd313f48d865d39625b95e8e3e34dcf89198",
+      "id": 692007690,
+      "download_url": "https://github.com/Gonxioa/eVTOL_Simulation/releases/download/archive-20261030/evtol-versions-results-05.zip",
+      "server_digest": "sha256:414e34ea3caef34141d9fc3cf6b6bd313f48d865d39625b95e8e3e34dcf89198"
+    },
+    {
+      "name": "evtol-versions-results-06.zip",
+      "size": 143300639,
+      "sha256": "5b436502579a33476da74d51835dad1eec383de7a116b37fbb93b7769e4e5754",
+      "id": 692015852,
+      "download_url": "https://github.com/Gonxioa/eVTOL_Simulation/releases/download/archive-20261030/evtol-versions-results-06.zip",
+      "server_digest": "sha256:5b436502579a33476da74d51835dad1eec383de7a116b37fbb93b7769e4e5754"
+    },
+    {
+      "name": "evtol-versions-results-07.zip",
+      "size": 171873027,
+      "sha256": "e379494d49a2dcaf5fd73a8ffe5bf9b30ac5e640f7c221b244a5c0aaaed14c0b",
+      "id": 692015827,
+      "download_url": "https://github.com/Gonxioa/eVTOL_Simulation/releases/download/archive-20261030/evtol-versions-results-07.zip",
+      "server_digest": "sha256:e379494d49a2dcaf5fd73a8ffe5bf9b30ac5e640f7c221b244a5c0aaaed14c0b"
+    },
+    {
+      "name": "evtol-versions-results-08.zip",
+      "size": 183313448,
+      "sha256": "f70a53ed69b92e58992c821e86dfd0f6b052187011fab80ad4d39ebb8793e2f5",
+      "id": 697187603,
+      "download_url": "https://github.com/Gonxioa/eVTOL_Simulation/releases/download/archive-20261030/evtol-versions-results-08.zip",
+      "server_digest": "sha256:f70a53ed69b92e58992c821e86dfd0f6b052187011fab80ad4d39ebb8793e2f5"
+    },
+    {
+      "name": "evtol-versions-results-09.zip",
+      "size": 139809900,
+      "sha256": "b83e452fd89651e645af7997809b81b903118bfcd1d11575edf6f9fffe323974",
+      "id": 697187601,
+      "download_url": "https://github.com/Gonxioa/eVTOL_Simulation/releases/download/archive-20261030/evtol-versions-results-09.zip",
+      "server_digest": "sha256:b83e452fd89651e645af7997809b81b903118bfcd1d11575edf6f9fffe323974"
+    },
+    {
+      "name": "evtol-versions-results-10.zip",
+      "size": 76594400,
+      "sha256": "7ff39819502b124350be31552e4fde3ef8d0559aa84d2ba115fcc6b99d91cb51",
+      "id": 697190933,
+      "download_url": "https://github.com/Gonxioa/eVTOL_Simulation/releases/download/archive-20261030/evtol-versions-results-10.zip",
+      "server_digest": "sha256:7ff39819502b124350be31552e4fde3ef8d0559aa84d2ba115fcc6b99d91cb51"
+    },
+    {
+      "name": "evtol-versions-results-11.zip",
+      "size": 99605240,
+      "sha256": "39aca04057cf33eccccef0326cfcb207318577bd1ef761aa460e22c224618993",
+      "id": 692022218,
+      "download_url": "https://github.com/Gonxioa/eVTOL_Simulation/releases/download/archive-20261030/evtol-versions-results-11.zip",
+      "server_digest": "sha256:39aca04057cf33eccccef0326cfcb207318577bd1ef761aa460e22c224618993"
+    },
+    {
+      "name": "evtol-versions-results-12.zip",
+      "size": 100089626,
+      "sha256": "0abe6bd6979960a37a7106e337afc35d2c9eadb7ad4fcad2caf8eaec17e7ed63",
+      "id": 692022494,
+      "download_url": "https://github.com/Gonxioa/eVTOL_Simulation/releases/download/archive-20261030/evtol-versions-results-12.zip",
+      "server_digest": "sha256:0abe6bd6979960a37a7106e337afc35d2c9eadb7ad4fcad2caf8eaec17e7ed63"
+    },
+    {
+      "name": "evtol-versions-results-13.zip",
+      "size": 90872994,
+      "sha256": "1b57d1901ae523f5132c4eec48e524b8311d48eaa66e51d37db74e34c73ff908",
+      "id": 697191537,
+      "download_url": "https://github.com/Gonxioa/eVTOL_Simulation/releases/download/archive-20261030/evtol-versions-results-13.zip",
+      "server_digest": "sha256:1b57d1901ae523f5132c4eec48e524b8311d48eaa66e51d37db74e34c73ff908"
+    },
+    {
+      "name": "evtol-versions-results-14.zip",
+      "size": 99087679,
+      "sha256": "cf428a072d997df3ef8b8b45060bf0b08d829b69b3f96c5af716689c46e43f6c",
+      "id": 692026690,
+      "download_url": "https://github.com/Gonxioa/eVTOL_Simulation/releases/download/archive-20261030/evtol-versions-results-14.zip",
+      "server_digest": "sha256:cf428a072d997df3ef8b8b45060bf0b08d829b69b3f96c5af716689c46e43f6c"
+    },
+    {
+      "name": "evtol-versions-results-15.zip",
+      "size": 102483161,
+      "sha256": "77d5f3bd6f5fa1731d2e079315e5a411582ffbb5029484b68f392304f8a0af7b",
+      "id": 692026790,
+      "download_url": "https://github.com/Gonxioa/eVTOL_Simulation/releases/download/archive-20261030/evtol-versions-results-15.zip",
+      "server_digest": "sha256:77d5f3bd6f5fa1731d2e079315e5a411582ffbb5029484b68f392304f8a0af7b"
+    },
+    {
+      "name": "evtol-versions-results-16.zip",
+      "size": 61415484,
+      "sha256": "77c7a3535ea3606ee6d7486e6775f4b5df57c97d42e5b807b23de8321786ed6f",
+      "id": 692027491,
+      "download_url": "https://github.com/Gonxioa/eVTOL_Simulation/releases/download/archive-20261030/evtol-versions-results-16.zip",
+      "server_digest": "sha256:77c7a3535ea3606ee6d7486e6775f4b5df57c97d42e5b807b23de8321786ed6f"
+    }
+  ],
+  "complete": true,
+  "server_requeried": true
+}
