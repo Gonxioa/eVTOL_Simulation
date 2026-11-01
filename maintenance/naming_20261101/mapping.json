@@ -1,0 +1,652 @@
+{
+  "previous_commit": "5d54456dbea0207adb36c5ad6568a51e6e481470",
+  "files": [
+    [
+      "simulink/hex_parameters.m",
+      "simulink/hex_base_parameters.m"
+    ],
+    [
+      "simulink/hex_block_parameters.m",
+      "simulink/hex_common_block_parameters.m"
+    ],
+    [
+      "simulink/hex_recovery_parameters.m",
+      "simulink/hex_parameters.m"
+    ],
+    [
+      "simulink/hex_recovery_block_parameters.m",
+      "simulink/hex_block_parameters.m"
+    ],
+    [
+      "simulink/hex_recovery.slx",
+      "simulink/hex_evtol.slx"
+    ],
+    [
+      "simulink/run_hex_recovery.m",
+      "simulink/run_hex_simulink.m"
+    ],
+    [
+      "simulink/configure_hex_recovery.m",
+      "simulink/configure_hex_simulink.m"
+    ],
+    [
+      "simulink/open_hex_recovery.m",
+      "simulink/open_hex_simulink.m"
+    ],
+    [
+      "simulink/build_hex_recovery_model.m",
+      "simulink/build_hex_model.m"
+    ],
+    [
+      "simulink/hex_recovery_metrics.m",
+      "simulink/hex_metrics.m"
+    ],
+    [
+      "simulink/blocks/recovery_controller_step.m",
+      "simulink/blocks/controller_step.m"
+    ],
+    [
+      "simulink/blocks/recovery_reference_step.m",
+      "simulink/blocks/reference_step.m"
+    ],
+    [
+      "simulink/internal/recovery_layout_template.slx",
+      "simulink/internal/layout_template.slx"
+    ],
+    [
+      "simulink/validation/validate_hex_recovery.m",
+      "simulink/validation/validate_hex_simulink.m"
+    ],
+    [
+      "simulink/validation/validate_hex_recovery_components.m",
+      "simulink/validation/validate_hex_components.m"
+    ],
+    [
+      "simulink/validation/validate_hex_recovery_loops.m",
+      "simulink/validation/validate_hex_loops.m"
+    ],
+    [
+      "simulink/validation/finalize_hex_recovery.m",
+      "simulink/validation/finalize_hex_delivery.m"
+    ],
+    [
+      "simulink/validation/screen_hex_recovery.m",
+      "simulink/validation/screen_hex_control.m"
+    ],
+    [
+      "simulink/validation/analyze_hex_recovery.py",
+      "simulink/validation/analyze_hex_simulation.py"
+    ],
+    [
+      "simulink/validation/recovery_overview.png",
+      "simulink/validation/flight_overview.png"
+    ],
+    [
+      "simulink/validation/MY_SIMULATION_RECOVERY.json",
+      "simulink/validation/MY_SIMULATION_REPORT.json"
+    ],
+    [
+      "simulink/validation/RECOVERY_AUTHORITY.json",
+      "simulink/validation/SIMULATION_AUTHORITY.json"
+    ],
+    [
+      "simulink/validation/RECOVERY_COMPONENT_RESULTS.json",
+      "simulink/validation/SIMULATION_COMPONENT_RESULTS.json"
+    ],
+    [
+      "simulink/validation/RECOVERY_CORE_RESULTS.json",
+      "simulink/validation/SIMULATION_CORE_RESULTS.json"
+    ],
+    [
+      "simulink/validation/RECOVERY_DELIVERY.json",
+      "simulink/validation/SIMULATION_DELIVERY.json"
+    ],
+    [
+      "simulink/validation/RECOVERY_HEALTHY_RESULTS.json",
+      "simulink/validation/SIMULATION_HEALTHY_RESULTS.json"
+    ],
+    [
+      "simulink/validation/RECOVERY_IDEAL_RESULTS.json",
+      "simulink/validation/SIMULATION_IDEAL_RESULTS.json"
+    ],
+    [
+      "simulink/validation/RECOVERY_INPUT_AUDIT.json",
+      "simulink/validation/SIMULATION_INPUT_AUDIT.json"
+    ],
+    [
+      "simulink/validation/RECOVERY_LOOP_INITIAL_RESULTS.json",
+      "simulink/validation/SIMULATION_LOOP_INITIAL_RESULTS.json"
+    ],
+    [
+      "simulink/validation/RECOVERY_LOOP_RESULTS.json",
+      "simulink/validation/SIMULATION_LOOP_RESULTS.json"
+    ],
+    [
+      "simulink/validation/RECOVERY_SEEDS_RESULTS.json",
+      "simulink/validation/SIMULATION_SEEDS_RESULTS.json"
+    ],
+    [
+      "simulink/validation/RECOVERY_SOURCE_HASHES.json",
+      "simulink/validation/SIMULATION_SOURCE_HASHES.json"
+    ],
+    [
+      "simulink/validation/RECOVERY_SOURCE_SLX_PARITY.json",
+      "simulink/validation/SIMULATION_SOURCE_SLX_PARITY.json"
+    ],
+    [
+      "simulink/validation/RECOVERY_SOURCE_SLX_PARITY_FAILED_1a71a5e4.json",
+      "simulink/validation/SIMULATION_SOURCE_SLX_PARITY_FAILED_1a71a5e4.json"
+    ],
+    [
+      "simulink/validation/RECOVERY_SOURCE_SLX_PARITY_INITIAL.json",
+      "simulink/validation/SIMULATION_SOURCE_SLX_PARITY_INITIAL.json"
+    ],
+    [
+      "simulink/validation/RECOVERY_SUMMARY.json",
+      "simulink/validation/SIMULATION_SUMMARY.json"
+    ],
+    [
+      "simulink/validation/RECOVERY_SUMMARY.md",
+      "simulink/validation/SIMULATION_SUMMARY.md"
+    ],
+    [
+      "simulink/validation/RECOVERY_TUNING.md",
+      "simulink/validation/SIMULATION_TUNING.md"
+    ]
+  ],
+  "identifiers": {
+    "hex_recovery_parameters": "hex_parameters",
+    "hex_parameters": "hex_base_parameters",
+    "hex_recovery_block_parameters": "hex_block_parameters",
+    "hex_block_parameters": "hex_common_block_parameters",
+    "hex_recovery_metrics": "hex_metrics",
+    "build_hex_recovery_model": "build_hex_model",
+    "configure_hex_recovery": "configure_hex_simulink",
+    "open_hex_recovery": "open_hex_simulink",
+    "run_hex_recovery": "run_hex_simulink",
+    "validate_hex_recovery_components": "validate_hex_components",
+    "validate_hex_recovery_loops": "validate_hex_loops",
+    "validate_hex_recovery": "validate_hex_simulink",
+    "finalize_hex_recovery": "finalize_hex_delivery",
+    "screen_hex_recovery": "screen_hex_control",
+    "analyze_hex_recovery": "analyze_hex_simulation",
+    "recovery_controller_step": "controller_step",
+    "recovery_reference_step": "reference_step",
+    "recovery_reference_audit": "reference_audit",
+    "recovery_damage": "fault_severity",
+    "recovery_v3_20261023": "control_v3_20261023",
+    "recovery_path_progress": "path_progress",
+    "recovery_layout_template": "layout_template",
+    "recovery_validation": "validation",
+    "recovery_loops": "loop_tests",
+    "recovery_tuning": "tuning",
+    "recovery_overview": "flight_overview",
+    "hex_recovery": "hex_evtol",
+    "MY_SIMULATION_RECOVERY": "MY_SIMULATION_REPORT",
+    "RECOVERY_": "SIMULATION_",
+    "Recovery Progress Log": "Path Progress Log",
+    "Recovery Progress": "Path Progress",
+    "Recovery Feedback": "State Feedback",
+    "HEX_RECOVERY_PARAMETERS": "HEX_PARAMETERS",
+    "HEX_PARAMETERS": "HEX_BASE_PARAMETERS",
+    "HEX_RECOVERY_BLOCK_PARAMETERS": "HEX_BLOCK_PARAMETERS",
+    "HEX_BLOCK_PARAMETERS": "HEX_COMMON_BLOCK_PARAMETERS",
+    "HEX_RECOVERY_METRICS": "HEX_METRICS",
+    "BUILD_HEX_RECOVERY_MODEL": "BUILD_HEX_MODEL",
+    "CONFIGURE_HEX_RECOVERY": "CONFIGURE_HEX_SIMULINK",
+    "OPEN_HEX_RECOVERY": "OPEN_HEX_SIMULINK",
+    "RUN_HEX_RECOVERY": "RUN_HEX_SIMULINK",
+    "VALIDATE_HEX_RECOVERY_COMPONENTS": "VALIDATE_HEX_COMPONENTS",
+    "VALIDATE_HEX_RECOVERY_LOOPS": "VALIDATE_HEX_LOOPS",
+    "VALIDATE_HEX_RECOVERY": "VALIDATE_HEX_SIMULINK",
+    "FINALIZE_HEX_RECOVERY": "FINALIZE_HEX_DELIVERY",
+    "SCREEN_HEX_RECOVERY": "SCREEN_HEX_CONTROL",
+    "ANALYZE_HEX_RECOVERY": "ANALYZE_HEX_SIMULATION",
+    "RECOVERY_CONTROLLER_STEP": "CONTROLLER_STEP",
+    "RECOVERY_REFERENCE_STEP": "REFERENCE_STEP",
+    "RECOVERY_REFERENCE_AUDIT": "REFERENCE_AUDIT",
+    "RECOVERY_DAMAGE": "FAULT_SEVERITY",
+    "RECOVERY_V3_20261023": "CONTROL_V3_20261023",
+    "RECOVERY_PATH_PROGRESS": "PATH_PROGRESS",
+    "RECOVERY_LAYOUT_TEMPLATE": "LAYOUT_TEMPLATE",
+    "RECOVERY_VALIDATION": "VALIDATION",
+    "RECOVERY_LOOPS": "LOOP_TESTS",
+    "RECOVERY_TUNING": "TUNING",
+    "RECOVERY_OVERVIEW": "FLIGHT_OVERVIEW",
+    "HEX_RECOVERY": "HEX_EVTOL",
+    "RECOVERY PROGRESS LOG": "PATH PROGRESS LOG",
+    "RECOVERY PROGRESS": "PATH PROGRESS",
+    "RECOVERY FEEDBACK": "STATE FEEDBACK"
+  },
+  "modified_text_files": [
+    "simulink/blocks/controller_step.m",
+    "simulink/blocks/reference_step.m",
+    "simulink/build_hex_model.m",
+    "simulink/configs/research.json",
+    "simulink/configure_hex_simulink.m",
+    "simulink/diagnose_hex_healthy_tilt.m",
+    "simulink/hex_base_parameters.m",
+    "simulink/hex_block_parameters.m",
+    "simulink/hex_common_block_parameters.m",
+    "simulink/hex_metrics.m",
+    "simulink/hex_parameters.m",
+    "simulink/hex_validate_parameters.m",
+    "simulink/internal/README.md",
+    "simulink/my_simulation.m",
+    "simulink/open_hex_simulink.m",
+    "simulink/plot_hex_healthy_assessment.m",
+    "simulink/README.md",
+    "simulink/run_hex_healthy_assessment.m",
+    "simulink/run_hex_simulink.m",
+    "simulink/validation/analyze_hex_simulation.py",
+    "simulink/validation/BASELINE_TUNING.md",
+    "simulink/validation/build_kx_gain_evidence.py",
+    "simulink/validation/finalize_hex_delivery.m",
+    "simulink/validation/MY_SIMULATION_REPORT.json",
+    "simulink/validation/screen_hex_control.m",
+    "simulink/validation/SIMULATION_CORE_RESULTS.json",
+    "simulink/validation/SIMULATION_DELIVERY.json",
+    "simulink/validation/SIMULATION_HEALTHY_RESULTS.json",
+    "simulink/validation/SIMULATION_IDEAL_RESULTS.json",
+    "simulink/validation/SIMULATION_INPUT_AUDIT.json",
+    "simulink/validation/SIMULATION_SEEDS_RESULTS.json",
+    "simulink/validation/SIMULATION_SOURCE_HASHES.json",
+    "simulink/validation/SIMULATION_SOURCE_SLX_PARITY.json",
+    "simulink/validation/SIMULATION_SUMMARY.json",
+    "simulink/validation/SIMULATION_SUMMARY.md",
+    "simulink/validation/SIMULATION_TUNING.md",
+    "simulink/validation/validate_hex_components.m",
+    "simulink/validation/validate_hex_loops.m",
+    "simulink/validation/validate_hex_simulink.m"
+  ],
+  "frozen_historical_reports": [
+    "simulink/validation/SIMULATION_LOOP_INITIAL_RESULTS.json",
+    "simulink/validation/SIMULATION_SOURCE_SLX_PARITY_FAILED_1a71a5e4.json",
+    "simulink/validation/SIMULATION_SOURCE_SLX_PARITY_INITIAL.json"
+  ],
+  "field_names": {
+    "recovery": "fault_response",
+    "recovery_reference_audit": "reference_audit",
+    "recovery_damage": "fault_severity"
+  },
+  "new_profile": "control_v3_20261023",
+  "old_profile": "recovery_v3_20261023",
+  "text_pairs": [
+    [
+      "validate_hex_recovery_components",
+      "validate_hex_components"
+    ],
+    [
+      "VALIDATE_HEX_RECOVERY_COMPONENTS",
+      "VALIDATE_HEX_COMPONENTS"
+    ],
+    [
+      "hex_recovery_block_parameters",
+      "hex_block_parameters"
+    ],
+    [
+      "HEX_RECOVERY_BLOCK_PARAMETERS",
+      "HEX_BLOCK_PARAMETERS"
+    ],
+    [
+      "validate_hex_recovery_loops",
+      "validate_hex_loops"
+    ],
+    [
+      "VALIDATE_HEX_RECOVERY_LOOPS",
+      "VALIDATE_HEX_LOOPS"
+    ],
+    [
+      "build_hex_recovery_model",
+      "build_hex_model"
+    ],
+    [
+      "recovery_controller_step",
+      "controller_step"
+    ],
+    [
+      "recovery_reference_audit",
+      "reference_audit"
+    ],
+    [
+      "recovery_layout_template",
+      "layout_template"
+    ],
+    [
+      "BUILD_HEX_RECOVERY_MODEL",
+      "BUILD_HEX_MODEL"
+    ],
+    [
+      "RECOVERY_CONTROLLER_STEP",
+      "CONTROLLER_STEP"
+    ],
+    [
+      "RECOVERY_REFERENCE_AUDIT",
+      "REFERENCE_AUDIT"
+    ],
+    [
+      "RECOVERY_LAYOUT_TEMPLATE",
+      "LAYOUT_TEMPLATE"
+    ],
+    [
+      "hex_recovery_parameters",
+      "hex_parameters"
+    ],
+    [
+      "recovery_reference_step",
+      "reference_step"
+    ],
+    [
+      "HEX_RECOVERY_PARAMETERS",
+      "HEX_PARAMETERS"
+    ],
+    [
+      "RECOVERY_REFERENCE_STEP",
+      "REFERENCE_STEP"
+    ],
+    [
+      "configure_hex_recovery",
+      "configure_hex_simulink"
+    ],
+    [
+      "recovery_path_progress",
+      "path_progress"
+    ],
+    [
+      "MY_SIMULATION_RECOVERY",
+      "MY_SIMULATION_REPORT"
+    ],
+    [
+      "CONFIGURE_HEX_RECOVERY",
+      "CONFIGURE_HEX_SIMULINK"
+    ],
+    [
+      "RECOVERY_PATH_PROGRESS",
+      "PATH_PROGRESS"
+    ],
+    [
+      "validate_hex_recovery",
+      "validate_hex_simulink"
+    ],
+    [
+      "finalize_hex_recovery",
+      "finalize_hex_delivery"
+    ],
+    [
+      "Recovery Progress Log",
+      "Path Progress Log"
+    ],
+    [
+      "VALIDATE_HEX_RECOVERY",
+      "VALIDATE_HEX_SIMULINK"
+    ],
+    [
+      "FINALIZE_HEX_RECOVERY",
+      "FINALIZE_HEX_DELIVERY"
+    ],
+    [
+      "RECOVERY PROGRESS LOG",
+      "PATH PROGRESS LOG"
+    ],
+    [
+      "hex_block_parameters",
+      "hex_common_block_parameters"
+    ],
+    [
+      "hex_recovery_metrics",
+      "hex_metrics"
+    ],
+    [
+      "analyze_hex_recovery",
+      "analyze_hex_simulation"
+    ],
+    [
+      "recovery_v3_20261023",
+      "control_v3_20261023"
+    ],
+    [
+      "HEX_BLOCK_PARAMETERS",
+      "HEX_COMMON_BLOCK_PARAMETERS"
+    ],
+    [
+      "HEX_RECOVERY_METRICS",
+      "HEX_METRICS"
+    ],
+    [
+      "ANALYZE_HEX_RECOVERY",
+      "ANALYZE_HEX_SIMULATION"
+    ],
+    [
+      "RECOVERY_V3_20261023",
+      "CONTROL_V3_20261023"
+    ],
+    [
+      "screen_hex_recovery",
+      "screen_hex_control"
+    ],
+    [
+      "recovery_validation",
+      "validation"
+    ],
+    [
+      "SCREEN_HEX_RECOVERY",
+      "SCREEN_HEX_CONTROL"
+    ],
+    [
+      "RECOVERY_VALIDATION",
+      "VALIDATION"
+    ],
+    [
+      "open_hex_recovery",
+      "open_hex_simulink"
+    ],
+    [
+      "recovery_overview",
+      "flight_overview"
+    ],
+    [
+      "Recovery Progress",
+      "Path Progress"
+    ],
+    [
+      "Recovery Feedback",
+      "State Feedback"
+    ],
+    [
+      "OPEN_HEX_RECOVERY",
+      "OPEN_HEX_SIMULINK"
+    ],
+    [
+      "RECOVERY_OVERVIEW",
+      "FLIGHT_OVERVIEW"
+    ],
+    [
+      "RECOVERY PROGRESS",
+      "PATH PROGRESS"
+    ],
+    [
+      "RECOVERY FEEDBACK",
+      "STATE FEEDBACK"
+    ],
+    [
+      "run_hex_recovery",
+      "run_hex_simulink"
+    ],
+    [
+      "RUN_HEX_RECOVERY",
+      "RUN_HEX_SIMULINK"
+    ],
+    [
+      "recovery_damage",
+      "fault_severity"
+    ],
+    [
+      "recovery_tuning",
+      "tuning"
+    ],
+    [
+      "RECOVERY_DAMAGE",
+      "FAULT_SEVERITY"
+    ],
+    [
+      "RECOVERY_TUNING",
+      "TUNING"
+    ],
+    [
+      "hex_parameters",
+      "hex_base_parameters"
+    ],
+    [
+      "recovery_loops",
+      "loop_tests"
+    ],
+    [
+      "HEX_PARAMETERS",
+      "HEX_BASE_PARAMETERS"
+    ],
+    [
+      "RECOVERY_LOOPS",
+      "LOOP_TESTS"
+    ],
+    [
+      "hex_recovery",
+      "hex_evtol"
+    ],
+    [
+      "HEX_RECOVERY",
+      "HEX_EVTOL"
+    ],
+    [
+      "RECOVERY_",
+      "SIMULATION_"
+    ]
+  ],
+  "old_tokens": [
+    "validate_hex_recovery_components",
+    "VALIDATE_HEX_RECOVERY_COMPONENTS",
+    "hex_recovery_block_parameters",
+    "HEX_RECOVERY_BLOCK_PARAMETERS",
+    "validate_hex_recovery_loops",
+    "VALIDATE_HEX_RECOVERY_LOOPS",
+    "build_hex_recovery_model",
+    "recovery_controller_step",
+    "recovery_reference_audit",
+    "recovery_layout_template",
+    "BUILD_HEX_RECOVERY_MODEL",
+    "RECOVERY_CONTROLLER_STEP",
+    "RECOVERY_REFERENCE_AUDIT",
+    "RECOVERY_LAYOUT_TEMPLATE",
+    "hex_recovery_parameters",
+    "recovery_reference_step",
+    "HEX_RECOVERY_PARAMETERS",
+    "RECOVERY_REFERENCE_STEP",
+    "configure_hex_recovery",
+    "recovery_path_progress",
+    "MY_SIMULATION_RECOVERY",
+    "CONFIGURE_HEX_RECOVERY",
+    "RECOVERY_PATH_PROGRESS",
+    "validate_hex_recovery",
+    "finalize_hex_recovery",
+    "Recovery Progress Log",
+    "VALIDATE_HEX_RECOVERY",
+    "FINALIZE_HEX_RECOVERY",
+    "RECOVERY PROGRESS LOG",
+    "hex_block_parameters",
+    "hex_recovery_metrics",
+    "analyze_hex_recovery",
+    "recovery_v3_20261023",
+    "HEX_BLOCK_PARAMETERS",
+    "HEX_RECOVERY_METRICS",
+    "ANALYZE_HEX_RECOVERY",
+    "RECOVERY_V3_20261023",
+    "screen_hex_recovery",
+    "recovery_validation",
+    "SCREEN_HEX_RECOVERY",
+    "RECOVERY_VALIDATION",
+    "open_hex_recovery",
+    "recovery_overview",
+    "Recovery Progress",
+    "Recovery Feedback",
+    "OPEN_HEX_RECOVERY",
+    "RECOVERY_OVERVIEW",
+    "RECOVERY PROGRESS",
+    "RECOVERY FEEDBACK",
+    "run_hex_recovery",
+    "RUN_HEX_RECOVERY",
+    "recovery_damage",
+    "recovery_tuning",
+    "RECOVERY_DAMAGE",
+    "RECOVERY_TUNING",
+    "hex_parameters",
+    "recovery_loops",
+    "HEX_PARAMETERS",
+    "RECOVERY_LOOPS",
+    "hex_recovery",
+    "HEX_RECOVERY",
+    "RECOVERY_"
+  ],
+  "new_tokens": [
+    "validate_hex_components",
+    "VALIDATE_HEX_COMPONENTS",
+    "hex_block_parameters",
+    "HEX_BLOCK_PARAMETERS",
+    "validate_hex_loops",
+    "VALIDATE_HEX_LOOPS",
+    "build_hex_model",
+    "controller_step",
+    "reference_audit",
+    "layout_template",
+    "BUILD_HEX_MODEL",
+    "CONTROLLER_STEP",
+    "REFERENCE_AUDIT",
+    "LAYOUT_TEMPLATE",
+    "hex_parameters",
+    "reference_step",
+    "HEX_PARAMETERS",
+    "REFERENCE_STEP",
+    "configure_hex_simulink",
+    "path_progress",
+    "MY_SIMULATION_REPORT",
+    "CONFIGURE_HEX_SIMULINK",
+    "PATH_PROGRESS",
+    "validate_hex_simulink",
+    "finalize_hex_delivery",
+    "Path Progress Log",
+    "VALIDATE_HEX_SIMULINK",
+    "FINALIZE_HEX_DELIVERY",
+    "PATH PROGRESS LOG",
+    "hex_common_block_parameters",
+    "hex_metrics",
+    "analyze_hex_simulation",
+    "control_v3_20261023",
+    "HEX_COMMON_BLOCK_PARAMETERS",
+    "HEX_METRICS",
+    "ANALYZE_HEX_SIMULATION",
+    "CONTROL_V3_20261023",
+    "screen_hex_control",
+    "validation",
+    "SCREEN_HEX_CONTROL",
+    "VALIDATION",
+    "open_hex_simulink",
+    "flight_overview",
+    "Path Progress",
+    "State Feedback",
+    "OPEN_HEX_SIMULINK",
+    "FLIGHT_OVERVIEW",
+    "PATH PROGRESS",
+    "STATE FEEDBACK",
+    "run_hex_simulink",
+    "RUN_HEX_SIMULINK",
+    "fault_severity",
+    "tuning",
+    "FAULT_SEVERITY",
+    "TUNING",
+    "hex_base_parameters",
+    "loop_tests",
+    "HEX_BASE_PARAMETERS",
+    "LOOP_TESTS",
+    "hex_evtol",
+    "HEX_EVTOL",
+    "SIMULATION_"
+  ]
+}

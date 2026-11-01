@@ -1,0 +1,478 @@
+{
+  "counts": {
+    "csv": 117,
+    "json": 12,
+    "text": 2
+  },
+  "numeric_csv_payloads": [
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task0_m1_eta00_seed20261006\\signals.csv",
+      "data_sha256": "3736faca8e7075092f0e96d85e55f5e384de741330f8aa8247af5150413e03d0"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task0_m1_eta20_seed20261006\\signals.csv",
+      "data_sha256": "d12ef318f6d50bd00570d454a0676487fc8ba8a03c92f121dd33bc10e52e80ba"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task0_m1_eta80_seed20261006\\signals.csv",
+      "data_sha256": "e32f950e0f8318b34bf0a466a4096a7cbd768e8da10c377768a4c0d4fb5dc7ee"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task0_m2_eta00_seed20261006\\signals.csv",
+      "data_sha256": "9c2cf25e541ad8d378e9051a88732bec81a98f16bf3fccc6ef06e6c30c5b2f38"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task0_m2_eta20_seed20261006\\signals.csv",
+      "data_sha256": "f4d51fdf09135bf85483893d02d30bcfdafcf76248d7d607239da8cdb5449b6a"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task0_m2_eta80_seed20261006\\signals.csv",
+      "data_sha256": "6aefa535fc5097f0e42bbea572e257d6526511dbe43a3b740d89f9cbba1cfdda"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task0_m3_eta00_seed20261006\\signals.csv",
+      "data_sha256": "7aef6ff692371757908a2430973298a78deb4d910b713f4317d778454a8d2e15"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task0_m3_eta20_seed20261006\\signals.csv",
+      "data_sha256": "d21428bce43f27cb742bb24585b86e561993243e89dede2aac27fa2abec16d73"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task0_m3_eta80_seed20261006\\signals.csv",
+      "data_sha256": "712534bd7b0d2660a3b0c8f0008d89f28dbda47ba1d9e174123d4f4476ff0be3"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task0_m4_eta00_seed20261006\\signals.csv",
+      "data_sha256": "ab05f335b5a6721c4c976569aa6d97bc26b7c7daec665d45f51c7475dc34f0f4"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task0_m4_eta20_seed20261006\\signals.csv",
+      "data_sha256": "c59cbcf1bbdc6d714eb58498ecfaad8b428499f2572edd1a8c433b3c38692174"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task0_m4_eta80_seed20261006\\signals.csv",
+      "data_sha256": "7d58873522c19c73def4059e0a1c55236945fb7bf59717736379edab28d39645"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task0_m5_eta00_seed20261006\\signals.csv",
+      "data_sha256": "8dff0a7872a64df2ab813035df47e6b36d4221ea18539617a51108b8a4c5017d"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task0_m5_eta20_seed20261006\\signals.csv",
+      "data_sha256": "01445d2b50d6e2711b9a10ddf5e3e08ebd474f69da2c69b6ad4e892c58b4c18c"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task0_m5_eta80_seed20261006\\signals.csv",
+      "data_sha256": "56afb84dc4b2827a0111e77a07f3888b3ef8236ea973c004f4793ee7ff7567e0"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task0_m6_eta00_seed20261006\\signals.csv",
+      "data_sha256": "da0546e0889ff3c0c694372c715281b6d4983beed8076bfa15a6f992a60319c9"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task0_m6_eta20_seed20261006\\signals.csv",
+      "data_sha256": "7395317cc44074d4a71e5722554224968d23b5e3b42630e094419cbeb25eec45"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task0_m6_eta80_seed20261006\\signals.csv",
+      "data_sha256": "277215dd8f9cab95e9b1a3ee50f6b467951207b4febfe0b05a2c08744b0006f9"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task1_m1_eta00_seed20261006\\signals.csv",
+      "data_sha256": "eb84626439ec8ea9fd2c049977f59a8a361b32dc0675ea7558efd6d3f0054f74"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task1_m1_eta20_seed20261006\\signals.csv",
+      "data_sha256": "6c7a4a2471603774d24dd6240f77c174ab6f2a254c449a8f6868ab32e39a7720"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task1_m1_eta80_seed20261006\\signals.csv",
+      "data_sha256": "f0a752b13c5e4f6472d44f188d86ff064d58ccd87e816fe5c36d330925fb0d3e"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task1_m2_eta00_seed20261006\\signals.csv",
+      "data_sha256": "c16a6692bfc8515edfd45f05ba4251cd921d16c80e5e8f567264a5560e84780a"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task1_m2_eta20_seed20261006\\signals.csv",
+      "data_sha256": "b78f86a83042c9c5e6b59ea09ef4e5248c037486b924b594f67ece479f314427"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task1_m2_eta80_seed20261006\\signals.csv",
+      "data_sha256": "7b207353e18fbc68bf390c649a0fcbb629cb6595cdb36a94a54f4506bf0b1645"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task1_m3_eta00_seed20261006\\signals.csv",
+      "data_sha256": "e1c0a49a273c91a8e08ae80157c32c7ba6088426b604270ee00757dc66cb9fbc"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task1_m3_eta20_seed20261006\\signals.csv",
+      "data_sha256": "30a3f643457cd89fa4f7bfe4d947bcaa75a2b6a75f53abd4337a87e96d06bb66"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task1_m3_eta80_seed20261006\\signals.csv",
+      "data_sha256": "da88d5708ce4a44f023147347b0451e4959ceb577767140ad6322e654b113f15"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task1_m4_eta00_seed20261006\\signals.csv",
+      "data_sha256": "cb8c87a4784a4d22f537e3cec628b3beaf09c23be1b679f3e4292b5de8c1b4b3"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task1_m4_eta20_seed20261006\\signals.csv",
+      "data_sha256": "321be248a2ec0b358d07683769b4b708a2820744ac1299a864cdc28ce1bda8b1"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task1_m4_eta80_seed20261006\\signals.csv",
+      "data_sha256": "70f1a217f9a8d3077d7b376dd83161d510d4417bdaf891b3141839ff17e2a327"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task1_m5_eta00_seed20261006\\signals.csv",
+      "data_sha256": "954acaccea393b430fb9ea92a6870f84279157dd7b048fef17a47c154761af36"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task1_m5_eta20_seed20261006\\signals.csv",
+      "data_sha256": "96fd61cedbea433ad047e70966c6339403a39b854ff7f65aba49f3cb3962af28"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task1_m5_eta80_seed20261006\\signals.csv",
+      "data_sha256": "ef75fd093c57a15cd521d33fd8039684b676685b4807cc0d224f34568979d0c4"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task1_m6_eta00_seed20261006\\signals.csv",
+      "data_sha256": "7f9ef3d70d9f5dfd849c074eb6a7263a5558e46a73c91d16210d0567d67582da"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task1_m6_eta20_seed20261006\\signals.csv",
+      "data_sha256": "0cbcf5b58a3f99796702e7ffa78277a7d6f05b0061a1a5dfc0b3d9de90f4fdbe"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task1_m6_eta80_seed20261006\\signals.csv",
+      "data_sha256": "ac8a08eec3d0bc5d6d1bf7300b9eac935746ccf68592cdf4e4319a1f68bfee55"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task2_m1_eta00_seed20261006\\signals.csv",
+      "data_sha256": "43c830c449a0c998d7db7383604a62022d54446602f265ae29689a1497100321"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task2_m1_eta20_seed20261006\\signals.csv",
+      "data_sha256": "f1655e2ad07223f91488128fdc3781c49fb3021aa8b81347cb5507a9937649af"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task2_m1_eta80_seed20261006\\signals.csv",
+      "data_sha256": "5e3dbce93649188aedbc1707668d3b0907a7d193d72bdbc37062b59f11999dee"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task2_m2_eta00_seed20261006\\signals.csv",
+      "data_sha256": "8ac57a21c00280551e75aefce35a06ed73df1a7b307b1d71fcb7cc8f4c2a7810"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task2_m2_eta20_seed20261006\\signals.csv",
+      "data_sha256": "49a1a5252fb52be2158f1322f691e365be667712a393270fafee69d950470ba4"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task2_m2_eta80_seed20261006\\signals.csv",
+      "data_sha256": "e00ea5bafb7b525ce36a12e27fa44fc3267e4bcf9545945957e1a4a3b22cd552"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task2_m3_eta00_seed20261006\\signals.csv",
+      "data_sha256": "cfc37af5d528364013637b9ffc6d49c6d9f23f43d188d93cf6ee713901a86507"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task2_m3_eta20_seed20261006\\signals.csv",
+      "data_sha256": "9e12f3f59c74fd3b985ff375a8e94af24492553dee741e3112a8ec1fe1e218cb"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task2_m3_eta80_seed20261006\\signals.csv",
+      "data_sha256": "24c5f8b127941ad250ba4f5dac99fd0297a007908002f21743df01f890757c82"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task2_m4_eta00_seed20261006\\signals.csv",
+      "data_sha256": "b7fb753b43bc783492b25ced2908f56a80a52f659c6e87bd7ce1f6ebe4a13875"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task2_m4_eta20_seed20261006\\signals.csv",
+      "data_sha256": "e6aad8d9bd738259e8ef8b6d16b4bd64af85f63eabf9e25643f026a20b5e1dd7"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task2_m4_eta80_seed20261006\\signals.csv",
+      "data_sha256": "aacbd6ab04363055c9bb455fd486316b6c5ddc2c6125483fecf7cf684ca1458a"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task2_m5_eta00_seed20261006\\signals.csv",
+      "data_sha256": "e19e737f87c09cd4a5da465f5cd33ad3d7976e13fb90d80254e0e1e5e0f6724a"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task2_m5_eta20_seed20261006\\signals.csv",
+      "data_sha256": "95df02f00e2e74fe9ff66149e9b650edbb5641f993744081470e75edbe20f468"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task2_m5_eta80_seed20261006\\signals.csv",
+      "data_sha256": "e2110654170ef6f5bc26446d39322f4bab0753046d10703d631d79cb3639cf16"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task2_m6_eta00_seed20261006\\signals.csv",
+      "data_sha256": "0cb6d6f59d8c97508a339676fafe9aafe9608bdee7c375a663af75b37f97fef9"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task2_m6_eta20_seed20261006\\signals.csv",
+      "data_sha256": "50328a5f74438637c979681f9c570b9b435f34a976c896287e5dd5951269a4ec"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task2_m6_eta80_seed20261006\\signals.csv",
+      "data_sha256": "3625022044fb11e906c4cba8241abf8aceb8a304371a3eca6c9eb177b59bb9cf"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task3_m1_eta00_seed20261006\\signals.csv",
+      "data_sha256": "5ce24e24a5743edaac5ba1b4a6ac6e947ba955f73135da6aa6ac671e73731a60"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task3_m1_eta20_seed20261006\\signals.csv",
+      "data_sha256": "ebc7670b34845985c8c091868d8dc55b3450a99ba0c987a3a72efd1f7002bf45"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task3_m1_eta80_seed20261006\\signals.csv",
+      "data_sha256": "3ee92ee971f56bfaad0fa12374f9cbda9caca5444309ffa8c177fea5e5bcbfbc"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task3_m2_eta00_seed20261006\\signals.csv",
+      "data_sha256": "4263d746c960c1d9e4ab597545b476f7493cfe8af15097d6df8e8e85a45c6088"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task3_m2_eta20_seed20261006\\signals.csv",
+      "data_sha256": "9922b8cbe29303869186179f1d86b262fc2c3b8214c021efc55b4404090ffa7b"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task3_m2_eta80_seed20261006\\signals.csv",
+      "data_sha256": "b2f7b6c1464d4f93fbd5db72f68496707c0d5e226635cbee08578447198a5d99"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task3_m3_eta00_seed20261006\\signals.csv",
+      "data_sha256": "ab1c498eca476e0ba01a5897da5bef21693fc9c8d98c54c964a837faebd5dbd9"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task3_m3_eta20_seed20261006\\signals.csv",
+      "data_sha256": "79ce1c8a3d33b19518e19dd0146b279d87e9d7634490eb33959fb212fe52a138"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task3_m3_eta80_seed20261006\\signals.csv",
+      "data_sha256": "6b0c9cca44dabb75c36e40eb39c1c2280fe1dc1cb2049057dff89d1dc50c81ec"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task3_m4_eta00_seed20261006\\signals.csv",
+      "data_sha256": "60b90fbeaad05a5062a141ebb6ebb6a10ca86df88b38db9a6d6284bba66a4601"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task3_m4_eta20_seed20261006\\signals.csv",
+      "data_sha256": "335d02f3f44cff3e074b76db59e7ed2bf969edf9a5ec500c428c61aa9147d88d"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task3_m4_eta80_seed20261006\\signals.csv",
+      "data_sha256": "a681f24031ac6294ecd6d3d8823d459a39a9db3792b12c5c4f280babaede577a"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task3_m5_eta00_seed20261006\\signals.csv",
+      "data_sha256": "74d87b63ac5fadb019cfac3f47e3f0660bc641fc733b25f8ce747cb50aff9737"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task3_m5_eta20_seed20261006\\signals.csv",
+      "data_sha256": "48611d600e13b303a50565b8ce0ee9e841194de158fa5272f4addb927804b405"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task3_m5_eta80_seed20261006\\signals.csv",
+      "data_sha256": "0ae3c585c95b3ee676311927e72c933d8ba64445249172aa9a1b6bbfbaa7b07f"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task3_m6_eta00_seed20261006\\signals.csv",
+      "data_sha256": "1884fcc1d3f99c260c8026d4bf19b50414bf9bdf8eca704ee3d44261df42f417"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task3_m6_eta20_seed20261006\\signals.csv",
+      "data_sha256": "0da6eca6e45c164d737e9fa5e09f5ed080516f970434ffba4aae00f11b4232d2"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task3_m6_eta80_seed20261006\\signals.csv",
+      "data_sha256": "7c7b4cec9c8dc7ca3e805ae729d33eb9b4baaba99bf69d43f2841366160fcb20"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\healthy_four_tasks_20261027\\metrics.csv",
+      "data_sha256": "df6b1bd97fe7cd4b844630d85606021f2bc6d8946dd2f5c500f8c96b4050f79d"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\healthy_task0_m0_eta100_seed20261006\\signals.csv",
+      "data_sha256": "13b2f050ceaca7d20d2f09fb1b19dff229baf01fab2daba918cffae435ce90f8"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\healthy_task1_m0_eta100_seed20261006\\signals.csv",
+      "data_sha256": "162438dec03200d3da2891f4f625e09d583ce0295cd13448f249d559809e2d63"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\healthy_task2_m0_eta100_seed20261006\\signals.csv",
+      "data_sha256": "3c43278ed412473679ad0bfc18b68dc8250376ec923d6faefdd23ecfdbc90f36"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\healthy_task3_m0_eta100_seed20261006\\signals.csv",
+      "data_sha256": "847b91972b87e90b8e909af8f0d55efa04194230ea42f3ebd5a5d6481b6611f5"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\ideal_task2_m1_eta00_seed20261006\\signals.csv",
+      "data_sha256": "dbee92e2d9d298d528f2cd1c6bc19d58b1462935c262f34f5745b6a6bb77ae35"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\ideal_task2_m1_eta20_seed20261006\\signals.csv",
+      "data_sha256": "6eb6d08405ec9b35d9cdc43e1486057ed9a7b50bcb9291530a4855c8a41e8f6a"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\ideal_task2_m1_eta80_seed20261006\\signals.csv",
+      "data_sha256": "5d2ec176c420a0b2bdc4bd5608d642d7719afde9de483179baf8b4ccac553d4f"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\ideal_task2_m2_eta00_seed20261006\\signals.csv",
+      "data_sha256": "7e70aa2640646ca47009b7a89db9e0d648deb270fdfc248c51cbbccf6f4373f7"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\ideal_task2_m2_eta20_seed20261006\\signals.csv",
+      "data_sha256": "87094cd7696a18212dfc78fa58e86049b091a61aa4e8c8dd37684cc5cd427ade"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\ideal_task2_m2_eta80_seed20261006\\signals.csv",
+      "data_sha256": "07d64c446f092b2edd59f0c1a065b412bc141afa697decc456cc84c9caf73d74"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\ideal_task2_m3_eta00_seed20261006\\signals.csv",
+      "data_sha256": "e88baf9d19d1fb0f044aa6ee1b8bc4d62608ed68121ad5ab88854d299cc26a69"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\ideal_task2_m3_eta20_seed20261006\\signals.csv",
+      "data_sha256": "0da89fe86c4190778589fb8b58c7a97a64517bd783b9a4e85106c34f254457ad"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\ideal_task2_m3_eta80_seed20261006\\signals.csv",
+      "data_sha256": "92323e0a2eb43459edfe19f6349d20a222b4d46eaff5aa6958ccf0a75068a20b"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\ideal_task2_m4_eta00_seed20261006\\signals.csv",
+      "data_sha256": "947d13d82e5f65b6264f7a029f7ec10839ed80f5a91b609f09aea411af6719a5"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\ideal_task2_m4_eta20_seed20261006\\signals.csv",
+      "data_sha256": "b08692ce37e603d70a726a85598ae7b5a6b87948ba2d59b3201f31afafa65c2a"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\ideal_task2_m4_eta80_seed20261006\\signals.csv",
+      "data_sha256": "f7f362dfea461911abdc042c58e2439ec7150cba5560a4be89004464c99ef6b7"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\ideal_task2_m5_eta00_seed20261006\\signals.csv",
+      "data_sha256": "ee483df89c61ec62c2a21f58a9ba9716816f17e9e9f0dee2dec0ac703d3e0463"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\ideal_task2_m5_eta20_seed20261006\\signals.csv",
+      "data_sha256": "de5162dd8002bce67eeb0efb039c0ddd0a0913fab0fa3d3638dc08c39f97a034"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\ideal_task2_m5_eta80_seed20261006\\signals.csv",
+      "data_sha256": "e7d2a20dc9286b9b5f23bd507a315094ee49791143624342b6fbdb308218a50d"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\ideal_task2_m6_eta00_seed20261006\\signals.csv",
+      "data_sha256": "acf96d8358fafb9b5ae859d051b00c060255660c200ed592c4d76ea10e8b956a"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\ideal_task2_m6_eta20_seed20261006\\signals.csv",
+      "data_sha256": "3e12961bec6bc6c60093d701e4282a0813cfd2fd6163c31960112497bf69c725"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\ideal_task2_m6_eta80_seed20261006\\signals.csv",
+      "data_sha256": "cf13608ef91e4118777f5c5626f1e8125dee92b8167d1331a89478414c026ba5"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\my_circle_run\\signals.csv",
+      "data_sha256": "f1655e2ad07223f91488128fdc3781c49fb3021aa8b81347cb5507a9937649af"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\seeds_task2_m1_eta00_seed20261007\\signals.csv",
+      "data_sha256": "713fad9ef11bdab11fa5782dc598d0e13102d919bed4aa5532d5dcf0536172b7"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\seeds_task2_m1_eta00_seed20261008\\signals.csv",
+      "data_sha256": "6dcc468fe06e4f8cce7195f82aa01585c5d1d9d2474cfeb112f2c298a83494f4"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\seeds_task2_m2_eta00_seed20261007\\signals.csv",
+      "data_sha256": "1c5b27397eb327e1c6b326385daf0da8b436d35daaafde7239dc46efe8f1ff9c"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\seeds_task2_m2_eta00_seed20261008\\signals.csv",
+      "data_sha256": "d522b7da39b1d8de8da1d6175f4d5717a131e0fbad61dc81c21002d108361b08"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\seeds_task2_m3_eta00_seed20261007\\signals.csv",
+      "data_sha256": "6ce1eb9c2f716e74528dc0ce490347f1ae79e59f25911f0aab79b9702f08fb0a"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\seeds_task2_m3_eta00_seed20261008\\signals.csv",
+      "data_sha256": "b545b68950e17b4e618ae1aee5f76d7c0ea2b626c980603424756833986c182a"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\seeds_task2_m4_eta00_seed20261007\\signals.csv",
+      "data_sha256": "27f5e6ba367a56144ed9c4c26e3f29959532bdcca9e329b2cea7f49e0901516d"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\seeds_task2_m4_eta00_seed20261008\\signals.csv",
+      "data_sha256": "b134130039f86aab4be82f4b30f9085fe0af5a430dfa4334766f6156fbcb314f"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\seeds_task2_m5_eta00_seed20261007\\signals.csv",
+      "data_sha256": "4362a11206093c0a5e4a74663b3dc22fcbfa08317fb0392279e82b65b0449d80"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\seeds_task2_m5_eta00_seed20261008\\signals.csv",
+      "data_sha256": "2eaa34b660f842b90875aadeaa4893569e949d1ed2a55e42cd7d531a2eedb7ab"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\seeds_task2_m6_eta00_seed20261007\\signals.csv",
+      "data_sha256": "dd027e48853207f47133fe017764b7ce36349c1b7a8a76956bdb7a4c14e9e1ba"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\seeds_task2_m6_eta00_seed20261008\\signals.csv",
+      "data_sha256": "7858d540e2ad85e4f4b1f77d64a417643889abb9e44cbfb4573953b147ee5275"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\healthy_four_tasks_20261027\\00_hover\\motor_metrics.csv",
+      "data_sha256": "4505e6ef719eb6fabcdbea6b92eeb2cde90a74f1e1cc6b0091e036a4fe6623d6"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\healthy_four_tasks_20261027\\00_hover\\signals.csv",
+      "data_sha256": "b5394cf4ec0b6a4e845a61539ae38ab18feb05939c94f6463ae2b7ed5839a483"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\healthy_four_tasks_20261027\\01_line\\motor_metrics.csv",
+      "data_sha256": "cb9bf28e7d6efb33c0e7f55489452c58c4c08cad11d565cadac5db25638bdc49"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\healthy_four_tasks_20261027\\01_line\\signals.csv",
+      "data_sha256": "1da9fdb515bec364591d86d80d229536aeb7ae32c36d0b58eecdb5b48f2b74d2"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\healthy_four_tasks_20261027\\02_circle\\motor_metrics.csv",
+      "data_sha256": "10884969dcd2a4404b937a2a3c2efe9d94f543a1d36afa18ff1e967753fb0124"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\healthy_four_tasks_20261027\\02_circle\\signals.csv",
+      "data_sha256": "c0aefe7310666988c890ae73bb3d80666fbd3681d951805208a2072b2ccf0077"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\healthy_four_tasks_20261027\\03_vertical\\motor_metrics.csv",
+      "data_sha256": "faebe97813956b1dd7b4aa2fe8ee785cf65a8e5ea06162508432c1c12308d745"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\healthy_four_tasks_20261027\\03_vertical\\signals.csv",
+      "data_sha256": "5e9010c5243c0810fa29d0ae01b4489f1f406e50fe0adc378077b10a38687773"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\healthy_four_tasks_20261027\\tilt_diagnostic\\diagnosis.csv",
+      "data_sha256": "9b4d188f129e8ad5fc263b53b39434f6617eaea752ee0682126adcc77ab9a96c"
+    }
+  ],
+  "numeric_json_values_preserved": true
+}

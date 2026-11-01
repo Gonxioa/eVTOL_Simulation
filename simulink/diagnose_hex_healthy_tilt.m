@@ -36,7 +36,7 @@ for k=1:5
             result=cached.result;
         else
             fprintf('TILT_DIAGNOSTIC %d/4 %s\n',k-1,names{k});
-            result=run_hex_recovery(Parameters=Q,SaveResults=false);
+            result=run_hex_simulink(Parameters=Q,SaveResults=false);
             save(saved_file,'result','-v7');
         end
         traces{k}=result;

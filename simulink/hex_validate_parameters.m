@@ -2,7 +2,7 @@ function hex_validate_parameters(P)
 assert(isfinite(P.duration) && P.duration>0,'Duration must be finite and positive.');
 assert(P.fault_motor==fix(P.fault_motor) && P.fault_motor>=0 && P.fault_motor<=6,'FaultMotor is 0 (healthy) or 1..6.');
 assert(isfinite(P.fault_factor) && P.fault_factor>=0 && P.fault_factor<=1,'FaultFactor must be in [0,1].');
-assert(isfinite(P.fault_start) && P.fault_start>=0 && P.fault_end>P.fault_start,'Invalid fault/recovery interval.');
+assert(isfinite(P.fault_start) && P.fault_start>=0 && P.fault_end>P.fault_start,'Invalid fault/control interval.');
 assert(P.task_family>=0 && P.task_family<=6 && P.task_family==fix(P.task_family),'Invalid task selection.');
 assert(isfield(P.control,'yaw_hold_rad') && isscalar(P.control.yaw_hold_rad) && isfinite(P.control.yaw_hold_rad),'Internal fixed heading control.yaw_hold_rad must be a finite scalar in radians.');
 assert(P.motion_end>P.motion_start && P.motion_start>=0,'Invalid motion interval.');

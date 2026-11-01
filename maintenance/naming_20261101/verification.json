@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "native_cases": 2,
+  "duration_s": 24,
+  "signal_max_errors": [
+    0,
+    0
+  ],
+  "parameters_equal_after_renaming": true,
+  "all_logged_signals_compared": true,
+  "eight_standard_plots_written": true,
+  "cached_healthy_tasks_read": 4,
+  "observer_checks": 9,
+  "model_rebuild_passed": true,
+  "saved_source_readback_passed": true
+}

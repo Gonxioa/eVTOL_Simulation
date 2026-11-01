@@ -48,7 +48,7 @@
 
 本次已经直接更新原模型。重新打开 `hex_evtol.slx` 或运行 `open_hex_simulink` 后即可使用已保存增益。更新前的原模型完整备份由 `BASELINE_DELIVERY.json` 的 `backup_model` 给出，包含用户关闭 MATLAB 前保存的编辑。
 
-后续修改场景参数：`P=hex_parameters()`，修改任务/故障设置，再执行 `P=hex_prepare_inputs(P)` 和 `configure_hex_simulink(P)`。
+后续修改场景参数：`P=hex_base_parameters()`，修改任务/故障设置，再执行 `P=hex_prepare_inputs(P)` 和 `configure_hex_simulink(P)`。
 
 需要将这一组已验收增益应用到其他已打开的旧模型副本时，执行 `update_hex_baseline_model`。该函数先保存完整备份，仅同步五组增益的前两个分量，保留任务、故障设置、其他参数、模块名称、布局和封装。
 

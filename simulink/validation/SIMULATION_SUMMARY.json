@@ -1,0 +1,38 @@
+{
+  "profile": "control_v3_20261023",
+  "native_cases": 106,
+  "core_by_severity": [
+    {
+      "factor": 0.8,
+      "cases": 24,
+      "passed": 24,
+      "worst_late_tracking_rmse_m": 0.011908106262461771,
+      "worst_late_path_rmse_m": 0.01190810626246197,
+      "worst_peak_tracking_error_m": 0.06625113709124908,
+      "worst_tilt_deg": 11.742115056024518,
+      "worst_return_time_s": 1.3100000000000005
+    },
+    {
+      "factor": 0.2,
+      "cases": 24,
+      "passed": 24,
+      "worst_late_tracking_rmse_m": 0.012821070356229638,
+      "worst_late_path_rmse_m": 0.012344884674613803,
+      "worst_peak_tracking_error_m": 0.13981444775660373,
+      "worst_tilt_deg": 12.944062893347883,
+      "worst_return_time_s": 0.5500000000000003
+    },
+    {
+      "factor": 0.0,
+      "cases": 24,
+      "passed": 24,
+      "worst_late_tracking_rmse_m": 0.06364560821925881,
+      "worst_late_path_rmse_m": 0.06364560821925881,
+      "worst_peak_tracking_error_m": 0.9494217004416916,
+      "worst_tilt_deg": 22.494764333321857,
+      "worst_return_time_s": 11.8
+    }
+  ],
+  "worst_additional_seed_late_rmse_m": 0.08327245548237937,
+  "passed": true
+}

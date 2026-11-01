@@ -1,5 +1,5 @@
 {
-  "model_version": "hex_research_v2_integral_recovery",
+  "model_version": "hex_research_v2_integral_control",
   "control_tuning_version": "pv_baseline_20261021",
   "parameter_status": "research_design_not_real_aircraft",
   "frame": "ENU_world_FLU_body_xyzw_body_to_world",
@@ -12,6 +12,6 @@
   "wind": {"mean_m_s": [0.0, 0.0, 0.0], "ou_stationary_std_m_s": 0.2, "ou_correlation_time_s": 1.0, "update_rate_hz": 100.0},
   "timing": {"control_hz": 100.0, "integration_hz": 500.0, "export_hz": 100.0},
   "termination": {"position_norm_m": 25.0, "speed_m_s": 20.0, "body_rate_rad_s": 15.0, "minimum_altitude_m": -2.0},
-  "acceptance": {"status": "predeclared_research_requirement_not_regulatory", "hover_final_position_error_m": 0.05, "tracking_rmse_m": 0.25, "maximum_normal_tilt_deg": 35.0, "integration_half_step_position_difference_m": 0.02, "control_half_step_position_difference_m": 0.03, "post_saturation_recovery_error_m": 0.25},
+  "acceptance": {"status": "predeclared_research_requirement_not_regulatory", "hover_final_position_error_m": 0.05, "tracking_rmse_m": 0.25, "maximum_normal_tilt_deg": 35.0, "integration_half_step_position_difference_m": 0.02, "control_half_step_position_difference_m": 0.03, "post_saturation_return_error_m": 0.25},
   "seed": 20261006
 }

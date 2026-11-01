@@ -43,7 +43,7 @@ def collect():
         "baseline_validation": ROOT / "simulink/validation/BASELINE_TUNING_RESULTS.json",
         "paired_circle": ROOT / "simulink/output/kx_evidence_20261026/paired_circle_slx.mat",
         "paired_checks": ROOT / "simulink/output/kx_evidence_20261026/paired_circle_checks.json",
-        "source_hash_manifest": ROOT / "simulink/validation/RECOVERY_SOURCE_HASHES.json",
+        "source_hash_manifest": ROOT / "simulink/validation/SIMULATION_SOURCE_HASHES.json",
     }
     missing = [str(p) for p in paths.values() if not p.is_file()]
     if missing:

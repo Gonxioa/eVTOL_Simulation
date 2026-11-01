@@ -1,5 +1,5 @@
 function report=run_hex_healthy_assessment(options)
-%RUN_HEX_HEALTHY_ASSESSMENT Four healthy tasks using the current recovery model.
+%RUN_HEX_HEALTHY_ASSESSMENT Four healthy tasks using the current control model.
 % Run in the editor or enter: report=run_hex_healthy_assessment;
 % The original model, parameters and my_simulation.m are not saved or edited.
 arguments
@@ -15,7 +15,7 @@ arguments
 end
 root=fileparts(mfilename('fullpath'));
 addpath(root);
-P=hex_recovery_parameters();
+P=hex_parameters();
 P.duration=options.Duration;
 P.fault_motor=0; P.fault_factor=1;
 P.motion_start=1; P.motion_end=7;
@@ -27,7 +27,7 @@ P=hex_prepare_inputs(P);
 if strlength(options.OutputName)==0
     options.OutputName="healthy_four_tasks_"+string(datetime('now','Format','yyyyMMdd_HHmmss'));
 end
-folder=fullfile(root,'output','recovery',P.control_tuning_version,char(options.OutputName));
+folder=fullfile(root,'output','simulations',P.control_tuning_version,char(options.OutputName));
 if ~isfolder(folder), mkdir(folder); end
 task_names={'悬停','直线','绕圈','升降'};
 case_names={'00_hover','01_line','02_circle','03_vertical'};
@@ -44,7 +44,7 @@ for k=1:4
         r=cached.result;
         fprintf('HEALTHY_REUSE %s | saved parameters match\n',case_names{k});
     else
-        r=run_hex_recovery(Parameters=P,SaveResults=true,...
+        r=run_hex_simulink(Parameters=P,SaveResults=true,...
             OutputName=fullfile(options.OutputName,case_names{k}));
     end
     assert(strcmp(r.termination,'completed'),'A task stopped early; inspect the saved result.');
@@ -64,7 +64,7 @@ for k=1:4
         case_names{k},item.position_rmse_m,item.position_peak_m,item.late_body_rate_rms_rad_s,...
         item.any_motor_saturation_percent);
 end
-report=struct('model','hex_recovery','plot_layout','separate_xyz',...
+report=struct('model','hex_evtol','plot_layout','separate_xyz',...
     'control_tuning_version',P.control_tuning_version,...
     'created',char(datetime('now','Format','yyyy-MM-dd HH:mm:ss')),...
     'output_folder',folder,'settings',options,'cases',items);
@@ -105,7 +105,7 @@ integral_bounds=all(abs(r.control_audit(:,13:15))<=P.control.velocity_integral_l
 if P.task_family==0
     end_time=0;
 else
-    reached=find(r.recovery_reference_audit(:,1)>=P.motion_end-1e-9,1);
+    reached=find(r.reference_audit(:,1)>=P.motion_end-1e-9,1);
     end_time=NaN; if ~isempty(reached), end_time=t(reached); end
 end
 band=.05; minimum_hold=2; settle_wait=NaN;
@@ -140,7 +140,7 @@ item=struct('task',P.task_family,'task_name',task_name,'case_name',case_name,...
     'maximum_command_rad_s',max(r.motor_command,[],'all'),...
     'minimum_command_rad_s',min(r.motor_command,[],'all'),...
     'commands_bounded',command_bounds,'integrals_bounded',integral_bounds,...
-    'mission_phase_complete',r.recovery_reference_audit(end,1)>=P.motion_end,...
+    'mission_phase_complete',r.reference_audit(end,1)>=P.motion_end,...
     'late_window_after_motion',isfinite(end_time) && end_time<=P.duration-3,...
     'quaternion_norm_error',max(abs(vecnorm(s(:,7:10),2,2)-1)));
 motor_summary=table((1:6)',min(r.motor_command,[],1)',max(r.motor_command,[],1)',...

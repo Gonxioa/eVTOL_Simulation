@@ -33,7 +33,7 @@ nexttile; plot(t,vn,'LineWidth',1.2); time_axis(t,m);
 title(sprintf('三维速度误差｜RMSE %.3f m/s',m.velocity_rmse_m_s)); ylabel('速度误差范数（m/s）');
 nexttile; hold on;
 plot(t,t,'k--','LineWidth',1.1,'DisplayName','名义任务时间');
-plot(t,r.recovery_reference_audit(:,1),'LineWidth',1.2,'DisplayName','实际路径进度时间');
+plot(t,r.reference_audit(:,1),'LineWidth',1.2,'DisplayName','实际路径进度时间');
 if P.task_family~=0, yline(P.motion_end,':','DisplayName','名义运动终点'); end
 time_axis(t,m);
 if P.task_family==0, title('任务进度｜悬停无运动阶段');

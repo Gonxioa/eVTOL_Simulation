@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "active_sources_checked": 40,
+  "source_hash_count": 43,
+  "current_model_only": true,
+  "model_xml_normal_names": true,
+  "historical_reports_byte_preserved": 3,
+  "native_case_data_retained": {
+    "CORE": 72,
+    "HEALTHY": 4,
+    "IDEAL": 18,
+    "SEEDS": 12
+  },
+  "saved_trace_input_audit_cases": 106,
+  "standard_png_count": 8,
+  "healthy_png_count": 24
+}

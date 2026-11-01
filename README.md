@@ -1,10 +1,10 @@
 # eVTOL_Simulation
 
-完整设计与代码导航：[当前设计总览](CURRENT_DESIGN.md)。2026-11-01 整理后，本地保留当前 Python 代码、当前 Simulink 恢复模型、物理参数说明、研究设计与验证记录。历史版本与旧仿真结果见 [GitHub 归档](https://github.com/Gonxioa/eVTOL_Simulation/releases/tag/archive-20261030)。
+完整设计与代码导航：[当前设计总览](CURRENT_DESIGN.md)。2026-11-01 整理后，本地保留当前 Python 代码、当前 Simulink 模型、物理参数说明、研究设计与验证记录。历史版本与旧仿真结果见 [GitHub 归档](https://github.com/Gonxioa/eVTOL_Simulation/releases/tag/archive-20261030)。
 
-最新的单电机失效恢复实验位于 [`simulink/`](simulink/README.md)：按照“稳定姿态/高度 → 返回原轨迹附近 → 继续任务”的优先级控制，允许任务进度减慢或暂停。恢复参数版本为 `recovery_v3_20261023`，当前声明范围内的 106 个实际 Simulink 飞行工况通过恢复验收，详见 [结果汇总](simulink/validation/RECOVERY_SUMMARY.md) 与 [完整整定过程及限制](simulink/validation/RECOVERY_TUNING.md)。这不代表实飞有效性或多电机同时失效保证。
+最新的单电机失效恢复实验位于 [`simulink/`](simulink/README.md)：按照“稳定姿态/高度 → 返回原轨迹附近 → 继续任务”的优先级控制，允许任务进度减慢或暂停。恢复参数版本为 `control_v3_20261023`，当前声明范围内的 106 个实际 Simulink 飞行工况通过恢复验收，详见 [结果汇总](simulink/validation/SIMULATION_SUMMARY.md) 与 [完整整定过程及限制](simulink/validation/SIMULATION_TUNING.md)。这不代表实飞有效性或多电机同时失效保证。
 
-在 MATLAB R2025b 中进入 `simulink` 文件夹，运行 `open_hex_recovery` 打开恢复模型。历史原模型从归档标签恢复，当前生成器依赖的布局模板位于 `simulink/internal/`。
+在 MATLAB R2025b 中进入 `simulink` 文件夹，运行 `open_hex_simulink` 打开模型，或运行 `my_simulation` 完成仿真、绘图和保存。历史原模型从归档标签恢复，当前生成器依赖的布局模板位于 `simulink/internal/`。
 
 当前新增的 UAV-FD／F550 独立建模入口为 `python -m uavfd_f550`，说明和实际验证见
 [`docs/uavfd_f550/README.md`](docs/uavfd_f550/README.md)。该包自行实现动力学与振动模型；

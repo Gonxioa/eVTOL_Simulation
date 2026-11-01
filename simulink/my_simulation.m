@@ -2,7 +2,7 @@ simulation_folder = fileparts(mfilename('fullpath'));
 addpath(simulation_folder);
 
 % 当前故障恢复模型：稳定姿态/高度、返回轨迹，再继续任务。
-P = hex_recovery_parameters();
+P = hex_parameters();
 
 % 设置任务
 P.task_family = 2;     % 0悬停、1直线、2绕圈、3升降、4正弦跟踪、5阶跃、6饱和测试
@@ -25,16 +25,16 @@ P.feedback_delay = 0.03;       % 反馈延迟：秒
 
 % 生成本次风和测量误差，再同步模型参数
 P = hex_prepare_inputs(P);
-configure_hex_recovery(P);
+configure_hex_simulink(P);
 
 %绘图
 motor_to_plot = 1:6;
 
-r = run_hex_recovery(Parameters=P, OutputName="my_circle_run", ...
+r = run_hex_simulink(Parameters=P, OutputName="my_circle_run", ...
     SaveResults=true);
-output_folder = fullfile(simulation_folder, 'output', 'recovery', ...
+output_folder = fullfile(simulation_folder, 'output', 'simulations', ...
     P.control_tuning_version, 'my_circle_run');
 plot_hex_results(r, output_folder, motor_to_plot);
 
-fprintf('恢复模型 hex_recovery，实际仿真时长 %.2f 秒。\n', r.time(end));
+fprintf('六旋翼模型 hex_evtol，实际仿真时长 %.2f 秒。\n', r.time(end));
 fprintf('结果已保存到：%s\n', output_folder);
