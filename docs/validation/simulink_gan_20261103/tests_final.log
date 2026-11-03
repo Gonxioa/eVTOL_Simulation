@@ -1,0 +1,47 @@
+test_allocation_matrix_matches_hex_geometry (test_control_allocation.ControlAllocationTests.test_allocation_matrix_matches_hex_geometry) ... ok
+test_allocator_is_deterministic (test_control_allocation.ControlAllocationTests.test_allocator_is_deterministic) ... ok
+test_diagnostic_priority_sacrifices_yaw_first (test_control_allocation.ControlAllocationTests.test_diagnostic_priority_sacrifices_yaw_first) ... ok
+test_effectiveness_is_applied_once_in_plant_prediction (test_control_allocation.ControlAllocationTests.test_effectiveness_is_applied_once_in_plant_prediction) ... ok
+test_excess_collective_returns_best_bounded_solution (test_control_allocation.ControlAllocationTests.test_excess_collective_returns_best_bounded_solution) ... ok
+test_invalid_inputs_fail_loudly (test_control_allocation.ControlAllocationTests.test_invalid_inputs_fail_loudly) ... ok
+test_negative_collective_returns_zero_without_signed_sqrt (test_control_allocation.ControlAllocationTests.test_negative_collective_returns_zero_without_signed_sqrt) ... ok
+test_normal_hover_is_exact_symmetric_and_inside_speed_limit (test_control_allocation.ControlAllocationTests.test_normal_hover_is_exact_symmetric_and_inside_speed_limit) ... ok
+test_random_feasible_wrenches_remain_physical (test_control_allocation.ControlAllocationTests.test_random_feasible_wrenches_remain_physical) ... ok
+test_schedule_changes_exactly_at_fault_time (test_control_allocation.ControlAllocationTests.test_schedule_changes_exactly_at_fault_time) ... ok
+  [����У��] SE3�⻷��������ʽ��Ч: kp_pos=[ 6.5  6.5 15. ], kd_pos=[4. 4. 9.], kp_att=544.0, kd_att=46.64
+  [����] �� C:\Users\lenovo\AppData\Local\Temp\tmpb2vn03xy\motor2_severe__run001.csv  (1801 ��)
+test_exported_allocator_audit_schema_passes_validator (test_controller_allocation_integration.ControllerAllocationIntegrationTests.test_exported_allocator_audit_schema_passes_validator) ... ok
+  [����У��] SE3�⻷��������ʽ��Ч: kp_pos=[ 6.5  6.5 15. ], kd_pos=[4. 4. 9.], kp_att=544.0, kd_att=46.64
+test_fault_truth_does_not_change_nominal_allocator_command (test_controller_allocation_integration.ControllerAllocationIntegrationTests.test_fault_truth_does_not_change_nominal_allocator_command) ... ok
+  [����У��] SE3�⻷��������ʽ��Ч: kp_pos=[ 6.5  6.5 15. ], kd_pos=[4. 4. 9.], kp_att=544.0, kd_att=46.64
+test_vehicle_applies_effectiveness_once_to_motor_speed_target (test_controller_allocation_integration.ControllerAllocationIntegrationTests.test_vehicle_applies_effectiveness_once_to_motor_speed_target) ... ok
+test_rotorpy_patch_is_hex_compatible_without_persistent_numpy_patch (test_hex_physical_characteristics.HexPhysicalCharacteristicsTests.test_rotorpy_patch_is_hex_compatible_without_persistent_numpy_patch) ... ok
+test_source_backed_parameter_values (test_hex_physical_characteristics.HexPhysicalCharacteristicsTests.test_source_backed_parameter_values) ... ok
+test_custom_noise_is_repeatable_with_same_seed (test_imu_wind.ImuTruthTests.test_custom_noise_is_repeatable_with_same_seed) ... ok
+test_missing_malformed_and_nonfinite_truth_fail_loudly (test_imu_wind.ImuTruthTests.test_missing_malformed_and_nonfinite_truth_fail_loudly) ... ok
+  [����У��] SE3�⻷��������ʽ��Ч: kp_pos=[ 6.5  6.5 15. ], kd_pos=[4. 4. 9.], kp_att=544.0, kd_att=46.64
+test_short_rotorpy_run_exposes_body_frame_truth (test_imu_wind.ImuTruthTests.test_short_rotorpy_run_exposes_body_frame_truth) ... ok
+test_specific_force_matches_independent_body_frame_calculation (test_imu_wind.ImuTruthTests.test_specific_force_matches_independent_body_frame_calculation) ... ok
+test_truth_sensor_uses_body_origin_and_has_no_builtin_error (test_imu_wind.ImuTruthTests.test_truth_sensor_uses_body_origin_and_has_no_builtin_error) ... ok
+test_zero_custom_noise_returns_truth_without_mutating_inputs (test_imu_wind.ImuTruthTests.test_zero_custom_noise_returns_truth_without_mutating_inputs) ... ok
+test_internal_type_error_is_not_masked (test_imu_wind.TurbulentWindTests.test_internal_type_error_is_not_masked) ... ok
+test_turbulence_is_seeded_and_independent_of_base_amplitude (test_imu_wind.TurbulentWindTests.test_turbulence_is_seeded_and_independent_of_base_amplitude) ... ok
+test_zero_turbulence_matches_configured_sinusoid (test_imu_wind.TurbulentWindTests.test_zero_turbulence_matches_configured_sinusoid) ... ok
+test_balanced_ratio_counts_and_quality_separation (test_simulink_gan_protocol.ProtocolTests.test_balanced_ratio_counts_and_quality_separation) ... ok
+test_causal_prefix_invariance (test_simulink_gan_protocol.ProtocolTests.test_causal_prefix_invariance) ... ok
+test_complete_pair_holdout_and_budget (test_simulink_gan_protocol.ProtocolTests.test_complete_pair_holdout_and_budget) ... ok
+test_data_config_signature_and_incompatible_checkpoint (test_simulink_gan_protocol.ProtocolTests.test_data_config_signature_and_incompatible_checkpoint) ... ok
+test_generator_updates_with_one_small_batch (test_simulink_gan_protocol.ProtocolTests.test_generator_updates_with_one_small_batch) ... C:\Users\lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\autograd\graph.py:825: UserWarning: Attempting to run cuBLAS, but there was no current CUDA context! Attempting to set the primary context... (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\builder\windows\pytorch\aten\src\ATen\cuda\CublasHandlePool.cpp:135.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+ok
+test_label_mapping_strict_full_and_legacy_unchanged (test_simulink_gan_protocol.ProtocolTests.test_label_mapping_strict_full_and_legacy_unchanged) ... ok
+test_observable_units_delay_and_no_truth_fallback (test_simulink_gan_protocol.ProtocolTests.test_observable_units_delay_and_no_truth_fallback) ... ok
+test_quality_checks_duplicates_against_raw_similarity (test_simulink_gan_protocol.ProtocolTests.test_quality_checks_duplicates_against_raw_similarity) ... ok
+test_random_oversampling_matches_gan_ratio (test_simulink_gan_protocol.ProtocolTests.test_random_oversampling_matches_gan_ratio) ... ok
+test_scalers_only_fit_training (test_simulink_gan_protocol.ProtocolTests.test_scalers_only_fit_training) ... ok
+test_zero_ratio_generation_is_empty_without_forward (test_simulink_gan_protocol.ProtocolTests.test_zero_ratio_generation_is_empty_without_forward) ... ok
+
+----------------------------------------------------------------------
+Ran 35 tests in 5.469s
+
+OK

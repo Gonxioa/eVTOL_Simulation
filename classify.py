@@ -27,6 +27,7 @@ from torch.utils.data import DataLoader, TensorDataset
 import WGAN
 from provenance import code_hashes, runtime_info, sha256_file, stable_hash, write_json
 from scenario_config import LABEL_NAMES as CONFIG_LABEL_NAMES, SCENARIO_BY_LABEL
+from experiment_protocol import augmentation_counts, budget_indices, assert_complete_pairs, count_receipt, generation_checks
 
 warnings.filterwarnings("ignore")
 
@@ -76,6 +77,10 @@ REQUIRE_GROUPS = _env_flag("REQUIRE_GROUPS", True)
 ATTENTION_POOLING = _env_flag("CLASSIFIER_ATTENTION_POOLING", True)
 TARGET_POLICY = os.getenv("GAN_TARGET_POLICY", "max").strip().lower()
 MAX_GENERATED_PER_CLASS = max(0, int(os.getenv("GAN_MAX_GENERATED_PER_CLASS", "0")))
+AUGMENT_MODE = os.getenv('GAN_AUGMENT_MODE', 'balance')
+AUGMENT_RATIO = float(os.getenv('GAN_AUGMENT_RATIO', '1.0'))
+TRAIN_MAX_GROUPS = max(0, int(os.getenv('TRAIN_MAX_GROUPS', '0')))
+TRAIN_WINDOWS_PER_CLASS = max(0, int(os.getenv('TRAIN_WINDOWS_PER_CLASS', '0')))
 GAN_LAMBDAS = [
     float(item.strip())
     # Nonzero values enable an experimental command-thrust consistency
@@ -96,6 +101,7 @@ N_FEATURES = 0
 N_CLASSES = 0
 FEATURE_NAMES = []
 LABEL_NAMES = {}
+DATA_PROFILE = 'legacy_python'
 
 
 def set_seed(seed):
@@ -113,11 +119,18 @@ def _load_json(path):
 
 
 def load_data():
-    global SEQ_LEN, N_FEATURES, N_CLASSES, FEATURE_NAMES, LABEL_NAMES, N_FOLDS, GAN_LAMBDAS
+    global SEQ_LEN, N_FEATURES, N_CLASSES, FEATURE_NAMES, LABEL_NAMES, N_FOLDS, GAN_LAMBDAS, DATA_PROFILE
+    metadata = _load_json(DATA_DIR/'preprocess_metadata.json') if (DATA_DIR/'preprocess_metadata.json').exists() else {}
+    DATA_PROFILE = metadata.get('profile', 'legacy_python')
+    if DATA_PROFILE not in ('legacy_python', 'simulink_observable_v1'):
+        raise ValueError('Unknown dataset profile')
     required = [
         "X_raw.npy", "y_all.npy", "groups.npy", "feature_names.json",
-        "cmd_thrust.npy", "physics_thrust.npy",
     ]
+    if DATA_PROFILE == 'legacy_python' or any(x > 0 for x in GAN_LAMBDAS):
+        required += ['cmd_thrust.npy', 'physics_thrust.npy']
+    if DATA_PROFILE == 'simulink_observable_v1' and any(x > 0 for x in GAN_LAMBDAS):
+        raise ValueError('Simulink profile has no validated thrust target; physics regularization must remain disabled.')
     missing = [name for name in required if not (DATA_DIR / name).exists()]
     if missing and REQUIRE_GROUPS:
         raise FileNotFoundError(
@@ -141,9 +154,9 @@ def load_data():
         raise ValueError(f"数据形状错误: X={X.shape}, y={y.shape}")
     if groups is None:
         raise RuntimeError("未找到groups.npy；正式实验禁止普通StratifiedKFold")
-    if len(groups) != len(y) or thrust is None or thrust.shape != X.shape[:2]:
+    if len(groups) != len(y) or (thrust is not None and thrust.shape != X.shape[:2]) or (DATA_PROFILE == 'legacy_python' and thrust is None):
         raise ValueError(f"X/y/groups/physics_thrust未对齐: {X.shape}, {y.shape}, {groups.shape}, {None if thrust is None else thrust.shape}")
-    if not np.isfinite(X).all() or not np.isfinite(thrust).all():
+    if not np.isfinite(X).all() or (thrust is not None and not np.isfinite(thrust).all()):
         raise ValueError("输入含NaN/Inf")
 
     SEQ_LEN, N_FEATURES = int(X.shape[1]), int(X.shape[2])
@@ -155,7 +168,13 @@ def load_data():
     FEATURE_NAMES = [str(x) for x in _load_json(DATA_DIR / "feature_names.json")]
     if len(FEATURE_NAMES) != N_FEATURES:
         raise ValueError("feature_names.json与X特征维度不一致")
-    LABEL_NAMES = {int(k): str(v) for k, v in CONFIG_LABEL_NAMES.items() if int(k) < N_CLASSES}
+    label_path = DATA_DIR/'label_names.json'
+    LABEL_NAMES = {int(k):str(v) for k,v in _load_json(label_path).items()} if DATA_PROFILE == 'simulink_observable_v1' else dict(CONFIG_LABEL_NAMES)
+    if DATA_PROFILE == 'simulink_observable_v1':
+        from simulink_data import FEATURES, scenarios
+        if metadata.get('label_table') != scenarios() or FEATURE_NAMES != FEATURES.get(metadata.get('feature_set')):
+            raise ValueError('Simulink label/observable field contract mismatch')
+        assert_complete_pairs(y, groups, N_CLASSES)
     if set(np.unique(y)) != set(range(N_CLASSES)):
         raise ValueError("正式19类数据必须连续覆盖label 0..18")
 
@@ -257,14 +276,14 @@ def train_classifier(X, y, weighted=False, epochs=N_EPOCHS):
 
 def random_oversample(X, y, seed):
     rng = np.random.default_rng(seed)
-    target = max(int(np.sum(y == label)) for label in range(N_CLASSES))
+    additions = generation_counts(y)
     indices = []
     for label in range(N_CLASSES):
         original = np.flatnonzero(y == label)
         if len(original) == 0:
             raise ValueError(f"训练折缺少label={label}")
         indices.extend(original.tolist())
-        indices.extend(rng.choice(original, size=target - len(original), replace=True).tolist())
+        indices.extend(rng.choice(original, size=additions[label], replace=True).tolist())
     indices = np.asarray(indices, dtype=np.int64)
     rng.shuffle(indices)
     return X[indices], y[indices]
@@ -319,17 +338,7 @@ def evaluate(model, X, y):
 
 
 def generation_counts(y_train):
-    counts = {label: int(np.sum(y_train == label)) for label in range(N_CLASSES)}
-    if TARGET_POLICY == "max":
-        target = max(counts.values())
-    elif TARGET_POLICY == "median":
-        target = int(np.median(list(counts.values())))
-    else:
-        raise ValueError("GAN_TARGET_POLICY只能为max或median")
-    deficits = {label: max(0, target - count) for label, count in counts.items()}
-    if MAX_GENERATED_PER_CLASS:
-        deficits = {label: min(count, MAX_GENERATED_PER_CLASS) for label, count in deficits.items()}
-    return deficits
+    return augmentation_counts(y_train,N_CLASSES,AUGMENT_MODE,AUGMENT_RATIO,TARGET_POLICY,MAX_GENERATED_PER_CLASS)
 
 
 def gan_variant_name(lambda_phys):
@@ -412,7 +421,7 @@ def train_or_load_classifier(name, fold_dir, signature, X_train, y_train, X_test
     return model, result, cm, pred
 
 
-def train_or_load_gan(fold, fold_dir, signature, lambda_phys, X_train_raw, X_train_gan, y_train, thrust_train, gan_scaler, cls_scaler):
+def train_or_load_gan(fold, fold_dir, signature, lambda_phys, X_train_raw, X_train_gan, y_train, thrust_train, gan_scaler, cls_scaler, train_groups=None):
     name = gan_variant_name(lambda_phys)
     directory = fold_dir / name
     directory.mkdir(parents=True, exist_ok=True)
@@ -447,6 +456,8 @@ def train_or_load_gan(fold, fold_dir, signature, lambda_phys, X_train_raw, X_tra
     else:
         X_gen_raw = np.empty((0, SEQ_LEN, N_FEATURES), dtype=np.float32)
     quality = {"augmentation_counts": {int(k): int(v) for k, v in deficits.items()}}
+    quality['training'] = {k:G.training_history[k] for k in ('generator_updates','critic_updates','generator_parameter_max_delta')}
+    y_q = np.empty(0,dtype=np.int64)
 
     if GAN_QUALITY_EVAL:
         quality_counts = {label: GAN_QUALITY_SAMPLES for label in range(N_CLASSES)}
@@ -458,11 +469,15 @@ def train_or_load_gan(fold, fold_dir, signature, lambda_phys, X_train_raw, X_tra
             X_q_gan.reshape(-1, N_FEATURES)
         ).reshape(X_q_gan.shape).astype(np.float32)
         quality["distribution"] = distribution_quality(X_train_raw, y_train, X_q_raw, y_q)
+        quality['checks'] = generation_checks(X_train_raw,y_train,X_q_raw,y_q,FEATURE_NAMES,train_groups)
         np.save(directory / "X_quality_raw.npy", X_q_raw)
         np.save(directory / "y_quality.npy", y_q)
 
     np.save(directory / "X_gen_raw.npy", X_gen_raw)
     np.save(directory / "y_gen.npy", y_gen.astype(np.int64))
+    quality['count_receipt'] = count_receipt(y_train,y_gen,deficits,N_CLASSES,y_q)
+    write_json(directory/'augmentation_counts.json',quality['count_receipt'])
+    print('  GAN counts:', {k:v for k,v in quality['count_receipt'].items()})
     atomic_pickle(meta_path, {"signature": signature, "quality": quality})
     return X_gen_raw, y_gen.astype(np.int64), quality
 
@@ -486,7 +501,7 @@ def run_experiment(X, y, groups, thrust):
         PROJECT_ROOT,
         [
             "classify.py", "WGAN.py", "scenario_config.py", "data_process.py",
-            "hex_physical_characteristics.py", "provenance.py",
+            "hex_physical_characteristics.py", "provenance.py", 'simulink_data.py', 'experiment_protocol.py',
         ],
     )
     tracked_data_files = (
@@ -508,6 +523,9 @@ def run_experiment(X, y, groups, thrust):
         train_groups, test_groups = set(groups[train_idx]), set(groups[test_idx])
         if train_groups & test_groups:
             raise RuntimeError(f"Fold {fold}发生group泄漏")
+        outer_train_idx = train_idx.copy()
+        train_idx = budget_indices(train_idx,y,groups,SEED+fold,TRAIN_MAX_GROUPS,TRAIN_WINDOWS_PER_CLASS)
+        train_groups = set(groups[train_idx])
         train_labels, test_labels = set(y[train_idx]), set(y[test_idx])
         required_labels = set(range(N_CLASSES))
         if train_labels != required_labels or test_labels != required_labels:
@@ -519,7 +537,7 @@ def run_experiment(X, y, groups, thrust):
         print(f"\n[Fold {fold}/{N_FOLDS}] train groups={len(train_groups)}, test groups={len(test_groups)}, overlap=0")
         X_train_raw, X_test_raw = X[train_idx], X[test_idx]
         y_train, y_test = y[train_idx], y[test_idx]
-        thrust_train = thrust[train_idx]
+        thrust_train = thrust[train_idx] if thrust is not None else None
         X_train_cls, X_test_cls, X_train_gan, cls_scaler, gan_scaler = fit_scalers(X_train_raw, X_test_raw)
         with (fold_dir / "classifier_scaler.pkl").open("wb") as f:
             pickle.dump(cls_scaler, f)
@@ -528,6 +546,8 @@ def run_experiment(X, y, groups, thrust):
 
         base_signature_payload = {
             "fold": fold, "train_idx": train_idx.tolist(), "test_idx": test_idx.tolist(),
+            'outer_train_idx':outer_train_idx.tolist(), 'train_groups':sorted(int(x) for x in train_groups),
+            'test_groups':sorted(int(x) for x in test_groups), 'data_profile':DATA_PROFILE,
             "code_sha256": code_state, "data_sha256": data_state, "seed": SEED,
             "n_folds": N_FOLDS, "classifier_epochs": N_EPOCHS,
             "classifier_batch_size": BATCH_SIZE, "classifier_lr": LR,
@@ -535,6 +555,8 @@ def run_experiment(X, y, groups, thrust):
             "attention_pooling": ATTENTION_POOLING, "feature_names": FEATURE_NAMES,
             "gan_epochs": GAN_EPOCHS, "gan_lambdas": GAN_LAMBDAS,
             "gan_target_policy": TARGET_POLICY, "temporal_noise": WGAN.TEMPORAL_NOISE,
+            'augment_mode':AUGMENT_MODE,'augment_ratio':AUGMENT_RATIO,
+            'train_max_groups':TRAIN_MAX_GROUPS,'train_windows_per_class':TRAIN_WINDOWS_PER_CLASS,
             "gan_batch_size": WGAN.BATCH_SIZE,
             "gan_generate_batch_size": WGAN.GENERATE_BATCH_SIZE,
             "gan_noise_dim": WGAN.NOISE_DIM, "gan_hidden_dim": WGAN.HIDDEN_DIM,
@@ -557,7 +579,7 @@ def run_experiment(X, y, groups, thrust):
         )
         results["no_gan"].append(base_result); cm_sum["no_gan"] += base_cm
 
-        set_seed(SEED + fold * 100 + 2)
+        set_seed(SEED + fold * 100 + 1)
         _model, result, cm, _ = train_or_load_classifier(
             "class_weighted", fold_dir, signature, X_train_cls, y_train,
             X_test_cls, y_test, test_idx, groups[test_idx], weighted=True,
@@ -565,7 +587,14 @@ def run_experiment(X, y, groups, thrust):
         results["class_weighted"].append(result); cm_sum["class_weighted"] += cm
 
         X_ros, y_ros = random_oversample(X_train_cls, y_train, SEED + fold * 100 + 3)
-        set_seed(SEED + fold * 100 + 3)
+        additions=generation_counts(y_train)
+        actual_ros={label:int(np.sum(y_ros==label)-np.sum(y_train==label)) for label in range(N_CLASSES)}
+        if actual_ros != additions:
+            raise RuntimeError('Actual random oversampling counts differ from GAN plan')
+        write_json(fold_dir/'random_oversampling_counts.json',
+                   count_receipt(y_train,np.asarray(
+                       [label for label,n in actual_ros.items() for _ in range(n)]),additions,N_CLASSES))
+        set_seed(SEED + fold * 100 + 1)
         _model, result, cm, _ = train_or_load_classifier(
             "random_oversampling", fold_dir, signature, X_ros, y_ros,
             X_test_cls, y_test, test_idx, groups[test_idx], weighted=False,
@@ -577,9 +606,11 @@ def run_experiment(X, y, groups, thrust):
             gan_signature = stable_hash({"base": signature, "lambda_phys": lambda_phys})
             X_gen_raw, y_gen, quality = train_or_load_gan(
                 fold, fold_dir, gan_signature, lambda_phys, X_train_raw,
-                X_train_gan, y_train, thrust_train, gan_scaler, cls_scaler,
+                X_train_gan, y_train, thrust_train, gan_scaler, cls_scaler,groups[train_idx],
             )
             if len(X_gen_raw):
+                if not np.isfinite(X_gen_raw).all():
+                    raise ValueError('Nonfinite generated training samples')
                 X_gen_cls = cls_scaler.transform(
                     X_gen_raw.reshape(-1, N_FEATURES)
                 ).reshape(X_gen_raw.shape).astype(np.float32)
@@ -587,7 +618,9 @@ def run_experiment(X, y, groups, thrust):
                 X_gen_cls = np.empty((0, SEQ_LEN, N_FEATURES), dtype=np.float32)
             X_aug = np.concatenate([X_train_cls, X_gen_cls])
             y_aug = np.concatenate([y_train, y_gen])
-            set_seed(SEED + fold * 100 + 10 + order)
+            if len(y_gen) != sum(generation_counts(y_train).values()):
+                raise RuntimeError('Planned and joined GAN sample counts differ')
+            set_seed(SEED + fold * 100 + 1)
             _model, result, cm, _ = train_or_load_classifier(
                 name, fold_dir, gan_signature, X_aug, y_aug,
                 X_test_cls, y_test, test_idx, groups[test_idx], weighted=False,
@@ -690,6 +723,9 @@ def main():
         "attention_pooling": ATTENTION_POOLING, "gan_epochs": GAN_EPOCHS,
         "gan_thrust_regularization_lambdas": GAN_LAMBDAS,
         "gan_target_policy": TARGET_POLICY,
+        'data_profile':DATA_PROFILE, 'augment_mode':AUGMENT_MODE,'augment_ratio':AUGMENT_RATIO,
+        'train_max_groups':TRAIN_MAX_GROUPS,'train_windows_per_class':TRAIN_WINDOWS_PER_CLASS,
+        'claim_scope':'Fixed-hyperparameter simulation-domain prototype; outer tests never select models; no convergence, GAN benefit or real-flight claim.',
         "gan_batch_size": WGAN.BATCH_SIZE,
         "gan_generate_batch_size": WGAN.GENERATE_BATCH_SIZE,
         "gan_temporal_noise": WGAN.TEMPORAL_NOISE,

@@ -1,0 +1,119 @@
+{
+  "feature_set": "imu",
+  "flight_acceptance_failures_retained": [
+    "g000_label06"
+  ],
+  "folds": [
+    {
+      "fold": 1,
+      "generated_joined": 456,
+      "generator_parameter_max_delta": 0.005051009356975555,
+      "generator_updates": 30,
+      "joined_sample_quality_checks": {
+        "exact_generated_duplicates": 0,
+        "exact_training_duplicates": 0,
+        "finite": true,
+        "near_duplicate_fraction": 0.0,
+        "nearest_training_rms_median": 2.0641897546002026,
+        "outside_training_range_fraction": 0.0,
+        "range_scope": "Observed training envelope, not certified physical limits",
+        "raw_cross_source_nearest_rms_p05": 0.7337730537154534,
+        "similarity_interpretation": "Training-only cross-source reference; near similarity alone is not proof of memorization."
+      },
+      "original_training_windows": 456,
+      "quality_only": 152,
+      "test_groups": [
+        1
+      ],
+      "training_groups": [
+        2,
+        3
+      ]
+    },
+    {
+      "fold": 2,
+      "generated_joined": 456,
+      "generator_parameter_max_delta": 0.005156293511390686,
+      "generator_updates": 30,
+      "joined_sample_quality_checks": {
+        "exact_generated_duplicates": 0,
+        "exact_training_duplicates": 0,
+        "finite": true,
+        "near_duplicate_fraction": 0.0,
+        "nearest_training_rms_median": 2.408278319801515,
+        "outside_training_range_fraction": 0.0,
+        "range_scope": "Observed training envelope, not certified physical limits",
+        "raw_cross_source_nearest_rms_p05": 0.7136416100085283,
+        "similarity_interpretation": "Training-only cross-source reference; near similarity alone is not proof of memorization."
+      },
+      "original_training_windows": 456,
+      "quality_only": 152,
+      "test_groups": [
+        3
+      ],
+      "training_groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "fold": 3,
+      "generated_joined": 456,
+      "generator_parameter_max_delta": 0.00517234206199646,
+      "generator_updates": 30,
+      "joined_sample_quality_checks": {
+        "exact_generated_duplicates": 0,
+        "exact_training_duplicates": 0,
+        "finite": true,
+        "near_duplicate_fraction": 0.0,
+        "nearest_training_rms_median": 1.4447262219333314,
+        "outside_training_range_fraction": 0.0,
+        "range_scope": "Observed training envelope, not certified physical limits",
+        "raw_cross_source_nearest_rms_p05": 0.7516856519776077,
+        "similarity_interpretation": "Training-only cross-source reference; near similarity alone is not proof of memorization."
+      },
+      "original_training_windows": 456,
+      "quality_only": 152,
+      "test_groups": [
+        0
+      ],
+      "training_groups": [
+        2,
+        3
+      ]
+    },
+    {
+      "fold": 4,
+      "generated_joined": 456,
+      "generator_parameter_max_delta": 0.0052033765241503716,
+      "generator_updates": 30,
+      "joined_sample_quality_checks": {
+        "exact_generated_duplicates": 0,
+        "exact_training_duplicates": 0,
+        "finite": true,
+        "near_duplicate_fraction": 0.0,
+        "nearest_training_rms_median": 1.801103874386423,
+        "outside_training_range_fraction": 0.0,
+        "range_scope": "Observed training envelope, not certified physical limits",
+        "raw_cross_source_nearest_rms_p05": 0.6693115690195086,
+        "similarity_interpretation": "Training-only cross-source reference; near similarity alone is not proof of memorization."
+      },
+      "original_training_windows": 456,
+      "quality_only": 152,
+      "test_groups": [
+        2
+      ],
+      "training_groups": [
+        0,
+        1
+      ]
+    }
+  ],
+  "paired_groups": 4,
+  "passed": true,
+  "protected_math_unchanged": true,
+  "source_manifest_sha256": "22d5c29a0d312653fbdeb947f62cd6e70f9167f4e59512157ef8dbfb17ad5a91",
+  "source_plan_signature": "fa33eeb46825a8916187957d7482f10477ca25fb9fe1f475423057f5c65576bd",
+  "source_runs": 76,
+  "windows": 1520
+}

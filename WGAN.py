@@ -230,6 +230,8 @@ def train(
     if save_models:
         save_dir.mkdir(parents=True, exist_ok=True)
     G, D = Generator().to(DEVICE), Discriminator().to(DEVICE)
+    initial_generator = {k:v.detach().clone() for k,v in G.state_dict().items()}
+    generator_updates = critic_updates = 0
     opt_G = optim.Adam(G.parameters(), lr=LR_G, betas=(0.0, 0.9))
     opt_D = optim.Adam(D.parameters(), lr=LR_D, betas=(0.0, 0.9))
     history = {"loss_G": [], "loss_D": [], "loss_G_adv": [], "loss_phys": []}
@@ -257,10 +259,11 @@ def train(
             )
             loss_D.backward()
             opt_D.step()
+            critic_updates += 1
             totals["d"] += float(loss_D.item())
             totals["nd"] += 1
 
-            if (batch_index + 1) % N_CRITIC == 0:
+            if (batch_index + 1) % N_CRITIC == 0 or batch_index + 1 == len(dataloader):
                 opt_G.zero_grad(set_to_none=True)
                 fake_x = G(sample_noise(batch_size), real_labels)
                 adv = -D(fake_x, real_labels).mean()
@@ -275,6 +278,7 @@ def train(
                 loss_G = adv + float(lambda_phys) * phys
                 loss_G.backward()
                 opt_G.step()
+                generator_updates += 1
                 totals["g"] += float(loss_G.item())
                 totals["adv"] += float(adv.item())
                 totals["phys"] += float(phys.item())
@@ -315,6 +319,8 @@ def train(
         "lambda_phys": float(lambda_phys), "phys_epsilon": float(phys_epsilon),
         "early_stopping": bool(early_stopping), "restore_best": bool(restore_best),
         "selected_generator": selected, "best_epoch": int(best_epoch),
+        'generator_updates': generator_updates, 'critic_updates': critic_updates,
+        'generator_parameter_max_delta': max(float((v-initial_generator[k]).abs().max().item()) for k,v in G.state_dict().items()),
     }
     save_dir.mkdir(parents=True, exist_ok=True)
     np.savez_compressed(
@@ -324,7 +330,11 @@ def train(
         loss_G_adv=np.asarray(history["loss_G_adv"]),
         loss_phys=np.asarray(history["loss_phys"]),
         lambda_phys=np.asarray([float(lambda_phys)]),
+        generator_updates=np.asarray([generator_updates]),
+        generator_parameter_max_delta=np.asarray([G.training_history['generator_parameter_max_delta']]),
     )
+    if generator_updates == 0 or G.training_history['generator_parameter_max_delta'] == 0:
+        raise RuntimeError('Generator did not update; training cannot be reported as completed.')
     if save_models:
         torch.save(G.state_dict(), save_dir / "G_final.pth")
         torch.save(D.state_dict(), save_dir / "D_final.pth")

@@ -1,0 +1,212 @@
+{
+  "completion": {
+    "code_implemented": true,
+    "gan_benefit_established": false,
+    "pipeline_run": true,
+    "real_flight_validated": false,
+    "sufficient_training": false
+  },
+  "dataset_version": "simulink_control_v3_observable_20261103_v1",
+  "failed_attempt_rejected_runs": 75,
+  "flight_acceptance_failures_retained": [
+    {
+      "metrics": {
+        "commands_bounded": true,
+        "completed": true,
+        "duration_s": 24,
+        "estimated_effectiveness": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        "factor": 0,
+        "feedback_delay_s": 0.03,
+        "final_tracking_error_m": 0.06961255808321201,
+        "finite": true,
+        "integrals_bounded": true,
+        "late_path_rmse_m": 0.06428181526550225,
+        "late_tracking_rmse_m": 0.08437730914789052,
+        "minimum_altitude_m": 2.1823442420228187,
+        "mission_phase_complete": true,
+        "motor": 6,
+        "observed_feedback": true,
+        "passed": false,
+        "peak_path_error_m": 0.4899476533558659,
+        "peak_rp_rate_rad_s": 3.036209829453129,
+        "peak_tilt_deg": 26.34931462630654,
+        "peak_tracking_error_m": 0.9673487765380022,
+        "peak_yaw_rate_rad_s": 0.46073993332087143,
+        "phase_s": 10.61467514035122,
+        "return_time_s": 15.41,
+        "returned": false,
+        "seed": 20261103.0,
+        "stable": true,
+        "task": 2
+      },
+      "run_key": "g000_label06"
+    }
+  ],
+  "model_sha256": "5a3eeb9e75b64aa1c71e778e96f3cf1e6e1f48a2e0be19382abbbeaf345035b2",
+  "native_runs": 76,
+  "paired_groups": 4,
+  "primary_checkpoint_reuse_verified": true,
+  "profile": "simulink_observable_v1",
+  "prototype_features": [
+    "imu_cmd_rpm",
+    "imu"
+  ],
+  "results": {
+    "imu": {
+      "class_weighted": {
+        "acc_mean": 0.16052631578947368,
+        "acc_std": 0.014533369759456917,
+        "f1_macro_mean": 0.06632457384721668,
+        "f1_macro_std": 0.014211295677490887,
+        "fault_miss_to_normal_mean": 0.018055555555555554,
+        "fault_miss_to_normal_std": 0.028088539466884284,
+        "motor_localization_accuracy_mean": 0.21805555555555556,
+        "motor_localization_accuracy_std": 0.005726535591135642,
+        "normal_false_alarm_mean": 0.8625,
+        "normal_false_alarm_std": 0.23815698604072064,
+        "partial_accuracy_mean": 0.0375,
+        "partial_accuracy_std": 0.06495190528383289,
+        "severity_accuracy_mean": 0.6513888888888889,
+        "severity_accuracy_std": 0.008893228107545639
+      },
+      "no_gan": {
+        "acc_mean": 0.16052631578947368,
+        "acc_std": 0.014533369759456917,
+        "f1_macro_mean": 0.06632457384721668,
+        "f1_macro_std": 0.014211295677490887,
+        "fault_miss_to_normal_mean": 0.018055555555555554,
+        "fault_miss_to_normal_std": 0.028088539466884284,
+        "motor_localization_accuracy_mean": 0.21805555555555556,
+        "motor_localization_accuracy_std": 0.005726535591135642,
+        "normal_false_alarm_mean": 0.8625,
+        "normal_false_alarm_std": 0.23815698604072064,
+        "partial_accuracy_mean": 0.0375,
+        "partial_accuracy_std": 0.06495190528383289,
+        "severity_accuracy_mean": 0.6513888888888889,
+        "severity_accuracy_std": 0.008893228107545639
+      },
+      "random_oversampling": {
+        "acc_mean": 0.20197368421052633,
+        "acc_std": 0.01891947874282685,
+        "f1_macro_mean": 0.10823477253923111,
+        "f1_macro_std": 0.016389335811495494,
+        "fault_miss_to_normal_mean": 0.05,
+        "fault_miss_to_normal_std": 0.025685058345704066,
+        "motor_localization_accuracy_mean": 0.20833333333333334,
+        "motor_localization_accuracy_std": 0.010393492741038719,
+        "normal_false_alarm_mean": 0.4,
+        "normal_false_alarm_std": 0.24238399287081647,
+        "partial_accuracy_mean": 0.10416666666666666,
+        "partial_accuracy_std": 0.02667968432263687,
+        "severity_accuracy_mean": 0.7770833333333333,
+        "severity_accuracy_std": 0.08676665795165081
+      },
+      "wgan_plain": {
+        "acc_mean": 0.19144736842105262,
+        "acc_std": 0.0339246660114572,
+        "f1_macro_mean": 0.1168044947749644,
+        "f1_macro_std": 0.03766811853315102,
+        "fault_miss_to_normal_mean": 0.027083333333333334,
+        "fault_miss_to_normal_std": 0.023600896483286705,
+        "motor_localization_accuracy_mean": 0.22777777777777777,
+        "motor_localization_accuracy_std": 0.016782008296659125,
+        "normal_false_alarm_mean": 0.65,
+        "normal_false_alarm_std": 0.2872281323269014,
+        "partial_accuracy_mean": 0.075,
+        "partial_accuracy_std": 0.0549621081594705,
+        "severity_accuracy_mean": 0.6986111111111111,
+        "severity_accuracy_std": 0.06411493826435442
+      }
+    },
+    "imu_cmd_rpm": {
+      "class_weighted": {
+        "acc_mean": 0.6164473684210526,
+        "acc_std": 0.049630734769848146,
+        "f1_macro_mean": 0.5484915390561436,
+        "f1_macro_std": 0.05626626797617133,
+        "fault_miss_to_normal_mean": 0.001388888888888889,
+        "fault_miss_to_normal_std": 0.0024056261216234406,
+        "motor_localization_accuracy_mean": 0.6513888888888888,
+        "motor_localization_accuracy_std": 0.05337744125159899,
+        "normal_false_alarm_mean": 1.0,
+        "normal_false_alarm_std": 0.0,
+        "partial_accuracy_mean": 0.3229166666666667,
+        "partial_accuracy_std": 0.10229569747659097,
+        "severity_accuracy_mean": 0.99375,
+        "severity_accuracy_std": 0.00230321165996902
+      },
+      "no_gan": {
+        "acc_mean": 0.6164473684210526,
+        "acc_std": 0.049630734769848146,
+        "f1_macro_mean": 0.5484915390561436,
+        "f1_macro_std": 0.05626626797617133,
+        "fault_miss_to_normal_mean": 0.001388888888888889,
+        "fault_miss_to_normal_std": 0.0024056261216234406,
+        "motor_localization_accuracy_mean": 0.6513888888888888,
+        "motor_localization_accuracy_std": 0.05337744125159899,
+        "normal_false_alarm_mean": 1.0,
+        "normal_false_alarm_std": 0.0,
+        "partial_accuracy_mean": 0.3229166666666667,
+        "partial_accuracy_std": 0.10229569747659097,
+        "severity_accuracy_mean": 0.99375,
+        "severity_accuracy_std": 0.00230321165996902
+      },
+      "random_oversampling": {
+        "acc_mean": 0.8118421052631579,
+        "acc_std": 0.07666661648398533,
+        "f1_macro_mean": 0.7828530590209943,
+        "f1_macro_std": 0.08063367397217074,
+        "fault_miss_to_normal_mean": 0.013194444444444444,
+        "fault_miss_to_normal_std": 0.005334128991575422,
+        "motor_localization_accuracy_mean": 0.8368055555555556,
+        "motor_localization_accuracy_std": 0.0660671831182864,
+        "normal_false_alarm_mean": 0.6125,
+        "normal_false_alarm_std": 0.36464880364537056,
+        "partial_accuracy_mean": 0.6541666666666666,
+        "partial_accuracy_std": 0.20467623484691894,
+        "severity_accuracy_mean": 0.9854166666666666,
+        "severity_accuracy_std": 0.006624577787617707
+      },
+      "wgan_plain": {
+        "acc_mean": 0.6059210526315789,
+        "acc_std": 0.01527392995558408,
+        "f1_macro_mean": 0.5160719556150962,
+        "f1_macro_std": 0.01494914543152036,
+        "fault_miss_to_normal_mean": 0.027083333333333334,
+        "fault_miss_to_normal_std": 0.04371691870982539,
+        "motor_localization_accuracy_mean": 0.6298611111111111,
+        "motor_localization_accuracy_std": 0.028421363791223772,
+        "normal_false_alarm_mean": 0.8,
+        "normal_false_alarm_std": 0.31819805153394637,
+        "partial_accuracy_mean": 0.3125,
+        "partial_accuracy_std": 0.09474014167418394,
+        "severity_accuracy_mean": 0.96875,
+        "severity_accuracy_std": 0.04300512279275287
+      }
+    }
+  },
+  "smoke_features": [
+    "imu_cmd_rpm",
+    "imu"
+  ],
+  "source_plan_signature": "fa33eeb46825a8916187957d7482f10477ca25fb9fe1f475423057f5c65576bd",
+  "tests": 35,
+  "tests_passed": true,
+  "versions": {
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "matlab": "R2025b",
+    "numpy": "2.4.4",
+    "pandas": "3.0.3",
+    "python_runtime": "C:\\Users\\lenovo\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "scipy": "1.17.1",
+    "sklearn": "1.8.0",
+    "torch": "2.5.1+cu121"
+  }
+}

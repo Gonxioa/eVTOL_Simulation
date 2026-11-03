@@ -31,10 +31,12 @@ def _path_env(name, default):
 
 
 DATA_DIR = _path_env("HEX_OUTPUT_DIR", PROJECT_ROOT / "output_hex_v3")
-FEATURE_SET = os.getenv("FEATURE_SET", "combined").strip().lower()
+DATA_PROFILE = os.getenv('DATA_PROFILE', 'legacy_python')
+FEATURE_SET = os.getenv("FEATURE_SET", "imu_cmd_rpm" if DATA_PROFILE == 'simulink_observable_v1' else "combined").strip().lower()
 SAVE_DIR = _path_env(
     "DATA_PROCESS_DIR_OVERRIDE",
-    PROJECT_ROOT / "plots" / "hex" / "data_process" / FEATURE_SET,
+    PROJECT_ROOT / 'output_simulink_gan' / 'simulink_control_v3_observable_20261103_v1' / 'processed' / FEATURE_SET
+    if DATA_PROFILE == 'simulink_observable_v1' else PROJECT_ROOT / "plots" / "hex" / "data_process" / FEATURE_SET,
 )
 WINDOW = max(2, int(os.getenv("HEX_WINDOW", "100")))
 STEP = max(1, int(os.getenv("HEX_STEP", "50")))
@@ -52,6 +54,8 @@ FEATURE_SETS = {
     "response": STATE_COLS + IMU_COLS,
     "combined": STATE_COLS + IMU_COLS + COMMAND_COLS,
 }
+if DATA_PROFILE == 'simulink_observable_v1':
+    from simulink_data import FEATURES as FEATURE_SETS
 if FEATURE_SET not in FEATURE_SETS:
     raise ValueError(f"FEATURE_SET={FEATURE_SET!r} 无效；可选: {sorted(FEATURE_SETS)}")
 FEATURE_COLS = FEATURE_SETS[FEATURE_SET]
@@ -206,6 +210,14 @@ def _save_overview(y, group_counts):
 
 
 def main():
+    profile = os.getenv('DATA_PROFILE', 'legacy_python')
+    if profile == 'simulink_observable_v1':
+        from simulink_data import preprocess
+        preprocess(_path_env('SIMULINK_DATA_DIR', PROJECT_ROOT/'output_simulink_gan'/'simulink_control_v3_observable_20261103_v1'/'raw'),
+                   SAVE_DIR, FEATURE_SET, WINDOW, STEP, BUFFER)
+        return
+    if profile != 'legacy_python':
+        raise ValueError(f'Unknown DATA_PROFILE: {profile}')
     SAVE_DIR.mkdir(parents=True, exist_ok=True)
     files = sorted(DATA_DIR.glob("*.csv"))
     if not files:

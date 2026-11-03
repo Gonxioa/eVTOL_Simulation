@@ -1,0 +1,702 @@
+{
+  "cases": [
+    {
+      "detection_delay_s": null,
+      "first_alarm_motor_correct": null,
+      "group_id": 1,
+      "label": 0,
+      "missed": false,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g001_label00"
+    },
+    {
+      "detection_delay_s": null,
+      "first_alarm_motor_correct": null,
+      "group_id": 1,
+      "label": 1,
+      "missed": true,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g001_label01"
+    },
+    {
+      "detection_delay_s": null,
+      "first_alarm_motor_correct": null,
+      "group_id": 1,
+      "label": 2,
+      "missed": true,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g001_label02"
+    },
+    {
+      "detection_delay_s": 0.9900000000000002,
+      "first_alarm_motor_correct": true,
+      "group_id": 1,
+      "label": 3,
+      "missed": false,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g001_label03"
+    },
+    {
+      "detection_delay_s": null,
+      "first_alarm_motor_correct": null,
+      "group_id": 1,
+      "label": 4,
+      "missed": true,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g001_label04"
+    },
+    {
+      "detection_delay_s": null,
+      "first_alarm_motor_correct": null,
+      "group_id": 1,
+      "label": 5,
+      "missed": true,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g001_label05"
+    },
+    {
+      "detection_delay_s": 1.29,
+      "first_alarm_motor_correct": true,
+      "group_id": 1,
+      "label": 6,
+      "missed": false,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g001_label06"
+    },
+    {
+      "detection_delay_s": 1.29,
+      "first_alarm_motor_correct": true,
+      "group_id": 1,
+      "label": 7,
+      "missed": false,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g001_label07"
+    },
+    {
+      "detection_delay_s": 0.9900000000000002,
+      "first_alarm_motor_correct": true,
+      "group_id": 1,
+      "label": 8,
+      "missed": false,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g001_label08"
+    },
+    {
+      "detection_delay_s": 1.1900000000000004,
+      "first_alarm_motor_correct": true,
+      "group_id": 1,
+      "label": 9,
+      "missed": false,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g001_label09"
+    },
+    {
+      "detection_delay_s": 1.29,
+      "first_alarm_motor_correct": true,
+      "group_id": 1,
+      "label": 10,
+      "missed": false,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g001_label10"
+    },
+    {
+      "detection_delay_s": 1.5899999999999999,
+      "first_alarm_motor_correct": true,
+      "group_id": 1,
+      "label": 11,
+      "missed": false,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g001_label11"
+    },
+    {
+      "detection_delay_s": 1.29,
+      "first_alarm_motor_correct": true,
+      "group_id": 1,
+      "label": 12,
+      "missed": false,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g001_label12"
+    },
+    {
+      "detection_delay_s": null,
+      "first_alarm_motor_correct": null,
+      "group_id": 1,
+      "label": 13,
+      "missed": true,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g001_label13"
+    },
+    {
+      "detection_delay_s": null,
+      "first_alarm_motor_correct": null,
+      "group_id": 1,
+      "label": 14,
+      "missed": true,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g001_label14"
+    },
+    {
+      "detection_delay_s": null,
+      "first_alarm_motor_correct": null,
+      "group_id": 1,
+      "label": 15,
+      "missed": true,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g001_label15"
+    },
+    {
+      "detection_delay_s": null,
+      "first_alarm_motor_correct": null,
+      "group_id": 1,
+      "label": 16,
+      "missed": true,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g001_label16"
+    },
+    {
+      "detection_delay_s": null,
+      "first_alarm_motor_correct": null,
+      "group_id": 1,
+      "label": 17,
+      "missed": true,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g001_label17"
+    },
+    {
+      "detection_delay_s": null,
+      "first_alarm_motor_correct": null,
+      "group_id": 1,
+      "label": 18,
+      "missed": true,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g001_label18"
+    },
+    {
+      "detection_delay_s": null,
+      "first_alarm_motor_correct": null,
+      "group_id": 3,
+      "label": 0,
+      "missed": false,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g003_label00"
+    },
+    {
+      "detection_delay_s": 2.09,
+      "first_alarm_motor_correct": true,
+      "group_id": 3,
+      "label": 1,
+      "missed": false,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g003_label01"
+    },
+    {
+      "detection_delay_s": 1.29,
+      "first_alarm_motor_correct": false,
+      "group_id": 3,
+      "label": 2,
+      "missed": false,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g003_label02"
+    },
+    {
+      "detection_delay_s": null,
+      "first_alarm_motor_correct": null,
+      "group_id": 3,
+      "label": 3,
+      "missed": true,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g003_label03"
+    },
+    {
+      "detection_delay_s": 1.1900000000000004,
+      "first_alarm_motor_correct": true,
+      "group_id": 3,
+      "label": 4,
+      "missed": false,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g003_label04"
+    },
+    {
+      "detection_delay_s": 1.79,
+      "first_alarm_motor_correct": true,
+      "group_id": 3,
+      "label": 5,
+      "missed": false,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g003_label05"
+    },
+    {
+      "detection_delay_s": null,
+      "first_alarm_motor_correct": null,
+      "group_id": 3,
+      "label": 6,
+      "missed": true,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g003_label06"
+    },
+    {
+      "detection_delay_s": 1.4900000000000002,
+      "first_alarm_motor_correct": true,
+      "group_id": 3,
+      "label": 7,
+      "missed": false,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g003_label07"
+    },
+    {
+      "detection_delay_s": 1.29,
+      "first_alarm_motor_correct": true,
+      "group_id": 3,
+      "label": 8,
+      "missed": false,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g003_label08"
+    },
+    {
+      "detection_delay_s": 1.79,
+      "first_alarm_motor_correct": true,
+      "group_id": 3,
+      "label": 9,
+      "missed": false,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g003_label09"
+    },
+    {
+      "detection_delay_s": 1.6900000000000004,
+      "first_alarm_motor_correct": true,
+      "group_id": 3,
+      "label": 10,
+      "missed": false,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g003_label10"
+    },
+    {
+      "detection_delay_s": 1.4900000000000002,
+      "first_alarm_motor_correct": true,
+      "group_id": 3,
+      "label": 11,
+      "missed": false,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g003_label11"
+    },
+    {
+      "detection_delay_s": 1.3899999999999997,
+      "first_alarm_motor_correct": true,
+      "group_id": 3,
+      "label": 12,
+      "missed": false,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g003_label12"
+    },
+    {
+      "detection_delay_s": null,
+      "first_alarm_motor_correct": null,
+      "group_id": 3,
+      "label": 13,
+      "missed": true,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g003_label13"
+    },
+    {
+      "detection_delay_s": null,
+      "first_alarm_motor_correct": null,
+      "group_id": 3,
+      "label": 14,
+      "missed": true,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g003_label14"
+    },
+    {
+      "detection_delay_s": null,
+      "first_alarm_motor_correct": null,
+      "group_id": 3,
+      "label": 15,
+      "missed": true,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g003_label15"
+    },
+    {
+      "detection_delay_s": 8.99,
+      "first_alarm_motor_correct": true,
+      "group_id": 3,
+      "label": 16,
+      "missed": false,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g003_label16"
+    },
+    {
+      "detection_delay_s": null,
+      "first_alarm_motor_correct": null,
+      "group_id": 3,
+      "label": 17,
+      "missed": true,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g003_label17"
+    },
+    {
+      "detection_delay_s": null,
+      "first_alarm_motor_correct": null,
+      "group_id": 3,
+      "label": 18,
+      "missed": true,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g003_label18"
+    },
+    {
+      "detection_delay_s": null,
+      "first_alarm_motor_correct": null,
+      "group_id": 0,
+      "label": 0,
+      "missed": false,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g000_label00"
+    },
+    {
+      "detection_delay_s": 0.8900000000000001,
+      "first_alarm_motor_correct": true,
+      "group_id": 0,
+      "label": 1,
+      "missed": false,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g000_label01"
+    },
+    {
+      "detection_delay_s": 1.0899999999999999,
+      "first_alarm_motor_correct": false,
+      "group_id": 0,
+      "label": 2,
+      "missed": false,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g000_label02"
+    },
+    {
+      "detection_delay_s": 1.9900000000000002,
+      "first_alarm_motor_correct": true,
+      "group_id": 0,
+      "label": 3,
+      "missed": false,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g000_label03"
+    },
+    {
+      "detection_delay_s": 0.69,
+      "first_alarm_motor_correct": false,
+      "group_id": 0,
+      "label": 4,
+      "missed": false,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g000_label04"
+    },
+    {
+      "detection_delay_s": 1.29,
+      "first_alarm_motor_correct": true,
+      "group_id": 0,
+      "label": 5,
+      "missed": false,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g000_label05"
+    },
+    {
+      "detection_delay_s": 1.8899999999999997,
+      "first_alarm_motor_correct": true,
+      "group_id": 0,
+      "label": 6,
+      "missed": false,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g000_label06"
+    },
+    {
+      "detection_delay_s": 0.79,
+      "first_alarm_motor_correct": true,
+      "group_id": 0,
+      "label": 7,
+      "missed": false,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g000_label07"
+    },
+    {
+      "detection_delay_s": 1.1900000000000004,
+      "first_alarm_motor_correct": true,
+      "group_id": 0,
+      "label": 8,
+      "missed": false,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g000_label08"
+    },
+    {
+      "detection_delay_s": 1.1900000000000004,
+      "first_alarm_motor_correct": true,
+      "group_id": 0,
+      "label": 9,
+      "missed": false,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g000_label09"
+    },
+    {
+      "detection_delay_s": 0.9900000000000002,
+      "first_alarm_motor_correct": false,
+      "group_id": 0,
+      "label": 10,
+      "missed": false,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g000_label10"
+    },
+    {
+      "detection_delay_s": 1.4900000000000002,
+      "first_alarm_motor_correct": true,
+      "group_id": 0,
+      "label": 11,
+      "missed": false,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g000_label11"
+    },
+    {
+      "detection_delay_s": 1.1900000000000004,
+      "first_alarm_motor_correct": true,
+      "group_id": 0,
+      "label": 12,
+      "missed": false,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g000_label12"
+    },
+    {
+      "detection_delay_s": null,
+      "first_alarm_motor_correct": null,
+      "group_id": 0,
+      "label": 13,
+      "missed": true,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g000_label13"
+    },
+    {
+      "detection_delay_s": null,
+      "first_alarm_motor_correct": null,
+      "group_id": 0,
+      "label": 14,
+      "missed": true,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g000_label14"
+    },
+    {
+      "detection_delay_s": null,
+      "first_alarm_motor_correct": null,
+      "group_id": 0,
+      "label": 15,
+      "missed": true,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g000_label15"
+    },
+    {
+      "detection_delay_s": null,
+      "first_alarm_motor_correct": null,
+      "group_id": 0,
+      "label": 16,
+      "missed": true,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g000_label16"
+    },
+    {
+      "detection_delay_s": null,
+      "first_alarm_motor_correct": null,
+      "group_id": 0,
+      "label": 17,
+      "missed": true,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g000_label17"
+    },
+    {
+      "detection_delay_s": null,
+      "first_alarm_motor_correct": null,
+      "group_id": 0,
+      "label": 18,
+      "missed": true,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g000_label18"
+    },
+    {
+      "detection_delay_s": null,
+      "first_alarm_motor_correct": null,
+      "group_id": 2,
+      "label": 0,
+      "missed": false,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g002_label00"
+    },
+    {
+      "detection_delay_s": 1.3899999999999997,
+      "first_alarm_motor_correct": true,
+      "group_id": 2,
+      "label": 1,
+      "missed": false,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g002_label01"
+    },
+    {
+      "detection_delay_s": null,
+      "first_alarm_motor_correct": null,
+      "group_id": 2,
+      "label": 2,
+      "missed": true,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g002_label02"
+    },
+    {
+      "detection_delay_s": null,
+      "first_alarm_motor_correct": null,
+      "group_id": 2,
+      "label": 3,
+      "missed": true,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g002_label03"
+    },
+    {
+      "detection_delay_s": 1.79,
+      "first_alarm_motor_correct": true,
+      "group_id": 2,
+      "label": 4,
+      "missed": false,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g002_label04"
+    },
+    {
+      "detection_delay_s": null,
+      "first_alarm_motor_correct": null,
+      "group_id": 2,
+      "label": 5,
+      "missed": true,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g002_label05"
+    },
+    {
+      "detection_delay_s": null,
+      "first_alarm_motor_correct": null,
+      "group_id": 2,
+      "label": 6,
+      "missed": true,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g002_label06"
+    },
+    {
+      "detection_delay_s": 1.29,
+      "first_alarm_motor_correct": true,
+      "group_id": 2,
+      "label": 7,
+      "missed": false,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g002_label07"
+    },
+    {
+      "detection_delay_s": null,
+      "first_alarm_motor_correct": null,
+      "group_id": 2,
+      "label": 8,
+      "missed": true,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g002_label08"
+    },
+    {
+      "detection_delay_s": 1.8899999999999997,
+      "first_alarm_motor_correct": true,
+      "group_id": 2,
+      "label": 9,
+      "missed": false,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g002_label09"
+    },
+    {
+      "detection_delay_s": 1.79,
+      "first_alarm_motor_correct": true,
+      "group_id": 2,
+      "label": 10,
+      "missed": false,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g002_label10"
+    },
+    {
+      "detection_delay_s": 1.9900000000000002,
+      "first_alarm_motor_correct": true,
+      "group_id": 2,
+      "label": 11,
+      "missed": false,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g002_label11"
+    },
+    {
+      "detection_delay_s": 1.9900000000000002,
+      "first_alarm_motor_correct": true,
+      "group_id": 2,
+      "label": 12,
+      "missed": false,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g002_label12"
+    },
+    {
+      "detection_delay_s": null,
+      "first_alarm_motor_correct": null,
+      "group_id": 2,
+      "label": 13,
+      "missed": true,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g002_label13"
+    },
+    {
+      "detection_delay_s": null,
+      "first_alarm_motor_correct": null,
+      "group_id": 2,
+      "label": 14,
+      "missed": true,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g002_label14"
+    },
+    {
+      "detection_delay_s": null,
+      "first_alarm_motor_correct": null,
+      "group_id": 2,
+      "label": 15,
+      "missed": true,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g002_label15"
+    },
+    {
+      "detection_delay_s": null,
+      "first_alarm_motor_correct": null,
+      "group_id": 2,
+      "label": 16,
+      "missed": true,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g002_label16"
+    },
+    {
+      "detection_delay_s": null,
+      "first_alarm_motor_correct": null,
+      "group_id": 2,
+      "label": 17,
+      "missed": true,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g002_label17"
+    },
+    {
+      "detection_delay_s": null,
+      "first_alarm_motor_correct": null,
+      "group_id": 2,
+      "label": 18,
+      "missed": true,
+      "pre_fault_false_alarm_fraction": 0.0,
+      "run_key": "g002_label18"
+    }
+  ],
+  "detected": 38,
+  "fault_records": 72,
+  "first_alarm_motor_correct": 34,
+  "max_delay_detected_only_s": 8.99,
+  "median_delay_detected_only_s": 1.29,
+  "missed": 34,
+  "policy": {
+    "hold": 3,
+    "probability": 0.5,
+    "stride": 10,
+    "window": 100
+  },
+  "pre_fault_alarm_fraction_mean": 0.0,
+  "warning": "Delay statistics condition on detection; misses are retained. Low false alarm with this threshold does not imply good sensitivity."
+}

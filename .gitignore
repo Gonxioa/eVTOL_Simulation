@@ -1,4 +1,5 @@
 # Python bytecode and native extensions
+/output_simulink_gan/
 __pycache__/
 *.py[cod]
 *$py.class

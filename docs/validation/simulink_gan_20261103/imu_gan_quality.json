@@ -1,0 +1,726 @@
+[
+  {
+    "TRTS_accuracy": 0.05263157894736842,
+    "TSTR_accuracy": 0.05789473684210526,
+    "augmentation_counts": {
+      "0": 24,
+      "1": 24,
+      "2": 24,
+      "3": 24,
+      "4": 24,
+      "5": 24,
+      "6": 24,
+      "7": 24,
+      "8": 24,
+      "9": 24,
+      "10": 24,
+      "11": 24,
+      "12": 24,
+      "13": 24,
+      "14": 24,
+      "15": 24,
+      "16": 24,
+      "17": 24,
+      "18": 24
+    },
+    "checks": {
+      "exact_generated_duplicates": 0,
+      "exact_training_duplicates": 0,
+      "finite": true,
+      "near_duplicate_fraction": 0.0,
+      "nearest_training_rms_median": 2.0599635626400947,
+      "outside_training_range_fraction": 0.0,
+      "range_scope": "Observed training envelope, not certified physical limits",
+      "raw_cross_source_nearest_rms_p05": 0.7337730537154534,
+      "similarity_interpretation": "Training-only cross-source reference; near similarity alone is not proof of memorization."
+    },
+    "count_receipt": {
+      "0": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "1": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "2": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "3": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "4": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "5": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "6": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "7": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "8": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "9": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "10": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "11": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "12": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "13": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "14": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "15": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "16": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "17": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "18": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      }
+    },
+    "distribution": {
+      "ks_mean": 0.8122770467836256,
+      "normalized_psd_l1_mean": 0.017164617294794658,
+      "wasserstein_mean": 0.14816448996906498
+    },
+    "training": {
+      "critic_updates": 150,
+      "generator_parameter_max_delta": 0.005051009356975555,
+      "generator_updates": 30
+    }
+  },
+  {
+    "TRTS_accuracy": 0.05263157894736842,
+    "TSTR_accuracy": 0.05,
+    "augmentation_counts": {
+      "0": 24,
+      "1": 24,
+      "2": 24,
+      "3": 24,
+      "4": 24,
+      "5": 24,
+      "6": 24,
+      "7": 24,
+      "8": 24,
+      "9": 24,
+      "10": 24,
+      "11": 24,
+      "12": 24,
+      "13": 24,
+      "14": 24,
+      "15": 24,
+      "16": 24,
+      "17": 24,
+      "18": 24
+    },
+    "checks": {
+      "exact_generated_duplicates": 0,
+      "exact_training_duplicates": 0,
+      "finite": true,
+      "near_duplicate_fraction": 0.0,
+      "nearest_training_rms_median": 2.406593019813968,
+      "outside_training_range_fraction": 0.0,
+      "range_scope": "Observed training envelope, not certified physical limits",
+      "raw_cross_source_nearest_rms_p05": 0.7136416100085283,
+      "similarity_interpretation": "Training-only cross-source reference; near similarity alone is not proof of memorization."
+    },
+    "count_receipt": {
+      "0": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "1": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "2": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "3": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "4": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "5": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "6": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "7": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "8": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "9": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "10": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "11": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "12": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "13": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "14": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "15": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "16": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "17": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "18": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      }
+    },
+    "distribution": {
+      "ks_mean": 0.7454093567251463,
+      "normalized_psd_l1_mean": 0.015300365808705987,
+      "wasserstein_mean": 0.12831713072746173
+    },
+    "training": {
+      "critic_updates": 150,
+      "generator_parameter_max_delta": 0.005156293511390686,
+      "generator_updates": 30
+    }
+  },
+  {
+    "TRTS_accuracy": 0.006578947368421052,
+    "TSTR_accuracy": 0.05263157894736842,
+    "augmentation_counts": {
+      "0": 24,
+      "1": 24,
+      "2": 24,
+      "3": 24,
+      "4": 24,
+      "5": 24,
+      "6": 24,
+      "7": 24,
+      "8": 24,
+      "9": 24,
+      "10": 24,
+      "11": 24,
+      "12": 24,
+      "13": 24,
+      "14": 24,
+      "15": 24,
+      "16": 24,
+      "17": 24,
+      "18": 24
+    },
+    "checks": {
+      "exact_generated_duplicates": 0,
+      "exact_training_duplicates": 0,
+      "finite": true,
+      "near_duplicate_fraction": 0.0,
+      "nearest_training_rms_median": 1.4471524661795039,
+      "outside_training_range_fraction": 0.0,
+      "range_scope": "Observed training envelope, not certified physical limits",
+      "raw_cross_source_nearest_rms_p05": 0.7516856519776077,
+      "similarity_interpretation": "Training-only cross-source reference; near similarity alone is not proof of memorization."
+    },
+    "count_receipt": {
+      "0": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "1": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "2": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "3": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "4": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "5": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "6": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "7": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "8": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "9": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "10": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "11": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "12": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "13": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "14": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "15": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "16": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "17": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "18": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      }
+    },
+    "distribution": {
+      "ks_mean": 0.7007419590643275,
+      "normalized_psd_l1_mean": 0.01629976713879014,
+      "wasserstein_mean": 0.08821899199965358
+    },
+    "training": {
+      "critic_updates": 150,
+      "generator_parameter_max_delta": 0.00517234206199646,
+      "generator_updates": 30
+    }
+  },
+  {
+    "TRTS_accuracy": 0.05263157894736842,
+    "TSTR_accuracy": 0.05263157894736842,
+    "augmentation_counts": {
+      "0": 24,
+      "1": 24,
+      "2": 24,
+      "3": 24,
+      "4": 24,
+      "5": 24,
+      "6": 24,
+      "7": 24,
+      "8": 24,
+      "9": 24,
+      "10": 24,
+      "11": 24,
+      "12": 24,
+      "13": 24,
+      "14": 24,
+      "15": 24,
+      "16": 24,
+      "17": 24,
+      "18": 24
+    },
+    "checks": {
+      "exact_generated_duplicates": 0,
+      "exact_training_duplicates": 0,
+      "finite": true,
+      "near_duplicate_fraction": 0.0,
+      "nearest_training_rms_median": 1.7995596290580793,
+      "outside_training_range_fraction": 0.0,
+      "range_scope": "Observed training envelope, not certified physical limits",
+      "raw_cross_source_nearest_rms_p05": 0.6693115690195086,
+      "similarity_interpretation": "Training-only cross-source reference; near similarity alone is not proof of memorization."
+    },
+    "count_receipt": {
+      "0": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "1": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "2": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "3": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "4": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "5": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "6": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "7": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "8": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "9": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "10": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "11": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "12": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "13": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "14": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "15": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "16": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "17": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      },
+      "18": {
+        "actual_generated": 24,
+        "joined_training": 24,
+        "original": 24,
+        "planned": 24,
+        "quality_only": 8
+      }
+    },
+    "distribution": {
+      "ks_mean": 0.7732821637426901,
+      "normalized_psd_l1_mean": 0.016736049889438095,
+      "wasserstein_mean": 0.12288663130798318
+    },
+    "training": {
+      "critic_updates": 150,
+      "generator_parameter_max_delta": 0.0052033765241503716,
+      "generator_updates": 30
+    }
+  }
+]

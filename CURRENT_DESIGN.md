@@ -4,6 +4,8 @@
 
 日常入口与结果位置见 [Simulink 当前使用说明](simulink/README.md)。在 MATLAB 的 `simulink` 目录运行 `my_simulation`，或 `report=run_hex_healthy_assessment`。
 
+2026-11-03 功能分支 `codex/simulink-gan-profile` 新增原生 Simulink → 现有 WGAN／分类器接口，见 [原型说明](docs/SIMULINK_GAN.md)。使用 `simulink_observable_v1` 和独立 `output_simulink_gan/`，旧 Python、现有仿真结果和 UAV-FD 划分保留。
+
 [GitHub 全版本归档](https://github.com/Gonxioa/eVTOL_Simulation/releases/tag/archive-20261030) 保存整理前的所有代码分支、完整 Git bundle、历史及当前仿真输出。逐文件 SHA-256 与分卷映射见 `maintenance/archive_20261030/manifest.json`。
 原始数据集、训练权重与个人文档未上传。
 

@@ -1,5 +1,7 @@
 # 六旋翼 Simulink 模型
 
+原生数据用于 GAN／故障分类的独立入口为项目根目录 `run_simulink_gan.py`，详见 [数据与原型协议](../docs/SIMULINK_GAN.md)。`collect_hex_dataset.m` 采集完整配对来源组，`hex_export_result.m` 复用原导出字段；日常仿真入口和控制器不变。
+
 2026-11-01 整理后，日常运行模型只有 `hex_evtol.slx`，控制参数版本为 `control_v3_20261023`。
 历史运行模型、接口迁移和候选版本已保存在 [GitHub 归档](https://github.com/Gonxioa/eVTOL_Simulation/releases/tag/archive-20261030) 与同名 Git 标签中。
 

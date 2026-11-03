@@ -1,4 +1,6 @@
-# 六旋翼正式实验运行顺序（PyCharm或PowerShell）
+# 旧 Python／RotorPy 六旋翼实验运行顺序（PyCharm或PowerShell）
+
+本页门禁仅适用于旧 Python 造数与 `output_hex_v3`。新原生 Simulink profile 使用独立的 [运行说明](docs/SIMULINK_GAN.md) 和 `run_simulink_gan.py`，不要求先修复全部旧 Python 动力学问题；新 profile 不解除本页旧流程的门禁。UAV-FD 的 locked_test 仍保持隔离。
 
 不要再使用旧 `output/` 和 `plots/data_process/` 跑正式结果。新版默认路径彼此隔离，
 并且分类器在缺少 `groups.npy` 时会拒绝运行。

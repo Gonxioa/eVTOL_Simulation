@@ -1,0 +1,195 @@
+{
+  "feature_set": "imu_cmd_rpm",
+  "flight_acceptance_failures_retained": [
+    "g000_label06"
+  ],
+  "folds": [
+    {
+      "fold": 1,
+      "generated_joined": 456,
+      "generator_parameter_max_delta": 0.005035441368818283,
+      "generator_updates": 30,
+      "joined_sample_quality_checks": {
+        "command_feedback_correlation": {
+          "generated": [
+            -0.24103659223300694,
+            0.21365656333951555,
+            -0.07715557189276291,
+            0.17621218393898166,
+            0.3515956602540546,
+            0.40098099010027766
+          ],
+          "raw_simulation": [
+            0.9038243575389445,
+            0.9032464502336743,
+            0.9035044780937482,
+            0.9037518315297501,
+            0.9035017671813751,
+            0.9034019437996885
+          ],
+          "scope": "synchronous correlation only; includes motor and transport lag"
+        },
+        "exact_generated_duplicates": 0,
+        "exact_training_duplicates": 0,
+        "finite": true,
+        "near_duplicate_fraction": 0.0,
+        "nearest_training_rms_median": 1.9024511537274105,
+        "outside_training_range_fraction": 0.0,
+        "range_scope": "Observed training envelope, not certified physical limits",
+        "raw_cross_source_nearest_rms_p05": 0.42594666166893913,
+        "similarity_interpretation": "Training-only cross-source reference; near similarity alone is not proof of memorization."
+      },
+      "original_training_windows": 456,
+      "quality_only": 152,
+      "test_groups": [
+        1
+      ],
+      "training_groups": [
+        2,
+        3
+      ]
+    },
+    {
+      "fold": 2,
+      "generated_joined": 456,
+      "generator_parameter_max_delta": 0.004933007061481476,
+      "generator_updates": 30,
+      "joined_sample_quality_checks": {
+        "command_feedback_correlation": {
+          "generated": [
+            -0.08118592802271941,
+            -0.1873851184145715,
+            0.12510942329665659,
+            0.33332123143943254,
+            -0.05044095582806805,
+            0.03930709393653557
+          ],
+          "raw_simulation": [
+            0.9037367387959134,
+            0.9033596227868583,
+            0.9031808556262775,
+            0.903715207379751,
+            0.9032820417340717,
+            0.9032555386739446
+          ],
+          "scope": "synchronous correlation only; includes motor and transport lag"
+        },
+        "exact_generated_duplicates": 0,
+        "exact_training_duplicates": 0,
+        "finite": true,
+        "near_duplicate_fraction": 0.0,
+        "nearest_training_rms_median": 1.7067760113043573,
+        "outside_training_range_fraction": 0.0,
+        "range_scope": "Observed training envelope, not certified physical limits",
+        "raw_cross_source_nearest_rms_p05": 0.41796735507421745,
+        "similarity_interpretation": "Training-only cross-source reference; near similarity alone is not proof of memorization."
+      },
+      "original_training_windows": 456,
+      "quality_only": 152,
+      "test_groups": [
+        3
+      ],
+      "training_groups": [
+        0,
+        1
+      ]
+    },
+    {
+      "fold": 3,
+      "generated_joined": 456,
+      "generator_parameter_max_delta": 0.004899635910987854,
+      "generator_updates": 30,
+      "joined_sample_quality_checks": {
+        "command_feedback_correlation": {
+          "generated": [
+            0.4504441364968998,
+            0.2502785249873334,
+            0.26763374996949546,
+            -0.10609251256359566,
+            -0.12015977775780078,
+            0.09703529063627425
+          ],
+          "raw_simulation": [
+            0.9038467260899847,
+            0.9038876175761942,
+            0.9031653133577044,
+            0.9038003211860568,
+            0.903097903471444,
+            0.9034495447222655
+          ],
+          "scope": "synchronous correlation only; includes motor and transport lag"
+        },
+        "exact_generated_duplicates": 0,
+        "exact_training_duplicates": 0,
+        "finite": true,
+        "near_duplicate_fraction": 0.0,
+        "nearest_training_rms_median": 1.4854201316751328,
+        "outside_training_range_fraction": 0.0,
+        "range_scope": "Observed training envelope, not certified physical limits",
+        "raw_cross_source_nearest_rms_p05": 0.4356937686292788,
+        "similarity_interpretation": "Training-only cross-source reference; near similarity alone is not proof of memorization."
+      },
+      "original_training_windows": 456,
+      "quality_only": 152,
+      "test_groups": [
+        0
+      ],
+      "training_groups": [
+        2,
+        3
+      ]
+    },
+    {
+      "fold": 4,
+      "generated_joined": 456,
+      "generator_parameter_max_delta": 0.005061281844973564,
+      "generator_updates": 30,
+      "joined_sample_quality_checks": {
+        "command_feedback_correlation": {
+          "generated": [
+            0.10700840993854517,
+            -0.0991352015732567,
+            0.3628490200938666,
+            0.24658245830042347,
+            0.20843904158462698,
+            0.06585446013953891
+          ],
+          "raw_simulation": [
+            0.9036835030591506,
+            0.9031245938354672,
+            0.9031172482821868,
+            0.9031448132776332,
+            0.9029492766995321,
+            0.9031105869302308
+          ],
+          "scope": "synchronous correlation only; includes motor and transport lag"
+        },
+        "exact_generated_duplicates": 0,
+        "exact_training_duplicates": 0,
+        "finite": true,
+        "near_duplicate_fraction": 0.0,
+        "nearest_training_rms_median": 1.8520342604035203,
+        "outside_training_range_fraction": 0.0,
+        "range_scope": "Observed training envelope, not certified physical limits",
+        "raw_cross_source_nearest_rms_p05": 0.39238762466435245,
+        "similarity_interpretation": "Training-only cross-source reference; near similarity alone is not proof of memorization."
+      },
+      "original_training_windows": 456,
+      "quality_only": 152,
+      "test_groups": [
+        2
+      ],
+      "training_groups": [
+        0,
+        1
+      ]
+    }
+  ],
+  "paired_groups": 4,
+  "passed": true,
+  "protected_math_unchanged": true,
+  "source_manifest_sha256": "22d5c29a0d312653fbdeb947f62cd6e70f9167f4e59512157ef8dbfb17ad5a91",
+  "source_plan_signature": "fa33eeb46825a8916187957d7482f10477ca25fb9fe1f475423057f5c65576bd",
+  "source_runs": 76,
+  "windows": 1520
+}
