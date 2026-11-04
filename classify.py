@@ -220,7 +220,7 @@ def fit_scalers(X_train_raw, X_test_raw):
 
 
 class FaultClassifier(nn.Module):
-    def __init__(self):
+    def __init__(self, dual_head=False):
         super().__init__()
         self.lstm = nn.LSTM(
             N_FEATURES, HIDDEN_DIM, N_LAYERS, batch_first=True,
@@ -230,8 +230,11 @@ class FaultClassifier(nn.Module):
         self.head = nn.Sequential(
             nn.Linear(HIDDEN_DIM, 64), nn.ReLU(), nn.Dropout(0.3), nn.Linear(64, N_CLASSES)
         )
+        self.dual_head = bool(dual_head)
+        if self.dual_head:
+            self.detector = nn.Linear(HIDDEN_DIM, 1)
 
-    def forward(self, x, return_attention=False):
+    def forward(self, x, return_attention=False, return_detection=False):
         sequence, _ = self.lstm(x)
         if ATTENTION_POOLING:
             weights = torch.softmax(self.attention(torch.tanh(sequence)).squeeze(-1), dim=1)
@@ -242,7 +245,74 @@ class FaultClassifier(nn.Module):
             )
             pooled = sequence.mean(dim=1)
         logits = self.head(pooled)
+        if return_detection:
+            detection = self.detector(pooled).squeeze(-1) if self.dual_head else torch.logsumexp(logits[:,1:],1)-logits[:,0]
+            return (logits,detection,weights) if return_attention else (logits,detection)
         return (logits, weights) if return_attention else logits
+
+
+def predict_classifier(model, X, batch_size=128):
+    model.eval(); logits=[]; detection=[]
+    with torch.inference_mode():
+        for start in range(0,len(X),batch_size):
+            x=torch.as_tensor(X[start:start+batch_size],dtype=torch.float32,device=DEVICE)
+            a,b=model(x,return_detection=True)
+            logits.append(a.cpu().numpy()); detection.append(torch.sigmoid(b).cpu().numpy())
+    return dict(logits=np.concatenate(logits),fault_probability=np.concatenate(detection))
+
+
+def train_classifier_steps(X,y,save_dir,max_steps=1000,checkpoints=(250,500,1000),
+                           seed=42,dual_head=False,detector_weight=.5,validation_callback=None,
+                           signature=None,batch_size=None,lr=None):
+    """Exact optimizer-update budget; validation is reporting only, never test data."""
+    directory=Path(save_dir); directory.mkdir(parents=True,exist_ok=True)
+    max_steps=int(max_steps); batch_size=batch_size or BATCH_SIZE; lr=lr or LR
+    if max_steps<1 or not len(y) or len(X)!=len(y): raise ValueError('Invalid step-training data/budget')
+    set_seed(seed); model=FaultClassifier(dual_head=dual_head).to(DEVICE)
+    optimizer=optim.Adam(model.parameters(),lr=lr); rng=np.random.default_rng(seed+17)
+    target=(np.asarray(y)!=0).astype(np.float32)
+    counts=np.bincount(target.astype(int),minlength=2)
+    if min(counts)==0: raise ValueError('Detection training needs both healthy and fault samples')
+    binary_weights=len(y)/(2*np.asarray(counts,float)); history=[]; start=0
+    last=directory/'last.pt'
+    if last.exists():
+        saved=torch.load(last,map_location=DEVICE,weights_only=False)
+        if saved['signature']!=signature: raise RuntimeError('Incompatible classifier optimizer checkpoint')
+        model.load_state_dict(saved['model']); optimizer.load_state_dict(saved['optimizer'])
+        start=saved['step']; history=saved['history']; rng.bit_generator.state=saved['sampler_state']
+        torch.set_rng_state(saved['torch_rng'].cpu())
+        if DEVICE.type=='cuda': torch.cuda.set_rng_state_all([v.cpu() for v in saved['cuda_rng']])
+    initial_step=start
+    for step in range(start+1,max_steps+1):
+        model.train(); indices=rng.integers(0,len(y),size=batch_size)
+        bx=torch.as_tensor(X[indices],dtype=torch.float32,device=DEVICE)
+        by=torch.as_tensor(y[indices],dtype=torch.long,device=DEVICE)
+        optimizer.zero_grad(set_to_none=True); logits,detect=model(bx,return_detection=True)
+        loss=nn.functional.cross_entropy(logits,by)
+        if dual_head:
+            bt=(by!=0).to(logits.dtype)
+            weights=torch.as_tensor(binary_weights,device=DEVICE,dtype=logits.dtype)[bt.long()]
+            loss=loss+float(detector_weight)*(nn.functional.binary_cross_entropy_with_logits(detect,bt,reduction='none')*weights).mean()
+        loss.backward(); optimizer.step()
+        if step in checkpoints or step==max_steps:
+            item=dict(step=step,loss=float(loss.detach()),optimizer_updates=step)
+            if validation_callback is not None: item['validation']=validation_callback(model,step)
+            history.append(item)
+            state=dict(signature=signature,step=step,model=model.state_dict(),optimizer=optimizer.state_dict(),
+                       sampler_state=rng.bit_generator.state,torch_rng=torch.get_rng_state(),
+                       cuda_rng=torch.cuda.get_rng_state_all() if DEVICE.type=='cuda' else [],history=history,
+                       dual_head=dual_head,binary_weights=binary_weights.tolist())
+            temporary=directory/'checkpoint.tmp'; torch.save(state,temporary)
+            os.replace(temporary,directory/f'checkpoint_{step}.pt')
+            # Keep an optimizer checkpoint without changing immutable earlier checkpoints.
+            import shutil
+            shutil.copy2(directory/f'checkpoint_{step}.pt',last)
+            write_json(directory/'training_curve.json',history)
+            print(f'CLASSIFIER_STEP {directory.name} {step}/{max_steps} loss={float(loss):.5f}',flush=True)
+    model.training_receipt=dict(optimizer_updates=max_steps,updates_this_call=max_steps-initial_step,
+                                dual_head=dual_head,binary_total_weight_per_group=len(y)/2,
+                                training_examples=len(y),seed=seed)
+    return model
 
 
 def make_loader(X, y, shuffle=True):

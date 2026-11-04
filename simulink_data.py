@@ -34,7 +34,7 @@ def read(path):
     return json.loads(Path(path).read_text(encoding='utf-8-sig'))
 
 
-def prepare_plan(folder, seeds=(20261103, 20261104, 20261105, 20261106), task=2):
+def prepare_plan(folder, seeds=(20261103, 20261104, 20261105, 20261106), task=2, dataset_version=VERSION):
     folder = Path(folder).resolve()
     if len(set(seeds)) < 4:
         raise ValueError('At least four distinct paired condition seeds are required.')
@@ -48,7 +48,7 @@ def prepare_plan(folder, seeds=(20261103, 20261104, 20261105, 20261106), task=2)
         for scenario in scenarios():
             runs.append(dict(**scenario, group_id=group, run_id=group, seed=int(seed),
                              run_key=f'g{group:03d}_label{scenario["label"]:02d}'))
-    plan = dict(profile=PROFILE, dataset_version=VERSION, task_family=task,
+    plan = dict(profile=PROFILE, dataset_version=dataset_version, task_family=task,
                 sources=sources, runs=runs, scenarios=scenarios(),
                 fault_definition='omega_dot=(sqrt(eta)*command-omega)/tau; thrust=kT*omega^2; eta is steady-state remaining thrust at fixed command',
                 purpose='simulation-domain prototype, not real-flight validation',
@@ -230,6 +230,106 @@ def preprocess(folder, destination, feature_set='imu_cmd_rpm', window=100, step=
     write_json(destination/'source_manifest.json',records)
     write_json(existing,metadata)
     print('SIMULINK_PREPROCESSED', np.asarray(buckets).shape, 'groups', len(set(g)))
+
+
+def v2_registry(config):
+    """Reference V1 files in place; register new records without reading test features."""
+    records=[]; seed_roles={}; source_models=set()
+    for prefix, offset, relative in [('v1',0,config['old_raw']),('v2',4,config['new_raw'])]:
+        base=ROOT/relative; plan=checked_plan(base)
+        for run in plan['runs']:
+            group=int(run['group_id'])+offset
+            roles=[r for r,values in config['roles'].items() if group in values]
+            if len(roles)!=1: raise ValueError('A paired group must have exactly one role')
+            role=roles[0]; path=base/run['run_key']; meta=read(path/'run_metadata.json')
+            if meta['status']!='completed' or meta['plan_signature']!=plan['plan_signature'] or meta['run']!=run:
+                raise ValueError(f'Incomplete or incompatible source: {path}')
+            for filename,key in [('signals.csv','csv_sha256'),('result.mat','mat_sha256')]:
+                if sha256_file(path/filename)!=meta[key]: raise ValueError('Original source file changed')
+            model=next(s['sha256'] for s in meta['sources'] if s['path']=='simulink/hex_evtol.slx')
+            source_models.add(model)
+            if run['seed'] in seed_roles and seed_roles[run['seed']]!=role:
+                raise ValueError('A shared nuisance seed crosses roles')
+            seed_roles[run['seed']]=role
+            records.append(dict(group_id=group,role=role,source_pool=prefix,source_path=str(path),
+                                plan_path=str(base/'collection_plan.json'),run=run,source_id=f'{prefix}_{run["run_key"]}',
+                                csv_sha256=meta['csv_sha256'],mat_sha256=meta['mat_sha256'],
+                                metadata_sha256=sha256_file(path/'run_metadata.json'),
+                                flight_acceptance_passed=meta['flight_metrics']['passed']))
+    if len(source_models)!=1: raise ValueError('V1/new records use different saved models')
+    if len(records)!=228 or len(set(r['group_id'] for r in records))!=12:
+        raise ValueError('V2 requires 12 complete paired groups / 228 records')
+    for group in range(12):
+        if sorted(r['run']['label'] for r in records if r['group_id']==group)!=list(range(19)):
+            raise ValueError('Incomplete paired source')
+    expected={'train':6,'validation':3,'test':3}
+    for role,count in expected.items():
+        if len(config['roles'][role])!=count: raise ValueError('Expected fixed 6/3/3 roles')
+    registry=dict(profile='simulink_observable_v2',dataset_version=config['dataset_version'],
+                  roles=config['roles'],model_sha256=next(iter(source_models)),records=records,
+                  independent_paired_groups=12,independent_records=228,old_files_referenced_in_place=True)
+    registry['signature']=stable_hash(registry)
+    path=ROOT/config['results_root']/'source_registry.json'
+    if path.exists() and read(path)!=registry: raise ValueError('Source registry changed; choose a new results_root')
+    write_json(path,registry)
+    return registry
+
+
+def v2_authorize(config,role,authorization=None):
+    if role not in ('train','validation','test'): raise ValueError('Unknown role')
+    if role=='test':
+        path=ROOT/config['results_root']/'frozen_configuration.json'
+        if not path.exists() or not authorization or read(path)['signature']!=authorization:
+            raise PermissionError('Final test features are locked until configuration freeze')
+
+
+def v2_load_record(config,record,authorization=None):
+    v2_authorize(config,record['role'],authorization)
+    folder=Path(record['source_path'])
+    if sha256_file(folder/'run_metadata.json')!=record['metadata_sha256']:
+        raise ValueError('Source sidecar changed after registration')
+    audit=ROOT/config['results_root']/'feature_access.jsonl'; audit.parent.mkdir(parents=True,exist_ok=True)
+    with audit.open('a',encoding='utf-8') as handle:
+        handle.write(json.dumps(dict(role=record['role'],source_id=record['source_id'],
+                                    authorization=authorization,**runtime_info()))+'\n')
+    return validate_run(folder,record['run'],checked_plan(Path(record['plan_path']).parent))
+
+
+def v2_pool(config,registry,role,authorization=None):
+    """Healthy full record once per pair, plus fault transition/post-onset windows."""
+    v2_authorize(config,role,authorization)
+    spec=dict(registry=registry['signature'],role=role,window=config['window'],step=config['step'],
+              segment_policy='normal full duration once per pair; fault windows labeled by end>=onset; prefault copies excluded',
+              code_sha256=code_hashes(ROOT,['simulink_data.py']))
+    signature=stable_hash(spec); folder=ROOT/config['results_root']/'cache'
+    path=folder/f'{role}_{signature[:16]}.npz'
+    if path.exists():
+        data=dict(np.load(path,allow_pickle=False)); data['signature']=signature
+        return data
+    xs=[]; ys=[]; groups=[]; source_indices=[]; ends=[]; starts=[]; regimes=[]; excluded=0
+    for index,record in enumerate(registry['records']):
+        if record['role']!=role: continue
+        meta,df=v2_load_record(config,record,authorization)
+        x=observable_features(df,meta,'imu_cmd_rpm'); t=df.time_s.to_numpy(); label=record['run']['label']
+        for start in range(0,len(x)-config['window']+1,config['step']):
+            end=start+config['window']-1
+            if label and t[end]<meta['fault_start_s']:
+                excluded+=1; continue
+            xs.append(x[start:end+1]); ys.append(label); groups.append(record['group_id']); source_indices.append(index)
+            ends.append(t[end]); starts.append(t[start])
+            regimes.append('normal' if not label else ('transition' if t[start]<meta['fault_start_s']+1 else 'post_fault'))
+    data=dict(X=np.asarray(xs,np.float32),y=np.asarray(ys,np.int64),groups=np.asarray(groups,np.int64),
+              source_indices=np.asarray(source_indices,np.int64),end_s=np.asarray(ends),start_s=np.asarray(starts),
+              regime=np.asarray(regimes))
+    folder.mkdir(parents=True,exist_ok=True); np.savez_compressed(path,**data)
+    write_json(path.with_suffix('.json'),dict(**spec,signature=signature,windows=len(ys),
+                excluded_prefault_copies=excluded,features=FEATURES['imu_cmd_rpm']))
+    data['signature']=signature
+    return data
+
+
+def v2_feature(pool,feature_set):
+    return pool['X'][:,:,[FEATURES['imu_cmd_rpm'].index(name) for name in FEATURES[feature_set]]]
 
 
 if __name__ == '__main__':

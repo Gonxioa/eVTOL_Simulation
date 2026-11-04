@@ -56,10 +56,13 @@ def train(config,feature,stage):
 
 def main():
     parser=argparse.ArgumentParser()
-    parser.add_argument('action',choices=['plan','collect','preprocess','smoke','prototype','replay','all'])
+    parser.add_argument('action',choices=['plan','collect','preprocess','smoke','prototype','replay','all','registry','baselines','heads','gan_train','gans','freeze','final_train','test','report'])
     parser.add_argument('--config',type=Path,default=ROOT/'configs/simulink_gan_prototype.json')
     parser.add_argument('--feature-set',choices=['imu','imu_cmd','imu_rpm','imu_cmd_rpm'])
     args=parser.parse_args(); config=read(args.config)
+    if config['profile']=='simulink_observable_v2':
+        from simulink_v2_experiment import main_action
+        return main_action(args.action,config)
     if config['profile']!=PROFILE or config['physical_regularization']!=0:
         raise ValueError('Unsupported profile or unvalidated physical target')
     feature=args.feature_set or config['feature_set']; raw=ROOT/config['data_dir']

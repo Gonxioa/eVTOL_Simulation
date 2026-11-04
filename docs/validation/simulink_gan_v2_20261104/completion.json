@@ -1,0 +1,11 @@
+{
+  "code_implemented": true,
+  "frozen_signature": "ff6c26fbc613e6884af05434614a55f2f0b8e3e947fe4efe618a51ce0c7d9f76",
+  "pipeline_run": true,
+  "planned_budgets_executed": true,
+  "real_flight_validated": false,
+  "source_registry_sha256": "8e48b6fa4d4656808a755a2dd956b188c5ebfc547f561ad18f01b112b411554c",
+  "statistical_independence": "12 total paired groups, 3 final test groups",
+  "tests_passed": 47,
+  "training_convergence_proven": false
+}

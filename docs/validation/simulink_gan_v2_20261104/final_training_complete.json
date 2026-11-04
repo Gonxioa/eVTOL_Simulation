@@ -1,0 +1,1098 @@
+{
+  "all_models_complete": true,
+  "frozen_signature": "ff6c26fbc613e6884af05434614a55f2f0b8e3e947fe4efe618a51ce0c7d9f76",
+  "seeds": {
+    "42": {
+      "checkpoint_sha256": {
+        "ablation_imu": "f213a9f4af702defb2a9ef66fa646a8e3c9c62aa78026d5937b1d89e2ce9be5a",
+        "ablation_imu_cmd": "42bfaa4134b429f8507942b2e4d4bf93c4754f6f366ea03caead6fdca386e0fc",
+        "ablation_imu_rpm": "49a7fbdac886ba0792d54cfd18494f20ec6a4df685015c5864dd5ffdb01d8da7",
+        "command": "b8adf3f95870e89e9f4a658ae7cfbac58fecdeceb4d0ceac27fc729759170487",
+        "dual_candidate": "de5205866342a6b622a266a1e95be1588077105c8f7ab7b91367adf1f4c230ce",
+        "plain": "a581a4082f6372b02a9e559c681ad941f3590325dcdf89004828804cf68d6e20",
+        "raw_fixed": "1e951a0cc6979a53b6bd392ba44db69dbbbecd35d91ad12b12727c2cb7d3c412",
+        "raw_short": "58edb3805c5edff410dd2390b526d4c149979f71ce7be9072c3464a24b075472",
+        "raw_single": "ea9f749d9bb195d9b45e501ee0ffb7c5be9f92fc8fab8e2bff96d560fbbf7cba",
+        "ros": "6407f767aac96e57971b19458a8766503cb6a3c41f20ca714f44e4ce6f1cbf4b",
+        "ros_matched_command": "c6b7865347b7331e4872ca3f8c060a3ae40e4a888f8b0300d85b8ae1a90d6b5e",
+        "ros_matched_plain": "6407f767aac96e57971b19458a8766503cb6a3c41f20ca714f44e4ce6f1cbf4b"
+      },
+      "generator_checkpoint_sha256": {
+        "command": "20ddbb819759c2bd1a7f7d3993a543fcdd91468ee06f320b89cdb3b06a0fdf61",
+        "plain": "83e9e5f25e4f1a350273bc933de49b9e618e351a1983e0d8fcab13b15743aac7"
+      },
+      "generators": {
+        "command": {
+          "command_indices": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\generators\\command_s42_fcd994d909fd",
+          "feature": "imu_cmd_rpm",
+          "mode": "command",
+          "scaler_directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\scalers\\c0a2d8516ee4fae1",
+          "seed": 42,
+          "signature": "fcd994d909fd26943b05bfd5d16eb3e16ea3b0d83f0bcb975dfc6eccfe331d9a",
+          "steps": 3000
+        },
+        "plain": {
+          "command_indices": null,
+          "directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\generators\\plain_s42_685ad4732ca2",
+          "feature": "imu_cmd_rpm",
+          "mode": "plain",
+          "scaler_directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\scalers\\c0a2d8516ee4fae1",
+          "seed": 42,
+          "signature": "685ad4732ca20dffc74ec2f8de7b05f6f727448642c358b1ce9f531f1cd26755",
+          "steps": 3000
+        }
+      },
+      "models": {
+        "ablation_imu": {
+          "directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\classifiers\\fixed_ablation_imu_s42_79440b7349a8",
+          "dual_head": false,
+          "feature": "imu",
+          "scaler_directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\scalers\\256c3c6f527837cb",
+          "seed": 42,
+          "signature": "79440b7349a8ed0b658fd4810b0c78ff5d56751bf01724832f6cd230bafcb15f",
+          "steps": 1000,
+          "training_receipt": {
+            "binary_total_weight_per_group": 2409.0,
+            "dual_head": false,
+            "optimizer_updates": 1000,
+            "seed": 42,
+            "training_examples": 4818,
+            "updates_this_call": 1000
+          },
+          "validation": {
+            "accuracy": 0.2357824823578248,
+            "balanced_detection_error": 0.22737250928740288,
+            "detection_threshold": 0.5,
+            "fault_miss": 0.007936507936507936,
+            "healthy_false_positive": 0.44680851063829785,
+            "macro_f1": 0.14830402380559202,
+            "window_count": 2409
+          }
+        },
+        "ablation_imu_cmd": {
+          "directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\classifiers\\fixed_ablation_imu_cmd_s42_2c1c041c3e5f",
+          "dual_head": false,
+          "feature": "imu_cmd",
+          "scaler_directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\scalers\\8ffa897b8401063a",
+          "seed": 42,
+          "signature": "2c1c041c3e5f58c1438fd890e6f9a169ce07ad6ff5a373dc32962a9ddbe6c097",
+          "steps": 1000,
+          "training_receipt": {
+            "binary_total_weight_per_group": 2409.0,
+            "dual_head": false,
+            "optimizer_updates": 1000,
+            "seed": 42,
+            "training_examples": 4818,
+            "updates_this_call": 1000
+          },
+          "validation": {
+            "accuracy": 0.9941884599418847,
+            "balanced_detection_error": 0.001984126984126984,
+            "detection_threshold": 0.5,
+            "fault_miss": 0.003968253968253968,
+            "healthy_false_positive": 0.0,
+            "macro_f1": 0.9943403567889497,
+            "window_count": 2409
+          }
+        },
+        "ablation_imu_rpm": {
+          "directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\classifiers\\fixed_ablation_imu_rpm_s42_7e7c78b64e9e",
+          "dual_head": false,
+          "feature": "imu_rpm",
+          "scaler_directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\scalers\\9dc6663de65d869c",
+          "seed": 42,
+          "signature": "7e7c78b64e9e2e921e95d6b018ba6043f79684b41adc2dbd751e293cdaf85d55",
+          "steps": 1000,
+          "training_receipt": {
+            "binary_total_weight_per_group": 2409.0,
+            "dual_head": false,
+            "optimizer_updates": 1000,
+            "seed": 42,
+            "training_examples": 4818,
+            "updates_this_call": 1000
+          },
+          "validation": {
+            "accuracy": 0.4761311747613117,
+            "balanced_detection_error": 0.5,
+            "detection_threshold": 0.5,
+            "fault_miss": 0.0,
+            "healthy_false_positive": 1.0,
+            "macro_f1": 0.37861529403227523,
+            "window_count": 2409
+          }
+        },
+        "command": {
+          "directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\classifiers\\command_r0.5_g3000_imu_cmd_rpm_s42_87e4052c509e",
+          "dual_head": false,
+          "feature": "imu_cmd_rpm",
+          "scaler_directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\scalers\\c0a2d8516ee4fae1",
+          "seed": 42,
+          "signature": "87e4052c509eb8998b52d730fb90ed1488237a19336075fc933cf9f7fc898547",
+          "steps": 1000,
+          "training_receipt": {
+            "binary_total_weight_per_group": 3613.5,
+            "dual_head": false,
+            "optimizer_updates": 1000,
+            "seed": 42,
+            "training_examples": 7227,
+            "updates_this_call": 1000
+          },
+          "validation": {
+            "accuracy": 0.995848899958489,
+            "balanced_detection_error": 0.015066231378288115,
+            "detection_threshold": 0.5,
+            "fault_miss": 0.001763668430335097,
+            "healthy_false_positive": 0.028368794326241134,
+            "macro_f1": 0.9960052596531381,
+            "window_count": 2409
+          }
+        },
+        "dual_candidate": {
+          "directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\classifiers\\dual_imu_cmd_rpm_s42_f78f643e763b",
+          "dual_head": true,
+          "feature": "imu_cmd_rpm",
+          "scaler_directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\scalers\\c0a2d8516ee4fae1",
+          "seed": 42,
+          "signature": "f78f643e763b164d4302f3d60167fdb1504c3cf911751f8f35442f7dc874fda6",
+          "steps": 1000,
+          "training_receipt": {
+            "binary_total_weight_per_group": 2409.0,
+            "dual_head": true,
+            "optimizer_updates": 1000,
+            "seed": 42,
+            "training_examples": 4818,
+            "updates_this_call": 1000
+          },
+          "validation": {
+            "accuracy": 0.9966791199667911,
+            "balanced_detection_error": 0.00442793350594769,
+            "detection_threshold": 0.5,
+            "fault_miss": 0.001763668430335097,
+            "healthy_false_positive": 0.0070921985815602835,
+            "macro_f1": 0.9967665205399917,
+            "window_count": 2409
+          }
+        },
+        "plain": {
+          "directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\classifiers\\plain_r0.25_g3000_imu_cmd_rpm_s42_fa778948f33e",
+          "dual_head": false,
+          "feature": "imu_cmd_rpm",
+          "scaler_directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\scalers\\c0a2d8516ee4fae1",
+          "seed": 42,
+          "signature": "fa778948f33eae4b94a2d8295f73e8f29e665b930d9981d9b07a396f29a924a1",
+          "steps": 1000,
+          "training_receipt": {
+            "binary_total_weight_per_group": 3011.0,
+            "dual_head": false,
+            "optimizer_updates": 1000,
+            "seed": 42,
+            "training_examples": 6022,
+            "updates_this_call": 1000
+          },
+          "validation": {
+            "accuracy": 0.9921129099211291,
+            "balanced_detection_error": 0.024142556943975383,
+            "detection_threshold": 0.5,
+            "fault_miss": 0.005731922398589065,
+            "healthy_false_positive": 0.0425531914893617,
+            "macro_f1": 0.9924449962018812,
+            "window_count": 2409
+          }
+        },
+        "raw_fixed": {
+          "directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\classifiers\\raw_fixed_imu_cmd_rpm_s42_4b87e0f9725b",
+          "dual_head": false,
+          "feature": "imu_cmd_rpm",
+          "scaler_directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\scalers\\c0a2d8516ee4fae1",
+          "seed": 42,
+          "signature": "4b87e0f9725b71908d7ad9223d7af7f357bf4cded4bd2ef7b291ef06fea48eb8",
+          "steps": 1000,
+          "training_receipt": {
+            "binary_total_weight_per_group": 2409.0,
+            "dual_head": false,
+            "optimizer_updates": 1000,
+            "seed": 42,
+            "training_examples": 4818,
+            "updates_this_call": 0
+          },
+          "validation": {
+            "accuracy": 0.9007887090078871,
+            "balanced_detection_error": 0.004207474952155803,
+            "detection_threshold": 0.5,
+            "fault_miss": 0.0013227513227513227,
+            "healthy_false_positive": 0.0070921985815602835,
+            "macro_f1": 0.875414058209354,
+            "window_count": 2409
+          }
+        },
+        "raw_short": {
+          "directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\classifiers\\single_imu_cmd_rpm_s42_101a92eeae2e",
+          "dual_head": false,
+          "feature": "imu_cmd_rpm",
+          "scaler_directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\scalers\\c0a2d8516ee4fae1",
+          "seed": 42,
+          "signature": "101a92eeae2e72890eff67d5a29cf15f7eafee43f4ca142e498768bbe427d2f1",
+          "steps": 150,
+          "training_receipt": {
+            "binary_total_weight_per_group": 2409.0,
+            "dual_head": false,
+            "optimizer_updates": 1000,
+            "seed": 42,
+            "training_examples": 4818,
+            "updates_this_call": 1000
+          },
+          "validation": {
+            "accuracy": 0.6135325861353259,
+            "balanced_detection_error": 0.5,
+            "detection_threshold": 0.5,
+            "fault_miss": 0.0,
+            "healthy_false_positive": 1.0,
+            "macro_f1": 0.5208320365445326,
+            "window_count": 2409
+          }
+        },
+        "raw_single": {
+          "directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\classifiers\\single_imu_cmd_rpm_s42_101a92eeae2e",
+          "dual_head": false,
+          "feature": "imu_cmd_rpm",
+          "scaler_directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\scalers\\c0a2d8516ee4fae1",
+          "seed": 42,
+          "signature": "101a92eeae2e72890eff67d5a29cf15f7eafee43f4ca142e498768bbe427d2f1",
+          "steps": 1000,
+          "training_receipt": {
+            "binary_total_weight_per_group": 2409.0,
+            "dual_head": false,
+            "optimizer_updates": 1000,
+            "seed": 42,
+            "training_examples": 4818,
+            "updates_this_call": 1000
+          },
+          "validation": {
+            "accuracy": 0.9007887090078871,
+            "balanced_detection_error": 0.004207474952155803,
+            "detection_threshold": 0.5,
+            "fault_miss": 0.0013227513227513227,
+            "healthy_false_positive": 0.0070921985815602835,
+            "macro_f1": 0.875414058209354,
+            "window_count": 2409
+          }
+        },
+        "ros": {
+          "directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\classifiers\\ros_r0.25_g0_imu_cmd_rpm_s42_4104c385bfa2",
+          "dual_head": false,
+          "feature": "imu_cmd_rpm",
+          "scaler_directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\scalers\\c0a2d8516ee4fae1",
+          "seed": 42,
+          "signature": "4104c385bfa266e113c94affb83c10c70dbe33eb1da3174bb0515e7cbf2e9653",
+          "steps": 1000,
+          "training_receipt": {
+            "binary_total_weight_per_group": 3011.0,
+            "dual_head": false,
+            "optimizer_updates": 1000,
+            "seed": 42,
+            "training_examples": 6022,
+            "updates_this_call": 1000
+          },
+          "validation": {
+            "accuracy": 1.0,
+            "balanced_detection_error": 0.0,
+            "detection_threshold": 0.5,
+            "fault_miss": 0.0,
+            "healthy_false_positive": 0.0,
+            "macro_f1": 1.0,
+            "window_count": 2409
+          }
+        },
+        "ros_matched_command": {
+          "directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\classifiers\\ros_r0.5_g0_imu_cmd_rpm_s42_7a686600ca4a",
+          "dual_head": false,
+          "feature": "imu_cmd_rpm",
+          "scaler_directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\scalers\\c0a2d8516ee4fae1",
+          "seed": 42,
+          "signature": "7a686600ca4a320f7206b2ced0c1318a1327a31a5bc3ac75b612c55b3d74c576",
+          "steps": 1000,
+          "training_receipt": {
+            "binary_total_weight_per_group": 3613.5,
+            "dual_head": false,
+            "optimizer_updates": 1000,
+            "seed": 42,
+            "training_examples": 7227,
+            "updates_this_call": 1000
+          },
+          "validation": {
+            "accuracy": 0.9456205894562059,
+            "balanced_detection_error": 0.0013227513227513227,
+            "detection_threshold": 0.5,
+            "fault_miss": 0.0026455026455026454,
+            "healthy_false_positive": 0.0,
+            "macro_f1": 0.9313061420987453,
+            "window_count": 2409
+          }
+        },
+        "ros_matched_plain": {
+          "directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\classifiers\\ros_r0.25_g0_imu_cmd_rpm_s42_4104c385bfa2",
+          "dual_head": false,
+          "feature": "imu_cmd_rpm",
+          "scaler_directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\scalers\\c0a2d8516ee4fae1",
+          "seed": 42,
+          "signature": "4104c385bfa266e113c94affb83c10c70dbe33eb1da3174bb0515e7cbf2e9653",
+          "steps": 1000,
+          "training_receipt": {
+            "binary_total_weight_per_group": 3011.0,
+            "dual_head": false,
+            "optimizer_updates": 1000,
+            "seed": 42,
+            "training_examples": 6022,
+            "updates_this_call": 1000
+          },
+          "validation": {
+            "accuracy": 1.0,
+            "balanced_detection_error": 0.0,
+            "detection_threshold": 0.5,
+            "fault_miss": 0.0,
+            "healthy_false_positive": 0.0,
+            "macro_f1": 1.0,
+            "window_count": 2409
+          }
+        }
+      },
+      "selected_generator_updates": 3000
+    },
+    "43": {
+      "checkpoint_sha256": {
+        "ablation_imu": "2b6a760875b10e7bc7e62de2792bc824f65dfa93f63ace7bc64c9c8ae5b26c1c",
+        "ablation_imu_cmd": "b3bc8b1288da414204e30fbda4ae231e74d8f99e732109ec78dc1aaeffe6cc4b",
+        "ablation_imu_rpm": "20c8ecbb7b602fc22d84b2037fb7acb1b4f5ce1fc1601d93ea577effcddfa4f5",
+        "command": "308e9ce8cf0eb32a2382c1d39a063653a9f96467ea5beb91f7c5ff54e97c3daf",
+        "dual_candidate": "d4d7a948b90bf9aa7b1e14d51bdf3333b4282204170376cf5c8efc7cf0242d3e",
+        "plain": "0da6ba56243a4459b3420a025f46a79c00dfb84aec60bb49c21c5c68c2d45d9b",
+        "raw_fixed": "42b541a804b04c99cdcf034452736c5abf592a5d941eebf0d8c5c1932ee1bffc",
+        "raw_short": "9a1f2f6968b1a434df082f7cff730ed56bf0861f1ef1601c25a725f6d5539586",
+        "raw_single": "42b541a804b04c99cdcf034452736c5abf592a5d941eebf0d8c5c1932ee1bffc",
+        "ros": "50393e2062452b61a09f1c9c4eae07d7a8112480659f346a6bc5de73ec996af6",
+        "ros_matched_command": "3d91ccbcacc59686490123ae76355b2a67913e532e391dd74a26782ebcd3ea54",
+        "ros_matched_plain": "50393e2062452b61a09f1c9c4eae07d7a8112480659f346a6bc5de73ec996af6"
+      },
+      "generator_checkpoint_sha256": {
+        "command": "ec74264806c743fe61604e40ba44da8c2beab7232bcc2d540d0ccf1cee224b83",
+        "plain": "c99641683d87a71fca8b0e8fb820c0c3d59194ae7b15da0bebc631f856c6a3fd"
+      },
+      "generators": {
+        "command": {
+          "command_indices": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\generators\\command_s43_a30efdb74ee9",
+          "feature": "imu_cmd_rpm",
+          "mode": "command",
+          "scaler_directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\scalers\\c0a2d8516ee4fae1",
+          "seed": 43,
+          "signature": "a30efdb74ee9d8ac0af4712bdcfd4db1979dd19ca48cdeeee992ec4d2a11f9bd",
+          "steps": 3000
+        },
+        "plain": {
+          "command_indices": null,
+          "directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\generators\\plain_s43_05f0b9339fd4",
+          "feature": "imu_cmd_rpm",
+          "mode": "plain",
+          "scaler_directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\scalers\\c0a2d8516ee4fae1",
+          "seed": 43,
+          "signature": "05f0b9339fd4c601e832573a49c450856ff3157e1fb71ffeb4706b42091372c3",
+          "steps": 3000
+        }
+      },
+      "models": {
+        "ablation_imu": {
+          "directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\classifiers\\final_ablation_imu_s43_ed23658c058e",
+          "dual_head": false,
+          "feature": "imu",
+          "scaler_directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\scalers\\256c3c6f527837cb",
+          "seed": 43,
+          "signature": "ed23658c058e0f6ceb5d0a04bfee400eda25f81ebc5dcfb90d0246e9c07f5281",
+          "steps": 1000,
+          "training_receipt": {
+            "binary_total_weight_per_group": 2409.0,
+            "dual_head": false,
+            "optimizer_updates": 1000,
+            "seed": 43,
+            "training_examples": 4818,
+            "updates_this_call": 1000
+          },
+          "validation": {
+            "accuracy": 0.2175176421751764,
+            "balanced_detection_error": 0.38652482269503546,
+            "detection_threshold": 0.5,
+            "fault_miss": 0.0,
+            "healthy_false_positive": 0.7730496453900709,
+            "macro_f1": 0.13058823766814662,
+            "window_count": 2409
+          }
+        },
+        "ablation_imu_cmd": {
+          "directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\classifiers\\final_ablation_imu_cmd_s43_2c58cd861bb7",
+          "dual_head": false,
+          "feature": "imu_cmd",
+          "scaler_directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\scalers\\8ffa897b8401063a",
+          "seed": 43,
+          "signature": "2c58cd861bb798f153f2e00d5a093b2302dc98acf0a3e75a2f265e235d51e3ad",
+          "steps": 1000,
+          "training_receipt": {
+            "binary_total_weight_per_group": 2409.0,
+            "dual_head": false,
+            "optimizer_updates": 1000,
+            "seed": 43,
+            "training_examples": 4818,
+            "updates_this_call": 1000
+          },
+          "validation": {
+            "accuracy": 0.9995848899958489,
+            "balanced_detection_error": 0.0035460992907801418,
+            "detection_threshold": 0.5,
+            "fault_miss": 0.0,
+            "healthy_false_positive": 0.0070921985815602835,
+            "macro_f1": 0.999604669050991,
+            "window_count": 2409
+          }
+        },
+        "ablation_imu_rpm": {
+          "directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\classifiers\\final_ablation_imu_rpm_s43_79c79eb52579",
+          "dual_head": false,
+          "feature": "imu_rpm",
+          "scaler_directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\scalers\\9dc6663de65d869c",
+          "seed": 43,
+          "signature": "79c79eb525793b2f0eb9fafcbb5d75c28a40c0bdb466856a7b4c48344a9cfdf3",
+          "steps": 1000,
+          "training_receipt": {
+            "binary_total_weight_per_group": 2409.0,
+            "dual_head": false,
+            "optimizer_updates": 1000,
+            "seed": 43,
+            "training_examples": 4818,
+            "updates_this_call": 1000
+          },
+          "validation": {
+            "accuracy": 0.5242839352428393,
+            "balanced_detection_error": 0.5,
+            "detection_threshold": 0.5,
+            "fault_miss": 0.0,
+            "healthy_false_positive": 1.0,
+            "macro_f1": 0.43823165980802886,
+            "window_count": 2409
+          }
+        },
+        "command": {
+          "directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\classifiers\\command_r0.5_g3000_imu_cmd_rpm_s43_5babded1b8fc",
+          "dual_head": false,
+          "feature": "imu_cmd_rpm",
+          "scaler_directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\scalers\\c0a2d8516ee4fae1",
+          "seed": 43,
+          "signature": "5babded1b8fca262901fcf9489eaba5916eee01982c9fea0365df7f5b65177f1",
+          "steps": 1000,
+          "training_receipt": {
+            "binary_total_weight_per_group": 3613.5,
+            "dual_head": false,
+            "optimizer_updates": 1000,
+            "seed": 43,
+            "training_examples": 7227,
+            "updates_this_call": 1000
+          },
+          "validation": {
+            "accuracy": 0.9090909090909091,
+            "balanced_detection_error": 0.0048688506135314644,
+            "detection_threshold": 0.5,
+            "fault_miss": 0.0026455026455026454,
+            "healthy_false_positive": 0.0070921985815602835,
+            "macro_f1": 0.8911669088927985,
+            "window_count": 2409
+          }
+        },
+        "dual_candidate": {
+          "directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\classifiers\\final_dual_imu_cmd_rpm_s43_ec6d9c0b4390",
+          "dual_head": true,
+          "feature": "imu_cmd_rpm",
+          "scaler_directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\scalers\\c0a2d8516ee4fae1",
+          "seed": 43,
+          "signature": "ec6d9c0b4390ad5b33dc06b0856f1c313dfc829a7782dd8129978ed645482622",
+          "steps": 1000,
+          "training_receipt": {
+            "binary_total_weight_per_group": 2409.0,
+            "dual_head": true,
+            "optimizer_updates": 1000,
+            "seed": 43,
+            "training_examples": 4818,
+            "updates_this_call": 1000
+          },
+          "validation": {
+            "accuracy": 0.8065587380655874,
+            "balanced_detection_error": 0.02965402078877256,
+            "detection_threshold": 0.5,
+            "fault_miss": 0.01675485008818342,
+            "healthy_false_positive": 0.0425531914893617,
+            "macro_f1": 0.7840159056616367,
+            "window_count": 2409
+          }
+        },
+        "plain": {
+          "directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\classifiers\\plain_r0.25_g3000_imu_cmd_rpm_s43_e2f0bc3601de",
+          "dual_head": false,
+          "feature": "imu_cmd_rpm",
+          "scaler_directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\scalers\\c0a2d8516ee4fae1",
+          "seed": 43,
+          "signature": "e2f0bc3601deb994eaadd754cc3e5746ffc6008e6aa0b5c8b1d1a85be31c45c7",
+          "steps": 1000,
+          "training_receipt": {
+            "binary_total_weight_per_group": 3011.0,
+            "dual_head": false,
+            "optimizer_updates": 1000,
+            "seed": 43,
+            "training_examples": 6022,
+            "updates_this_call": 1000
+          },
+          "validation": {
+            "accuracy": 0.9327521793275217,
+            "balanced_detection_error": 0.0070921985815602835,
+            "detection_threshold": 0.5,
+            "fault_miss": 0.0,
+            "healthy_false_positive": 0.014184397163120567,
+            "macro_f1": 0.9227976609569692,
+            "window_count": 2409
+          }
+        },
+        "raw_fixed": {
+          "directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\classifiers\\final_single_imu_cmd_rpm_s43_57a7f5a64732",
+          "dual_head": false,
+          "feature": "imu_cmd_rpm",
+          "scaler_directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\scalers\\c0a2d8516ee4fae1",
+          "seed": 43,
+          "signature": "57a7f5a64732d6baf2982625fed2c2f95d8b2cbecec46984c95bf7fe3bd73f72",
+          "steps": 1000,
+          "training_receipt": {
+            "binary_total_weight_per_group": 2409.0,
+            "dual_head": false,
+            "optimizer_updates": 1000,
+            "seed": 43,
+            "training_examples": 4818,
+            "updates_this_call": 1000
+          },
+          "validation": {
+            "accuracy": 0.9327521793275217,
+            "balanced_detection_error": 0.03634282712296897,
+            "detection_threshold": 0.5,
+            "fault_miss": 0.001763668430335097,
+            "healthy_false_positive": 0.07092198581560284,
+            "macro_f1": 0.9185264381229276,
+            "window_count": 2409
+          }
+        },
+        "raw_short": {
+          "directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\classifiers\\final_single_imu_cmd_rpm_s43_57a7f5a64732",
+          "dual_head": false,
+          "feature": "imu_cmd_rpm",
+          "scaler_directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\scalers\\c0a2d8516ee4fae1",
+          "seed": 43,
+          "signature": "57a7f5a64732d6baf2982625fed2c2f95d8b2cbecec46984c95bf7fe3bd73f72",
+          "steps": 150,
+          "training_receipt": {
+            "binary_total_weight_per_group": 2409.0,
+            "dual_head": false,
+            "optimizer_updates": 1000,
+            "seed": 43,
+            "training_examples": 4818,
+            "updates_this_call": 1000
+          },
+          "validation": {
+            "accuracy": 0.6002490660024906,
+            "balanced_detection_error": 0.5,
+            "detection_threshold": 0.5,
+            "fault_miss": 0.0,
+            "healthy_false_positive": 1.0,
+            "macro_f1": 0.5100683881809298,
+            "window_count": 2409
+          }
+        },
+        "raw_single": {
+          "directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\classifiers\\final_single_imu_cmd_rpm_s43_57a7f5a64732",
+          "dual_head": false,
+          "feature": "imu_cmd_rpm",
+          "scaler_directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\scalers\\c0a2d8516ee4fae1",
+          "seed": 43,
+          "signature": "57a7f5a64732d6baf2982625fed2c2f95d8b2cbecec46984c95bf7fe3bd73f72",
+          "steps": 1000,
+          "training_receipt": {
+            "binary_total_weight_per_group": 2409.0,
+            "dual_head": false,
+            "optimizer_updates": 1000,
+            "seed": 43,
+            "training_examples": 4818,
+            "updates_this_call": 1000
+          },
+          "validation": {
+            "accuracy": 0.9327521793275217,
+            "balanced_detection_error": 0.03634282712296897,
+            "detection_threshold": 0.5,
+            "fault_miss": 0.001763668430335097,
+            "healthy_false_positive": 0.07092198581560284,
+            "macro_f1": 0.9185264381229276,
+            "window_count": 2409
+          }
+        },
+        "ros": {
+          "directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\classifiers\\ros_r0.25_g0_imu_cmd_rpm_s43_dce56126c2aa",
+          "dual_head": false,
+          "feature": "imu_cmd_rpm",
+          "scaler_directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\scalers\\c0a2d8516ee4fae1",
+          "seed": 43,
+          "signature": "dce56126c2aae376209ca97d8f510c8307348fcc559f9429321a7a42b5095bb0",
+          "steps": 1000,
+          "training_receipt": {
+            "binary_total_weight_per_group": 3011.0,
+            "dual_head": false,
+            "optimizer_updates": 1000,
+            "seed": 43,
+            "training_examples": 6022,
+            "updates_this_call": 1000
+          },
+          "validation": {
+            "accuracy": 0.9447903694479037,
+            "balanced_detection_error": 0.007533115689144058,
+            "detection_threshold": 0.5,
+            "fault_miss": 0.0008818342151675485,
+            "healthy_false_positive": 0.014184397163120567,
+            "macro_f1": 0.9284728787717829,
+            "window_count": 2409
+          }
+        },
+        "ros_matched_command": {
+          "directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\classifiers\\ros_r0.5_g0_imu_cmd_rpm_s43_486240de6ef1",
+          "dual_head": false,
+          "feature": "imu_cmd_rpm",
+          "scaler_directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\scalers\\c0a2d8516ee4fae1",
+          "seed": 43,
+          "signature": "486240de6ef1afb79d0610f8b0e1e0287f9a4ee37b8c758ed18c453441ef1555",
+          "steps": 1000,
+          "training_receipt": {
+            "binary_total_weight_per_group": 3613.5,
+            "dual_head": false,
+            "optimizer_updates": 1000,
+            "seed": 43,
+            "training_examples": 7227,
+            "updates_this_call": 1000
+          },
+          "validation": {
+            "accuracy": 0.9995848899958489,
+            "balanced_detection_error": 0.0,
+            "detection_threshold": 0.5,
+            "fault_miss": 0.0,
+            "healthy_false_positive": 0.0,
+            "macro_f1": 0.999582282478159,
+            "window_count": 2409
+          }
+        },
+        "ros_matched_plain": {
+          "directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\classifiers\\ros_r0.25_g0_imu_cmd_rpm_s43_dce56126c2aa",
+          "dual_head": false,
+          "feature": "imu_cmd_rpm",
+          "scaler_directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\scalers\\c0a2d8516ee4fae1",
+          "seed": 43,
+          "signature": "dce56126c2aae376209ca97d8f510c8307348fcc559f9429321a7a42b5095bb0",
+          "steps": 1000,
+          "training_receipt": {
+            "binary_total_weight_per_group": 3011.0,
+            "dual_head": false,
+            "optimizer_updates": 1000,
+            "seed": 43,
+            "training_examples": 6022,
+            "updates_this_call": 0
+          },
+          "validation": {
+            "accuracy": 0.9447903694479037,
+            "balanced_detection_error": 0.007533115689144058,
+            "detection_threshold": 0.5,
+            "fault_miss": 0.0008818342151675485,
+            "healthy_false_positive": 0.014184397163120567,
+            "macro_f1": 0.9284728787717829,
+            "window_count": 2409
+          }
+        }
+      },
+      "selected_generator_updates": 3000
+    },
+    "44": {
+      "checkpoint_sha256": {
+        "ablation_imu": "6ca9943509641943abb8f3fd36500f58508f4838bda786e1832145acdbb973f7",
+        "ablation_imu_cmd": "e6ff483dc0f7e005d92d870ba7aa22f1ae1922148384dccb93b286d1545ace4b",
+        "ablation_imu_rpm": "e3b2d76abad1eedf1e21feeb2ab3a32f34d91d7fbb60567bac295d43d2448b99",
+        "command": "f26618a11722f8d43a63503fa35bf69b4ad7207f32a80ed57a7a19fa0d317b13",
+        "dual_candidate": "0d7f14a82ec7f2cfb71591d3eb25d38f486348d6b0e3cd376220606b4d818575",
+        "plain": "9c7be0e18579644557e7cb86c319fddf196ddde90c7e5fb9c6cdfeb04a2ea2c7",
+        "raw_fixed": "1b450919f664e844ddf002daa9529bd574529fa942db6c4474dea2a875290c2a",
+        "raw_short": "f973a09929665b28f48e1de3cbf79dddc240f341d078beba4bea131727d3ff6f",
+        "raw_single": "1b450919f664e844ddf002daa9529bd574529fa942db6c4474dea2a875290c2a",
+        "ros": "4b159ba378943254cc56983423cb92540ed00204d71b9e4dfe2fa02a00dd5875",
+        "ros_matched_command": "59b8e7665621ec76dea19f7c69b11a533a69a99963794f94e70c5dd69fd6c033",
+        "ros_matched_plain": "4b159ba378943254cc56983423cb92540ed00204d71b9e4dfe2fa02a00dd5875"
+      },
+      "generator_checkpoint_sha256": {
+        "command": "a064b025a3b46bf4cf6069f94cdfdb2a50cb3fbc201a76a8f43fd86e1f92b0b4",
+        "plain": "9094d5fd2834917cb33c3cf4c127abc70cc7e17cf004571856723a6c869d1e9d"
+      },
+      "generators": {
+        "command": {
+          "command_indices": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\generators\\command_s44_bcefb1a7c649",
+          "feature": "imu_cmd_rpm",
+          "mode": "command",
+          "scaler_directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\scalers\\c0a2d8516ee4fae1",
+          "seed": 44,
+          "signature": "bcefb1a7c6491570ea981c146a8cd0cfbb29ef0d14cacfaf2543985111508527",
+          "steps": 3000
+        },
+        "plain": {
+          "command_indices": null,
+          "directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\generators\\plain_s44_952ce9074a02",
+          "feature": "imu_cmd_rpm",
+          "mode": "plain",
+          "scaler_directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\scalers\\c0a2d8516ee4fae1",
+          "seed": 44,
+          "signature": "952ce9074a023f2f2fddc23ee4261305f2b90e9f130019c8c1e168cf03e54729",
+          "steps": 3000
+        }
+      },
+      "models": {
+        "ablation_imu": {
+          "directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\classifiers\\final_ablation_imu_s44_db7f19f8543e",
+          "dual_head": false,
+          "feature": "imu",
+          "scaler_directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\scalers\\256c3c6f527837cb",
+          "seed": 44,
+          "signature": "db7f19f8543e29f1f7bc72994628f9a8efd4d7c79cab9aee723e9a09d025c315",
+          "steps": 1000,
+          "training_receipt": {
+            "binary_total_weight_per_group": 2409.0,
+            "dual_head": false,
+            "optimizer_updates": 1000,
+            "seed": 44,
+            "training_examples": 4818,
+            "updates_this_call": 1000
+          },
+          "validation": {
+            "accuracy": 0.23163138231631383,
+            "balanced_detection_error": 0.2630727231791061,
+            "detection_threshold": 0.5,
+            "fault_miss": 0.0013227513227513227,
+            "healthy_false_positive": 0.524822695035461,
+            "macro_f1": 0.13255484277453172,
+            "window_count": 2409
+          }
+        },
+        "ablation_imu_cmd": {
+          "directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\classifiers\\final_ablation_imu_cmd_s44_d390187a0e03",
+          "dual_head": false,
+          "feature": "imu_cmd",
+          "scaler_directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\scalers\\8ffa897b8401063a",
+          "seed": 44,
+          "signature": "d390187a0e0364014845a6934a39d7b472904553a875ea4e6b407c9e1b6e3648",
+          "steps": 1000,
+          "training_receipt": {
+            "binary_total_weight_per_group": 2409.0,
+            "dual_head": false,
+            "optimizer_updates": 1000,
+            "seed": 44,
+            "training_examples": 4818,
+            "updates_this_call": 1000
+          },
+          "validation": {
+            "accuracy": 0.9975093399750934,
+            "balanced_detection_error": 0.011299673533716087,
+            "detection_threshold": 0.5,
+            "fault_miss": 0.0013227513227513227,
+            "healthy_false_positive": 0.02127659574468085,
+            "macro_f1": 0.9976236119245391,
+            "window_count": 2409
+          }
+        },
+        "ablation_imu_rpm": {
+          "directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\classifiers\\final_ablation_imu_rpm_s44_b3c420c31833",
+          "dual_head": false,
+          "feature": "imu_rpm",
+          "scaler_directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\scalers\\9dc6663de65d869c",
+          "seed": 44,
+          "signature": "b3c420c318331ecd5fdd520374d796991fd9b0a38506997a8b892402a4884774",
+          "steps": 1000,
+          "training_receipt": {
+            "binary_total_weight_per_group": 2409.0,
+            "dual_head": false,
+            "optimizer_updates": 1000,
+            "seed": 44,
+            "training_examples": 4818,
+            "updates_this_call": 1000
+          },
+          "validation": {
+            "accuracy": 0.5197177251971773,
+            "balanced_detection_error": 0.5,
+            "detection_threshold": 0.5,
+            "fault_miss": 0.0,
+            "healthy_false_positive": 1.0,
+            "macro_f1": 0.4306875934691721,
+            "window_count": 2409
+          }
+        },
+        "command": {
+          "directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\classifiers\\command_r0.5_g3000_imu_cmd_rpm_s44_3563b3b6ca5f",
+          "dual_head": false,
+          "feature": "imu_cmd_rpm",
+          "scaler_directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\scalers\\c0a2d8516ee4fae1",
+          "seed": 44,
+          "signature": "3563b3b6ca5fe62c1bd64009d6b6c298e8e1f0e2655b51afc9b99aa684d6c31b",
+          "steps": 1000,
+          "training_receipt": {
+            "binary_total_weight_per_group": 3613.5,
+            "dual_head": false,
+            "optimizer_updates": 1000,
+            "seed": 44,
+            "training_examples": 7227,
+            "updates_this_call": 1000
+          },
+          "validation": {
+            "accuracy": 0.9975093399750934,
+            "balanced_detection_error": 0.004207474952155803,
+            "detection_threshold": 0.5,
+            "fault_miss": 0.0013227513227513227,
+            "healthy_false_positive": 0.0070921985815602835,
+            "macro_f1": 0.9975760362865673,
+            "window_count": 2409
+          }
+        },
+        "dual_candidate": {
+          "directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\classifiers\\final_dual_imu_cmd_rpm_s44_9cf72f9c2c92",
+          "dual_head": true,
+          "feature": "imu_cmd_rpm",
+          "scaler_directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\scalers\\c0a2d8516ee4fae1",
+          "seed": 44,
+          "signature": "9cf72f9c2c923af95fbc367d924d098f4a55ef0f9220f8d27aa41712d6c79079",
+          "steps": 1000,
+          "training_receipt": {
+            "binary_total_weight_per_group": 2409.0,
+            "dual_head": true,
+            "optimizer_updates": 1000,
+            "seed": 44,
+            "training_examples": 4818,
+            "updates_this_call": 1000
+          },
+          "validation": {
+            "accuracy": 0.8638439186384392,
+            "balanced_detection_error": 0.0033068783068783067,
+            "detection_threshold": 0.5,
+            "fault_miss": 0.006613756613756613,
+            "healthy_false_positive": 0.0,
+            "macro_f1": 0.8355216415404758,
+            "window_count": 2409
+          }
+        },
+        "plain": {
+          "directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\classifiers\\plain_r0.25_g3000_imu_cmd_rpm_s44_0508d69f60b9",
+          "dual_head": false,
+          "feature": "imu_cmd_rpm",
+          "scaler_directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\scalers\\c0a2d8516ee4fae1",
+          "seed": 44,
+          "signature": "0508d69f60b94924fecfbb79669dbfabbf46d52afb4c8b683d2b325f1d5a91e6",
+          "steps": 1000,
+          "training_receipt": {
+            "binary_total_weight_per_group": 3011.0,
+            "dual_head": false,
+            "optimizer_updates": 1000,
+            "seed": 44,
+            "training_examples": 6022,
+            "updates_this_call": 1000
+          },
+          "validation": {
+            "accuracy": 0.9867164798671648,
+            "balanced_detection_error": 0.03546099290780142,
+            "detection_threshold": 0.5,
+            "fault_miss": 0.0,
+            "healthy_false_positive": 0.07092198581560284,
+            "macro_f1": 0.9867911139778867,
+            "window_count": 2409
+          }
+        },
+        "raw_fixed": {
+          "directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\classifiers\\final_single_imu_cmd_rpm_s44_4217f3e5f66d",
+          "dual_head": false,
+          "feature": "imu_cmd_rpm",
+          "scaler_directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\scalers\\c0a2d8516ee4fae1",
+          "seed": 44,
+          "signature": "4217f3e5f66d62b16904109ba34b30c0ebe4288af9016b78730be0efcde23957",
+          "steps": 1000,
+          "training_receipt": {
+            "binary_total_weight_per_group": 2409.0,
+            "dual_head": false,
+            "optimizer_updates": 1000,
+            "seed": 44,
+            "training_examples": 4818,
+            "updates_this_call": 1000
+          },
+          "validation": {
+            "accuracy": 0.9672063096720631,
+            "balanced_detection_error": 0.044537318473488685,
+            "detection_threshold": 0.5,
+            "fault_miss": 0.003968253968253968,
+            "healthy_false_positive": 0.0851063829787234,
+            "macro_f1": 0.9669508059454843,
+            "window_count": 2409
+          }
+        },
+        "raw_short": {
+          "directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\classifiers\\final_single_imu_cmd_rpm_s44_4217f3e5f66d",
+          "dual_head": false,
+          "feature": "imu_cmd_rpm",
+          "scaler_directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\scalers\\c0a2d8516ee4fae1",
+          "seed": 44,
+          "signature": "4217f3e5f66d62b16904109ba34b30c0ebe4288af9016b78730be0efcde23957",
+          "steps": 150,
+          "training_receipt": {
+            "binary_total_weight_per_group": 2409.0,
+            "dual_head": false,
+            "optimizer_updates": 1000,
+            "seed": 44,
+            "training_examples": 4818,
+            "updates_this_call": 1000
+          },
+          "validation": {
+            "accuracy": 0.726442507264425,
+            "balanced_detection_error": 0.5,
+            "detection_threshold": 0.5,
+            "fault_miss": 0.0,
+            "healthy_false_positive": 1.0,
+            "macro_f1": 0.6698395662561074,
+            "window_count": 2409
+          }
+        },
+        "raw_single": {
+          "directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\classifiers\\final_single_imu_cmd_rpm_s44_4217f3e5f66d",
+          "dual_head": false,
+          "feature": "imu_cmd_rpm",
+          "scaler_directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\scalers\\c0a2d8516ee4fae1",
+          "seed": 44,
+          "signature": "4217f3e5f66d62b16904109ba34b30c0ebe4288af9016b78730be0efcde23957",
+          "steps": 1000,
+          "training_receipt": {
+            "binary_total_weight_per_group": 2409.0,
+            "dual_head": false,
+            "optimizer_updates": 1000,
+            "seed": 44,
+            "training_examples": 4818,
+            "updates_this_call": 1000
+          },
+          "validation": {
+            "accuracy": 0.9672063096720631,
+            "balanced_detection_error": 0.044537318473488685,
+            "detection_threshold": 0.5,
+            "fault_miss": 0.003968253968253968,
+            "healthy_false_positive": 0.0851063829787234,
+            "macro_f1": 0.9669508059454843,
+            "window_count": 2409
+          }
+        },
+        "ros": {
+          "directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\classifiers\\ros_r0.25_g0_imu_cmd_rpm_s44_e6ef757066ca",
+          "dual_head": false,
+          "feature": "imu_cmd_rpm",
+          "scaler_directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\scalers\\c0a2d8516ee4fae1",
+          "seed": 44,
+          "signature": "e6ef757066ca3f514e5f51e8e3ed8fef8cc515ced7abe8e1b6005cb5f00a1b9a",
+          "steps": 1000,
+          "training_receipt": {
+            "binary_total_weight_per_group": 3011.0,
+            "dual_head": false,
+            "optimizer_updates": 1000,
+            "seed": 44,
+            "training_examples": 6022,
+            "updates_this_call": 1000
+          },
+          "validation": {
+            "accuracy": 0.9597343295973433,
+            "balanced_detection_error": 0.0006613756613756613,
+            "detection_threshold": 0.5,
+            "fault_miss": 0.0013227513227513227,
+            "healthy_false_positive": 0.0,
+            "macro_f1": 0.9532006569474026,
+            "window_count": 2409
+          }
+        },
+        "ros_matched_command": {
+          "directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\classifiers\\ros_r0.5_g0_imu_cmd_rpm_s44_28637830d286",
+          "dual_head": false,
+          "feature": "imu_cmd_rpm",
+          "scaler_directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\scalers\\c0a2d8516ee4fae1",
+          "seed": 44,
+          "signature": "28637830d286e57987f46867aaec41ea750402025514cdf395f598fd909cbeae",
+          "steps": 1000,
+          "training_receipt": {
+            "binary_total_weight_per_group": 3613.5,
+            "dual_head": false,
+            "optimizer_updates": 1000,
+            "seed": 44,
+            "training_examples": 7227,
+            "updates_this_call": 1000
+          },
+          "validation": {
+            "accuracy": 0.9510170195101701,
+            "balanced_detection_error": 0.004648392059739577,
+            "detection_threshold": 0.5,
+            "fault_miss": 0.002204585537918871,
+            "healthy_false_positive": 0.0070921985815602835,
+            "macro_f1": 0.9406935414533134,
+            "window_count": 2409
+          }
+        },
+        "ros_matched_plain": {
+          "directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\classifiers\\ros_r0.25_g0_imu_cmd_rpm_s44_e6ef757066ca",
+          "dual_head": false,
+          "feature": "imu_cmd_rpm",
+          "scaler_directory": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\scalers\\c0a2d8516ee4fae1",
+          "seed": 44,
+          "signature": "e6ef757066ca3f514e5f51e8e3ed8fef8cc515ced7abe8e1b6005cb5f00a1b9a",
+          "steps": 1000,
+          "training_receipt": {
+            "binary_total_weight_per_group": 3011.0,
+            "dual_head": false,
+            "optimizer_updates": 1000,
+            "seed": 44,
+            "training_examples": 6022,
+            "updates_this_call": 0
+          },
+          "validation": {
+            "accuracy": 0.9597343295973433,
+            "balanced_detection_error": 0.0006613756613756613,
+            "detection_threshold": 0.5,
+            "fault_miss": 0.0013227513227513227,
+            "healthy_false_positive": 0.0,
+            "macro_f1": 0.9532006569474026,
+            "window_count": 2409
+          }
+        }
+      },
+      "selected_generator_updates": 3000
+    }
+  }
+}

@@ -1,5 +1,9 @@
 # eVTOL_Simulation
 
+V2 固定来源实验入口：[Simulink GAN V2](docs/SIMULINK_GAN_V2.md)。基于 `6f94612`，使用 12 个配对条件组、固定 6/3/3 训练/验证/测试用途、相同优化步数，以及验证选择后冻结的三个训练种子评价。配置为 `configs/simulink_gan_v2.json`；V1 的原始数据和结果继续保留。
+
+V2 已完成 228 次仿真和三个训练种子的统一测试：[实际结果与限制](docs/SIMULINK_GAN_V2_RESULTS.md)。补足训练预算的收益明显；原 GAN 与同量过采样的准确率接近，指令条件 GAN 的报警仍不稳定。
+
 原生 Simulink 数据接入现有 WGAN-GP／分类器的新入口：[`docs/SIMULINK_GAN.md`](docs/SIMULINK_GAN.md)，配置 `configs/simulink_gan_prototype.json`，运行 `python run_simulink_gan.py all`。该仿真域原型使用独立 profile 和目录，保留旧 Python 门禁，UAV-FD 实飞数据保持隔离。
 
 完整设计与代码导航：[当前设计总览](CURRENT_DESIGN.md)。2026-11-01 整理后，本地保留当前 Python 代码、当前 Simulink 模型、物理参数说明、研究设计与验证记录。历史版本与旧仿真结果见 [GitHub 归档](https://github.com/Gonxioa/eVTOL_Simulation/releases/tag/archive-20261030)。

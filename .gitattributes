@@ -3,3 +3,12 @@ simulink/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eo
 *.slx binary
 *.png binary
 *.pdf binary
+# Frozen V2 receipts hash exact source bytes; keep them stable on Windows clones.
+classify.py text eol=lf
+WGAN.py text eol=lf
+experiment_protocol.py text eol=lf
+simulink_data.py text eol=lf
+replay_diagnostics.py text eol=lf
+simulink_v2_experiment.py text eol=lf
+run_simulink_gan.py text eol=lf
+configs/simulink_gan_v2.json text eol=lf

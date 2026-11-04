@@ -1,0 +1,145 @@
+{
+  "classifier_steps": 1000,
+  "code_sha256": {
+    "WGAN.py": "b48762600b070e88cdf552e98cb715dd35144760dbb9372004cfd57622036082",
+    "classify.py": "2f2f88f02dfca474e2092c2b481760866058b78378512658da4e9adc6ada24a9",
+    "experiment_protocol.py": "ff34ccb9ef43f29f76ffb2775a0b4025b181078a680bdc1731a0c88ca4843175",
+    "replay_diagnostics.py": "36cf1dbf63afd71b58489a716637902faf20bafc039fb2f90ed24b4d6326ea93",
+    "run_simulink_gan.py": "1560f4cea2aebde268a0f41e0f421afc830dfdd6b9ae85b524caaf39fc27971c",
+    "simulink_data.py": "ce6f33f7dc10b67025c7f0f6a9bf6d7bf82467aa9d8736bfe92391126278ae42",
+    "simulink_v2_experiment.py": "25c7a607da564043ea0fa655943fe36e5d118f5c5adcf8e552ec633f8e20991c"
+  },
+  "config": {
+    "alarm_holds": [
+      2,
+      3,
+      5
+    ],
+    "alarm_objective": "miss_fraction + 0.05 * normal_false_alarm_events_per_minute + 0.05 * conditional_mean_detection_delay_s / 24; misses retained",
+    "alarm_thresholds": [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9
+    ],
+    "augmentation_ratios": [
+      0.0,
+      0.25,
+      0.5,
+      1.0
+    ],
+    "batch_size": 32,
+    "classifier_checkpoints": [
+      150,
+      250,
+      500,
+      1000
+    ],
+    "classifier_hidden_dim": 64,
+    "classifier_layers": 2,
+    "classifier_lr": 0.001,
+    "classifier_max_steps": 1000,
+    "classifier_short_steps": 150,
+    "critic_lr": 0.0001,
+    "dataset_version": "simulink_control_v3_observable_v2_12groups",
+    "detector_loss_weight": 0.5,
+    "development_seed": 42,
+    "feature_sets": [
+      "imu_cmd_rpm",
+      "imu_cmd",
+      "imu_rpm",
+      "imu"
+    ],
+    "final_seeds": [
+      42,
+      43,
+      44
+    ],
+    "generator_checkpoints": [
+      500,
+      1500,
+      3000
+    ],
+    "generator_embedding_dim": 16,
+    "generator_hidden_dim": 64,
+    "generator_layers": 2,
+    "generator_lr": 0.0001,
+    "generator_max_steps": 3000,
+    "generator_noise_dim": 64,
+    "gradient_penalty": 10.0,
+    "head_improvement_margin": 0.005,
+    "n_critic": 5,
+    "new_raw": "output_simulink_gan/v2_12groups/raw_new8",
+    "new_seeds": [
+      20261107,
+      20261108,
+      20261109,
+      20261110,
+      20261111,
+      20261112,
+      20261113,
+      20261114
+    ],
+    "old_raw": "output_simulink_gan/simulink_control_v3_observable_20261103_v1/raw",
+    "physical_regularization": 0.0,
+    "primary_feature": "imu_cmd_rpm",
+    "profile": "simulink_observable_v2",
+    "quality_classifier_max_steps": 1000,
+    "quality_samples_per_class": 32,
+    "replay_stride": 10,
+    "results_root": "output_simulink_gan/v2_12groups",
+    "roles": {
+      "test": [
+        9,
+        10,
+        11
+      ],
+      "train": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "validation": [
+        6,
+        7,
+        8
+      ]
+    },
+    "step": 50,
+    "task_family": 2,
+    "test_policy": "No test feature/statistic access before immutable configuration freeze and completion of all frozen model training.",
+    "window": 100
+  },
+  "config_signature": "8887de5c8ba456125f13ba787ee12eb4beb397927224a9d6038dcabb05b29e9a",
+  "final_test_groups": [
+    9,
+    10,
+    11
+  ],
+  "full_artifact_sha256": "0cb04c896c771cd0263aeca0328aa06d2f1b57b10be979c7792c2d740f99b797",
+  "receipt_scope": "Full immutable configuration and selection grids remain in the local results root.",
+  "registry_signature": "1130096d23aea976dbe1dd510649d2962d4be97f893236c98013a61a2113612d",
+  "scaler_sha256": {
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\scalers\\256c3c6f527837cb\\scalers.pkl": "d6ae2911c16594af56b43397105b73499229c0557a7658c276c86ba12c0452f5",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\scalers\\8ffa897b8401063a\\scalers.pkl": "b640824c4a0e8bd56b91de241f1ea14e0eca3d25d06c85776b1c22c2e3688dc0",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\scalers\\9dc6663de65d869c\\scalers.pkl": "4fb2823048c274888c2ca019daf6c4419ae706b65db66526be3b5c571fc9b274",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\scalers\\c0a2d8516ee4fae1\\scalers.pkl": "3cfa20c5dd399f0629b76e5cc12dfd6a801f57627ba53501c7d62e1ad5c6e522"
+  },
+  "selection_receipt": "validation_selection_receipt.json",
+  "selection_uses_only": "six train and three validation paired groups",
+  "signature": "ff6c26fbc613e6884af05434614a55f2f0b8e3e947fe4efe618a51ce0c7d9f76",
+  "test_features_read_before_freeze": 0,
+  "training_seeds": [
+    42,
+    43,
+    44
+  ]
+}

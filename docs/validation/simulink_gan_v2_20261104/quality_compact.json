@@ -1,0 +1,62 @@
+[
+  {
+    "exact_training_duplicates": 0,
+    "generator_updates": 500,
+    "lag_mae": 0.4284012470706665,
+    "lag_valid_pairs": 114,
+    "mode": "plain",
+    "raw_dynamic_generated_constant_pairs": 0,
+    "response_normalized_wasserstein": 0.5505965149817645,
+    "tstr_macro_f1": 0.1356941674880875
+  },
+  {
+    "exact_training_duplicates": 0,
+    "generator_updates": 1500,
+    "lag_mae": 0.5272624210810174,
+    "lag_valid_pairs": 114,
+    "mode": "plain",
+    "raw_dynamic_generated_constant_pairs": 0,
+    "response_normalized_wasserstein": 0.2541634592297507,
+    "tstr_macro_f1": 0.6248134012025335
+  },
+  {
+    "exact_training_duplicates": 0,
+    "generator_updates": 3000,
+    "lag_mae": 0.5377331742812297,
+    "lag_valid_pairs": 114,
+    "mode": "plain",
+    "raw_dynamic_generated_constant_pairs": 0,
+    "response_normalized_wasserstein": 0.26173051554023424,
+    "tstr_macro_f1": 0.5760667517473693
+  },
+  {
+    "exact_training_duplicates": 0,
+    "generator_updates": 500,
+    "lag_mae": 0.5543193140746004,
+    "lag_valid_pairs": 113,
+    "mode": "command",
+    "raw_dynamic_generated_constant_pairs": 1,
+    "response_normalized_wasserstein": 0.3824255838156836,
+    "tstr_macro_f1": 0.41129666154804806
+  },
+  {
+    "exact_training_duplicates": 0,
+    "generator_updates": 1500,
+    "lag_mae": 0.4607950535981463,
+    "lag_valid_pairs": 112,
+    "mode": "command",
+    "raw_dynamic_generated_constant_pairs": 2,
+    "response_normalized_wasserstein": 0.2576983863883224,
+    "tstr_macro_f1": 0.7090530050319346
+  },
+  {
+    "exact_training_duplicates": 0,
+    "generator_updates": 3000,
+    "lag_mae": 0.37903473623578415,
+    "lag_valid_pairs": 112,
+    "mode": "command",
+    "raw_dynamic_generated_constant_pairs": 2,
+    "response_normalized_wasserstein": 0.2074983990183909,
+    "tstr_macro_f1": 0.8440988129800807
+  }
+]

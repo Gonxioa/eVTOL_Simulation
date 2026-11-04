@@ -1,0 +1,414 @@
+{
+  "classifier_receipts": [
+    {
+      "checkpoint_sha256": "f213a9f4af702defb2a9ef66fa646a8e3c9c62aa78026d5937b1d89e2ce9be5a",
+      "dual_head": false,
+      "generated_joined": 0,
+      "optimizer_updates": 1000,
+      "seed": 42,
+      "training_examples": 4818,
+      "variant": "ablation_imu"
+    },
+    {
+      "checkpoint_sha256": "42bfaa4134b429f8507942b2e4d4bf93c4754f6f366ea03caead6fdca386e0fc",
+      "dual_head": false,
+      "generated_joined": 0,
+      "optimizer_updates": 1000,
+      "seed": 42,
+      "training_examples": 4818,
+      "variant": "ablation_imu_cmd"
+    },
+    {
+      "checkpoint_sha256": "49a7fbdac886ba0792d54cfd18494f20ec6a4df685015c5864dd5ffdb01d8da7",
+      "dual_head": false,
+      "generated_joined": 0,
+      "optimizer_updates": 1000,
+      "seed": 42,
+      "training_examples": 4818,
+      "variant": "ablation_imu_rpm"
+    },
+    {
+      "checkpoint_sha256": "b8adf3f95870e89e9f4a658ae7cfbac58fecdeceb4d0ceac27fc729759170487",
+      "dual_head": false,
+      "generated_joined": 2409,
+      "optimizer_updates": 1000,
+      "seed": 42,
+      "training_examples": 7227,
+      "variant": "command"
+    },
+    {
+      "checkpoint_sha256": "de5205866342a6b622a266a1e95be1588077105c8f7ab7b91367adf1f4c230ce",
+      "dual_head": true,
+      "generated_joined": 0,
+      "optimizer_updates": 1000,
+      "seed": 42,
+      "training_examples": 4818,
+      "variant": "dual_candidate"
+    },
+    {
+      "checkpoint_sha256": "a581a4082f6372b02a9e559c681ad941f3590325dcdf89004828804cf68d6e20",
+      "dual_head": false,
+      "generated_joined": 1204,
+      "optimizer_updates": 1000,
+      "seed": 42,
+      "training_examples": 6022,
+      "variant": "plain"
+    },
+    {
+      "checkpoint_sha256": "1e951a0cc6979a53b6bd392ba44db69dbbbecd35d91ad12b12727c2cb7d3c412",
+      "dual_head": false,
+      "generated_joined": 0,
+      "optimizer_updates": 1000,
+      "seed": 42,
+      "training_examples": 4818,
+      "variant": "raw_fixed"
+    },
+    {
+      "checkpoint_sha256": "58edb3805c5edff410dd2390b526d4c149979f71ce7be9072c3464a24b075472",
+      "dual_head": false,
+      "generated_joined": 0,
+      "optimizer_updates": 150,
+      "seed": 42,
+      "training_examples": 4818,
+      "variant": "raw_short"
+    },
+    {
+      "checkpoint_sha256": "ea9f749d9bb195d9b45e501ee0ffb7c5be9f92fc8fab8e2bff96d560fbbf7cba",
+      "dual_head": false,
+      "generated_joined": 0,
+      "optimizer_updates": 1000,
+      "seed": 42,
+      "training_examples": 4818,
+      "variant": "raw_single"
+    },
+    {
+      "checkpoint_sha256": "6407f767aac96e57971b19458a8766503cb6a3c41f20ca714f44e4ce6f1cbf4b",
+      "dual_head": false,
+      "generated_joined": 1204,
+      "optimizer_updates": 1000,
+      "seed": 42,
+      "training_examples": 6022,
+      "variant": "ros"
+    },
+    {
+      "checkpoint_sha256": "c6b7865347b7331e4872ca3f8c060a3ae40e4a888f8b0300d85b8ae1a90d6b5e",
+      "dual_head": false,
+      "generated_joined": 2409,
+      "optimizer_updates": 1000,
+      "seed": 42,
+      "training_examples": 7227,
+      "variant": "ros_matched_command"
+    },
+    {
+      "checkpoint_sha256": "6407f767aac96e57971b19458a8766503cb6a3c41f20ca714f44e4ce6f1cbf4b",
+      "dual_head": false,
+      "generated_joined": 1204,
+      "optimizer_updates": 1000,
+      "seed": 42,
+      "training_examples": 6022,
+      "variant": "ros_matched_plain"
+    },
+    {
+      "checkpoint_sha256": "2b6a760875b10e7bc7e62de2792bc824f65dfa93f63ace7bc64c9c8ae5b26c1c",
+      "dual_head": false,
+      "generated_joined": 0,
+      "optimizer_updates": 1000,
+      "seed": 43,
+      "training_examples": 4818,
+      "variant": "ablation_imu"
+    },
+    {
+      "checkpoint_sha256": "b3bc8b1288da414204e30fbda4ae231e74d8f99e732109ec78dc1aaeffe6cc4b",
+      "dual_head": false,
+      "generated_joined": 0,
+      "optimizer_updates": 1000,
+      "seed": 43,
+      "training_examples": 4818,
+      "variant": "ablation_imu_cmd"
+    },
+    {
+      "checkpoint_sha256": "20c8ecbb7b602fc22d84b2037fb7acb1b4f5ce1fc1601d93ea577effcddfa4f5",
+      "dual_head": false,
+      "generated_joined": 0,
+      "optimizer_updates": 1000,
+      "seed": 43,
+      "training_examples": 4818,
+      "variant": "ablation_imu_rpm"
+    },
+    {
+      "checkpoint_sha256": "308e9ce8cf0eb32a2382c1d39a063653a9f96467ea5beb91f7c5ff54e97c3daf",
+      "dual_head": false,
+      "generated_joined": 2409,
+      "optimizer_updates": 1000,
+      "seed": 43,
+      "training_examples": 7227,
+      "variant": "command"
+    },
+    {
+      "checkpoint_sha256": "d4d7a948b90bf9aa7b1e14d51bdf3333b4282204170376cf5c8efc7cf0242d3e",
+      "dual_head": true,
+      "generated_joined": 0,
+      "optimizer_updates": 1000,
+      "seed": 43,
+      "training_examples": 4818,
+      "variant": "dual_candidate"
+    },
+    {
+      "checkpoint_sha256": "0da6ba56243a4459b3420a025f46a79c00dfb84aec60bb49c21c5c68c2d45d9b",
+      "dual_head": false,
+      "generated_joined": 1204,
+      "optimizer_updates": 1000,
+      "seed": 43,
+      "training_examples": 6022,
+      "variant": "plain"
+    },
+    {
+      "checkpoint_sha256": "42b541a804b04c99cdcf034452736c5abf592a5d941eebf0d8c5c1932ee1bffc",
+      "dual_head": false,
+      "generated_joined": 0,
+      "optimizer_updates": 1000,
+      "seed": 43,
+      "training_examples": 4818,
+      "variant": "raw_fixed"
+    },
+    {
+      "checkpoint_sha256": "9a1f2f6968b1a434df082f7cff730ed56bf0861f1ef1601c25a725f6d5539586",
+      "dual_head": false,
+      "generated_joined": 0,
+      "optimizer_updates": 150,
+      "seed": 43,
+      "training_examples": 4818,
+      "variant": "raw_short"
+    },
+    {
+      "checkpoint_sha256": "42b541a804b04c99cdcf034452736c5abf592a5d941eebf0d8c5c1932ee1bffc",
+      "dual_head": false,
+      "generated_joined": 0,
+      "optimizer_updates": 1000,
+      "seed": 43,
+      "training_examples": 4818,
+      "variant": "raw_single"
+    },
+    {
+      "checkpoint_sha256": "50393e2062452b61a09f1c9c4eae07d7a8112480659f346a6bc5de73ec996af6",
+      "dual_head": false,
+      "generated_joined": 1204,
+      "optimizer_updates": 1000,
+      "seed": 43,
+      "training_examples": 6022,
+      "variant": "ros"
+    },
+    {
+      "checkpoint_sha256": "3d91ccbcacc59686490123ae76355b2a67913e532e391dd74a26782ebcd3ea54",
+      "dual_head": false,
+      "generated_joined": 2409,
+      "optimizer_updates": 1000,
+      "seed": 43,
+      "training_examples": 7227,
+      "variant": "ros_matched_command"
+    },
+    {
+      "checkpoint_sha256": "50393e2062452b61a09f1c9c4eae07d7a8112480659f346a6bc5de73ec996af6",
+      "dual_head": false,
+      "generated_joined": 1204,
+      "optimizer_updates": 1000,
+      "seed": 43,
+      "training_examples": 6022,
+      "variant": "ros_matched_plain"
+    },
+    {
+      "checkpoint_sha256": "6ca9943509641943abb8f3fd36500f58508f4838bda786e1832145acdbb973f7",
+      "dual_head": false,
+      "generated_joined": 0,
+      "optimizer_updates": 1000,
+      "seed": 44,
+      "training_examples": 4818,
+      "variant": "ablation_imu"
+    },
+    {
+      "checkpoint_sha256": "e6ff483dc0f7e005d92d870ba7aa22f1ae1922148384dccb93b286d1545ace4b",
+      "dual_head": false,
+      "generated_joined": 0,
+      "optimizer_updates": 1000,
+      "seed": 44,
+      "training_examples": 4818,
+      "variant": "ablation_imu_cmd"
+    },
+    {
+      "checkpoint_sha256": "e3b2d76abad1eedf1e21feeb2ab3a32f34d91d7fbb60567bac295d43d2448b99",
+      "dual_head": false,
+      "generated_joined": 0,
+      "optimizer_updates": 1000,
+      "seed": 44,
+      "training_examples": 4818,
+      "variant": "ablation_imu_rpm"
+    },
+    {
+      "checkpoint_sha256": "f26618a11722f8d43a63503fa35bf69b4ad7207f32a80ed57a7a19fa0d317b13",
+      "dual_head": false,
+      "generated_joined": 2409,
+      "optimizer_updates": 1000,
+      "seed": 44,
+      "training_examples": 7227,
+      "variant": "command"
+    },
+    {
+      "checkpoint_sha256": "0d7f14a82ec7f2cfb71591d3eb25d38f486348d6b0e3cd376220606b4d818575",
+      "dual_head": true,
+      "generated_joined": 0,
+      "optimizer_updates": 1000,
+      "seed": 44,
+      "training_examples": 4818,
+      "variant": "dual_candidate"
+    },
+    {
+      "checkpoint_sha256": "9c7be0e18579644557e7cb86c319fddf196ddde90c7e5fb9c6cdfeb04a2ea2c7",
+      "dual_head": false,
+      "generated_joined": 1204,
+      "optimizer_updates": 1000,
+      "seed": 44,
+      "training_examples": 6022,
+      "variant": "plain"
+    },
+    {
+      "checkpoint_sha256": "1b450919f664e844ddf002daa9529bd574529fa942db6c4474dea2a875290c2a",
+      "dual_head": false,
+      "generated_joined": 0,
+      "optimizer_updates": 1000,
+      "seed": 44,
+      "training_examples": 4818,
+      "variant": "raw_fixed"
+    },
+    {
+      "checkpoint_sha256": "f973a09929665b28f48e1de3cbf79dddc240f341d078beba4bea131727d3ff6f",
+      "dual_head": false,
+      "generated_joined": 0,
+      "optimizer_updates": 150,
+      "seed": 44,
+      "training_examples": 4818,
+      "variant": "raw_short"
+    },
+    {
+      "checkpoint_sha256": "1b450919f664e844ddf002daa9529bd574529fa942db6c4474dea2a875290c2a",
+      "dual_head": false,
+      "generated_joined": 0,
+      "optimizer_updates": 1000,
+      "seed": 44,
+      "training_examples": 4818,
+      "variant": "raw_single"
+    },
+    {
+      "checkpoint_sha256": "4b159ba378943254cc56983423cb92540ed00204d71b9e4dfe2fa02a00dd5875",
+      "dual_head": false,
+      "generated_joined": 1204,
+      "optimizer_updates": 1000,
+      "seed": 44,
+      "training_examples": 6022,
+      "variant": "ros"
+    },
+    {
+      "checkpoint_sha256": "59b8e7665621ec76dea19f7c69b11a533a69a99963794f94e70c5dd69fd6c033",
+      "dual_head": false,
+      "generated_joined": 2409,
+      "optimizer_updates": 1000,
+      "seed": 44,
+      "training_examples": 7227,
+      "variant": "ros_matched_command"
+    },
+    {
+      "checkpoint_sha256": "4b159ba378943254cc56983423cb92540ed00204d71b9e4dfe2fa02a00dd5875",
+      "dual_head": false,
+      "generated_joined": 1204,
+      "optimizer_updates": 1000,
+      "seed": 44,
+      "training_examples": 6022,
+      "variant": "ros_matched_plain"
+    }
+  ],
+  "frozen_signature": "ff6c26fbc613e6884af05434614a55f2f0b8e3e947fe4efe618a51ce0c7d9f76",
+  "generator_receipts": [
+    {
+      "critic_updates": 15000,
+      "generator_updates": 3000,
+      "mode": "command",
+      "parameter_max_delta": 0.2853199541568756,
+      "seed": 42
+    },
+    {
+      "critic_updates": 15000,
+      "generator_updates": 3000,
+      "mode": "plain",
+      "parameter_max_delta": 0.2801729440689087,
+      "seed": 42
+    },
+    {
+      "critic_updates": 15000,
+      "generator_updates": 3000,
+      "mode": "command",
+      "parameter_max_delta": 0.27530041337013245,
+      "seed": 43
+    },
+    {
+      "critic_updates": 15000,
+      "generator_updates": 3000,
+      "mode": "plain",
+      "parameter_max_delta": 0.2796962261199951,
+      "seed": 43
+    },
+    {
+      "critic_updates": 15000,
+      "generator_updates": 3000,
+      "mode": "command",
+      "parameter_max_delta": 0.2831704020500183,
+      "seed": 44
+    },
+    {
+      "critic_updates": 15000,
+      "generator_updates": 3000,
+      "mode": "plain",
+      "parameter_max_delta": 0.27887481451034546,
+      "seed": 44
+    }
+  ],
+  "independent_paired_groups": 12,
+  "model_parameters_identical": true,
+  "old_hashes_preserved": true,
+  "old_source_files_referenced": 76,
+  "optimizer_counts_verified": true,
+  "passed": true,
+  "physical_model_and_uavfd_unchanged": true,
+  "record_count": 228,
+  "roles": {
+    "test": [
+      9,
+      10,
+      11
+    ],
+    "train": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "validation": [
+      6,
+      7,
+      8
+    ]
+  },
+  "scalers_training_only_verified": true,
+  "statistical_unit": "paired condition group, not simulation windows or training-seed repeats",
+  "test_access_only_with_frozen_authorization": true,
+  "transition_windows": {
+    "test": 162,
+    "train": 324,
+    "validation": 162
+  },
+  "window_counts": {
+    "test": 2409,
+    "train": 4818,
+    "validation": 2409
+  }
+}

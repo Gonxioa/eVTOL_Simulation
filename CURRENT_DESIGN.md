@@ -1,5 +1,9 @@
 # 当前设计与代码总览
 
+2026-11-04：功能分支 `codex/simulink-gan-v2` 实施固定来源 V2，对照流程与冻结规则见 [V2 说明](docs/SIMULINK_GAN_V2.md)。六旋翼模型和控制参数保持原样；新输出独立放在 `output_simulink_gan/v2_12groups/`，不覆盖 V1，不解锁 UAV-FD 最终测试。
+
+本轮 228 条仿真记录及三个训练种子的实际评价已完成，见 [V2 结果](docs/SIMULINK_GAN_V2_RESULTS.md)。主要增益来自补足训练预算，尚未证明 GAN 优于同量过采样；指令条件 GAN 的报警跨种子稳定性不足。
+
 2026-11-01 完成版本归档与当前文件命名整理。当前分支：`codex/current-model`；主运行模型：`simulink/hex_evtol.slx`；参数版本：`control_v3_20261023`。
 
 日常入口与结果位置见 [Simulink 当前使用说明](simulink/README.md)。在 MATLAB 的 `simulink` 目录运行 `my_simulation`，或 `report=run_hex_healthy_assessment`。

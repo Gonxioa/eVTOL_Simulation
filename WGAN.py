@@ -103,16 +103,18 @@ def sample_noise(batch_size):
 
 
 class Generator(nn.Module):
-    def __init__(self):
+    def __init__(self, command_indices=None):
         super().__init__()
+        self.command_indices=tuple(command_indices or ())
+        self.response_indices=tuple(i for i in range(N_FEATURES) if i not in self.command_indices)
         self.label_embed = nn.Embedding(N_CLASSES, EMBED_DIM)
         self.lstm = nn.LSTM(
-            NOISE_DIM + EMBED_DIM, HIDDEN_DIM, N_LAYERS,
+            NOISE_DIM + EMBED_DIM + len(self.command_indices), HIDDEN_DIM, N_LAYERS,
             batch_first=True, dropout=0.2 if N_LAYERS > 1 else 0.0,
         )
-        self.out = nn.Sequential(nn.Linear(HIDDEN_DIM, N_FEATURES), nn.Tanh())
+        self.out = nn.Sequential(nn.Linear(HIDDEN_DIM, len(self.response_indices)), nn.Tanh())
 
-    def forward(self, z, labels):
+    def forward(self, z, labels, commands=None):
         if z.ndim == 2:
             z_seq = z.unsqueeze(1).expand(-1, SEQ_LEN, -1)
         elif z.ndim == 3 and z.shape[1] == SEQ_LEN:
@@ -120,13 +122,23 @@ class Generator(nn.Module):
         else:
             raise ValueError(f"z形状必须为(B,{NOISE_DIM})或(B,{SEQ_LEN},{NOISE_DIM})")
         label_seq = self.label_embed(labels).unsqueeze(1).expand(-1, SEQ_LEN, -1)
-        sequence, _ = self.lstm(torch.cat([z_seq, label_seq], dim=-1))
-        return self.out(sequence)
+        inputs=[z_seq,label_seq]
+        if self.command_indices:
+            if commands is None or commands.shape!=(len(z),SEQ_LEN,len(self.command_indices)):
+                raise ValueError('Conditional generator requires the actual command sequence')
+            inputs.append(commands)
+        sequence, _ = self.lstm(torch.cat(inputs, dim=-1))
+        response=self.out(sequence)
+        if not self.command_indices: return response
+        full=response.new_zeros((len(z),SEQ_LEN,N_FEATURES))
+        full=full.index_copy(2,torch.as_tensor(self.response_indices,device=response.device),response)
+        return full.index_copy(2,torch.as_tensor(self.command_indices,device=response.device),commands)
 
 
 class Discriminator(nn.Module):
-    def __init__(self):
+    def __init__(self, command_indices=None):
         super().__init__()
+        self.command_indices=tuple(command_indices or ())
         self.label_embed = nn.Embedding(N_CLASSES, EMBED_DIM)
         self.conv = nn.Sequential(
             nn.Conv1d(N_FEATURES + EMBED_DIM, 64, 4, 2, 1), nn.LeakyReLU(0.2),
@@ -136,17 +148,20 @@ class Discriminator(nn.Module):
         self.pool = nn.AdaptiveAvgPool1d(12)
         self.out = nn.Linear(256 * 12, 1)
 
-    def forward(self, x, labels):
+    def forward(self, x, labels, commands=None):
+        if self.command_indices:
+            if commands is None: raise ValueError('Conditional critic requires command conditioning')
+            x=x.index_copy(2,torch.as_tensor(self.command_indices,device=x.device),commands)
         label_seq = self.label_embed(labels).unsqueeze(1).expand(-1, x.size(1), -1)
         values = torch.cat([x, label_seq], dim=-1).permute(0, 2, 1)
         values = self.pool(self.conv(values)).reshape(values.size(0), -1)
         return self.out(values)
 
 
-def gradient_penalty(discriminator, real, fake, labels):
+def gradient_penalty(discriminator, real, fake, labels, commands=None):
     alpha = torch.rand(real.size(0), 1, 1, device=real.device)
     interp = (alpha * real + (1 - alpha) * fake).requires_grad_(True)
-    score = discriminator(interp, labels)
+    score = discriminator(interp, labels,commands) if commands is not None else discriminator(interp, labels)
     gradients = torch.autograd.grad(
         score, interp, torch.ones_like(score), create_graph=True, retain_graph=True
     )[0]
@@ -339,6 +354,85 @@ def train(
         torch.save(G.state_dict(), save_dir / "G_final.pth")
         torch.save(D.state_dict(), save_dir / "D_final.pth")
     return G, D, history["loss_G"], history["loss_D"]
+
+
+def train_generator_steps(X,y,save_dir,generator_max_steps=3000,checkpoints=(500,1500,3000),
+                          command_indices=None,seed=42,batch_size=32,signature=None):
+    """Same LSTM/conv WGAN-GP, budgeted by effective generator optimizer updates."""
+    import shutil
+    from provenance import write_json
+    directory=Path(save_dir); directory.mkdir(parents=True,exist_ok=True)
+    if len(X)!=len(y) or len(X)<1 or generator_max_steps<1: raise ValueError('Invalid generator budget/data')
+    torch.manual_seed(seed)
+    if torch.cuda.is_available(): torch.cuda.manual_seed_all(seed)
+    rng=np.random.default_rng(seed+23)
+    G=Generator(command_indices).to(DEVICE); D=Discriminator(command_indices).to(DEVICE)
+    initial={k:v.detach().cpu().clone() for k,v in G.state_dict().items()}
+    optg=optim.Adam(G.parameters(),lr=LR_G,betas=(0.,.9)); optd=optim.Adam(D.parameters(),lr=LR_D,betas=(0.,.9))
+    start=0; history=[]; last=directory/'last.pt'
+    if last.exists():
+        saved=torch.load(last,map_location=DEVICE,weights_only=False)
+        if saved['signature']!=signature: raise RuntimeError('Incompatible GAN optimizer checkpoint')
+        G.load_state_dict(saved['generator']); D.load_state_dict(saved['critic'])
+        optg.load_state_dict(saved['optimizer_g']); optd.load_state_dict(saved['optimizer_d'])
+        start=saved['generator_updates']; history=saved['history']; initial=saved['initial_generator']
+        rng.bit_generator.state=saved['sampler_state']; torch.set_rng_state(saved['torch_rng'].cpu())
+        if DEVICE.type=='cuda': torch.cuda.set_rng_state_all([v.cpu() for v in saved['cuda_rng']])
+    for step in range(start+1,int(generator_max_steps)+1):
+        G.train(); D.train(); dvalues=[]
+        for _ in range(N_CRITIC):
+            indices=rng.integers(0,len(y),size=batch_size)
+            real=torch.as_tensor(X[indices],dtype=torch.float32,device=DEVICE)
+            labels=torch.as_tensor(y[indices],dtype=torch.long,device=DEVICE)
+            commands=real[:,:,list(command_indices)] if command_indices else None
+            for p in D.parameters(): p.requires_grad_(True)
+            optd.zero_grad(set_to_none=True)
+            fake=G(sample_noise(len(labels)),labels,commands).detach()
+            lossd=(D(fake,labels,commands).mean()-D(real,labels,commands).mean()+
+                   LAMBDA_GP*gradient_penalty(D,real,fake,labels,commands))
+            lossd.backward(); optd.step(); dvalues.append(float(lossd.detach()))
+        for p in D.parameters(): p.requires_grad_(False)
+        optg.zero_grad(set_to_none=True)
+        fake=G(sample_noise(len(labels)),labels,commands)
+        lossg=-D(fake,labels,commands).mean(); lossg.backward(); optg.step()
+        item=dict(generator_updates=step,critic_updates=step*N_CRITIC,loss_g=float(lossg.detach()),loss_d=float(np.mean(dvalues)))
+        history.append(item)
+        if step%100==0: print('GENERATOR_STEP',directory.name,step,'/',generator_max_steps,item,flush=True)
+        if step in checkpoints or step==generator_max_steps:
+            delta=max(float((v.detach().cpu()-initial[k].cpu()).abs().max()) for k,v in G.state_dict().items())
+            state=dict(signature=signature,generator=G.state_dict(),critic=D.state_dict(),optimizer_g=optg.state_dict(),
+                       optimizer_d=optd.state_dict(),generator_updates=step,critic_updates=step*N_CRITIC,history=history,
+                       initial_generator=initial,sampler_state=rng.bit_generator.state,torch_rng=torch.get_rng_state(),
+                       cuda_rng=torch.cuda.get_rng_state_all() if DEVICE.type=='cuda' else [],command_indices=command_indices,
+                       generator_parameter_max_delta=delta)
+            temporary=directory/'checkpoint.tmp'; torch.save(state,temporary)
+            os.replace(temporary,directory/f'checkpoint_{step}.pt'); shutil.copy2(directory/f'checkpoint_{step}.pt',last)
+            write_json(directory/'training_curve.json',history)
+            print('GENERATOR_CHECKPOINT',directory,step,'delta',delta,flush=True)
+    G.eval(); D.eval()
+    G.step_receipt=dict(generator_updates=generator_max_steps,critic_updates=generator_max_steps*N_CRITIC,
+                        command_conditioned=bool(command_indices),updates_this_call=generator_max_steps-start)
+    return G,D
+
+
+def generate_from_pool(G,counts,X_train,y_train,seed=42,batch_size=32):
+    """Commands are drawn only from same-class training windows, never validation/test."""
+    rng=np.random.default_rng(seed); torch.manual_seed(seed)
+    if torch.cuda.is_available(): torch.cuda.manual_seed_all(seed)
+    windows=[]; labels=[]; references=[]; G.eval()
+    with torch.inference_mode():
+        for label,count in counts.items():
+            pool=np.flatnonzero(y_train==int(label))
+            if count and not len(pool): raise ValueError('No same-class training command source')
+            for start in range(0,int(count),batch_size):
+                size=min(batch_size,int(count)-start); refs=rng.choice(pool,size=size,replace=True)
+                conditions=torch.as_tensor(X_train[refs][:,:,list(G.command_indices)],device=DEVICE) if G.command_indices else None
+                by=torch.full((size,),int(label),dtype=torch.long,device=DEVICE)
+                fake=G(sample_noise(size),by,conditions).cpu().numpy().astype(np.float32)
+                windows.append(fake); labels.extend([int(label)]*size)
+                references.extend(refs.tolist() if G.command_indices else [-1]*size)
+    if not windows: return np.empty((0,SEQ_LEN,N_FEATURES),np.float32),np.empty(0,np.int64),np.empty(0,np.int64)
+    return np.concatenate(windows),np.asarray(labels,np.int64),np.asarray(references,np.int64)
 
 
 def _generation_counts(target_labels, samples_per_label):
