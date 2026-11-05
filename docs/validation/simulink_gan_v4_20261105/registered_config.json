@@ -1,0 +1,155 @@
+{
+  "config": {
+    "G2_enabled": false,
+    "alarm_holds": [
+      2,
+      3,
+      5
+    ],
+    "alarm_thresholds": [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9
+    ],
+    "augmentation_counts": "floor(original class count * ratio); ROS matches every actually admitted GAN class count",
+    "augmentation_ratios": [
+      0.0,
+      0.25,
+      0.5,
+      1.0
+    ],
+    "baseline_commit": "2e033334637be102e9a28c7ce0955d1f7d1f189f",
+    "basis": {
+      "CNN": "One predeclared convolutional representation control; no hyperparameter search; parameter count and compute cost reported",
+      "G1": "ACGAN/GPSC-inspired external frozen-teacher variant; not a reproduction; 0.1 and 1.0 are a finite loss-weight sensitivity grid including the zero-weight G0 control",
+      "confirmation": "Budget-bounded new-source confirmation after development; statistical unit is a paired nuisance-condition group",
+      "optimization": "Preserve V3 LSTM/Adam starting values; 1k/2k/4k checks distinguish limited training from lack of observed information",
+      "sampling_seeds": "Replication controls only, not independent flight sources",
+      "window_candidates": "Finite sensitivity study around V3 1s; candidates are engineering budget choices, not established physical constants"
+    },
+    "batch_size": 32,
+    "budget_candidates": [
+      1000,
+      2000,
+      4000
+    ],
+    "checkpoints": [
+      250,
+      500,
+      1000,
+      2000,
+      4000
+    ],
+    "class_constraint_weights": [
+      0.0,
+      0.1,
+      1.0
+    ],
+    "cnn_channels": [
+      64,
+      96,
+      128
+    ],
+    "cnn_kernels": [
+      5,
+      5,
+      3
+    ],
+    "cnn_pool_bins": 8,
+    "cnn_strides": [
+      2,
+      2,
+      2
+    ],
+    "common_end_anchor": 299,
+    "confirmation_max_groups": 12,
+    "confirmation_min_groups": 6,
+    "confirmation_planning_halfwidth": 0.05,
+    "confirmation_rule": "After all development, use group-level paired GAN-minus-matched-ROS validation differences averaged across training seeds: n=clip(ceil((1.96*sample_sd/0.05)^2),6,12). Normal approximation with only three development groups is an unstable budget-planning heuristic, not a power or CI guarantee. Freeze n and first unused sequential nuisance seeds before collection; never top up after test scores.",
+    "coverage_grid": "native_from_zero",
+    "critic_lr": 0.0001,
+    "dropout": 0.3,
+    "equal_control": "Best of 6s/12s raw-prefix validation candidates; diagnostic only, not eligible to replace the selected prefix",
+    "equal_sampling_seeds": [
+      731905,
+      731906,
+      731907
+    ],
+    "generator_checkpoints": [
+      500,
+      1500,
+      3000
+    ],
+    "generator_embedding_dim": 16,
+    "generator_hidden": 64,
+    "generator_layers": 2,
+    "generator_lr": 0.0001,
+    "generator_max_steps": 3000,
+    "generator_noise_dim": 64,
+    "generator_seeds": [
+      142,
+      143,
+      144
+    ],
+    "gradient_penalty": 10.0,
+    "learning_rate": 0.001,
+    "lstm_hidden": 64,
+    "lstm_layers": 2,
+    "max_batch_A_neural_trajectories": 46,
+    "max_batch_A_statistical_fits": 6,
+    "max_selected_windows": 2,
+    "memorization_max_steps": 1000,
+    "memorization_seed": 9042,
+    "memorization_windows_per_class": 8,
+    "n_critic": 5,
+    "native_joint_review": "Two screened windows x LSTM/CNN x three seeds at selected common-grid update budget; all rebuilt on native-from-zero pools, trained from scratch. Then choose family/window and compare prefix coverage at that fixed budget.",
+    "paired_seed_design": "Index-pair generator142/143/144 and ROS242/243/244 with classifier42/43/44; these are three joint repeats, not a variance decomposition or nine independent flight groups",
+    "prefix_candidates_s": [
+      6,
+      12,
+      24
+    ],
+    "primary_feature": "imu_rpm",
+    "profile": "simulink_observable_v4_evidence",
+    "quality_probes_per_class": 32,
+    "quality_support": "Stages report support and both fixed-19 and present-class macro-F1. Timing and phase metadata never enter neural inputs.",
+    "ranking": "For each training seed pool all three validation groups and compute fixed-19 argmax macro-F1; rank by the mean across seeds rounded to 8 decimals. Ties prefer shorter windows, fewer updates, fewer parameters, then family name. All per-group and critical-class results retained; reference selection is not deployment acceptance.",
+    "replay_stride": 10,
+    "results_root": "output_simulink_gan/v4_evidence_20261105",
+    "reuse_policy": "Only exact train-array, scaler, model and optimizer signature matches may resume; changing the endpoint grid always changes the pool identity",
+    "ros_seeds": [
+      242,
+      243,
+      244
+    ],
+    "sample_hz": 100,
+    "screen_grid": "common_max_window",
+    "screen_steps": 1000,
+    "statistical_baseline": "RF200_leaf2_sqrt; channel mean/std/min/max/RMS/mean_abs_difference/lag1_correlation plus pairwise correlations and demeaned PSD band powers",
+    "statistical_min_leaf": 2,
+    "statistical_trees": 200,
+    "synthetic_filter_enabled": false,
+    "teacher_gate": "G1 is exploratory and runs only if every class has positive validation recall in every raw-baseline seed AND healthy/remaining-80% joint accuracy exceeds 1/19 in every seed. This only rejects collapsed teachers; it does not certify generated labels.",
+    "test_policy": "V1/V2/V3 test sources are historical/exposed. Only six original train and three original validation groups enter development. New confirmation features and caches remain locked until every selection/model/scaler/alarm policy is immutable.",
+    "training_seeds": [
+      42,
+      43,
+      44
+    ],
+    "training_stride": 50,
+    "v3_root": "output_simulink_gan/v3_imu_rpm_prefix_20261105",
+    "window_candidates": [
+      50,
+      100,
+      200,
+      300
+    ]
+  },
+  "signature": "8e98ef0304f87e3d734329f2496f237858fe830753e1e62a6c2770d4d0a89c14"
+}

@@ -1,0 +1,334 @@
+{
+  "G1_weight": 0.1,
+  "GAN_ratios": {
+    "0.0": {
+      "candidates": [
+        {
+          "mean_macro_f1": 0.541985072404862,
+          "ratio": 0.0,
+          "scores": [
+            0.543810476125644,
+            0.5337116174604511,
+            0.5484331236284911
+          ],
+          "signatures": [
+            "238493df7fa7b30c4aee8b9ad9213db5a62205b8bc9dd43b6d360a0313ae47ed",
+            "aa2230b80c569247cf51451fdfa4a7241d2e90fb2a0af41ef132a6725a92ec52",
+            "82eed349d83e744c818dd5f940be85fd716691e88259d739dc1077808285258b"
+          ]
+        },
+        {
+          "mean_macro_f1": 0.5443258321198851,
+          "ratio": 0.25,
+          "scores": [
+            0.5506867857459117,
+            0.5558120137992196,
+            0.5264786968145241
+          ],
+          "signatures": [
+            "418c7af68d3dcfad6255210edeb5a268939a0d09ae4beabc1db15a1ec44dba45",
+            "546aa76f57304d8ac8894a3442d8bb687179f1b7030eee714b2b50a6af9c78a4",
+            "3ffd0377b90c94392b091c3893deeefdebb6913e0bf3ce993bc4fc2c81ee242f"
+          ]
+        },
+        {
+          "mean_macro_f1": 0.5503087312228125,
+          "ratio": 0.5,
+          "scores": [
+            0.544657257492949,
+            0.5570089803638912,
+            0.5492599558115974
+          ],
+          "signatures": [
+            "c3eabcbee52f6cb5f7b5ce75fbb58e429766a1c2bb5adfcc42821f5261545895",
+            "3607d86e30f2a97a6bc30171aa1a4d03a33cff3eba3d0d1b3900cb7c17a789ed",
+            "2818fd694b6a17b351abf1d81a1f2acf09e770a83b8f05f729aba2a9ae8c183d"
+          ]
+        },
+        {
+          "mean_macro_f1": 0.5483085608766469,
+          "ratio": 1.0,
+          "scores": [
+            0.5261888445352679,
+            0.5551183389549764,
+            0.5636184991396964
+          ],
+          "signatures": [
+            "7f9e8c4d232eadd3d1348be4c12d2901b86c2f7531b0595a695bf4b6034c13a0",
+            "b98f8afb5faa5b6db544e6ff5a36218c2b4767f1b5c9062a0ea34be25304a3b6",
+            "79b70f0b4fcdabc6a9b8c1f37f3d3287153139ff84caa1674417786860de3a44"
+          ]
+        }
+      ],
+      "selected": {
+        "mean_macro_f1": 0.5503087312228125,
+        "ratio": 0.5,
+        "scores": [
+          0.544657257492949,
+          0.5570089803638912,
+          0.5492599558115974
+        ],
+        "signatures": [
+          "c3eabcbee52f6cb5f7b5ce75fbb58e429766a1c2bb5adfcc42821f5261545895",
+          "3607d86e30f2a97a6bc30171aa1a4d03a33cff3eba3d0d1b3900cb7c17a789ed",
+          "2818fd694b6a17b351abf1d81a1f2acf09e770a83b8f05f729aba2a9ae8c183d"
+        ]
+      }
+    },
+    "0.1": {
+      "candidates": [
+        {
+          "mean_macro_f1": 0.541985072404862,
+          "ratio": 0.0,
+          "scores": [
+            0.543810476125644,
+            0.5337116174604511,
+            0.5484331236284911
+          ],
+          "signatures": [
+            "238493df7fa7b30c4aee8b9ad9213db5a62205b8bc9dd43b6d360a0313ae47ed",
+            "aa2230b80c569247cf51451fdfa4a7241d2e90fb2a0af41ef132a6725a92ec52",
+            "82eed349d83e744c818dd5f940be85fd716691e88259d739dc1077808285258b"
+          ]
+        },
+        {
+          "mean_macro_f1": 0.5549958319354437,
+          "ratio": 0.25,
+          "scores": [
+            0.5579035280589927,
+            0.5517837627800305,
+            0.5553002049673078
+          ],
+          "signatures": [
+            "b64c455d6594e22a6ada068850c9b8cbbd2fe09b09b6aac531a62d81294912ad",
+            "2431c69a49986999f3913503049ed57675a24bd5176928d4e9a8567d92c1f3ec",
+            "2b577efb6c5f625e627246398240a850b6f06123de0c601c376e4109103c9eec"
+          ]
+        },
+        {
+          "mean_macro_f1": 0.5524538326689081,
+          "ratio": 0.5,
+          "scores": [
+            0.5519781394680254,
+            0.561820225909865,
+            0.5435631326288339
+          ],
+          "signatures": [
+            "8ffed091c0d0a8b1eef43e8efe056e4cfa2a2a8fc8c7ebba8df1e6f04c7b8f46",
+            "2ab60dd5b56bce11f6d0c399958d6793482c224feceafc79fc6c89e88562faba",
+            "7bbe7e429ddea33d468d09eea291a6c491faccab27ee21732563b65a9db0c2fa"
+          ]
+        },
+        {
+          "mean_macro_f1": 0.5433776781716065,
+          "ratio": 1.0,
+          "scores": [
+            0.5314306804545462,
+            0.5420312356972934,
+            0.55667111836298
+          ],
+          "signatures": [
+            "7b2f87e6710ffffd667cd61543eaf3a188307db19bd5d868f716d3b8aad7f4f6",
+            "81818afaa15c6c38ac998a056dc527b49ddb11559afd4854a98f0d7394c001e3",
+            "9ec245bbfe0f730dee79ddae7d6192f0ad1063e44702e1abd9f8f334d788daf0"
+          ]
+        }
+      ],
+      "selected": {
+        "mean_macro_f1": 0.5549958319354437,
+        "ratio": 0.25,
+        "scores": [
+          0.5579035280589927,
+          0.5517837627800305,
+          0.5553002049673078
+        ],
+        "signatures": [
+          "b64c455d6594e22a6ada068850c9b8cbbd2fe09b09b6aac531a62d81294912ad",
+          "2431c69a49986999f3913503049ed57675a24bd5176928d4e9a8567d92c1f3ec",
+          "2b577efb6c5f625e627246398240a850b6f06123de0c601c376e4109103c9eec"
+        ]
+      }
+    },
+    "1.0": {
+      "candidates": [
+        {
+          "mean_macro_f1": 0.541985072404862,
+          "ratio": 0.0,
+          "scores": [
+            0.543810476125644,
+            0.5337116174604511,
+            0.5484331236284911
+          ],
+          "signatures": [
+            "238493df7fa7b30c4aee8b9ad9213db5a62205b8bc9dd43b6d360a0313ae47ed",
+            "aa2230b80c569247cf51451fdfa4a7241d2e90fb2a0af41ef132a6725a92ec52",
+            "82eed349d83e744c818dd5f940be85fd716691e88259d739dc1077808285258b"
+          ]
+        },
+        {
+          "mean_macro_f1": 0.5500383953847027,
+          "ratio": 0.25,
+          "scores": [
+            0.5440915092211729,
+            0.5569765945907085,
+            0.5490470823422264
+          ],
+          "signatures": [
+            "766836f37a5ea77d01600d982396ece32264347b2f57ef6d3ec073a8d11bfcf3",
+            "01cf1d73b7faba80248caf7fe2201d3bc481078b901bcd94b8eadc8680f51dbb",
+            "6c8217aef09987521955a53b7fe956a7c77fbc59f093daf597c45aeec6be73eb"
+          ]
+        },
+        {
+          "mean_macro_f1": 0.5404306574165852,
+          "ratio": 0.5,
+          "scores": [
+            0.508466265723114,
+            0.5663133860338441,
+            0.5465123204927977
+          ],
+          "signatures": [
+            "841120fc84e1eca643c11d8f95be7224eef3ff48efef5069ea1cfa1f3dd0546b",
+            "1b3e071bac3e025479a3b7f54803c4f7dc0af6dcb1faba41bd9e06af85242fc3",
+            "cc98e88508cc562112c67a41d42f8a81019424767e2f16637e0b3263d4d6b667"
+          ]
+        },
+        {
+          "mean_macro_f1": 0.5499987538778126,
+          "ratio": 1.0,
+          "scores": [
+            0.5293049313796829,
+            0.5634876185506652,
+            0.5572037117030897
+          ],
+          "signatures": [
+            "b07523ba043855a88d75da84885425d0e6d92ea15e73b2869f3c4021b56c72d0",
+            "825909389109de3251f97b218dfbf8d780bb7c1477f5d633995390ee72873855",
+            "0405e5248b3e8a8a87092ba8760e24612fe0de52c94411e1c488d3d2eeb9d0dd"
+          ]
+        }
+      ],
+      "selected": {
+        "mean_macro_f1": 0.5500383953847027,
+        "ratio": 0.25,
+        "scores": [
+          0.5440915092211729,
+          0.5569765945907085,
+          0.5490470823422264
+        ],
+        "signatures": [
+          "766836f37a5ea77d01600d982396ece32264347b2f57ef6d3ec073a8d11bfcf3",
+          "01cf1d73b7faba80248caf7fe2201d3bc481078b901bcd94b8eadc8680f51dbb",
+          "6c8217aef09987521955a53b7fe956a7c77fbc59f093daf597c45aeec6be73eb"
+        ]
+      }
+    }
+  },
+  "G_checkpoint": {
+    "candidates": [
+      {
+        "mean_macro_f1": 0.18020399489168437,
+        "scores": [
+          0.1742433625161478,
+          0.15127518262308018,
+          0.2150934395358252
+        ],
+        "step": 500
+      },
+      {
+        "mean_macro_f1": 0.37956186515507584,
+        "scores": [
+          0.3530020880120657,
+          0.38283406945484816,
+          0.40284943799831374
+        ],
+        "step": 1500
+      },
+      {
+        "mean_macro_f1": 0.42213775875949283,
+        "scores": [
+          0.3829439757870025,
+          0.405086226389062,
+          0.478383074102414
+        ],
+        "step": 3000
+      }
+    ],
+    "rule": "Train every allowed generator to 3000 actual G updates. For G0, train independent TSTR classifiers at 500/1500/3000 using the frozen raw classifier budget and seeds1042/1043/1044. Choose the common G checkpoint by three-seed mean full-24s validation argmax macro-F1, tie fewer G updates. G1 uses this same G checkpoint; per-prefix matching validation is quality diagnostics, not an alternate source for test selection.",
+    "selected": 3000
+  },
+  "ROS_ratio": {
+    "candidates": [
+      {
+        "mean_macro_f1": 0.541985072404862,
+        "ratio": 0.0,
+        "scores": [
+          0.543810476125644,
+          0.5337116174604511,
+          0.5484331236284911
+        ],
+        "signatures": [
+          "238493df7fa7b30c4aee8b9ad9213db5a62205b8bc9dd43b6d360a0313ae47ed",
+          "aa2230b80c569247cf51451fdfa4a7241d2e90fb2a0af41ef132a6725a92ec52",
+          "82eed349d83e744c818dd5f940be85fd716691e88259d739dc1077808285258b"
+        ]
+      },
+      {
+        "mean_macro_f1": 0.562994518696119,
+        "ratio": 0.25,
+        "scores": [
+          0.5478376429939782,
+          0.5834144590853643,
+          0.5577314540090148
+        ],
+        "signatures": [
+          "88f93a9cb56c6718ea8cb4704217fb4cfa1ebc965683d281e2e02b05f62daa99",
+          "19517bba2f96d497ff211bcb03fae0629e65c9e3c4113eda009326ee21ad1dd4",
+          "5b06eaffe847ab774673148b7d34718608a9159db4b38c23511c49e45ceb0cf1"
+        ]
+      },
+      {
+        "mean_macro_f1": 0.5579348636684155,
+        "ratio": 0.5,
+        "scores": [
+          0.5714746615451821,
+          0.5495329515776376,
+          0.5527969778824267
+        ],
+        "signatures": [
+          "23a08b01d74748f4dcfdcd397f185952e1556f5f86943a4bdc5d5ecedc966f29",
+          "425d70708b3ace722e797b73a9134abe4978b570cacbf648daafd67cce7051e6",
+          "d85944f026f4c1bd8782383b5e3464dcde3c173dd96ca26dff3d3e1118011b16"
+        ]
+      },
+      {
+        "mean_macro_f1": 0.5447397294845588,
+        "ratio": 1.0,
+        "scores": [
+          0.5426378395057593,
+          0.5531043195507199,
+          0.5384770293971974
+        ],
+        "signatures": [
+          "e85385bdfa0063d7a727e33dab0842cf284e1c579a87aa775262c78673419131",
+          "5ff96b7b7160776e29b7233fa074a9412be256d7940962e7afeedbd59d5c4553",
+          "1d11a5200433f281476311a3d925703adebc118626ea056c08f3838c8d0da5ad"
+        ]
+      }
+    ],
+    "selected": {
+      "mean_macro_f1": 0.562994518696119,
+      "ratio": 0.25,
+      "scores": [
+        0.5478376429939782,
+        0.5834144590853643,
+        0.5577314540090148
+      ],
+      "signatures": [
+        "88f93a9cb56c6718ea8cb4704217fb4cfa1ebc965683d281e2e02b05f62daa99",
+        "19517bba2f96d497ff211bcb03fae0629e65c9e3c4113eda009326ee21ad1dd4",
+        "5b06eaffe847ab774673148b7d34718608a9159db4b38c23511c49e45ceb0cf1"
+      ]
+    }
+  }
+}

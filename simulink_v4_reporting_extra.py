@@ -15,7 +15,13 @@ from replay_diagnostics import alarm_trace
 def exports(config,a,b,final,target,frozen,confirmation_registry):
     base=root(config); figures=target/'figures'
     # Development candidates are reported even when they lost the selection.
-    rows=[]; tstr=[]; channel=[]; relations=[]; nearest=[]; budget=[]
+    rows=[]; tstr=[]; channel=[]; relations=[]; nearest=[]; budget=[]; training_curves=[]
+    for s in b['all_augmented_models']+[r['model'] for r in b['TSTR']]:
+        for h in s['history']:
+            training_curves.append(dict(signature=s['signature'],method=s['method'],ratio=s['ratio'],seed=s['seed'],
+                step=h['step'],training_kind='synthetic-only' if s['method'].startswith('TSTR') else 'real-plus-added',
+                train_macro_f1=h['full_train']['macro_f1'],train_cross_entropy=h['full_train']['cross_entropy'],
+                validation_macro_f1=h['validation']['prefix_24']['macro_f1'],validation_cross_entropy=h['validation']['prefix_24']['cross_entropy']))
     for s in b['all_augmented_models']:
         h=record_at(s,s['step']); m=h['validation']['prefix_24']
         rows.append(dict(signature=s['signature'],method=s['method'],ratio=s['ratio'],seed=s['seed'],
@@ -36,7 +42,7 @@ def exports(config,a,b,final,target,frozen,confirmation_registry):
         checkpoint=torch.load(Path(g['directory'])/f'checkpoint_{g["generator_updates"]}.pt',map_location='cpu',weights_only=False)
         budget.append(dict(signature=g['signature'],weight=g['weight'],seed=g['seed'],G_updates=g['generator_updates'],
             critic_updates=g['critic_updates'],parameter_max_delta=checkpoint['parameter_max_delta'],training_wall_s=checkpoint['training_wall_s']))
-    for name,data in [('B_all_validation_candidates',rows),('B_independent_TSTR',tstr),
+    for name,data in [('B_all_validation_candidates',rows),('B_independent_TSTR',tstr),('B_all_train_validation_curves',training_curves),
                       ('GAN_per_class_channel_quality',channel),('GAN_per_class_relationships',relations),
                       ('GAN_per_class_nearest_neighbors',nearest),('GAN_actual_budgets',budget)]:
         pd.DataFrame(data).to_csv(target/(name+'.csv'),index=False,encoding='utf-8-sig')
@@ -80,9 +86,10 @@ def exports(config,a,b,final,target,frozen,confirmation_registry):
         spec=next(specs[s] for s in ids if specs[s]['seed']==config['training_seeds'][0]); r=index[spec['signature']]
         records=prediction_records(config,confirmation_registry,'test',spec,frozen['signature'])
         by_source={s['source_id']:s for s in records}; threshold=r['alarm_policy']['threshold']; hold=r['alarm_policy']['hold']
-        for kind in ('false_alarm','miss'):
-            candidates=([c for c in r['alarm']['cases'] if c['label']==0 and c['false_alarm_events']>0]
-                        if kind=='false_alarm' else [c for c in r['alarm']['cases'] if c['label']!=0 and not c['detected']])
+        for kind in ('false_alarm','miss','late_detection'):
+            if kind=='false_alarm': candidates=[c for c in r['alarm']['cases'] if c['label']==0 and c['false_alarm_events']>0]
+            elif kind=='miss': candidates=[c for c in r['alarm']['cases'] if c['label']!=0 and not c['detected']]
+            else: candidates=[c for c in r['alarm']['cases'] if c['label']!=0 and c['detected'] and c['detection_delay_s']>1]
             if not candidates: continue
             case=sorted(candidates,key=lambda c:c['source_id'])[0]; source=by_source[case['source_id']]
             alarm,motor=alarm_trace(source['fault_probability'],source['fault_class'],threshold,hold); time=np.asarray(source['time_s'])
@@ -95,7 +102,8 @@ def exports(config,a,b,final,target,frozen,confirmation_registry):
                 axes[1].axhline((case['label']-1)%6+1,color='r',ls='--',label='真实故障电机，仅评分参照')
             axes[1].legend(); axes[1].set_ylabel('电机编号'); axes[1].set_xlabel('Time (s)')
             for ax in axes: ax.grid(alpha=.2)
-            fig.suptitle(f'{name}，种子{spec["seed"]}，'+('健康误报' if kind=='false_alarm' else '故障漏检')+'\n'+source['source_id'])
+            title={'false_alarm':'健康误报','miss':'完整记录漏检','late_detection':'晚于1秒检出：早期漏检示例'}[kind]
+            fig.suptitle(f'{name}，种子{spec["seed"]}，'+title+'\n'+source['source_id'])
             fig.tight_layout(); fig.savefig(figures/f'alarm_{name}_{kind}.png',bbox_inches='tight'); plt.close(fig)
             traces.extend(dict(model=name,case_kind=kind,source_id=source['source_id'],time_s=float(t),
                 fault_probability=float(p),threshold=threshold,hold=hold,alarm=int(al),motor=int(m))

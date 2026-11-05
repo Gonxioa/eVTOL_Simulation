@@ -1,0 +1,7 @@
+{
+  "created_utc": "2026-11-05T15:31:02.955596+00:00",
+  "freeze_signature": "90fa8619b1e4717a5b60524f29ca024835cb86baef46bbf3367413f4affafd95",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "test_registry_signature": "b0a0e894fe9c6fe05ca8144773f084b6717f51675e13a56ebb127bb6a3f3b302"
+}

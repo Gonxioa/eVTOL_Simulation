@@ -1,0 +1,919 @@
+{
+  "config_signature": "8e98ef0304f87e3d734329f2496f237858fe830753e1e62a6c2770d4d0a89c14",
+  "created_utc": "2026-11-05T15:21:39.413888+00:00",
+  "decisions": [
+    {
+      "basis": "Approved execution plan and registered bounded engineering budget; the metric is not a reliability acceptance criterion.",
+      "candidates": [
+        50,
+        100,
+        200,
+        300
+      ],
+      "controlled_variables": "12 measured channels; unchanged simulation, controller, split and physical fault; fixed seeds/budgets",
+      "decision_id": "V4_window",
+      "evidence": {
+        "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v4_evidence_20261105\\decisions\\A_native_joint_review.json": "33f00581353cd4c0c4c72b2e3bc2a8bbde2471677685f198d9bbc52236b3e5fa",
+        "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v4_evidence_20261105\\decisions\\A_window_screen.json": "1fc06ffd3fdebc88d0379d683edec3934f4d254853446db50a223708e16b20d7"
+      },
+      "evidence_sha256": {
+        "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v4_evidence_20261105\\decisions\\A_native_joint_review.json": "33f00581353cd4c0c4c72b2e3bc2a8bbde2471677685f198d9bbc52236b3e5fa",
+        "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v4_evidence_20261105\\decisions\\A_window_screen.json": "1fc06ffd3fdebc88d0379d683edec3934f4d254853446db50a223708e16b20d7"
+      },
+      "fixed_controls": "12 measured channels; unchanged simulation, controller, split and physical fault; fixed seeds/budgets",
+      "limitations": "CNN only tested at retained windows; not a global window optimum. Different windows have different warm-up.",
+      "name": "window",
+      "question": "Which finite window gives the reference neural result?",
+      "scope": "Development training/validation only; no confirmation scores",
+      "selected": 100,
+      "status": "executed",
+      "validation_rule": "Common endpoints, LSTM1000; retain2. Joint LSTM/CNN budget comparison; native-grid joint refit."
+    },
+    {
+      "basis": "Approved execution plan and registered bounded engineering budget; the metric is not a reliability acceptance criterion.",
+      "candidates": [
+        {
+          "family": "lstm",
+          "mean_inference_ms": 0.35800999935923355,
+          "mean_macro_f1": 0.44561715867469925,
+          "parameters": 58708,
+          "signatures": [
+            "fcba2982c7bda6d9acb626311d5a5dc0f86db1ec058577b0d84b2242fbc5c003",
+            "8ca831ea142335498faa10c039627dd878def4330b69ce2877e1f24b1d2f7a7d",
+            "7870509afabca972e0f55b5c385fe06c2661311bf353b26b473c86f292c5ffc2"
+          ],
+          "source_scope": "same three validation groups",
+          "std_macro_f1": 0.0109905125657674,
+          "steps": 1000,
+          "train_macro_f1": 0.44566508187067894,
+          "window": 50
+        },
+        {
+          "family": "lstm",
+          "mean_inference_ms": 0.3390333343607684,
+          "mean_macro_f1": 0.44492388890170664,
+          "parameters": 58708,
+          "signatures": [
+            "fcba2982c7bda6d9acb626311d5a5dc0f86db1ec058577b0d84b2242fbc5c003",
+            "8ca831ea142335498faa10c039627dd878def4330b69ce2877e1f24b1d2f7a7d",
+            "7870509afabca972e0f55b5c385fe06c2661311bf353b26b473c86f292c5ffc2"
+          ],
+          "source_scope": "same three validation groups",
+          "std_macro_f1": 0.003151489576171999,
+          "steps": 2000,
+          "train_macro_f1": 0.4448980597179786,
+          "window": 50
+        },
+        {
+          "family": "lstm",
+          "mean_inference_ms": 0.32983555768926937,
+          "mean_macro_f1": 0.4689905388888789,
+          "parameters": 58708,
+          "signatures": [
+            "fcba2982c7bda6d9acb626311d5a5dc0f86db1ec058577b0d84b2242fbc5c003",
+            "8ca831ea142335498faa10c039627dd878def4330b69ce2877e1f24b1d2f7a7d",
+            "7870509afabca972e0f55b5c385fe06c2661311bf353b26b473c86f292c5ffc2"
+          ],
+          "source_scope": "same three validation groups",
+          "std_macro_f1": 0.006897877751205867,
+          "steps": 4000,
+          "train_macro_f1": 0.46844089934085814,
+          "window": 50
+        },
+        {
+          "family": "cnn",
+          "mean_inference_ms": 0.35295000092850787,
+          "mean_macro_f1": 0.4874182769359794,
+          "parameters": 138547,
+          "signatures": [
+            "5a9196500611f3c6406189a433e442276c61a2ddad7416401be91c8bd217b40e",
+            "6029e4efb5722ffd2ba802bf4b93aba38d87513b497f5e63cfb95b22e607f22b",
+            "d3b104cef376b330370e2031611d1f491cb69d12464ed240a2ea2a5acfdf14fe"
+          ],
+          "source_scope": "same three validation groups",
+          "std_macro_f1": 0.009490945516314554,
+          "steps": 1000,
+          "train_macro_f1": 0.489005115621141,
+          "window": 50
+        },
+        {
+          "family": "cnn",
+          "mean_inference_ms": 0.34007777641009956,
+          "mean_macro_f1": 0.4795470161072409,
+          "parameters": 138547,
+          "signatures": [
+            "5a9196500611f3c6406189a433e442276c61a2ddad7416401be91c8bd217b40e",
+            "6029e4efb5722ffd2ba802bf4b93aba38d87513b497f5e63cfb95b22e607f22b",
+            "d3b104cef376b330370e2031611d1f491cb69d12464ed240a2ea2a5acfdf14fe"
+          ],
+          "source_scope": "same three validation groups",
+          "std_macro_f1": 0.02022302292870075,
+          "steps": 2000,
+          "train_macro_f1": 0.4890252474503714,
+          "window": 50
+        },
+        {
+          "family": "cnn",
+          "mean_inference_ms": 0.3878222209297948,
+          "mean_macro_f1": 0.515704880677979,
+          "parameters": 138547,
+          "signatures": [
+            "5a9196500611f3c6406189a433e442276c61a2ddad7416401be91c8bd217b40e",
+            "6029e4efb5722ffd2ba802bf4b93aba38d87513b497f5e63cfb95b22e607f22b",
+            "d3b104cef376b330370e2031611d1f491cb69d12464ed240a2ea2a5acfdf14fe"
+          ],
+          "source_scope": "same three validation groups",
+          "std_macro_f1": 0.004014540346106689,
+          "steps": 4000,
+          "train_macro_f1": 0.5317815046587934,
+          "window": 50
+        },
+        {
+          "family": "lstm",
+          "mean_inference_ms": 0.36128222192120224,
+          "mean_macro_f1": 0.44032585165981164,
+          "parameters": 58708,
+          "signatures": [
+            "930da5cc35d98adeb97015417098e752b78e123c8e2f91ce301dbda37f9cc038",
+            "2de051201e2f63290df4e678ee6c49f884eb9e11137ce07f5ba0f8516783893f",
+            "849c8bc9c20dc22920e4f677fb7730d1dcfd883f91a88ab719da33a59cd873d9"
+          ],
+          "source_scope": "same three validation groups",
+          "std_macro_f1": 0.0005582775581095988,
+          "steps": 1000,
+          "train_macro_f1": 0.44036950644656275,
+          "window": 100
+        },
+        {
+          "family": "lstm",
+          "mean_inference_ms": 0.34059222089126706,
+          "mean_macro_f1": 0.4577726381547493,
+          "parameters": 58708,
+          "signatures": [
+            "930da5cc35d98adeb97015417098e752b78e123c8e2f91ce301dbda37f9cc038",
+            "2de051201e2f63290df4e678ee6c49f884eb9e11137ce07f5ba0f8516783893f",
+            "849c8bc9c20dc22920e4f677fb7730d1dcfd883f91a88ab719da33a59cd873d9"
+          ],
+          "source_scope": "same three validation groups",
+          "std_macro_f1": 0.013440003318919168,
+          "steps": 2000,
+          "train_macro_f1": 0.45807569387715424,
+          "window": 100
+        },
+        {
+          "family": "lstm",
+          "mean_inference_ms": 0.35116111135317224,
+          "mean_macro_f1": 0.49405717963435847,
+          "parameters": 58708,
+          "signatures": [
+            "930da5cc35d98adeb97015417098e752b78e123c8e2f91ce301dbda37f9cc038",
+            "2de051201e2f63290df4e678ee6c49f884eb9e11137ce07f5ba0f8516783893f",
+            "849c8bc9c20dc22920e4f677fb7730d1dcfd883f91a88ab719da33a59cd873d9"
+          ],
+          "source_scope": "same three validation groups",
+          "std_macro_f1": 0.012478139683881628,
+          "steps": 4000,
+          "train_macro_f1": 0.49899057616284165,
+          "window": 100
+        },
+        {
+          "family": "cnn",
+          "mean_inference_ms": 0.3247866665737496,
+          "mean_macro_f1": 0.4979398093226821,
+          "parameters": 138547,
+          "signatures": [
+            "16039f728395724579ff14ccd83053c39bd1452f39cf12ac7a94d738289a55e4",
+            "8196d75a27af467808806c3381e55a5a015f5c221ca6540dc277a4963952e4c8",
+            "d85491ba7a981a71fbfa3b7c9e11b498001d2fa61b74ea67f25c3a0d0687fb3d"
+          ],
+          "source_scope": "same three validation groups",
+          "std_macro_f1": 0.007283974473408317,
+          "steps": 1000,
+          "train_macro_f1": 0.5013433774241123,
+          "window": 100
+        },
+        {
+          "family": "cnn",
+          "mean_inference_ms": 0.3794288883606593,
+          "mean_macro_f1": 0.5122670761064375,
+          "parameters": 138547,
+          "signatures": [
+            "16039f728395724579ff14ccd83053c39bd1452f39cf12ac7a94d738289a55e4",
+            "8196d75a27af467808806c3381e55a5a015f5c221ca6540dc277a4963952e4c8",
+            "d85491ba7a981a71fbfa3b7c9e11b498001d2fa61b74ea67f25c3a0d0687fb3d"
+          ],
+          "source_scope": "same three validation groups",
+          "std_macro_f1": 0.005887385375977306,
+          "steps": 2000,
+          "train_macro_f1": 0.5221329833574208,
+          "window": 100
+        },
+        {
+          "family": "cnn",
+          "mean_inference_ms": 0.3013577777892351,
+          "mean_macro_f1": 0.5323902890703098,
+          "parameters": 138547,
+          "signatures": [
+            "16039f728395724579ff14ccd83053c39bd1452f39cf12ac7a94d738289a55e4",
+            "8196d75a27af467808806c3381e55a5a015f5c221ca6540dc277a4963952e4c8",
+            "d85491ba7a981a71fbfa3b7c9e11b498001d2fa61b74ea67f25c3a0d0687fb3d"
+          ],
+          "source_scope": "same three validation groups",
+          "std_macro_f1": 0.003572560491292576,
+          "steps": 4000,
+          "train_macro_f1": 0.5557154360945447,
+          "window": 100
+        }
+      ],
+      "controlled_variables": "12 measured channels; unchanged simulation, controller, split and physical fault; fixed seeds/budgets",
+      "decision_id": "V4_representation_budget",
+      "evidence": {
+        "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v4_evidence_20261105\\decisions\\A_budget_representation.json": "7ca13bf3fd2407ca6ce2b83fe8e73e898fb2268436c21b5ef4da0b0636282382"
+      },
+      "evidence_sha256": {
+        "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v4_evidence_20261105\\decisions\\A_budget_representation.json": "7ca13bf3fd2407ca6ce2b83fe8e73e898fb2268436c21b5ef4da0b0636282382"
+      },
+      "fixed_controls": "12 measured channels; unchanged simulation, controller, split and physical fault; fixed seeds/budgets",
+      "limitations": "RF is a separate strong diagnostic;4000 steps is not a convergence certificate.",
+      "name": "representation_budget",
+      "question": "What can the fixed finite neural budget learn?",
+      "scope": "Development training/validation only; no confirmation scores",
+      "selected": {
+        "family": "cnn",
+        "steps": 4000
+      },
+      "status": "executed",
+      "validation_rule": "Mean pooled full24 validation19-class argmax macroF1; registered ties."
+    },
+    {
+      "basis": "Approved execution plan and registered bounded engineering budget; the metric is not a reliability acceptance criterion.",
+      "candidates": [
+        {
+          "family": "cnn",
+          "mean_inference_ms": 0.37654444394219255,
+          "mean_macro_f1": 0.3614265582664684,
+          "original_windows": 714,
+          "parameters": 138547,
+          "prefix_s": 6,
+          "signatures": [
+            "3e85bb3a7d51a4bfd80522097a7d31e56f3983f99833251f6a64d3762a541f48",
+            "eafbdebc49b7f3f0448bcb04c5f4fd236800b1c400d37cd761047f89eea834d2",
+            "6a30ba5e855159b16a5fa77625b9935c8908ca343541983376a062e1433a9c9d"
+          ],
+          "source_scope": "same three validation groups",
+          "std_macro_f1": 0.03627442352372448,
+          "steps": 4000,
+          "train_macro_f1": 0.9765054652196218,
+          "window": 100
+        },
+        {
+          "family": "cnn",
+          "mean_inference_ms": 0.36030333463309544,
+          "mean_macro_f1": 0.541985072404862,
+          "original_windows": 2082,
+          "parameters": 138547,
+          "prefix_s": 12,
+          "signatures": [
+            "238493df7fa7b30c4aee8b9ad9213db5a62205b8bc9dd43b6d360a0313ae47ed",
+            "aa2230b80c569247cf51451fdfa4a7241d2e90fb2a0af41ef132a6725a92ec52",
+            "82eed349d83e744c818dd5f940be85fd716691e88259d739dc1077808285258b"
+          ],
+          "source_scope": "same three validation groups",
+          "std_macro_f1": 0.006147073017395772,
+          "steps": 4000,
+          "train_macro_f1": 0.665301561856742,
+          "window": 100
+        },
+        {
+          "family": "cnn",
+          "mean_inference_ms": 0.42504222235745853,
+          "mean_macro_f1": 0.5347291917166256,
+          "original_windows": 4818,
+          "parameters": 138547,
+          "prefix_s": 24,
+          "signatures": [
+            "f67988e0355dafdd3d2b36b1837ef6ac093d76b2e3000892b4409efc1575b66a",
+            "824df59c28aa2a53e5c6d13094d558e6f5fe8dbca3db58a9205db50a4342916c",
+            "1cbdc64f1e01d98b5120e9f9b5cb041871da44fe015349572fc5ad3fe056a15c"
+          ],
+          "source_scope": "same three validation groups",
+          "std_macro_f1": 0.004062877114838179,
+          "steps": 4000,
+          "train_macro_f1": 0.5547290998909763,
+          "window": 100
+        }
+      ],
+      "controlled_variables": "12 measured channels; unchanged simulation, controller, split and physical fault; fixed seeds/budgets",
+      "decision_id": "V4_coverage",
+      "evidence": {
+        "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v4_evidence_20261105\\decisions\\A_equal_count_controls.json": "da541033b81ac7444890310841355c1fbe8a0dface96e73e10212b7510ef0eb5",
+        "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v4_evidence_20261105\\decisions\\A_prefix_coverage.json": "ba08d2d7ff9b1d19b3b592856ac5621870815a224cc0aba67fccd3b91736327c"
+      },
+      "evidence_sha256": {
+        "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v4_evidence_20261105\\decisions\\A_equal_count_controls.json": "da541033b81ac7444890310841355c1fbe8a0dface96e73e10212b7510ef0eb5",
+        "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v4_evidence_20261105\\decisions\\A_prefix_coverage.json": "ba08d2d7ff9b1d19b3b592856ac5621870815a224cc0aba67fccd3b91736327c"
+      },
+      "fixed_controls": "12 measured channels; unchanged simulation, controller, split and physical fault; fixed seeds/budgets",
+      "limitations": "Equal-count controls are diagnostics, not selection candidates; coverage chosen before GAN, not jointly optimal.",
+      "name": "coverage",
+      "question": "Which prefix is the common real-information budget?",
+      "scope": "Development training/validation only; no confirmation scores",
+      "selected": 12,
+      "status": "executed",
+      "validation_rule": "Full24 validation19-class argmax macroF1, average seeds; ties prefer shorter prefix."
+    },
+    {
+      "basis": "Approved execution plan and registered bounded engineering budget; the metric is not a reliability acceptance criterion.",
+      "candidates": [
+        0.0,
+        0.1,
+        1.0
+      ],
+      "controlled_variables": "12 measured channels; unchanged simulation, controller, split and physical fault; fixed seeds/budgets",
+      "decision_id": "V4_teacher",
+      "evidence": {
+        "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v4_evidence_20261105\\decisions\\A_teacher_gate.json": "61bdb1f07c67a129564f431e6cef6d82422e1b6c9881b8d82714b15269d551fc"
+      },
+      "evidence_sha256": {
+        "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v4_evidence_20261105\\decisions\\A_teacher_gate.json": "61bdb1f07c67a129564f431e6cef6d82422e1b6c9881b8d82714b15269d551fc"
+      },
+      "fixed_controls": "12 measured channels; unchanged simulation, controller, split and physical fault; fixed seeds/budgets",
+      "limitations": "Minimum noncollapse prerequisite only; cannot certify synthetic labels.",
+      "name": "teacher",
+      "question": "May the exploratory external-teacher constraint run?",
+      "scope": "Development training/validation only; no confirmation scores",
+      "selected": {
+        "failures": [],
+        "meaning": "Minimum non-collapse research gate, not generated-label certification",
+        "passed": true,
+        "rule": "G1 is exploratory and runs only if every class has positive validation recall in every raw-baseline seed AND healthy/remaining-80% joint accuracy exceeds 1/19 in every seed. This only rejects collapsed teachers; it does not certify generated labels.",
+        "teachers": [
+          {
+            "class_recall": [
+              0.7872340425531915,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              0.0873015873015873,
+              1.0,
+              0.9682539682539683,
+              1.0,
+              0.12698412698412698,
+              0.15079365079365079,
+              0.07142857142857142,
+              0.5476190476190477,
+              0.07142857142857142,
+              0.09523809523809523,
+              0.2698412698412698,
+              0.09523809523809523
+            ],
+            "healthy_recall": 0.7872340425531915,
+            "partial_joint_accuracy": 0.1917989417989418,
+            "seed": 42
+          },
+          {
+            "class_recall": [
+              0.6666666666666666,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              0.1111111111111111,
+              0.1349206349206349,
+              0.6825396825396826,
+              0.9761904761904762,
+              0.9603174603174603,
+              0.23809523809523808,
+              0.05555555555555555,
+              0.03968253968253968,
+              0.7857142857142857,
+              0.0873015873015873,
+              0.1111111111111111,
+              0.10317460317460317
+            ],
+            "healthy_recall": 0.6666666666666666,
+            "partial_joint_accuracy": 0.1970899470899471,
+            "seed": 43
+          },
+          {
+            "class_recall": [
+              0.8297872340425532,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              0.1349206349206349,
+              0.1111111111111111,
+              0.9920634920634921,
+              0.9761904761904762,
+              0.9841269841269841,
+              0.12698412698412698,
+              0.12698412698412698,
+              0.07936507936507936,
+              0.4444444444444444,
+              0.31746031746031744,
+              0.07936507936507936,
+              0.1111111111111111
+            ],
+            "healthy_recall": 0.8297872340425532,
+            "partial_joint_accuracy": 0.1931216931216931,
+            "seed": 44
+          }
+        ]
+      },
+      "status": "executed",
+      "validation_rule": "All19 class recalls positive and healthy/80%-joint accuracy above1/19 in every raw seed."
+    },
+    {
+      "basis": "Approved execution plan and registered bounded engineering budget; the metric is not a reliability acceptance criterion.",
+      "candidates": [
+        500,
+        1500,
+        3000
+      ],
+      "controlled_variables": "12 measured channels; unchanged simulation, controller, split and physical fault; fixed seeds/budgets",
+      "decision_id": "V4_GAN_checkpoint",
+      "evidence": {
+        "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v4_evidence_20261105\\decisions\\B_G_checkpoint.json": "1c87d6259c60bb6b23efda313271e60e235ae4414b771ee363e56ada85030b0c"
+      },
+      "evidence_sha256": {
+        "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v4_evidence_20261105\\decisions\\B_G_checkpoint.json": "1c87d6259c60bb6b23efda313271e60e235ae4414b771ee363e56ada85030b0c"
+      },
+      "fixed_controls": "12 measured channels; unchanged simulation, controller, split and physical fault; fixed seeds/budgets",
+      "limitations": "Validation adapted; independent new test is the confirmation. Loss minimum is not the selector.",
+      "name": "GAN_checkpoint",
+      "question": "Which common saved generation checkpoint?",
+      "scope": "Development training/validation only; no confirmation scores",
+      "selected": 3000,
+      "status": "executed",
+      "validation_rule": "G0 independent TSTR, mean full24 validation macroF1; ties fewer Gupdates. G1 shares step."
+    },
+    {
+      "basis": "Approved execution plan and registered bounded engineering budget; the metric is not a reliability acceptance criterion.",
+      "candidates": {
+        "ratios": [
+          0.0,
+          0.25,
+          0.5,
+          1.0
+        ],
+        "weights": [
+          0.0,
+          0.1,
+          1.0
+        ]
+      },
+      "controlled_variables": "12 measured channels; unchanged simulation, controller, split and physical fault; fixed seeds/budgets",
+      "decision_id": "V4_augmentation",
+      "evidence": {
+        "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v4_evidence_20261105\\batch_B_complete.json": "79f66cb8d1c7ef0b660ac9abbd9c5237a60e900da4838f5b3187790fad4cd575"
+      },
+      "evidence_sha256": {
+        "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v4_evidence_20261105\\batch_B_complete.json": "79f66cb8d1c7ef0b660ac9abbd9c5237a60e900da4838f5b3187790fad4cd575"
+      },
+      "fixed_controls": "12 measured channels; unchanged simulation, controller, split and physical fault; fixed seeds/budgets",
+      "limitations": "No guarantee of GAN improvement; preserve exact-count ROS and raw, including rejected candidates.",
+      "name": "augmentation",
+      "question": "Which per-class ratio and class weight?",
+      "scope": "Development training/validation only; no confirmation scores",
+      "selected": {
+        "G1_weight": 0.1,
+        "GAN": {
+          "0.0": {
+            "candidates": [
+              {
+                "mean_macro_f1": 0.541985072404862,
+                "ratio": 0.0,
+                "scores": [
+                  0.543810476125644,
+                  0.5337116174604511,
+                  0.5484331236284911
+                ],
+                "signatures": [
+                  "238493df7fa7b30c4aee8b9ad9213db5a62205b8bc9dd43b6d360a0313ae47ed",
+                  "aa2230b80c569247cf51451fdfa4a7241d2e90fb2a0af41ef132a6725a92ec52",
+                  "82eed349d83e744c818dd5f940be85fd716691e88259d739dc1077808285258b"
+                ]
+              },
+              {
+                "mean_macro_f1": 0.5443258321198851,
+                "ratio": 0.25,
+                "scores": [
+                  0.5506867857459117,
+                  0.5558120137992196,
+                  0.5264786968145241
+                ],
+                "signatures": [
+                  "418c7af68d3dcfad6255210edeb5a268939a0d09ae4beabc1db15a1ec44dba45",
+                  "546aa76f57304d8ac8894a3442d8bb687179f1b7030eee714b2b50a6af9c78a4",
+                  "3ffd0377b90c94392b091c3893deeefdebb6913e0bf3ce993bc4fc2c81ee242f"
+                ]
+              },
+              {
+                "mean_macro_f1": 0.5503087312228125,
+                "ratio": 0.5,
+                "scores": [
+                  0.544657257492949,
+                  0.5570089803638912,
+                  0.5492599558115974
+                ],
+                "signatures": [
+                  "c3eabcbee52f6cb5f7b5ce75fbb58e429766a1c2bb5adfcc42821f5261545895",
+                  "3607d86e30f2a97a6bc30171aa1a4d03a33cff3eba3d0d1b3900cb7c17a789ed",
+                  "2818fd694b6a17b351abf1d81a1f2acf09e770a83b8f05f729aba2a9ae8c183d"
+                ]
+              },
+              {
+                "mean_macro_f1": 0.5483085608766469,
+                "ratio": 1.0,
+                "scores": [
+                  0.5261888445352679,
+                  0.5551183389549764,
+                  0.5636184991396964
+                ],
+                "signatures": [
+                  "7f9e8c4d232eadd3d1348be4c12d2901b86c2f7531b0595a695bf4b6034c13a0",
+                  "b98f8afb5faa5b6db544e6ff5a36218c2b4767f1b5c9062a0ea34be25304a3b6",
+                  "79b70f0b4fcdabc6a9b8c1f37f3d3287153139ff84caa1674417786860de3a44"
+                ]
+              }
+            ],
+            "selected": {
+              "mean_macro_f1": 0.5503087312228125,
+              "ratio": 0.5,
+              "scores": [
+                0.544657257492949,
+                0.5570089803638912,
+                0.5492599558115974
+              ],
+              "signatures": [
+                "c3eabcbee52f6cb5f7b5ce75fbb58e429766a1c2bb5adfcc42821f5261545895",
+                "3607d86e30f2a97a6bc30171aa1a4d03a33cff3eba3d0d1b3900cb7c17a789ed",
+                "2818fd694b6a17b351abf1d81a1f2acf09e770a83b8f05f729aba2a9ae8c183d"
+              ]
+            }
+          },
+          "0.1": {
+            "candidates": [
+              {
+                "mean_macro_f1": 0.541985072404862,
+                "ratio": 0.0,
+                "scores": [
+                  0.543810476125644,
+                  0.5337116174604511,
+                  0.5484331236284911
+                ],
+                "signatures": [
+                  "238493df7fa7b30c4aee8b9ad9213db5a62205b8bc9dd43b6d360a0313ae47ed",
+                  "aa2230b80c569247cf51451fdfa4a7241d2e90fb2a0af41ef132a6725a92ec52",
+                  "82eed349d83e744c818dd5f940be85fd716691e88259d739dc1077808285258b"
+                ]
+              },
+              {
+                "mean_macro_f1": 0.5549958319354437,
+                "ratio": 0.25,
+                "scores": [
+                  0.5579035280589927,
+                  0.5517837627800305,
+                  0.5553002049673078
+                ],
+                "signatures": [
+                  "b64c455d6594e22a6ada068850c9b8cbbd2fe09b09b6aac531a62d81294912ad",
+                  "2431c69a49986999f3913503049ed57675a24bd5176928d4e9a8567d92c1f3ec",
+                  "2b577efb6c5f625e627246398240a850b6f06123de0c601c376e4109103c9eec"
+                ]
+              },
+              {
+                "mean_macro_f1": 0.5524538326689081,
+                "ratio": 0.5,
+                "scores": [
+                  0.5519781394680254,
+                  0.561820225909865,
+                  0.5435631326288339
+                ],
+                "signatures": [
+                  "8ffed091c0d0a8b1eef43e8efe056e4cfa2a2a8fc8c7ebba8df1e6f04c7b8f46",
+                  "2ab60dd5b56bce11f6d0c399958d6793482c224feceafc79fc6c89e88562faba",
+                  "7bbe7e429ddea33d468d09eea291a6c491faccab27ee21732563b65a9db0c2fa"
+                ]
+              },
+              {
+                "mean_macro_f1": 0.5433776781716065,
+                "ratio": 1.0,
+                "scores": [
+                  0.5314306804545462,
+                  0.5420312356972934,
+                  0.55667111836298
+                ],
+                "signatures": [
+                  "7b2f87e6710ffffd667cd61543eaf3a188307db19bd5d868f716d3b8aad7f4f6",
+                  "81818afaa15c6c38ac998a056dc527b49ddb11559afd4854a98f0d7394c001e3",
+                  "9ec245bbfe0f730dee79ddae7d6192f0ad1063e44702e1abd9f8f334d788daf0"
+                ]
+              }
+            ],
+            "selected": {
+              "mean_macro_f1": 0.5549958319354437,
+              "ratio": 0.25,
+              "scores": [
+                0.5579035280589927,
+                0.5517837627800305,
+                0.5553002049673078
+              ],
+              "signatures": [
+                "b64c455d6594e22a6ada068850c9b8cbbd2fe09b09b6aac531a62d81294912ad",
+                "2431c69a49986999f3913503049ed57675a24bd5176928d4e9a8567d92c1f3ec",
+                "2b577efb6c5f625e627246398240a850b6f06123de0c601c376e4109103c9eec"
+              ]
+            }
+          },
+          "1.0": {
+            "candidates": [
+              {
+                "mean_macro_f1": 0.541985072404862,
+                "ratio": 0.0,
+                "scores": [
+                  0.543810476125644,
+                  0.5337116174604511,
+                  0.5484331236284911
+                ],
+                "signatures": [
+                  "238493df7fa7b30c4aee8b9ad9213db5a62205b8bc9dd43b6d360a0313ae47ed",
+                  "aa2230b80c569247cf51451fdfa4a7241d2e90fb2a0af41ef132a6725a92ec52",
+                  "82eed349d83e744c818dd5f940be85fd716691e88259d739dc1077808285258b"
+                ]
+              },
+              {
+                "mean_macro_f1": 0.5500383953847027,
+                "ratio": 0.25,
+                "scores": [
+                  0.5440915092211729,
+                  0.5569765945907085,
+                  0.5490470823422264
+                ],
+                "signatures": [
+                  "766836f37a5ea77d01600d982396ece32264347b2f57ef6d3ec073a8d11bfcf3",
+                  "01cf1d73b7faba80248caf7fe2201d3bc481078b901bcd94b8eadc8680f51dbb",
+                  "6c8217aef09987521955a53b7fe956a7c77fbc59f093daf597c45aeec6be73eb"
+                ]
+              },
+              {
+                "mean_macro_f1": 0.5404306574165852,
+                "ratio": 0.5,
+                "scores": [
+                  0.508466265723114,
+                  0.5663133860338441,
+                  0.5465123204927977
+                ],
+                "signatures": [
+                  "841120fc84e1eca643c11d8f95be7224eef3ff48efef5069ea1cfa1f3dd0546b",
+                  "1b3e071bac3e025479a3b7f54803c4f7dc0af6dcb1faba41bd9e06af85242fc3",
+                  "cc98e88508cc562112c67a41d42f8a81019424767e2f16637e0b3263d4d6b667"
+                ]
+              },
+              {
+                "mean_macro_f1": 0.5499987538778126,
+                "ratio": 1.0,
+                "scores": [
+                  0.5293049313796829,
+                  0.5634876185506652,
+                  0.5572037117030897
+                ],
+                "signatures": [
+                  "b07523ba043855a88d75da84885425d0e6d92ea15e73b2869f3c4021b56c72d0",
+                  "825909389109de3251f97b218dfbf8d780bb7c1477f5d633995390ee72873855",
+                  "0405e5248b3e8a8a87092ba8760e24612fe0de52c94411e1c488d3d2eeb9d0dd"
+                ]
+              }
+            ],
+            "selected": {
+              "mean_macro_f1": 0.5500383953847027,
+              "ratio": 0.25,
+              "scores": [
+                0.5440915092211729,
+                0.5569765945907085,
+                0.5490470823422264
+              ],
+              "signatures": [
+                "766836f37a5ea77d01600d982396ece32264347b2f57ef6d3ec073a8d11bfcf3",
+                "01cf1d73b7faba80248caf7fe2201d3bc481078b901bcd94b8eadc8680f51dbb",
+                "6c8217aef09987521955a53b7fe956a7c77fbc59f093daf597c45aeec6be73eb"
+              ]
+            }
+          }
+        },
+        "ROS": {
+          "candidates": [
+            {
+              "mean_macro_f1": 0.541985072404862,
+              "ratio": 0.0,
+              "scores": [
+                0.543810476125644,
+                0.5337116174604511,
+                0.5484331236284911
+              ],
+              "signatures": [
+                "238493df7fa7b30c4aee8b9ad9213db5a62205b8bc9dd43b6d360a0313ae47ed",
+                "aa2230b80c569247cf51451fdfa4a7241d2e90fb2a0af41ef132a6725a92ec52",
+                "82eed349d83e744c818dd5f940be85fd716691e88259d739dc1077808285258b"
+              ]
+            },
+            {
+              "mean_macro_f1": 0.562994518696119,
+              "ratio": 0.25,
+              "scores": [
+                0.5478376429939782,
+                0.5834144590853643,
+                0.5577314540090148
+              ],
+              "signatures": [
+                "88f93a9cb56c6718ea8cb4704217fb4cfa1ebc965683d281e2e02b05f62daa99",
+                "19517bba2f96d497ff211bcb03fae0629e65c9e3c4113eda009326ee21ad1dd4",
+                "5b06eaffe847ab774673148b7d34718608a9159db4b38c23511c49e45ceb0cf1"
+              ]
+            },
+            {
+              "mean_macro_f1": 0.5579348636684155,
+              "ratio": 0.5,
+              "scores": [
+                0.5714746615451821,
+                0.5495329515776376,
+                0.5527969778824267
+              ],
+              "signatures": [
+                "23a08b01d74748f4dcfdcd397f185952e1556f5f86943a4bdc5d5ecedc966f29",
+                "425d70708b3ace722e797b73a9134abe4978b570cacbf648daafd67cce7051e6",
+                "d85944f026f4c1bd8782383b5e3464dcde3c173dd96ca26dff3d3e1118011b16"
+              ]
+            },
+            {
+              "mean_macro_f1": 0.5447397294845588,
+              "ratio": 1.0,
+              "scores": [
+                0.5426378395057593,
+                0.5531043195507199,
+                0.5384770293971974
+              ],
+              "signatures": [
+                "e85385bdfa0063d7a727e33dab0842cf284e1c579a87aa775262c78673419131",
+                "5ff96b7b7160776e29b7233fa074a9412be256d7940962e7afeedbd59d5c4553",
+                "1d11a5200433f281476311a3d925703adebc118626ea056c08f3838c8d0da5ad"
+              ]
+            }
+          ],
+          "selected": {
+            "mean_macro_f1": 0.562994518696119,
+            "ratio": 0.25,
+            "scores": [
+              0.5478376429939782,
+              0.5834144590853643,
+              0.5577314540090148
+            ],
+            "signatures": [
+              "88f93a9cb56c6718ea8cb4704217fb4cfa1ebc965683d281e2e02b05f62daa99",
+              "19517bba2f96d497ff211bcb03fae0629e65c9e3c4113eda009326ee21ad1dd4",
+              "5b06eaffe847ab774673148b7d34718608a9159db4b38c23511c49e45ceb0cf1"
+            ]
+          }
+        }
+      },
+      "status": "executed",
+      "validation_rule": "Full24 validation macroF1 across3 paired joint repeats; ties lower ratio then lower weight."
+    },
+    {
+      "basis": "Approved execution plan and registered bounded engineering budget; the metric is not a reliability acceptance criterion.",
+      "candidates": {
+        "holds": [
+          2,
+          3,
+          5
+        ],
+        "thresholds": [
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9
+        ]
+      },
+      "controlled_variables": "12 measured channels; unchanged simulation, controller, split and physical fault; fixed seeds/budgets",
+      "decision_id": "V4_alarm",
+      "evidence": {
+        "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v4_evidence_20261105\\batch_B_complete.json": "79f66cb8d1c7ef0b660ac9abbd9c5237a60e900da4838f5b3187790fad4cd575"
+      },
+      "evidence_sha256": {
+        "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v4_evidence_20261105\\batch_B_complete.json": "79f66cb8d1c7ef0b660ac9abbd9c5237a60e900da4838f5b3187790fad4cd575"
+      },
+      "fixed_controls": "12 measured channels; unchanged simulation, controller, split and physical fault; fixed seeds/budgets",
+      "limitations": "Separate from19-class argmax. Fresh rising edges only; zero false alarms alone is insufficient.",
+      "name": "alarm",
+      "question": "Which fixed causal alarm working points?",
+      "scope": "Development training/validation only; no confirmation scores",
+      "selected": {
+        "19517bba2f96d497ff211bcb03fae0629e65c9e3c4113eda009326ee21ad1dd4": {
+          "hold": 5,
+          "threshold": 0.9
+        },
+        "238493df7fa7b30c4aee8b9ad9213db5a62205b8bc9dd43b6d360a0313ae47ed": {
+          "hold": 5,
+          "threshold": 0.8
+        },
+        "23a08b01d74748f4dcfdcd397f185952e1556f5f86943a4bdc5d5ecedc966f29": {
+          "hold": 5,
+          "threshold": 0.8
+        },
+        "2431c69a49986999f3913503049ed57675a24bd5176928d4e9a8567d92c1f3ec": {
+          "hold": 5,
+          "threshold": 0.8
+        },
+        "2818fd694b6a17b351abf1d81a1f2acf09e770a83b8f05f729aba2a9ae8c183d": {
+          "hold": 5,
+          "threshold": 0.9
+        },
+        "2b577efb6c5f625e627246398240a850b6f06123de0c601c376e4109103c9eec": {
+          "hold": 5,
+          "threshold": 0.9
+        },
+        "3607d86e30f2a97a6bc30171aa1a4d03a33cff3eba3d0d1b3900cb7c17a789ed": {
+          "hold": 5,
+          "threshold": 0.9
+        },
+        "425d70708b3ace722e797b73a9134abe4978b570cacbf648daafd67cce7051e6": {
+          "hold": 5,
+          "threshold": 0.9
+        },
+        "5b06eaffe847ab774673148b7d34718608a9159db4b38c23511c49e45ceb0cf1": {
+          "hold": 5,
+          "threshold": 0.9
+        },
+        "82eed349d83e744c818dd5f940be85fd716691e88259d739dc1077808285258b": {
+          "hold": 5,
+          "threshold": 0.8
+        },
+        "88f93a9cb56c6718ea8cb4704217fb4cfa1ebc965683d281e2e02b05f62daa99": {
+          "hold": 5,
+          "threshold": 0.9
+        },
+        "aa2230b80c569247cf51451fdfa4a7241d2e90fb2a0af41ef132a6725a92ec52": {
+          "hold": 5,
+          "threshold": 0.9
+        },
+        "b64c455d6594e22a6ada068850c9b8cbbd2fe09b09b6aac531a62d81294912ad": {
+          "hold": 5,
+          "threshold": 0.9
+        },
+        "c3eabcbee52f6cb5f7b5ce75fbb58e429766a1c2bb5adfcc42821f5261545895": {
+          "hold": 5,
+          "threshold": 0.8
+        },
+        "d85944f026f4c1bd8782383b5e3464dcde3c173dd96ca26dff3d3e1118011b16": {
+          "hold": 5,
+          "threshold": 0.9
+        }
+      },
+      "status": "executed",
+      "validation_rule": "Unchanged validation objective: miss +0.05*falseevents/min +0.05*mean_delay/24; registered ties."
+    },
+    {
+      "basis": "Approved execution plan and registered bounded engineering budget; the metric is not a reliability acceptance criterion.",
+      "candidates": [
+        "G2",
+        "filter",
+        "stage conditioning",
+        "cross-task"
+      ],
+      "controlled_variables": "12 measured channels; unchanged simulation, controller, split and physical fault; fixed seeds/budgets",
+      "decision_id": "V4_deferred",
+      "evidence": {
+        "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v4_evidence_20261105\\registered_config.json": "f80b86e0e76c5f0824b246025a535362c91d186d6d2f404ab0ef7d7f3129a77e"
+      },
+      "evidence_sha256": {
+        "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v4_evidence_20261105\\registered_config.json": "f80b86e0e76c5f0824b246025a535362c91d186d6d2f404ab0ef7d7f3129a77e"
+      },
+      "fixed_controls": "12 measured channels; unchanged simulation, controller, split and physical fault; fixed seeds/budgets",
+      "limitations": "No claims for these variants.",
+      "name": "deferred",
+      "question": "Which optional variants remain unexecuted?",
+      "scope": "Development training/validation only; no confirmation scores",
+      "selected": null,
+      "status": "not_executed_registered_out_of_scope",
+      "validation_rule": "Disabled before development, not enabled by confirmation outcomes."
+    }
+  ],
+  "new_test_features_read": false,
+  "platform": "Windows-10-10.0.26300-SP0",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "schema_completed_utc": "2026-11-05T15:29:26.821552+00:00",
+  "signature": "b57bb2ef22c907a56085fe15d9565d1ef26690f4ee5bb760fd8463e6087b2487"
+}

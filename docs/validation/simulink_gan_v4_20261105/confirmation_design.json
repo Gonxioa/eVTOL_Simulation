@@ -1,0 +1,64 @@
+{
+  "B_complete_sha256": "79f66cb8d1c7ef0b660ac9abbd9c5237a60e900da4838f5b3187790fad4cd575",
+  "config_signature": "8e98ef0304f87e3d734329f2496f237858fe830753e1e62a6c2770d4d0a89c14",
+  "limitations": "Only 3 development groups: unstable normal-approximation planning; min/max are budget caps, not statistical sufficiency or guaranteed precision",
+  "planning_sample_sd": 0.007474612619261041,
+  "previous_plan_hashes": [
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\simulink_control_v3_observable_20261103_v1\\failed_fast_restart_attempt\\collection_plan.json",
+      "sha256": "9f02eb47d17312c1d1fe7c7ae4cedad7c1236771efd83d7acd1ec4cb9ca71d8d"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\simulink_control_v3_observable_20261103_v1\\raw\\collection_plan.json",
+      "sha256": "85d82ae1ea1ec693d3ce6ded602be673eac4760d5a62383c0abf407b290b9680"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\raw_new8\\collection_plan.json",
+      "sha256": "903e1cfd1259e96df86bda2c2e7019f81dad9679d189ed7b025a6598db5a7a08"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v3_imu_rpm_prefix_20261105\\raw_new_test3\\collection_plan.json",
+      "sha256": "5db402901825e687ba92a31cdbba1a1bf2e1db20fba0afa66a0a813e0e052ba5"
+    }
+  ],
+  "previously_used_seeds": [
+    20261103,
+    20261104,
+    20261105,
+    20261106,
+    20261107,
+    20261108,
+    20261109,
+    20261110,
+    20261111,
+    20261112,
+    20261113,
+    20261114,
+    20261115,
+    20261116,
+    20261117
+  ],
+  "primary_comparison": [
+    "G1",
+    "ROS_matched_G1"
+  ],
+  "records": 114,
+  "requested_normal_approximate_halfwidth": 0.05,
+  "seeds": [
+    20261118,
+    20261119,
+    20261120,
+    20261121,
+    20261122,
+    20261123
+  ],
+  "selected_groups": 6,
+  "signature": "0e4bc74575446fdc33506efde1bf1a1fd6b00928599bfa47502d230f593b19e8",
+  "stop_policy": "One predeclared collection; no extra groups based on confirmation scores",
+  "unclipped_groups": 1,
+  "validation_group_differences": [
+    -0.011244689625251492,
+    -0.012343687837721329,
+    0.0011171881749783008
+  ]
+}

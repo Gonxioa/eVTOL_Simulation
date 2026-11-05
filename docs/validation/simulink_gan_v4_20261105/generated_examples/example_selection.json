@@ -1,0 +1,8 @@
+{
+  "G_step": 3000,
+  "generator_seed": 142,
+  "label": 7,
+  "no_synthetic_absolute_phase": true,
+  "original_quality_acf": "Pooled mean-centering; supplementary CSV uses per-window centering. Neither is a label certificate.",
+  "window": "First in source/pool and fixed latent order"
+}

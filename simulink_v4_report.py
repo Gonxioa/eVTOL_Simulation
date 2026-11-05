@@ -170,10 +170,13 @@ def report_final(config):
             cluster_bootstrap_lower_pp=float(np.quantile(bootstrap,.025)),cluster_bootstrap_upper_pp=float(np.quantile(bootstrap,.975)),
             scope='Average training repeats within group first; resample paired condition groups only. Small group-count interval is descriptive and unstable.'))
     pd.DataFrame(uncertainty).to_csv(target/'group_level_uncertainty.csv',index=False,encoding='utf-8-sig')
-    fig,axes=plt.subplots(1,2,figsize=(13,4.5)); names=list(b['selected'])
+    fig,axes=plt.subplots(1,2,figsize=(13,4.5))
+    names=[n for n in ('raw','ROS_best','G0','ROS_matched_G0','G1','ROS_matched_G1') if n in b['selected']]
+    display={'raw':'原始数据','ROS_best':'验证最优ROS','G0':'原GAN（G0）','G1':'类别约束GAN（G1）',
+             'ROS_matched_G0':'与G0同量ROS','ROS_matched_G1':'与G1同量ROS'}
     for ax,key,title in [(axes[0],'accuracy','准确率（%）'),(axes[1],'macro_f1','19类宏F1（%）')]:
         values=[[index[s]['test']['prefix_24'][key]*100 for s in b['selected'][n]] for n in names]
-        ax.bar(names,[np.mean(v) for v in values],yerr=[np.std(v) for v in values],capsize=3)
+        ax.bar([display[n] for n in names],[np.mean(v) for v in values],yerr=[np.std(v) for v in values],capsize=3)
         ax.set_ylabel(title); ax.tick_params(axis='x',rotation=20); ax.grid(axis='y',alpha=.25)
     fig.suptitle('全新独立风噪条件组：全部选择冻结后的一次统一确认'); fig.tight_layout(); fig.savefig(target/'figures/final_comparison.png',bbox_inches='tight'); plt.close(fig)
     quality=[]; curves=[]
@@ -195,6 +198,8 @@ def report_final(config):
     fig.suptitle('G为单批损失，D为5次实际更新的均值；平滑程度不同不表示收敛优劣'); fig.tight_layout(); fig.savefig(target/'figures/GAN_loss_decomposition.png',bbox_inches='tight'); plt.close(fig)
     for original,target_name in [('freeze.json','freeze_receipt.json'),('confirmation_design.json','confirmation_design.json'),
         ('decision_register.json','decision_register.json'),
+        ('hardware.json','hardware.json'),('registered_config.json','registered_config.json'),('registered_batch_B.json','registered_batch_B.json'),
+        ('confirmation_matlab.log','confirmation_collection_log.txt'),('confirmation_collection_status.json','confirmation_collection_status.json'),
         ('test_access_receipt.json','test_access_receipt.json'),('audit/final_audit.json','final_audit.json'),
         ('audit/formal_source_manifest.csv','formal_source_manifest.csv'),('audit/actual_neural_budgets.csv','actual_neural_budgets.csv'),
         ('logs/batch_b.log','B_training_log.txt'),('logs/confirm_test.log','confirmation_test_log.txt')]:
@@ -208,11 +213,31 @@ def report_final(config):
         f'基线 `{config["baseline_commit"]}`。原始六训练组114条、三验证组57条；全新确认{final["groups"]}组、{final["records"]}条。旧V2/V3测试保持历史身份，未用于本轮正式确认。',
         '',f'实际完成{audit["neural_trajectories"]}条神经训练轨迹，{audit["classifier_updates"]}次分类器更新；'+
         f'{len(b["generators"])}个GAN，{audit["generator_updates"]}次G、{audit["critic_updates"]}次critic更新。统计基线另有6个随机森林拟合，不伪记为Adam训练步数。',
+        '', '实际硬件为RTX 4060 Laptop GPU，PyTorch2.5.1+CUDA12.1、float32神经优化。参数量、训练墙钟及单窗推理耗时分别保存在A_actual_training_budgets.csv和GAN_actual_budgets.csv；训练曲线覆盖实际检查点。不同模型相同更新数不代表相同算力。',
         '',f'共同真实信息预算为前{a["selected_prefix_s"]}秒，{a["selected_window"]/100:g}秒窗口，{a["selected_family"].upper()}、{a["selected_steps"]}次更新。此前的窗口、预算、表示、覆盖和等量诊断见[批次A报告](批次A结果报告.md)。',
         '', '## 新确认主指标','',
         '以下为三个联合训练重复的均值±总体标准差，均是共同完整24秒、19类argmax结果；独立测试来源按条件组计，不按窗口数或训练种子数计。',
         '', '|方法|准确率／%|宏F1／%|','|---|---:|---:|']
     for name in names: text.append(f'|{name}|{summary(name,"accuracy")}|{summary(name)}|')
+    alarm_values=[r['alarm']['false_alarm_events'] for r in final['results']]
+    text+=['',f'**主要结果：** 原始数据宏F1为{summary("raw")}%，G0为{summary("G0")}%。'+
+        (f'类别约束G1为{summary("G1")}%，其逐类同量ROS为{summary("ROS_matched_G1")}%。' if 'G1' in names else '')+
+        '这些有限重复没有支持GAN稳定优于同量ROS。',
+        '',f'**报警仍不可靠：** 每个模型的唯一健康观测总时长为{final["results"][0]["alarm"]["normal_observation_s"]:.2f}秒；'+
+        f'各模型误报{min(alarm_values)}～{max(alarm_values)}次。故障在完整24秒内最终检出，不代表早期识别、正确定位或低误报达到要求。'+
+        '因此当前只作为研究对照，优先复核真实信号表征、训练充分程度及误报控制，不据增广后略高的均值认定可用。']
+    text+=['','raw为原始数据；G0为原类别条件WGAN-GP，G1为增加冻结真实数据教师类别约束的变体；ROS为有放回重复抽取已有真实训练窗。ROS_best由验证选择比例，ROS_matched按相应GAN逐类新增数量匹配。ROS_best与ROS_matched_G1本次是同一组权重，不能当成两次独立实验。',
+        '', '|方法|健康召回|完全失效联合正确率|剩余20%联合正确率|剩余80%联合正确率|','|---|---:|---:|---:|---:|']
+    for name in names:
+        mm=[index[s]['test']['prefix_24'] for s in b['selected'][name]]
+        columns=[np.mean([m['healthy_recall'] for m in mm])]+[np.mean([m['joint_accuracy_by_effectiveness'][str(eta)] for m in mm]) for eta in (0.,.2,.8)]
+        text.append('|'+name+'|'+ '|'.join(f'{100*v:.2f}%' for v in columns)+'|')
+    text+=['','联合正确率要求电机编号与失效程度同时正确。剩余80%类别整体仅约20%，是当前明显短板；完全失效的高正确率不能替代轻度故障定位能力。',
+        '', '|方法|真实训练窗|新增生成／重复窗|分类训练总窗|','|---|---:|---:|---:|']
+    for name in names:
+        s=models[b['selected'][name][0]]
+        text.append(f'|{name}|{s["original_windows"]}|{s["training_windows"]-s["original_windows"]}|{s["training_windows"]}|')
+    text+=['','每种方法均使用同一114条原始训练来源，不因增加窗口副本或生成样本而增加独立仿真次数；最终确认是另外六个新条件组。']
     text+=['','## 开发选择与可用结论','',
         '开发验证的前6／12／24秒比较、等量抽样与窗口筛选均在独立新确认之前完成；新确认只评价已经选定的共同训练覆盖，不用新测试再次挑选前缀。',
         '', '|开发候选|所选新增比例|共同完整24秒验证宏F1／%|','|---|---:|---:|',
@@ -221,7 +246,7 @@ def report_final(config):
     for weight,choice in b['ratio_choices'].items():
         text.append(f'|GAN类别约束权重{weight}|{choice["selected"]["ratio"]:g}|{100*choice["selected"]["mean_macro_f1"]:.2f}|')
     text+=['','G1的两个权重和全部增广比例都保留，没有因表现较差从报告中删除。B_all_validation_candidates.csv记录每个联合重复和逐类新增数量，B_independent_TSTR.csv记录独立转移结果。',
-        '', '统计特征随机森林在开发验证中明显高于这些神经参考结果，但它未被登记为本轮新确认主候选，不能把其开发成绩当成已经取得同等独立确认。后续优先复核表示与优化，当前结果不足以把12维信号判为严格不可辨识，也不足以部署为可靠的19类诊断器。',
+        '', '统计特征随机森林在开发验证中明显高于对应神经参考结果，但其池为完整24秒共同网格，对照对象是同池神经网络，不与前12秒主池直接作等信息预算结论。它未被登记为本轮新确认主候选，不能把其开发成绩当成已经取得同等独立确认。后续优先复核表示与优化，当前结果不足以把12维信号判为严格不可辨识，也不足以部署为可靠的19类诊断器。',
         '', '本轮为独立12维实验，不重复V3的18维输入消融；输入维度影响应查看V3的同协议对照，不能把V3和V4不同模型预算的差值只归因于删除命令。']
     text+=['','## 主要配对结果与不确定性','']
     for row in uncertainty:
@@ -235,7 +260,16 @@ def report_final(config):
         '', '生成质量的主要真实参照是相同窗长、相同训练覆盖范围的独立验证窗口；同时保留全24秒下游评价。记录去均值频谱、自相关、通道关系、分布距离和训练最近邻。全部入选窗口检查有限性、数量、精确重复；昂贵分布与距离诊断每类固定32个探针，不能将探针结果当全部样本的穷尽证明。',
         '', '条件标签只代表请求生成的类别。外部冻结教师提供探索性损失，TSTR分类器从随机初始化重新训练；不据教师自评分或漂亮波形认定物理故障标签正确。缺少命令和完整状态，不报告伪造的动力学闭合残差。带噪延迟转速观测保留停转附近可能的小负值。',
         '', '原GAN质量JSON的自相关按汇总数据中心化；GAN_per_window_centered_acf.csv额外报告逐窗去均值自相关，避免窗间均值差异掩盖窗内动态。generated_examples目录逐通道保存固定M1剩余20%示例、去均值PSD、逐窗自相关、分布及关联图；示例不按好坏挑选，生成样本没有真实绝对阶段。',
+        '', '|类别约束权重|验证归一化Wasserstein均值|去均值PSD差异L1|精确训练重复数|独立TSTR完整验证宏F1|','|---|---:|---:|---:|---:|']
+    for weight in sorted({g['weight'] for g in b['generators']}):
+        q=[r for r in quality if r['weight']==weight]; ids={g['signature'] for g in b['generators'] if g['weight']==weight}
+        t=[record_at(r['model'],r['model']['step'])['validation']['prefix_24']['macro_f1'] for r in b['TSTR'] if r['generator'] in ids and r['G_step']==b['selected_G_step']]
+        text.append(f'|{weight:g}|{np.mean([r["normalized_wasserstein"] for r in q]):.3f}|{np.mean([r["demeaned_psd_l1"] for r in q]):.3f}|{sum(r["exact_training_duplicates"] for r in q)}|{100*np.mean(t):.2f}%|')
+    text+=['','分布距离和PSD差异越小越接近相应真实验证参照；不把它们当成故障标签真值。生成频谱与逐窗自相关仍有明显偏差；没有精确复制也不等于足够多样或物理正确。',
         '', '## 连续因果诊断与异常','',
+        '报警概率取19类softmax的1−正常概率；主窗口类别取19类argmax。两者不是同一个判定条件。每个窗口独立计算网络特征，不传递上一窗口隐藏状态；持续次数是报警状态机的记忆。',
+        '阶段分类表中，早期按窗口末时刻落在[3,6)秒选取；后期要求窗口起点不早于12秒且末时刻早于24秒。阶段不是网络输入。纯故障阶段没有健康真值，固定19类宏F1上限为18/19；另列实际出现类别宏F1和支持数，不能直接与含健康的全时段分数作同口径比较。',
+        '',
         '每条记录从首个完整窗口初始化，按0.1秒判断周期只读取过去与当前测量；无3秒真值重置。标准化只transform，不在新测试上fit。正常曝光只统计每个条件组唯一健康来源。检测、首次定位、最终正确定位分别评分；所有漏检保留在覆盖率分母。',
         '', '|方法|训练种子|阈值／持续|正常误报／观测秒|漏检／故障记录|0.5秒内检出|首次正确定位覆盖|最终正确定位覆盖|',
         '|---|---:|---|---|---|---:|---:|---:|']
@@ -245,11 +279,13 @@ def report_final(config):
             text.append(f'|{name}|{r["seed"]}|{p["threshold"]:g}／{p["hold"]}|{al["false_alarm_events"]}／{al["normal_observation_s"]:.2f}|'+
                 f'{al["missed"]}／{al["fault_records"]}|{100*al["detected_within_0.5s_rate"]:.1f}%|{100*al["first_correct_localization_fraction_all_faults"]:.1f}%|{100*al["localization_rate"]:.1f}%|')
     text+=['','单窗概率阈值成绩另存在原始JSON的alarm_gated_window字段，未混入argmax主表。0.2／0.5／1／3秒检出率、延迟分位数、首次定位准确率和逐记录异常均保存在CSV。',
+        '', '本次没有完整24秒漏检记录，因此不制造全程漏检示例。另按固定种子、来源排序选取首个晚于1秒才检出的记录绘图，标为早期漏检；与健康误报时序共同保存在figures和representative_alarm_traces.csv。',
         '',f'完整有限但未通过飞行恢复验收的正式来源共{audit["retained_flight_acceptance_failures"]}条，保留并标记；没有删除困难类别或替换测试种子。',
         '', '## 冻结和完成范围','',f'冻结签名 `{frozen["signature"]}`。全部选择、模型、scaler和工作点在新测试特征解锁前固定，首次读取见test_access_receipt.json。',
         '', '采集前已通过confirmation_design绑定批次B完整选择记录、组数及种子；采集完成后登记实际原始来源哈希，再对所有模型、scaler、工作点和代码形成最终freeze。首次新测试特征读取发生在该最终freeze之后；没有把采集日志中的飞行恢复指标用于训练选择。',
         '', '模型、物理参数、PID、故障强度和测量链未为提高识别分数而修改。本轮只在同一绕圈任务、固定故障时刻和故障模型下改变独立风噪来源；跨任务、可变注入时刻、参数失配和实机尚未验证。4000步不保证收敛，类别约束不保证生成标签真实，验证最优不代表全局最优。',
         '',f'未执行：G2、阶段条件生成、跨窗有状态模型、筛选、额外任务／参数失配试验；这些不属于本次登记的首轮。实际执行和数量审计通过{audit["count"]}项，测试数量不替代识别效果或飞行验收。',
+        '', '批次B有一次Windows原子写进度文件的访问冲突；日志保留原异常及恢复入口。已完成模型从原优化器检查点复用，后续完成标记和实际Adam状态另行审计，没有把恢复启动次数算成新增训练重复。',
         '',f'完整数据、权重、检查点、采样索引、缓存和日志保存在 `{config["results_root"]}`，此目录提供便于版本审阅的报告、图表、CSV和收据。','']
     for p in sorted((target/'figures').glob('*.png')): text.append(f'![{p.stem}](figures/{p.name})\n')
     (target/'结果报告.md').write_text('\n'.join(text).rstrip()+'\n',encoding='utf-8')

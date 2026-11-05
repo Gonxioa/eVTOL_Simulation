@@ -1,0 +1,10 @@
+{
+  "created_utc": "2026-11-05T14:41:42.463094+00:00",
+  "cuda": "12.1",
+  "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "precision": "float32 neural optimization, float64 evaluation cross-entropy",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "torch": "2.5.1+cu121",
+  "training_threads": 4
+}

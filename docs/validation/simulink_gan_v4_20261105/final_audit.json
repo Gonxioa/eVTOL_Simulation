@@ -1,0 +1,1517 @@
+{
+  "checks": [
+    {
+      "check": "all legacy frozen artifacts unchanged",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 82cad486da930bd36dc476cdb7f0c81e6b62e94e0245f72aa96b4ee6ce565349",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 82cad486da930bd36dc476cdb7f0c81e6b62e94e0245f72aa96b4ee6ce565349",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 82cad486da930bd36dc476cdb7f0c81e6b62e94e0245f72aa96b4ee6ce565349",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget fcba2982c7bda6d9acb626311d5a5dc0f86db1ec058577b0d84b2242fbc5c003",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width fcba2982c7bda6d9acb626311d5a5dc0f86db1ec058577b0d84b2242fbc5c003",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width fcba2982c7bda6d9acb626311d5a5dc0f86db1ec058577b0d84b2242fbc5c003",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 8ca831ea142335498faa10c039627dd878def4330b69ce2877e1f24b1d2f7a7d",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 8ca831ea142335498faa10c039627dd878def4330b69ce2877e1f24b1d2f7a7d",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 8ca831ea142335498faa10c039627dd878def4330b69ce2877e1f24b1d2f7a7d",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 7870509afabca972e0f55b5c385fe06c2661311bf353b26b473c86f292c5ffc2",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 7870509afabca972e0f55b5c385fe06c2661311bf353b26b473c86f292c5ffc2",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 7870509afabca972e0f55b5c385fe06c2661311bf353b26b473c86f292c5ffc2",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 930da5cc35d98adeb97015417098e752b78e123c8e2f91ce301dbda37f9cc038",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 930da5cc35d98adeb97015417098e752b78e123c8e2f91ce301dbda37f9cc038",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 930da5cc35d98adeb97015417098e752b78e123c8e2f91ce301dbda37f9cc038",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 2de051201e2f63290df4e678ee6c49f884eb9e11137ce07f5ba0f8516783893f",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 2de051201e2f63290df4e678ee6c49f884eb9e11137ce07f5ba0f8516783893f",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 2de051201e2f63290df4e678ee6c49f884eb9e11137ce07f5ba0f8516783893f",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 849c8bc9c20dc22920e4f677fb7730d1dcfd883f91a88ab719da33a59cd873d9",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 849c8bc9c20dc22920e4f677fb7730d1dcfd883f91a88ab719da33a59cd873d9",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 849c8bc9c20dc22920e4f677fb7730d1dcfd883f91a88ab719da33a59cd873d9",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 7f367c0ce96e19f5f380f35690bde71403eb2bb8a6bd438df4a8604c007ea4e5",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 7f367c0ce96e19f5f380f35690bde71403eb2bb8a6bd438df4a8604c007ea4e5",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 7f367c0ce96e19f5f380f35690bde71403eb2bb8a6bd438df4a8604c007ea4e5",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget ab1f46ddecb2af944a59200f7a633d5f9cd46bd21135a0118067ba5dd1efc8fa",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width ab1f46ddecb2af944a59200f7a633d5f9cd46bd21135a0118067ba5dd1efc8fa",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width ab1f46ddecb2af944a59200f7a633d5f9cd46bd21135a0118067ba5dd1efc8fa",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget a4ac04d873667d01409c6323cb290884e909e9e0a2b45901b3110abdf294a7a2",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width a4ac04d873667d01409c6323cb290884e909e9e0a2b45901b3110abdf294a7a2",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width a4ac04d873667d01409c6323cb290884e909e9e0a2b45901b3110abdf294a7a2",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 1a28521b6ac1cba8b34bb7253c98a2576056c9e0b1248d2aef5f7befd4eb9b5d",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 1a28521b6ac1cba8b34bb7253c98a2576056c9e0b1248d2aef5f7befd4eb9b5d",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 1a28521b6ac1cba8b34bb7253c98a2576056c9e0b1248d2aef5f7befd4eb9b5d",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 6023a596e256b97003c51626bb9b3d161dbebdab796c6cc43b6d6d5aa635cf32",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 6023a596e256b97003c51626bb9b3d161dbebdab796c6cc43b6d6d5aa635cf32",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 6023a596e256b97003c51626bb9b3d161dbebdab796c6cc43b6d6d5aa635cf32",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 299056da6c86da5162bcaf442472e56c75a0506004f229675c23d19fff66a2fa",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 299056da6c86da5162bcaf442472e56c75a0506004f229675c23d19fff66a2fa",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 299056da6c86da5162bcaf442472e56c75a0506004f229675c23d19fff66a2fa",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 5a9196500611f3c6406189a433e442276c61a2ddad7416401be91c8bd217b40e",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 5a9196500611f3c6406189a433e442276c61a2ddad7416401be91c8bd217b40e",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 5a9196500611f3c6406189a433e442276c61a2ddad7416401be91c8bd217b40e",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 6029e4efb5722ffd2ba802bf4b93aba38d87513b497f5e63cfb95b22e607f22b",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 6029e4efb5722ffd2ba802bf4b93aba38d87513b497f5e63cfb95b22e607f22b",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 6029e4efb5722ffd2ba802bf4b93aba38d87513b497f5e63cfb95b22e607f22b",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget d3b104cef376b330370e2031611d1f491cb69d12464ed240a2ea2a5acfdf14fe",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width d3b104cef376b330370e2031611d1f491cb69d12464ed240a2ea2a5acfdf14fe",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width d3b104cef376b330370e2031611d1f491cb69d12464ed240a2ea2a5acfdf14fe",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 16039f728395724579ff14ccd83053c39bd1452f39cf12ac7a94d738289a55e4",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 16039f728395724579ff14ccd83053c39bd1452f39cf12ac7a94d738289a55e4",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 16039f728395724579ff14ccd83053c39bd1452f39cf12ac7a94d738289a55e4",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 8196d75a27af467808806c3381e55a5a015f5c221ca6540dc277a4963952e4c8",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 8196d75a27af467808806c3381e55a5a015f5c221ca6540dc277a4963952e4c8",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 8196d75a27af467808806c3381e55a5a015f5c221ca6540dc277a4963952e4c8",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget d85491ba7a981a71fbfa3b7c9e11b498001d2fa61b74ea67f25c3a0d0687fb3d",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width d85491ba7a981a71fbfa3b7c9e11b498001d2fa61b74ea67f25c3a0d0687fb3d",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width d85491ba7a981a71fbfa3b7c9e11b498001d2fa61b74ea67f25c3a0d0687fb3d",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 5678b04cccec1e87d9531ba4348b6644d10863d75fa81857006d3b0398b0bcd6",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 5678b04cccec1e87d9531ba4348b6644d10863d75fa81857006d3b0398b0bcd6",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 5678b04cccec1e87d9531ba4348b6644d10863d75fa81857006d3b0398b0bcd6",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 9533a5d172693993a452b7154b1cbf509d91d8cb4f41d7d0952ecab74688a874",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 9533a5d172693993a452b7154b1cbf509d91d8cb4f41d7d0952ecab74688a874",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 9533a5d172693993a452b7154b1cbf509d91d8cb4f41d7d0952ecab74688a874",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget de794adf1ad50f71e5bd079a85419fa7bc183e327900030dfd1811c4ece26307",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width de794adf1ad50f71e5bd079a85419fa7bc183e327900030dfd1811c4ece26307",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width de794adf1ad50f71e5bd079a85419fa7bc183e327900030dfd1811c4ece26307",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 792cf275ccacbb26c7d94dcde22d1cd84bb11645cf1744d86986809907053abe",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 792cf275ccacbb26c7d94dcde22d1cd84bb11645cf1744d86986809907053abe",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 792cf275ccacbb26c7d94dcde22d1cd84bb11645cf1744d86986809907053abe",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 4117805f6422aa7cb10976229161d7a02030100841f9c1337a018aefb606a9fc",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 4117805f6422aa7cb10976229161d7a02030100841f9c1337a018aefb606a9fc",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 4117805f6422aa7cb10976229161d7a02030100841f9c1337a018aefb606a9fc",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget dec6424cf70f9f7cdd4fc515c2e255be1aecdec4e8551fd459b65ec13364812f",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width dec6424cf70f9f7cdd4fc515c2e255be1aecdec4e8551fd459b65ec13364812f",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width dec6424cf70f9f7cdd4fc515c2e255be1aecdec4e8551fd459b65ec13364812f",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget bbdf7b06a8ba98650f34e5935cf2ebd1122aa2d0d4c70dbe49cd61507a547309",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width bbdf7b06a8ba98650f34e5935cf2ebd1122aa2d0d4c70dbe49cd61507a547309",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width bbdf7b06a8ba98650f34e5935cf2ebd1122aa2d0d4c70dbe49cd61507a547309",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 94f982be2148f66b960d53413dd4937c730f015616f49ab969408c864e03420e",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 94f982be2148f66b960d53413dd4937c730f015616f49ab969408c864e03420e",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 94f982be2148f66b960d53413dd4937c730f015616f49ab969408c864e03420e",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 85cb3906f0f79fdc04196d5939e6fd28801c485696a1a4cf213e6ee36763abf3",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 85cb3906f0f79fdc04196d5939e6fd28801c485696a1a4cf213e6ee36763abf3",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 85cb3906f0f79fdc04196d5939e6fd28801c485696a1a4cf213e6ee36763abf3",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget f67988e0355dafdd3d2b36b1837ef6ac093d76b2e3000892b4409efc1575b66a",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width f67988e0355dafdd3d2b36b1837ef6ac093d76b2e3000892b4409efc1575b66a",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width f67988e0355dafdd3d2b36b1837ef6ac093d76b2e3000892b4409efc1575b66a",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 824df59c28aa2a53e5c6d13094d558e6f5fe8dbca3db58a9205db50a4342916c",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 824df59c28aa2a53e5c6d13094d558e6f5fe8dbca3db58a9205db50a4342916c",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 824df59c28aa2a53e5c6d13094d558e6f5fe8dbca3db58a9205db50a4342916c",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 1cbdc64f1e01d98b5120e9f9b5cb041871da44fe015349572fc5ad3fe056a15c",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 1cbdc64f1e01d98b5120e9f9b5cb041871da44fe015349572fc5ad3fe056a15c",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 1cbdc64f1e01d98b5120e9f9b5cb041871da44fe015349572fc5ad3fe056a15c",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 3e85bb3a7d51a4bfd80522097a7d31e56f3983f99833251f6a64d3762a541f48",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 3e85bb3a7d51a4bfd80522097a7d31e56f3983f99833251f6a64d3762a541f48",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 3e85bb3a7d51a4bfd80522097a7d31e56f3983f99833251f6a64d3762a541f48",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget eafbdebc49b7f3f0448bcb04c5f4fd236800b1c400d37cd761047f89eea834d2",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width eafbdebc49b7f3f0448bcb04c5f4fd236800b1c400d37cd761047f89eea834d2",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width eafbdebc49b7f3f0448bcb04c5f4fd236800b1c400d37cd761047f89eea834d2",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 6a30ba5e855159b16a5fa77625b9935c8908ca343541983376a062e1433a9c9d",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 6a30ba5e855159b16a5fa77625b9935c8908ca343541983376a062e1433a9c9d",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 6a30ba5e855159b16a5fa77625b9935c8908ca343541983376a062e1433a9c9d",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 238493df7fa7b30c4aee8b9ad9213db5a62205b8bc9dd43b6d360a0313ae47ed",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 238493df7fa7b30c4aee8b9ad9213db5a62205b8bc9dd43b6d360a0313ae47ed",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 238493df7fa7b30c4aee8b9ad9213db5a62205b8bc9dd43b6d360a0313ae47ed",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget aa2230b80c569247cf51451fdfa4a7241d2e90fb2a0af41ef132a6725a92ec52",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width aa2230b80c569247cf51451fdfa4a7241d2e90fb2a0af41ef132a6725a92ec52",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width aa2230b80c569247cf51451fdfa4a7241d2e90fb2a0af41ef132a6725a92ec52",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 82eed349d83e744c818dd5f940be85fd716691e88259d739dc1077808285258b",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 82eed349d83e744c818dd5f940be85fd716691e88259d739dc1077808285258b",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 82eed349d83e744c818dd5f940be85fd716691e88259d739dc1077808285258b",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 8b7d451b40b040df58f526d4258d68b3b214ec2f4371385b32da0cabea27fe3f",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 8b7d451b40b040df58f526d4258d68b3b214ec2f4371385b32da0cabea27fe3f",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 8b7d451b40b040df58f526d4258d68b3b214ec2f4371385b32da0cabea27fe3f",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 11913c6981a0762ef83d0954a786acd2009a7874e240231c180a56e04fb4078d",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 11913c6981a0762ef83d0954a786acd2009a7874e240231c180a56e04fb4078d",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 11913c6981a0762ef83d0954a786acd2009a7874e240231c180a56e04fb4078d",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 5932d9805bdc3f0daaf5266a012fcf76c7d1276556f1e0ce91bf0a04f1bc98a9",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 5932d9805bdc3f0daaf5266a012fcf76c7d1276556f1e0ce91bf0a04f1bc98a9",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 5932d9805bdc3f0daaf5266a012fcf76c7d1276556f1e0ce91bf0a04f1bc98a9",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 654d509a25b5311197a51092fb1bd9f0fb89ccd3178e9871b3f9d98db011c487",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 654d509a25b5311197a51092fb1bd9f0fb89ccd3178e9871b3f9d98db011c487",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 654d509a25b5311197a51092fb1bd9f0fb89ccd3178e9871b3f9d98db011c487",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 622a22e0e8eb873c318df5d48612f4ae3637822b66ced999d37b4dcc81869b29",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 622a22e0e8eb873c318df5d48612f4ae3637822b66ced999d37b4dcc81869b29",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 622a22e0e8eb873c318df5d48612f4ae3637822b66ced999d37b4dcc81869b29",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget b9a661aac5ab15d0368ef6d3f84d4aa6db9ac945e8d223dbe42c7792e4962fa8",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width b9a661aac5ab15d0368ef6d3f84d4aa6db9ac945e8d223dbe42c7792e4962fa8",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width b9a661aac5ab15d0368ef6d3f84d4aa6db9ac945e8d223dbe42c7792e4962fa8",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 52624a4d50263ef04f8a6486d0b11719cf28ee5299f3f4827f2f6e28d3151007",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 52624a4d50263ef04f8a6486d0b11719cf28ee5299f3f4827f2f6e28d3151007",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 52624a4d50263ef04f8a6486d0b11719cf28ee5299f3f4827f2f6e28d3151007",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget db39b0776e26200e0325cbd9bea53cdcd2c10111499c0dc6cdce5d2b2f9942ee",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width db39b0776e26200e0325cbd9bea53cdcd2c10111499c0dc6cdce5d2b2f9942ee",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width db39b0776e26200e0325cbd9bea53cdcd2c10111499c0dc6cdce5d2b2f9942ee",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 16ab9feeb11a39e05b81edbb21e0595f8f082aba2061be39bd7e07623ff1e01f",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 16ab9feeb11a39e05b81edbb21e0595f8f082aba2061be39bd7e07623ff1e01f",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 16ab9feeb11a39e05b81edbb21e0595f8f082aba2061be39bd7e07623ff1e01f",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 75d6fec3502f72436e50ea1e8b7315efd3ed242e38d63dd2d4c0334f5fe1fb3b",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 75d6fec3502f72436e50ea1e8b7315efd3ed242e38d63dd2d4c0334f5fe1fb3b",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 75d6fec3502f72436e50ea1e8b7315efd3ed242e38d63dd2d4c0334f5fe1fb3b",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 8052226bea2371c02f006a69e6479937e484249920283fe0c0678653b5c5322e",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 8052226bea2371c02f006a69e6479937e484249920283fe0c0678653b5c5322e",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 8052226bea2371c02f006a69e6479937e484249920283fe0c0678653b5c5322e",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget f83cbcff58b82ea0bc0ce7a1682168cf6332d8d6a939d480aa341a793d53bd48",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width f83cbcff58b82ea0bc0ce7a1682168cf6332d8d6a939d480aa341a793d53bd48",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width f83cbcff58b82ea0bc0ce7a1682168cf6332d8d6a939d480aa341a793d53bd48",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget dcd647cfcd48e92162083986f23cc03e53f17b87f6a27148b2c11b15e3b0e5f7",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width dcd647cfcd48e92162083986f23cc03e53f17b87f6a27148b2c11b15e3b0e5f7",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width dcd647cfcd48e92162083986f23cc03e53f17b87f6a27148b2c11b15e3b0e5f7",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 01fc04d7168dff100171491d0c6543ecea8ecfa8da02f0b062df40c6b44a1962",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 01fc04d7168dff100171491d0c6543ecea8ecfa8da02f0b062df40c6b44a1962",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 01fc04d7168dff100171491d0c6543ecea8ecfa8da02f0b062df40c6b44a1962",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 2242f2e85d7613c11d500568a807a1fdc1627859513fe18ce5bbd1c839901888",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 2242f2e85d7613c11d500568a807a1fdc1627859513fe18ce5bbd1c839901888",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 2242f2e85d7613c11d500568a807a1fdc1627859513fe18ce5bbd1c839901888",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget d8f057c20cb118870939995be46ef67bc1381e4eaa88cfd23a472e2d385740aa",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width d8f057c20cb118870939995be46ef67bc1381e4eaa88cfd23a472e2d385740aa",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width d8f057c20cb118870939995be46ef67bc1381e4eaa88cfd23a472e2d385740aa",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 0486619a0784967eb0684ffd03d8c4fb017e88831655e4f2bb73d8ec2d7f3950",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 0486619a0784967eb0684ffd03d8c4fb017e88831655e4f2bb73d8ec2d7f3950",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 0486619a0784967eb0684ffd03d8c4fb017e88831655e4f2bb73d8ec2d7f3950",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 02ecdc4b2ff1f87572303e04167666867432f82f99bf27e834ccee28538017ce",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 02ecdc4b2ff1f87572303e04167666867432f82f99bf27e834ccee28538017ce",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 02ecdc4b2ff1f87572303e04167666867432f82f99bf27e834ccee28538017ce",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 60ef642a844396d69bcf686d2e0bccc50d32d990f6627d75cfebd373c572f099",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 60ef642a844396d69bcf686d2e0bccc50d32d990f6627d75cfebd373c572f099",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 60ef642a844396d69bcf686d2e0bccc50d32d990f6627d75cfebd373c572f099",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 234498dd7aae064266e35d4af7663cf44d1b82ac9719f37b82730bfb2f1f46fc",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 234498dd7aae064266e35d4af7663cf44d1b82ac9719f37b82730bfb2f1f46fc",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 234498dd7aae064266e35d4af7663cf44d1b82ac9719f37b82730bfb2f1f46fc",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget fb5dcde3f7e499bae6e76972f59db5cf38579259b123010b1f5868d1daae41a6",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width fb5dcde3f7e499bae6e76972f59db5cf38579259b123010b1f5868d1daae41a6",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width fb5dcde3f7e499bae6e76972f59db5cf38579259b123010b1f5868d1daae41a6",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 6a2863a8e30e2a2d77392826061c49f59c6da7ad89af8da3ba2d24221eba4831",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 6a2863a8e30e2a2d77392826061c49f59c6da7ad89af8da3ba2d24221eba4831",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 6a2863a8e30e2a2d77392826061c49f59c6da7ad89af8da3ba2d24221eba4831",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 7e287011da7d777c6d550be8d608bd688c840038be4cfa552469edc46c79e632",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 7e287011da7d777c6d550be8d608bd688c840038be4cfa552469edc46c79e632",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 7e287011da7d777c6d550be8d608bd688c840038be4cfa552469edc46c79e632",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 00630f478a191f9d32d616209e29bc1888de4f51c09b3e19a5fde950172bdeed",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 00630f478a191f9d32d616209e29bc1888de4f51c09b3e19a5fde950172bdeed",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 00630f478a191f9d32d616209e29bc1888de4f51c09b3e19a5fde950172bdeed",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 88f93a9cb56c6718ea8cb4704217fb4cfa1ebc965683d281e2e02b05f62daa99",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 88f93a9cb56c6718ea8cb4704217fb4cfa1ebc965683d281e2e02b05f62daa99",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 88f93a9cb56c6718ea8cb4704217fb4cfa1ebc965683d281e2e02b05f62daa99",
+      "passed": true
+    },
+    {
+      "check": "actual per-class floor additions 88f93a9cb56c6718ea8cb4704217fb4cfa1ebc965683d281e2e02b05f62daa99",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 19517bba2f96d497ff211bcb03fae0629e65c9e3c4113eda009326ee21ad1dd4",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 19517bba2f96d497ff211bcb03fae0629e65c9e3c4113eda009326ee21ad1dd4",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 19517bba2f96d497ff211bcb03fae0629e65c9e3c4113eda009326ee21ad1dd4",
+      "passed": true
+    },
+    {
+      "check": "actual per-class floor additions 19517bba2f96d497ff211bcb03fae0629e65c9e3c4113eda009326ee21ad1dd4",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 5b06eaffe847ab774673148b7d34718608a9159db4b38c23511c49e45ceb0cf1",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 5b06eaffe847ab774673148b7d34718608a9159db4b38c23511c49e45ceb0cf1",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 5b06eaffe847ab774673148b7d34718608a9159db4b38c23511c49e45ceb0cf1",
+      "passed": true
+    },
+    {
+      "check": "actual per-class floor additions 5b06eaffe847ab774673148b7d34718608a9159db4b38c23511c49e45ceb0cf1",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 418c7af68d3dcfad6255210edeb5a268939a0d09ae4beabc1db15a1ec44dba45",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 418c7af68d3dcfad6255210edeb5a268939a0d09ae4beabc1db15a1ec44dba45",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 418c7af68d3dcfad6255210edeb5a268939a0d09ae4beabc1db15a1ec44dba45",
+      "passed": true
+    },
+    {
+      "check": "actual per-class floor additions 418c7af68d3dcfad6255210edeb5a268939a0d09ae4beabc1db15a1ec44dba45",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 546aa76f57304d8ac8894a3442d8bb687179f1b7030eee714b2b50a6af9c78a4",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 546aa76f57304d8ac8894a3442d8bb687179f1b7030eee714b2b50a6af9c78a4",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 546aa76f57304d8ac8894a3442d8bb687179f1b7030eee714b2b50a6af9c78a4",
+      "passed": true
+    },
+    {
+      "check": "actual per-class floor additions 546aa76f57304d8ac8894a3442d8bb687179f1b7030eee714b2b50a6af9c78a4",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 3ffd0377b90c94392b091c3893deeefdebb6913e0bf3ce993bc4fc2c81ee242f",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 3ffd0377b90c94392b091c3893deeefdebb6913e0bf3ce993bc4fc2c81ee242f",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 3ffd0377b90c94392b091c3893deeefdebb6913e0bf3ce993bc4fc2c81ee242f",
+      "passed": true
+    },
+    {
+      "check": "actual per-class floor additions 3ffd0377b90c94392b091c3893deeefdebb6913e0bf3ce993bc4fc2c81ee242f",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget b64c455d6594e22a6ada068850c9b8cbbd2fe09b09b6aac531a62d81294912ad",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width b64c455d6594e22a6ada068850c9b8cbbd2fe09b09b6aac531a62d81294912ad",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width b64c455d6594e22a6ada068850c9b8cbbd2fe09b09b6aac531a62d81294912ad",
+      "passed": true
+    },
+    {
+      "check": "actual per-class floor additions b64c455d6594e22a6ada068850c9b8cbbd2fe09b09b6aac531a62d81294912ad",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 2431c69a49986999f3913503049ed57675a24bd5176928d4e9a8567d92c1f3ec",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 2431c69a49986999f3913503049ed57675a24bd5176928d4e9a8567d92c1f3ec",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 2431c69a49986999f3913503049ed57675a24bd5176928d4e9a8567d92c1f3ec",
+      "passed": true
+    },
+    {
+      "check": "actual per-class floor additions 2431c69a49986999f3913503049ed57675a24bd5176928d4e9a8567d92c1f3ec",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 2b577efb6c5f625e627246398240a850b6f06123de0c601c376e4109103c9eec",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 2b577efb6c5f625e627246398240a850b6f06123de0c601c376e4109103c9eec",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 2b577efb6c5f625e627246398240a850b6f06123de0c601c376e4109103c9eec",
+      "passed": true
+    },
+    {
+      "check": "actual per-class floor additions 2b577efb6c5f625e627246398240a850b6f06123de0c601c376e4109103c9eec",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 766836f37a5ea77d01600d982396ece32264347b2f57ef6d3ec073a8d11bfcf3",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 766836f37a5ea77d01600d982396ece32264347b2f57ef6d3ec073a8d11bfcf3",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 766836f37a5ea77d01600d982396ece32264347b2f57ef6d3ec073a8d11bfcf3",
+      "passed": true
+    },
+    {
+      "check": "actual per-class floor additions 766836f37a5ea77d01600d982396ece32264347b2f57ef6d3ec073a8d11bfcf3",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 01cf1d73b7faba80248caf7fe2201d3bc481078b901bcd94b8eadc8680f51dbb",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 01cf1d73b7faba80248caf7fe2201d3bc481078b901bcd94b8eadc8680f51dbb",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 01cf1d73b7faba80248caf7fe2201d3bc481078b901bcd94b8eadc8680f51dbb",
+      "passed": true
+    },
+    {
+      "check": "actual per-class floor additions 01cf1d73b7faba80248caf7fe2201d3bc481078b901bcd94b8eadc8680f51dbb",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 6c8217aef09987521955a53b7fe956a7c77fbc59f093daf597c45aeec6be73eb",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 6c8217aef09987521955a53b7fe956a7c77fbc59f093daf597c45aeec6be73eb",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 6c8217aef09987521955a53b7fe956a7c77fbc59f093daf597c45aeec6be73eb",
+      "passed": true
+    },
+    {
+      "check": "actual per-class floor additions 6c8217aef09987521955a53b7fe956a7c77fbc59f093daf597c45aeec6be73eb",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 23a08b01d74748f4dcfdcd397f185952e1556f5f86943a4bdc5d5ecedc966f29",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 23a08b01d74748f4dcfdcd397f185952e1556f5f86943a4bdc5d5ecedc966f29",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 23a08b01d74748f4dcfdcd397f185952e1556f5f86943a4bdc5d5ecedc966f29",
+      "passed": true
+    },
+    {
+      "check": "actual per-class floor additions 23a08b01d74748f4dcfdcd397f185952e1556f5f86943a4bdc5d5ecedc966f29",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 425d70708b3ace722e797b73a9134abe4978b570cacbf648daafd67cce7051e6",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 425d70708b3ace722e797b73a9134abe4978b570cacbf648daafd67cce7051e6",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 425d70708b3ace722e797b73a9134abe4978b570cacbf648daafd67cce7051e6",
+      "passed": true
+    },
+    {
+      "check": "actual per-class floor additions 425d70708b3ace722e797b73a9134abe4978b570cacbf648daafd67cce7051e6",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget d85944f026f4c1bd8782383b5e3464dcde3c173dd96ca26dff3d3e1118011b16",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width d85944f026f4c1bd8782383b5e3464dcde3c173dd96ca26dff3d3e1118011b16",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width d85944f026f4c1bd8782383b5e3464dcde3c173dd96ca26dff3d3e1118011b16",
+      "passed": true
+    },
+    {
+      "check": "actual per-class floor additions d85944f026f4c1bd8782383b5e3464dcde3c173dd96ca26dff3d3e1118011b16",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget c3eabcbee52f6cb5f7b5ce75fbb58e429766a1c2bb5adfcc42821f5261545895",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width c3eabcbee52f6cb5f7b5ce75fbb58e429766a1c2bb5adfcc42821f5261545895",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width c3eabcbee52f6cb5f7b5ce75fbb58e429766a1c2bb5adfcc42821f5261545895",
+      "passed": true
+    },
+    {
+      "check": "actual per-class floor additions c3eabcbee52f6cb5f7b5ce75fbb58e429766a1c2bb5adfcc42821f5261545895",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 3607d86e30f2a97a6bc30171aa1a4d03a33cff3eba3d0d1b3900cb7c17a789ed",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 3607d86e30f2a97a6bc30171aa1a4d03a33cff3eba3d0d1b3900cb7c17a789ed",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 3607d86e30f2a97a6bc30171aa1a4d03a33cff3eba3d0d1b3900cb7c17a789ed",
+      "passed": true
+    },
+    {
+      "check": "actual per-class floor additions 3607d86e30f2a97a6bc30171aa1a4d03a33cff3eba3d0d1b3900cb7c17a789ed",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 2818fd694b6a17b351abf1d81a1f2acf09e770a83b8f05f729aba2a9ae8c183d",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 2818fd694b6a17b351abf1d81a1f2acf09e770a83b8f05f729aba2a9ae8c183d",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 2818fd694b6a17b351abf1d81a1f2acf09e770a83b8f05f729aba2a9ae8c183d",
+      "passed": true
+    },
+    {
+      "check": "actual per-class floor additions 2818fd694b6a17b351abf1d81a1f2acf09e770a83b8f05f729aba2a9ae8c183d",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 8ffed091c0d0a8b1eef43e8efe056e4cfa2a2a8fc8c7ebba8df1e6f04c7b8f46",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 8ffed091c0d0a8b1eef43e8efe056e4cfa2a2a8fc8c7ebba8df1e6f04c7b8f46",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 8ffed091c0d0a8b1eef43e8efe056e4cfa2a2a8fc8c7ebba8df1e6f04c7b8f46",
+      "passed": true
+    },
+    {
+      "check": "actual per-class floor additions 8ffed091c0d0a8b1eef43e8efe056e4cfa2a2a8fc8c7ebba8df1e6f04c7b8f46",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 2ab60dd5b56bce11f6d0c399958d6793482c224feceafc79fc6c89e88562faba",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 2ab60dd5b56bce11f6d0c399958d6793482c224feceafc79fc6c89e88562faba",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 2ab60dd5b56bce11f6d0c399958d6793482c224feceafc79fc6c89e88562faba",
+      "passed": true
+    },
+    {
+      "check": "actual per-class floor additions 2ab60dd5b56bce11f6d0c399958d6793482c224feceafc79fc6c89e88562faba",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 7bbe7e429ddea33d468d09eea291a6c491faccab27ee21732563b65a9db0c2fa",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 7bbe7e429ddea33d468d09eea291a6c491faccab27ee21732563b65a9db0c2fa",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 7bbe7e429ddea33d468d09eea291a6c491faccab27ee21732563b65a9db0c2fa",
+      "passed": true
+    },
+    {
+      "check": "actual per-class floor additions 7bbe7e429ddea33d468d09eea291a6c491faccab27ee21732563b65a9db0c2fa",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 841120fc84e1eca643c11d8f95be7224eef3ff48efef5069ea1cfa1f3dd0546b",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 841120fc84e1eca643c11d8f95be7224eef3ff48efef5069ea1cfa1f3dd0546b",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 841120fc84e1eca643c11d8f95be7224eef3ff48efef5069ea1cfa1f3dd0546b",
+      "passed": true
+    },
+    {
+      "check": "actual per-class floor additions 841120fc84e1eca643c11d8f95be7224eef3ff48efef5069ea1cfa1f3dd0546b",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 1b3e071bac3e025479a3b7f54803c4f7dc0af6dcb1faba41bd9e06af85242fc3",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 1b3e071bac3e025479a3b7f54803c4f7dc0af6dcb1faba41bd9e06af85242fc3",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 1b3e071bac3e025479a3b7f54803c4f7dc0af6dcb1faba41bd9e06af85242fc3",
+      "passed": true
+    },
+    {
+      "check": "actual per-class floor additions 1b3e071bac3e025479a3b7f54803c4f7dc0af6dcb1faba41bd9e06af85242fc3",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget cc98e88508cc562112c67a41d42f8a81019424767e2f16637e0b3263d4d6b667",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width cc98e88508cc562112c67a41d42f8a81019424767e2f16637e0b3263d4d6b667",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width cc98e88508cc562112c67a41d42f8a81019424767e2f16637e0b3263d4d6b667",
+      "passed": true
+    },
+    {
+      "check": "actual per-class floor additions cc98e88508cc562112c67a41d42f8a81019424767e2f16637e0b3263d4d6b667",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget e85385bdfa0063d7a727e33dab0842cf284e1c579a87aa775262c78673419131",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width e85385bdfa0063d7a727e33dab0842cf284e1c579a87aa775262c78673419131",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width e85385bdfa0063d7a727e33dab0842cf284e1c579a87aa775262c78673419131",
+      "passed": true
+    },
+    {
+      "check": "actual per-class floor additions e85385bdfa0063d7a727e33dab0842cf284e1c579a87aa775262c78673419131",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 5ff96b7b7160776e29b7233fa074a9412be256d7940962e7afeedbd59d5c4553",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 5ff96b7b7160776e29b7233fa074a9412be256d7940962e7afeedbd59d5c4553",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 5ff96b7b7160776e29b7233fa074a9412be256d7940962e7afeedbd59d5c4553",
+      "passed": true
+    },
+    {
+      "check": "actual per-class floor additions 5ff96b7b7160776e29b7233fa074a9412be256d7940962e7afeedbd59d5c4553",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 1d11a5200433f281476311a3d925703adebc118626ea056c08f3838c8d0da5ad",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 1d11a5200433f281476311a3d925703adebc118626ea056c08f3838c8d0da5ad",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 1d11a5200433f281476311a3d925703adebc118626ea056c08f3838c8d0da5ad",
+      "passed": true
+    },
+    {
+      "check": "actual per-class floor additions 1d11a5200433f281476311a3d925703adebc118626ea056c08f3838c8d0da5ad",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 7f9e8c4d232eadd3d1348be4c12d2901b86c2f7531b0595a695bf4b6034c13a0",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 7f9e8c4d232eadd3d1348be4c12d2901b86c2f7531b0595a695bf4b6034c13a0",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 7f9e8c4d232eadd3d1348be4c12d2901b86c2f7531b0595a695bf4b6034c13a0",
+      "passed": true
+    },
+    {
+      "check": "actual per-class floor additions 7f9e8c4d232eadd3d1348be4c12d2901b86c2f7531b0595a695bf4b6034c13a0",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget b98f8afb5faa5b6db544e6ff5a36218c2b4767f1b5c9062a0ea34be25304a3b6",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width b98f8afb5faa5b6db544e6ff5a36218c2b4767f1b5c9062a0ea34be25304a3b6",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width b98f8afb5faa5b6db544e6ff5a36218c2b4767f1b5c9062a0ea34be25304a3b6",
+      "passed": true
+    },
+    {
+      "check": "actual per-class floor additions b98f8afb5faa5b6db544e6ff5a36218c2b4767f1b5c9062a0ea34be25304a3b6",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 79b70f0b4fcdabc6a9b8c1f37f3d3287153139ff84caa1674417786860de3a44",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 79b70f0b4fcdabc6a9b8c1f37f3d3287153139ff84caa1674417786860de3a44",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 79b70f0b4fcdabc6a9b8c1f37f3d3287153139ff84caa1674417786860de3a44",
+      "passed": true
+    },
+    {
+      "check": "actual per-class floor additions 79b70f0b4fcdabc6a9b8c1f37f3d3287153139ff84caa1674417786860de3a44",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 7b2f87e6710ffffd667cd61543eaf3a188307db19bd5d868f716d3b8aad7f4f6",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 7b2f87e6710ffffd667cd61543eaf3a188307db19bd5d868f716d3b8aad7f4f6",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 7b2f87e6710ffffd667cd61543eaf3a188307db19bd5d868f716d3b8aad7f4f6",
+      "passed": true
+    },
+    {
+      "check": "actual per-class floor additions 7b2f87e6710ffffd667cd61543eaf3a188307db19bd5d868f716d3b8aad7f4f6",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 81818afaa15c6c38ac998a056dc527b49ddb11559afd4854a98f0d7394c001e3",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 81818afaa15c6c38ac998a056dc527b49ddb11559afd4854a98f0d7394c001e3",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 81818afaa15c6c38ac998a056dc527b49ddb11559afd4854a98f0d7394c001e3",
+      "passed": true
+    },
+    {
+      "check": "actual per-class floor additions 81818afaa15c6c38ac998a056dc527b49ddb11559afd4854a98f0d7394c001e3",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 9ec245bbfe0f730dee79ddae7d6192f0ad1063e44702e1abd9f8f334d788daf0",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 9ec245bbfe0f730dee79ddae7d6192f0ad1063e44702e1abd9f8f334d788daf0",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 9ec245bbfe0f730dee79ddae7d6192f0ad1063e44702e1abd9f8f334d788daf0",
+      "passed": true
+    },
+    {
+      "check": "actual per-class floor additions 9ec245bbfe0f730dee79ddae7d6192f0ad1063e44702e1abd9f8f334d788daf0",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget b07523ba043855a88d75da84885425d0e6d92ea15e73b2869f3c4021b56c72d0",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width b07523ba043855a88d75da84885425d0e6d92ea15e73b2869f3c4021b56c72d0",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width b07523ba043855a88d75da84885425d0e6d92ea15e73b2869f3c4021b56c72d0",
+      "passed": true
+    },
+    {
+      "check": "actual per-class floor additions b07523ba043855a88d75da84885425d0e6d92ea15e73b2869f3c4021b56c72d0",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 825909389109de3251f97b218dfbf8d780bb7c1477f5d633995390ee72873855",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 825909389109de3251f97b218dfbf8d780bb7c1477f5d633995390ee72873855",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 825909389109de3251f97b218dfbf8d780bb7c1477f5d633995390ee72873855",
+      "passed": true
+    },
+    {
+      "check": "actual per-class floor additions 825909389109de3251f97b218dfbf8d780bb7c1477f5d633995390ee72873855",
+      "passed": true
+    },
+    {
+      "check": "actual Adam budget 0405e5248b3e8a8a87092ba8760e24612fe0de52c94411e1c488d3d2eeb9d0dd",
+      "passed": true
+    },
+    {
+      "check": "actual measured feature width 0405e5248b3e8a8a87092ba8760e24612fe0de52c94411e1c488d3d2eeb9d0dd",
+      "passed": true
+    },
+    {
+      "check": "actual learned input tensor width 0405e5248b3e8a8a87092ba8760e24612fe0de52c94411e1c488d3d2eeb9d0dd",
+      "passed": true
+    },
+    {
+      "check": "actual per-class floor additions 0405e5248b3e8a8a87092ba8760e24612fe0de52c94411e1c488d3d2eeb9d0dd",
+      "passed": true
+    },
+    {
+      "check": "selected-only scaler 03a4666c4397c6e6619afec661b5fafe8e0b3c827d03f99078960f12cbeb6131",
+      "passed": true
+    },
+    {
+      "check": "selected-only scaler 2f34dd69384eb4b4ffa9a1dfca287fabb3dc05a4256d308355a1b409672bfb41",
+      "passed": true
+    },
+    {
+      "check": "selected-only scaler 48a24157990c866065f20ee1a154a7ee646aea2db6c4c423f8b08bc5ab6a13aa",
+      "passed": true
+    },
+    {
+      "check": "selected-only scaler 513a49527e8242a92f6941ae541305204eb0375a4a8dca50a750d979916803c0",
+      "passed": true
+    },
+    {
+      "check": "selected-only scaler 54e17b7aa611223c72ef241eff52862464de588ab3a30b237c70ea935ccfcbf3",
+      "passed": true
+    },
+    {
+      "check": "selected-only scaler 6077382e382dd02f2dd601605130d94ffe46cb01cd18cf438836eca43dfcd178",
+      "passed": true
+    },
+    {
+      "check": "selected-only scaler 65081279b6145a3b7e70ba98769da9dd6fcc5049b36a88fb05a46ad24a578007",
+      "passed": true
+    },
+    {
+      "check": "actual memorization selected-only scaler 6727982b436f4be540ff1f37c6e2fdbe38cab96ea9a5b1a453d6643549fc63d8",
+      "passed": true
+    },
+    {
+      "check": "selected-only scaler b878b216b52b06817b54db1aaf14078d8250c7c23971df28cd733f00e0d40aff",
+      "passed": true
+    },
+    {
+      "check": "selected-only scaler c533760bd16f3468fc22dcc1111181533040252615c32676b4f22b7df30b10ed",
+      "passed": true
+    },
+    {
+      "check": "selected-only scaler cae49fd7d3fb71b253e11c35f446b6b2280a8b7039a72910f8c0ac5cf51168e6",
+      "passed": true
+    },
+    {
+      "check": "selected-only scaler ccb4cbf33bfaaeb9f8c3d84ce5761ef0391e69c23d6159eefebedf1110876c89",
+      "passed": true
+    },
+    {
+      "check": "role seeds disjoint",
+      "passed": true
+    },
+    {
+      "check": "new test excludes historical exposed seeds",
+      "passed": true
+    },
+    {
+      "check": "main classification uses argmax 238493df7fa7b30c4aee8b9ad9213db5a62205b8bc9dd43b6d360a0313ae47ed",
+      "passed": true
+    },
+    {
+      "check": "deduplicated healthy exposure 238493df7fa7b30c4aee8b9ad9213db5a62205b8bc9dd43b6d360a0313ae47ed",
+      "passed": true
+    },
+    {
+      "check": "main classification uses argmax aa2230b80c569247cf51451fdfa4a7241d2e90fb2a0af41ef132a6725a92ec52",
+      "passed": true
+    },
+    {
+      "check": "deduplicated healthy exposure aa2230b80c569247cf51451fdfa4a7241d2e90fb2a0af41ef132a6725a92ec52",
+      "passed": true
+    },
+    {
+      "check": "main classification uses argmax 82eed349d83e744c818dd5f940be85fd716691e88259d739dc1077808285258b",
+      "passed": true
+    },
+    {
+      "check": "deduplicated healthy exposure 82eed349d83e744c818dd5f940be85fd716691e88259d739dc1077808285258b",
+      "passed": true
+    },
+    {
+      "check": "main classification uses argmax 88f93a9cb56c6718ea8cb4704217fb4cfa1ebc965683d281e2e02b05f62daa99",
+      "passed": true
+    },
+    {
+      "check": "deduplicated healthy exposure 88f93a9cb56c6718ea8cb4704217fb4cfa1ebc965683d281e2e02b05f62daa99",
+      "passed": true
+    },
+    {
+      "check": "main classification uses argmax 19517bba2f96d497ff211bcb03fae0629e65c9e3c4113eda009326ee21ad1dd4",
+      "passed": true
+    },
+    {
+      "check": "deduplicated healthy exposure 19517bba2f96d497ff211bcb03fae0629e65c9e3c4113eda009326ee21ad1dd4",
+      "passed": true
+    },
+    {
+      "check": "main classification uses argmax 5b06eaffe847ab774673148b7d34718608a9159db4b38c23511c49e45ceb0cf1",
+      "passed": true
+    },
+    {
+      "check": "deduplicated healthy exposure 5b06eaffe847ab774673148b7d34718608a9159db4b38c23511c49e45ceb0cf1",
+      "passed": true
+    },
+    {
+      "check": "main classification uses argmax c3eabcbee52f6cb5f7b5ce75fbb58e429766a1c2bb5adfcc42821f5261545895",
+      "passed": true
+    },
+    {
+      "check": "deduplicated healthy exposure c3eabcbee52f6cb5f7b5ce75fbb58e429766a1c2bb5adfcc42821f5261545895",
+      "passed": true
+    },
+    {
+      "check": "main classification uses argmax 3607d86e30f2a97a6bc30171aa1a4d03a33cff3eba3d0d1b3900cb7c17a789ed",
+      "passed": true
+    },
+    {
+      "check": "deduplicated healthy exposure 3607d86e30f2a97a6bc30171aa1a4d03a33cff3eba3d0d1b3900cb7c17a789ed",
+      "passed": true
+    },
+    {
+      "check": "main classification uses argmax 2818fd694b6a17b351abf1d81a1f2acf09e770a83b8f05f729aba2a9ae8c183d",
+      "passed": true
+    },
+    {
+      "check": "deduplicated healthy exposure 2818fd694b6a17b351abf1d81a1f2acf09e770a83b8f05f729aba2a9ae8c183d",
+      "passed": true
+    },
+    {
+      "check": "main classification uses argmax 23a08b01d74748f4dcfdcd397f185952e1556f5f86943a4bdc5d5ecedc966f29",
+      "passed": true
+    },
+    {
+      "check": "deduplicated healthy exposure 23a08b01d74748f4dcfdcd397f185952e1556f5f86943a4bdc5d5ecedc966f29",
+      "passed": true
+    },
+    {
+      "check": "main classification uses argmax 425d70708b3ace722e797b73a9134abe4978b570cacbf648daafd67cce7051e6",
+      "passed": true
+    },
+    {
+      "check": "deduplicated healthy exposure 425d70708b3ace722e797b73a9134abe4978b570cacbf648daafd67cce7051e6",
+      "passed": true
+    },
+    {
+      "check": "main classification uses argmax d85944f026f4c1bd8782383b5e3464dcde3c173dd96ca26dff3d3e1118011b16",
+      "passed": true
+    },
+    {
+      "check": "deduplicated healthy exposure d85944f026f4c1bd8782383b5e3464dcde3c173dd96ca26dff3d3e1118011b16",
+      "passed": true
+    },
+    {
+      "check": "main classification uses argmax b64c455d6594e22a6ada068850c9b8cbbd2fe09b09b6aac531a62d81294912ad",
+      "passed": true
+    },
+    {
+      "check": "deduplicated healthy exposure b64c455d6594e22a6ada068850c9b8cbbd2fe09b09b6aac531a62d81294912ad",
+      "passed": true
+    },
+    {
+      "check": "main classification uses argmax 2431c69a49986999f3913503049ed57675a24bd5176928d4e9a8567d92c1f3ec",
+      "passed": true
+    },
+    {
+      "check": "deduplicated healthy exposure 2431c69a49986999f3913503049ed57675a24bd5176928d4e9a8567d92c1f3ec",
+      "passed": true
+    },
+    {
+      "check": "main classification uses argmax 2b577efb6c5f625e627246398240a850b6f06123de0c601c376e4109103c9eec",
+      "passed": true
+    },
+    {
+      "check": "deduplicated healthy exposure 2b577efb6c5f625e627246398240a850b6f06123de0c601c376e4109103c9eec",
+      "passed": true
+    },
+    {
+      "check": "all final models share same windows/labels/sources",
+      "passed": true
+    },
+    {
+      "check": "first test read follows freeze",
+      "passed": true
+    },
+    {
+      "check": "full finite records kept",
+      "passed": true
+    }
+  ],
+  "classifier_updates": 367000,
+  "count": 375,
+  "created_utc": "2026-11-05T15:33:04.609859+00:00",
+  "critic_updates": 135000,
+  "formal_records": 285,
+  "freeze_signature": "90fa8619b1e4717a5b60524f29ca024835cb86baef46bbf3367413f4affafd95",
+  "generator_updates": 27000,
+  "independent_condition_groups": 15,
+  "neural_trajectories": 97,
+  "passed": true,
+  "platform": "Windows-10-10.0.26300-SP0",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "retained_flight_acceptance_failures": 1
+}

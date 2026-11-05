@@ -1,0 +1,29 @@
+{
+  "protocol": {
+    "G1_gate": "Use raw_baseline_freeze teacher gate; when false skip both positive-weight variants and record unmet prerequisite, not a successful G1 experiment.",
+    "TSTR_scope": "Synthetic-only classifier training with real-training-only scaler; predictions evaluated on real matching-prefix and full-24s validation. Not a label-truth certificate.",
+    "TSTR_seeds": [
+      1042,
+      1043,
+      1044
+    ],
+    "checkpoint_selection": "Train every allowed generator to 3000 actual G updates. For G0, train independent TSTR classifiers at 500/1500/3000 using the frozen raw classifier budget and seeds1042/1043/1044. Choose the common G checkpoint by three-seed mean full-24s validation argmax macro-F1, tie fewer G updates. G1 uses this same G checkpoint; per-prefix matching validation is quality diagnostics, not an alternate source for test selection.",
+    "fixed_probes": "At each generator checkpoint, same class counts and bank seed seed+15000 produce identical latent/class probes under a forked torch RNG. Training stream is restored after probing.",
+    "gradient_logs": "Each row: G single-batch adversarial/CE/total loss and gradient norm; D real/fake/gap/GP/gradient norm averaged over its five actual updates. Report averaging difference.",
+    "loss_weights": [
+      0.0,
+      0.1,
+      1.0
+    ],
+    "max_TSTR_classifier_jobs": 15,
+    "max_generator_jobs": 9,
+    "max_main_augmented_classifier_jobs": 36,
+    "quality_reference": "Same chosen prefix/window real validation pool; demeaned PSD, lag correlations, cross-channel relations, Wasserstein/KS, training NN; all admitted windows checked for finite values/counts/exact duplicates, expensive distances use fixed32/class. No generated absolute-stage labels.",
+    "revision": "v4_batch_B_registered_before_GAN",
+    "synthetic_filter": "off; all finite generated samples admitted, exact duplicate counts retained, no mechanical nonnegative filter on noisy measured RPM",
+    "teacher_evaluation": "External raw real-data classifier is frozen; independent TSTR models initialize from scratch. Direct quality measures and all-class real validation remain separate from teacher consistency.",
+    "variant_ratio_selection": "For each allowed weight select ratio by mean over the three paired classifier/generator repeats of common full-24s validation argmax macro-F1, round8 ties smaller ratio. For the exploratory G1 comparison select among weights0.1/1.0 by that score, tie smaller weight. Preserve G0, selected G1 if eligible, best ROS, both same-count ROS, and raw. Ratio0 aliases raw."
+  },
+  "raw_baseline_signature": "3de5c18504003a7d6fb55c0224fbd499fcef6e39f49dd89581d8b73a2359799f",
+  "signature": "a0d8c393e6824c55663554ea1e21cc9b795d5ee356c4273e1723aaca416ffd40"
+}
