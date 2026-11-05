@@ -1,0 +1,28 @@
+{
+  "actual_command_truth_mutation_invariance": true,
+  "counts_common": {
+    "100": {
+      "train": 4794,
+      "validation": 2397
+    },
+    "200": {
+      "train": 4794,
+      "validation": 2397
+    },
+    "300": {
+      "train": 4794,
+      "validation": 2397
+    },
+    "50": {
+      "train": 4794,
+      "validation": 2397
+    }
+  },
+  "historical_test_features_read": false,
+  "independent_groups": 9,
+  "physical_sources_unchanged": true,
+  "records": 171,
+  "retained_flight_acceptance_failures": 1,
+  "train": 114,
+  "validation": 57
+}

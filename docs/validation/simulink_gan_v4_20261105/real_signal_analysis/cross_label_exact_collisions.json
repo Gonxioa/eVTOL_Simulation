@@ -1,0 +1,5 @@
+{
+  "cases": [],
+  "count": 0,
+  "scope": "Exact float32 100-sample measured windows; zero collisions does not prove separability"
+}

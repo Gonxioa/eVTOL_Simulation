@@ -1,0 +1,9 @@
+{
+  "channels": 12,
+  "distance_rows": 2115,
+  "interpretation": "Weak differences or low classifier scores alone do not establish strict non-identifiability; no PCA/t-SNE conclusion is used.",
+  "paired_noise_note": "Same-condition subtraction can cancel shared wind/noise; cross-condition distances are reported separately. This is not an online counterfactual feature.",
+  "phase_note": "Nominal time bins only; late does not mean physically recovered. Actual task phase is in the source audit.",
+  "records": 171,
+  "statistics_rows": 10260
+}

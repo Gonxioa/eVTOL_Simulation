@@ -1,0 +1,90 @@
+{
+  "candidates": [
+    {
+      "family": "lstm",
+      "mean_inference_ms": 0.4080566655223568,
+      "mean_macro_f1": 0.4848669995393413,
+      "parameters": 58708,
+      "signatures": [
+        "5678b04cccec1e87d9531ba4348b6644d10863d75fa81857006d3b0398b0bcd6",
+        "9533a5d172693993a452b7154b1cbf509d91d8cb4f41d7d0952ecab74688a874",
+        "de794adf1ad50f71e5bd079a85419fa7bc183e327900030dfd1811c4ece26307"
+      ],
+      "source_scope": "same three validation groups",
+      "std_macro_f1": 0.007158499240960508,
+      "steps": 4000,
+      "train_macro_f1": 0.48334085343075284,
+      "window": 50
+    },
+    {
+      "family": "cnn",
+      "mean_inference_ms": 0.34238333399924964,
+      "mean_macro_f1": 0.5184135023640005,
+      "parameters": 138547,
+      "signatures": [
+        "792cf275ccacbb26c7d94dcde22d1cd84bb11645cf1744d86986809907053abe",
+        "4117805f6422aa7cb10976229161d7a02030100841f9c1337a018aefb606a9fc",
+        "dec6424cf70f9f7cdd4fc515c2e255be1aecdec4e8551fd459b65ec13364812f"
+      ],
+      "source_scope": "same three validation groups",
+      "std_macro_f1": 0.014008846448618292,
+      "steps": 4000,
+      "train_macro_f1": 0.5364168727635702,
+      "window": 50
+    },
+    {
+      "family": "lstm",
+      "mean_inference_ms": 0.3673833329230547,
+      "mean_macro_f1": 0.4906855582306923,
+      "parameters": 58708,
+      "signatures": [
+        "bbdf7b06a8ba98650f34e5935cf2ebd1122aa2d0d4c70dbe49cd61507a547309",
+        "94f982be2148f66b960d53413dd4937c730f015616f49ab969408c864e03420e",
+        "85cb3906f0f79fdc04196d5939e6fd28801c485696a1a4cf213e6ee36763abf3"
+      ],
+      "source_scope": "same three validation groups",
+      "std_macro_f1": 0.013342267257013127,
+      "steps": 4000,
+      "train_macro_f1": 0.4929586509137702,
+      "window": 100
+    },
+    {
+      "family": "cnn",
+      "mean_inference_ms": 0.42504222235745853,
+      "mean_macro_f1": 0.5347291917166256,
+      "parameters": 138547,
+      "signatures": [
+        "f67988e0355dafdd3d2b36b1837ef6ac093d76b2e3000892b4409efc1575b66a",
+        "824df59c28aa2a53e5c6d13094d558e6f5fe8dbca3db58a9205db50a4342916c",
+        "1cbdc64f1e01d98b5120e9f9b5cb041871da44fe015349572fc5ad3fe056a15c"
+      ],
+      "source_scope": "same three validation groups",
+      "std_macro_f1": 0.004062877114838179,
+      "steps": 4000,
+      "train_macro_f1": 0.5547290998909763,
+      "window": 100
+    }
+  ],
+  "config_signature": "8e98ef0304f87e3d734329f2496f237858fe830753e1e62a6c2770d4d0a89c14",
+  "decision_id": "A_native_joint_review",
+  "question": "Does the chosen representation/window remain competitive when healthy data start at zero?",
+  "scope": "All native pools rebuilt and trained from scratch; common-grid weights not silently reused",
+  "selected": {
+    "family": "cnn",
+    "mean_inference_ms": 0.42504222235745853,
+    "mean_macro_f1": 0.5347291917166256,
+    "parameters": 138547,
+    "signatures": [
+      "f67988e0355dafdd3d2b36b1837ef6ac093d76b2e3000892b4409efc1575b66a",
+      "824df59c28aa2a53e5c6d13094d558e6f5fe8dbca3db58a9205db50a4342916c",
+      "1cbdc64f1e01d98b5120e9f9b5cb041871da44fe015349572fc5ad3fe056a15c"
+    ],
+    "source_scope": "same three validation groups",
+    "std_macro_f1": 0.004062877114838179,
+    "steps": 4000,
+    "train_macro_f1": 0.5547290998909763,
+    "window": 100
+  },
+  "signature": "6fe34915cba6112ad6217cf805fc03d585f4db083d403c9d7c823c099621f04a",
+  "validation_rule": "For each training seed pool all three validation groups and compute fixed-19 argmax macro-F1; rank by the mean across seeds rounded to 8 decimals. Ties prefer shorter windows, fewer updates, fewer parameters, then family name. All per-group and critical-class results retained; reference selection is not deployment acceptance."
+}

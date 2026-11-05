@@ -1,0 +1,218 @@
+{
+  "candidates": [
+    {
+      "family": "lstm",
+      "mean_inference_ms": 0.35800999935923355,
+      "mean_macro_f1": 0.44561715867469925,
+      "parameters": 58708,
+      "signatures": [
+        "fcba2982c7bda6d9acb626311d5a5dc0f86db1ec058577b0d84b2242fbc5c003",
+        "8ca831ea142335498faa10c039627dd878def4330b69ce2877e1f24b1d2f7a7d",
+        "7870509afabca972e0f55b5c385fe06c2661311bf353b26b473c86f292c5ffc2"
+      ],
+      "source_scope": "same three validation groups",
+      "std_macro_f1": 0.0109905125657674,
+      "steps": 1000,
+      "train_macro_f1": 0.44566508187067894,
+      "window": 50
+    },
+    {
+      "family": "lstm",
+      "mean_inference_ms": 0.3390333343607684,
+      "mean_macro_f1": 0.44492388890170664,
+      "parameters": 58708,
+      "signatures": [
+        "fcba2982c7bda6d9acb626311d5a5dc0f86db1ec058577b0d84b2242fbc5c003",
+        "8ca831ea142335498faa10c039627dd878def4330b69ce2877e1f24b1d2f7a7d",
+        "7870509afabca972e0f55b5c385fe06c2661311bf353b26b473c86f292c5ffc2"
+      ],
+      "source_scope": "same three validation groups",
+      "std_macro_f1": 0.003151489576171999,
+      "steps": 2000,
+      "train_macro_f1": 0.4448980597179786,
+      "window": 50
+    },
+    {
+      "family": "lstm",
+      "mean_inference_ms": 0.32983555768926937,
+      "mean_macro_f1": 0.4689905388888789,
+      "parameters": 58708,
+      "signatures": [
+        "fcba2982c7bda6d9acb626311d5a5dc0f86db1ec058577b0d84b2242fbc5c003",
+        "8ca831ea142335498faa10c039627dd878def4330b69ce2877e1f24b1d2f7a7d",
+        "7870509afabca972e0f55b5c385fe06c2661311bf353b26b473c86f292c5ffc2"
+      ],
+      "source_scope": "same three validation groups",
+      "std_macro_f1": 0.006897877751205867,
+      "steps": 4000,
+      "train_macro_f1": 0.46844089934085814,
+      "window": 50
+    },
+    {
+      "family": "cnn",
+      "mean_inference_ms": 0.35295000092850787,
+      "mean_macro_f1": 0.4874182769359794,
+      "parameters": 138547,
+      "signatures": [
+        "5a9196500611f3c6406189a433e442276c61a2ddad7416401be91c8bd217b40e",
+        "6029e4efb5722ffd2ba802bf4b93aba38d87513b497f5e63cfb95b22e607f22b",
+        "d3b104cef376b330370e2031611d1f491cb69d12464ed240a2ea2a5acfdf14fe"
+      ],
+      "source_scope": "same three validation groups",
+      "std_macro_f1": 0.009490945516314554,
+      "steps": 1000,
+      "train_macro_f1": 0.489005115621141,
+      "window": 50
+    },
+    {
+      "family": "cnn",
+      "mean_inference_ms": 0.34007777641009956,
+      "mean_macro_f1": 0.4795470161072409,
+      "parameters": 138547,
+      "signatures": [
+        "5a9196500611f3c6406189a433e442276c61a2ddad7416401be91c8bd217b40e",
+        "6029e4efb5722ffd2ba802bf4b93aba38d87513b497f5e63cfb95b22e607f22b",
+        "d3b104cef376b330370e2031611d1f491cb69d12464ed240a2ea2a5acfdf14fe"
+      ],
+      "source_scope": "same three validation groups",
+      "std_macro_f1": 0.02022302292870075,
+      "steps": 2000,
+      "train_macro_f1": 0.4890252474503714,
+      "window": 50
+    },
+    {
+      "family": "cnn",
+      "mean_inference_ms": 0.3878222209297948,
+      "mean_macro_f1": 0.515704880677979,
+      "parameters": 138547,
+      "signatures": [
+        "5a9196500611f3c6406189a433e442276c61a2ddad7416401be91c8bd217b40e",
+        "6029e4efb5722ffd2ba802bf4b93aba38d87513b497f5e63cfb95b22e607f22b",
+        "d3b104cef376b330370e2031611d1f491cb69d12464ed240a2ea2a5acfdf14fe"
+      ],
+      "source_scope": "same three validation groups",
+      "std_macro_f1": 0.004014540346106689,
+      "steps": 4000,
+      "train_macro_f1": 0.5317815046587934,
+      "window": 50
+    },
+    {
+      "family": "lstm",
+      "mean_inference_ms": 0.36128222192120224,
+      "mean_macro_f1": 0.44032585165981164,
+      "parameters": 58708,
+      "signatures": [
+        "930da5cc35d98adeb97015417098e752b78e123c8e2f91ce301dbda37f9cc038",
+        "2de051201e2f63290df4e678ee6c49f884eb9e11137ce07f5ba0f8516783893f",
+        "849c8bc9c20dc22920e4f677fb7730d1dcfd883f91a88ab719da33a59cd873d9"
+      ],
+      "source_scope": "same three validation groups",
+      "std_macro_f1": 0.0005582775581095988,
+      "steps": 1000,
+      "train_macro_f1": 0.44036950644656275,
+      "window": 100
+    },
+    {
+      "family": "lstm",
+      "mean_inference_ms": 0.34059222089126706,
+      "mean_macro_f1": 0.4577726381547493,
+      "parameters": 58708,
+      "signatures": [
+        "930da5cc35d98adeb97015417098e752b78e123c8e2f91ce301dbda37f9cc038",
+        "2de051201e2f63290df4e678ee6c49f884eb9e11137ce07f5ba0f8516783893f",
+        "849c8bc9c20dc22920e4f677fb7730d1dcfd883f91a88ab719da33a59cd873d9"
+      ],
+      "source_scope": "same three validation groups",
+      "std_macro_f1": 0.013440003318919168,
+      "steps": 2000,
+      "train_macro_f1": 0.45807569387715424,
+      "window": 100
+    },
+    {
+      "family": "lstm",
+      "mean_inference_ms": 0.35116111135317224,
+      "mean_macro_f1": 0.49405717963435847,
+      "parameters": 58708,
+      "signatures": [
+        "930da5cc35d98adeb97015417098e752b78e123c8e2f91ce301dbda37f9cc038",
+        "2de051201e2f63290df4e678ee6c49f884eb9e11137ce07f5ba0f8516783893f",
+        "849c8bc9c20dc22920e4f677fb7730d1dcfd883f91a88ab719da33a59cd873d9"
+      ],
+      "source_scope": "same three validation groups",
+      "std_macro_f1": 0.012478139683881628,
+      "steps": 4000,
+      "train_macro_f1": 0.49899057616284165,
+      "window": 100
+    },
+    {
+      "family": "cnn",
+      "mean_inference_ms": 0.3247866665737496,
+      "mean_macro_f1": 0.4979398093226821,
+      "parameters": 138547,
+      "signatures": [
+        "16039f728395724579ff14ccd83053c39bd1452f39cf12ac7a94d738289a55e4",
+        "8196d75a27af467808806c3381e55a5a015f5c221ca6540dc277a4963952e4c8",
+        "d85491ba7a981a71fbfa3b7c9e11b498001d2fa61b74ea67f25c3a0d0687fb3d"
+      ],
+      "source_scope": "same three validation groups",
+      "std_macro_f1": 0.007283974473408317,
+      "steps": 1000,
+      "train_macro_f1": 0.5013433774241123,
+      "window": 100
+    },
+    {
+      "family": "cnn",
+      "mean_inference_ms": 0.3794288883606593,
+      "mean_macro_f1": 0.5122670761064375,
+      "parameters": 138547,
+      "signatures": [
+        "16039f728395724579ff14ccd83053c39bd1452f39cf12ac7a94d738289a55e4",
+        "8196d75a27af467808806c3381e55a5a015f5c221ca6540dc277a4963952e4c8",
+        "d85491ba7a981a71fbfa3b7c9e11b498001d2fa61b74ea67f25c3a0d0687fb3d"
+      ],
+      "source_scope": "same three validation groups",
+      "std_macro_f1": 0.005887385375977306,
+      "steps": 2000,
+      "train_macro_f1": 0.5221329833574208,
+      "window": 100
+    },
+    {
+      "family": "cnn",
+      "mean_inference_ms": 0.3013577777892351,
+      "mean_macro_f1": 0.5323902890703098,
+      "parameters": 138547,
+      "signatures": [
+        "16039f728395724579ff14ccd83053c39bd1452f39cf12ac7a94d738289a55e4",
+        "8196d75a27af467808806c3381e55a5a015f5c221ca6540dc277a4963952e4c8",
+        "d85491ba7a981a71fbfa3b7c9e11b498001d2fa61b74ea67f25c3a0d0687fb3d"
+      ],
+      "source_scope": "same three validation groups",
+      "std_macro_f1": 0.003572560491292576,
+      "steps": 4000,
+      "train_macro_f1": 0.5557154360945447,
+      "window": 100
+    }
+  ],
+  "config_signature": "8e98ef0304f87e3d734329f2496f237858fe830753e1e62a6c2770d4d0a89c14",
+  "decision_id": "A_budget_representation",
+  "question": "Do more optimization and one fixed CNN representation improve held-out recognition?",
+  "scope": "Finite 1000/2000/4000 budgets; continuation is one trajectory, not independent repeats",
+  "selected": {
+    "family": "cnn",
+    "mean_inference_ms": 0.3013577777892351,
+    "mean_macro_f1": 0.5323902890703098,
+    "parameters": 138547,
+    "signatures": [
+      "16039f728395724579ff14ccd83053c39bd1452f39cf12ac7a94d738289a55e4",
+      "8196d75a27af467808806c3381e55a5a015f5c221ca6540dc277a4963952e4c8",
+      "d85491ba7a981a71fbfa3b7c9e11b498001d2fa61b74ea67f25c3a0d0687fb3d"
+    ],
+    "source_scope": "same three validation groups",
+    "std_macro_f1": 0.003572560491292576,
+    "steps": 4000,
+    "train_macro_f1": 0.5557154360945447,
+    "window": 100
+  },
+  "signature": "7d2495dc3ce375b62b418ced6a6cbd217e32c97b9e60437b884a77ebfe14afdb",
+  "validation_rule": "For each training seed pool all three validation groups and compute fixed-19 argmax macro-F1; rank by the mean across seeds rounded to 8 decimals. Ties prefer shorter windows, fewer updates, fewer parameters, then family name. All per-group and critical-class results retained; reference selection is not deployment acceptance."
+}

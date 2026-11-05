@@ -1,0 +1,15 @@
+{
+  "baseline": "2e033334637be102e9a28c7ce0955d1f7d1f189f",
+  "branch": "codex/simulink-gan-v4-evidence",
+  "historical_test_records": 114,
+  "observed_development_records": 171,
+  "old_snapshot_signature": "bf3c303edd891ecb0b2f307a122e62ce45207c8660c5805ff3c8249f30779e55",
+  "original_plan_sha256": "72e242beca9154a23014a80be99ec9fefdeedef27a1d15dd1c3c72b5ac98bacf",
+  "registered_batch_A_max_neural_jobs": 46,
+  "registered_batch_A_max_updates": 163000,
+  "revised_plan_sha256": "7bf42da5852c0eb052944a11a9bd630c26a506d8e4ec60cd7f126913ccd1804c",
+  "source_registry_signature": "30f1472e5352bb4d3eb7edec0e1f4d460e98575f94fab2cf20aeb2832d667134",
+  "stages_started": [
+    "prepare"
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "basis": "Three-seed raw-data validation ranking and identical real-information budget for raw/ROS/GAN",
+  "config_signature": "8e98ef0304f87e3d734329f2496f237858fe830753e1e62a6c2770d4d0a89c14",
+  "family": "cnn",
+  "locked_files": {
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v4_evidence_20261105\\classifiers\\cnn_w100_s42_238493df7fa7b30c\\checkpoint_4000.pt": "d52e58bfdc2d07deb5464aa9afcbd45633e6c26019439229ae2b0af446ede8d5",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v4_evidence_20261105\\classifiers\\cnn_w100_s43_aa2230b80c569247\\checkpoint_4000.pt": "07b0058912297f35f534935e1e21b42b42a07961ba9e1c2b5ba1e0f78d6ac85d",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v4_evidence_20261105\\classifiers\\cnn_w100_s44_82eed349d83e744c\\checkpoint_4000.pt": "2535c2567c1fce8429283fbbdb6fc92c1f38e8389e136613ca8c7c0a0d24fccb",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v4_evidence_20261105\\scalers\\b878b216b52b06817b54db1aaf14078d8250c7c23971df28cd733f00e0d40aff\\fit_sources.json": "aa7e78e9ccd6cb8b02cf81e683794469b9d90c4ac8bdd0810668f6e9f443840d",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v4_evidence_20261105\\scalers\\b878b216b52b06817b54db1aaf14078d8250c7c23971df28cd733f00e0d40aff\\scalers.pkl": "ce227abd825285f283626b25b39f8c37af883728c52fd6621ec87d8a8ac1c25f"
+  },
+  "pool_signature": "b878b216b52b06817b54db1aaf14078d8250c7c23971df28cd733f00e0d40aff",
+  "prefix_s": 12,
+  "registry_signature": "30f1472e5352bb4d3eb7edec0e1f4d460e98575f94fab2cf20aeb2832d667134",
+  "signature": "3de5c18504003a7d6fb55c0224fbd499fcef6e39f49dd89581d8b73a2359799f",
+  "steps": 4000,
+  "teacher_gate": {
+    "failures": [],
+    "meaning": "Minimum non-collapse research gate, not generated-label certification",
+    "passed": true,
+    "rule": "G1 is exploratory and runs only if every class has positive validation recall in every raw-baseline seed AND healthy/remaining-80% joint accuracy exceeds 1/19 in every seed. This only rejects collapsed teachers; it does not certify generated labels.",
+    "teachers": [
+      {
+        "class_recall": [
+          0.7872340425531915,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0873015873015873,
+          1.0,
+          0.9682539682539683,
+          1.0,
+          0.12698412698412698,
+          0.15079365079365079,
+          0.07142857142857142,
+          0.5476190476190477,
+          0.07142857142857142,
+          0.09523809523809523,
+          0.2698412698412698,
+          0.09523809523809523
+        ],
+        "healthy_recall": 0.7872340425531915,
+        "partial_joint_accuracy": 0.1917989417989418,
+        "seed": 42
+      },
+      {
+        "class_recall": [
+          0.6666666666666666,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.1111111111111111,
+          0.1349206349206349,
+          0.6825396825396826,
+          0.9761904761904762,
+          0.9603174603174603,
+          0.23809523809523808,
+          0.05555555555555555,
+          0.03968253968253968,
+          0.7857142857142857,
+          0.0873015873015873,
+          0.1111111111111111,
+          0.10317460317460317
+        ],
+        "healthy_recall": 0.6666666666666666,
+        "partial_joint_accuracy": 0.1970899470899471,
+        "seed": 43
+      },
+      {
+        "class_recall": [
+          0.8297872340425532,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.1349206349206349,
+          0.1111111111111111,
+          0.9920634920634921,
+          0.9761904761904762,
+          0.9841269841269841,
+          0.12698412698412698,
+          0.12698412698412698,
+          0.07936507936507936,
+          0.4444444444444444,
+          0.31746031746031744,
+          0.07936507936507936,
+          0.1111111111111111
+        ],
+        "healthy_recall": 0.8297872340425532,
+        "partial_joint_accuracy": 0.1931216931216931,
+        "seed": 44
+      }
+    ]
+  },
+  "window": 100
+}

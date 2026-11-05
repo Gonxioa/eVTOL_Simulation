@@ -1,0 +1,95 @@
+{
+  "config_signature": "8e98ef0304f87e3d734329f2496f237858fe830753e1e62a6c2770d4d0a89c14",
+  "decision_id": "A_teacher_gate",
+  "evidence": {
+    "failures": [],
+    "meaning": "Minimum non-collapse research gate, not generated-label certification",
+    "passed": true,
+    "rule": "G1 is exploratory and runs only if every class has positive validation recall in every raw-baseline seed AND healthy/remaining-80% joint accuracy exceeds 1/19 in every seed. This only rejects collapsed teachers; it does not certify generated labels.",
+    "teachers": [
+      {
+        "class_recall": [
+          0.7872340425531915,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0873015873015873,
+          1.0,
+          0.9682539682539683,
+          1.0,
+          0.12698412698412698,
+          0.15079365079365079,
+          0.07142857142857142,
+          0.5476190476190477,
+          0.07142857142857142,
+          0.09523809523809523,
+          0.2698412698412698,
+          0.09523809523809523
+        ],
+        "healthy_recall": 0.7872340425531915,
+        "partial_joint_accuracy": 0.1917989417989418,
+        "seed": 42
+      },
+      {
+        "class_recall": [
+          0.6666666666666666,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.1111111111111111,
+          0.1349206349206349,
+          0.6825396825396826,
+          0.9761904761904762,
+          0.9603174603174603,
+          0.23809523809523808,
+          0.05555555555555555,
+          0.03968253968253968,
+          0.7857142857142857,
+          0.0873015873015873,
+          0.1111111111111111,
+          0.10317460317460317
+        ],
+        "healthy_recall": 0.6666666666666666,
+        "partial_joint_accuracy": 0.1970899470899471,
+        "seed": 43
+      },
+      {
+        "class_recall": [
+          0.8297872340425532,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.1349206349206349,
+          0.1111111111111111,
+          0.9920634920634921,
+          0.9761904761904762,
+          0.9841269841269841,
+          0.12698412698412698,
+          0.12698412698412698,
+          0.07936507936507936,
+          0.4444444444444444,
+          0.31746031746031744,
+          0.07936507936507936,
+          0.1111111111111111
+        ],
+        "healthy_recall": 0.8297872340425532,
+        "partial_joint_accuracy": 0.1931216931216931,
+        "seed": 44
+      }
+    ]
+  },
+  "question": "Is the raw auxiliary teacher non-collapsed enough to attempt exploratory G1?",
+  "scope": "If false, G1 is not executed; G0/ROS remain valid research controls",
+  "selected": true,
+  "signature": "54df77dbf08c90583ddc93aaa51426f7f2b8c699c0190666a10662014bd77e04",
+  "validation_rule": "G1 is exploratory and runs only if every class has positive validation recall in every raw-baseline seed AND healthy/remaining-80% joint accuracy exceeds 1/19 in every seed. This only rejects collapsed teachers; it does not certify generated labels."
+}

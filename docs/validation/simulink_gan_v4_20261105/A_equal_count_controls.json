@@ -1,0 +1,68 @@
+{
+  "candidates": [
+    {
+      "family": "cnn",
+      "matched_prefix": 12,
+      "mean_inference_ms": 0.3153633339227074,
+      "mean_macro_f1": 0.5372281306773347,
+      "original_windows": 2082,
+      "parameters": 138547,
+      "sampling_seed": 731905,
+      "signatures": [
+        "8b7d451b40b040df58f526d4258d68b3b214ec2f4371385b32da0cabea27fe3f",
+        "11913c6981a0762ef83d0954a786acd2009a7874e240231c180a56e04fb4078d",
+        "5932d9805bdc3f0daaf5266a012fcf76c7d1276556f1e0ce91bf0a04f1bc98a9"
+      ],
+      "source_scope": "same three validation groups",
+      "std_macro_f1": 0.00806083013389515,
+      "steps": 4000,
+      "train_macro_f1": 0.5897590768665925,
+      "window": 100
+    },
+    {
+      "family": "cnn",
+      "matched_prefix": 12,
+      "mean_inference_ms": 0.33644111309614444,
+      "mean_macro_f1": 0.5547953053922606,
+      "original_windows": 2082,
+      "parameters": 138547,
+      "sampling_seed": 731906,
+      "signatures": [
+        "654d509a25b5311197a51092fb1bd9f0fb89ccd3178e9871b3f9d98db011c487",
+        "622a22e0e8eb873c318df5d48612f4ae3637822b66ced999d37b4dcc81869b29",
+        "b9a661aac5ab15d0368ef6d3f84d4aa6db9ac945e8d223dbe42c7792e4962fa8"
+      ],
+      "source_scope": "same three validation groups",
+      "std_macro_f1": 0.006283349950782059,
+      "steps": 4000,
+      "train_macro_f1": 0.6123479805509052,
+      "window": 100
+    },
+    {
+      "family": "cnn",
+      "matched_prefix": 12,
+      "mean_inference_ms": 0.371597777120769,
+      "mean_macro_f1": 0.5466452649937831,
+      "original_windows": 2082,
+      "parameters": 138547,
+      "sampling_seed": 731907,
+      "signatures": [
+        "52624a4d50263ef04f8a6486d0b11719cf28ee5299f3f4827f2f6e28d3151007",
+        "db39b0776e26200e0325cbd9bea53cdcd2c10111499c0dc6cdce5d2b2f9942ee",
+        "16ab9feeb11a39e05b81edbb21e0595f8f082aba2061be39bd7e07623ff1e01f"
+      ],
+      "source_scope": "same three validation groups",
+      "std_macro_f1": 0.015556001455659838,
+      "steps": 4000,
+      "train_macro_f1": 0.6015243500137303,
+      "window": 100
+    }
+  ],
+  "config_signature": "8e98ef0304f87e3d734329f2496f237858fe830753e1e62a6c2770d4d0a89c14",
+  "decision_id": "A_equal_count_controls",
+  "question": "Does wider time coverage help at the same per-source sample count?",
+  "scope": "No new independent flight sources; equal controls do not replace the raw-prefix selection",
+  "selected": null,
+  "signature": "654d906cbd5be8754cfc98ccec936e2a778d2f5d84c1767e7c6893a05c4815f1",
+  "validation_rule": "Diagnostic crossed 3 draw seeds x 3 classifier seeds; never pick the best draw seed"
+}

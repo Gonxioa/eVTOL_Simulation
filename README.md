@@ -1,5 +1,7 @@
 # eVTOL_Simulation
 
+V4证据研究：[执行顺序与边界](docs/SIMULINK_GAN_V4.md)、[评审修订后的完整计划](docs/SIMULINK_GAN_V4_EXECUTION_PLAN.md)。基于 `2e03333`，先验证窗口、训练预算和表示，再在同一真实数据池上比较G0／类别约束变体与同量ROS，最后冻结并建立全新独立确认。当前完成状态和证据以各阶段收据为准。
+
 V3 独立实验入口：[12维传感器输入与训练时长对照](docs/SIMULINK_GAN_V3_PREFIX.md)。基于 `f474282`，主模型去除电机指令，比较前6／12／24秒与等量全时段训练；在前6／24秒上比较原类别条件GAN和ROS。使用3个新配对条件组作冻结后的正式测试，V2数据与结果继续保留。配置为 `configs/simulink_gan_v3_prefix.json`，执行入口为 `run_simulink_v3.py`。
 
 V3 已完成57次新增仿真、51个分类器、6个GAN与新测试集统一评价：[中文结果、图表和审计](docs/validation/simulink_gan_v3_prefix_20261105/结果报告.md)。主输入去掉指令后分类明显变难；前6秒训练偏向早期识别，前12秒是本次验证选择的折中，GAN未稳定超过同量ROS。

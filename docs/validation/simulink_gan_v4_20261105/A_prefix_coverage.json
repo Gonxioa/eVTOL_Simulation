@@ -1,0 +1,82 @@
+{
+  "candidates": [
+    {
+      "family": "cnn",
+      "mean_inference_ms": 0.37654444394219255,
+      "mean_macro_f1": 0.3614265582664684,
+      "original_windows": 714,
+      "parameters": 138547,
+      "prefix_s": 6,
+      "signatures": [
+        "3e85bb3a7d51a4bfd80522097a7d31e56f3983f99833251f6a64d3762a541f48",
+        "eafbdebc49b7f3f0448bcb04c5f4fd236800b1c400d37cd761047f89eea834d2",
+        "6a30ba5e855159b16a5fa77625b9935c8908ca343541983376a062e1433a9c9d"
+      ],
+      "source_scope": "same three validation groups",
+      "std_macro_f1": 0.03627442352372448,
+      "steps": 4000,
+      "train_macro_f1": 0.9765054652196218,
+      "window": 100
+    },
+    {
+      "family": "cnn",
+      "mean_inference_ms": 0.36030333463309544,
+      "mean_macro_f1": 0.541985072404862,
+      "original_windows": 2082,
+      "parameters": 138547,
+      "prefix_s": 12,
+      "signatures": [
+        "238493df7fa7b30c4aee8b9ad9213db5a62205b8bc9dd43b6d360a0313ae47ed",
+        "aa2230b80c569247cf51451fdfa4a7241d2e90fb2a0af41ef132a6725a92ec52",
+        "82eed349d83e744c818dd5f940be85fd716691e88259d739dc1077808285258b"
+      ],
+      "source_scope": "same three validation groups",
+      "std_macro_f1": 0.006147073017395772,
+      "steps": 4000,
+      "train_macro_f1": 0.665301561856742,
+      "window": 100
+    },
+    {
+      "family": "cnn",
+      "mean_inference_ms": 0.42504222235745853,
+      "mean_macro_f1": 0.5347291917166256,
+      "original_windows": 4818,
+      "parameters": 138547,
+      "prefix_s": 24,
+      "signatures": [
+        "f67988e0355dafdd3d2b36b1837ef6ac093d76b2e3000892b4409efc1575b66a",
+        "824df59c28aa2a53e5c6d13094d558e6f5fe8dbca3db58a9205db50a4342916c",
+        "1cbdc64f1e01d98b5120e9f9b5cb041871da44fe015349572fc5ad3fe056a15c"
+      ],
+      "source_scope": "same three validation groups",
+      "std_macro_f1": 0.004062877114838179,
+      "steps": 4000,
+      "train_macro_f1": 0.5547290998909763,
+      "window": 100
+    }
+  ],
+  "config_signature": "8e98ef0304f87e3d734329f2496f237858fe830753e1e62a6c2770d4d0a89c14",
+  "decision_id": "A_prefix_coverage",
+  "question": "Which 0-based prefix is the raw-data research reference under the fixed model budget?",
+  "scope": "A prefix choice does not establish a GAN-specific optimal coverage",
+  "selected": {
+    "family": "cnn",
+    "mean_inference_ms": 0.36030333463309544,
+    "mean_macro_f1": 0.541985072404862,
+    "original_windows": 2082,
+    "parameters": 138547,
+    "prefix_s": 12,
+    "signatures": [
+      "238493df7fa7b30c4aee8b9ad9213db5a62205b8bc9dd43b6d360a0313ae47ed",
+      "aa2230b80c569247cf51451fdfa4a7241d2e90fb2a0af41ef132a6725a92ec52",
+      "82eed349d83e744c818dd5f940be85fd716691e88259d739dc1077808285258b"
+    ],
+    "source_scope": "same three validation groups",
+    "std_macro_f1": 0.006147073017395772,
+    "steps": 4000,
+    "train_macro_f1": 0.665301561856742,
+    "window": 100
+  },
+  "signature": "91e15a893c74ec0f1cdc6fe9f8c63091b7ef6926c0104c1e5d3833de63023175",
+  "validation_rule": "Mean three-seed common complete-24s validation argmax macro-F1, tie shorter prefix"
+}

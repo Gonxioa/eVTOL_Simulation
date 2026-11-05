@@ -1,0 +1,78 @@
+{
+  "candidates": [
+    {
+      "family": "lstm",
+      "mean_inference_ms": 0.35800999935923355,
+      "mean_macro_f1": 0.44561715867469925,
+      "parameters": 58708,
+      "signatures": [
+        "fcba2982c7bda6d9acb626311d5a5dc0f86db1ec058577b0d84b2242fbc5c003",
+        "8ca831ea142335498faa10c039627dd878def4330b69ce2877e1f24b1d2f7a7d",
+        "7870509afabca972e0f55b5c385fe06c2661311bf353b26b473c86f292c5ffc2"
+      ],
+      "source_scope": "same three validation groups",
+      "std_macro_f1": 0.0109905125657674,
+      "steps": 1000,
+      "train_macro_f1": 0.44566508187067894,
+      "window": 50
+    },
+    {
+      "family": "lstm",
+      "mean_inference_ms": 0.36128222192120224,
+      "mean_macro_f1": 0.44032585165981164,
+      "parameters": 58708,
+      "signatures": [
+        "930da5cc35d98adeb97015417098e752b78e123c8e2f91ce301dbda37f9cc038",
+        "2de051201e2f63290df4e678ee6c49f884eb9e11137ce07f5ba0f8516783893f",
+        "849c8bc9c20dc22920e4f677fb7730d1dcfd883f91a88ab719da33a59cd873d9"
+      ],
+      "source_scope": "same three validation groups",
+      "std_macro_f1": 0.0005582775581095988,
+      "steps": 1000,
+      "train_macro_f1": 0.44036950644656275,
+      "window": 100
+    },
+    {
+      "family": "lstm",
+      "mean_inference_ms": 0.38475889014080167,
+      "mean_macro_f1": 0.42288606344824037,
+      "parameters": 58708,
+      "signatures": [
+        "7f367c0ce96e19f5f380f35690bde71403eb2bb8a6bd438df4a8604c007ea4e5",
+        "ab1f46ddecb2af944a59200f7a633d5f9cd46bd21135a0118067ba5dd1efc8fa",
+        "a4ac04d873667d01409c6323cb290884e909e9e0a2b45901b3110abdf294a7a2"
+      ],
+      "source_scope": "same three validation groups",
+      "std_macro_f1": 0.04749092671235041,
+      "steps": 1000,
+      "train_macro_f1": 0.4237863508038788,
+      "window": 200
+    },
+    {
+      "family": "lstm",
+      "mean_inference_ms": 0.38683777804382974,
+      "mean_macro_f1": 0.42093858389513383,
+      "parameters": 58708,
+      "signatures": [
+        "1a28521b6ac1cba8b34bb7253c98a2576056c9e0b1248d2aef5f7befd4eb9b5d",
+        "6023a596e256b97003c51626bb9b3d161dbebdab796c6cc43b6d6d5aa635cf32",
+        "299056da6c86da5162bcaf442472e56c75a0506004f229675c23d19fff66a2fa"
+      ],
+      "source_scope": "same three validation groups",
+      "std_macro_f1": 0.0717391952572506,
+      "steps": 1000,
+      "train_macro_f1": 0.4219725489907586,
+      "window": 300
+    }
+  ],
+  "config_signature": "8e98ef0304f87e3d734329f2496f237858fe830753e1e62a6c2770d4d0a89c14",
+  "decision_id": "A_window_screen",
+  "question": "Which of four lengths is competitive at common endpoints and 1000 LSTM updates?",
+  "scope": "Common endpoints 299+50j; training counts4794; not a proof of globally optimal history length",
+  "selected": [
+    50,
+    100
+  ],
+  "signature": "a0000556cd09484b2c88b48c67f6d7c2dc2b42df3926688df610aebabdba2b35",
+  "validation_rule": "For each training seed pool all three validation groups and compute fixed-19 argmax macro-F1; rank by the mean across seeds rounded to 8 decimals. Ties prefer shorter windows, fewer updates, fewer parameters, then family name. All per-group and critical-class results retained; reference selection is not deployment acceptance."
+}
