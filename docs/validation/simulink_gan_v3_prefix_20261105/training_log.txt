@@ -1,0 +1,556 @@
+V3_STAGE develop {'created_utc': '2026-11-05T04:07:42.561942+00:00', 'python': '3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26300-SP0'}
+V3_VALIDATION A 42 250 {'accuracy': 0.775840597758406, 'macro_f1': 0.7273297851514872, 'window_count': 2409}
+CLASSIFIER_STEP A_s42_e83ca1a7a873eb8c 250/1000 loss=0.60516
+V3_VALIDATION A 42 500 {'accuracy': 0.888335408883354, 'macro_f1': 0.8549119393134951, 'window_count': 2409}
+CLASSIFIER_STEP A_s42_e83ca1a7a873eb8c 500/1000 loss=0.32370
+V3_VALIDATION A 42 1000 {'accuracy': 0.9007887090078871, 'macro_f1': 0.875414058209354, 'window_count': 2409}
+CLASSIFIER_STEP A_s42_e83ca1a7a873eb8c 1000/1000 loss=0.14927
+V3_JOB_COMPLETE A 42 0.875414058209354 {'threshold': 0.9, 'hold': 2}
+V3_VALIDATION A 43 250 {'accuracy': 0.7297633872976339, 'macro_f1': 0.6619474850400427, 'window_count': 2409}
+CLASSIFIER_STEP A_s43_77e3ccfc8d773335 250/1000 loss=0.79405
+V3_VALIDATION A 43 500 {'accuracy': 0.6936488169364882, 'macro_f1': 0.6284176477522257, 'window_count': 2409}
+CLASSIFIER_STEP A_s43_77e3ccfc8d773335 500/1000 loss=0.91210
+V3_VALIDATION A 43 1000 {'accuracy': 0.9331672893316729, 'macro_f1': 0.9189655735419401, 'window_count': 2409}
+CLASSIFIER_STEP A_s43_77e3ccfc8d773335 1000/1000 loss=0.27419
+V3_JOB_COMPLETE A 43 0.9189655735419401 {'threshold': 0.8, 'hold': 5}
+V3_VALIDATION A 44 250 {'accuracy': 0.7833125778331258, 'macro_f1': 0.7244883638211757, 'window_count': 2409}
+CLASSIFIER_STEP A_s44_3d4b3f88f6eb0f53 250/1000 loss=0.46475
+V3_VALIDATION A 44 500 {'accuracy': 0.8754669987546699, 'macro_f1': 0.8426139663877529, 'window_count': 2409}
+CLASSIFIER_STEP A_s44_3d4b3f88f6eb0f53 500/1000 loss=0.25204
+V3_VALIDATION A 44 1000 {'accuracy': 0.9688667496886675, 'macro_f1': 0.9685386145107637, 'window_count': 2409}
+CLASSIFIER_STEP A_s44_3d4b3f88f6eb0f53 1000/1000 loss=0.04419
+V3_JOB_COMPLETE A 44 0.9685386145107637 {'threshold': 0.9, 'hold': 5}
+V3_VALIDATION B 42 250 {'accuracy': 0.3378995433789954, 'macro_f1': 0.21163458579212802, 'window_count': 2409}
+CLASSIFIER_STEP B_s42_abc828c176e0507c 250/1000 loss=1.30703
+V3_VALIDATION B 42 500 {'accuracy': 0.3677874636778746, 'macro_f1': 0.23307639052493762, 'window_count': 2409}
+CLASSIFIER_STEP B_s42_abc828c176e0507c 500/1000 loss=1.47534
+V3_VALIDATION B 42 1000 {'accuracy': 0.4761311747613117, 'macro_f1': 0.37861529403227523, 'window_count': 2409}
+CLASSIFIER_STEP B_s42_abc828c176e0507c 1000/1000 loss=1.01631
+V3_JOB_COMPLETE B 42 0.37861529403227523 {'threshold': 0.9, 'hold': 2}
+V3_VALIDATION B 43 250 {'accuracy': 0.41884599418845997, 'macro_f1': 0.29954192898101756, 'window_count': 2409}
+CLASSIFIER_STEP B_s43_fbd7b0bcb3f6aa54 250/1000 loss=1.41169
+V3_VALIDATION B 43 500 {'accuracy': 0.5234537152345371, 'macro_f1': 0.4349395099443388, 'window_count': 2409}
+CLASSIFIER_STEP B_s43_fbd7b0bcb3f6aa54 500/1000 loss=1.08265
+V3_VALIDATION B 43 1000 {'accuracy': 0.5305105853051059, 'macro_f1': 0.4395654487410603, 'window_count': 2409}
+CLASSIFIER_STEP B_s43_fbd7b0bcb3f6aa54 1000/1000 loss=0.99994
+V3_JOB_COMPLETE B 43 0.4395654487410603 {'threshold': 0.9, 'hold': 3}
+V3_VALIDATION B 44 250 {'accuracy': 0.37069323370693236, 'macro_f1': 0.23452320733603327, 'window_count': 2409}
+CLASSIFIER_STEP B_s44_ff77090e4ea0c45b 250/1000 loss=1.24417
+V3_VALIDATION B 44 500 {'accuracy': 0.48775425487754254, 'macro_f1': 0.39476765232424127, 'window_count': 2409}
+CLASSIFIER_STEP B_s44_ff77090e4ea0c45b 500/1000 loss=1.32580
+V3_VALIDATION B 44 1000 {'accuracy': 0.5197177251971773, 'macro_f1': 0.4306875934691721, 'window_count': 2409}
+CLASSIFIER_STEP B_s44_ff77090e4ea0c45b 1000/1000 loss=0.90695
+V3_JOB_COMPLETE B 44 0.4306875934691721 {'threshold': 0.9, 'hold': 2}
+V3_VALIDATION C 42 250 {'accuracy': 0.37401411374014115, 'macro_f1': 0.24939438831424893, 'window_count': 2409}
+CLASSIFIER_STEP C_s42_70abf233f15e2971 250/1000 loss=1.34407
+V3_VALIDATION C 42 500 {'accuracy': 0.5147364051473641, 'macro_f1': 0.4261438798192159, 'window_count': 2409}
+CLASSIFIER_STEP C_s42_70abf233f15e2971 500/1000 loss=1.25637
+V3_VALIDATION C 42 1000 {'accuracy': 0.5246990452469904, 'macro_f1': 0.4641531966604661, 'window_count': 2409}
+CLASSIFIER_STEP C_s42_70abf233f15e2971 1000/1000 loss=0.91810
+V3_JOB_COMPLETE C 42 0.4641531966604661 {'threshold': 0.9, 'hold': 2}
+V3_VALIDATION C 43 250 {'accuracy': 0.4931506849315068, 'macro_f1': 0.3967257518649081, 'window_count': 2409}
+CLASSIFIER_STEP C_s43_991857ec0c8a00b0 250/1000 loss=1.33280
+V3_VALIDATION C 43 500 {'accuracy': 0.5051888750518887, 'macro_f1': 0.41499100706404374, 'window_count': 2409}
+CLASSIFIER_STEP C_s43_991857ec0c8a00b0 500/1000 loss=1.10646
+V3_VALIDATION C 43 1000 {'accuracy': 0.5404732254047323, 'macro_f1': 0.4621773911016384, 'window_count': 2409}
+CLASSIFIER_STEP C_s43_991857ec0c8a00b0 1000/1000 loss=0.89926
+V3_JOB_COMPLETE C 43 0.4621773911016384 {'threshold': 0.9, 'hold': 3}
+V3_VALIDATION C 44 250 {'accuracy': 0.48484848484848486, 'macro_f1': 0.38380078454081257, 'window_count': 2409}
+CLASSIFIER_STEP C_s44_808022f99b011113 250/1000 loss=1.15322
+V3_VALIDATION C 44 500 {'accuracy': 0.48775425487754254, 'macro_f1': 0.3862282529814987, 'window_count': 2409}
+CLASSIFIER_STEP C_s44_808022f99b011113 500/1000 loss=1.31896
+V3_VALIDATION C 44 1000 {'accuracy': 0.5346616853466168, 'macro_f1': 0.4485716832666286, 'window_count': 2409}
+CLASSIFIER_STEP C_s44_808022f99b011113 1000/1000 loss=0.91265
+V3_JOB_COMPLETE C 44 0.4485716832666286 {'threshold': 0.9, 'hold': 2}
+V3_VALIDATION D 42 250 {'accuracy': 0.41386467413864675, 'macro_f1': 0.3279186997160309, 'window_count': 2409}
+CLASSIFIER_STEP D_s42_3b0634e696adbeee 250/1000 loss=1.09170
+V3_VALIDATION D 42 500 {'accuracy': 0.37401411374014115, 'macro_f1': 0.31147323245164454, 'window_count': 2409}
+CLASSIFIER_STEP D_s42_3b0634e696adbeee 500/1000 loss=1.12524
+V3_VALIDATION D 42 1000 {'accuracy': 0.4200913242009132, 'macro_f1': 0.36608735094211214, 'window_count': 2409}
+CLASSIFIER_STEP D_s42_3b0634e696adbeee 1000/1000 loss=0.68866
+V3_JOB_COMPLETE D 42 0.36608735094211214 {'threshold': 0.8, 'hold': 3}
+V3_VALIDATION D 43 250 {'accuracy': 0.43711083437110837, 'macro_f1': 0.34852728384227083, 'window_count': 2409}
+CLASSIFIER_STEP D_s43_2f6c1e50250b8c10 250/1000 loss=1.18943
+V3_VALIDATION D 43 500 {'accuracy': 0.41469489414694893, 'macro_f1': 0.33664590736029354, 'window_count': 2409}
+CLASSIFIER_STEP D_s43_2f6c1e50250b8c10 500/1000 loss=0.99648
+V3_VALIDATION D 43 1000 {'accuracy': 0.41511000415110005, 'macro_f1': 0.32903326567046237, 'window_count': 2409}
+CLASSIFIER_STEP D_s43_2f6c1e50250b8c10 1000/1000 loss=0.80440
+V3_JOB_COMPLETE D 43 0.32903326567046237 {'threshold': 0.8, 'hold': 2}
+V3_VALIDATION D 44 250 {'accuracy': 0.35533416355334163, 'macro_f1': 0.283093965405661, 'window_count': 2409}
+CLASSIFIER_STEP D_s44_739cadadd44505df 250/1000 loss=1.12871
+V3_VALIDATION D 44 500 {'accuracy': 0.44831880448318806, 'macro_f1': 0.3715254455348813, 'window_count': 2409}
+CLASSIFIER_STEP D_s44_739cadadd44505df 500/1000 loss=1.13416
+V3_VALIDATION D 44 1000 {'accuracy': 0.44250726442507266, 'macro_f1': 0.373715871063094, 'window_count': 2409}
+CLASSIFIER_STEP D_s44_739cadadd44505df 1000/1000 loss=0.93357
+V3_JOB_COMPLETE D 44 0.373715871063094 {'threshold': 0.8, 'hold': 2}
+V3_VALIDATION E 42 250 {'accuracy': 0.37027812370278124, 'macro_f1': 0.24733914590758835, 'window_count': 2409}
+CLASSIFIER_STEP E_s42_527cbfbd04a63660 250/1000 loss=1.32434
+V3_VALIDATION E 42 500 {'accuracy': 0.48152760481527607, 'macro_f1': 0.37729639644351404, 'window_count': 2409}
+CLASSIFIER_STEP E_s42_527cbfbd04a63660 500/1000 loss=1.25886
+V3_VALIDATION E 42 1000 {'accuracy': 0.5491905354919053, 'macro_f1': 0.4875449034715156, 'window_count': 2409}
+CLASSIFIER_STEP E_s42_527cbfbd04a63660 1000/1000 loss=0.67013
+V3_JOB_COMPLETE E 42 0.4875449034715156 {'threshold': 0.8, 'hold': 5}
+V3_VALIDATION E 43 250 {'accuracy': 0.45080946450809467, 'macro_f1': 0.3444342096162842, 'window_count': 2409}
+CLASSIFIER_STEP E_s43_3dab67d861994311 250/1000 loss=1.32352
+V3_VALIDATION E 43 500 {'accuracy': 0.5251141552511416, 'macro_f1': 0.43786798810804856, 'window_count': 2409}
+CLASSIFIER_STEP E_s43_3dab67d861994311 500/1000 loss=1.30755
+V3_VALIDATION E 43 1000 {'accuracy': 0.5342465753424658, 'macro_f1': 0.4472562182860139, 'window_count': 2409}
+CLASSIFIER_STEP E_s43_3dab67d861994311 1000/1000 loss=0.91632
+V3_JOB_COMPLETE E 43 0.4472562182860139 {'threshold': 0.8, 'hold': 3}
+V3_VALIDATION E 44 250 {'accuracy': 0.42963885429638854, 'macro_f1': 0.30790166198116925, 'window_count': 2409}
+CLASSIFIER_STEP E_s44_d13d49d9469d12ce 250/1000 loss=1.15728
+V3_VALIDATION E 44 500 {'accuracy': 0.5263594852635949, 'macro_f1': 0.4348114440207964, 'window_count': 2409}
+CLASSIFIER_STEP E_s44_d13d49d9469d12ce 500/1000 loss=1.18060
+V3_VALIDATION E 44 1000 {'accuracy': 0.5209630552096306, 'macro_f1': 0.43197131555879337, 'window_count': 2409}
+CLASSIFIER_STEP E_s44_d13d49d9469d12ce 1000/1000 loss=1.03485
+V3_JOB_COMPLETE E 44 0.43197131555879337 {'threshold': 0.8, 'hold': 2}
+GENERATOR_STEP plain12_p6_s42_dada4be2d91f248b 100 / 3000 {'generator_updates': 100, 'critic_updates': 500, 'loss_g': -16.879070281982422, 'loss_d': -15.238566398620605}
+GENERATOR_STEP plain12_p6_s42_dada4be2d91f248b 200 / 3000 {'generator_updates': 200, 'critic_updates': 1000, 'loss_g': -7.6553521156311035, 'loss_d': -13.513113975524902}
+GENERATOR_STEP plain12_p6_s42_dada4be2d91f248b 300 / 3000 {'generator_updates': 300, 'critic_updates': 1500, 'loss_g': -9.849283218383789, 'loss_d': -11.187266540527343}
+GENERATOR_STEP plain12_p6_s42_dada4be2d91f248b 400 / 3000 {'generator_updates': 400, 'critic_updates': 2000, 'loss_g': -3.0798635482788086, 'loss_d': -10.62674503326416}
+GENERATOR_STEP plain12_p6_s42_dada4be2d91f248b 500 / 3000 {'generator_updates': 500, 'critic_updates': 2500, 'loss_g': 0.6985676884651184, 'loss_d': -8.667371559143067}
+GENERATOR_CHECKPOINT C:\Users\lenovo\Desktop\eVTOL_Simulation\output_simulink_gan\v3_imu_rpm_prefix_20261105\generators\plain12_p6_s42_dada4be2d91f248b 500 delta 0.04998211935162544
+GENERATOR_STEP plain12_p6_s42_dada4be2d91f248b 600 / 3000 {'generator_updates': 600, 'critic_updates': 3000, 'loss_g': 0.7464646100997925, 'loss_d': -6.247009563446045}
+GENERATOR_STEP plain12_p6_s42_dada4be2d91f248b 700 / 3000 {'generator_updates': 700, 'critic_updates': 3500, 'loss_g': -0.8447842597961426, 'loss_d': -5.217532062530518}
+GENERATOR_STEP plain12_p6_s42_dada4be2d91f248b 800 / 3000 {'generator_updates': 800, 'critic_updates': 4000, 'loss_g': 2.184758186340332, 'loss_d': -4.909666919708252}
+GENERATOR_STEP plain12_p6_s42_dada4be2d91f248b 900 / 3000 {'generator_updates': 900, 'critic_updates': 4500, 'loss_g': 15.453498840332031, 'loss_d': -4.836493444442749}
+GENERATOR_STEP plain12_p6_s42_dada4be2d91f248b 1000 / 3000 {'generator_updates': 1000, 'critic_updates': 5000, 'loss_g': 11.249481201171875, 'loss_d': -4.26144118309021}
+GENERATOR_STEP plain12_p6_s42_dada4be2d91f248b 1100 / 3000 {'generator_updates': 1100, 'critic_updates': 5500, 'loss_g': 16.534090042114258, 'loss_d': -4.254170513153076}
+GENERATOR_STEP plain12_p6_s42_dada4be2d91f248b 1200 / 3000 {'generator_updates': 1200, 'critic_updates': 6000, 'loss_g': 10.382184982299805, 'loss_d': -4.161736965179443}
+GENERATOR_STEP plain12_p6_s42_dada4be2d91f248b 1300 / 3000 {'generator_updates': 1300, 'critic_updates': 6500, 'loss_g': 14.089593887329102, 'loss_d': -3.6917003631591796}
+GENERATOR_STEP plain12_p6_s42_dada4be2d91f248b 1400 / 3000 {'generator_updates': 1400, 'critic_updates': 7000, 'loss_g': 12.24927806854248, 'loss_d': -3.451343870162964}
+GENERATOR_STEP plain12_p6_s42_dada4be2d91f248b 1500 / 3000 {'generator_updates': 1500, 'critic_updates': 7500, 'loss_g': 12.690937042236328, 'loss_d': -3.7687018394470213}
+GENERATOR_CHECKPOINT C:\Users\lenovo\Desktop\eVTOL_Simulation\output_simulink_gan\v3_imu_rpm_prefix_20261105\generators\plain12_p6_s42_dada4be2d91f248b 1500 delta 0.12610135972499847
+GENERATOR_STEP plain12_p6_s42_dada4be2d91f248b 1600 / 3000 {'generator_updates': 1600, 'critic_updates': 8000, 'loss_g': 9.039132118225098, 'loss_d': -3.4261192321777343}
+GENERATOR_STEP plain12_p6_s42_dada4be2d91f248b 1700 / 3000 {'generator_updates': 1700, 'critic_updates': 8500, 'loss_g': 11.548158645629883, 'loss_d': -3.558589220046997}
+GENERATOR_STEP plain12_p6_s42_dada4be2d91f248b 1800 / 3000 {'generator_updates': 1800, 'critic_updates': 9000, 'loss_g': 11.769353866577148, 'loss_d': -3.6853245735168456}
+GENERATOR_STEP plain12_p6_s42_dada4be2d91f248b 1900 / 3000 {'generator_updates': 1900, 'critic_updates': 9500, 'loss_g': 12.464076042175293, 'loss_d': -3.706006479263306}
+GENERATOR_STEP plain12_p6_s42_dada4be2d91f248b 2000 / 3000 {'generator_updates': 2000, 'critic_updates': 10000, 'loss_g': 15.74873161315918, 'loss_d': -3.731977128982544}
+GENERATOR_STEP plain12_p6_s42_dada4be2d91f248b 2100 / 3000 {'generator_updates': 2100, 'critic_updates': 10500, 'loss_g': 17.08633804321289, 'loss_d': -3.674271059036255}
+GENERATOR_STEP plain12_p6_s42_dada4be2d91f248b 2200 / 3000 {'generator_updates': 2200, 'critic_updates': 11000, 'loss_g': 17.17258071899414, 'loss_d': -3.4796055793762206}
+GENERATOR_STEP plain12_p6_s42_dada4be2d91f248b 2300 / 3000 {'generator_updates': 2300, 'critic_updates': 11500, 'loss_g': 15.862183570861816, 'loss_d': -3.343129014968872}
+GENERATOR_STEP plain12_p6_s42_dada4be2d91f248b 2400 / 3000 {'generator_updates': 2400, 'critic_updates': 12000, 'loss_g': 21.211986541748047, 'loss_d': -3.76479549407959}
+GENERATOR_STEP plain12_p6_s42_dada4be2d91f248b 2500 / 3000 {'generator_updates': 2500, 'critic_updates': 12500, 'loss_g': 17.402698516845703, 'loss_d': -3.324253034591675}
+GENERATOR_STEP plain12_p6_s42_dada4be2d91f248b 2600 / 3000 {'generator_updates': 2600, 'critic_updates': 13000, 'loss_g': 21.214290618896484, 'loss_d': -3.421479034423828}
+GENERATOR_STEP plain12_p6_s42_dada4be2d91f248b 2700 / 3000 {'generator_updates': 2700, 'critic_updates': 13500, 'loss_g': 19.386293411254883, 'loss_d': -3.1073841094970702}
+GENERATOR_STEP plain12_p6_s42_dada4be2d91f248b 2800 / 3000 {'generator_updates': 2800, 'critic_updates': 14000, 'loss_g': 20.115413665771484, 'loss_d': -3.3372722625732423}
+GENERATOR_STEP plain12_p6_s42_dada4be2d91f248b 2900 / 3000 {'generator_updates': 2900, 'critic_updates': 14500, 'loss_g': 25.142778396606445, 'loss_d': -3.8104339122772215}
+GENERATOR_STEP plain12_p6_s42_dada4be2d91f248b 3000 / 3000 {'generator_updates': 3000, 'critic_updates': 15000, 'loss_g': 15.601513862609863, 'loss_d': -3.6124611854553224}
+GENERATOR_CHECKPOINT C:\Users\lenovo\Desktop\eVTOL_Simulation\output_simulink_gan\v3_imu_rpm_prefix_20261105\generators\plain12_p6_s42_dada4be2d91f248b 3000 delta 0.23516836762428284
+V3_VALIDATION ros_p6_r0.25 42 250 {'accuracy': 0.527189705271897, 'macro_f1': 0.4603511902518263, 'window_count': 2409}
+CLASSIFIER_STEP ros_p6_r0.25_s42_838305a1d1260149 250/1000 loss=1.15459
+V3_VALIDATION ros_p6_r0.25 42 500 {'accuracy': 0.37027812370278124, 'macro_f1': 0.28693804952205043, 'window_count': 2409}
+CLASSIFIER_STEP ros_p6_r0.25_s42_838305a1d1260149 500/1000 loss=0.95950
+V3_VALIDATION ros_p6_r0.25 42 1000 {'accuracy': 0.45828144458281445, 'macro_f1': 0.39662408399833976, 'window_count': 2409}
+CLASSIFIER_STEP ros_p6_r0.25_s42_838305a1d1260149 1000/1000 loss=0.88118
+V3_JOB_COMPLETE ros_p6_r0.25 42 0.39662408399833976 {'threshold': 0.8, 'hold': 3}
+V3_VALIDATION gan_p6_r0.25 42 250 {'accuracy': 0.45122457451224574, 'macro_f1': 0.34886863596396883, 'window_count': 2409}
+CLASSIFIER_STEP gan_p6_r0.25_s42_9fa9c2b3f6de54e0 250/1000 loss=1.24587
+V3_VALIDATION gan_p6_r0.25 42 500 {'accuracy': 0.46284765462847655, 'macro_f1': 0.3942641930062149, 'window_count': 2409}
+CLASSIFIER_STEP gan_p6_r0.25_s42_9fa9c2b3f6de54e0 500/1000 loss=0.95742
+V3_VALIDATION gan_p6_r0.25 42 1000 {'accuracy': 0.3972602739726027, 'macro_f1': 0.3505640388723965, 'window_count': 2409}
+CLASSIFIER_STEP gan_p6_r0.25_s42_9fa9c2b3f6de54e0 1000/1000 loss=0.97710
+V3_JOB_COMPLETE gan_p6_r0.25 42 0.3505640388723965 {'threshold': 0.8, 'hold': 5}
+V3_VALIDATION ros_p6_r0.5 42 250 {'accuracy': 0.42299709422997095, 'macro_f1': 0.3472736747109485, 'window_count': 2409}
+CLASSIFIER_STEP ros_p6_r0.5_s42_d717d1eb1caf53da 250/1000 loss=1.21095
+V3_VALIDATION ros_p6_r0.5 42 500 {'accuracy': 0.45662100456621, 'macro_f1': 0.3760202717758789, 'window_count': 2409}
+CLASSIFIER_STEP ros_p6_r0.5_s42_d717d1eb1caf53da 500/1000 loss=0.77342
+V3_VALIDATION ros_p6_r0.5 42 1000 {'accuracy': 0.41261934412619344, 'macro_f1': 0.3813287029796297, 'window_count': 2409}
+CLASSIFIER_STEP ros_p6_r0.5_s42_d717d1eb1caf53da 1000/1000 loss=0.75592
+V3_JOB_COMPLETE ros_p6_r0.5 42 0.3813287029796297 {'threshold': 0.9, 'hold': 5}
+V3_VALIDATION gan_p6_r0.5 42 250 {'accuracy': 0.4624325446243254, 'macro_f1': 0.36230466649674176, 'window_count': 2409}
+CLASSIFIER_STEP gan_p6_r0.5_s42_42b1182313d37af1 250/1000 loss=1.21982
+V3_VALIDATION gan_p6_r0.5 42 500 {'accuracy': 0.46450809464508097, 'macro_f1': 0.377164218240979, 'window_count': 2409}
+CLASSIFIER_STEP gan_p6_r0.5_s42_42b1182313d37af1 500/1000 loss=0.84533
+V3_VALIDATION gan_p6_r0.5 42 1000 {'accuracy': 0.4246575342465753, 'macro_f1': 0.3618570271487781, 'window_count': 2409}
+CLASSIFIER_STEP gan_p6_r0.5_s42_42b1182313d37af1 1000/1000 loss=0.89488
+V3_JOB_COMPLETE gan_p6_r0.5 42 0.3618570271487781 {'threshold': 0.8, 'hold': 5}
+V3_VALIDATION ros_p6_r1 42 250 {'accuracy': 0.3034454130344541, 'macro_f1': 0.227382685029615, 'window_count': 2409}
+CLASSIFIER_STEP ros_p6_r1_s42_fe16cbed90981353 250/1000 loss=1.21875
+V3_VALIDATION ros_p6_r1 42 500 {'accuracy': 0.37193856371938566, 'macro_f1': 0.3077138100070192, 'window_count': 2409}
+CLASSIFIER_STEP ros_p6_r1_s42_fe16cbed90981353 500/1000 loss=0.70802
+V3_VALIDATION ros_p6_r1 42 1000 {'accuracy': 0.39310917393109174, 'macro_f1': 0.36843378479408484, 'window_count': 2409}
+CLASSIFIER_STEP ros_p6_r1_s42_fe16cbed90981353 1000/1000 loss=0.40583
+V3_JOB_COMPLETE ros_p6_r1 42 0.36843378479408484 {'threshold': 0.9, 'hold': 5}
+V3_VALIDATION gan_p6_r1 42 250 {'accuracy': 0.47322540473225405, 'macro_f1': 0.382760533091191, 'window_count': 2409}
+CLASSIFIER_STEP gan_p6_r1_s42_22790d7fc6118010 250/1000 loss=1.30308
+V3_VALIDATION gan_p6_r1 42 500 {'accuracy': 0.41386467413864675, 'macro_f1': 0.3120673258182562, 'window_count': 2409}
+CLASSIFIER_STEP gan_p6_r1_s42_22790d7fc6118010 500/1000 loss=0.72092
+V3_VALIDATION gan_p6_r1 42 1000 {'accuracy': 0.5026982150269822, 'macro_f1': 0.45125413805798237, 'window_count': 2409}
+CLASSIFIER_STEP gan_p6_r1_s42_22790d7fc6118010 1000/1000 loss=0.72513
+V3_JOB_COMPLETE gan_p6_r1 42 0.45125413805798237 {'threshold': 0.9, 'hold': 2}
+GENERATOR_STEP plain12_p6_s43_bcccd2c40adcc808 100 / 3000 {'generator_updates': 100, 'critic_updates': 500, 'loss_g': -26.412031173706055, 'loss_d': -17.572104263305665}
+GENERATOR_STEP plain12_p6_s43_bcccd2c40adcc808 200 / 3000 {'generator_updates': 200, 'critic_updates': 1000, 'loss_g': -14.685090065002441, 'loss_d': -11.830314636230469}
+GENERATOR_STEP plain12_p6_s43_bcccd2c40adcc808 300 / 3000 {'generator_updates': 300, 'critic_updates': 1500, 'loss_g': -12.478452682495117, 'loss_d': -11.311946868896484}
+GENERATOR_STEP plain12_p6_s43_bcccd2c40adcc808 400 / 3000 {'generator_updates': 400, 'critic_updates': 2000, 'loss_g': -8.082361221313477, 'loss_d': -7.919683933258057}
+GENERATOR_STEP plain12_p6_s43_bcccd2c40adcc808 500 / 3000 {'generator_updates': 500, 'critic_updates': 2500, 'loss_g': -5.410512447357178, 'loss_d': -6.858381843566894}
+GENERATOR_CHECKPOINT C:\Users\lenovo\Desktop\eVTOL_Simulation\output_simulink_gan\v3_imu_rpm_prefix_20261105\generators\plain12_p6_s43_bcccd2c40adcc808 500 delta 0.04979430511593819
+GENERATOR_STEP plain12_p6_s43_bcccd2c40adcc808 600 / 3000 {'generator_updates': 600, 'critic_updates': 3000, 'loss_g': -4.805135726928711, 'loss_d': -5.926648235321045}
+GENERATOR_STEP plain12_p6_s43_bcccd2c40adcc808 700 / 3000 {'generator_updates': 700, 'critic_updates': 3500, 'loss_g': -3.9366049766540527, 'loss_d': -5.827467632293701}
+GENERATOR_STEP plain12_p6_s43_bcccd2c40adcc808 800 / 3000 {'generator_updates': 800, 'critic_updates': 4000, 'loss_g': -3.621429920196533, 'loss_d': -4.402567625045776}
+GENERATOR_STEP plain12_p6_s43_bcccd2c40adcc808 900 / 3000 {'generator_updates': 900, 'critic_updates': 4500, 'loss_g': -0.5048775672912598, 'loss_d': -4.539933681488037}
+GENERATOR_STEP plain12_p6_s43_bcccd2c40adcc808 1000 / 3000 {'generator_updates': 1000, 'critic_updates': 5000, 'loss_g': 5.7219085693359375, 'loss_d': -3.9599934101104735}
+GENERATOR_STEP plain12_p6_s43_bcccd2c40adcc808 1100 / 3000 {'generator_updates': 1100, 'critic_updates': 5500, 'loss_g': 5.6750922203063965, 'loss_d': -4.062248039245605}
+GENERATOR_STEP plain12_p6_s43_bcccd2c40adcc808 1200 / 3000 {'generator_updates': 1200, 'critic_updates': 6000, 'loss_g': 8.68698787689209, 'loss_d': -4.3238880157470705}
+GENERATOR_STEP plain12_p6_s43_bcccd2c40adcc808 1300 / 3000 {'generator_updates': 1300, 'critic_updates': 6500, 'loss_g': 3.024064064025879, 'loss_d': -3.5746017932891845}
+GENERATOR_STEP plain12_p6_s43_bcccd2c40adcc808 1400 / 3000 {'generator_updates': 1400, 'critic_updates': 7000, 'loss_g': 3.490626335144043, 'loss_d': -4.0033347606658936}
+GENERATOR_STEP plain12_p6_s43_bcccd2c40adcc808 1500 / 3000 {'generator_updates': 1500, 'critic_updates': 7500, 'loss_g': 8.44296646118164, 'loss_d': -3.605505895614624}
+GENERATOR_CHECKPOINT C:\Users\lenovo\Desktop\eVTOL_Simulation\output_simulink_gan\v3_imu_rpm_prefix_20261105\generators\plain12_p6_s43_bcccd2c40adcc808 1500 delta 0.1384621262550354
+GENERATOR_STEP plain12_p6_s43_bcccd2c40adcc808 1600 / 3000 {'generator_updates': 1600, 'critic_updates': 8000, 'loss_g': 6.498474597930908, 'loss_d': -3.896066665649414}
+GENERATOR_STEP plain12_p6_s43_bcccd2c40adcc808 1700 / 3000 {'generator_updates': 1700, 'critic_updates': 8500, 'loss_g': 8.354255676269531, 'loss_d': -4.149305963516236}
+GENERATOR_STEP plain12_p6_s43_bcccd2c40adcc808 1800 / 3000 {'generator_updates': 1800, 'critic_updates': 9000, 'loss_g': 11.665339469909668, 'loss_d': -3.438611316680908}
+GENERATOR_STEP plain12_p6_s43_bcccd2c40adcc808 1900 / 3000 {'generator_updates': 1900, 'critic_updates': 9500, 'loss_g': 9.95164680480957, 'loss_d': -3.468110227584839}
+GENERATOR_STEP plain12_p6_s43_bcccd2c40adcc808 2000 / 3000 {'generator_updates': 2000, 'critic_updates': 10000, 'loss_g': 9.524179458618164, 'loss_d': -3.2761472702026366}
+GENERATOR_STEP plain12_p6_s43_bcccd2c40adcc808 2100 / 3000 {'generator_updates': 2100, 'critic_updates': 10500, 'loss_g': 7.340939044952393, 'loss_d': -3.1196045875549316}
+GENERATOR_STEP plain12_p6_s43_bcccd2c40adcc808 2200 / 3000 {'generator_updates': 2200, 'critic_updates': 11000, 'loss_g': 13.011979103088379, 'loss_d': -3.4478670597076415}
+GENERATOR_STEP plain12_p6_s43_bcccd2c40adcc808 2300 / 3000 {'generator_updates': 2300, 'critic_updates': 11500, 'loss_g': 10.459640502929688, 'loss_d': -3.24458532333374}
+GENERATOR_STEP plain12_p6_s43_bcccd2c40adcc808 2400 / 3000 {'generator_updates': 2400, 'critic_updates': 12000, 'loss_g': 14.003759384155273, 'loss_d': -3.6567069053649903}
+GENERATOR_STEP plain12_p6_s43_bcccd2c40adcc808 2500 / 3000 {'generator_updates': 2500, 'critic_updates': 12500, 'loss_g': 12.169394493103027, 'loss_d': -3.6151356220245363}
+GENERATOR_STEP plain12_p6_s43_bcccd2c40adcc808 2600 / 3000 {'generator_updates': 2600, 'critic_updates': 13000, 'loss_g': 12.696224212646484, 'loss_d': -2.7851210594177247}
+GENERATOR_STEP plain12_p6_s43_bcccd2c40adcc808 2700 / 3000 {'generator_updates': 2700, 'critic_updates': 13500, 'loss_g': 16.9027156829834, 'loss_d': -3.8193415641784667}
+GENERATOR_STEP plain12_p6_s43_bcccd2c40adcc808 2800 / 3000 {'generator_updates': 2800, 'critic_updates': 14000, 'loss_g': 15.215987205505371, 'loss_d': -3.180632305145264}
+GENERATOR_STEP plain12_p6_s43_bcccd2c40adcc808 2900 / 3000 {'generator_updates': 2900, 'critic_updates': 14500, 'loss_g': 13.017414093017578, 'loss_d': -3.375653028488159}
+GENERATOR_STEP plain12_p6_s43_bcccd2c40adcc808 3000 / 3000 {'generator_updates': 3000, 'critic_updates': 15000, 'loss_g': 15.321379661560059, 'loss_d': -3.1952051162719726}
+GENERATOR_CHECKPOINT C:\Users\lenovo\Desktop\eVTOL_Simulation\output_simulink_gan\v3_imu_rpm_prefix_20261105\generators\plain12_p6_s43_bcccd2c40adcc808 3000 delta 0.26435983180999756
+V3_VALIDATION ros_p6_r0.25 43 250 {'accuracy': 0.38854296388542964, 'macro_f1': 0.306077271180561, 'window_count': 2409}
+CLASSIFIER_STEP ros_p6_r0.25_s43_da35c8a8eddabc5a 250/1000 loss=0.97007
+V3_VALIDATION ros_p6_r0.25 43 500 {'accuracy': 0.44499792444997927, 'macro_f1': 0.35185942810576476, 'window_count': 2409}
+CLASSIFIER_STEP ros_p6_r0.25_s43_da35c8a8eddabc5a 500/1000 loss=1.30292
+V3_VALIDATION ros_p6_r0.25 43 1000 {'accuracy': 0.4213366542133665, 'macro_f1': 0.3387509525759308, 'window_count': 2409}
+CLASSIFIER_STEP ros_p6_r0.25_s43_da35c8a8eddabc5a 1000/1000 loss=0.83875
+V3_JOB_COMPLETE ros_p6_r0.25 43 0.3387509525759308 {'threshold': 0.8, 'hold': 5}
+V3_VALIDATION gan_p6_r0.25 43 250 {'accuracy': 0.4806973848069738, 'macro_f1': 0.37962433834442993, 'window_count': 2409}
+CLASSIFIER_STEP gan_p6_r0.25_s43_1fd0f9611b39a7f7 250/1000 loss=0.91571
+V3_VALIDATION gan_p6_r0.25 43 500 {'accuracy': 0.41511000415110005, 'macro_f1': 0.3176190051138529, 'window_count': 2409}
+CLASSIFIER_STEP gan_p6_r0.25_s43_1fd0f9611b39a7f7 500/1000 loss=1.29597
+V3_VALIDATION gan_p6_r0.25 43 1000 {'accuracy': 0.4122042341220423, 'macro_f1': 0.3707625532690045, 'window_count': 2409}
+CLASSIFIER_STEP gan_p6_r0.25_s43_1fd0f9611b39a7f7 1000/1000 loss=0.91018
+V3_JOB_COMPLETE gan_p6_r0.25 43 0.3707625532690045 {'threshold': 0.9, 'hold': 5}
+V3_VALIDATION ros_p6_r0.5 43 250 {'accuracy': 0.41303445413034456, 'macro_f1': 0.3122390138183318, 'window_count': 2409}
+CLASSIFIER_STEP ros_p6_r0.5_s43_7aa1f80cb9429e14 250/1000 loss=0.81278
+V3_VALIDATION ros_p6_r0.5 43 500 {'accuracy': 0.3665421336654213, 'macro_f1': 0.3033280447115443, 'window_count': 2409}
+CLASSIFIER_STEP ros_p6_r0.5_s43_7aa1f80cb9429e14 500/1000 loss=1.12741
+V3_VALIDATION ros_p6_r0.5 43 1000 {'accuracy': 0.4396014943960149, 'macro_f1': 0.3818173996883507, 'window_count': 2409}
+CLASSIFIER_STEP ros_p6_r0.5_s43_7aa1f80cb9429e14 1000/1000 loss=0.89982
+V3_JOB_COMPLETE ros_p6_r0.5 43 0.3818173996883507 {'threshold': 0.8, 'hold': 5}
+V3_VALIDATION gan_p6_r0.5 43 250 {'accuracy': 0.40597758405977585, 'macro_f1': 0.3346175252962643, 'window_count': 2409}
+CLASSIFIER_STEP gan_p6_r0.5_s43_9c4f77b32e13124a 250/1000 loss=0.89826
+V3_VALIDATION gan_p6_r0.5 43 500 {'accuracy': 0.4533001245330012, 'macro_f1': 0.35079444628118867, 'window_count': 2409}
+CLASSIFIER_STEP gan_p6_r0.5_s43_9c4f77b32e13124a 500/1000 loss=1.24689
+V3_VALIDATION gan_p6_r0.5 43 1000 {'accuracy': 0.41511000415110005, 'macro_f1': 0.3279930098949155, 'window_count': 2409}
+CLASSIFIER_STEP gan_p6_r0.5_s43_9c4f77b32e13124a 1000/1000 loss=0.93002
+V3_JOB_COMPLETE gan_p6_r0.5 43 0.3279930098949155 {'threshold': 0.8, 'hold': 2}
+V3_VALIDATION ros_p6_r1 43 250 {'accuracy': 0.38397675383976754, 'macro_f1': 0.30308153378994546, 'window_count': 2409}
+CLASSIFIER_STEP ros_p6_r1_s43_e74cfecc00d22245 250/1000 loss=0.89529
+V3_VALIDATION ros_p6_r1 43 500 {'accuracy': 0.40390203403902036, 'macro_f1': 0.3384266538740338, 'window_count': 2409}
+CLASSIFIER_STEP ros_p6_r1_s43_e74cfecc00d22245 500/1000 loss=1.17068
+V3_VALIDATION ros_p6_r1 43 1000 {'accuracy': 0.3731838937318389, 'macro_f1': 0.3119704699576142, 'window_count': 2409}
+CLASSIFIER_STEP ros_p6_r1_s43_e74cfecc00d22245 1000/1000 loss=0.86738
+V3_JOB_COMPLETE ros_p6_r1 43 0.3119704699576142 {'threshold': 0.9, 'hold': 5}
+V3_VALIDATION gan_p6_r1 43 250 {'accuracy': 0.42631797426317974, 'macro_f1': 0.33051432668899017, 'window_count': 2409}
+CLASSIFIER_STEP gan_p6_r1_s43_fd4cd0ddd758312d 250/1000 loss=0.90645
+V3_VALIDATION gan_p6_r1 43 500 {'accuracy': 0.37650477376504776, 'macro_f1': 0.2991982558278386, 'window_count': 2409}
+CLASSIFIER_STEP gan_p6_r1_s43_fd4cd0ddd758312d 500/1000 loss=1.29788
+V3_VALIDATION gan_p6_r1 43 1000 {'accuracy': 0.45246990452469904, 'macro_f1': 0.39585064627534255, 'window_count': 2409}
+CLASSIFIER_STEP gan_p6_r1_s43_fd4cd0ddd758312d 1000/1000 loss=0.97925
+V3_JOB_COMPLETE gan_p6_r1 43 0.39585064627534255 {'threshold': 0.9, 'hold': 5}
+GENERATOR_STEP plain12_p6_s44_0850b61fadb2db46 100 / 3000 {'generator_updates': 100, 'critic_updates': 500, 'loss_g': -9.073819160461426, 'loss_d': -17.06034412384033}
+GENERATOR_STEP plain12_p6_s44_0850b61fadb2db46 200 / 3000 {'generator_updates': 200, 'critic_updates': 1000, 'loss_g': 4.0296406745910645, 'loss_d': -13.914719390869141}
+GENERATOR_STEP plain12_p6_s44_0850b61fadb2db46 300 / 3000 {'generator_updates': 300, 'critic_updates': 1500, 'loss_g': -3.6294078826904297, 'loss_d': -12.738651275634766}
+GENERATOR_STEP plain12_p6_s44_0850b61fadb2db46 400 / 3000 {'generator_updates': 400, 'critic_updates': 2000, 'loss_g': -3.0262649059295654, 'loss_d': -9.495573425292969}
+GENERATOR_STEP plain12_p6_s44_0850b61fadb2db46 500 / 3000 {'generator_updates': 500, 'critic_updates': 2500, 'loss_g': 5.372198104858398, 'loss_d': -7.316232490539551}
+GENERATOR_CHECKPOINT C:\Users\lenovo\Desktop\eVTOL_Simulation\output_simulink_gan\v3_imu_rpm_prefix_20261105\generators\plain12_p6_s44_0850b61fadb2db46 500 delta 0.05005074292421341
+GENERATOR_STEP plain12_p6_s44_0850b61fadb2db46 600 / 3000 {'generator_updates': 600, 'critic_updates': 3000, 'loss_g': 2.8652548789978027, 'loss_d': -5.523204040527344}
+GENERATOR_STEP plain12_p6_s44_0850b61fadb2db46 700 / 3000 {'generator_updates': 700, 'critic_updates': 3500, 'loss_g': 3.5193562507629395, 'loss_d': -5.197041606903076}
+GENERATOR_STEP plain12_p6_s44_0850b61fadb2db46 800 / 3000 {'generator_updates': 800, 'critic_updates': 4000, 'loss_g': 4.1861572265625, 'loss_d': -4.623574542999267}
+GENERATOR_STEP plain12_p6_s44_0850b61fadb2db46 900 / 3000 {'generator_updates': 900, 'critic_updates': 4500, 'loss_g': 5.084357261657715, 'loss_d': -4.3284821033477785}
+GENERATOR_STEP plain12_p6_s44_0850b61fadb2db46 1000 / 3000 {'generator_updates': 1000, 'critic_updates': 5000, 'loss_g': 6.796385765075684, 'loss_d': -4.364870262145996}
+GENERATOR_STEP plain12_p6_s44_0850b61fadb2db46 1100 / 3000 {'generator_updates': 1100, 'critic_updates': 5500, 'loss_g': 7.701892375946045, 'loss_d': -4.086941957473755}
+GENERATOR_STEP plain12_p6_s44_0850b61fadb2db46 1200 / 3000 {'generator_updates': 1200, 'critic_updates': 6000, 'loss_g': 4.172223091125488, 'loss_d': -3.9333199501037597}
+GENERATOR_STEP plain12_p6_s44_0850b61fadb2db46 1300 / 3000 {'generator_updates': 1300, 'critic_updates': 6500, 'loss_g': 8.235111236572266, 'loss_d': -4.085009574890137}
+GENERATOR_STEP plain12_p6_s44_0850b61fadb2db46 1400 / 3000 {'generator_updates': 1400, 'critic_updates': 7000, 'loss_g': 8.770309448242188, 'loss_d': -4.055323219299316}
+GENERATOR_STEP plain12_p6_s44_0850b61fadb2db46 1500 / 3000 {'generator_updates': 1500, 'critic_updates': 7500, 'loss_g': 10.377985000610352, 'loss_d': -3.6517314434051515}
+GENERATOR_CHECKPOINT C:\Users\lenovo\Desktop\eVTOL_Simulation\output_simulink_gan\v3_imu_rpm_prefix_20261105\generators\plain12_p6_s44_0850b61fadb2db46 1500 delta 0.13311733305454254
+GENERATOR_STEP plain12_p6_s44_0850b61fadb2db46 1600 / 3000 {'generator_updates': 1600, 'critic_updates': 8000, 'loss_g': 10.73219108581543, 'loss_d': -3.7005736351013185}
+GENERATOR_STEP plain12_p6_s44_0850b61fadb2db46 1700 / 3000 {'generator_updates': 1700, 'critic_updates': 8500, 'loss_g': 9.989299774169922, 'loss_d': -3.272667169570923}
+GENERATOR_STEP plain12_p6_s44_0850b61fadb2db46 1800 / 3000 {'generator_updates': 1800, 'critic_updates': 9000, 'loss_g': 12.162487030029297, 'loss_d': -3.785065937042236}
+GENERATOR_STEP plain12_p6_s44_0850b61fadb2db46 1900 / 3000 {'generator_updates': 1900, 'critic_updates': 9500, 'loss_g': 11.969376564025879, 'loss_d': -3.723807621002197}
+GENERATOR_STEP plain12_p6_s44_0850b61fadb2db46 2000 / 3000 {'generator_updates': 2000, 'critic_updates': 10000, 'loss_g': 12.996526718139648, 'loss_d': -2.9587575912475588}
+GENERATOR_STEP plain12_p6_s44_0850b61fadb2db46 2100 / 3000 {'generator_updates': 2100, 'critic_updates': 10500, 'loss_g': 12.069732666015625, 'loss_d': -3.1917023181915285}
+GENERATOR_STEP plain12_p6_s44_0850b61fadb2db46 2200 / 3000 {'generator_updates': 2200, 'critic_updates': 11000, 'loss_g': 17.113176345825195, 'loss_d': -3.0252002716064452}
+GENERATOR_STEP plain12_p6_s44_0850b61fadb2db46 2300 / 3000 {'generator_updates': 2300, 'critic_updates': 11500, 'loss_g': 16.416648864746094, 'loss_d': -3.065625858306885}
+GENERATOR_STEP plain12_p6_s44_0850b61fadb2db46 2400 / 3000 {'generator_updates': 2400, 'critic_updates': 12000, 'loss_g': 16.10542869567871, 'loss_d': -3.3869081020355223}
+GENERATOR_STEP plain12_p6_s44_0850b61fadb2db46 2500 / 3000 {'generator_updates': 2500, 'critic_updates': 12500, 'loss_g': 19.191526412963867, 'loss_d': -3.217206525802612}
+GENERATOR_STEP plain12_p6_s44_0850b61fadb2db46 2600 / 3000 {'generator_updates': 2600, 'critic_updates': 13000, 'loss_g': 17.383010864257812, 'loss_d': -3.210484170913696}
+GENERATOR_STEP plain12_p6_s44_0850b61fadb2db46 2700 / 3000 {'generator_updates': 2700, 'critic_updates': 13500, 'loss_g': 17.805686950683594, 'loss_d': -3.179258918762207}
+GENERATOR_STEP plain12_p6_s44_0850b61fadb2db46 2800 / 3000 {'generator_updates': 2800, 'critic_updates': 14000, 'loss_g': 19.589513778686523, 'loss_d': -3.250057315826416}
+GENERATOR_STEP plain12_p6_s44_0850b61fadb2db46 2900 / 3000 {'generator_updates': 2900, 'critic_updates': 14500, 'loss_g': 18.61920166015625, 'loss_d': -3.1961890697479247}
+GENERATOR_STEP plain12_p6_s44_0850b61fadb2db46 3000 / 3000 {'generator_updates': 3000, 'critic_updates': 15000, 'loss_g': 13.469985961914062, 'loss_d': -3.2563591957092286}
+GENERATOR_CHECKPOINT C:\Users\lenovo\Desktop\eVTOL_Simulation\output_simulink_gan\v3_imu_rpm_prefix_20261105\generators\plain12_p6_s44_0850b61fadb2db46 3000 delta 0.23857833445072174
+V3_VALIDATION ros_p6_r0.25 44 250 {'accuracy': 0.45288501452885016, 'macro_f1': 0.36708776262310666, 'window_count': 2409}
+CLASSIFIER_STEP ros_p6_r0.25_s44_3d82b86fde3452fd 250/1000 loss=1.18854
+V3_VALIDATION ros_p6_r0.25 44 500 {'accuracy': 0.47239518472395187, 'macro_f1': 0.39961177071010956, 'window_count': 2409}
+CLASSIFIER_STEP ros_p6_r0.25_s44_3d82b86fde3452fd 500/1000 loss=1.07036
+V3_VALIDATION ros_p6_r0.25 44 1000 {'accuracy': 0.45620589456205896, 'macro_f1': 0.38937216674474545, 'window_count': 2409}
+CLASSIFIER_STEP ros_p6_r0.25_s44_3d82b86fde3452fd 1000/1000 loss=0.57223
+V3_JOB_COMPLETE ros_p6_r0.25 44 0.38937216674474545 {'threshold': 0.8, 'hold': 5}
+V3_VALIDATION gan_p6_r0.25 44 250 {'accuracy': 0.47779161477791615, 'macro_f1': 0.3793923466631221, 'window_count': 2409}
+CLASSIFIER_STEP gan_p6_r0.25_s44_53883fd583a5c64a 250/1000 loss=1.17170
+V3_VALIDATION gan_p6_r0.25 44 500 {'accuracy': 0.42839352428393523, 'macro_f1': 0.33284654297329597, 'window_count': 2409}
+CLASSIFIER_STEP gan_p6_r0.25_s44_53883fd583a5c64a 500/1000 loss=1.17820
+V3_VALIDATION gan_p6_r0.25 44 1000 {'accuracy': 0.46450809464508097, 'macro_f1': 0.40081003767891565, 'window_count': 2409}
+CLASSIFIER_STEP gan_p6_r0.25_s44_53883fd583a5c64a 1000/1000 loss=0.61773
+V3_JOB_COMPLETE gan_p6_r0.25 44 0.40081003767891565 {'threshold': 0.9, 'hold': 5}
+V3_VALIDATION ros_p6_r0.5 44 250 {'accuracy': 0.37733499377334995, 'macro_f1': 0.2911891645589881, 'window_count': 2409}
+CLASSIFIER_STEP ros_p6_r0.5_s44_698bfa08c35cbf9d 250/1000 loss=1.18813
+V3_VALIDATION ros_p6_r0.5 44 500 {'accuracy': 0.41344956413449563, 'macro_f1': 0.31896647584653665, 'window_count': 2409}
+CLASSIFIER_STEP ros_p6_r0.5_s44_698bfa08c35cbf9d 500/1000 loss=0.99236
+V3_VALIDATION ros_p6_r0.5 44 1000 {'accuracy': 0.42424242424242425, 'macro_f1': 0.33329184622269004, 'window_count': 2409}
+CLASSIFIER_STEP ros_p6_r0.5_s44_698bfa08c35cbf9d 1000/1000 loss=0.75622
+V3_JOB_COMPLETE ros_p6_r0.5 44 0.33329184622269004 {'threshold': 0.9, 'hold': 3}
+V3_VALIDATION gan_p6_r0.5 44 250 {'accuracy': 0.43752594437525943, 'macro_f1': 0.34635117075707506, 'window_count': 2409}
+CLASSIFIER_STEP gan_p6_r0.5_s44_1ed1e767ee76a145 250/1000 loss=1.17846
+V3_VALIDATION gan_p6_r0.5 44 500 {'accuracy': 0.4715649647156496, 'macro_f1': 0.40063481606059465, 'window_count': 2409}
+CLASSIFIER_STEP gan_p6_r0.5_s44_1ed1e767ee76a145 500/1000 loss=1.08526
+V3_VALIDATION gan_p6_r0.5 44 1000 {'accuracy': 0.45745122457451226, 'macro_f1': 0.4159504866256042, 'window_count': 2409}
+CLASSIFIER_STEP gan_p6_r0.5_s44_1ed1e767ee76a145 1000/1000 loss=0.62353
+V3_JOB_COMPLETE gan_p6_r0.5 44 0.4159504866256042 {'threshold': 0.8, 'hold': 5}
+V3_VALIDATION ros_p6_r1 44 250 {'accuracy': 0.3868825238688252, 'macro_f1': 0.31545333394861785, 'window_count': 2409}
+CLASSIFIER_STEP ros_p6_r1_s44_72b9de2a5a95a6af 250/1000 loss=1.07929
+V3_VALIDATION ros_p6_r1 44 500 {'accuracy': 0.42880863428808635, 'macro_f1': 0.3556327527261794, 'window_count': 2409}
+CLASSIFIER_STEP ros_p6_r1_s44_72b9de2a5a95a6af 500/1000 loss=0.64763
+V3_VALIDATION ros_p6_r1 44 1000 {'accuracy': 0.4977168949771689, 'macro_f1': 0.4519006039826154, 'window_count': 2409}
+CLASSIFIER_STEP ros_p6_r1_s44_72b9de2a5a95a6af 1000/1000 loss=1.03440
+V3_JOB_COMPLETE ros_p6_r1 44 0.4519006039826154 {'threshold': 0.8, 'hold': 5}
+V3_VALIDATION gan_p6_r1 44 250 {'accuracy': 0.43254462432544627, 'macro_f1': 0.3385715575485654, 'window_count': 2409}
+CLASSIFIER_STEP gan_p6_r1_s44_fa0ab17b10809772 250/1000 loss=1.08625
+V3_VALIDATION gan_p6_r1 44 500 {'accuracy': 0.43254462432544627, 'macro_f1': 0.34303303575394134, 'window_count': 2409}
+CLASSIFIER_STEP gan_p6_r1_s44_fa0ab17b10809772 500/1000 loss=0.68885
+V3_VALIDATION gan_p6_r1 44 1000 {'accuracy': 0.42050643420506434, 'macro_f1': 0.350594156020716, 'window_count': 2409}
+CLASSIFIER_STEP gan_p6_r1_s44_fa0ab17b10809772 1000/1000 loss=0.95864
+V3_JOB_COMPLETE gan_p6_r1 44 0.350594156020716 {'threshold': 0.9, 'hold': 5}
+GENERATOR_STEP plain12_p24_s42_a96078b14f38aa9c 100 / 3000 {'generator_updates': 100, 'critic_updates': 500, 'loss_g': -13.754803657531738, 'loss_d': -17.087663078308104}
+GENERATOR_STEP plain12_p24_s42_a96078b14f38aa9c 200 / 3000 {'generator_updates': 200, 'critic_updates': 1000, 'loss_g': -3.909071922302246, 'loss_d': -14.467156410217285}
+GENERATOR_STEP plain12_p24_s42_a96078b14f38aa9c 300 / 3000 {'generator_updates': 300, 'critic_updates': 1500, 'loss_g': -7.211642742156982, 'loss_d': -11.976902770996094}
+GENERATOR_STEP plain12_p24_s42_a96078b14f38aa9c 400 / 3000 {'generator_updates': 400, 'critic_updates': 2000, 'loss_g': -2.124133586883545, 'loss_d': -10.209014892578125}
+GENERATOR_STEP plain12_p24_s42_a96078b14f38aa9c 500 / 3000 {'generator_updates': 500, 'critic_updates': 2500, 'loss_g': -0.7573156356811523, 'loss_d': -8.073086166381836}
+GENERATOR_CHECKPOINT C:\Users\lenovo\Desktop\eVTOL_Simulation\output_simulink_gan\v3_imu_rpm_prefix_20261105\generators\plain12_p24_s42_a96078b14f38aa9c 500 delta 0.04898153990507126
+GENERATOR_STEP plain12_p24_s42_a96078b14f38aa9c 600 / 3000 {'generator_updates': 600, 'critic_updates': 3000, 'loss_g': 3.941190242767334, 'loss_d': -4.689173984527588}
+GENERATOR_STEP plain12_p24_s42_a96078b14f38aa9c 700 / 3000 {'generator_updates': 700, 'critic_updates': 3500, 'loss_g': 6.9259796142578125, 'loss_d': -3.3520758628845213}
+GENERATOR_STEP plain12_p24_s42_a96078b14f38aa9c 800 / 3000 {'generator_updates': 800, 'critic_updates': 4000, 'loss_g': 11.677713394165039, 'loss_d': -2.9966685295104982}
+GENERATOR_STEP plain12_p24_s42_a96078b14f38aa9c 900 / 3000 {'generator_updates': 900, 'critic_updates': 4500, 'loss_g': 18.91292953491211, 'loss_d': -2.835131216049194}
+GENERATOR_STEP plain12_p24_s42_a96078b14f38aa9c 1000 / 3000 {'generator_updates': 1000, 'critic_updates': 5000, 'loss_g': 15.202223777770996, 'loss_d': -2.4065499782562254}
+GENERATOR_STEP plain12_p24_s42_a96078b14f38aa9c 1100 / 3000 {'generator_updates': 1100, 'critic_updates': 5500, 'loss_g': 20.89733123779297, 'loss_d': -2.746808385848999}
+GENERATOR_STEP plain12_p24_s42_a96078b14f38aa9c 1200 / 3000 {'generator_updates': 1200, 'critic_updates': 6000, 'loss_g': 19.018348693847656, 'loss_d': -2.349752187728882}
+GENERATOR_STEP plain12_p24_s42_a96078b14f38aa9c 1300 / 3000 {'generator_updates': 1300, 'critic_updates': 6500, 'loss_g': 23.876304626464844, 'loss_d': -2.2238365650177}
+GENERATOR_STEP plain12_p24_s42_a96078b14f38aa9c 1400 / 3000 {'generator_updates': 1400, 'critic_updates': 7000, 'loss_g': 16.417821884155273, 'loss_d': -1.8855599880218505}
+GENERATOR_STEP plain12_p24_s42_a96078b14f38aa9c 1500 / 3000 {'generator_updates': 1500, 'critic_updates': 7500, 'loss_g': 21.14539909362793, 'loss_d': -2.0069982767105103}
+GENERATOR_CHECKPOINT C:\Users\lenovo\Desktop\eVTOL_Simulation\output_simulink_gan\v3_imu_rpm_prefix_20261105\generators\plain12_p24_s42_a96078b14f38aa9c 1500 delta 0.14048334956169128
+GENERATOR_STEP plain12_p24_s42_a96078b14f38aa9c 1600 / 3000 {'generator_updates': 1600, 'critic_updates': 8000, 'loss_g': 17.404644012451172, 'loss_d': -1.6938473224639892}
+GENERATOR_STEP plain12_p24_s42_a96078b14f38aa9c 1700 / 3000 {'generator_updates': 1700, 'critic_updates': 8500, 'loss_g': 16.247657775878906, 'loss_d': -2.0353555202484133}
+GENERATOR_STEP plain12_p24_s42_a96078b14f38aa9c 1800 / 3000 {'generator_updates': 1800, 'critic_updates': 9000, 'loss_g': 17.240137100219727, 'loss_d': -1.863583493232727}
+GENERATOR_STEP plain12_p24_s42_a96078b14f38aa9c 1900 / 3000 {'generator_updates': 1900, 'critic_updates': 9500, 'loss_g': 23.651466369628906, 'loss_d': -1.7916313886642456}
+GENERATOR_STEP plain12_p24_s42_a96078b14f38aa9c 2000 / 3000 {'generator_updates': 2000, 'critic_updates': 10000, 'loss_g': 18.69656753540039, 'loss_d': -1.8080061435699464}
+GENERATOR_STEP plain12_p24_s42_a96078b14f38aa9c 2100 / 3000 {'generator_updates': 2100, 'critic_updates': 10500, 'loss_g': 22.93917465209961, 'loss_d': -1.774479627609253}
+GENERATOR_STEP plain12_p24_s42_a96078b14f38aa9c 2200 / 3000 {'generator_updates': 2200, 'critic_updates': 11000, 'loss_g': 20.7833251953125, 'loss_d': -1.4182096242904663}
+GENERATOR_STEP plain12_p24_s42_a96078b14f38aa9c 2300 / 3000 {'generator_updates': 2300, 'critic_updates': 11500, 'loss_g': 18.56673812866211, 'loss_d': -1.4075887680053711}
+GENERATOR_STEP plain12_p24_s42_a96078b14f38aa9c 2400 / 3000 {'generator_updates': 2400, 'critic_updates': 12000, 'loss_g': 22.488317489624023, 'loss_d': -1.608120584487915}
+GENERATOR_STEP plain12_p24_s42_a96078b14f38aa9c 2500 / 3000 {'generator_updates': 2500, 'critic_updates': 12500, 'loss_g': 16.681819915771484, 'loss_d': -1.3976323843002318}
+GENERATOR_STEP plain12_p24_s42_a96078b14f38aa9c 2600 / 3000 {'generator_updates': 2600, 'critic_updates': 13000, 'loss_g': 16.96424674987793, 'loss_d': -1.384061050415039}
+GENERATOR_STEP plain12_p24_s42_a96078b14f38aa9c 2700 / 3000 {'generator_updates': 2700, 'critic_updates': 13500, 'loss_g': 16.06892967224121, 'loss_d': -1.431442666053772}
+GENERATOR_STEP plain12_p24_s42_a96078b14f38aa9c 2800 / 3000 {'generator_updates': 2800, 'critic_updates': 14000, 'loss_g': 12.266302108764648, 'loss_d': -1.262689185142517}
+GENERATOR_STEP plain12_p24_s42_a96078b14f38aa9c 2900 / 3000 {'generator_updates': 2900, 'critic_updates': 14500, 'loss_g': 17.326295852661133, 'loss_d': -1.4342588901519775}
+GENERATOR_STEP plain12_p24_s42_a96078b14f38aa9c 3000 / 3000 {'generator_updates': 3000, 'critic_updates': 15000, 'loss_g': 12.611653327941895, 'loss_d': -1.526185393333435}
+GENERATOR_CHECKPOINT C:\Users\lenovo\Desktop\eVTOL_Simulation\output_simulink_gan\v3_imu_rpm_prefix_20261105\generators\plain12_p24_s42_a96078b14f38aa9c 3000 delta 0.2866930365562439
+V3_VALIDATION ros_p24_r0.25 42 250 {'accuracy': 0.4167704441677044, 'macro_f1': 0.292470800318592, 'window_count': 2409}
+CLASSIFIER_STEP ros_p24_r0.25_s42_e5fbf92c886f2a50 250/1000 loss=1.31348
+V3_VALIDATION ros_p24_r0.25 42 500 {'accuracy': 0.47405562474055624, 'macro_f1': 0.37696949173684446, 'window_count': 2409}
+CLASSIFIER_STEP ros_p24_r0.25_s42_e5fbf92c886f2a50 500/1000 loss=1.34819
+V3_VALIDATION ros_p24_r0.25 42 1000 {'accuracy': 0.526774595267746, 'macro_f1': 0.44620055121296703, 'window_count': 2409}
+CLASSIFIER_STEP ros_p24_r0.25_s42_e5fbf92c886f2a50 1000/1000 loss=1.00259
+V3_JOB_COMPLETE ros_p24_r0.25 42 0.44620055121296703 {'threshold': 0.9, 'hold': 2}
+V3_VALIDATION gan_p24_r0.25 42 250 {'accuracy': 0.4076380240763802, 'macro_f1': 0.28801852730383815, 'window_count': 2409}
+CLASSIFIER_STEP gan_p24_r0.25_s42_bf9265f61cc0dab4 250/1000 loss=1.29810
+V3_VALIDATION gan_p24_r0.25 42 500 {'accuracy': 0.42673308426733086, 'macro_f1': 0.29956056286539257, 'window_count': 2409}
+CLASSIFIER_STEP gan_p24_r0.25_s42_bf9265f61cc0dab4 500/1000 loss=1.16074
+V3_VALIDATION gan_p24_r0.25 42 1000 {'accuracy': 0.522623495226235, 'macro_f1': 0.43493167981793274, 'window_count': 2409}
+CLASSIFIER_STEP gan_p24_r0.25_s42_bf9265f61cc0dab4 1000/1000 loss=1.07658
+V3_JOB_COMPLETE gan_p24_r0.25 42 0.43493167981793274 {'threshold': 0.9, 'hold': 2}
+V3_VALIDATION ros_p24_r0.5 42 250 {'accuracy': 0.42050643420506434, 'macro_f1': 0.3010116517982816, 'window_count': 2409}
+CLASSIFIER_STEP ros_p24_r0.5_s42_cb69070efef48e58 250/1000 loss=1.34758
+V3_VALIDATION ros_p24_r0.5 42 500 {'accuracy': 0.4246575342465753, 'macro_f1': 0.29500050704796665, 'window_count': 2409}
+CLASSIFIER_STEP ros_p24_r0.5_s42_cb69070efef48e58 500/1000 loss=0.95514
+V3_VALIDATION ros_p24_r0.5 42 1000 {'accuracy': 0.5288501452885015, 'macro_f1': 0.44384771749568175, 'window_count': 2409}
+CLASSIFIER_STEP ros_p24_r0.5_s42_cb69070efef48e58 1000/1000 loss=1.01636
+V3_JOB_COMPLETE ros_p24_r0.5 42 0.44384771749568175 {'threshold': 0.9, 'hold': 2}
+V3_VALIDATION gan_p24_r0.5 42 250 {'accuracy': 0.41137401411374014, 'macro_f1': 0.2910502898305413, 'window_count': 2409}
+CLASSIFIER_STEP gan_p24_r0.5_s42_394aa7ab8d85c761 250/1000 loss=1.39604
+V3_VALIDATION gan_p24_r0.5 42 500 {'accuracy': 0.41926110419261103, 'macro_f1': 0.2935168047659232, 'window_count': 2409}
+CLASSIFIER_STEP gan_p24_r0.5_s42_394aa7ab8d85c761 500/1000 loss=0.98346
+V3_VALIDATION gan_p24_r0.5 42 1000 {'accuracy': 0.522623495226235, 'macro_f1': 0.44351073171942146, 'window_count': 2409}
+CLASSIFIER_STEP gan_p24_r0.5_s42_394aa7ab8d85c761 1000/1000 loss=1.00930
+V3_JOB_COMPLETE gan_p24_r0.5 42 0.44351073171942146 {'threshold': 0.9, 'hold': 2}
+V3_VALIDATION ros_p24_r1 42 250 {'accuracy': 0.36612702366127026, 'macro_f1': 0.24458204334365322, 'window_count': 2409}
+CLASSIFIER_STEP ros_p24_r1_s42_8ec2728d8c22db37 250/1000 loss=1.38283
+V3_VALIDATION ros_p24_r1 42 500 {'accuracy': 0.42963885429638854, 'macro_f1': 0.315575012385898, 'window_count': 2409}
+CLASSIFIER_STEP ros_p24_r1_s42_8ec2728d8c22db37 500/1000 loss=1.15821
+V3_VALIDATION ros_p24_r1 42 1000 {'accuracy': 0.5263594852635949, 'macro_f1': 0.4407335229248003, 'window_count': 2409}
+CLASSIFIER_STEP ros_p24_r1_s42_8ec2728d8c22db37 1000/1000 loss=0.98549
+V3_JOB_COMPLETE ros_p24_r1 42 0.4407335229248003 {'threshold': 0.9, 'hold': 2}
+V3_VALIDATION gan_p24_r1 42 250 {'accuracy': 0.36488169364881695, 'macro_f1': 0.24302542582821254, 'window_count': 2409}
+CLASSIFIER_STEP gan_p24_r1_s42_d5f897046414f8b7 250/1000 loss=1.45280
+V3_VALIDATION gan_p24_r1 42 500 {'accuracy': 0.48318804483188044, 'macro_f1': 0.390766422757539, 'window_count': 2409}
+CLASSIFIER_STEP gan_p24_r1_s42_d5f897046414f8b7 500/1000 loss=1.01926
+V3_VALIDATION gan_p24_r1 42 1000 {'accuracy': 0.49688667496886674, 'macro_f1': 0.41547135945904673, 'window_count': 2409}
+CLASSIFIER_STEP gan_p24_r1_s42_d5f897046414f8b7 1000/1000 loss=1.09762
+V3_JOB_COMPLETE gan_p24_r1 42 0.41547135945904673 {'threshold': 0.9, 'hold': 2}
+GENERATOR_STEP plain12_p24_s43_640d6e94d25672fe 100 / 3000 {'generator_updates': 100, 'critic_updates': 500, 'loss_g': -19.21713638305664, 'loss_d': -18.45485153198242}
+GENERATOR_STEP plain12_p24_s43_640d6e94d25672fe 200 / 3000 {'generator_updates': 200, 'critic_updates': 1000, 'loss_g': -9.47864055633545, 'loss_d': -11.79354248046875}
+GENERATOR_STEP plain12_p24_s43_640d6e94d25672fe 300 / 3000 {'generator_updates': 300, 'critic_updates': 1500, 'loss_g': -1.3794432878494263, 'loss_d': -11.235880279541016}
+GENERATOR_STEP plain12_p24_s43_640d6e94d25672fe 400 / 3000 {'generator_updates': 400, 'critic_updates': 2000, 'loss_g': -1.946465253829956, 'loss_d': -6.532730007171631}
+GENERATOR_STEP plain12_p24_s43_640d6e94d25672fe 500 / 3000 {'generator_updates': 500, 'critic_updates': 2500, 'loss_g': 6.320189476013184, 'loss_d': -4.296894645690918}
+GENERATOR_CHECKPOINT C:\Users\lenovo\Desktop\eVTOL_Simulation\output_simulink_gan\v3_imu_rpm_prefix_20261105\generators\plain12_p24_s43_640d6e94d25672fe 500 delta 0.05022262781858444
+GENERATOR_STEP plain12_p24_s43_640d6e94d25672fe 600 / 3000 {'generator_updates': 600, 'critic_updates': 3000, 'loss_g': 8.395681381225586, 'loss_d': -3.000417184829712}
+GENERATOR_STEP plain12_p24_s43_640d6e94d25672fe 700 / 3000 {'generator_updates': 700, 'critic_updates': 3500, 'loss_g': 4.722720146179199, 'loss_d': -2.847127676010132}
+GENERATOR_STEP plain12_p24_s43_640d6e94d25672fe 800 / 3000 {'generator_updates': 800, 'critic_updates': 4000, 'loss_g': 6.946301460266113, 'loss_d': -2.6115489959716798}
+GENERATOR_STEP plain12_p24_s43_640d6e94d25672fe 900 / 3000 {'generator_updates': 900, 'critic_updates': 4500, 'loss_g': 5.986548900604248, 'loss_d': -2.4172213554382322}
+GENERATOR_STEP plain12_p24_s43_640d6e94d25672fe 1000 / 3000 {'generator_updates': 1000, 'critic_updates': 5000, 'loss_g': 8.071576118469238, 'loss_d': -2.226644992828369}
+GENERATOR_STEP plain12_p24_s43_640d6e94d25672fe 1100 / 3000 {'generator_updates': 1100, 'critic_updates': 5500, 'loss_g': 6.744134902954102, 'loss_d': -2.48144793510437}
+GENERATOR_STEP plain12_p24_s43_640d6e94d25672fe 1200 / 3000 {'generator_updates': 1200, 'critic_updates': 6000, 'loss_g': 8.91409683227539, 'loss_d': -2.2013920068740847}
+GENERATOR_STEP plain12_p24_s43_640d6e94d25672fe 1300 / 3000 {'generator_updates': 1300, 'critic_updates': 6500, 'loss_g': 8.490987777709961, 'loss_d': -1.9832855701446532}
+GENERATOR_STEP plain12_p24_s43_640d6e94d25672fe 1400 / 3000 {'generator_updates': 1400, 'critic_updates': 7000, 'loss_g': 12.865382194519043, 'loss_d': -1.7877224683761597}
+GENERATOR_STEP plain12_p24_s43_640d6e94d25672fe 1500 / 3000 {'generator_updates': 1500, 'critic_updates': 7500, 'loss_g': 13.067370414733887, 'loss_d': -1.9104662179946899}
+GENERATOR_CHECKPOINT C:\Users\lenovo\Desktop\eVTOL_Simulation\output_simulink_gan\v3_imu_rpm_prefix_20261105\generators\plain12_p24_s43_640d6e94d25672fe 1500 delta 0.14079363644123077
+GENERATOR_STEP plain12_p24_s43_640d6e94d25672fe 1600 / 3000 {'generator_updates': 1600, 'critic_updates': 8000, 'loss_g': 18.502525329589844, 'loss_d': -1.6980552673339844}
+GENERATOR_STEP plain12_p24_s43_640d6e94d25672fe 1700 / 3000 {'generator_updates': 1700, 'critic_updates': 8500, 'loss_g': 19.390926361083984, 'loss_d': -1.7791566133499146}
+GENERATOR_STEP plain12_p24_s43_640d6e94d25672fe 1800 / 3000 {'generator_updates': 1800, 'critic_updates': 9000, 'loss_g': 18.365896224975586, 'loss_d': -1.5941409111022948}
+GENERATOR_STEP plain12_p24_s43_640d6e94d25672fe 1900 / 3000 {'generator_updates': 1900, 'critic_updates': 9500, 'loss_g': 16.856767654418945, 'loss_d': -1.6348114967346192}
+GENERATOR_STEP plain12_p24_s43_640d6e94d25672fe 2000 / 3000 {'generator_updates': 2000, 'critic_updates': 10000, 'loss_g': 18.983108520507812, 'loss_d': -1.9915537357330322}
+GENERATOR_STEP plain12_p24_s43_640d6e94d25672fe 2100 / 3000 {'generator_updates': 2100, 'critic_updates': 10500, 'loss_g': 12.391633987426758, 'loss_d': -1.506973433494568}
+GENERATOR_STEP plain12_p24_s43_640d6e94d25672fe 2200 / 3000 {'generator_updates': 2200, 'critic_updates': 11000, 'loss_g': 21.52585792541504, 'loss_d': -1.5370997667312623}
+GENERATOR_STEP plain12_p24_s43_640d6e94d25672fe 2300 / 3000 {'generator_updates': 2300, 'critic_updates': 11500, 'loss_g': 12.489911079406738, 'loss_d': -1.7429764032363892}
+GENERATOR_STEP plain12_p24_s43_640d6e94d25672fe 2400 / 3000 {'generator_updates': 2400, 'critic_updates': 12000, 'loss_g': 16.883827209472656, 'loss_d': -1.6775198698043823}
+GENERATOR_STEP plain12_p24_s43_640d6e94d25672fe 2500 / 3000 {'generator_updates': 2500, 'critic_updates': 12500, 'loss_g': 14.744747161865234, 'loss_d': -1.2376670002937318}
+GENERATOR_STEP plain12_p24_s43_640d6e94d25672fe 2600 / 3000 {'generator_updates': 2600, 'critic_updates': 13000, 'loss_g': 12.550671577453613, 'loss_d': -1.3937405347824097}
+GENERATOR_STEP plain12_p24_s43_640d6e94d25672fe 2700 / 3000 {'generator_updates': 2700, 'critic_updates': 13500, 'loss_g': 15.473583221435547, 'loss_d': -1.4575097560882568}
+GENERATOR_STEP plain12_p24_s43_640d6e94d25672fe 2800 / 3000 {'generator_updates': 2800, 'critic_updates': 14000, 'loss_g': 15.544353485107422, 'loss_d': -1.2996360063552856}
+GENERATOR_STEP plain12_p24_s43_640d6e94d25672fe 2900 / 3000 {'generator_updates': 2900, 'critic_updates': 14500, 'loss_g': 16.29931640625, 'loss_d': -1.206721568107605}
+GENERATOR_STEP plain12_p24_s43_640d6e94d25672fe 3000 / 3000 {'generator_updates': 3000, 'critic_updates': 15000, 'loss_g': 12.936904907226562, 'loss_d': -1.473212194442749}
+GENERATOR_CHECKPOINT C:\Users\lenovo\Desktop\eVTOL_Simulation\output_simulink_gan\v3_imu_rpm_prefix_20261105\generators\plain12_p24_s43_640d6e94d25672fe 3000 delta 0.274641752243042
+V3_VALIDATION ros_p24_r0.25 43 250 {'accuracy': 0.45745122457451226, 'macro_f1': 0.35004554979408486, 'window_count': 2409}
+CLASSIFIER_STEP ros_p24_r0.25_s43_224512a765559ad2 250/1000 loss=1.24737
+V3_VALIDATION ros_p24_r0.25 43 500 {'accuracy': 0.47903694479036946, 'macro_f1': 0.38022197516396344, 'window_count': 2409}
+CLASSIFIER_STEP ros_p24_r0.25_s43_224512a765559ad2 500/1000 loss=1.36421
+V3_VALIDATION ros_p24_r0.25 43 1000 {'accuracy': 0.522623495226235, 'macro_f1': 0.4384779918917496, 'window_count': 2409}
+CLASSIFIER_STEP ros_p24_r0.25_s43_224512a765559ad2 1000/1000 loss=1.23714
+V3_JOB_COMPLETE ros_p24_r0.25 43 0.4384779918917496 {'threshold': 0.9, 'hold': 2}
+V3_VALIDATION gan_p24_r0.25 43 250 {'accuracy': 0.3926940639269406, 'macro_f1': 0.26706949228336085, 'window_count': 2409}
+CLASSIFIER_STEP gan_p24_r0.25_s43_3d7415b4f4ff0184 250/1000 loss=1.21245
+V3_VALIDATION gan_p24_r0.25 43 500 {'accuracy': 0.5080946450809465, 'macro_f1': 0.41984311601558016, 'window_count': 2409}
+CLASSIFIER_STEP gan_p24_r0.25_s43_3d7415b4f4ff0184 500/1000 loss=1.48902
+V3_VALIDATION gan_p24_r0.25 43 1000 {'accuracy': 0.527189705271897, 'macro_f1': 0.44658493321549675, 'window_count': 2409}
+CLASSIFIER_STEP gan_p24_r0.25_s43_3d7415b4f4ff0184 1000/1000 loss=1.22928
+V3_JOB_COMPLETE gan_p24_r0.25 43 0.44658493321549675 {'threshold': 0.9, 'hold': 2}
+V3_VALIDATION ros_p24_r0.5 43 250 {'accuracy': 0.47862183478621834, 'macro_f1': 0.38890665268360897, 'window_count': 2409}
+CLASSIFIER_STEP ros_p24_r0.5_s43_8ff2f7450bd1af95 250/1000 loss=1.05749
+V3_VALIDATION ros_p24_r0.5 43 500 {'accuracy': 0.522623495226235, 'macro_f1': 0.43359987778607684, 'window_count': 2409}
+CLASSIFIER_STEP ros_p24_r0.5_s43_8ff2f7450bd1af95 500/1000 loss=1.18374
+V3_VALIDATION ros_p24_r0.5 43 1000 {'accuracy': 0.47903694479036946, 'macro_f1': 0.38022197516396344, 'window_count': 2409}
+CLASSIFIER_STEP ros_p24_r0.5_s43_8ff2f7450bd1af95 1000/1000 loss=1.08884
+V3_JOB_COMPLETE ros_p24_r0.5 43 0.38022197516396344 {'threshold': 0.9, 'hold': 3}
+V3_VALIDATION gan_p24_r0.5 43 250 {'accuracy': 0.43711083437110837, 'macro_f1': 0.3330584053908794, 'window_count': 2409}
+CLASSIFIER_STEP gan_p24_r0.5_s43_e85b02e2188536c7 250/1000 loss=1.04357
+V3_VALIDATION gan_p24_r0.5 43 500 {'accuracy': 0.5217932752179327, 'macro_f1': 0.4327642848524738, 'window_count': 2409}
+CLASSIFIER_STEP gan_p24_r0.5_s43_e85b02e2188536c7 500/1000 loss=1.19454
+V3_VALIDATION gan_p24_r0.5 43 1000 {'accuracy': 0.522623495226235, 'macro_f1': 0.4362775318686556, 'window_count': 2409}
+CLASSIFIER_STEP gan_p24_r0.5_s43_e85b02e2188536c7 1000/1000 loss=0.99171
+V3_JOB_COMPLETE gan_p24_r0.5 43 0.4362775318686556 {'threshold': 0.9, 'hold': 2}
+V3_VALIDATION ros_p24_r1 43 250 {'accuracy': 0.37982565379825656, 'macro_f1': 0.2642359643529096, 'window_count': 2409}
+CLASSIFIER_STEP ros_p24_r1_s43_5f6a32b542f3f4d2 250/1000 loss=1.07592
+V3_VALIDATION ros_p24_r1 43 500 {'accuracy': 0.5159817351598174, 'macro_f1': 0.4282592094967372, 'window_count': 2409}
+CLASSIFIER_STEP ros_p24_r1_s43_5f6a32b542f3f4d2 500/1000 loss=1.28552
+V3_VALIDATION ros_p24_r1 43 1000 {'accuracy': 0.5317559153175592, 'macro_f1': 0.4407020041925878, 'window_count': 2409}
+CLASSIFIER_STEP ros_p24_r1_s43_5f6a32b542f3f4d2 1000/1000 loss=0.99022
+V3_JOB_COMPLETE ros_p24_r1 43 0.4407020041925878 {'threshold': 0.9, 'hold': 3}
+V3_VALIDATION gan_p24_r1 43 250 {'accuracy': 0.42175176421751764, 'macro_f1': 0.2939183182458067, 'window_count': 2409}
+CLASSIFIER_STEP gan_p24_r1_s43_80974e44d1eaba9e 250/1000 loss=1.07244
+V3_VALIDATION gan_p24_r1 43 500 {'accuracy': 0.4989622249896222, 'macro_f1': 0.41075866935432054, 'window_count': 2409}
+CLASSIFIER_STEP gan_p24_r1_s43_80974e44d1eaba9e 500/1000 loss=1.26335
+V3_VALIDATION gan_p24_r1 43 1000 {'accuracy': 0.526774595267746, 'macro_f1': 0.4352752818156511, 'window_count': 2409}
+CLASSIFIER_STEP gan_p24_r1_s43_80974e44d1eaba9e 1000/1000 loss=1.00616
+V3_JOB_COMPLETE gan_p24_r1 43 0.4352752818156511 {'threshold': 0.9, 'hold': 2}
+GENERATOR_STEP plain12_p24_s44_eadf38bc6517b949 100 / 3000 {'generator_updates': 100, 'critic_updates': 500, 'loss_g': -3.9259402751922607, 'loss_d': -17.63036231994629}
+GENERATOR_STEP plain12_p24_s44_eadf38bc6517b949 200 / 3000 {'generator_updates': 200, 'critic_updates': 1000, 'loss_g': 4.874931335449219, 'loss_d': -15.451744842529298}
+GENERATOR_STEP plain12_p24_s44_eadf38bc6517b949 300 / 3000 {'generator_updates': 300, 'critic_updates': 1500, 'loss_g': -3.0286335945129395, 'loss_d': -12.050464820861816}
+GENERATOR_STEP plain12_p24_s44_eadf38bc6517b949 400 / 3000 {'generator_updates': 400, 'critic_updates': 2000, 'loss_g': 3.9033637046813965, 'loss_d': -7.832250785827637}
+GENERATOR_STEP plain12_p24_s44_eadf38bc6517b949 500 / 3000 {'generator_updates': 500, 'critic_updates': 2500, 'loss_g': 1.5393515825271606, 'loss_d': -5.722811317443847}
+GENERATOR_CHECKPOINT C:\Users\lenovo\Desktop\eVTOL_Simulation\output_simulink_gan\v3_imu_rpm_prefix_20261105\generators\plain12_p24_s44_eadf38bc6517b949 500 delta 0.050017133355140686
+GENERATOR_STEP plain12_p24_s44_eadf38bc6517b949 600 / 3000 {'generator_updates': 600, 'critic_updates': 3000, 'loss_g': -1.03544282913208, 'loss_d': -3.5350664138793944}
+GENERATOR_STEP plain12_p24_s44_eadf38bc6517b949 700 / 3000 {'generator_updates': 700, 'critic_updates': 3500, 'loss_g': -3.695849895477295, 'loss_d': -2.8126803398132325}
+GENERATOR_STEP plain12_p24_s44_eadf38bc6517b949 800 / 3000 {'generator_updates': 800, 'critic_updates': 4000, 'loss_g': -1.6758463382720947, 'loss_d': -2.6140377044677736}
+GENERATOR_STEP plain12_p24_s44_eadf38bc6517b949 900 / 3000 {'generator_updates': 900, 'critic_updates': 4500, 'loss_g': 0.8020403385162354, 'loss_d': -2.23858585357666}
+GENERATOR_STEP plain12_p24_s44_eadf38bc6517b949 1000 / 3000 {'generator_updates': 1000, 'critic_updates': 5000, 'loss_g': 4.068897724151611, 'loss_d': -2.2682748317718504}
+GENERATOR_STEP plain12_p24_s44_eadf38bc6517b949 1100 / 3000 {'generator_updates': 1100, 'critic_updates': 5500, 'loss_g': 4.45979118347168, 'loss_d': -2.199466347694397}
+GENERATOR_STEP plain12_p24_s44_eadf38bc6517b949 1200 / 3000 {'generator_updates': 1200, 'critic_updates': 6000, 'loss_g': 1.7135145664215088, 'loss_d': -2.1488829374313356}
+GENERATOR_STEP plain12_p24_s44_eadf38bc6517b949 1300 / 3000 {'generator_updates': 1300, 'critic_updates': 6500, 'loss_g': 6.814521312713623, 'loss_d': -2.219777297973633}
+GENERATOR_STEP plain12_p24_s44_eadf38bc6517b949 1400 / 3000 {'generator_updates': 1400, 'critic_updates': 7000, 'loss_g': 5.235989570617676, 'loss_d': -2.132246708869934}
+GENERATOR_STEP plain12_p24_s44_eadf38bc6517b949 1500 / 3000 {'generator_updates': 1500, 'critic_updates': 7500, 'loss_g': 7.589814186096191, 'loss_d': -1.955282735824585}
+GENERATOR_CHECKPOINT C:\Users\lenovo\Desktop\eVTOL_Simulation\output_simulink_gan\v3_imu_rpm_prefix_20261105\generators\plain12_p24_s44_eadf38bc6517b949 1500 delta 0.13943809270858765
+GENERATOR_STEP plain12_p24_s44_eadf38bc6517b949 1600 / 3000 {'generator_updates': 1600, 'critic_updates': 8000, 'loss_g': 3.7783217430114746, 'loss_d': -1.9172313928604126}
+GENERATOR_STEP plain12_p24_s44_eadf38bc6517b949 1700 / 3000 {'generator_updates': 1700, 'critic_updates': 8500, 'loss_g': 1.3755083084106445, 'loss_d': -1.7748546123504638}
+GENERATOR_STEP plain12_p24_s44_eadf38bc6517b949 1800 / 3000 {'generator_updates': 1800, 'critic_updates': 9000, 'loss_g': 5.361921787261963, 'loss_d': -1.7624257326126098}
+GENERATOR_STEP plain12_p24_s44_eadf38bc6517b949 1900 / 3000 {'generator_updates': 1900, 'critic_updates': 9500, 'loss_g': 2.7210886478424072, 'loss_d': -1.8553137302398681}
+GENERATOR_STEP plain12_p24_s44_eadf38bc6517b949 2000 / 3000 {'generator_updates': 2000, 'critic_updates': 10000, 'loss_g': 7.386122226715088, 'loss_d': -1.9003307580947877}
+GENERATOR_STEP plain12_p24_s44_eadf38bc6517b949 2100 / 3000 {'generator_updates': 2100, 'critic_updates': 10500, 'loss_g': 4.032076835632324, 'loss_d': -1.6199729442596436}
+GENERATOR_STEP plain12_p24_s44_eadf38bc6517b949 2200 / 3000 {'generator_updates': 2200, 'critic_updates': 11000, 'loss_g': 9.306882858276367, 'loss_d': -1.524132490158081}
+GENERATOR_STEP plain12_p24_s44_eadf38bc6517b949 2300 / 3000 {'generator_updates': 2300, 'critic_updates': 11500, 'loss_g': 14.554617881774902, 'loss_d': -1.407025694847107}
+GENERATOR_STEP plain12_p24_s44_eadf38bc6517b949 2400 / 3000 {'generator_updates': 2400, 'critic_updates': 12000, 'loss_g': 7.100225925445557, 'loss_d': -1.3172435998916625}
+GENERATOR_STEP plain12_p24_s44_eadf38bc6517b949 2500 / 3000 {'generator_updates': 2500, 'critic_updates': 12500, 'loss_g': 7.27705717086792, 'loss_d': -1.41887047290802}
+GENERATOR_STEP plain12_p24_s44_eadf38bc6517b949 2600 / 3000 {'generator_updates': 2600, 'critic_updates': 13000, 'loss_g': 10.841830253601074, 'loss_d': -1.5396595001220703}
+GENERATOR_STEP plain12_p24_s44_eadf38bc6517b949 2700 / 3000 {'generator_updates': 2700, 'critic_updates': 13500, 'loss_g': 9.093080520629883, 'loss_d': -1.3137249588966369}
+GENERATOR_STEP plain12_p24_s44_eadf38bc6517b949 2800 / 3000 {'generator_updates': 2800, 'critic_updates': 14000, 'loss_g': 14.062408447265625, 'loss_d': -1.3867400407791137}
+GENERATOR_STEP plain12_p24_s44_eadf38bc6517b949 2900 / 3000 {'generator_updates': 2900, 'critic_updates': 14500, 'loss_g': 12.403170585632324, 'loss_d': -1.414464497566223}
+GENERATOR_STEP plain12_p24_s44_eadf38bc6517b949 3000 / 3000 {'generator_updates': 3000, 'critic_updates': 15000, 'loss_g': 8.656794548034668, 'loss_d': -1.5390730381011963}
+GENERATOR_CHECKPOINT C:\Users\lenovo\Desktop\eVTOL_Simulation\output_simulink_gan\v3_imu_rpm_prefix_20261105\generators\plain12_p24_s44_eadf38bc6517b949 3000 delta 0.2735494375228882
+V3_VALIDATION ros_p24_r0.25 44 250 {'accuracy': 0.4292237442922374, 'macro_f1': 0.3244590344337053, 'window_count': 2409}
+CLASSIFIER_STEP ros_p24_r0.25_s44_549e052693598696 250/1000 loss=1.26963
+V3_VALIDATION ros_p24_r0.25 44 500 {'accuracy': 0.41926110419261103, 'macro_f1': 0.32937765770800764, 'window_count': 2409}
+CLASSIFIER_STEP ros_p24_r0.25_s44_549e052693598696 500/1000 loss=1.27186
+V3_VALIDATION ros_p24_r0.25 44 1000 {'accuracy': 0.526774595267746, 'macro_f1': 0.4420968974300991, 'window_count': 2409}
+CLASSIFIER_STEP ros_p24_r0.25_s44_549e052693598696 1000/1000 loss=0.81250
+V3_JOB_COMPLETE ros_p24_r0.25 44 0.4420968974300991 {'threshold': 0.9, 'hold': 2}
+V3_VALIDATION gan_p24_r0.25 44 250 {'accuracy': 0.41967621419676215, 'macro_f1': 0.3256064167179235, 'window_count': 2409}
+CLASSIFIER_STEP gan_p24_r0.25_s44_cbf486881e752942 250/1000 loss=1.27505
+V3_VALIDATION gan_p24_r0.25 44 500 {'accuracy': 0.38522208385222084, 'macro_f1': 0.274937868546969, 'window_count': 2409}
+CLASSIFIER_STEP gan_p24_r0.25_s44_cbf486881e752942 500/1000 loss=1.26812
+V3_VALIDATION gan_p24_r0.25 44 1000 {'accuracy': 0.5222083852220839, 'macro_f1': 0.4502941595837812, 'window_count': 2409}
+CLASSIFIER_STEP gan_p24_r0.25_s44_cbf486881e752942 1000/1000 loss=0.75625
+V3_JOB_COMPLETE gan_p24_r0.25 44 0.4502941595837812 {'threshold': 0.9, 'hold': 3}
+V3_VALIDATION ros_p24_r0.5 44 250 {'accuracy': 0.3926940639269406, 'macro_f1': 0.27493903525134283, 'window_count': 2409}
+CLASSIFIER_STEP ros_p24_r0.5_s44_22e5f9572ed92451 250/1000 loss=1.39410
+V3_VALIDATION ros_p24_r0.5 44 500 {'accuracy': 0.5205479452054794, 'macro_f1': 0.4316262807358189, 'window_count': 2409}
+CLASSIFIER_STEP ros_p24_r0.5_s44_22e5f9572ed92451 500/1000 loss=1.05634
+V3_VALIDATION ros_p24_r0.5 44 1000 {'accuracy': 0.527189705271897, 'macro_f1': 0.4428128518356524, 'window_count': 2409}
+CLASSIFIER_STEP ros_p24_r0.5_s44_22e5f9572ed92451 1000/1000 loss=0.97678
+V3_JOB_COMPLETE ros_p24_r0.5 44 0.4428128518356524 {'threshold': 0.9, 'hold': 2}
+V3_VALIDATION gan_p24_r0.5 44 250 {'accuracy': 0.46450809464508097, 'macro_f1': 0.3583963363065003, 'window_count': 2409}
+CLASSIFIER_STEP gan_p24_r0.5_s44_0c75444702eee03e 250/1000 loss=1.38885
+V3_VALIDATION gan_p24_r0.5 44 500 {'accuracy': 0.46492320464923204, 'macro_f1': 0.359735340565642, 'window_count': 2409}
+CLASSIFIER_STEP gan_p24_r0.5_s44_0c75444702eee03e 500/1000 loss=1.17046
+V3_VALIDATION gan_p24_r0.5 44 1000 {'accuracy': 0.523038605230386, 'macro_f1': 0.44785795024650155, 'window_count': 2409}
+CLASSIFIER_STEP gan_p24_r0.5_s44_0c75444702eee03e 1000/1000 loss=0.93404
+V3_JOB_COMPLETE gan_p24_r0.5 44 0.44785795024650155 {'threshold': 0.9, 'hold': 5}
+V3_VALIDATION ros_p24_r1 44 250 {'accuracy': 0.43586550435865506, 'macro_f1': 0.3279899071840619, 'window_count': 2409}
+CLASSIFIER_STEP ros_p24_r1_s44_0522e8a187abd190 250/1000 loss=1.20374
+V3_VALIDATION ros_p24_r1 44 500 {'accuracy': 0.48152760481527607, 'macro_f1': 0.3750145881410495, 'window_count': 2409}
+CLASSIFIER_STEP ros_p24_r1_s44_0522e8a187abd190 500/1000 loss=0.73688
+V3_VALIDATION ros_p24_r1 44 1000 {'accuracy': 0.5300954753009548, 'macro_f1': 0.43705413780911373, 'window_count': 2409}
+CLASSIFIER_STEP ros_p24_r1_s44_0522e8a187abd190 1000/1000 loss=1.13354
+V3_JOB_COMPLETE ros_p24_r1 44 0.43705413780911373 {'threshold': 0.9, 'hold': 3}
+V3_VALIDATION gan_p24_r1 44 250 {'accuracy': 0.41926110419261103, 'macro_f1': 0.3013611762304071, 'window_count': 2409}
+CLASSIFIER_STEP gan_p24_r1_s44_47defd7909ed8c1a 250/1000 loss=1.27214
+V3_VALIDATION gan_p24_r1 44 500 {'accuracy': 0.46326276463262767, 'macro_f1': 0.369861770843211, 'window_count': 2409}
+CLASSIFIER_STEP gan_p24_r1_s44_47defd7909ed8c1a 500/1000 loss=0.94129
+V3_VALIDATION gan_p24_r1 44 1000 {'accuracy': 0.4669987546699875, 'macro_f1': 0.3733557451168257, 'window_count': 2409}
+CLASSIFIER_STEP gan_p24_r1_s44_47defd7909ed8c1a 1000/1000 loss=1.27284
+V3_JOB_COMPLETE gan_p24_r1 44 0.3733557451168257 {'threshold': 0.9, 'hold': 2}

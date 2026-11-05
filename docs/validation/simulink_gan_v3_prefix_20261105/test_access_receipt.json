@@ -1,0 +1,8 @@
+{
+  "created_utc": "2026-11-05T04:39:16.992055+00:00",
+  "freeze_signature": "0beea688b3d5bdc9ccd9e43d1114b67f3fdb0e0505b1814220207f4bd585f066",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "purpose": "First authorized unified formal test read; all development already frozen",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "test_registry_signature": "d6869243ff627e5b352c1da9cbb1f0a583aac9eca16290fe843bd430b66b568d"
+}

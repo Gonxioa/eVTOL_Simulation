@@ -1,0 +1,2218 @@
+{
+  "checks": [
+    {
+      "check": "228 formal independent records, 12 paired groups",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Roles and nuisance seeds disjoint",
+      "evidence": {
+        "test": [
+          20261115,
+          20261116,
+          20261117
+        ],
+        "train": [
+          20261103,
+          20261104,
+          20261105,
+          20261106,
+          20261107,
+          20261108
+        ],
+        "validation": [
+          20261109,
+          20261110,
+          20261111
+        ]
+      },
+      "passed": true
+    },
+    {
+      "check": "Previously exposed test excluded",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Frozen physical simulation source simulink/blocks/controller_step.m",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Frozen physical simulation source simulink/blocks/envelope_step.m",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Frozen physical simulation source simulink/blocks/fault_schedule.m",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Frozen physical simulation source simulink/blocks/plant_step.m",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Frozen physical simulation source simulink/blocks/reference_step.m",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Frozen physical simulation source simulink/blocks/sensor_step.m",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Frozen physical simulation source simulink/blocks/task_reference.m",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Frozen physical simulation source simulink/blocks/wind_step.m",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Frozen physical simulation source simulink/build_hex_model.m",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Frozen physical simulation source simulink/collect_hex_dataset.m",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Frozen physical simulation source simulink/configs/research.json",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Frozen physical simulation source simulink/configure_hex_simulink.m",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Frozen physical simulation source simulink/diagnose_hex_healthy_tilt.m",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Frozen physical simulation source simulink/functions/hex_allocate.m",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Frozen physical simulation source simulink/functions/hex_derivative.m",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Frozen physical simulation source simulink/functions/hex_desired_attitude.m",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Frozen physical simulation source simulink/functions/hex_multiply.m",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Frozen physical simulation source simulink/functions/hex_rotation.m",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Frozen physical simulation source simulink/functions/hex_trf.m",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Frozen physical simulation source simulink/hex_base_parameters.m",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Frozen physical simulation source simulink/hex_block_parameters.m",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Frozen physical simulation source simulink/hex_common_block_parameters.m",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Frozen physical simulation source simulink/hex_evtol.slx",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Frozen physical simulation source simulink/hex_export_result.m",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Frozen physical simulation source simulink/hex_metrics.m",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Frozen physical simulation source simulink/hex_parameters.m",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Frozen physical simulation source simulink/hex_prepare_inputs.m",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Frozen physical simulation source simulink/hex_signal_names.m",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Frozen physical simulation source simulink/hex_validate_parameters.m",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Frozen physical simulation source simulink/my_simulation.m",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Frozen physical simulation source simulink/open_hex_simulink.m",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Frozen physical simulation source simulink/plot_hex_healthy_assessment.m",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Frozen physical simulation source simulink/plot_hex_results.m",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Frozen physical simulation source simulink/run_hex_healthy_assessment.m",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Frozen physical simulation source simulink/run_hex_simulink.m",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Frozen physical simulation source simulink/style_hex_model.m",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Frozen physical simulation source simulink/validation/finalize_hex_delivery.m",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Every condition has all 19 classes",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Actual 12D features invariant to command/truth/audit-column mutation",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Exact measured-RPM allowlist",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Pool hash test_245a503a0afd36f99d59afdec8f7a16f784391d514a67ed764807edad56279fb.pkl",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Window count test_245a503a0afd36f99d59afdec8f7a16f784391d514a67ed764807edad56279fb.pkl",
+      "evidence": 2409,
+      "passed": true
+    },
+    {
+      "check": "Dimension test_245a503a0afd36f99d59afdec8f7a16f784391d514a67ed764807edad56279fb.pkl",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Pool hash test_a46fece28a333805397b3709c328ad253db435b597693e77a2480e9e2c2a50f2.pkl",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Window count test_a46fece28a333805397b3709c328ad253db435b597693e77a2480e9e2c2a50f2.pkl",
+      "evidence": 2409,
+      "passed": true
+    },
+    {
+      "check": "Dimension test_a46fece28a333805397b3709c328ad253db435b597693e77a2480e9e2c2a50f2.pkl",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Pool hash train_22872caba5a57b6c402b5df3596e586fe3e81294e911b3827f7c5477af6977fb.pkl",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Window count train_22872caba5a57b6c402b5df3596e586fe3e81294e911b3827f7c5477af6977fb.pkl",
+      "evidence": 4818,
+      "passed": true
+    },
+    {
+      "check": "Dimension train_22872caba5a57b6c402b5df3596e586fe3e81294e911b3827f7c5477af6977fb.pkl",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Pool hash train_7adaa74e43656538073b719731d69aea0c382f260320e06ddaf81ebd026d6d0a.pkl",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Window count train_7adaa74e43656538073b719731d69aea0c382f260320e06ddaf81ebd026d6d0a.pkl",
+      "evidence": 714,
+      "passed": true
+    },
+    {
+      "check": "Dimension train_7adaa74e43656538073b719731d69aea0c382f260320e06ddaf81ebd026d6d0a.pkl",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Pool hash train_a5280b29b0de0c710334d29101f4f9891ad2a796bc1b0f19581fb3be9033c0d8.pkl",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Window count train_a5280b29b0de0c710334d29101f4f9891ad2a796bc1b0f19581fb3be9033c0d8.pkl",
+      "evidence": 714,
+      "passed": true
+    },
+    {
+      "check": "Dimension train_a5280b29b0de0c710334d29101f4f9891ad2a796bc1b0f19581fb3be9033c0d8.pkl",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Pool hash train_de463fd29a43483f61cc0a7f82cf2087c688e257037633f81205e555b6536d0e.pkl",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Window count train_de463fd29a43483f61cc0a7f82cf2087c688e257037633f81205e555b6536d0e.pkl",
+      "evidence": 2082,
+      "passed": true
+    },
+    {
+      "check": "Dimension train_de463fd29a43483f61cc0a7f82cf2087c688e257037633f81205e555b6536d0e.pkl",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Pool hash train_f5bce5a9f9b98cb18a21ab82eabe942860da638e7b223dcaac0ace306aa121ea.pkl",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Window count train_f5bce5a9f9b98cb18a21ab82eabe942860da638e7b223dcaac0ace306aa121ea.pkl",
+      "evidence": 4818,
+      "passed": true
+    },
+    {
+      "check": "Dimension train_f5bce5a9f9b98cb18a21ab82eabe942860da638e7b223dcaac0ace306aa121ea.pkl",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Pool hash validation_00b08f7e7f11cdd3c447f0eca623dd4de581bf5844c15f9911aff10fb93dc9d6.pkl",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Window count validation_00b08f7e7f11cdd3c447f0eca623dd4de581bf5844c15f9911aff10fb93dc9d6.pkl",
+      "evidence": 2409,
+      "passed": true
+    },
+    {
+      "check": "Dimension validation_00b08f7e7f11cdd3c447f0eca623dd4de581bf5844c15f9911aff10fb93dc9d6.pkl",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Pool hash validation_6fb5382b8e23f41deeae2551bf5cacac2dd941c283fd020314f43b7f88994174.pkl",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Window count validation_6fb5382b8e23f41deeae2551bf5cacac2dd941c283fd020314f43b7f88994174.pkl",
+      "evidence": 2409,
+      "passed": true
+    },
+    {
+      "check": "Dimension validation_6fb5382b8e23f41deeae2551bf5cacac2dd941c283fd020314f43b7f88994174.pkl",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "D and E each 714 windows",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "D/E counts match per source/class",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "E sampling includes late windows",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Scaler actual selected-only fit 1b3f4d4a9d948631bc10766d2d66d7f9dcc91b16058ea0e06f88b5d367fb5303",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Scaler actual selected-only fit 4abda1d7de589f685b12afe3278cb4b8753d2bb59e51d418d6a25719aa59211a",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Scaler actual selected-only fit 9edd8b32e0392023eddfaa0b042a1120cad8abdd232c0bd21679602e2039fdad",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Scaler actual selected-only fit c3c0ff5d883ba38a5fed95fefd8eb3a3ed71dfb6ca261cecb6785ee33da44b06",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Scaler actual selected-only fit fc03415b328233e33a1b2a4ecad2bc132acd8c8036f1fbd1ed4f32a3a882c142",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates e83ca1a7a873eb8c92670489d56ff8aec2c48f981c6db423d7b1ec5feaafbc52",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input e83ca1a7a873eb8c92670489d56ff8aec2c48f981c6db423d7b1ec5feaafbc52",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation e83ca1a7a873eb8c92670489d56ff8aec2c48f981c6db423d7b1ec5feaafbc52",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints e83ca1a7a873eb8c92670489d56ff8aec2c48f981c6db423d7b1ec5feaafbc52",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze e83ca1a7a873eb8c92670489d56ff8aec2c48f981c6db423d7b1ec5feaafbc52",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates 77e3ccfc8d773335b963f398671e4a60b5f0d40df7bb3a315ffa89ef218b8289",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input 77e3ccfc8d773335b963f398671e4a60b5f0d40df7bb3a315ffa89ef218b8289",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation 77e3ccfc8d773335b963f398671e4a60b5f0d40df7bb3a315ffa89ef218b8289",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints 77e3ccfc8d773335b963f398671e4a60b5f0d40df7bb3a315ffa89ef218b8289",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze 77e3ccfc8d773335b963f398671e4a60b5f0d40df7bb3a315ffa89ef218b8289",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates 3d4b3f88f6eb0f53590136860d7afececddd71b61c77d3ad054f98e028fd3016",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input 3d4b3f88f6eb0f53590136860d7afececddd71b61c77d3ad054f98e028fd3016",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation 3d4b3f88f6eb0f53590136860d7afececddd71b61c77d3ad054f98e028fd3016",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints 3d4b3f88f6eb0f53590136860d7afececddd71b61c77d3ad054f98e028fd3016",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze 3d4b3f88f6eb0f53590136860d7afececddd71b61c77d3ad054f98e028fd3016",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates abc828c176e0507c079617e045fb47d5577c1f07e9bf42377e5839a7f69796a3",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input abc828c176e0507c079617e045fb47d5577c1f07e9bf42377e5839a7f69796a3",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation abc828c176e0507c079617e045fb47d5577c1f07e9bf42377e5839a7f69796a3",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints abc828c176e0507c079617e045fb47d5577c1f07e9bf42377e5839a7f69796a3",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze abc828c176e0507c079617e045fb47d5577c1f07e9bf42377e5839a7f69796a3",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates fbd7b0bcb3f6aa54b18ace81b4c92f47a9a1f2b25848fb3c799be104000e1e3b",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input fbd7b0bcb3f6aa54b18ace81b4c92f47a9a1f2b25848fb3c799be104000e1e3b",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation fbd7b0bcb3f6aa54b18ace81b4c92f47a9a1f2b25848fb3c799be104000e1e3b",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints fbd7b0bcb3f6aa54b18ace81b4c92f47a9a1f2b25848fb3c799be104000e1e3b",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze fbd7b0bcb3f6aa54b18ace81b4c92f47a9a1f2b25848fb3c799be104000e1e3b",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates ff77090e4ea0c45b28250c4f890579b7672face80840058096e72ff292f912b8",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input ff77090e4ea0c45b28250c4f890579b7672face80840058096e72ff292f912b8",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation ff77090e4ea0c45b28250c4f890579b7672face80840058096e72ff292f912b8",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints ff77090e4ea0c45b28250c4f890579b7672face80840058096e72ff292f912b8",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze ff77090e4ea0c45b28250c4f890579b7672face80840058096e72ff292f912b8",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates 70abf233f15e2971bf08bbcb1ab527f7af8ee44da71dfe5e1ed6584ece51e894",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input 70abf233f15e2971bf08bbcb1ab527f7af8ee44da71dfe5e1ed6584ece51e894",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation 70abf233f15e2971bf08bbcb1ab527f7af8ee44da71dfe5e1ed6584ece51e894",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints 70abf233f15e2971bf08bbcb1ab527f7af8ee44da71dfe5e1ed6584ece51e894",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze 70abf233f15e2971bf08bbcb1ab527f7af8ee44da71dfe5e1ed6584ece51e894",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates 991857ec0c8a00b0169f37b3b6722458b8fab0286f530f6fa8387f290a7bd621",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input 991857ec0c8a00b0169f37b3b6722458b8fab0286f530f6fa8387f290a7bd621",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation 991857ec0c8a00b0169f37b3b6722458b8fab0286f530f6fa8387f290a7bd621",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints 991857ec0c8a00b0169f37b3b6722458b8fab0286f530f6fa8387f290a7bd621",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze 991857ec0c8a00b0169f37b3b6722458b8fab0286f530f6fa8387f290a7bd621",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates 808022f99b0111139baf2650b4c10d9880707519eb5d70e523bff865e59c2e31",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input 808022f99b0111139baf2650b4c10d9880707519eb5d70e523bff865e59c2e31",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation 808022f99b0111139baf2650b4c10d9880707519eb5d70e523bff865e59c2e31",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints 808022f99b0111139baf2650b4c10d9880707519eb5d70e523bff865e59c2e31",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze 808022f99b0111139baf2650b4c10d9880707519eb5d70e523bff865e59c2e31",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates 3b0634e696adbeeead8c8a16acdcec60553645719c9aa3f49b43c1026e36a832",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input 3b0634e696adbeeead8c8a16acdcec60553645719c9aa3f49b43c1026e36a832",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation 3b0634e696adbeeead8c8a16acdcec60553645719c9aa3f49b43c1026e36a832",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints 3b0634e696adbeeead8c8a16acdcec60553645719c9aa3f49b43c1026e36a832",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze 3b0634e696adbeeead8c8a16acdcec60553645719c9aa3f49b43c1026e36a832",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates 2f6c1e50250b8c103179e3a6c6d39950dd95cd56603282657f1168187d848c39",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input 2f6c1e50250b8c103179e3a6c6d39950dd95cd56603282657f1168187d848c39",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation 2f6c1e50250b8c103179e3a6c6d39950dd95cd56603282657f1168187d848c39",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints 2f6c1e50250b8c103179e3a6c6d39950dd95cd56603282657f1168187d848c39",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze 2f6c1e50250b8c103179e3a6c6d39950dd95cd56603282657f1168187d848c39",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates 739cadadd44505df42fdc954c3867ae30cd2ed9a5f6fb670a3ceeab317f2d326",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input 739cadadd44505df42fdc954c3867ae30cd2ed9a5f6fb670a3ceeab317f2d326",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation 739cadadd44505df42fdc954c3867ae30cd2ed9a5f6fb670a3ceeab317f2d326",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints 739cadadd44505df42fdc954c3867ae30cd2ed9a5f6fb670a3ceeab317f2d326",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze 739cadadd44505df42fdc954c3867ae30cd2ed9a5f6fb670a3ceeab317f2d326",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates 527cbfbd04a63660d470245b78b187191b95c705bda9f19ba5489767de41bdf6",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input 527cbfbd04a63660d470245b78b187191b95c705bda9f19ba5489767de41bdf6",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation 527cbfbd04a63660d470245b78b187191b95c705bda9f19ba5489767de41bdf6",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints 527cbfbd04a63660d470245b78b187191b95c705bda9f19ba5489767de41bdf6",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze 527cbfbd04a63660d470245b78b187191b95c705bda9f19ba5489767de41bdf6",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates 3dab67d861994311daa52221e71fbc1bbcc858c4c96ff955fb5faaa73bb8f196",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input 3dab67d861994311daa52221e71fbc1bbcc858c4c96ff955fb5faaa73bb8f196",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation 3dab67d861994311daa52221e71fbc1bbcc858c4c96ff955fb5faaa73bb8f196",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints 3dab67d861994311daa52221e71fbc1bbcc858c4c96ff955fb5faaa73bb8f196",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze 3dab67d861994311daa52221e71fbc1bbcc858c4c96ff955fb5faaa73bb8f196",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates d13d49d9469d12ce7df8fe1da5e1e6e9693ed31787603d5322ac1b162cdb0af9",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input d13d49d9469d12ce7df8fe1da5e1e6e9693ed31787603d5322ac1b162cdb0af9",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation d13d49d9469d12ce7df8fe1da5e1e6e9693ed31787603d5322ac1b162cdb0af9",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints d13d49d9469d12ce7df8fe1da5e1e6e9693ed31787603d5322ac1b162cdb0af9",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze d13d49d9469d12ce7df8fe1da5e1e6e9693ed31787603d5322ac1b162cdb0af9",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates 838305a1d12601497fd97aec1664e9af079f9fbbeaf0e89ae388b125de761a88",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input 838305a1d12601497fd97aec1664e9af079f9fbbeaf0e89ae388b125de761a88",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation 838305a1d12601497fd97aec1664e9af079f9fbbeaf0e89ae388b125de761a88",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints 838305a1d12601497fd97aec1664e9af079f9fbbeaf0e89ae388b125de761a88",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze 838305a1d12601497fd97aec1664e9af079f9fbbeaf0e89ae388b125de761a88",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates 9fa9c2b3f6de54e0bb8ec669ac40ab0d94c710a27b0f4bc46f56811e36805518",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input 9fa9c2b3f6de54e0bb8ec669ac40ab0d94c710a27b0f4bc46f56811e36805518",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation 9fa9c2b3f6de54e0bb8ec669ac40ab0d94c710a27b0f4bc46f56811e36805518",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints 9fa9c2b3f6de54e0bb8ec669ac40ab0d94c710a27b0f4bc46f56811e36805518",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze 9fa9c2b3f6de54e0bb8ec669ac40ab0d94c710a27b0f4bc46f56811e36805518",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates d717d1eb1caf53daf9b4e0efcb90d945baf0a0238747978b8e1f425062a23865",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input d717d1eb1caf53daf9b4e0efcb90d945baf0a0238747978b8e1f425062a23865",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation d717d1eb1caf53daf9b4e0efcb90d945baf0a0238747978b8e1f425062a23865",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints d717d1eb1caf53daf9b4e0efcb90d945baf0a0238747978b8e1f425062a23865",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze d717d1eb1caf53daf9b4e0efcb90d945baf0a0238747978b8e1f425062a23865",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates 42b1182313d37af11cf179dbf208659fab82bac5c003f83484a2d86a9d623e8c",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input 42b1182313d37af11cf179dbf208659fab82bac5c003f83484a2d86a9d623e8c",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation 42b1182313d37af11cf179dbf208659fab82bac5c003f83484a2d86a9d623e8c",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints 42b1182313d37af11cf179dbf208659fab82bac5c003f83484a2d86a9d623e8c",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze 42b1182313d37af11cf179dbf208659fab82bac5c003f83484a2d86a9d623e8c",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates fe16cbed90981353ae8ccc2a1755045b46abb0fe848ef23dc08a22ca1e7324a5",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input fe16cbed90981353ae8ccc2a1755045b46abb0fe848ef23dc08a22ca1e7324a5",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation fe16cbed90981353ae8ccc2a1755045b46abb0fe848ef23dc08a22ca1e7324a5",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints fe16cbed90981353ae8ccc2a1755045b46abb0fe848ef23dc08a22ca1e7324a5",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze fe16cbed90981353ae8ccc2a1755045b46abb0fe848ef23dc08a22ca1e7324a5",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates 22790d7fc6118010e87ef87f623809bb26e7f62616a87cc308299f2312bdb241",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input 22790d7fc6118010e87ef87f623809bb26e7f62616a87cc308299f2312bdb241",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation 22790d7fc6118010e87ef87f623809bb26e7f62616a87cc308299f2312bdb241",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints 22790d7fc6118010e87ef87f623809bb26e7f62616a87cc308299f2312bdb241",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze 22790d7fc6118010e87ef87f623809bb26e7f62616a87cc308299f2312bdb241",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates da35c8a8eddabc5a903fff26e85ffd71a26c4805db98cbb83c736336a9cecc95",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input da35c8a8eddabc5a903fff26e85ffd71a26c4805db98cbb83c736336a9cecc95",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation da35c8a8eddabc5a903fff26e85ffd71a26c4805db98cbb83c736336a9cecc95",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints da35c8a8eddabc5a903fff26e85ffd71a26c4805db98cbb83c736336a9cecc95",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze da35c8a8eddabc5a903fff26e85ffd71a26c4805db98cbb83c736336a9cecc95",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates 1fd0f9611b39a7f7f309ba5a346a3540249895730c7ffe66ced456b82a87e8e4",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input 1fd0f9611b39a7f7f309ba5a346a3540249895730c7ffe66ced456b82a87e8e4",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation 1fd0f9611b39a7f7f309ba5a346a3540249895730c7ffe66ced456b82a87e8e4",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints 1fd0f9611b39a7f7f309ba5a346a3540249895730c7ffe66ced456b82a87e8e4",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze 1fd0f9611b39a7f7f309ba5a346a3540249895730c7ffe66ced456b82a87e8e4",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates 7aa1f80cb9429e1419549b5f3c94b6cc5b1852e4a5c2a160b41dca72db3fcbd8",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input 7aa1f80cb9429e1419549b5f3c94b6cc5b1852e4a5c2a160b41dca72db3fcbd8",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation 7aa1f80cb9429e1419549b5f3c94b6cc5b1852e4a5c2a160b41dca72db3fcbd8",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints 7aa1f80cb9429e1419549b5f3c94b6cc5b1852e4a5c2a160b41dca72db3fcbd8",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze 7aa1f80cb9429e1419549b5f3c94b6cc5b1852e4a5c2a160b41dca72db3fcbd8",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates 9c4f77b32e13124aafa2a7943145f4a66a5699395c462f599642a515266eb0e4",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input 9c4f77b32e13124aafa2a7943145f4a66a5699395c462f599642a515266eb0e4",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation 9c4f77b32e13124aafa2a7943145f4a66a5699395c462f599642a515266eb0e4",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints 9c4f77b32e13124aafa2a7943145f4a66a5699395c462f599642a515266eb0e4",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze 9c4f77b32e13124aafa2a7943145f4a66a5699395c462f599642a515266eb0e4",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates e74cfecc00d22245f2f34a2a4bcd6a0e790ec731819e92072942ac8bd8f0e604",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input e74cfecc00d22245f2f34a2a4bcd6a0e790ec731819e92072942ac8bd8f0e604",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation e74cfecc00d22245f2f34a2a4bcd6a0e790ec731819e92072942ac8bd8f0e604",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints e74cfecc00d22245f2f34a2a4bcd6a0e790ec731819e92072942ac8bd8f0e604",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze e74cfecc00d22245f2f34a2a4bcd6a0e790ec731819e92072942ac8bd8f0e604",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates fd4cd0ddd758312d2cdcc8395282fde6e3a6d31f6dfe179c63f9749d92c08c18",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input fd4cd0ddd758312d2cdcc8395282fde6e3a6d31f6dfe179c63f9749d92c08c18",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation fd4cd0ddd758312d2cdcc8395282fde6e3a6d31f6dfe179c63f9749d92c08c18",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints fd4cd0ddd758312d2cdcc8395282fde6e3a6d31f6dfe179c63f9749d92c08c18",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze fd4cd0ddd758312d2cdcc8395282fde6e3a6d31f6dfe179c63f9749d92c08c18",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates 3d82b86fde3452fdad1904d6b07f046395b3912e8a50b20d334dad3d72793e2a",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input 3d82b86fde3452fdad1904d6b07f046395b3912e8a50b20d334dad3d72793e2a",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation 3d82b86fde3452fdad1904d6b07f046395b3912e8a50b20d334dad3d72793e2a",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints 3d82b86fde3452fdad1904d6b07f046395b3912e8a50b20d334dad3d72793e2a",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze 3d82b86fde3452fdad1904d6b07f046395b3912e8a50b20d334dad3d72793e2a",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates 53883fd583a5c64a68a1cbd6312564bc5ad9c58d0785f047a6c6851dfdf7233f",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input 53883fd583a5c64a68a1cbd6312564bc5ad9c58d0785f047a6c6851dfdf7233f",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation 53883fd583a5c64a68a1cbd6312564bc5ad9c58d0785f047a6c6851dfdf7233f",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints 53883fd583a5c64a68a1cbd6312564bc5ad9c58d0785f047a6c6851dfdf7233f",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze 53883fd583a5c64a68a1cbd6312564bc5ad9c58d0785f047a6c6851dfdf7233f",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates 698bfa08c35cbf9d1f618eb5a97b724fd40198aa8dfe0a2f9028337cd2c80935",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input 698bfa08c35cbf9d1f618eb5a97b724fd40198aa8dfe0a2f9028337cd2c80935",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation 698bfa08c35cbf9d1f618eb5a97b724fd40198aa8dfe0a2f9028337cd2c80935",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints 698bfa08c35cbf9d1f618eb5a97b724fd40198aa8dfe0a2f9028337cd2c80935",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze 698bfa08c35cbf9d1f618eb5a97b724fd40198aa8dfe0a2f9028337cd2c80935",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates 1ed1e767ee76a1454830bfb9b15073b6ac4c65a0402a930e61fa496222d04c61",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input 1ed1e767ee76a1454830bfb9b15073b6ac4c65a0402a930e61fa496222d04c61",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation 1ed1e767ee76a1454830bfb9b15073b6ac4c65a0402a930e61fa496222d04c61",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints 1ed1e767ee76a1454830bfb9b15073b6ac4c65a0402a930e61fa496222d04c61",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze 1ed1e767ee76a1454830bfb9b15073b6ac4c65a0402a930e61fa496222d04c61",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates 72b9de2a5a95a6afbdd1c1dc1c7a41258a3829439d48ff9553ecb396092557d1",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input 72b9de2a5a95a6afbdd1c1dc1c7a41258a3829439d48ff9553ecb396092557d1",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation 72b9de2a5a95a6afbdd1c1dc1c7a41258a3829439d48ff9553ecb396092557d1",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints 72b9de2a5a95a6afbdd1c1dc1c7a41258a3829439d48ff9553ecb396092557d1",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze 72b9de2a5a95a6afbdd1c1dc1c7a41258a3829439d48ff9553ecb396092557d1",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates fa0ab17b10809772781448270ff0fde60a9190d754e21ac41dadbac53666b23e",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input fa0ab17b10809772781448270ff0fde60a9190d754e21ac41dadbac53666b23e",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation fa0ab17b10809772781448270ff0fde60a9190d754e21ac41dadbac53666b23e",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints fa0ab17b10809772781448270ff0fde60a9190d754e21ac41dadbac53666b23e",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze fa0ab17b10809772781448270ff0fde60a9190d754e21ac41dadbac53666b23e",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates e5fbf92c886f2a501ea457ec82a0956697e93871a2a819551c3407a4513d6829",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input e5fbf92c886f2a501ea457ec82a0956697e93871a2a819551c3407a4513d6829",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation e5fbf92c886f2a501ea457ec82a0956697e93871a2a819551c3407a4513d6829",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints e5fbf92c886f2a501ea457ec82a0956697e93871a2a819551c3407a4513d6829",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze e5fbf92c886f2a501ea457ec82a0956697e93871a2a819551c3407a4513d6829",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates bf9265f61cc0dab4c03e2673b5353763c71c08adb2ae9c89c9cfa87fdc0e8be7",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input bf9265f61cc0dab4c03e2673b5353763c71c08adb2ae9c89c9cfa87fdc0e8be7",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation bf9265f61cc0dab4c03e2673b5353763c71c08adb2ae9c89c9cfa87fdc0e8be7",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints bf9265f61cc0dab4c03e2673b5353763c71c08adb2ae9c89c9cfa87fdc0e8be7",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze bf9265f61cc0dab4c03e2673b5353763c71c08adb2ae9c89c9cfa87fdc0e8be7",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates cb69070efef48e583e53bb0d5ff3d0fb3e63224f68cd02e3dccb6af673358e37",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input cb69070efef48e583e53bb0d5ff3d0fb3e63224f68cd02e3dccb6af673358e37",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation cb69070efef48e583e53bb0d5ff3d0fb3e63224f68cd02e3dccb6af673358e37",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints cb69070efef48e583e53bb0d5ff3d0fb3e63224f68cd02e3dccb6af673358e37",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze cb69070efef48e583e53bb0d5ff3d0fb3e63224f68cd02e3dccb6af673358e37",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates 394aa7ab8d85c761cf04b5f6e5460c03443b2400f844f892b48a71ec8afc7a5a",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input 394aa7ab8d85c761cf04b5f6e5460c03443b2400f844f892b48a71ec8afc7a5a",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation 394aa7ab8d85c761cf04b5f6e5460c03443b2400f844f892b48a71ec8afc7a5a",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints 394aa7ab8d85c761cf04b5f6e5460c03443b2400f844f892b48a71ec8afc7a5a",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze 394aa7ab8d85c761cf04b5f6e5460c03443b2400f844f892b48a71ec8afc7a5a",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates 8ec2728d8c22db37732cd0ef8c8af4ed6e574a316d076049ffbf91001e6b3590",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input 8ec2728d8c22db37732cd0ef8c8af4ed6e574a316d076049ffbf91001e6b3590",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation 8ec2728d8c22db37732cd0ef8c8af4ed6e574a316d076049ffbf91001e6b3590",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints 8ec2728d8c22db37732cd0ef8c8af4ed6e574a316d076049ffbf91001e6b3590",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze 8ec2728d8c22db37732cd0ef8c8af4ed6e574a316d076049ffbf91001e6b3590",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates d5f897046414f8b76431b7bcaa132a282bd8a8784ab7c36bd3e5f69c385413b0",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input d5f897046414f8b76431b7bcaa132a282bd8a8784ab7c36bd3e5f69c385413b0",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation d5f897046414f8b76431b7bcaa132a282bd8a8784ab7c36bd3e5f69c385413b0",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints d5f897046414f8b76431b7bcaa132a282bd8a8784ab7c36bd3e5f69c385413b0",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze d5f897046414f8b76431b7bcaa132a282bd8a8784ab7c36bd3e5f69c385413b0",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates 224512a765559ad219f16aef1338bab60ee2eb77bcd06056af6ba40d4007e246",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input 224512a765559ad219f16aef1338bab60ee2eb77bcd06056af6ba40d4007e246",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation 224512a765559ad219f16aef1338bab60ee2eb77bcd06056af6ba40d4007e246",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints 224512a765559ad219f16aef1338bab60ee2eb77bcd06056af6ba40d4007e246",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze 224512a765559ad219f16aef1338bab60ee2eb77bcd06056af6ba40d4007e246",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates 3d7415b4f4ff0184b73e21392b13f837518ebdb68f7d2e275d600afc2a2248b8",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input 3d7415b4f4ff0184b73e21392b13f837518ebdb68f7d2e275d600afc2a2248b8",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation 3d7415b4f4ff0184b73e21392b13f837518ebdb68f7d2e275d600afc2a2248b8",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints 3d7415b4f4ff0184b73e21392b13f837518ebdb68f7d2e275d600afc2a2248b8",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze 3d7415b4f4ff0184b73e21392b13f837518ebdb68f7d2e275d600afc2a2248b8",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates 8ff2f7450bd1af95866b237376357ff7b8aaa82cb45de0420d7c9521a408c9a1",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input 8ff2f7450bd1af95866b237376357ff7b8aaa82cb45de0420d7c9521a408c9a1",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation 8ff2f7450bd1af95866b237376357ff7b8aaa82cb45de0420d7c9521a408c9a1",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints 8ff2f7450bd1af95866b237376357ff7b8aaa82cb45de0420d7c9521a408c9a1",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze 8ff2f7450bd1af95866b237376357ff7b8aaa82cb45de0420d7c9521a408c9a1",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates e85b02e2188536c72a7c7ef7b93b3db29f99f5adf5e20af1518708cc6ef92b72",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input e85b02e2188536c72a7c7ef7b93b3db29f99f5adf5e20af1518708cc6ef92b72",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation e85b02e2188536c72a7c7ef7b93b3db29f99f5adf5e20af1518708cc6ef92b72",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints e85b02e2188536c72a7c7ef7b93b3db29f99f5adf5e20af1518708cc6ef92b72",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze e85b02e2188536c72a7c7ef7b93b3db29f99f5adf5e20af1518708cc6ef92b72",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates 5f6a32b542f3f4d26734a038856d6869999a6888156bd7dcfea3794bd152f382",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input 5f6a32b542f3f4d26734a038856d6869999a6888156bd7dcfea3794bd152f382",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation 5f6a32b542f3f4d26734a038856d6869999a6888156bd7dcfea3794bd152f382",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints 5f6a32b542f3f4d26734a038856d6869999a6888156bd7dcfea3794bd152f382",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze 5f6a32b542f3f4d26734a038856d6869999a6888156bd7dcfea3794bd152f382",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates 80974e44d1eaba9e71bcf2336d02d41dbedca18e08bf0ebc07d31ca1dae49050",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input 80974e44d1eaba9e71bcf2336d02d41dbedca18e08bf0ebc07d31ca1dae49050",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation 80974e44d1eaba9e71bcf2336d02d41dbedca18e08bf0ebc07d31ca1dae49050",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints 80974e44d1eaba9e71bcf2336d02d41dbedca18e08bf0ebc07d31ca1dae49050",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze 80974e44d1eaba9e71bcf2336d02d41dbedca18e08bf0ebc07d31ca1dae49050",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates 549e052693598696b2fdc1536416309ab39e8dec97e65ff7a00a53cf472cca3c",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input 549e052693598696b2fdc1536416309ab39e8dec97e65ff7a00a53cf472cca3c",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation 549e052693598696b2fdc1536416309ab39e8dec97e65ff7a00a53cf472cca3c",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints 549e052693598696b2fdc1536416309ab39e8dec97e65ff7a00a53cf472cca3c",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze 549e052693598696b2fdc1536416309ab39e8dec97e65ff7a00a53cf472cca3c",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates cbf486881e7529428c5c2df6fe5a74a6fefdf1ae74378f75cb712a3dc9104c35",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input cbf486881e7529428c5c2df6fe5a74a6fefdf1ae74378f75cb712a3dc9104c35",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation cbf486881e7529428c5c2df6fe5a74a6fefdf1ae74378f75cb712a3dc9104c35",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints cbf486881e7529428c5c2df6fe5a74a6fefdf1ae74378f75cb712a3dc9104c35",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze cbf486881e7529428c5c2df6fe5a74a6fefdf1ae74378f75cb712a3dc9104c35",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates 22e5f9572ed924518acd5960c9183146c688be6bad48f5370a5b6a16c5ea3fa5",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input 22e5f9572ed924518acd5960c9183146c688be6bad48f5370a5b6a16c5ea3fa5",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation 22e5f9572ed924518acd5960c9183146c688be6bad48f5370a5b6a16c5ea3fa5",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints 22e5f9572ed924518acd5960c9183146c688be6bad48f5370a5b6a16c5ea3fa5",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze 22e5f9572ed924518acd5960c9183146c688be6bad48f5370a5b6a16c5ea3fa5",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates 0c75444702eee03efd3fe5a9014392c04e1e923e9e91d6b3212f393cfc4807cf",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input 0c75444702eee03efd3fe5a9014392c04e1e923e9e91d6b3212f393cfc4807cf",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation 0c75444702eee03efd3fe5a9014392c04e1e923e9e91d6b3212f393cfc4807cf",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints 0c75444702eee03efd3fe5a9014392c04e1e923e9e91d6b3212f393cfc4807cf",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze 0c75444702eee03efd3fe5a9014392c04e1e923e9e91d6b3212f393cfc4807cf",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates 0522e8a187abd19022678f02a77a9bb021f79b60867e1b88a33c6494633b85c9",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input 0522e8a187abd19022678f02a77a9bb021f79b60867e1b88a33c6494633b85c9",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation 0522e8a187abd19022678f02a77a9bb021f79b60867e1b88a33c6494633b85c9",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints 0522e8a187abd19022678f02a77a9bb021f79b60867e1b88a33c6494633b85c9",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze 0522e8a187abd19022678f02a77a9bb021f79b60867e1b88a33c6494633b85c9",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier Adam updates 47defd7909ed8c1a3843b755e356b0df3109643ab911a6b9dbe7a57544a08aa5",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier actual input 47defd7909ed8c1a3843b755e356b0df3109643ab911a6b9dbe7a57544a08aa5",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Floor augmentation 47defd7909ed8c1a3843b755e356b0df3109643ab911a6b9dbe7a57544a08aa5",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Three classifier checkpoints 47defd7909ed8c1a3843b755e356b0df3109643ab911a6b9dbe7a57544a08aa5",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Classifier completed before freeze 47defd7909ed8c1a3843b755e356b0df3109643ab911a6b9dbe7a57544a08aa5",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "GAN actual Adam updates dada4be2d91f248b0f300ccdffff9112beb7a2b3f7ecf255ed04786078a4441c",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "GAN plain 12D dada4be2d91f248b0f300ccdffff9112beb7a2b3f7ecf255ed04786078a4441c",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "GAN restricted prefix dada4be2d91f248b0f300ccdffff9112beb7a2b3f7ecf255ed04786078a4441c",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "GAN actual Adam updates bcccd2c40adcc80815ba83d1da9dbaddd279550c0d5b2e5af8100107356b6560",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "GAN plain 12D bcccd2c40adcc80815ba83d1da9dbaddd279550c0d5b2e5af8100107356b6560",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "GAN restricted prefix bcccd2c40adcc80815ba83d1da9dbaddd279550c0d5b2e5af8100107356b6560",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "GAN actual Adam updates 0850b61fadb2db4603068ffa31f536a7e56333c872b103725276f57688d136f6",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "GAN plain 12D 0850b61fadb2db4603068ffa31f536a7e56333c872b103725276f57688d136f6",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "GAN restricted prefix 0850b61fadb2db4603068ffa31f536a7e56333c872b103725276f57688d136f6",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "GAN actual Adam updates a96078b14f38aa9cb5693a1b30e1cc4bf2cd040e5c24784ab4acaf29698bc113",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "GAN plain 12D a96078b14f38aa9cb5693a1b30e1cc4bf2cd040e5c24784ab4acaf29698bc113",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "GAN restricted prefix a96078b14f38aa9cb5693a1b30e1cc4bf2cd040e5c24784ab4acaf29698bc113",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "GAN actual Adam updates 640d6e94d25672fe00f41775091767e1d0dea73d97b0e0c5d75c18e922f14730",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "GAN plain 12D 640d6e94d25672fe00f41775091767e1d0dea73d97b0e0c5d75c18e922f14730",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "GAN restricted prefix 640d6e94d25672fe00f41775091767e1d0dea73d97b0e0c5d75c18e922f14730",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "GAN actual Adam updates eadf38bc6517b9491324aa94f584b1d80d0eb9dc682efab6d6dcfcbba7aee522",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "GAN plain 12D eadf38bc6517b9491324aa94f584b1d80d0eb9dc682efab6d6dcfcbba7aee522",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "GAN restricted prefix eadf38bc6517b9491324aa94f584b1d80d0eb9dc682efab6d6dcfcbba7aee522",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "51 classifier and 6 GAN jobs",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Actual test argmax e83ca1a7a873eb8c92670489d56ff8aec2c48f981c6db423d7b1ec5feaafbc52",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Common test prefix counts e83ca1a7a873eb8c92670489d56ff8aec2c48f981c6db423d7b1ec5feaafbc52",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Unique healthy alarm exposure e83ca1a7a873eb8c92670489d56ff8aec2c48f981c6db423d7b1ec5feaafbc52",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Actual test argmax 77e3ccfc8d773335b963f398671e4a60b5f0d40df7bb3a315ffa89ef218b8289",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Common test prefix counts 77e3ccfc8d773335b963f398671e4a60b5f0d40df7bb3a315ffa89ef218b8289",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Unique healthy alarm exposure 77e3ccfc8d773335b963f398671e4a60b5f0d40df7bb3a315ffa89ef218b8289",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Actual test argmax 3d4b3f88f6eb0f53590136860d7afececddd71b61c77d3ad054f98e028fd3016",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Common test prefix counts 3d4b3f88f6eb0f53590136860d7afececddd71b61c77d3ad054f98e028fd3016",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Unique healthy alarm exposure 3d4b3f88f6eb0f53590136860d7afececddd71b61c77d3ad054f98e028fd3016",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Actual test argmax abc828c176e0507c079617e045fb47d5577c1f07e9bf42377e5839a7f69796a3",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Common test prefix counts abc828c176e0507c079617e045fb47d5577c1f07e9bf42377e5839a7f69796a3",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Unique healthy alarm exposure abc828c176e0507c079617e045fb47d5577c1f07e9bf42377e5839a7f69796a3",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Actual test argmax fbd7b0bcb3f6aa54b18ace81b4c92f47a9a1f2b25848fb3c799be104000e1e3b",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Common test prefix counts fbd7b0bcb3f6aa54b18ace81b4c92f47a9a1f2b25848fb3c799be104000e1e3b",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Unique healthy alarm exposure fbd7b0bcb3f6aa54b18ace81b4c92f47a9a1f2b25848fb3c799be104000e1e3b",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Actual test argmax ff77090e4ea0c45b28250c4f890579b7672face80840058096e72ff292f912b8",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Common test prefix counts ff77090e4ea0c45b28250c4f890579b7672face80840058096e72ff292f912b8",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Unique healthy alarm exposure ff77090e4ea0c45b28250c4f890579b7672face80840058096e72ff292f912b8",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Actual test argmax 70abf233f15e2971bf08bbcb1ab527f7af8ee44da71dfe5e1ed6584ece51e894",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Common test prefix counts 70abf233f15e2971bf08bbcb1ab527f7af8ee44da71dfe5e1ed6584ece51e894",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Unique healthy alarm exposure 70abf233f15e2971bf08bbcb1ab527f7af8ee44da71dfe5e1ed6584ece51e894",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Actual test argmax 991857ec0c8a00b0169f37b3b6722458b8fab0286f530f6fa8387f290a7bd621",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Common test prefix counts 991857ec0c8a00b0169f37b3b6722458b8fab0286f530f6fa8387f290a7bd621",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Unique healthy alarm exposure 991857ec0c8a00b0169f37b3b6722458b8fab0286f530f6fa8387f290a7bd621",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Actual test argmax 808022f99b0111139baf2650b4c10d9880707519eb5d70e523bff865e59c2e31",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Common test prefix counts 808022f99b0111139baf2650b4c10d9880707519eb5d70e523bff865e59c2e31",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Unique healthy alarm exposure 808022f99b0111139baf2650b4c10d9880707519eb5d70e523bff865e59c2e31",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Actual test argmax 3b0634e696adbeeead8c8a16acdcec60553645719c9aa3f49b43c1026e36a832",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Common test prefix counts 3b0634e696adbeeead8c8a16acdcec60553645719c9aa3f49b43c1026e36a832",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Unique healthy alarm exposure 3b0634e696adbeeead8c8a16acdcec60553645719c9aa3f49b43c1026e36a832",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Actual test argmax 2f6c1e50250b8c103179e3a6c6d39950dd95cd56603282657f1168187d848c39",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Common test prefix counts 2f6c1e50250b8c103179e3a6c6d39950dd95cd56603282657f1168187d848c39",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Unique healthy alarm exposure 2f6c1e50250b8c103179e3a6c6d39950dd95cd56603282657f1168187d848c39",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Actual test argmax 739cadadd44505df42fdc954c3867ae30cd2ed9a5f6fb670a3ceeab317f2d326",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Common test prefix counts 739cadadd44505df42fdc954c3867ae30cd2ed9a5f6fb670a3ceeab317f2d326",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Unique healthy alarm exposure 739cadadd44505df42fdc954c3867ae30cd2ed9a5f6fb670a3ceeab317f2d326",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Actual test argmax 527cbfbd04a63660d470245b78b187191b95c705bda9f19ba5489767de41bdf6",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Common test prefix counts 527cbfbd04a63660d470245b78b187191b95c705bda9f19ba5489767de41bdf6",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Unique healthy alarm exposure 527cbfbd04a63660d470245b78b187191b95c705bda9f19ba5489767de41bdf6",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Actual test argmax 3dab67d861994311daa52221e71fbc1bbcc858c4c96ff955fb5faaa73bb8f196",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Common test prefix counts 3dab67d861994311daa52221e71fbc1bbcc858c4c96ff955fb5faaa73bb8f196",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Unique healthy alarm exposure 3dab67d861994311daa52221e71fbc1bbcc858c4c96ff955fb5faaa73bb8f196",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Actual test argmax d13d49d9469d12ce7df8fe1da5e1e6e9693ed31787603d5322ac1b162cdb0af9",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Common test prefix counts d13d49d9469d12ce7df8fe1da5e1e6e9693ed31787603d5322ac1b162cdb0af9",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Unique healthy alarm exposure d13d49d9469d12ce7df8fe1da5e1e6e9693ed31787603d5322ac1b162cdb0af9",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Actual test argmax fe16cbed90981353ae8ccc2a1755045b46abb0fe848ef23dc08a22ca1e7324a5",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Common test prefix counts fe16cbed90981353ae8ccc2a1755045b46abb0fe848ef23dc08a22ca1e7324a5",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Unique healthy alarm exposure fe16cbed90981353ae8ccc2a1755045b46abb0fe848ef23dc08a22ca1e7324a5",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Actual test argmax 22790d7fc6118010e87ef87f623809bb26e7f62616a87cc308299f2312bdb241",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Common test prefix counts 22790d7fc6118010e87ef87f623809bb26e7f62616a87cc308299f2312bdb241",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Unique healthy alarm exposure 22790d7fc6118010e87ef87f623809bb26e7f62616a87cc308299f2312bdb241",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Actual test argmax e74cfecc00d22245f2f34a2a4bcd6a0e790ec731819e92072942ac8bd8f0e604",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Common test prefix counts e74cfecc00d22245f2f34a2a4bcd6a0e790ec731819e92072942ac8bd8f0e604",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Unique healthy alarm exposure e74cfecc00d22245f2f34a2a4bcd6a0e790ec731819e92072942ac8bd8f0e604",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Actual test argmax fd4cd0ddd758312d2cdcc8395282fde6e3a6d31f6dfe179c63f9749d92c08c18",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Common test prefix counts fd4cd0ddd758312d2cdcc8395282fde6e3a6d31f6dfe179c63f9749d92c08c18",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Unique healthy alarm exposure fd4cd0ddd758312d2cdcc8395282fde6e3a6d31f6dfe179c63f9749d92c08c18",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Actual test argmax 72b9de2a5a95a6afbdd1c1dc1c7a41258a3829439d48ff9553ecb396092557d1",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Common test prefix counts 72b9de2a5a95a6afbdd1c1dc1c7a41258a3829439d48ff9553ecb396092557d1",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Unique healthy alarm exposure 72b9de2a5a95a6afbdd1c1dc1c7a41258a3829439d48ff9553ecb396092557d1",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Actual test argmax fa0ab17b10809772781448270ff0fde60a9190d754e21ac41dadbac53666b23e",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Common test prefix counts fa0ab17b10809772781448270ff0fde60a9190d754e21ac41dadbac53666b23e",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Unique healthy alarm exposure fa0ab17b10809772781448270ff0fde60a9190d754e21ac41dadbac53666b23e",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Actual test argmax e5fbf92c886f2a501ea457ec82a0956697e93871a2a819551c3407a4513d6829",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Common test prefix counts e5fbf92c886f2a501ea457ec82a0956697e93871a2a819551c3407a4513d6829",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Unique healthy alarm exposure e5fbf92c886f2a501ea457ec82a0956697e93871a2a819551c3407a4513d6829",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Actual test argmax bf9265f61cc0dab4c03e2673b5353763c71c08adb2ae9c89c9cfa87fdc0e8be7",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Common test prefix counts bf9265f61cc0dab4c03e2673b5353763c71c08adb2ae9c89c9cfa87fdc0e8be7",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Unique healthy alarm exposure bf9265f61cc0dab4c03e2673b5353763c71c08adb2ae9c89c9cfa87fdc0e8be7",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Actual test argmax 224512a765559ad219f16aef1338bab60ee2eb77bcd06056af6ba40d4007e246",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Common test prefix counts 224512a765559ad219f16aef1338bab60ee2eb77bcd06056af6ba40d4007e246",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Unique healthy alarm exposure 224512a765559ad219f16aef1338bab60ee2eb77bcd06056af6ba40d4007e246",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Actual test argmax 3d7415b4f4ff0184b73e21392b13f837518ebdb68f7d2e275d600afc2a2248b8",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Common test prefix counts 3d7415b4f4ff0184b73e21392b13f837518ebdb68f7d2e275d600afc2a2248b8",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Unique healthy alarm exposure 3d7415b4f4ff0184b73e21392b13f837518ebdb68f7d2e275d600afc2a2248b8",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Actual test argmax 549e052693598696b2fdc1536416309ab39e8dec97e65ff7a00a53cf472cca3c",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Common test prefix counts 549e052693598696b2fdc1536416309ab39e8dec97e65ff7a00a53cf472cca3c",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Unique healthy alarm exposure 549e052693598696b2fdc1536416309ab39e8dec97e65ff7a00a53cf472cca3c",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Actual test argmax cbf486881e7529428c5c2df6fe5a74a6fefdf1ae74378f75cb712a3dc9104c35",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Common test prefix counts cbf486881e7529428c5c2df6fe5a74a6fefdf1ae74378f75cb712a3dc9104c35",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Unique healthy alarm exposure cbf486881e7529428c5c2df6fe5a74a6fefdf1ae74378f75cb712a3dc9104c35",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Every model evaluated on identical source/window/label identities",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Test read authorized after freeze",
+      "evidence": null,
+      "passed": true
+    },
+    {
+      "check": "Test result uses current freeze",
+      "evidence": null,
+      "passed": true
+    }
+  ],
+  "count": 436,
+  "created_utc": "2026-11-05T04:41:28.657785+00:00",
+  "distinct_tested_models": 27,
+  "flight_acceptance_failures_retained": 1,
+  "formal_records": 228,
+  "freeze_signature": "0beea688b3d5bdc9ccd9e43d1114b67f3fdb0e0505b1814220207f4bd585f066",
+  "new_records_collected": 57,
+  "old_test_records_archived": 57,
+  "original_records_reused": 171,
+  "passed": true,
+  "platform": "Windows-10-10.0.26300-SP0",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "total_classifier_updates": 51000,
+  "total_critic_updates": 90000,
+  "total_generator_updates": 18000
+}

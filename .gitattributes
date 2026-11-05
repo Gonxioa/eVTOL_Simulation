@@ -18,3 +18,5 @@ run_simulink_v3.py text eol=lf
 audit_simulink_v3.py text eol=lf
 configs/simulink_gan_v3_prefix.json text eol=lf
 tests/test_simulink_v3.py text eol=lf
+# Evidence manifests hash exported bytes, including CSV/log line endings.
+docs/validation/simulink_gan_v3_prefix_20261105/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

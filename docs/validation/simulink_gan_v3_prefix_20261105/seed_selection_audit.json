@@ -1,0 +1,62 @@
+{
+  "previously_used_seeds": [
+    42,
+    43,
+    44,
+    20261006,
+    20261103,
+    20261104,
+    20261105,
+    20261106,
+    20261107,
+    20261108,
+    20261109,
+    20261110,
+    20261111,
+    20261112,
+    20261113,
+    20261114
+  ],
+  "scanned_collection_plans": [
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\simulink_control_v3_observable_20261103_v1\\failed_fast_restart_attempt\\collection_plan.json",
+      "seeds": [
+        20261103,
+        20261104,
+        20261105,
+        20261106
+      ],
+      "sha256": "9f02eb47d17312c1d1fe7c7ae4cedad7c1236771efd83d7acd1ec4cb9ca71d8d"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\simulink_control_v3_observable_20261103_v1\\raw\\collection_plan.json",
+      "seeds": [
+        20261103,
+        20261104,
+        20261105,
+        20261106
+      ],
+      "sha256": "85d82ae1ea1ec693d3ce6ded602be673eac4760d5a62383c0abf407b290b9680"
+    },
+    {
+      "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v2_12groups\\raw_new8\\collection_plan.json",
+      "seeds": [
+        20261107,
+        20261108,
+        20261109,
+        20261110,
+        20261111,
+        20261112,
+        20261113,
+        20261114
+      ],
+      "sha256": "903e1cfd1259e96df86bda2c2e7019f81dad9679d189ed7b025a6598db5a7a08"
+    }
+  ],
+  "selected_seeds": [
+    20261115,
+    20261116,
+    20261117
+  ],
+  "selection": "First three predeclared integers after prior collection seeds; no trial flights or performance selection"
+}

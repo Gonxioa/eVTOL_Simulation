@@ -1,0 +1,1076 @@
+{
+  "dataset_version": "simulink_observable_v3_prefix_new_test3",
+  "fault_definition": "omega_dot=(sqrt(eta)*command-omega)/tau; thrust=kT*omega^2; eta is steady-state remaining thrust at fixed command",
+  "group_policy": "three new paired conditions, 19 records each",
+  "plan_signature": "976c27e10c8a574eed18a43cfadbade55a4950195e3d668cb4a33cc9add4fb88",
+  "profile": "simulink_observable_v1",
+  "purpose": "Predeclared V3 confirmation test; no feature access until development freeze",
+  "rotor_mapping_to_uavfd": "unestablished",
+  "runs": [
+    {
+      "factor": 1.0,
+      "group_id": 0,
+      "label": 0,
+      "label_name": "Normal",
+      "motor_python": -1,
+      "motor_simulink": 0,
+      "name": "normal",
+      "run_id": 0,
+      "run_key": "g000_label00",
+      "seed": 20261115,
+      "severity": "normal"
+    },
+    {
+      "factor": 0.0,
+      "group_id": 0,
+      "label": 1,
+      "label_name": "M1-Full",
+      "motor_python": 0,
+      "motor_simulink": 1,
+      "name": "motor0_full",
+      "run_id": 0,
+      "run_key": "g000_label01",
+      "seed": 20261115,
+      "severity": "full"
+    },
+    {
+      "factor": 0.0,
+      "group_id": 0,
+      "label": 2,
+      "label_name": "M2-Full",
+      "motor_python": 1,
+      "motor_simulink": 2,
+      "name": "motor1_full",
+      "run_id": 0,
+      "run_key": "g000_label02",
+      "seed": 20261115,
+      "severity": "full"
+    },
+    {
+      "factor": 0.0,
+      "group_id": 0,
+      "label": 3,
+      "label_name": "M3-Full",
+      "motor_python": 2,
+      "motor_simulink": 3,
+      "name": "motor2_full",
+      "run_id": 0,
+      "run_key": "g000_label03",
+      "seed": 20261115,
+      "severity": "full"
+    },
+    {
+      "factor": 0.0,
+      "group_id": 0,
+      "label": 4,
+      "label_name": "M4-Full",
+      "motor_python": 3,
+      "motor_simulink": 4,
+      "name": "motor3_full",
+      "run_id": 0,
+      "run_key": "g000_label04",
+      "seed": 20261115,
+      "severity": "full"
+    },
+    {
+      "factor": 0.0,
+      "group_id": 0,
+      "label": 5,
+      "label_name": "M5-Full",
+      "motor_python": 4,
+      "motor_simulink": 5,
+      "name": "motor4_full",
+      "run_id": 0,
+      "run_key": "g000_label05",
+      "seed": 20261115,
+      "severity": "full"
+    },
+    {
+      "factor": 0.0,
+      "group_id": 0,
+      "label": 6,
+      "label_name": "M6-Full",
+      "motor_python": 5,
+      "motor_simulink": 6,
+      "name": "motor5_full",
+      "run_id": 0,
+      "run_key": "g000_label06",
+      "seed": 20261115,
+      "severity": "full"
+    },
+    {
+      "factor": 0.2,
+      "group_id": 0,
+      "label": 7,
+      "label_name": "M1-Severe",
+      "motor_python": 0,
+      "motor_simulink": 1,
+      "name": "motor0_severe",
+      "run_id": 0,
+      "run_key": "g000_label07",
+      "seed": 20261115,
+      "severity": "severe"
+    },
+    {
+      "factor": 0.2,
+      "group_id": 0,
+      "label": 8,
+      "label_name": "M2-Severe",
+      "motor_python": 1,
+      "motor_simulink": 2,
+      "name": "motor1_severe",
+      "run_id": 0,
+      "run_key": "g000_label08",
+      "seed": 20261115,
+      "severity": "severe"
+    },
+    {
+      "factor": 0.2,
+      "group_id": 0,
+      "label": 9,
+      "label_name": "M3-Severe",
+      "motor_python": 2,
+      "motor_simulink": 3,
+      "name": "motor2_severe",
+      "run_id": 0,
+      "run_key": "g000_label09",
+      "seed": 20261115,
+      "severity": "severe"
+    },
+    {
+      "factor": 0.2,
+      "group_id": 0,
+      "label": 10,
+      "label_name": "M4-Severe",
+      "motor_python": 3,
+      "motor_simulink": 4,
+      "name": "motor3_severe",
+      "run_id": 0,
+      "run_key": "g000_label10",
+      "seed": 20261115,
+      "severity": "severe"
+    },
+    {
+      "factor": 0.2,
+      "group_id": 0,
+      "label": 11,
+      "label_name": "M5-Severe",
+      "motor_python": 4,
+      "motor_simulink": 5,
+      "name": "motor4_severe",
+      "run_id": 0,
+      "run_key": "g000_label11",
+      "seed": 20261115,
+      "severity": "severe"
+    },
+    {
+      "factor": 0.2,
+      "group_id": 0,
+      "label": 12,
+      "label_name": "M6-Severe",
+      "motor_python": 5,
+      "motor_simulink": 6,
+      "name": "motor5_severe",
+      "run_id": 0,
+      "run_key": "g000_label12",
+      "seed": 20261115,
+      "severity": "severe"
+    },
+    {
+      "factor": 0.8,
+      "group_id": 0,
+      "label": 13,
+      "label_name": "M1-Partial",
+      "motor_python": 0,
+      "motor_simulink": 1,
+      "name": "motor0_partial",
+      "run_id": 0,
+      "run_key": "g000_label13",
+      "seed": 20261115,
+      "severity": "partial"
+    },
+    {
+      "factor": 0.8,
+      "group_id": 0,
+      "label": 14,
+      "label_name": "M2-Partial",
+      "motor_python": 1,
+      "motor_simulink": 2,
+      "name": "motor1_partial",
+      "run_id": 0,
+      "run_key": "g000_label14",
+      "seed": 20261115,
+      "severity": "partial"
+    },
+    {
+      "factor": 0.8,
+      "group_id": 0,
+      "label": 15,
+      "label_name": "M3-Partial",
+      "motor_python": 2,
+      "motor_simulink": 3,
+      "name": "motor2_partial",
+      "run_id": 0,
+      "run_key": "g000_label15",
+      "seed": 20261115,
+      "severity": "partial"
+    },
+    {
+      "factor": 0.8,
+      "group_id": 0,
+      "label": 16,
+      "label_name": "M4-Partial",
+      "motor_python": 3,
+      "motor_simulink": 4,
+      "name": "motor3_partial",
+      "run_id": 0,
+      "run_key": "g000_label16",
+      "seed": 20261115,
+      "severity": "partial"
+    },
+    {
+      "factor": 0.8,
+      "group_id": 0,
+      "label": 17,
+      "label_name": "M5-Partial",
+      "motor_python": 4,
+      "motor_simulink": 5,
+      "name": "motor4_partial",
+      "run_id": 0,
+      "run_key": "g000_label17",
+      "seed": 20261115,
+      "severity": "partial"
+    },
+    {
+      "factor": 0.8,
+      "group_id": 0,
+      "label": 18,
+      "label_name": "M6-Partial",
+      "motor_python": 5,
+      "motor_simulink": 6,
+      "name": "motor5_partial",
+      "run_id": 0,
+      "run_key": "g000_label18",
+      "seed": 20261115,
+      "severity": "partial"
+    },
+    {
+      "factor": 1.0,
+      "group_id": 1,
+      "label": 0,
+      "label_name": "Normal",
+      "motor_python": -1,
+      "motor_simulink": 0,
+      "name": "normal",
+      "run_id": 1,
+      "run_key": "g001_label00",
+      "seed": 20261116,
+      "severity": "normal"
+    },
+    {
+      "factor": 0.0,
+      "group_id": 1,
+      "label": 1,
+      "label_name": "M1-Full",
+      "motor_python": 0,
+      "motor_simulink": 1,
+      "name": "motor0_full",
+      "run_id": 1,
+      "run_key": "g001_label01",
+      "seed": 20261116,
+      "severity": "full"
+    },
+    {
+      "factor": 0.0,
+      "group_id": 1,
+      "label": 2,
+      "label_name": "M2-Full",
+      "motor_python": 1,
+      "motor_simulink": 2,
+      "name": "motor1_full",
+      "run_id": 1,
+      "run_key": "g001_label02",
+      "seed": 20261116,
+      "severity": "full"
+    },
+    {
+      "factor": 0.0,
+      "group_id": 1,
+      "label": 3,
+      "label_name": "M3-Full",
+      "motor_python": 2,
+      "motor_simulink": 3,
+      "name": "motor2_full",
+      "run_id": 1,
+      "run_key": "g001_label03",
+      "seed": 20261116,
+      "severity": "full"
+    },
+    {
+      "factor": 0.0,
+      "group_id": 1,
+      "label": 4,
+      "label_name": "M4-Full",
+      "motor_python": 3,
+      "motor_simulink": 4,
+      "name": "motor3_full",
+      "run_id": 1,
+      "run_key": "g001_label04",
+      "seed": 20261116,
+      "severity": "full"
+    },
+    {
+      "factor": 0.0,
+      "group_id": 1,
+      "label": 5,
+      "label_name": "M5-Full",
+      "motor_python": 4,
+      "motor_simulink": 5,
+      "name": "motor4_full",
+      "run_id": 1,
+      "run_key": "g001_label05",
+      "seed": 20261116,
+      "severity": "full"
+    },
+    {
+      "factor": 0.0,
+      "group_id": 1,
+      "label": 6,
+      "label_name": "M6-Full",
+      "motor_python": 5,
+      "motor_simulink": 6,
+      "name": "motor5_full",
+      "run_id": 1,
+      "run_key": "g001_label06",
+      "seed": 20261116,
+      "severity": "full"
+    },
+    {
+      "factor": 0.2,
+      "group_id": 1,
+      "label": 7,
+      "label_name": "M1-Severe",
+      "motor_python": 0,
+      "motor_simulink": 1,
+      "name": "motor0_severe",
+      "run_id": 1,
+      "run_key": "g001_label07",
+      "seed": 20261116,
+      "severity": "severe"
+    },
+    {
+      "factor": 0.2,
+      "group_id": 1,
+      "label": 8,
+      "label_name": "M2-Severe",
+      "motor_python": 1,
+      "motor_simulink": 2,
+      "name": "motor1_severe",
+      "run_id": 1,
+      "run_key": "g001_label08",
+      "seed": 20261116,
+      "severity": "severe"
+    },
+    {
+      "factor": 0.2,
+      "group_id": 1,
+      "label": 9,
+      "label_name": "M3-Severe",
+      "motor_python": 2,
+      "motor_simulink": 3,
+      "name": "motor2_severe",
+      "run_id": 1,
+      "run_key": "g001_label09",
+      "seed": 20261116,
+      "severity": "severe"
+    },
+    {
+      "factor": 0.2,
+      "group_id": 1,
+      "label": 10,
+      "label_name": "M4-Severe",
+      "motor_python": 3,
+      "motor_simulink": 4,
+      "name": "motor3_severe",
+      "run_id": 1,
+      "run_key": "g001_label10",
+      "seed": 20261116,
+      "severity": "severe"
+    },
+    {
+      "factor": 0.2,
+      "group_id": 1,
+      "label": 11,
+      "label_name": "M5-Severe",
+      "motor_python": 4,
+      "motor_simulink": 5,
+      "name": "motor4_severe",
+      "run_id": 1,
+      "run_key": "g001_label11",
+      "seed": 20261116,
+      "severity": "severe"
+    },
+    {
+      "factor": 0.2,
+      "group_id": 1,
+      "label": 12,
+      "label_name": "M6-Severe",
+      "motor_python": 5,
+      "motor_simulink": 6,
+      "name": "motor5_severe",
+      "run_id": 1,
+      "run_key": "g001_label12",
+      "seed": 20261116,
+      "severity": "severe"
+    },
+    {
+      "factor": 0.8,
+      "group_id": 1,
+      "label": 13,
+      "label_name": "M1-Partial",
+      "motor_python": 0,
+      "motor_simulink": 1,
+      "name": "motor0_partial",
+      "run_id": 1,
+      "run_key": "g001_label13",
+      "seed": 20261116,
+      "severity": "partial"
+    },
+    {
+      "factor": 0.8,
+      "group_id": 1,
+      "label": 14,
+      "label_name": "M2-Partial",
+      "motor_python": 1,
+      "motor_simulink": 2,
+      "name": "motor1_partial",
+      "run_id": 1,
+      "run_key": "g001_label14",
+      "seed": 20261116,
+      "severity": "partial"
+    },
+    {
+      "factor": 0.8,
+      "group_id": 1,
+      "label": 15,
+      "label_name": "M3-Partial",
+      "motor_python": 2,
+      "motor_simulink": 3,
+      "name": "motor2_partial",
+      "run_id": 1,
+      "run_key": "g001_label15",
+      "seed": 20261116,
+      "severity": "partial"
+    },
+    {
+      "factor": 0.8,
+      "group_id": 1,
+      "label": 16,
+      "label_name": "M4-Partial",
+      "motor_python": 3,
+      "motor_simulink": 4,
+      "name": "motor3_partial",
+      "run_id": 1,
+      "run_key": "g001_label16",
+      "seed": 20261116,
+      "severity": "partial"
+    },
+    {
+      "factor": 0.8,
+      "group_id": 1,
+      "label": 17,
+      "label_name": "M5-Partial",
+      "motor_python": 4,
+      "motor_simulink": 5,
+      "name": "motor4_partial",
+      "run_id": 1,
+      "run_key": "g001_label17",
+      "seed": 20261116,
+      "severity": "partial"
+    },
+    {
+      "factor": 0.8,
+      "group_id": 1,
+      "label": 18,
+      "label_name": "M6-Partial",
+      "motor_python": 5,
+      "motor_simulink": 6,
+      "name": "motor5_partial",
+      "run_id": 1,
+      "run_key": "g001_label18",
+      "seed": 20261116,
+      "severity": "partial"
+    },
+    {
+      "factor": 1.0,
+      "group_id": 2,
+      "label": 0,
+      "label_name": "Normal",
+      "motor_python": -1,
+      "motor_simulink": 0,
+      "name": "normal",
+      "run_id": 2,
+      "run_key": "g002_label00",
+      "seed": 20261117,
+      "severity": "normal"
+    },
+    {
+      "factor": 0.0,
+      "group_id": 2,
+      "label": 1,
+      "label_name": "M1-Full",
+      "motor_python": 0,
+      "motor_simulink": 1,
+      "name": "motor0_full",
+      "run_id": 2,
+      "run_key": "g002_label01",
+      "seed": 20261117,
+      "severity": "full"
+    },
+    {
+      "factor": 0.0,
+      "group_id": 2,
+      "label": 2,
+      "label_name": "M2-Full",
+      "motor_python": 1,
+      "motor_simulink": 2,
+      "name": "motor1_full",
+      "run_id": 2,
+      "run_key": "g002_label02",
+      "seed": 20261117,
+      "severity": "full"
+    },
+    {
+      "factor": 0.0,
+      "group_id": 2,
+      "label": 3,
+      "label_name": "M3-Full",
+      "motor_python": 2,
+      "motor_simulink": 3,
+      "name": "motor2_full",
+      "run_id": 2,
+      "run_key": "g002_label03",
+      "seed": 20261117,
+      "severity": "full"
+    },
+    {
+      "factor": 0.0,
+      "group_id": 2,
+      "label": 4,
+      "label_name": "M4-Full",
+      "motor_python": 3,
+      "motor_simulink": 4,
+      "name": "motor3_full",
+      "run_id": 2,
+      "run_key": "g002_label04",
+      "seed": 20261117,
+      "severity": "full"
+    },
+    {
+      "factor": 0.0,
+      "group_id": 2,
+      "label": 5,
+      "label_name": "M5-Full",
+      "motor_python": 4,
+      "motor_simulink": 5,
+      "name": "motor4_full",
+      "run_id": 2,
+      "run_key": "g002_label05",
+      "seed": 20261117,
+      "severity": "full"
+    },
+    {
+      "factor": 0.0,
+      "group_id": 2,
+      "label": 6,
+      "label_name": "M6-Full",
+      "motor_python": 5,
+      "motor_simulink": 6,
+      "name": "motor5_full",
+      "run_id": 2,
+      "run_key": "g002_label06",
+      "seed": 20261117,
+      "severity": "full"
+    },
+    {
+      "factor": 0.2,
+      "group_id": 2,
+      "label": 7,
+      "label_name": "M1-Severe",
+      "motor_python": 0,
+      "motor_simulink": 1,
+      "name": "motor0_severe",
+      "run_id": 2,
+      "run_key": "g002_label07",
+      "seed": 20261117,
+      "severity": "severe"
+    },
+    {
+      "factor": 0.2,
+      "group_id": 2,
+      "label": 8,
+      "label_name": "M2-Severe",
+      "motor_python": 1,
+      "motor_simulink": 2,
+      "name": "motor1_severe",
+      "run_id": 2,
+      "run_key": "g002_label08",
+      "seed": 20261117,
+      "severity": "severe"
+    },
+    {
+      "factor": 0.2,
+      "group_id": 2,
+      "label": 9,
+      "label_name": "M3-Severe",
+      "motor_python": 2,
+      "motor_simulink": 3,
+      "name": "motor2_severe",
+      "run_id": 2,
+      "run_key": "g002_label09",
+      "seed": 20261117,
+      "severity": "severe"
+    },
+    {
+      "factor": 0.2,
+      "group_id": 2,
+      "label": 10,
+      "label_name": "M4-Severe",
+      "motor_python": 3,
+      "motor_simulink": 4,
+      "name": "motor3_severe",
+      "run_id": 2,
+      "run_key": "g002_label10",
+      "seed": 20261117,
+      "severity": "severe"
+    },
+    {
+      "factor": 0.2,
+      "group_id": 2,
+      "label": 11,
+      "label_name": "M5-Severe",
+      "motor_python": 4,
+      "motor_simulink": 5,
+      "name": "motor4_severe",
+      "run_id": 2,
+      "run_key": "g002_label11",
+      "seed": 20261117,
+      "severity": "severe"
+    },
+    {
+      "factor": 0.2,
+      "group_id": 2,
+      "label": 12,
+      "label_name": "M6-Severe",
+      "motor_python": 5,
+      "motor_simulink": 6,
+      "name": "motor5_severe",
+      "run_id": 2,
+      "run_key": "g002_label12",
+      "seed": 20261117,
+      "severity": "severe"
+    },
+    {
+      "factor": 0.8,
+      "group_id": 2,
+      "label": 13,
+      "label_name": "M1-Partial",
+      "motor_python": 0,
+      "motor_simulink": 1,
+      "name": "motor0_partial",
+      "run_id": 2,
+      "run_key": "g002_label13",
+      "seed": 20261117,
+      "severity": "partial"
+    },
+    {
+      "factor": 0.8,
+      "group_id": 2,
+      "label": 14,
+      "label_name": "M2-Partial",
+      "motor_python": 1,
+      "motor_simulink": 2,
+      "name": "motor1_partial",
+      "run_id": 2,
+      "run_key": "g002_label14",
+      "seed": 20261117,
+      "severity": "partial"
+    },
+    {
+      "factor": 0.8,
+      "group_id": 2,
+      "label": 15,
+      "label_name": "M3-Partial",
+      "motor_python": 2,
+      "motor_simulink": 3,
+      "name": "motor2_partial",
+      "run_id": 2,
+      "run_key": "g002_label15",
+      "seed": 20261117,
+      "severity": "partial"
+    },
+    {
+      "factor": 0.8,
+      "group_id": 2,
+      "label": 16,
+      "label_name": "M4-Partial",
+      "motor_python": 3,
+      "motor_simulink": 4,
+      "name": "motor3_partial",
+      "run_id": 2,
+      "run_key": "g002_label16",
+      "seed": 20261117,
+      "severity": "partial"
+    },
+    {
+      "factor": 0.8,
+      "group_id": 2,
+      "label": 17,
+      "label_name": "M5-Partial",
+      "motor_python": 4,
+      "motor_simulink": 5,
+      "name": "motor4_partial",
+      "run_id": 2,
+      "run_key": "g002_label17",
+      "seed": 20261117,
+      "severity": "partial"
+    },
+    {
+      "factor": 0.8,
+      "group_id": 2,
+      "label": 18,
+      "label_name": "M6-Partial",
+      "motor_python": 5,
+      "motor_simulink": 6,
+      "name": "motor5_partial",
+      "run_id": 2,
+      "run_key": "g002_label18",
+      "seed": 20261117,
+      "severity": "partial"
+    }
+  ],
+  "scenarios": [
+    {
+      "factor": 1.0,
+      "label": 0,
+      "label_name": "Normal",
+      "motor_python": -1,
+      "motor_simulink": 0,
+      "name": "normal",
+      "severity": "normal"
+    },
+    {
+      "factor": 0.0,
+      "label": 1,
+      "label_name": "M1-Full",
+      "motor_python": 0,
+      "motor_simulink": 1,
+      "name": "motor0_full",
+      "severity": "full"
+    },
+    {
+      "factor": 0.0,
+      "label": 2,
+      "label_name": "M2-Full",
+      "motor_python": 1,
+      "motor_simulink": 2,
+      "name": "motor1_full",
+      "severity": "full"
+    },
+    {
+      "factor": 0.0,
+      "label": 3,
+      "label_name": "M3-Full",
+      "motor_python": 2,
+      "motor_simulink": 3,
+      "name": "motor2_full",
+      "severity": "full"
+    },
+    {
+      "factor": 0.0,
+      "label": 4,
+      "label_name": "M4-Full",
+      "motor_python": 3,
+      "motor_simulink": 4,
+      "name": "motor3_full",
+      "severity": "full"
+    },
+    {
+      "factor": 0.0,
+      "label": 5,
+      "label_name": "M5-Full",
+      "motor_python": 4,
+      "motor_simulink": 5,
+      "name": "motor4_full",
+      "severity": "full"
+    },
+    {
+      "factor": 0.0,
+      "label": 6,
+      "label_name": "M6-Full",
+      "motor_python": 5,
+      "motor_simulink": 6,
+      "name": "motor5_full",
+      "severity": "full"
+    },
+    {
+      "factor": 0.2,
+      "label": 7,
+      "label_name": "M1-Severe",
+      "motor_python": 0,
+      "motor_simulink": 1,
+      "name": "motor0_severe",
+      "severity": "severe"
+    },
+    {
+      "factor": 0.2,
+      "label": 8,
+      "label_name": "M2-Severe",
+      "motor_python": 1,
+      "motor_simulink": 2,
+      "name": "motor1_severe",
+      "severity": "severe"
+    },
+    {
+      "factor": 0.2,
+      "label": 9,
+      "label_name": "M3-Severe",
+      "motor_python": 2,
+      "motor_simulink": 3,
+      "name": "motor2_severe",
+      "severity": "severe"
+    },
+    {
+      "factor": 0.2,
+      "label": 10,
+      "label_name": "M4-Severe",
+      "motor_python": 3,
+      "motor_simulink": 4,
+      "name": "motor3_severe",
+      "severity": "severe"
+    },
+    {
+      "factor": 0.2,
+      "label": 11,
+      "label_name": "M5-Severe",
+      "motor_python": 4,
+      "motor_simulink": 5,
+      "name": "motor4_severe",
+      "severity": "severe"
+    },
+    {
+      "factor": 0.2,
+      "label": 12,
+      "label_name": "M6-Severe",
+      "motor_python": 5,
+      "motor_simulink": 6,
+      "name": "motor5_severe",
+      "severity": "severe"
+    },
+    {
+      "factor": 0.8,
+      "label": 13,
+      "label_name": "M1-Partial",
+      "motor_python": 0,
+      "motor_simulink": 1,
+      "name": "motor0_partial",
+      "severity": "partial"
+    },
+    {
+      "factor": 0.8,
+      "label": 14,
+      "label_name": "M2-Partial",
+      "motor_python": 1,
+      "motor_simulink": 2,
+      "name": "motor1_partial",
+      "severity": "partial"
+    },
+    {
+      "factor": 0.8,
+      "label": 15,
+      "label_name": "M3-Partial",
+      "motor_python": 2,
+      "motor_simulink": 3,
+      "name": "motor2_partial",
+      "severity": "partial"
+    },
+    {
+      "factor": 0.8,
+      "label": 16,
+      "label_name": "M4-Partial",
+      "motor_python": 3,
+      "motor_simulink": 4,
+      "name": "motor3_partial",
+      "severity": "partial"
+    },
+    {
+      "factor": 0.8,
+      "label": 17,
+      "label_name": "M5-Partial",
+      "motor_python": 4,
+      "motor_simulink": 5,
+      "name": "motor4_partial",
+      "severity": "partial"
+    },
+    {
+      "factor": 0.8,
+      "label": 18,
+      "label_name": "M6-Partial",
+      "motor_python": 5,
+      "motor_simulink": 6,
+      "name": "motor5_partial",
+      "severity": "partial"
+    }
+  ],
+  "sources": [
+    {
+      "path": "simulink/blocks/controller_step.m",
+      "sha256": "59b5cba4caa0f603fc62fc9cf8fefd7d68ab2c3bef379d0a25253c0677281ac2"
+    },
+    {
+      "path": "simulink/blocks/envelope_step.m",
+      "sha256": "5e3b38e8351ce50df5cb163e2fefb123805cf6957b6131258cc57beb272eaeb4"
+    },
+    {
+      "path": "simulink/blocks/fault_schedule.m",
+      "sha256": "653b22ae9d2c163c58968280c09038356da120aec15cfa2a5b8a51bf142d8e82"
+    },
+    {
+      "path": "simulink/blocks/plant_step.m",
+      "sha256": "dfc57f3730397b3b7e5575a3a221347b17d09deb9846d4208791cadb14fe239d"
+    },
+    {
+      "path": "simulink/blocks/reference_step.m",
+      "sha256": "11afe313cf6289f1ca3c877c0d6935ff249af64f0b0b10a25327cae6ba261891"
+    },
+    {
+      "path": "simulink/blocks/sensor_step.m",
+      "sha256": "e006957a32e56749334cb60a1479fa22c88f63de5347ea6b816039e94f47086e"
+    },
+    {
+      "path": "simulink/blocks/task_reference.m",
+      "sha256": "ceabacd635e829f52f183e1b8f0b686089f71bd34d2c71acbb9e13b240826af4"
+    },
+    {
+      "path": "simulink/blocks/wind_step.m",
+      "sha256": "9f514ff2a83547315d3336f77140df178c775c8526255d93bdc07a2d7d28db96"
+    },
+    {
+      "path": "simulink/build_hex_model.m",
+      "sha256": "5202c5fcc22d66ddd97cc3943c9d9b41c55c1a5dc1d9fc87d7553287ca39ced9"
+    },
+    {
+      "path": "simulink/collect_hex_dataset.m",
+      "sha256": "262fff086c95e5c0cf253b29c5db9f0359a4ecadc6e9128321de0f0f9beea657"
+    },
+    {
+      "path": "simulink/configs/research.json",
+      "sha256": "c9b845ff18165be26c091bc65e2ca41820bc6717f176acc19130a5bb60c8c25e"
+    },
+    {
+      "path": "simulink/configure_hex_simulink.m",
+      "sha256": "8e166c0c6e2665d7981689cd526476dd980d5dbd00c2d4597d69c47a216e95e5"
+    },
+    {
+      "path": "simulink/diagnose_hex_healthy_tilt.m",
+      "sha256": "2296ac1ba47d647b26a6993541be6984e3d048877fc8293a74520a1a8ce77db5"
+    },
+    {
+      "path": "simulink/functions/hex_allocate.m",
+      "sha256": "88687780858e16ef2eba070cc2943f0f31f7a45050291d633722d745bb352038"
+    },
+    {
+      "path": "simulink/functions/hex_derivative.m",
+      "sha256": "185c9133a59e87b90cb721f191f15cb290a79520eedb968566813867474fd747"
+    },
+    {
+      "path": "simulink/functions/hex_desired_attitude.m",
+      "sha256": "d67dc0e7391b9cdfdf4deaf763796e291eb245c137f433cd23b8e82617832db9"
+    },
+    {
+      "path": "simulink/functions/hex_multiply.m",
+      "sha256": "9f521addbd1991ab2951419146072c82ebedfeac0b3888dfb564e36550d1cbe2"
+    },
+    {
+      "path": "simulink/functions/hex_rotation.m",
+      "sha256": "1ab8bedc5baf8c157f5af4d74d90274532d55dc8b315088e1c92e17615d3a96c"
+    },
+    {
+      "path": "simulink/functions/hex_trf.m",
+      "sha256": "01a60a3a204c757e19472a6bf5a82a12f3b507912508ab70baf10c16f2d462d1"
+    },
+    {
+      "path": "simulink/hex_base_parameters.m",
+      "sha256": "b91d39b1f594027039181d30212590b5667a53ee5eca9056eb48569f81a7ff6b"
+    },
+    {
+      "path": "simulink/hex_block_parameters.m",
+      "sha256": "7de750cde9e8fc7cc1cfa4676525fb1a8017250504d7c1307d8984bfc0685ac6"
+    },
+    {
+      "path": "simulink/hex_common_block_parameters.m",
+      "sha256": "c3bfe115b9e86588bdf1f46f048f0ee4fd59f0c5cad4f64834fa71505e896c99"
+    },
+    {
+      "path": "simulink/hex_evtol.slx",
+      "sha256": "5a3eeb9e75b64aa1c71e778e96f3cf1e6e1f48a2e0be19382abbbeaf345035b2"
+    },
+    {
+      "path": "simulink/hex_export_result.m",
+      "sha256": "5b31732467f5bb050282a44ca7adabd558ffb685af6fbdcc617afc5cef76e464"
+    },
+    {
+      "path": "simulink/hex_metrics.m",
+      "sha256": "d1e2af9484cbb719cd7d37b40e2b01a89a6e6fb7a2b43cbe3d64d15f3a9cb963"
+    },
+    {
+      "path": "simulink/hex_parameters.m",
+      "sha256": "21fcd25e0e21792b210d9603a43820883d2e725fd512b27025fac85f96e8494f"
+    },
+    {
+      "path": "simulink/hex_prepare_inputs.m",
+      "sha256": "1549c79ce2ddb6670e85d76058be3a6ec8419075a6bc0c645e6dcc88277776a5"
+    },
+    {
+      "path": "simulink/hex_signal_names.m",
+      "sha256": "1a776cee95c039dd0fe811cd94ceb05ec860926f38710f153264429eff2df89e"
+    },
+    {
+      "path": "simulink/hex_validate_parameters.m",
+      "sha256": "56ac21ea76218f37e4719e22c336f080e65fdc65ef31125cc2e0061c2c69a8e4"
+    },
+    {
+      "path": "simulink/my_simulation.m",
+      "sha256": "e3f1c72de24f9ce55aaf71125e132882584cd16b4895030fc5d03c349d050b3b"
+    },
+    {
+      "path": "simulink/open_hex_simulink.m",
+      "sha256": "a65ad206e8c33fe8ce158060ceac9ca97aecdaba01d9d65c0eeba9970fc34280"
+    },
+    {
+      "path": "simulink/plot_hex_healthy_assessment.m",
+      "sha256": "2cca0b827a4085e68e2d2e2b38d65b1bc44dd41ca44693650cdc6776717a92b3"
+    },
+    {
+      "path": "simulink/plot_hex_results.m",
+      "sha256": "613b9979ae5c3782d7c55a449ed4e1ae2347ab58f5bfc250cc6b54a4f2f4c545"
+    },
+    {
+      "path": "simulink/run_hex_healthy_assessment.m",
+      "sha256": "6f69d5487dd731bfced43104f28f0f03125b3d732ca2a008d557f584d41e8378"
+    },
+    {
+      "path": "simulink/run_hex_simulink.m",
+      "sha256": "156d9720478f6cf79ca6a849f06d7efeb239e6d54e7ef1afe43e1d3b93867c7b"
+    },
+    {
+      "path": "simulink/style_hex_model.m",
+      "sha256": "fe490191fd575e6837169d7156d99a3b196805be68531b57383f7e80b0b74a80"
+    },
+    {
+      "path": "simulink/validation/finalize_hex_delivery.m",
+      "sha256": "ddc001c2358b3a6c83054bfd4e68248d8336d00412a4ad5e2634221d61f5ecc3"
+    }
+  ],
+  "task_family": 2
+}

@@ -1,0 +1,13 @@
+{
+  "baseline": "f474282d07f9f86de24fcacb6f000b2e09205ef1",
+  "collection_plan": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_gan\\v3_imu_rpm_prefix_20261105\\raw_new_test3\\collection_plan.json",
+  "created_utc": "2026-11-05T03:59:58.488363+00:00",
+  "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "experiment_branch": "codex/simulink-gan-v3-prefix",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "starting_branch": "codex/simulink-gan-v2",
+  "starting_head": "f474282d07f9f86de24fcacb6f000b2e09205ef1",
+  "starting_worktree_clean": true,
+  "torch": "2.5.1+cu121"
+}
