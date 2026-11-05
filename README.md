@@ -1,5 +1,7 @@
 # eVTOL_Simulation
 
+V3 独立实验入口：[12维传感器输入与训练时长对照](docs/SIMULINK_GAN_V3_PREFIX.md)。基于 `f474282`，主模型去除电机指令，比较前6／12／24秒与等量全时段训练；在前6／24秒上比较原类别条件GAN和ROS。使用3个新配对条件组作冻结后的正式测试，V2数据与结果继续保留。配置为 `configs/simulink_gan_v3_prefix.json`，执行入口为 `run_simulink_v3.py`。
+
 V2 固定来源实验入口：[Simulink GAN V2](docs/SIMULINK_GAN_V2.md)。基于 `6f94612`，使用 12 个配对条件组、固定 6/3/3 训练/验证/测试用途、相同优化步数，以及验证选择后冻结的三个训练种子评价。配置为 `configs/simulink_gan_v2.json`；V1 的原始数据和结果继续保留。
 
 V2 已完成 228 次仿真和三个训练种子的统一测试：[实际结果与限制](docs/SIMULINK_GAN_V2_RESULTS.md)。补足训练预算的收益明显；原 GAN 与同量过采样的准确率接近，指令条件 GAN 的报警仍不稳定。

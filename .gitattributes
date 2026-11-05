@@ -12,3 +12,9 @@ replay_diagnostics.py text eol=lf
 simulink_v2_experiment.py text eol=lf
 run_simulink_gan.py text eol=lf
 configs/simulink_gan_v2.json text eol=lf
+# V3 freezes exact training and inference source hashes as well.
+simulink_v3_*.py text eol=lf
+run_simulink_v3.py text eol=lf
+audit_simulink_v3.py text eol=lf
+configs/simulink_gan_v3_prefix.json text eol=lf
+tests/test_simulink_v3.py text eol=lf
