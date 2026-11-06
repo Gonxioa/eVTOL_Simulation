@@ -1,0 +1,57 @@
+{
+  "base_commit": "de12679e56e508848477f1bf0074159dbb5b56d8",
+  "scope": "Whole-flight classification and causal event annotation implementation",
+  "tests": {
+    "command": "python -m unittest discover -s tests -v",
+    "passed": 90,
+    "failed": 0,
+    "new_sequence_semantics_tests": 13
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "platform": "Linux",
+    "torch": "2.5.1+cpu",
+    "rotorpy": "3.0.0",
+    "device": "cpu"
+  },
+  "synthetic_execution": {
+    "command": "python run_simulink_sequence.py demo --device cpu --output NEW_DIRECTORY",
+    "train_records": 38,
+    "validation_records": 19,
+    "classes": 19,
+    "points_per_record": 401,
+    "optimizer_updates": 4,
+    "unit": "complete_flight",
+    "synthetic_data_used": true
+  },
+  "original_native_training_performed": false,
+  "new_simulation_runs": 0,
+  "new_GAN_training_runs": 0,
+  "new_blind_test_performed": false,
+  "checks": [
+    "Full 2401-point inference matches contiguous computational chunks with persistent memory",
+    "Future measurements cannot change earlier predictions",
+    "Fault truth and onset are absent from inference arguments",
+    "Training source normalization and independent-condition partitioning",
+    "Padding does not contribute to history",
+    "Healthy prefix, current state and record-level history have distinct targets",
+    "Event boundaries are estimates; confirmation times and unresolved labels are preserved",
+    "Old pre-fault alarms are not credited as new fault detection",
+    "Interrupted optimizer/RNG continuation matches uninterrupted CPU training",
+    "One prediction per entire flight and complete segment export"
+  ],
+  "code_sha256": {
+    "simulink_sequence_data.py": "cae558def14205a3f7ccbe3a1a8fa0a86ec161d04edec817214b58692636d8e6",
+    "simulink_sequence_model.py": "bac3a3c3efd90604e7ae9c7a76b7163be0fd4557580adb2a0c744ef04bcbfc37",
+    "simulink_sequence_events.py": "df97f89d198a5d1f312369f7458c9aad5ac13be6db211aa6ba6cf1eb884ad1cc",
+    "run_simulink_sequence.py": "839be3b96443737ea779e3e59d4d861531a1775be76081a9ff782d569590a736",
+    "configs/simulink_sequence.json": "06c83c287188772f2f523923e122e2eee6f3a07eb485d74525f806a6ca916c70",
+    "tests/test_simulink_sequence.py": "66add4f7e2e4fae95a67bdf727f758784036d1bea3cd8a11857a26f25322a5bc"
+  },
+  "limitations": [
+    "Original CSV/MAT sources and learned weights reside on the user machine and were not available for a formal training run here",
+    "CPU execution checks do not establish CUDA equivalence or fault-recognition performance",
+    "Default hyperparameters and event thresholds are unvalidated research starting points",
+    "Current native scope is healthy or one motor fault episode per record; multi-fault generalization has not been tested"
+  ]
+}

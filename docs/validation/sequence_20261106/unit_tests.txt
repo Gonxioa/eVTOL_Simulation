@@ -1,0 +1,124 @@
+test_allocation_matrix_matches_hex_geometry (test_control_allocation.ControlAllocationTests.test_allocation_matrix_matches_hex_geometry) ... ok
+test_allocator_is_deterministic (test_control_allocation.ControlAllocationTests.test_allocator_is_deterministic) ... ok
+test_diagnostic_priority_sacrifices_yaw_first (test_control_allocation.ControlAllocationTests.test_diagnostic_priority_sacrifices_yaw_first) ... ok
+test_effectiveness_is_applied_once_in_plant_prediction (test_control_allocation.ControlAllocationTests.test_effectiveness_is_applied_once_in_plant_prediction) ... ok
+test_excess_collective_returns_best_bounded_solution (test_control_allocation.ControlAllocationTests.test_excess_collective_returns_best_bounded_solution) ... ok
+test_invalid_inputs_fail_loudly (test_control_allocation.ControlAllocationTests.test_invalid_inputs_fail_loudly) ... ok
+test_negative_collective_returns_zero_without_signed_sqrt (test_control_allocation.ControlAllocationTests.test_negative_collective_returns_zero_without_signed_sqrt) ... ok
+test_normal_hover_is_exact_symmetric_and_inside_speed_limit (test_control_allocation.ControlAllocationTests.test_normal_hover_is_exact_symmetric_and_inside_speed_limit) ... ok
+test_random_feasible_wrenches_remain_physical (test_control_allocation.ControlAllocationTests.test_random_feasible_wrenches_remain_physical) ... ok
+test_schedule_changes_exactly_at_fault_time (test_control_allocation.ControlAllocationTests.test_schedule_changes_exactly_at_fault_time) ... ok
+test_exported_allocator_audit_schema_passes_validator (test_controller_allocation_integration.ControllerAllocationIntegrationTests.test_exported_allocator_audit_schema_passes_validator) ... ok
+test_fault_truth_does_not_change_nominal_allocator_command (test_controller_allocation_integration.ControllerAllocationIntegrationTests.test_fault_truth_does_not_change_nominal_allocator_command) ... ok
+test_vehicle_applies_effectiveness_once_to_motor_speed_target (test_controller_allocation_integration.ControllerAllocationIntegrationTests.test_vehicle_applies_effectiveness_once_to_motor_speed_target) ... ok
+test_rotorpy_patch_is_hex_compatible_without_persistent_numpy_patch (test_hex_physical_characteristics.HexPhysicalCharacteristicsTests.test_rotorpy_patch_is_hex_compatible_without_persistent_numpy_patch) ... ok
+test_source_backed_parameter_values (test_hex_physical_characteristics.HexPhysicalCharacteristicsTests.test_source_backed_parameter_values) ... ok
+test_custom_noise_is_repeatable_with_same_seed (test_imu_wind.ImuTruthTests.test_custom_noise_is_repeatable_with_same_seed) ... ok
+test_missing_malformed_and_nonfinite_truth_fail_loudly (test_imu_wind.ImuTruthTests.test_missing_malformed_and_nonfinite_truth_fail_loudly) ... ok
+test_short_rotorpy_run_exposes_body_frame_truth (test_imu_wind.ImuTruthTests.test_short_rotorpy_run_exposes_body_frame_truth) ... ok
+test_specific_force_matches_independent_body_frame_calculation (test_imu_wind.ImuTruthTests.test_specific_force_matches_independent_body_frame_calculation) ... ok
+test_truth_sensor_uses_body_origin_and_has_no_builtin_error (test_imu_wind.ImuTruthTests.test_truth_sensor_uses_body_origin_and_has_no_builtin_error) ... ok
+test_zero_custom_noise_returns_truth_without_mutating_inputs (test_imu_wind.ImuTruthTests.test_zero_custom_noise_returns_truth_without_mutating_inputs) ... ok
+test_internal_type_error_is_not_masked (test_imu_wind.TurbulentWindTests.test_internal_type_error_is_not_masked) ... ok
+test_turbulence_is_seeded_and_independent_of_base_amplitude (test_imu_wind.TurbulentWindTests.test_turbulence_is_seeded_and_independent_of_base_amplitude) ... ok
+test_zero_turbulence_matches_configured_sinusoid (test_imu_wind.TurbulentWindTests.test_zero_turbulence_matches_configured_sinusoid) ... ok
+test_balanced_ratio_counts_and_quality_separation (test_simulink_gan_protocol.ProtocolTests.test_balanced_ratio_counts_and_quality_separation) ... ok
+test_causal_prefix_invariance (test_simulink_gan_protocol.ProtocolTests.test_causal_prefix_invariance) ... ok
+test_complete_pair_holdout_and_budget (test_simulink_gan_protocol.ProtocolTests.test_complete_pair_holdout_and_budget) ... ok
+test_data_config_signature_and_incompatible_checkpoint (test_simulink_gan_protocol.ProtocolTests.test_data_config_signature_and_incompatible_checkpoint) ... ok
+test_generator_updates_with_one_small_batch (test_simulink_gan_protocol.ProtocolTests.test_generator_updates_with_one_small_batch) ... ok
+test_label_mapping_strict_full_and_legacy_unchanged (test_simulink_gan_protocol.ProtocolTests.test_label_mapping_strict_full_and_legacy_unchanged) ... ok
+test_observable_units_delay_and_no_truth_fallback (test_simulink_gan_protocol.ProtocolTests.test_observable_units_delay_and_no_truth_fallback) ... ok
+test_quality_checks_duplicates_against_raw_similarity (test_simulink_gan_protocol.ProtocolTests.test_quality_checks_duplicates_against_raw_similarity) ... ok
+test_random_oversampling_matches_gan_ratio (test_simulink_gan_protocol.ProtocolTests.test_random_oversampling_matches_gan_ratio) ... ok
+test_scalers_only_fit_training (test_simulink_gan_protocol.ProtocolTests.test_scalers_only_fit_training) ... ok
+test_zero_ratio_generation_is_empty_without_forward (test_simulink_gan_protocol.ProtocolTests.test_zero_ratio_generation_is_empty_without_forward) ... ok
+test_24_second_chunked_inference_keeps_whole_flight_history (test_simulink_sequence.SequenceTests.test_24_second_chunked_inference_keeps_whole_flight_history) ... ok
+test_complete_flight_and_prefix_targets_keep_healthy_prefix (test_simulink_sequence.SequenceTests.test_complete_flight_and_prefix_targets_keep_healthy_prefix) ... ok
+test_events_have_estimated_boundaries_and_later_confirmation_times (test_simulink_sequence.SequenceTests.test_events_have_estimated_boundaries_and_later_confirmation_times) ... ok
+test_flight_loss_reaches_early_samples_without_independent_chunks (test_simulink_sequence.SequenceTests.test_flight_loss_reaches_early_samples_without_independent_chunks) ... ok
+test_future_data_cannot_change_previous_prefix_predictions (test_simulink_sequence.SequenceTests.test_future_data_cannot_change_previous_prefix_predictions) ... ok
+test_inference_resets_between_flights_and_never_reads_fault_truth (test_simulink_sequence.SequenceTests.test_inference_resets_between_flights_and_never_reads_fault_truth) ... ok
+test_low_class_confidence_keeps_fault_localization_unresolved (test_simulink_sequence.SequenceTests.test_low_class_confidence_keeps_fault_localization_unresolved) ... ok
+test_native_loader_does_not_open_numerical_test_sources (test_simulink_sequence.SequenceTests.test_native_loader_does_not_open_numerical_test_sources) ... ok
+test_new_evidence_can_correct_a_previously_confirmed_class (test_simulink_sequence.SequenceTests.test_new_evidence_can_correct_a_previously_confirmed_class) ... ok
+test_padding_is_not_history_and_cannot_change_record_output (test_simulink_sequence.SequenceTests.test_padding_is_not_history_and_cannot_change_record_output) ... ok
+test_partitions_and_scaler_reject_validation_and_source_leakage (test_simulink_sequence.SequenceTests.test_partitions_and_scaler_reject_validation_and_source_leakage) ... ok
+test_prefault_alarm_is_not_credited_as_new_fault_detection (test_simulink_sequence.SequenceTests.test_prefault_alarm_is_not_credited_as_new_fault_detection) ... ok
+test_whole_flight_training_checkpoint_resume_and_annotation_exports (test_simulink_sequence.SequenceTests.test_whole_flight_training_checkpoint_resume_and_annotation_exports) ...   [增益校验] SE3外环增益已显式生效: kp_pos=[ 6.5  6.5 15. ], kd_pos=[4. 4. 9.], kp_att=544.0, kd_att=46.64
+  [导出] → /tmp/tmpk0w_s0o2/motor2_severe__run001.csv  (1801 行)
+  [增益校验] SE3外环增益已显式生效: kp_pos=[ 6.5  6.5 15. ], kd_pos=[4. 4. 9.], kp_att=544.0, kd_att=46.64
+  [增益校验] SE3外环增益已显式生效: kp_pos=[ 6.5  6.5 15. ], kd_pos=[4. 4. 9.], kp_att=544.0, kd_att=46.64
+  [增益校验] SE3外环增益已显式生效: kp_pos=[ 6.5  6.5 15. ], kd_pos=[4. 4. 9.], kp_att=544.0, kd_att=46.64
+SEQUENCE_EPOCH 1 updates 1 train_record_F1 0.0 validation_record_F1 0.0
+SEQUENCE_EPOCH 2 updates 2 train_record_F1 0.0 validation_record_F1 0.0
+SEQUENCE_EPOCH 2 updates 2 train_record_F1 0.0 validation_record_F1 0.0
+ok
+test_both_gans_exact_effective_update_budget (test_simulink_v2.V2Tests.test_both_gans_exact_effective_update_budget) ... GENERATOR_CHECKPOINT /tmp/tmp51smr1mk/plain 1 delta 0.00010001659393310547
+GENERATOR_CHECKPOINT /tmp/tmp51smr1mk/plain 2 delta 0.00023780763149261475
+GENERATOR_CHECKPOINT /tmp/tmp51smr1mk/command 1 delta 0.00010001659393310547
+GENERATOR_CHECKPOINT /tmp/tmp51smr1mk/command 2 delta 0.0002377331256866455
+ok
+test_command_condition_in_both_networks_and_response_gp (test_simulink_v2.V2Tests.test_command_condition_in_both_networks_and_response_gp) ... ok
+test_constant_channels_and_lagged_quality (test_simulink_v2.V2Tests.test_constant_channels_and_lagged_quality) ... ok
+test_detection_independent_of_class_and_localization_clock (test_simulink_v2.V2Tests.test_detection_independent_of_class_and_localization_clock) ... ok
+test_dual_and_single_shared_initial_encoder (test_simulink_v2.V2Tests.test_dual_and_single_shared_initial_encoder) ... ok
+test_equal_classifier_updates_and_balanced_detection_loss (test_simulink_v2.V2Tests.test_equal_classifier_updates_and_balanced_detection_loss) ... CLASSIFIER_STEP False 1/3 loss=2.89051
+CLASSIFIER_STEP False 3/3 loss=2.93721
+CLASSIFIER_STEP True 1/3 loss=3.32312
+CLASSIFIER_STEP True 3/3 loss=3.18603
+ok
+test_fixed_source_roles_and_test_lock (test_simulink_v2.V2Tests.test_fixed_source_roles_and_test_lock) ... ok
+test_frozen_configuration_cannot_be_reselected_or_tampered (test_simulink_v2.V2Tests.test_frozen_configuration_cannot_be_reselected_or_tampered) ... CONFIGURATION_FROZEN 78fa413c7319417da9cd76bcc1e2c44d6b93107d1cda17ef89250b09b44ddc1f
+ok
+test_generator_optimizer_resume (test_simulink_v2.V2Tests.test_generator_optimizer_resume) ... GENERATOR_CHECKPOINT /tmp/tmpfx7gcj7a/full 1 delta 0.00010001659393310547
+GENERATOR_CHECKPOINT /tmp/tmpfx7gcj7a/full 2 delta 0.0002377629280090332
+GENERATOR_CHECKPOINT /tmp/tmpfx7gcj7a/resume 1 delta 0.00010001659393310547
+GENERATOR_CHECKPOINT /tmp/tmpfx7gcj7a/resume 2 delta 0.0002377629280090332
+ok
+test_matched_ros_is_selected_at_same_gan_ratio (test_simulink_v2.V2Tests.test_matched_ros_is_selected_at_same_gan_ratio) ... ok
+test_optimizer_resume_and_signature_rejection (test_simulink_v2.V2Tests.test_optimizer_resume_and_signature_rejection) ... CLASSIFIER_STEP full 1/3 loss=3.29454
+CLASSIFIER_STEP full 3/3 loss=3.26946
+CLASSIFIER_STEP resume 1/1 loss=3.29454
+CLASSIFIER_STEP resume 3/3 loss=3.26946
+ok
+test_rule_uses_delayed_response_and_squares_speed_ratio (test_simulink_v2.V2Tests.test_rule_uses_delayed_response_and_squares_speed_ratio) ... ok
+test_E_source_count_and_scaler_only_selected_windows (test_simulink_v3.V3Tests.test_E_source_count_and_scaler_only_selected_windows) ... ok
+test_causal_predictions_have_no_fault_time_and_ignore_future (test_simulink_v3.V3Tests.test_causal_predictions_have_no_fault_time_and_ignore_future) ... ok
+test_evaluation_prefix_views_share_windows (test_simulink_v3.V3Tests.test_evaluation_prefix_views_share_windows) ... ok
+test_existing_plain_GAN_supports_12D_without_command_channels (test_simulink_v3.V3Tests.test_existing_plain_GAN_supports_12D_without_command_channels) ... ok
+test_fixed_roles_and_ratio_selection_across_seeds (test_simulink_v3.V3Tests.test_fixed_roles_and_ratio_selection_across_seeds) ... ok
+test_floor_augmentation_and_matched_ROS (test_simulink_v3.V3Tests.test_floor_augmentation_and_matched_ROS) ... ok
+test_main_argmax_is_separate_from_alarm_gate (test_simulink_v3.V3Tests.test_main_argmax_is_separate_from_alarm_gate) ... ok
+test_main_features_ignore_commands_truth_metadata (test_simulink_v3.V3Tests.test_main_features_ignore_commands_truth_metadata) ... ok
+test_preexisting_alarm_not_new_detection_and_unique_healthy_exposure (test_simulink_v3.V3Tests.test_preexisting_alarm_not_new_detection_and_unique_healthy_exposure) ... ok
+test_prefix_counts_endpoints_and_labels (test_simulink_v3.V3Tests.test_prefix_counts_endpoints_and_labels) ... ok
+test_test_cache_read_needs_freeze_and_unchanged_artifacts (test_simulink_v3.V3Tests.test_test_cache_read_needs_freeze_and_unchanged_artifacts) ... ok
+test_time_grid_is_checked_and_no_padding (test_simulink_v3.V3Tests.test_time_grid_is_checked_and_no_padding) ... ok
+test_budget_resume_restores_actual_optimizer_and_rng (test_simulink_v4.V4Tests.test_budget_resume_restores_actual_optimizer_and_rng) ... V4_CLASSIFIER lstm w 8 seed 42 step 1 train_f1 0.0031 validation_f1 0.0031
+V4_CLASSIFIER lstm w 8 seed 42 step 2 train_f1 0.0031 validation_f1 0.0031
+V4_CLASSIFIER lstm w 8 seed 42 step 1 train_f1 0.0031 validation_f1 0.0031
+V4_CLASSIFIER lstm w 8 seed 42 step 2 train_f1 0.0031 validation_f1 0.0031
+ok
+test_common_windows_have_same_ends_and_counts (test_simulink_v4.V4Tests.test_common_windows_have_same_ends_and_counts) ... ok
+test_empty_mixed_scope_is_recorded_not_invented (test_simulink_v4.V4Tests.test_empty_mixed_scope_is_recorded_not_invented) ... ok
+test_equal_source_counts_scaler_and_tamper_detection (test_simulink_v4.V4Tests.test_equal_source_counts_scaler_and_tamper_detection) ... ok
+test_fault_fraction_and_transport_metadata (test_simulink_v4.V4Tests.test_fault_fraction_and_transport_metadata) ... ok
+test_fixed_CNN_handles_registered_lengths (test_simulink_v4.V4Tests.test_fixed_CNN_handles_registered_lengths) ... ok
+test_native_prefix_counts_from_zero (test_simulink_v4.V4Tests.test_native_prefix_counts_from_zero) ... ok
+test_no_future_or_cross_record_padding (test_simulink_v4.V4Tests.test_no_future_or_cross_record_padding) ... ok
+test_phase_macro_f1_support_and_joint_severity (test_simulink_v4.V4Tests.test_phase_macro_f1_support_and_joint_severity) ... ok
+test_ranking_ties_and_registered_seed_design (test_simulink_v4.V4Tests.test_ranking_ties_and_registered_seed_design) ... ok
+test_statistical_features_are_finite_and_fixed_size (test_simulink_v4.V4Tests.test_statistical_features_are_finite_and_fixed_size) ... ok
+test_test_arrays_locked_before_cache_access (test_simulink_v4.V4Tests.test_test_arrays_locked_before_cache_access) ... ok
+test_confirmation_token_pins_files_config_and_source_identity (test_simulink_v4_confirmation.V4ConfirmationTests.test_confirmation_token_pins_files_config_and_source_identity) ... ok
+test_planning_caps_are_budget_not_more_independent_seeds (test_simulink_v4_confirmation.V4ConfirmationTests.test_planning_caps_are_budget_not_more_independent_seeds) ... ok
+test_planning_zero_variance_still_uses_registered_minimum (test_simulink_v4_confirmation.V4ConfirmationTests.test_planning_zero_variance_still_uses_registered_minimum) ... ok
+test_fixed_probes_restore_training_RNG (test_simulink_v4_gan.V4GANTests.test_fixed_probes_restore_training_RNG) ... ok
+test_resume_and_missing_probe_recovery_match_uninterrupted_training (test_simulink_v4_gan.V4GANTests.test_resume_and_missing_probe_recovery_match_uninterrupted_training) ... ok
+test_scaler_bridge_is_exact_and_differentiable (test_simulink_v4_gan.V4GANTests.test_scaler_bridge_is_exact_and_differentiable) ... ok
+
+----------------------------------------------------------------------
+Ran 90 tests in 3.026s
+
+OK

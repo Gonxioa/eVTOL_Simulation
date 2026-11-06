@@ -1,0 +1,30 @@
+{
+  "profile": "whole_flight_12d_v1",
+  "development_registry": "output_simulink_gan/v4_evidence_20261105/development_sources.json",
+  "results_root": "output_simulink_sequence/whole_flight_v1_20261106",
+  "sample_hz": 100,
+  "decision_samples": 10,
+  "hidden": 64,
+  "layers": 2,
+  "dropout": 0.3,
+  "batch_flights": 4,
+  "max_epochs": 100,
+  "patience": 15,
+  "learning_rate": 0.001,
+  "gradient_clip": 5.0,
+  "record_loss_weight": 1.0,
+  "prefix_loss_weight": 0.25,
+  "current_loss_weight": 0.25,
+  "seed": 42,
+  "event_policy": {
+    "fault_threshold": 0.8,
+    "clear_threshold": 0.3,
+    "class_threshold": 0.6,
+    "confirm_s": 0.3,
+    "localize_s": 0.3,
+    "clear_s": 0.5
+  },
+  "scope": "One healthy or single-motor single-fault episode per flight, matching current native data. Record-level classification and causal event annotation are separate outputs.",
+  "status": "Untuned implementation defaults; not V4-selected values or a claim of performance.",
+  "basis": "Preserve 12 measured channels and original source roles. Train on complete trajectories. Computation chunks do not define samples or reset memory. Select checkpoints by validation flight-level fixed-19 macro F1; event working points require separate validation."
+}
