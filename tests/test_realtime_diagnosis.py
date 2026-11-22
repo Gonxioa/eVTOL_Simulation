@@ -15,6 +15,7 @@ from simulink_realtime_training import segmented_backward, sample_weights, detac
 from simulink_sequence_data import Flight, collate
 from simulink_sequence_events import EventPolicy
 from simulink_sequence_model import CausalFlightCNN, FlightClassifier
+from stream_fault_diagnosis import MeasurementAligner, diagnose_packets
 
 
 def posterior(label, confidence=.99):
@@ -199,6 +200,52 @@ class RealtimeTests(unittest.TestCase):
             torch.save(dict(config={}),path)
             with self.assertRaisesRegex(ValueError,"Legacy checkpoint"):
                 load_realtime_checkpoint(path)
+
+    def test_live_sensor_alignment_delays_only_imu_across_packets(self):
+        aligner = MeasurementAligner(3)
+        pieces = [aligner.push(self.x[:1]),aligner.push(self.x[1:17]),aligner.push(self.x[17:])]
+        result = np.concatenate(pieces)
+        np.testing.assert_array_equal(result[:,:6],self.x[np.maximum(np.arange(len(self.x))-3,0),:6])
+        np.testing.assert_array_equal(result[:,6:],self.x[:,6:])
+        aligner.reset()
+        np.testing.assert_array_equal(aligner.push(self.x),result)
+
+    def test_live_generator_emits_before_requesting_future_packet(self):
+        diagnostic = RealtimeDiagnoser(self.models[0],self.scaler)
+        requested = []
+        def packets():
+            requested.append(0)
+            yield self.x[:10],self.t[:10]
+            requested.append(1)
+            yield self.x[10:20],self.t[10:20]
+        stream = diagnose_packets(diagnostic,packets())
+        decision = next(stream)
+        self.assertEqual(decision["samples_seen"],10)
+        self.assertEqual(requested,[0])
+
+    def test_first_wrong_localization_and_later_correction_are_separate(self):
+        t = np.arange(201)/100
+        x = np.zeros((201,12),dtype=np.float32)
+        f = Flight("fault","test",0,42,x,t,7,.3)
+        p = np.repeat(posterior(0)[None],201,axis=0)
+        p[30:110] = posterior(8)
+        p[110:] = posterior(7)
+        prediction = decisions_from_probabilities(t,p,EventPolicy(),10)
+        score,cases = score_events([f],[prediction])
+        self.assertEqual(score["first_localization_wrong"],1)
+        self.assertEqual(score["always_missed"],0)
+        self.assertEqual(score["never_joint_localized"],0)
+        self.assertAlmostEqual(cases[0]["detection_delay_s"],.39)
+        self.assertAlmostEqual(cases[0]["localization_delay_s"],1.19)
+
+    def test_test_access_requires_signed_complete_freeze(self):
+        from run_simulink_realtime import authorize_test
+        with tempfile.TemporaryDirectory() as folder:
+            with self.assertRaises(FileNotFoundError):
+                authorize_test({},Path(folder),{})
+            (Path(folder)/"freeze_receipt.json").write_text('{"signature":"forged","protocol_signature":"bad"}',encoding="utf-8")
+            with self.assertRaises(PermissionError):
+                authorize_test({},Path(folder),{})
 
 
 if __name__ == "__main__":
