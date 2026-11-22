@@ -1,0 +1,57 @@
+[
+  {
+    "cases": 15,
+    "max_recovery_s": 7.3100000000000005,
+    "median_recovery_s": 3.87,
+    "p90_recovery_s": 6.648000000000001,
+    "passed": 15,
+    "peak_rp_rate_rad_s": 2.9993153864449327,
+    "peak_tilt_deg": 22.326798601383356,
+    "variant": "both_k08",
+    "worst_late_rmse_m": 0.015156833297433232
+  },
+  {
+    "cases": 15,
+    "max_recovery_s": 5.32,
+    "median_recovery_s": 2.5300000000000002,
+    "p90_recovery_s": 3.968,
+    "passed": 15,
+    "peak_rp_rate_rad_s": 2.999593159798399,
+    "peak_tilt_deg": 22.396708743079618,
+    "variant": "both_k16",
+    "worst_late_rmse_m": 0.012101610148115404
+  },
+  {
+    "cases": 15,
+    "max_recovery_s": 11.8,
+    "median_recovery_s": 10.31,
+    "p90_recovery_s": 11.728,
+    "passed": 15,
+    "peak_rp_rate_rad_s": 2.9897334574082093,
+    "peak_tilt_deg": 22.388537683769105,
+    "variant": "original",
+    "worst_late_rmse_m": 0.06741944257998277
+  },
+  {
+    "cases": 15,
+    "max_recovery_s": 11.42,
+    "median_recovery_s": 6.800000000000001,
+    "p90_recovery_s": 10.16,
+    "passed": 15,
+    "peak_rp_rate_rad_s": 2.999177385096831,
+    "peak_tilt_deg": 22.292803312411504,
+    "variant": "rate_only",
+    "worst_late_rmse_m": 0.06336608915689348
+  },
+  {
+    "cases": 15,
+    "max_recovery_s": 5.15,
+    "median_recovery_s": 3.6900000000000004,
+    "p90_recovery_s": 4.643999999999999,
+    "passed": 15,
+    "peak_rp_rate_rad_s": 2.990148365546191,
+    "peak_tilt_deg": 22.500906046784483,
+    "variant": "velocity_only",
+    "worst_late_rmse_m": 0.012101610148115404
+  }
+]

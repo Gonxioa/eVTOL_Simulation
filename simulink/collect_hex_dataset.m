@@ -3,10 +3,11 @@ function collect_hex_dataset(plan_path)
 root=fileparts(mfilename('fullpath')); addpath(root,fullfile(root,'validation'));
 plan=jsondecode(fileread(plan_path)); folder=fileparts(plan_path);
 assert(strcmp(plan.profile,'simulink_observable_v1'));
+hex_ensure_model();
 for j=1:numel(plan.sources)
     assert(strcmp(hashfile(fullfile(fileparts(root),plan.sources(j).path)),plan.sources(j).sha256),'Source changed after plan creation.');
 end
-mdl='hex_evtol'; load_system(fullfile(root,[mdl '.slx']));
+mdl='hex_evtol';
 assert(strcmp(get_param(mdl,'Dirty'),'off'),'Use a clean dedicated MATLAB process.');
 cleanup=onCleanup(@()close_system(mdl,0));
 % Charts contain nontunable struct parameters: Fast Restart would ignore changes.

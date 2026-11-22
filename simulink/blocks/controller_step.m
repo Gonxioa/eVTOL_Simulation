@@ -1,4 +1,4 @@
-function [command,audit]=controller_step(observation,reference,P)
+function [command,audit,diagnostic]=controller_step(observation,reference,P)
 %#codegen
 % Motor response is estimated from RPM feedback and delayed command history.
 % Fault truth is not an input. eta_hat describes command-to-thrust loss only
@@ -36,6 +36,10 @@ eta(speed_ratio<r.failed_speed_ratio)=0;
 damage=min(max((1-min(eta))/.8,0),1);
 position_p=(1-damage)*c.position_p+damage*r.degraded_position_p;
 velocity_p=(1-damage)*c.velocity_p+damage*r.degraded_velocity_p;
+velocity_i=c.velocity_i;
+if c.integral_recovery.velocity_schedule
+    velocity_i=(1-damage)*c.velocity_i+damage*c.integral_recovery.degraded_velocity_i;
+end
 acc_limit=(1-damage)*c.acceleration_limit_m_s2+damage*r.degraded_acceleration_limit_m_s2;
 tilt_limit=(1-damage)*c.tilt_limit_deg+damage*r.degraded_tilt_limit_deg;
 vi_applied=vi; ri_applied=ri;
@@ -46,14 +50,19 @@ if initialized
     filtered_alpha=filtered_alpha+filt*((w-previous_w)/dt-filtered_alpha);
     filtered_accel=filtered_accel+filt*((v-previous_v)/dt-filtered_accel);
 end
-a_raw=velocity_p.*ev+vi-c.velocity_d.*filtered_accel;
+velocity_P=velocity_p.*ev;
+velocity_D=-c.velocity_d.*filtered_accel;
+a_raw=velocity_P+vi+velocity_D;
 acc=min(max(a_raw,-acc_limit),acc_limit);
+acc_component=acc;
 F=P.mass*(acc+[0;0;P.gravity]); F(3)=max(F(3),0);
+F_vertical=F;
 max_horizontal=F(3)*tan(tilt_limit*pi/180);
 if norm(F(1:2))>max_horizontal
     F(1:2)=F(1:2)*max_horizontal/max(norm(F(1:2)),1e-12);
 end
 maximum=sum(eta.*P.thrust_max);
+F_tilt=F;
 if norm(F)>maximum, F=F*maximum/max(norm(F),1e-12); end
 qd=hex_desired_attitude(F,c.yaw_hold_rad,last_qd);
 e=hex_multiply([-q(1:3);q(4)],qd);
@@ -65,10 +74,12 @@ if damage>.1
 end
 rates=min(max(c.attitude_p.*attitude_error,-c.rate_limit_rad_s),c.rate_limit_rad_s);
 error=rates-w;
-alpha=c.rate_p.*error+ri-c.rate_d.*filtered_alpha;
+rate_P=c.rate_p.*error; rate_I=ri; rate_D=-c.rate_d.*filtered_alpha;
+alpha=rate_P+rate_I+rate_D;
 if damage>.1
     rates(3)=0; error(3)=-w(3);
     alpha(3)=-r.yaw_damping_s_inv*w(3); ri(3)=0;
+    rate_P(3)=alpha(3); rate_I(3)=0; rate_D(3)=0;
 end
 moment=P.J*alpha+cross(w,P.J*w);
 desired=[max(F'*R(:,3),0);moment];
@@ -77,18 +88,32 @@ Q.thrust_min=zeros(6,1);
 if damage>.1, Q.row_weights=r.degraded_wrench_priority./P.wrench_scale; end
 [thrust,residual,flags]=hex_allocate(desired,Q);
 thrust=min(thrust,eta.*P.thrust_max);
-di=c.rate_i.*error*dt; di((residual(2:4).*error)>1e-8)=0;
-if damage>.1, di(3)=0; end
-ri=min(max(ri+di,-c.rate_integral_limit_rad_s2),c.rate_integral_limit_rad_s2);
+% Use the final thrust after zero-effectiveness clipping in both loops.
+residual=desired-P.A*thrust;
+[ri,rate_blocked,rate_error_increment,rate_applied_increment,rate_clip_increment,rate_gate]=...
+    hex_rate_integral(ri,error,residual(2:4),c,damage,dt);
 limited_acc=F/P.mass-[0;0;P.gravity]; direction=F/max(norm(F),1e-12);
-vi=min(max(vi+dt*(c.velocity_i.*ev+c.antiwindup_gain_s_inv*...
-    (limited_acc-a_raw-direction*residual(1)/P.mass)),...
-    -c.velocity_integral_limit_m_s2),c.velocity_integral_limit_m_s2);
+velocity_error_increment=dt*velocity_i.*ev;
+velocity_component_back=dt*c.antiwindup_gain_s_inv*(acc_component-a_raw);
+velocity_vertical_back=dt*c.antiwindup_gain_s_inv*(F_vertical/P.mass-[0;0;P.gravity]-acc_component);
+velocity_tilt_back=dt*c.antiwindup_gain_s_inv*(F_tilt-F_vertical)/P.mass;
+velocity_total_back=dt*c.antiwindup_gain_s_inv*(F-F_tilt)/P.mass;
+velocity_allocation_back=-dt*c.antiwindup_gain_s_inv*direction*residual(1)/P.mass;
+vi_candidate=vi+velocity_error_increment+velocity_component_back+velocity_vertical_back+...
+    velocity_tilt_back+velocity_total_back+velocity_allocation_back;
+vi=min(max(vi_candidate,-c.velocity_integral_limit_m_s2),c.velocity_integral_limit_m_s2);
+velocity_clip_increment=vi-vi_candidate;
 command=min(sqrt(max(thrust,0)./P.kT)./max(sqrt(eta),1e-8),P.omega_max);
 command(eta==0)=0;
 audit=[desired;P.A*thrust;residual;vi;ri;reference(1:3)-x;ev;error;qd;rates;flags;...
     vi_applied;ri_applied;eta;damage];
 command_history(:,mod(ticks,1001)+1)=command;
+diagnostic=[velocity_P;vi_applied;velocity_D;a_raw;acc_component;limited_acc;F;...
+    rate_P;rate_I;rate_D;alpha;double(rate_blocked);rate_error_increment;...
+    rate_applied_increment;rate_clip_increment;velocity_error_increment;...
+    velocity_component_back;velocity_vertical_back;velocity_tilt_back;...
+    velocity_total_back;velocity_allocation_back;velocity_clip_increment;...
+    filtered_accel;filtered_alpha;velocity_p;velocity_i;acc_limit;double(rate_gate)];
 previous_rpm=rpm; previous_w=w; previous_v=v; last_qd=qd;
 ticks=ticks+1; initialized=true;
 end

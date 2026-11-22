@@ -16,7 +16,6 @@ arguments
     options.OutputName (1,1) string="latest"
 end
 root=fileparts(mfilename('fullpath')); mdl='hex_evtol';
-if ~isfile(fullfile(root,[mdl '.slx'])), build_hex_model(); end
 P=options.Parameters;
 if isempty(fieldnames(P))
     P=hex_parameters();
@@ -28,12 +27,14 @@ if isempty(fieldnames(P))
     P.wind_enabled=options.Wind; P.feedback_delay=options.Delay; P.seed=options.Seed;
     P=hex_prepare_inputs(P);
 end
-hex_validate_parameters(P); load_system(fullfile(root,[mdl '.slx']));
+P=hex_finalize_parameters(P); hex_ensure_model();
+set_param(mdl,'FastRestart','off');
+identity=hex_run_identity(mdl,P);
 input=Simulink.SimulationInput(mdl); input=input.setVariable('P',P,'Workspace',mdl);
 groups=hex_block_parameters(P); fields=fieldnames(groups);
 for i=1:numel(fields), input=input.setVariable(['P_' fields{i}],groups.(fields{i}),'Workspace',mdl); end
-out=sim(input); result=struct('parameters',P);
-for name={'state','reference','motor_command','imu','observation','wind','effectiveness','control_audit','feedback','reference_audit'}
+out=sim(input); result=struct('parameters',P,'provenance',identity);
+for name={'state','reference','motor_command','imu','observation','wind','effectiveness','control_audit','feedback','reference_audit','controller_diagnostic'}
     ts=out.get([name{1} '_log']);
     if strcmp(name{1},'state'), result.time=ts.Time; end
     if ts.IsTimeFirst, value=reshape(ts.Data,numel(ts.Time),[]);

@@ -26,6 +26,19 @@ P.wrench_scale=sum(abs(P.A).*P.thrust_max',2);
 P.row_weights=c.allocator.wrench_priority(:)./P.wrench_scale;
 P.regularization=c.allocator.regularization;
 P.control=c.control;
+control_names=fieldnames(P.control);
+for i=1:numel(control_names)
+    value=P.control.(control_names{i});
+    if isnumeric(value) && numel(value)==3,P.control.(control_names{i})=value(:);end
+end
+for group={'fault_response','integral_recovery'}
+    if ~isfield(P.control,group{1}),continue;end
+    names=fieldnames(P.control.(group{1}));
+    for i=1:numel(names)
+        value=P.control.(group{1}).(names{i});
+        if isnumeric(value) && numel(value)>1,P.control.(group{1}).(names{i})=value(:);end
+    end
+end
 P.sensor=c.sensor;
 P.sensor.installation_matrix=local_rotation(c.sensor.installation_rotation_xyzw(:));
 P.wind=c.wind; P.termination=c.termination;

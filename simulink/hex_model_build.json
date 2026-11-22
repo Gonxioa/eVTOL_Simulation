@@ -1,0 +1,200 @@
+{
+  "schema": "hex_build_v1",
+  "sources": [
+    {
+      "path": "simulink/blocks/controller_step.m",
+      "sha256": "6bfbfad0a2b02625c7256d53a19d8fe7c0120d9a6f9b69f82a86f10a207b200a"
+    },
+    {
+      "path": "simulink/blocks/envelope_step.m",
+      "sha256": "5e3b38e8351ce50df5cb163e2fefb123805cf6957b6131258cc57beb272eaeb4"
+    },
+    {
+      "path": "simulink/blocks/fault_schedule.m",
+      "sha256": "653b22ae9d2c163c58968280c09038356da120aec15cfa2a5b8a51bf142d8e82"
+    },
+    {
+      "path": "simulink/blocks/plant_step.m",
+      "sha256": "dfc57f3730397b3b7e5575a3a221347b17d09deb9846d4208791cadb14fe239d"
+    },
+    {
+      "path": "simulink/blocks/reference_step.m",
+      "sha256": "11afe313cf6289f1ca3c877c0d6935ff249af64f0b0b10a25327cae6ba261891"
+    },
+    {
+      "path": "simulink/blocks/sensor_step.m",
+      "sha256": "e006957a32e56749334cb60a1479fa22c88f63de5347ea6b816039e94f47086e"
+    },
+    {
+      "path": "simulink/blocks/task_reference.m",
+      "sha256": "ceabacd635e829f52f183e1b8f0b686089f71bd34d2c71acbb9e13b240826af4"
+    },
+    {
+      "path": "simulink/blocks/wind_step.m",
+      "sha256": "9f514ff2a83547315d3336f77140df178c775c8526255d93bdc07a2d7d28db96"
+    },
+    {
+      "path": "simulink/build_hex_model.m",
+      "sha256": "e0ca4aa3a8304f82386c993832acaaa8838a59c7af7312167a5795cf4a30dabd"
+    },
+    {
+      "path": "simulink/configs/research.json",
+      "sha256": "a6bd5dd087c47e1ae9b59ff405e99da6cd280f2a4dc9e1d01e58484c5e61cc15"
+    },
+    {
+      "path": "simulink/configure_hex_simulink.m",
+      "sha256": "d3b80759546d9a2cf0befe1968b3abf93c38fff0c45a38a12316334b1bf4fcf5"
+    },
+    {
+      "path": "simulink/functions/hex_allocate.m",
+      "sha256": "88687780858e16ef2eba070cc2943f0f31f7a45050291d633722d745bb352038"
+    },
+    {
+      "path": "simulink/functions/hex_derivative.m",
+      "sha256": "185c9133a59e87b90cb721f191f15cb290a79520eedb968566813867474fd747"
+    },
+    {
+      "path": "simulink/functions/hex_desired_attitude.m",
+      "sha256": "d67dc0e7391b9cdfdf4deaf763796e291eb245c137f433cd23b8e82617832db9"
+    },
+    {
+      "path": "simulink/functions/hex_multiply.m",
+      "sha256": "9f521addbd1991ab2951419146072c82ebedfeac0b3888dfb564e36550d1cbe2"
+    },
+    {
+      "path": "simulink/functions/hex_rate_integral.m",
+      "sha256": "f6f744a950640b3f963cdaeb2566ce45a99b14fc4e08409046b8c3be244268e0"
+    },
+    {
+      "path": "simulink/functions/hex_rotation.m",
+      "sha256": "1ab8bedc5baf8c157f5af4d74d90274532d55dc8b315088e1c92e17615d3a96c"
+    },
+    {
+      "path": "simulink/functions/hex_trf.m",
+      "sha256": "01a60a3a204c757e19472a6bf5a82a12f3b507912508ab70baf10c16f2d462d1"
+    },
+    {
+      "path": "simulink/hex_base_parameters.m",
+      "sha256": "02c7dd01bdde57c611c50fa10e518716b80ce0ae7b434dc104aa08b10a85aff5"
+    },
+    {
+      "path": "simulink/hex_block_parameters.m",
+      "sha256": "7de750cde9e8fc7cc1cfa4676525fb1a8017250504d7c1307d8984bfc0685ac6"
+    },
+    {
+      "path": "simulink/hex_build_sources.m",
+      "sha256": "9f8898f95a4f65d0ca163d5f1a2985567f5280b6d2e6100343ac7a0076ad124c"
+    },
+    {
+      "path": "simulink/hex_check_loaded_model.m",
+      "sha256": "238166df6002362dd4cdc0437ab23b953bb104295eb4246d5e12899ab96b3bc8"
+    },
+    {
+      "path": "simulink/hex_common_block_parameters.m",
+      "sha256": "c3bfe115b9e86588bdf1f46f048f0ee4fd59f0c5cad4f64834fa71505e896c99"
+    },
+    {
+      "path": "simulink/hex_diagnostic_names.m",
+      "sha256": "ca78011097dad5678e05bc356e4c2b2ab4da0918a9ebcf4b422f48538110d99d"
+    },
+    {
+      "path": "simulink/hex_embedded_scripts.m",
+      "sha256": "6f60737679906708a812028c4baf11cada56bfa68b6f666e63ddec095065e2c2"
+    },
+    {
+      "path": "simulink/hex_ensure_model.m",
+      "sha256": "db971f5d700cf9758f34026ea3b0a3a0ab06e8dd7b1785880594378d1fc5516c"
+    },
+    {
+      "path": "simulink/hex_execution_diagnostics.m",
+      "sha256": "12cab3ebdb806af2f8d3a30322c8e399b1e5ba03714653d860386417779c3746"
+    },
+    {
+      "path": "simulink/hex_export_result.m",
+      "sha256": "550f5a2f46ac55acd1205ef4c66180cd8d55702bba86db424254bfcb0a9a60b5"
+    },
+    {
+      "path": "simulink/hex_finalize_parameters.m",
+      "sha256": "525981979f56b65fc1660934c05926dfe93ea2fbb0aba947058852be06d211d1"
+    },
+    {
+      "path": "simulink/hex_hash_file.m",
+      "sha256": "32f1034e62094bee8819a5bb281336a1e64fc1a3e0a05df6c79114c13461d930"
+    },
+    {
+      "path": "simulink/hex_metrics.m",
+      "sha256": "44de98e4d04cef3fc34acb060f1c57a3e2ddbbbfe4dbf29abe1e49546e6961e7"
+    },
+    {
+      "path": "simulink/hex_parameters.m",
+      "sha256": "2676533fd9efde33368abc05b9250dae1be83ce38e7cb28d126b85e7e685033e"
+    },
+    {
+      "path": "simulink/hex_prepare_inputs.m",
+      "sha256": "1549c79ce2ddb6670e85d76058be3a6ec8419075a6bc0c645e6dcc88277776a5"
+    },
+    {
+      "path": "simulink/hex_recovery_metrics.m",
+      "sha256": "68e67d346dc1039ec9a77556fa63a41de0ff5fb703b50024a78b2e4d8df5f44e"
+    },
+    {
+      "path": "simulink/hex_run_identity.m",
+      "sha256": "84651632081cbfd9bbabe1bb7dc2d05b13dda8e75b5e65d2ba1553a9c517117f"
+    },
+    {
+      "path": "simulink/hex_sha256.m",
+      "sha256": "8453a357cd173bb0e55eeb38dc6ba228f4b1dc44744c8a5a46bfc346bc677264"
+    },
+    {
+      "path": "simulink/hex_signal_names.m",
+      "sha256": "1a776cee95c039dd0fe811cd94ceb05ec860926f38710f153264429eff2df89e"
+    },
+    {
+      "path": "simulink/hex_validate_parameters.m",
+      "sha256": "56ac21ea76218f37e4719e22c336f080e65fdc65ef31125cc2e0061c2c69a8e4"
+    },
+    {
+      "path": "simulink/internal/layout_template.slx",
+      "sha256": "2ca9caee06bf8d3d0897876c37d474ddd5e3ccf0483d6ca14265a89814b4868f"
+    },
+    {
+      "path": "simulink/run_hex_simulink.m",
+      "sha256": "739b796d37c56a50cf1ad686a38abbf1165eb093f70595f76d0916ab31ad9ca7"
+    }
+  ],
+  "source_signature": "dd7c8618acf32b63feeeb5afb8e5c3c3b499c95161622b53a55f98017d9c5ce1",
+  "controller_version": "control_recovery_v4_20261122",
+  "matlab_version": "25.2.0.2998904 (R2025b)",
+  "created_utc": "2026-11-22 12:05:39",
+  "embedded_hashes": [
+    {
+      "function_name": "reference_step",
+      "sha256": "bd88f24258108ddcdfee9029ff462df324961471cf1e9de7cc568a568b657014"
+    },
+    {
+      "function_name": "controller_step",
+      "sha256": "b6baccbde96ae5b5fa719dbdb73349f250b9329260aa39f9a978101fb6aefdd9"
+    },
+    {
+      "function_name": "plant_step",
+      "sha256": "263c943ae9b0e9366f8fd8733e07962b008d2f025bb618571ab2d541a67c498b"
+    },
+    {
+      "function_name": "sensor_step",
+      "sha256": "26e35a13fb580b36ead471ccdac30b5fd9f83f9e2c0b97f3ee920967fd6b5b63"
+    },
+    {
+      "function_name": "fault_schedule",
+      "sha256": "2202c0f09021a76ffd287fd3f6735d78bc9720af2e88a649fbdb2ce1c30f9d51"
+    },
+    {
+      "function_name": "wind_step",
+      "sha256": "254ea0acca8c290a6a46705f1a71ce5fb30253e0e6cedc1f599cdd0789f514c3"
+    },
+    {
+      "function_name": "envelope_step",
+      "sha256": "2ef33a795bb665eac7933000ac4bd24caa4c4d08a7d3b4c282600c339b32705b"
+    }
+  ],
+  "model_sha256": "aaced9e3aac6adbabfa33e089f416455d860478c49c86043d2b543edb6fd7c55"
+}

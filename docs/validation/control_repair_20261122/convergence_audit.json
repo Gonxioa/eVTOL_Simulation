@@ -1,0 +1,44 @@
+[
+  {
+    "max_position_difference_m": 1.8654353126351184e-07,
+    "motor": 1,
+    "passed": true,
+    "recovery_difference_s": 0.0,
+    "task": 0
+  },
+  {
+    "max_position_difference_m": 2.0920794981636268e-07,
+    "motor": 4,
+    "passed": true,
+    "recovery_difference_s": 0.0,
+    "task": 0
+  },
+  {
+    "max_position_difference_m": 1.726108669754896e-07,
+    "motor": 1,
+    "passed": true,
+    "recovery_difference_s": 0.0,
+    "task": 1
+  },
+  {
+    "max_position_difference_m": 1.9882352985623545e-07,
+    "motor": 1,
+    "passed": true,
+    "recovery_difference_s": 0.0,
+    "task": 2
+  },
+  {
+    "max_position_difference_m": 1.105397142037076e-06,
+    "motor": 4,
+    "passed": true,
+    "recovery_difference_s": 0.0,
+    "task": 2
+  },
+  {
+    "max_position_difference_m": 1.5093463504853908e-07,
+    "motor": 1,
+    "passed": true,
+    "recovery_difference_s": 0.0,
+    "task": 3
+  }
+]

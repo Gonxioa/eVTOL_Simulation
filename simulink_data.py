@@ -34,10 +34,15 @@ def read(path):
     return json.loads(Path(path).read_text(encoding='utf-8-sig'))
 
 
-def prepare_plan(folder, seeds=(20261103, 20261104, 20261105, 20261106), task=2, dataset_version=VERSION):
+def prepare_plan(folder, seeds=(20261103, 20261104, 20261105, 20261106), task=2, dataset_version=VERSION,
+                 controller_version=None, roles=None, labels=None):
     folder = Path(folder).resolve()
-    if len(set(seeds)) < 4:
-        raise ValueError('At least four distinct paired condition seeds are required.')
+    if len(set(seeds)) != len(seeds) or not seeds:
+        raise ValueError('Collection seeds must be nonempty and distinct.')
+    if controller_version is None and len(set(seeds)) < 4:
+        raise ValueError('Legacy experiment collection requires at least four paired conditions.')
+    if roles is not None and (len(roles) != len(seeds) or set(roles)-{'train','validation','test'}):
+        raise ValueError('Declare one valid purpose per entire paired condition.')
     files = [ROOT / 'simulink/hex_evtol.slx', ROOT / 'simulink/configs/research.json']
     for directory in ('', 'blocks', 'functions'):
         files += list((ROOT / 'simulink' / directory).glob('*.m'))
@@ -46,6 +51,8 @@ def prepare_plan(folder, seeds=(20261103, 20261104, 20261105, 20261106), task=2,
     runs = []
     for group, seed in enumerate(seeds):
         for scenario in scenarios():
+            if labels is not None and scenario['label'] not in labels:
+                continue
             runs.append(dict(**scenario, group_id=group, run_id=group, seed=int(seed),
                              run_key=f'g{group:03d}_label{scenario["label"]:02d}'))
     plan = dict(profile=PROFILE, dataset_version=dataset_version, task_family=task,
@@ -54,6 +61,10 @@ def prepare_plan(folder, seeds=(20261103, 20261104, 20261105, 20261106), task=2,
                 purpose='simulation-domain prototype, not real-flight validation',
                 group_policy='entire paired 19-class nuisance condition held out',
                 rotor_mapping_to_uavfd='unestablished')
+    if controller_version is not None:
+        plan['controller_version'] = controller_version
+        plan['condition_roles'] = {str(g): role for g, role in enumerate(roles or ['train']*len(seeds))}
+        plan['collection_scope'] = 'complete_19_class_groups' if labels is None else 'interface_smoke_subset'
     plan['plan_signature'] = stable_hash(plan)
     path = folder / 'collection_plan.json'
     if path.exists() and read(path) != plan:
@@ -87,7 +98,8 @@ def validate_run(folder, run, plan):
     expected = {'seed': run['seed'], 'fault_motor': run['motor_simulink'],
                 'fault_factor': run['factor'], 'task_family': plan['task_family'],
                 'observed_feedback': True, 'noise_enabled': True, 'wind_enabled': True,
-                'feedback_delay': .03, 'control_tuning_version': 'control_v3_20261023'}
+                'feedback_delay': .03,
+                'control_tuning_version': plan.get('controller_version', 'control_v3_20261023')}
     if any(p.get(k) != v for k, v in expected.items()) or not meta['fault_tolerant_control']:
         raise ValueError(f'{folder}: actual parameters disagree with injection/conditions')
     if meta['fault_start_s'] != p['fault_start'] or meta['fault_end_s'] != 'infinity':

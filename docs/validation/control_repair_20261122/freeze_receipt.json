@@ -1,0 +1,30 @@
+{
+  "controller_version": "control_recovery_v4_20261122",
+  "selected_before_independent_validation": true,
+  "independent_seeds": [
+    907001,
+    907003,
+    907009
+  ],
+  "historical_json_files_scanned": 481,
+  "historical_seed_matches": [],
+  "development_plan_sha256": "04b536ff502184bddf2c4c12eb3b247d41ded3cd867f25a59630945785b4605d",
+  "model_sha256": "aaced9e3aac6adbabfa33e089f416455d860478c49c86043d2b543edb6fd7c55",
+  "source_signature": "dd7c8618acf32b63feeeb5afb8e5c3c3b499c95161622b53a55f98017d9c5ce1",
+  "selected_parameters": {
+    "rate_unwinding": true,
+    "healthy_velocity_i": [
+      0.4,
+      0.4,
+      0.9
+    ],
+    "degraded_velocity_i": [
+      1.6,
+      1.6,
+      0.9
+    ]
+  },
+  "selection_data": "75 paired native simulations: 15 contexts times 5 variants; 40 preflight cases; no independent seed read",
+  "independent_acceptance": "all existing flight thresholds; report all failures and regressions; no changes based on independent outcomes",
+  "utc": "2026-11-22T12:07:03.884352+00:00"
+}

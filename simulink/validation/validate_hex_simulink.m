@@ -16,14 +16,23 @@ if strcmp(suite,'core')
     end
 elseif strcmp(suite,'seeds')
     for seed=[20261007 20261008]
-        for motor=1:6, plan(end+1,:)=[2 motor 0 seed 1]; end %#ok<AGROW>
+        for task=0:3
+            plan(end+1,:)=[task 0 1 seed 1]; %#ok<AGROW>
+            for motor=1:6
+                for eta=[.8 .2 0],plan(end+1,:)=[task motor eta seed 1];end %#ok<AGROW>
+            end
+        end
     end
 elseif strcmp(suite,'ideal')
-    for motor=1:6
-        for eta=[.8 .2 0], plan(end+1,:)=[2 motor eta 20261006 0]; end %#ok<AGROW>
+    for task=0:3
+        for motor=1:6
+            for eta=[.8 .2 0], plan(end+1,:)=[task motor eta 20261006 0]; end %#ok<AGROW>
+        end
     end
 elseif strcmp(suite,'healthy')
-    for task=0:3, plan(end+1,:)=[task 0 1 20261006 0]; end %#ok<AGROW>
+    for noise=[0 1]
+        for task=0:3, plan(end+1,:)=[task 0 1 20261006 noise]; end %#ok<AGROW>
+    end
 else, error('Unknown suite.');
 end
 results=struct([]); mdl='hex_evtol';
@@ -31,12 +40,12 @@ if bdIsLoaded(mdl)
     assert(~strcmp(get_param(mdl,'Dirty'),'on'),...
         'Use a separate MATLAB session for validation; the open control model has unsaved edits.');
 end
-load_system(fullfile(root,[mdl '.slx']));
+hex_ensure_model();
 cleanup=onCleanup(@()close_system(mdl,0));
 for i=1:size(plan,1)
     Q=P; Q.task_family=plan(i,1); Q.fault_motor=plan(i,2); Q.fault_factor=plan(i,3);
-    Q.seed=plan(i,4); Q.observed_feedback=logical(plan(i,5));
-    Q.noise_enabled=Q.observed_feedback; Q.wind_enabled=Q.observed_feedback;
+    Q.seed=plan(i,4); Q.observed_feedback=true;
+    Q.noise_enabled=logical(plan(i,5)); Q.wind_enabled=logical(plan(i,5));
     Q=hex_prepare_inputs(Q);
     name=sprintf('%s_task%d_m%d_eta%02d_seed%d',suite,Q.task_family,Q.fault_motor,round(100*Q.fault_factor),Q.seed);
     result=run_hex_simulink(Parameters=Q,OutputName=name);
