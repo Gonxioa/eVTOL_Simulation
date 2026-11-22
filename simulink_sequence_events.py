@@ -34,6 +34,7 @@ class EventTracker:
         self.class_start = None
         self.previous_time = -float("inf")
         self.finished = False
+        self.pending = None
 
     def observe(self, time_s, current_probabilities, prefix_probabilities):
         """Consume one NEW chronological decision, never a labelled window."""
@@ -84,15 +85,21 @@ class EventTracker:
                 self.clear_start = None
 
     def finish(self, last_time_s):
-        if self.finished or last_time_s < self.previous_time:
+        if self.finished or not np.isfinite(last_time_s) or last_time_s < self.previous_time:
             raise ValueError("Invalid record end")
         if self.active is not None:
             self.active.update(end_s=float(last_time_s), ongoing_at_record_end=True)
+        elif self.candidate_start is not None:
+            # Running out of recorded time is not evidence of health. Keep the
+            # unconfirmed tail separate from confirmed fault/alarm events.
+            self.pending = dict(start_s=self.candidate_start, end_s=float(last_time_s),
+                                detected_at_s=None, label=None, label_name="Unresolved",
+                                ongoing_at_record_end=True, status="pending_confirmation")
         self.finished = True
         return self.events
 
 
-def annotations(time, events):
+def annotations(time, events, pending_event=None):
     """Partition original rows into estimated healthy/fault/unresolved segments.
 
     A final event class can annotate its cached earlier samples retrospectively;
@@ -100,7 +107,7 @@ def annotations(time, events):
     No estimated boundary is silently replaced with a true injection time.
     """
     labels = np.zeros(len(time), dtype=np.int64)
-    for event in events:
+    for event in [*events, *([] if pending_event is None else [pending_event])]:
         start = int(np.searchsorted(time, event["start_s"], side="left"))
         end = len(time) if event["ongoing_at_record_end"] else int(np.searchsorted(time, event["end_s"], side="left"))
         labels[start:end] = -1 if event["label"] is None else event["label"]
@@ -142,13 +149,48 @@ def infer_flight(model, scaler, x, time, decision_samples=10, policy=None, devic
             trace.append(dict(time_s=t, samples_seen=end, current_label=int(current.argmax()),
                               fault_probability=float(1-current[0]),
                               prefix_label=int(prefix.argmax()), prefix_confidence=float(prefix.max())))
-    label = int(prefix.argmax())
+    return finish_prediction(time, trace, prefix, tracker)
+
+
+def finish_prediction(time, trace, prefix, tracker):
+    """Shared event/record assembly for streaming and causal batched replay."""
+    label = int(np.argmax(prefix))
     events = tracker.finish(float(time[-1]))
-    return dict(unit="complete_flight", samples=len(x), first_decision_time_s=trace[0]["time_s"],
+    if label == 0:
+        consistency = "event_evidence_with_healthy_record_label" if events or tracker.pending else "consistent"
+    elif not events:
+        consistency = "fault_record_without_confirmed_event"
+    elif any(e["label"] is not None and e["label"] != label for e in events):
+        consistency = "record_and_event_labels_disagree"
+    elif any(e["label"] is None for e in events):
+        consistency = "fault_record_with_unresolved_event"
+    else:
+        consistency = "consistent"
+    return dict(unit="complete_flight", samples=len(time), first_decision_time_s=trace[0]["time_s"],
                 record_label=label, record_label_name=label_name(label), record_confidence=float(prefix.max()),
-                record_probabilities=prefix.tolist(), events=events, annotations=annotations(time, events),
+                record_probabilities=prefix.tolist(), events=events, pending_event=tracker.pending,
+                record_event_consistency=consistency,
+                annotations=annotations(time, events, pending_event=tracker.pending),
                 trace=trace, policy=asdict(tracker.policy),
                 annotation_scope="Final estimated event labels, with causal detection/confirmation times retained")
+
+
+def prediction_from_posteriors(time, positions, current, prefix, policy):
+    """Replay causally computed probabilities; no injection metadata enters."""
+    time = np.asarray(time)
+    positions = np.asarray(positions, dtype=np.int64)
+    if not len(positions) or positions[-1] != len(time)-1 or positions[0] < 0 or np.any(np.diff(positions) <= 0):
+        raise ValueError("Decisions must be ordered and include the final recorded sample")
+    if np.shape(current) != (len(positions), 19) or np.shape(prefix) != (len(positions), 19):
+        raise ValueError("Expected current/prefix probabilities for each decision")
+    tracker, trace = EventTracker(policy), []
+    for index, cp, pp in zip(positions, current, prefix):
+        stamp = float(time[index])
+        tracker.observe(stamp, cp, pp)
+        trace.append(dict(time_s=stamp, samples_seen=int(index)+1, current_label=int(np.argmax(cp)),
+                          fault_probability=float(1-cp[0]), prefix_label=int(np.argmax(pp)),
+                          prefix_confidence=float(np.max(pp))))
+    return finish_prediction(time, trace, np.asarray(prefix[-1]), tracker)
 
 
 def metrics(flights, predictions):
@@ -170,8 +212,9 @@ def metrics(flights, predictions):
         fault_count += 1
         onset = flight.fault_start_s
         end = float("inf") if flight.fault_end_s is None else flight.fault_end_s
-        prefault_events += sum(e["detected_at_s"] < onset for e in result["events"])
-        fresh = [e for e in result["events"] if onset <= e["detected_at_s"] < end]
+        prefault_events += sum(e["start_s"] < onset-1e-10 for e in result["events"])
+        fresh = [e for e in result["events"]
+                 if e["start_s"] >= onset-1e-10 and onset <= e["detected_at_s"] < end]
         if fresh:
             detected += 1
             delays.append(float(fresh[0]["detected_at_s"]-onset))
@@ -201,6 +244,9 @@ def metrics(flights, predictions):
                 normal_observation_s=normal_seconds, healthy_false_alarm_events=false_events,
                 healthy_false_alarm_events_per_minute=false_events/(normal_seconds/60) if normal_seconds else None,
                 fault_record_prefault_events=prefault_events,
+                records_with_pending_confirmation=sum(r.get("pending_event") is not None for r in predictions),
+                record_event_inconsistencies=sum(r.get("record_event_consistency", "consistent") != "consistent"
+                                                 for r in predictions),
                 detected_within_s={str(t): sum(d <= t+1e-9 for d in delays)/fault_count if fault_count else None
                                    for t in (.5, 1., 3.)},
                 delay_scope="Conditional delay quantiles; coverage and all misses are reported separately",

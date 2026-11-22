@@ -14,6 +14,7 @@ from simulink_sequence_data import Flight, collate, fit_scaler, load_flights, va
 from simulink_sequence_events import EventPolicy, EventTracker, annotations, infer_flight, metrics
 from simulink_sequence_model import FlightClassifier, loss_for_flights
 from run_simulink_sequence import CONFIG, export_predictions, train_model
+from simulink_sequence_verify import verify_flights
 
 
 def flight(label=0, role="train", group=0, points=81, onset=.3, end=None, source=None):
@@ -179,6 +180,72 @@ class SequenceTests(unittest.TestCase):
         self.assertEqual(score["missed"], 1)
         self.assertEqual(score["fault_record_prefault_events"], 1)
         self.assertIsNone(score["detection_delay_s"])
+
+    def test_prefault_candidate_confirmed_after_onset_is_not_a_new_detection(self):
+        f = flight(7, points=301, onset=2.)
+        tracker = EventTracker(EventPolicy(confirm_s=.2, localize_s=.2))
+        for i in range(31):
+            tracker.observe(i/10, posterior(7 if i >= 19 else 0),
+                            posterior(7 if i >= 19 else 0))
+        events = tracker.finish(3.)
+        self.assertAlmostEqual(events[0]["start_s"], 1.9)
+        self.assertAlmostEqual(events[0]["detected_at_s"], 2.1)
+        result = dict(record_label=7, first_decision_time_s=0., events=events)
+        score = metrics([f], [result])
+        self.assertEqual(score["missed"], 1)
+        self.assertEqual(score["fault_record_prefault_events"], 1)
+        self.assertIsNone(score["detection_delay_s"])
+
+    def test_pending_fault_at_record_end_is_unresolved_not_healthy(self):
+        tracker = EventTracker(EventPolicy(confirm_s=.3, localize_s=.3))
+        for i in range(5):
+            p = posterior(7 if i >= 3 else 0)
+            tracker.observe(i/10, p, p)
+        events = tracker.finish(.4)
+        self.assertEqual(events, [])
+        self.assertIsNone(tracker.pending["detected_at_s"])
+        self.assertEqual(tracker.pending["status"], "pending_confirmation")
+        spans = annotations(np.arange(5)/10, events, pending_event=tracker.pending)
+        self.assertEqual([s["label"] for s in spans], [0, -1])
+        self.assertEqual((spans[-1]["start_index"], spans[-1]["end_index"]), (3, 4))
+
+    def test_nonfinite_record_end_and_recovery_metadata_are_rejected(self):
+        tracker = EventTracker(EventPolicy())
+        tracker.observe(0., posterior(0), posterior(0))
+        with self.assertRaises(ValueError):
+            tracker.finish(float("nan"))
+        for end in (float("nan"), float("inf")):
+            with self.assertRaises(ValueError):
+                flight(7, end=end)
+        with self.assertRaises(ValueError):
+            flight(0, end=.5)
+
+    def test_fault_record_without_confirmed_interval_is_reported_explicitly(self):
+        f = flight(7)
+        with torch.no_grad():
+            for parameter in self.model.parameters():
+                parameter.zero_()
+            self.model.current_head[-1].bias[0] = 8
+            self.model.record_head[-1].bias[7] = 8
+        result = infer_flight(self.model, fit_scaler([f]), f.x, f.time)
+        self.assertEqual(result["record_label"], 7)
+        self.assertEqual(result["events"], [])
+        self.assertEqual(result["record_event_consistency"], "fault_record_without_confirmed_event")
+
+    def test_bounded_verification_runs_full_flights_and_only_one_update(self):
+        records = [flight(label, role, group, points=31, onset=.1)
+                   for role, group in (("train", 0), ("validation", 1)) for label in range(19)]
+        cfg = dict(read(CONFIG), hidden=4, layers=1, dropout=0., batch_flights=4,
+                   decision_samples=5, synthetic_smoke=True)
+        with tempfile.TemporaryDirectory() as folder:
+            score = verify_flights(cfg, records, folder)
+            self.assertEqual(score["optimizer_updates"], 1)
+            self.assertEqual(score["records_audited"], 38)
+            self.assertEqual(score["validation_whole_record_outputs"], 19)
+            self.assertEqual(len(score["stream_checks"]), 3)
+            self.assertTrue(score["synthetic_data_used"])
+            self.assertFalse(score["formal_training_performed"])
+            self.assertFalse(list(Path(folder).glob("*.pt")))
 
     def test_flight_loss_reaches_early_samples_without_independent_chunks(self):
         f = flight(7)

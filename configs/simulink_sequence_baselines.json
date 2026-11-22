@@ -1,0 +1,16 @@
+{
+  "profile": "whole_flight_pre_gan_cnn_lstm_v1",
+  "base_config": "configs/simulink_sequence.json",
+  "results_root": "output_simulink_sequence/pre_gan_cnn_lstm_fp32_20261106",
+  "models": ["lstm", "cnn"],
+  "training_seeds": [42, 43, 44],
+  "cnn_kernels": [5, 5, 5, 5],
+  "cnn_dilations": [1, 2, 4, 8],
+  "allow_tf32": false,
+  "precision_policy": "Float32 throughout training and inference; cuDNN TF32 and CUDA matmul TF32 disabled. The earlier pilot exposed a batch/chunk precision discrepancy and is retained as a numerical diagnostic, excluded from these formal runs.",
+  "historical_test_registry": "output_simulink_gan/v4_evidence_20261105/confirmation_sources.json",
+  "training_policy": "Identical full-flight train/validation sources, maximum 100 epochs, early-stop patience 15, batch 4, Adam 0.001, and record/prefix/current losses 1/0.25/0.25. Actual epochs, updates, parameters and elapsed time are reported separately.",
+  "selection_policy": "For each model and seed, select validation whole-record fixed-19 macro F1, break ties with record cross entropy. Event policy remains the same fixed defaults for both models; no test-based tuning.",
+  "test_policy": "Freeze all six checkpoints, scalers, event policies, sources and code before reading historical test measurements. These already-exposed sources are a historical held-out comparison, not a new blind test.",
+  "scope": "GAN-free full-flight baselines; one complete 2401x12 record is one classification sample; streaming memory is preserved; no window dataset or generated samples. Mean/std describe three training seeds, not additional independent flights."
+}

@@ -44,8 +44,9 @@ class Flight:
             raise ValueError("Fault records need an onset for supervision/evaluation")
         if self.label and not self.time[0] <= self.fault_start_s <= self.time[-1]:
             raise ValueError("The labelled fault must occur within the flight")
-        if self.fault_end_s is not None and self.fault_end_s <= self.fault_start_s:
-            raise ValueError("Fault end precedes onset")
+        if self.fault_end_s is not None:
+            if not self.label or not np.isfinite(self.fault_end_s) or self.fault_end_s <= self.fault_start_s:
+                raise ValueError("Recovery requires a fault and a finite end after onset; use None for ongoing faults")
 
     def targets(self):
         """Current physical state and fault-ever-seen prefix targets, respectively."""
@@ -134,7 +135,7 @@ def load_flights(registry_paths, roles=("train", "validation"), source_root=ROOT
         label = int(r["run"]["label"])
         end = meta.get("fault_end_s")
         end = None if end in (None, "infinity", "Inf", "inf") else float(end)
-        if end is not None and not np.isfinite(end):
+        if end is not None and np.isposinf(end):
             end = None
         output.append(Flight(r["source_id"], r["role"], int(r["group_id"]), int(r["run"]["seed"]),
                              values, time, label, float(meta["fault_start_s"]) if label else None,

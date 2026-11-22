@@ -3,6 +3,7 @@ import argparse
 import json
 from pathlib import Path
 import re
+import time
 
 import numpy as np
 import pandas as pd
@@ -13,7 +14,7 @@ from provenance import code_hashes, runtime_info, stable_hash, write_json
 from simulink_data import ROOT, read
 from simulink_sequence_data import Flight, collate, fit_scaler, load_flights, source_receipt, validate_partitions
 from simulink_sequence_events import EventPolicy, infer_flight, metrics
-from simulink_sequence_model import FlightClassifier, loss_for_flights
+from simulink_sequence_model import build_model, loss_for_flights
 
 CONFIG = ROOT / "configs/simulink_sequence.json"
 CODE = ["simulink_sequence_data.py", "simulink_sequence_model.py", "simulink_sequence_events.py",
@@ -21,7 +22,7 @@ CODE = ["simulink_sequence_data.py", "simulink_sequence_model.py", "simulink_seq
 
 
 def architecture(config):
-    return FlightClassifier(config["hidden"], config["layers"], config["dropout"])
+    return build_model(config)
 
 
 def _checkpoint(path, payload):
@@ -107,6 +108,7 @@ def train_model(config, flights, output, device="cpu", resume=False):
     for epoch in range(first_epoch, config["max_epochs"]+1):
         if wait >= config["patience"]:
             break
+        epoch_started = time.perf_counter()
         # Shuffle complete flights; keep EVERY sample inside each flight ordered.
         order = rng.permutation(len(train))
         losses = []
@@ -131,6 +133,7 @@ def train_model(config, flights, output, device="cpu", resume=False):
         train_score = record_scores(model, scaler, train, config, device)
         val_score = record_scores(model, scaler, validation, config, device)
         row = dict(epoch=epoch, updates=updates, train=train_score, validation=val_score,
+                   train_and_validation_wall_s=time.perf_counter()-epoch_started,
                    mean_loss={name: float(np.mean([r[name] for r in losses])) for name in losses[0]})
         history.append(row)
         score = (val_score["record_macro_f1"], -val_score["record_CE"])
@@ -155,6 +158,8 @@ def train_model(config, flights, output, device="cpu", resume=False):
                    train_time_samples=sum(len(f.x) for f in train), optimizer_updates=updates,
                    epochs_completed=len(history), selected_epoch=best["epoch"],
                    selected_validation=best["history"][-1]["validation"],
+                   selected_train=best["history"][-1]["train"], model_family=config.get("model", "lstm"),
+                   training_and_validation_wall_s=sum(r.get("train_and_validation_wall_s", 0.) for r in history),
                    parameters=sum(p.numel() for p in model.parameters()),
                    event_policy_status="Untuned config defaults; record selection does not validate event thresholds",
                    new_blind_test_performed=False, synthetic_data_used=bool(config.get("synthetic_smoke", False)))
@@ -170,7 +175,7 @@ def load_checkpoint(path, device):
     return model, saved["scaler"], saved["config"]
 
 
-def export_predictions(model, scaler, flights, config, output, device):
+def export_predictions(model, scaler, flights, config, output, device, computed_predictions=None):
     output = Path(output)
     if output.exists() and any(output.iterdir()):
         raise FileExistsError("Annotation output already exists; use a new directory")
@@ -178,14 +183,22 @@ def export_predictions(model, scaler, flights, config, output, device):
     predictions = []
     records = []
     segments = []
+    if computed_predictions is not None and len(computed_predictions) != len(flights):
+        raise ValueError("One computed prediction is required per whole flight")
     for index, flight in enumerate(flights):
         # Deliberately exclude label/onset/end/role/group from the inference API.
-        result = infer_flight(model, scaler, flight.x, flight.time, config["decision_samples"],
+        result = (infer_flight(model, scaler, flight.x, flight.time, config["decision_samples"],
                               EventPolicy(**config["event_policy"]), device)
+                  if computed_predictions is None else computed_predictions[index])
+        if result["samples"] != len(flight.x) or result["unit"] != "complete_flight":
+            raise ValueError("Computed predictions must cover the entire source flight")
         predictions.append(result)
         records.append(dict(source_id=flight.source_id, role=flight.role, group=flight.group, seed=flight.seed,
                             points=len(flight.x), true_label=flight.label, predicted_label=result["record_label"],
-                            predicted_label_name=result["record_label_name"], confidence=result["record_confidence"]))
+                            predicted_label_name=result["record_label_name"], confidence=result["record_confidence"],
+                            confirmed_events=len(result["events"]),
+                            pending_confirmation=result["pending_event"] is not None,
+                            record_event_consistency=result["record_event_consistency"]))
         segments.extend(dict(source_id=flight.source_id, **a) for a in result["annotations"])
         name = f"{index:04d}_"+re.sub(r"[^A-Za-z0-9_-]", "_", flight.source_id)
         pd.DataFrame(result["trace"]).to_csv(output/(name+"_trace.csv"), index=False)
@@ -222,7 +235,7 @@ def synthetic_flights(seed=19):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("stage", choices=("audit", "train", "annotate", "demo"))
+    parser.add_argument("stage", choices=("audit", "verify", "train", "annotate", "demo"))
     parser.add_argument("--config", default=str(CONFIG))
     parser.add_argument("--registry", action="append", help="Native signed source registry; repeat for separate roles")
     parser.add_argument("--source-root", default=str(ROOT), help="Project root when native paths have moved")
@@ -257,6 +270,11 @@ def main():
         print(json.dumps(dict(records=len(flights), groups=receipt["independent_groups"],
                              time_samples=sum(len(f.x) for f in flights), unit=receipt["unit"],
                              features=receipt["feature_names"]), ensure_ascii=False, indent=2))
+    elif args.stage == "verify":
+        if not args.output:
+            parser.error("verify requires a new --output directory; it does not run formal training")
+        from simulink_sequence_verify import verify_flights
+        print(json.dumps(verify_flights(config, flights, output, device), ensure_ascii=False, indent=2))
     elif args.stage == "train":
         print(json.dumps(train_model(config, flights, output, device, args.resume), ensure_ascii=False, indent=2))
     else:
