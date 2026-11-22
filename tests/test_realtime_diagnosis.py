@@ -151,6 +151,19 @@ class RealtimeTests(unittest.TestCase):
         tracker.observe(2.,posterior(0))
         self.assertIsNotNone(tracker.active)
 
+    def test_inclusive_probability_threshold_boundaries(self):
+        tracker = CurrentEventTracker(EventPolicy(confirm_s=0,localize_s=0,clear_s=0))
+        p=np.zeros(19)
+        p[0],p[7],p[8]=.2,.6,.2
+        tracker.observe(.09,p)
+        self.assertIsNotNone(tracker.active)
+        self.assertEqual(tracker.active["label"],7)
+        p=np.zeros(19)
+        p[0],p[7]=.7,.3
+        tracker.observe(.19,p)
+        self.assertIsNone(tracker.active)
+        self.assertEqual(tracker.events[0]["cleared_at_s"],.19)
+
     def test_fault_lifecycle_not_stability_defines_state_targets(self):
         f = Flight("life","train",0,42,self.x,self.t,7,.3,.9)
         y, seen = f.targets()

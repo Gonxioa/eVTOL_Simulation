@@ -46,9 +46,11 @@ class CurrentEventTracker:
         self.previous_time = float(time_s)
         cfg = self.policy
         fault = 1-float(p[0])
-        positive = fault >= cfg.fault_threshold
+        # Inclusive mathematical boundaries: e.g. 1-0.7 is 0.30000000000000004.
+        # 1e-12 covers double subtraction roundoff, not a practical retuning.
+        positive = fault+1e-12 >= cfg.fault_threshold
         label = int(p.argmax())
-        evidence = label if positive and label > 0 and p[label] >= cfg.class_threshold else None
+        evidence = label if positive and label > 0 and p[label]+1e-12 >= cfg.class_threshold else None
         if evidence != self.class_candidate:
             self.class_candidate = evidence
             self.class_start = float(time_s) if evidence is not None else None
@@ -71,7 +73,7 @@ class CurrentEventTracker:
                     self.active["class_updates"].append(update)
                     self.class_confirmations.append(copy.deepcopy(update))
                     self.active.update(label=evidence, label_name=label_name(evidence))
-            if fault <= cfg.clear_threshold:
+            if fault <= cfg.clear_threshold+1e-12:
                 if self.clear_start is None:
                     self.clear_start = float(time_s)
                 if time_s-self.clear_start+1e-9 >= cfg.clear_s:

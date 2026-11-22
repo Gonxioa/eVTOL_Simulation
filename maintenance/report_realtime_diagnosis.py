@@ -236,6 +236,22 @@ def make_report(output):
         "唯一健康来源曝光从首次可用判断到最后判断计算，每个训练种子的测试健康曝光为71.7秒；故障前阶段曝光另列，54条故障记录的前缀高度相关，不能与唯一健康曝光相加充当独立证据。故障前已有正式误报不能直接成为本次故障的成功检出；故障期间后续新报警计为重复，物理故障未解除却清除报警计为错误解除。", "",
         "主逐时刻分类指标来自当前19类输出的argmax，不施加报警阈值。报警指标按所选工作点评价，口径分开。整条记录补充分类采用最后一次在线确认的事件类别，无报警为健康、有报警未定位为-1；新目标不使用未经训练的旧记录头。旧目标另保存原前缀定位+原工作点的结果，便于区分报警逻辑与训练目标的影响。", "",
         "## 实际设备耗时", ""]
+    record_table=["## 整条记录分类补充结果", "",
+        "|网络与目标|在线事件汇总记录宏F1（三种子均值）|旧训练记录头宏F1（三种子均值）|",
+        "|---|---:|---:|"]
+    for model,objective in group_order:
+        group=test[(test.model==model)&(test.objective==objective)]
+        old_scores=[]
+        if objective=="legacy_record":
+            for job in jobs:
+                if job["model"]==model and job["objective"]==objective:
+                    metric=read(Path(job["folder"])/"test"/"metrics.json")
+                    old_scores.append(metric["legacy_prefix_localization_original_policy"]["record_macro_f1"])
+        record_table.append("|"+model.upper()+" "+names[objective]+"|"+percent(group.record_macro_f1.mean())+"|"+
+                            (percent(float(np.mean(old_scores))) if old_scores else "关闭训练，不作为正式成绩")+"|")
+    record_table += ["", "旧训练记录头直到记录结束才形成整条飞行结果，不能把其宏F1当成故障后0.5/1/3秒的在线报警成绩。", ""]
+    position=lines.index("## 实际设备耗时")
+    lines[position:position]=record_table
     if latency is not None:
         cpu=latency[(latency.device=="cpu")&(latency.decision_samples==10)]
         gpu=latency[(latency.device=="cuda")&(latency.decision_samples==10)]
