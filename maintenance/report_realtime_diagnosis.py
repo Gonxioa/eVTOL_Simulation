@@ -50,6 +50,25 @@ def make_report(output):
     pd.DataFrame(aggregates).to_csv(output/"aggregate_by_model_objective.csv",index=False,encoding="utf-8-sig")
     training=pd.DataFrame([{k:v for k,v in r.items() if not isinstance(v,(dict,list))} for r in jobs])
     training.to_csv(output/"training_budget.csv",index=False,encoding="utf-8-sig")
+    attempts=[]
+    archive=output.with_name(output.name+"_pre_boundary_fix")
+    draft=output.with_name(output.name+"_development_range_draft")
+    for root,excluded in ((output,False),(archive,True),(draft,True)):
+        if not root.exists():continue
+        for checkpoint in sorted(root.glob("*/*/last.pt")):
+            saved=torch.load(checkpoint,map_location="cpu",weights_only=False)
+            complete=(checkpoint.parent/"summary.json").exists()
+            attempts.append(dict(phase=checkpoint.relative_to(root).parts[0],job=checkpoint.parent.name,
+                excluded_before_boundary_fix=excluded,completed=complete,
+                persisted_epochs=saved["epoch"],persisted_optimizer_updates=saved["updates"],
+                persisted_forward_points=sum(r["forward_points"] for r in saved["history"]),
+                interrupted_epoch_additional_updates_unknown=not complete,
+                checkpoint=str(checkpoint)))
+    pd.DataFrame(attempts).to_csv(output/"all_training_attempts.csv",index=False,encoding="utf-8-sig")
+    write_json(output/"boundary_fix_and_attempts.json",dict(
+        reason="Inclusive clear threshold: 1-0.7 can be slightly larger than0.3; added1e-12 double-roundoff tolerance and boundary regression.",
+        old_runs_retained=[str(archive),str(draft)],old_runs_used_in_official_results=False,
+        attempts=attempts,interruption_scope="For the intentionally interrupted old run only persisted complete epochs are exactly audited; any unpersisted partial epoch is not added to official counts."))
     def save(fig,name):
         fig.savefig(figures/(name+".png"),dpi=180,bbox_inches="tight",facecolor="white")
         fig.savefig(figures/(name+".svg"),bbox_inches="tight",facecolor="white")
@@ -163,7 +182,7 @@ def make_report(output):
     for f in development:
         if f.role!="train":continue
         y,_=f.targets()
-        early=(y>0)&(f.time<f.fault_start_s+config["early_span_s"]-1e-9) if f.label else np.zeros(len(y),bool)
+        early=(y>0)&(f.time<f.fault_start_s+selected["selected"]["early_span_s"]-1e-9) if f.label else np.zeros(len(y),bool)
         normal=(~early).sum()
         total=float(normal+early.sum()*selected["selected"]["early_weight"])
         weight_rows.append(dict(source_id=f.source_id,group=f.group,label=f.label,points=len(y),
@@ -203,14 +222,15 @@ def make_report(output):
 
     latency=pd.read_csv(output/"online_latency.csv") if (output/"online_latency.csv").exists() else None
     lines=["# 新版飞控数据的实时故障诊断基线", "",
-        "本轮复用已验收的228条原生Simulink绕圈记录，没有新运行仿真，没有GAN或ROS。完成2个真实数据小规模检查、8个开发候选、CNN/LSTM×2种训练目标×3个种子的12个正式训练。测试信号在全部正式模型、scaler及报警工作点冻结后统一读取。", "",
+        "本轮复用已验收的228条原生Simulink绕圈记录，没有新运行仿真，没有GAN或ROS。完成2个真实数据小规模检查、12个开发候选、CNN/LSTM×2种训练目标×3个种子的12个正式训练。测试信号在全部正式模型、scaler及报警工作点冻结后统一读取。", "",
+        f"补充边界回归时发现0.3浮点减法的包含边界问题，已用1e-12双精度舍入容差修正。修正前的训练保留在{archive.name}，未用于正式结果。其中已完成与主动中止的尝试分别记录在all_training_attempts.csv；中止轮次未落盘的部分更新数不伪称可精确复算。修正后从头重跑了全部正式开发与训练。", "",
         "## 输入、标签和真正的在线处理", "",
         "输入保持加速度计3轴、陀螺仪3轴和六台带噪、延迟测量转速，共12维。转速直接来自feedback_state_14..19；IMU按既有传感链因果延迟3个采样周期，转速不再延迟。对命令、真值、效能及诊断内部列任意改写不影响输入，审计已通过。", "",
         "逐时刻标签：故障前健康，注入后保持对应电机/程度，只有故障本身解除才恢复健康；飞机恢复稳定不改变故障标签。现有数据不含真实解除事件，解除状态机仅有程序回归验证，不能据此宣称已验证故障解除识别性能。", "",
         "RealtimeDiagnoser只需已到达的测量和时间戳，保存LSTM隐藏/细胞状态或CNN逐层缓存、采样计数与事件计时。累计每10点判断一次，首次0.09秒，最后23.99秒；2401个采样点仍全部处理，24.00秒末点不制造额外判断。不同到达批次产生同一判断序列。文件回放使用同一对象。默认拒绝重复、逆序、非有限值和缺口；显式缺口续接会重置上下文及计时，缺数不解除已激活报警。", "",
         "故障概率为1-P(健康)，检出、定位均使用当前头。同一类别的置信度及持续时间不足时，允许故障已检出、类别待确认。候选起点、正式发出时刻、类别确认与解除均分别保存；事后回填不提前在线延迟。", "",
         "## 训练与验证选择", "",
-        f"开发候选：连续段100/300点，故障后前3秒权重1/3，每个组合CNN和LSTM各8次来源遍历，开发种子42。共同选中计算段 **{selected['selected']['segment_samples']}点**、早期权重 **{selected['selected']['early_weight']:g}**；其选择采用两个网络的验证排名平均，规则在训练前写入计划。", "",
+        f"开发候选：连续段100/300点，早期权重1/3，加权范围为故障后前1/3秒；不加权时范围等价、只运行一次，共六个参数组合、12个网络候选训练。每个候选8次来源遍历、开发种子42。共同选中计算段 **{selected['selected']['segment_samples']}点**、早期权重 **{selected['selected']['early_weight']:g}**、加权范围 **{selected['selected']['early_span_s']:g}秒**；其选择采用两个网络的验证排名平均，规则在正式训练前写入计划。分阶段评价范围始终保持共同的故障后前3秒。", "",
         "正式训练均为40次完整来源遍历，batch4，每轮114条/273714个有效点、29次更新，累计1160次更新；训练随机种子42/43/44。每个有效训练点每轮仅推进一次网络。两种目标的遍历次数、前向有效点数、优化更新次数相同。当前目标对全部有效时刻计算加权CE，按记录归一化；旧目标的记录/前缀/当前损失为1/0.25/0.25，其中时间监督按旧判断点取样。旧目标保留完整反传，新目标采用连续段TBPTT，因此比较同时涉及损失与梯度传播方式，不能把全部变化仅归于某一个权重。", "",
         "新目标段间传递数值状态、分离计算图，在一批完整记录处理结束后统一执行一次优化更新。最后短段、变长记录与padding有回归测试；逐来源权重审计在training_point_weight_audit.csv。配对记录的健康前缀按各记录保留，重复参与训练不代表独立飞行来源。", "",
         "CNN沿用四层64通道、核5、膨胀1/2/4/8，当前头感受野61点；LSTM沿用两层64单元。数值历史传递不等于跨段无限反传，CNN当前头也不会因旧历史池存在而获得无限历史。dropout0.3、Adam0.001、梯度裁剪5；float32并禁用TF32。", "",
@@ -232,7 +252,15 @@ def make_report(output):
         g=test[(test.model==model)&(test.objective==objective)].sort_values("seed")
         vals=["/".join(str(int(x)) for x in g[c]) for c in ("always_missed","late_detection_over_3s","never_joint_localized","first_localization_wrong","healthy_false_alarm_events","prefault_false_alarm_events")]
         lines.append("|"+model.upper()+" "+names[objective]+"|"+"|".join(vals)+"|")
-    lines += ["", "延迟的中位数与95%分位数仅覆盖已成功检出或正确定位的故障，不能代表全部故障。全部漏检、超时及未定位已在上表单列，逐种子、逐电机、逐程度和逐组CSV保留异常。", "",
+    lines += ["", "首次定位错误比例的分母是实际发出首次类别确认的故障数；全部故障的正确定位覆盖率采用54作为分母。", ""]
+    for model,objective in group_order:
+        g=test[(test.model==model)&(test.objective==objective)].sort_values("seed")
+        first="、".join(f"{int(r.first_localization_wrong)}/{int(r.first_localization_count)}" for _,r in g.iterrows())
+        repeats="/".join(str(int(v)) for v in g.repeat_alarms)
+        clears="/".join(str(int(v)) for v in g.wrong_clears)
+        lines.append(f"{model.upper()} {names[objective]}：首次定位错误/已定位分别为 {first}；重复报警 {repeats} 次；错误解除 {clears} 次。健康误报率三种子均值 {g.healthy_false_alarms_per_minute.mean():.3f} 次/分钟，故障前误报率均值 {g.prefault_false_alarms_per_minute.mean():.3f} 次/分钟。")
+        lines.append("")
+    lines += ["延迟的中位数与95%分位数仅覆盖已成功检出或正确定位的故障，不能代表全部故障。全部漏检、超时及未定位已在上表单列，逐种子、逐电机、逐程度和逐组CSV保留异常。", "",
         "唯一健康来源曝光从首次可用判断到最后判断计算，每个训练种子的测试健康曝光为71.7秒；故障前阶段曝光另列，54条故障记录的前缀高度相关，不能与唯一健康曝光相加充当独立证据。故障前已有正式误报不能直接成为本次故障的成功检出；故障期间后续新报警计为重复，物理故障未解除却清除报警计为错误解除。", "",
         "主逐时刻分类指标来自当前19类输出的argmax，不施加报警阈值。报警指标按所选工作点评价，口径分开。整条记录补充分类采用最后一次在线确认的事件类别，无报警为健康、有报警未定位为-1；新目标不使用未经训练的旧记录头。旧目标另保存原前缀定位+原工作点的结果，便于区分报警逻辑与训练目标的影响。", "",
         "## 实际设备耗时", ""]

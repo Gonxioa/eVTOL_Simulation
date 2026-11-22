@@ -193,7 +193,7 @@ def train_job(config, flights, output, identity, device="cuda", resume=False):
                     phase = np.zeros(len(target),dtype=np.int64)
                     phase[target>0] = 2
                     if flight.label:
-                        phase[(target>0)&(flight.time<flight.fault_start_s+config["early_span_s"]-1e-9)] = 1
+                        phase[(target>0)&(flight.time<flight.fault_start_s+config.get("phase_reporting_span_s",3.)-1e-9)] = 1
                     tags[i,:len(target)] = torch.as_tensor(phase,device=device)
                 row = segmented_backward(model, x, lengths, current, seen, labels, weights, config,tags)
             elif config["objective"] == "legacy_record":

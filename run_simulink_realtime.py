@@ -156,15 +156,18 @@ def pilot(config,output,identity,device):
         raise RuntimeError("Run smoke before pilot")
     flights=development_flights(config,output)
     rows=[]
-    for segment in config["segment_candidates"]:
-        for weight in config["early_weight_candidates"]:
+    settings=[dict(segment_samples=segment,early_weight=weight,early_span_s=span)
+        for segment in config["segment_candidates"] for weight in config["early_weight_candidates"]
+        for span in (config["early_span_candidates_s"] if weight!=1. else [config["early_span_s"]])]
+    for setting in settings:
+            segment,weight,span=setting["segment_samples"],setting["early_weight"],setting["early_span_s"]
             for family in config["models"]:
                 cfg=dict(config,model=family,seed=config["pilot_seed"],objective="current_state",
-                    segment_samples=segment,early_weight=weight,max_epochs=config["pilot_epochs"])
-                folder=output/"pilot"/f"{family}_segment{segment}_early{weight:g}"
+                    segment_samples=segment,early_weight=weight,early_span_s=span,max_epochs=config["pilot_epochs"])
+                folder=output/"pilot"/f"{family}_segment{segment}_early{weight:g}_span{span:g}"
                 print("PILOT_TRAIN",folder.name,flush=True)
                 result=train_job(cfg,flights,folder,identity,device,resume=True)
-                rows.append(dict(model=family,segment_samples=segment,early_weight=weight,
+                rows.append(dict(model=family,segment_samples=segment,early_weight=weight,early_span_s=span,
                     rank=result["selected_validation"]["selected"]["rank"],
                     state_macro_f1=result["selected_validation"]["states"]["all"]["macro_f1"],
                     localization_1s=result["selected_validation"]["selected"]["metrics"]["localization_within_1s"],
@@ -175,12 +178,10 @@ def pilot(config,output,identity,device):
         for position,row in enumerate(ordered):
             row["within_model_rank"] = 1+sum(tuple(other["rank"])>tuple(row["rank"]) for other in ordered)
     candidates=[]
-    for segment in config["segment_candidates"]:
-        for weight in config["early_weight_candidates"]:
-            subset=[r for r in rows if r["segment_samples"]==segment and r["early_weight"]==weight]
-            candidates.append(dict(segment_samples=segment,early_weight=weight,
-                                  mean_rank=float(np.mean([r["within_model_rank"] for r in subset]))))
-    selected=min(candidates,key=lambda r:(r["mean_rank"],r["early_weight"],-r["segment_samples"]))
+    for setting in settings:
+        subset=[r for r in rows if all(r[k]==v for k,v in setting.items())]
+        candidates.append(dict(**setting,mean_rank=float(np.mean([r["within_model_rank"] for r in subset]))))
+    selected=min(candidates,key=lambda r:(r["mean_rank"],r["early_weight"],-r["segment_samples"],r["early_span_s"]))
     result=dict(selected=selected,candidates=candidates,runs=rows,test_used=False,training_seed=config["pilot_seed"])
     write_json(output/"development_selection.json",result)
     return result
@@ -193,7 +194,7 @@ def formal_training(config,output,identity,device):
     for objective in ("current_state","legacy_record"):
         for family in config["models"]:
             for seed in config["training_seeds"]:
-                cfg=dict(config,**{k:choice[k] for k in ("segment_samples","early_weight")},
+                cfg=dict(config,**{k:choice[k] for k in ("segment_samples","early_weight","early_span_s")},
                          model=family,seed=seed,objective=objective)
                 folder=output/"formal"/f"{objective}_{family}_seed{seed}"
                 write_json(output/"progress.json",dict(stage="formal_training",job=folder.name,completed=len(jobs),total=12))
