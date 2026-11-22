@@ -1,0 +1,202 @@
+{
+  "records": [
+    {
+      "csv_sha256": "2b7f1b92a2a05902a91f5fb3510b2c73e015b32804fbdcf0f721c12375d85365",
+      "group_id": 0,
+      "metadata_sha256": "9d6e3f8b73067132859d1e31a294817edad09fcc27c0aa5c3f58438339c0f4d3",
+      "plan_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_control_repair_20261122\\interface_01\\collection_plan.json",
+      "role": "train",
+      "run": {
+        "factor": 1.0,
+        "group_id": 0,
+        "label": 0,
+        "label_name": "Normal",
+        "motor_python": -1,
+        "motor_simulink": 0,
+        "name": "normal",
+        "run_id": 0,
+        "run_key": "g000_label00",
+        "seed": 820101,
+        "severity": "normal"
+      },
+      "source_id": "control_v4_g000_label00",
+      "source_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_control_repair_20261122\\interface_01\\g000_label00"
+    },
+    {
+      "csv_sha256": "0ec5d80d9801c59818ee0203e608925b2445117aa097131bf9816c1cfba3c6e6",
+      "group_id": 0,
+      "metadata_sha256": "7fdcd13b37bebe3e1e7e5d0e2ae0bf5aa395860d5b9665626a43118fbf9b88aa",
+      "plan_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_control_repair_20261122\\interface_01\\collection_plan.json",
+      "role": "train",
+      "run": {
+        "factor": 0.0,
+        "group_id": 0,
+        "label": 1,
+        "label_name": "M1-Full",
+        "motor_python": 0,
+        "motor_simulink": 1,
+        "name": "motor0_full",
+        "run_id": 0,
+        "run_key": "g000_label01",
+        "seed": 820101,
+        "severity": "full"
+      },
+      "source_id": "control_v4_g000_label01",
+      "source_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_control_repair_20261122\\interface_01\\g000_label01"
+    },
+    {
+      "csv_sha256": "5c5708b98e8c2b6000b36a5b1c77d3efa797586b881eb5e16bcdbe8ab268294d",
+      "group_id": 0,
+      "metadata_sha256": "038c7cb73f3d5211dea35debb96cfb5462a2cd0c5983dc303c5931327ac4d119",
+      "plan_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_control_repair_20261122\\interface_01\\collection_plan.json",
+      "role": "train",
+      "run": {
+        "factor": 0.8,
+        "group_id": 0,
+        "label": 13,
+        "label_name": "M1-Partial",
+        "motor_python": 0,
+        "motor_simulink": 1,
+        "name": "motor0_partial",
+        "run_id": 0,
+        "run_key": "g000_label13",
+        "seed": 820101,
+        "severity": "partial"
+      },
+      "source_id": "control_v4_g000_label13",
+      "source_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_control_repair_20261122\\interface_01\\g000_label13"
+    },
+    {
+      "csv_sha256": "6842ddf70342586735c498b01eb49079fd3da84b17a8b2092ce08b69d1e3f092",
+      "group_id": 1,
+      "metadata_sha256": "1edee7506bb7fd7667c31eb3fa6a63888904dafc056d57ba22cdef91e4b51f78",
+      "plan_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_control_repair_20261122\\interface_01\\collection_plan.json",
+      "role": "validation",
+      "run": {
+        "factor": 1.0,
+        "group_id": 1,
+        "label": 0,
+        "label_name": "Normal",
+        "motor_python": -1,
+        "motor_simulink": 0,
+        "name": "normal",
+        "run_id": 1,
+        "run_key": "g001_label00",
+        "seed": 820103,
+        "severity": "normal"
+      },
+      "source_id": "control_v4_g001_label00",
+      "source_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_control_repair_20261122\\interface_01\\g001_label00"
+    },
+    {
+      "csv_sha256": "6bcd80cf50f00ac1be11100bef651afc76f86f35b0df047b26a9b8aefc780e86",
+      "group_id": 1,
+      "metadata_sha256": "345206ac92880c7a1d01d487c8aac2f9b80fd2cbc6090268e6d060f0433c4fe7",
+      "plan_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_control_repair_20261122\\interface_01\\collection_plan.json",
+      "role": "validation",
+      "run": {
+        "factor": 0.0,
+        "group_id": 1,
+        "label": 1,
+        "label_name": "M1-Full",
+        "motor_python": 0,
+        "motor_simulink": 1,
+        "name": "motor0_full",
+        "run_id": 1,
+        "run_key": "g001_label01",
+        "seed": 820103,
+        "severity": "full"
+      },
+      "source_id": "control_v4_g001_label01",
+      "source_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_control_repair_20261122\\interface_01\\g001_label01"
+    },
+    {
+      "csv_sha256": "049fa3083947624f55c6686d43f47648cdc365be51cba0a8ad486056bce23ad1",
+      "group_id": 1,
+      "metadata_sha256": "382c534cd60565b4ec30bbe249ec738a5eaa188a3f7fa5b0914bd1c99b7d60e0",
+      "plan_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_control_repair_20261122\\interface_01\\collection_plan.json",
+      "role": "validation",
+      "run": {
+        "factor": 0.8,
+        "group_id": 1,
+        "label": 13,
+        "label_name": "M1-Partial",
+        "motor_python": 0,
+        "motor_simulink": 1,
+        "name": "motor0_partial",
+        "run_id": 1,
+        "run_key": "g001_label13",
+        "seed": 820103,
+        "severity": "partial"
+      },
+      "source_id": "control_v4_g001_label13",
+      "source_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_control_repair_20261122\\interface_01\\g001_label13"
+    },
+    {
+      "csv_sha256": "84e812fe010bed6e77058e4a0751bb8c88403796d9638ee8a4a46b1deb7099ec",
+      "group_id": 2,
+      "metadata_sha256": "9271a7807aa597bf5de9c5d7c6d0ae3a13b7ecba71b8ae885834d721f264c91b",
+      "plan_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_control_repair_20261122\\interface_01\\collection_plan.json",
+      "role": "test",
+      "run": {
+        "factor": 1.0,
+        "group_id": 2,
+        "label": 0,
+        "label_name": "Normal",
+        "motor_python": -1,
+        "motor_simulink": 0,
+        "name": "normal",
+        "run_id": 2,
+        "run_key": "g002_label00",
+        "seed": 820107,
+        "severity": "normal"
+      },
+      "source_id": "control_v4_g002_label00",
+      "source_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_control_repair_20261122\\interface_01\\g002_label00"
+    },
+    {
+      "csv_sha256": "cb706625f99dc985eafa21dbfd25796c5e17bac970edc43342ff7ab9c393e5fb",
+      "group_id": 2,
+      "metadata_sha256": "a2b1287e2fcbd22564dff97165fbbcf09e6ba64bfff2b4a19f4ca64f303e7d20",
+      "plan_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_control_repair_20261122\\interface_01\\collection_plan.json",
+      "role": "test",
+      "run": {
+        "factor": 0.0,
+        "group_id": 2,
+        "label": 1,
+        "label_name": "M1-Full",
+        "motor_python": 0,
+        "motor_simulink": 1,
+        "name": "motor0_full",
+        "run_id": 2,
+        "run_key": "g002_label01",
+        "seed": 820107,
+        "severity": "full"
+      },
+      "source_id": "control_v4_g002_label01",
+      "source_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_control_repair_20261122\\interface_01\\g002_label01"
+    },
+    {
+      "csv_sha256": "f96fb28ba5f576364719d72fb4ce567ea0febba8865755efea8087890d467f4b",
+      "group_id": 2,
+      "metadata_sha256": "75ea67198669a413f1f713d64aef36713cf48822dff21ac7656ef1205a9f4ab4",
+      "plan_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_control_repair_20261122\\interface_01\\collection_plan.json",
+      "role": "test",
+      "run": {
+        "factor": 0.8,
+        "group_id": 2,
+        "label": 13,
+        "label_name": "M1-Partial",
+        "motor_python": 0,
+        "motor_simulink": 1,
+        "name": "motor0_partial",
+        "run_id": 2,
+        "run_key": "g002_label13",
+        "seed": 820107,
+        "severity": "partial"
+      },
+      "source_id": "control_v4_g002_label13",
+      "source_path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_control_repair_20261122\\interface_01\\g002_label13"
+    }
+  ]
+}

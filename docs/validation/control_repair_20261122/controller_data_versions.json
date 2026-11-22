@@ -1,0 +1,41 @@
+{
+  "current_controller": "control_recovery_v4_20261122",
+  "frozen_control_commit": "6dd6a9278259e9770506f685743479fd091e0129",
+  "historical_controller": "control_v3_20261023",
+  "historical_data_policy": "keep original files, metadata and hashes; never relabel old controller data",
+  "current_full_dataset": {
+    "version": "simulink_control_v4_observable_20261122_v1",
+    "plan": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_control_repair_20261122\\dataset_v4_frozen\\collection_plan.json",
+    "records_planned": 228,
+    "records_collected": 0,
+    "train_groups": 6,
+    "validation_groups": 3,
+    "test_groups": 3,
+    "seeds": [
+      810101,
+      810102,
+      810103,
+      810104,
+      810105,
+      810106,
+      810107,
+      810108,
+      810109,
+      810110,
+      810111,
+      810112
+    ]
+  },
+  "interface_only": {
+    "version": "simulink_control_v4_interface_20261122_v1",
+    "path": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_control_repair_20261122\\interface_01",
+    "actual_native_records": 9,
+    "groups": 3,
+    "full_19_class_dataset": false
+  },
+  "formal_validation": {
+    "plan": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_control_repair_20261122\\formal_01\\plan.json",
+    "purpose": "controller verification, not train/validation/test classifier data"
+  },
+  "original_workspace_uncommitted_files": "preserved in C:/Users/lenovo/Desktop/eVTOL_Simulation"
+}

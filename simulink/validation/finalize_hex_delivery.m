@@ -1,62 +1,32 @@
-function receipt=finalize_hex_delivery()
-%FINALIZE_HEX_DELIVERY Check saved model and matching-version evidence.
-root=fileparts(fileparts(mfilename('fullpath'))); addpath(root);
-expected=hex_parameters(); profile=expected.control_tuning_version;
-counts=zeros(1,4); suites={'CORE','HEALTHY','IDEAL','SEEDS'};
-for i=1:numel(suites)
-    report=jsondecode(fileread(fullfile(root,'validation',['SIMULATION_' suites{i} '_RESULTS.json'])));
-    assert(report.passed && strcmp(report.profile,profile),'Mismatched or failing control evidence.');
-    assert(isequal(report.parameters,expected.control),'Evidence gains differ from current defaults.');
-    counts(i)=numel(report.cases);
+function receipt=finalize_hex_delivery(plan_path,recompute)
+%FINALIZE_HEX_DELIVERY Verify current native records rather than old receipts.
+if nargin<1
+    error('hex:CurrentPlanRequired','Supply the current formal plan.json. Historical v3 receipts are retained and cannot certify v4.');
 end
-loops=jsondecode(fileread(fullfile(root,'validation','SIMULATION_LOOP_RESULTS.json')));
-assert(loops.passed,'Loop acceptance failed.');
-selected=loops.cases([loops.cases.selected]);
-assert(all([selected.rate_p]==20) && all([selected.attitude_p]==7),'Wrong selected loop gains.');
-components=jsondecode(fileread(fullfile(root,'validation','SIMULATION_COMPONENT_RESULTS.json')));
-assert(components.passed,'Independent components failed.');
-audit=jsondecode(fileread(fullfile(root,'validation','SIMULATION_INPUT_AUDIT.json')));
-assert(audit.passed && strcmp(audit.profile,profile),'Actual SLX input audit is incomplete.');
-parity=jsondecode(fileread(fullfile(root,'validation','SIMULATION_SOURCE_SLX_PARITY.json')));
-assert(parity.passed && strcmp(parity.profile,profile),'Source/SLX behavioral comparison failed.');
-mdl='hex_evtol'; load_system(fullfile(root,[mdl '.slx']));
-cleanup=onCleanup(@()close_system(mdl,0));
-ws=get_param(mdl,'ModelWorkspace'); P=ws.getVariable('P');
-assert(strcmp(P.control_tuning_version,profile) && isequal(P.control,expected.control),'Saved model contains old defaults.');
-groups=hex_block_parameters(P); names=fieldnames(groups);
-for i=1:numel(names)
-    assert(isequaln(ws.getVariable(['P_' names{i}]),groups.(names{i})),'Saved block snapshots differ.');
+if nargin<2,recompute=false;end
+root=fileparts(fileparts(mfilename('fullpath')));addpath(root);
+plan=jsondecode(fileread(plan_path));folder=fileparts(plan_path);
+assert(strcmp(plan.profile,'hex_control_repair_native_v4'));
+hex_ensure_model();identity=hex_check_loaded_model('hex_evtol');
+assert(strcmp(identity.source_signature,plan.source_signature),'hex:FrozenSourceChanged','Model differs from frozen validation plan.');
+count=0;
+for i=1:numel(plan.cases)
+    if iscell(plan.cases),item=plan.cases{i};else,item=plan.cases(i);end
+    path=fullfile(folder,item.name);r=jsondecode(fileread(fullfile(path,'run.json')));
+    assert(strcmp(r.status,'completed') && r.metrics.passed,'hex:EvidenceFailure','Incomplete or rejected native run %s.',item.name);
+    assert(strcmp(r.source_signature,identity.source_signature) && strcmp(r.plan_sha256,hex_hash_file(plan_path)));
+    assert(strcmp(r.mat_sha256,hex_hash_file(fullfile(path,'result.mat'))));
+    assert(strcmp(r.csv_sha256,hex_hash_file(fullfile(path,'signals.csv'))));
+    saved=load(fullfile(path,'result.mat'),'result');metrics=saved.result.metrics;
+    if recompute,metrics=hex_metrics(saved.result);end
+    assert(metrics.passed && abs(metrics.return_time_s-r.metrics.return_time_s)<1e-10);
+    count=count+1;
 end
-assert(P.task_family==2 && P.fault_motor==1 && P.fault_factor==0 && ...
-    P.observed_feedback && P.noise_enabled && P.wind_enabled && P.feedback_delay==.03,...
-    'Saved demonstration is not a real observed total-loss case.');
-blocks=find_system(mdl,'LookUnderMasks','all','SFBlockType','MATLAB Function');
-controller=''; task='';
-for i=1:numel(blocks)
-    cfg=get_param(blocks{i},'MATLABFunctionConfiguration'); s=char(cfg.FunctionScript);
-    if startsWith(s,'function [command,audit]=controller_step'), controller=s; end
-    if startsWith(s,'function [reference,audit]=reference_step'), task=s; end
-end
-script=fileread(fullfile(root,'blocks','controller_step.m'));
-for helper={'hex_rotation','hex_multiply','hex_desired_attitude','hex_allocate','hex_trf'}
-    script=[script newline fileread(fullfile(root,'functions',[helper{1} '.m']))]; %#ok<AGROW>
-end
-script=regexprep(script,'\<P\>','P_controller_step');
-assert(strcmp(normalize(script),normalize(controller)),'Embedded control controller is stale.');
-script=[fileread(fullfile(root,'blocks','reference_step.m')) newline fileread(fullfile(root,'blocks','task_reference.m'))];
-script=regexprep(script,'\<P\>','P_task_reference');
-assert(strcmp(normalize(script),normalize(task)),'Embedded reference governor is stale.');
-receipt=struct('profile',profile,'native_cases',sum(counts),'suite_counts',counts,...
-    'saved_model_readback_passed',true,'embedded_sources_match',true,...
-    'source_slx_behavioral_agreement',parity.behavioral_agreement_passed,...
-    'strict_rotor_command_parity',parity.strict_rotor_command_parity_passed,...
-    'fault_truth_excluded_from_return_blocks',true,'actual_inputs_audited',audit.passed,...
-    'original_model_overwritten',false,'passed',true);
-fid=fopen(fullfile(root,'validation','SIMULATION_DELIVERY.json'),'w');
-fprintf(fid,'%s',jsonencode(receipt,PrettyPrint=true)); fclose(fid);
-fprintf('SIMULATION_DELIVERY_PASSED native_cases=%d profile=%s\n',sum(counts),profile);
-end
-
-function value=normalize(value)
-value=strtrim(regexprep(value,'\r\n?','\n'));
+receipt=struct('profile',plan.controller_version,'native_cases',count,'passed',true,...
+    'source_signature',identity.source_signature,'model_sha256',hex_hash_file(fullfile(root,'hex_evtol.slx')),...
+    'all_files_rehashed',true,'metrics_recomputed_from_mat',recompute,...
+    'mat_stored_metrics_checked',true);
+fid=fopen(fullfile(folder,'delivery_receipt.json'),'w','n','UTF-8');assert(fid>=0);
+fprintf(fid,'%s',jsonencode(receipt,PrettyPrint=true));fclose(fid);
+fprintf('SIMULATION_DELIVERY_PASSED native_cases=%d profile=%s\n',count,plan.controller_version);
 end

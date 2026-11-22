@@ -1,6 +1,6 @@
 {
-  "actual_native_full_runs": 115,
-  "csv_audits_passed": 40,
+  "actual_native_full_runs": 659,
+  "csv_audits_passed": 584,
   "development": [
     {
       "cases": 15,
@@ -59,7 +59,7 @@
     }
   ],
   "execution_failures": [],
-  "final_passed": 40,
+  "final_passed": 584,
   "flight_failures": [],
   "groups": [
     {
@@ -89,6 +89,45 @@
       "worst_late_rmse_m": 0.010030807851239406
     },
     {
+      "cases": 76,
+      "max_recovery_s": 5.32,
+      "max_rp_rate_rad_s": 3.255842586555633,
+      "max_tilt_deg": 22.420017979909094,
+      "median_recovery_s": 0.5100000000000002,
+      "mission_complete": 76,
+      "p90_recovery_s": 1.9100000000000001,
+      "passed": 76,
+      "seed": 20261006,
+      "suite": "development",
+      "worst_late_rmse_m": 0.012121662936099684
+    },
+    {
+      "cases": 76,
+      "max_recovery_s": 6.3100000000000005,
+      "max_rp_rate_rad_s": 3.304840285629808,
+      "max_tilt_deg": 23.47718744692922,
+      "median_recovery_s": 0.5150000000000001,
+      "mission_complete": 76,
+      "p90_recovery_s": 2.08,
+      "passed": 76,
+      "seed": 20261007,
+      "suite": "development",
+      "worst_late_rmse_m": 0.013091047652879785
+    },
+    {
+      "cases": 76,
+      "max_recovery_s": 6.23,
+      "max_rp_rate_rad_s": 3.1153338904439156,
+      "max_tilt_deg": 21.353786754656017,
+      "median_recovery_s": 0.5150000000000001,
+      "mission_complete": 76,
+      "p90_recovery_s": 1.9899999999999998,
+      "passed": 76,
+      "seed": 20261008,
+      "suite": "development",
+      "worst_late_rmse_m": 0.012990612656926727
+    },
+    {
       "cases": 8,
       "max_recovery_s": 4.43,
       "max_rp_rate_rad_s": 2.6423983122228107,
@@ -113,6 +152,58 @@
       "seed": 20261006,
       "suite": "fault_time_5.5",
       "worst_late_rmse_m": 0.010068563544778593
+    },
+    {
+      "cases": 76,
+      "max_recovery_s": 6.0600000000000005,
+      "max_rp_rate_rad_s": 3.096732378468889,
+      "max_tilt_deg": 21.47293042830833,
+      "median_recovery_s": 0.52,
+      "mission_complete": 76,
+      "p90_recovery_s": 1.9600000000000004,
+      "passed": 76,
+      "seed": 20261006,
+      "suite": "ideal",
+      "worst_late_rmse_m": 0.000612317058405757
+    },
+    {
+      "cases": 76,
+      "max_recovery_s": 6.550000000000001,
+      "max_rp_rate_rad_s": 3.357711749594186,
+      "max_tilt_deg": 24.398092205834516,
+      "median_recovery_s": 0.5300000000000002,
+      "mission_complete": 76,
+      "p90_recovery_s": 4.15,
+      "passed": 76,
+      "seed": 907001,
+      "suite": "independent",
+      "worst_late_rmse_m": 0.018127691154179035
+    },
+    {
+      "cases": 76,
+      "max_recovery_s": 6.700000000000001,
+      "max_rp_rate_rad_s": 3.202374076793544,
+      "max_tilt_deg": 22.542460898280932,
+      "median_recovery_s": 0.5250000000000001,
+      "mission_complete": 76,
+      "p90_recovery_s": 2.9250000000000003,
+      "passed": 76,
+      "seed": 907003,
+      "suite": "independent",
+      "worst_late_rmse_m": 0.01309058532351399
+    },
+    {
+      "cases": 76,
+      "max_recovery_s": 6.550000000000001,
+      "max_rp_rate_rad_s": 3.466063216715295,
+      "max_tilt_deg": 23.843797575124626,
+      "median_recovery_s": 0.52,
+      "mission_complete": 76,
+      "p90_recovery_s": 2.08,
+      "passed": 76,
+      "seed": 907009,
+      "suite": "independent",
+      "worst_late_rmse_m": 0.010505318337568976
     },
     {
       "cases": 1,
@@ -269,9 +360,166 @@
       "seed": 20261006,
       "suite": "mirror_3_6_1_reflected",
       "worst_late_rmse_m": 0.00989243331398941
+    },
+    {
+      "cases": 1,
+      "max_recovery_s": 4.11,
+      "max_rp_rate_rad_s": 2.4500218045066258,
+      "max_tilt_deg": 17.105359132724754,
+      "median_recovery_s": 4.11,
+      "mission_complete": 1,
+      "p90_recovery_s": 4.11,
+      "passed": 1,
+      "seed": 20261006,
+      "suite": "moving_mirror_1_4_0_original",
+      "worst_late_rmse_m": 0.00037738704706719256
+    },
+    {
+      "cases": 1,
+      "max_recovery_s": 4.11,
+      "max_rp_rate_rad_s": 2.4500218044733515,
+      "max_tilt_deg": 17.105359132709548,
+      "median_recovery_s": 4.11,
+      "mission_complete": 1,
+      "p90_recovery_s": 4.11,
+      "passed": 1,
+      "seed": 20261006,
+      "suite": "moving_mirror_1_4_0_reflected",
+      "worst_late_rmse_m": 0.00037738731316339254
+    },
+    {
+      "cases": 1,
+      "max_recovery_s": 4.36,
+      "max_rp_rate_rad_s": 2.5989280497744045,
+      "max_tilt_deg": 18.44214312100758,
+      "median_recovery_s": 4.36,
+      "mission_complete": 1,
+      "p90_recovery_s": 4.36,
+      "passed": 1,
+      "seed": 20261006,
+      "suite": "moving_mirror_1_4_1_original",
+      "worst_late_rmse_m": 0.009938315061202598
+    },
+    {
+      "cases": 1,
+      "max_recovery_s": 4.36,
+      "max_rp_rate_rad_s": 2.5989280497578564,
+      "max_tilt_deg": 18.442143120858397,
+      "median_recovery_s": 4.36,
+      "mission_complete": 1,
+      "p90_recovery_s": 4.36,
+      "passed": 1,
+      "seed": 20261006,
+      "suite": "moving_mirror_1_4_1_reflected",
+      "worst_late_rmse_m": 0.009938277338084065
+    },
+    {
+      "cases": 1,
+      "max_recovery_s": 2.0300000000000002,
+      "max_rp_rate_rad_s": 2.7154592899321597,
+      "max_tilt_deg": 16.538612211009003,
+      "median_recovery_s": 2.0300000000000002,
+      "mission_complete": 1,
+      "p90_recovery_s": 2.0300000000000002,
+      "passed": 1,
+      "seed": 20261006,
+      "suite": "moving_mirror_2_5_0_original",
+      "worst_late_rmse_m": 0.0002771506337411329
+    },
+    {
+      "cases": 1,
+      "max_recovery_s": 2.04,
+      "max_rp_rate_rad_s": 2.8305857781119905,
+      "max_tilt_deg": 16.89579935947413,
+      "median_recovery_s": 2.04,
+      "mission_complete": 1,
+      "p90_recovery_s": 2.04,
+      "passed": 1,
+      "seed": 20261006,
+      "suite": "moving_mirror_2_5_0_reflected",
+      "worst_late_rmse_m": 0.00020457808949030207
+    },
+    {
+      "cases": 1,
+      "max_recovery_s": 2.1000000000000005,
+      "max_rp_rate_rad_s": 2.8669309116289017,
+      "max_tilt_deg": 17.633684961882125,
+      "median_recovery_s": 2.1000000000000005,
+      "mission_complete": 1,
+      "p90_recovery_s": 2.1000000000000005,
+      "passed": 1,
+      "seed": 20261006,
+      "suite": "moving_mirror_2_5_1_original",
+      "worst_late_rmse_m": 0.009779926652667904
+    },
+    {
+      "cases": 1,
+      "max_recovery_s": 2.25,
+      "max_rp_rate_rad_s": 2.9170426204089384,
+      "max_tilt_deg": 17.698739332477874,
+      "median_recovery_s": 2.25,
+      "mission_complete": 1,
+      "p90_recovery_s": 2.25,
+      "passed": 1,
+      "seed": 20261006,
+      "suite": "moving_mirror_2_5_1_reflected",
+      "worst_late_rmse_m": 0.009816738997694538
+    },
+    {
+      "cases": 1,
+      "max_recovery_s": 1.7300000000000004,
+      "max_rp_rate_rad_s": 2.7968028154066964,
+      "max_tilt_deg": 17.577034383392387,
+      "median_recovery_s": 1.7300000000000004,
+      "mission_complete": 1,
+      "p90_recovery_s": 1.7300000000000004,
+      "passed": 1,
+      "seed": 20261006,
+      "suite": "moving_mirror_3_6_0_original",
+      "worst_late_rmse_m": 0.00020917363591440447
+    },
+    {
+      "cases": 1,
+      "max_recovery_s": 1.63,
+      "max_rp_rate_rad_s": 2.668317650322969,
+      "max_tilt_deg": 16.90784945031897,
+      "median_recovery_s": 1.63,
+      "mission_complete": 1,
+      "p90_recovery_s": 1.63,
+      "passed": 1,
+      "seed": 20261006,
+      "suite": "moving_mirror_3_6_0_reflected",
+      "worst_late_rmse_m": 0.0002133429138945924
+    },
+    {
+      "cases": 1,
+      "max_recovery_s": 1.5200000000000005,
+      "max_rp_rate_rad_s": 2.6666685806461605,
+      "max_tilt_deg": 16.37083692522348,
+      "median_recovery_s": 1.5200000000000005,
+      "mission_complete": 1,
+      "p90_recovery_s": 1.5200000000000005,
+      "passed": 1,
+      "seed": 20261006,
+      "suite": "moving_mirror_3_6_1_original",
+      "worst_late_rmse_m": 0.009918745775808592
+    },
+    {
+      "cases": 1,
+      "max_recovery_s": 1.4900000000000002,
+      "max_rp_rate_rad_s": 2.6170259261484636,
+      "max_tilt_deg": 16.171368486497585,
+      "median_recovery_s": 1.4900000000000002,
+      "mission_complete": 1,
+      "p90_recovery_s": 1.4900000000000002,
+      "passed": 1,
+      "seed": 20261006,
+      "suite": "moving_mirror_3_6_1_reflected",
+      "worst_late_rmse_m": 0.009900867608934745
     }
   ],
   "source_signatures": [
-    "27367be75c2729e32a8621f8c02620ae148b182de98dad43840e66a273caa2a7"
+    "27367be75c2729e32a8621f8c02620ae148b182de98dad43840e66a273caa2a7",
+    "dd7c8618acf32b63feeeb5afb8e5c3c3b499c95161622b53a55f98017d9c5ce1"
   ]
 }

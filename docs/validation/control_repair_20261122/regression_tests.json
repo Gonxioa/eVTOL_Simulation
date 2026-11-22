@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "integral_cases": 11,
+  "state_reset_max_difference": 0,
+  "source_signature": "dd7c8618acf32b63feeeb5afb8e5c3c3b499c95161622b53a55f98017d9c5ce1",
+  "model_sha256": "aaced9e3aac6adbabfa33e089f416455d860478c49c86043d2b543edb6fd7c55"
+}

@@ -1,0 +1,14 @@
+{
+  "authorized_after_development_and_ideal": true,
+  "prior_completed_passed": 316,
+  "independent_cases": 228,
+  "independent_seeds": [
+    907001,
+    907003,
+    907009
+  ],
+  "source_signature": "dd7c8618acf32b63feeeb5afb8e5c3c3b499c95161622b53a55f98017d9c5ce1",
+  "frozen_control_commit": "6dd6a9278259e9770506f685743479fd091e0129",
+  "utc": "2026-11-22T12:18:51.628728+00:00",
+  "policy": "All three predeclared seeds; no parameter changes after viewing their results."
+}

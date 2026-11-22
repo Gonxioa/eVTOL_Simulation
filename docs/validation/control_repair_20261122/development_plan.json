@@ -1,0 +1,1591 @@
+{
+  "profile": "control_repair_development_v1",
+  "cases": [
+    {
+      "condition": "calm_hover_m1",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_diagnostics\\m1_m4_symmetry_20261106\\hover_calm_m1\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "original__calm_hover_m1",
+      "variant": "original",
+      "rate": false,
+      "velocity": false,
+      "ki": 1.6
+    },
+    {
+      "condition": "calm_hover_m4",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_diagnostics\\m1_m4_symmetry_20261106\\hover_calm_m4\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "original__calm_hover_m4",
+      "variant": "original",
+      "rate": false,
+      "velocity": false,
+      "ki": 1.6
+    },
+    {
+      "condition": "noisy_hover_m1",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_diagnostics\\m1_m4_symmetry_20261106\\hover_wind_noise_m1\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "original__noisy_hover_m1",
+      "variant": "original",
+      "rate": false,
+      "velocity": false,
+      "ki": 1.6
+    },
+    {
+      "condition": "noisy_hover_m4",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_diagnostics\\m1_m4_symmetry_20261106\\hover_wind_noise_m4\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "original__noisy_hover_m4",
+      "variant": "original",
+      "rate": false,
+      "velocity": false,
+      "ki": 1.6
+    },
+    {
+      "condition": "noisy_circle_m1",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task2_m1_eta00_seed20261006\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "original__noisy_circle_m1",
+      "variant": "original",
+      "rate": false,
+      "velocity": false,
+      "ki": 1.6
+    },
+    {
+      "condition": "noisy_circle_m4",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task2_m4_eta00_seed20261006\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "original__noisy_circle_m4",
+      "variant": "original",
+      "rate": false,
+      "velocity": false,
+      "ki": 1.6
+    },
+    {
+      "condition": "noisy_line_m1",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task1_m1_eta00_seed20261006\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "original__noisy_line_m1",
+      "variant": "original",
+      "rate": false,
+      "velocity": false,
+      "ki": 1.6
+    },
+    {
+      "condition": "noisy_vertical_m1",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task3_m1_eta00_seed20261006\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "original__noisy_vertical_m1",
+      "variant": "original",
+      "rate": false,
+      "velocity": false,
+      "ki": 1.6
+    },
+    {
+      "condition": "noisy_circle_eta20",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task2_m1_eta20_seed20261006\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "original__noisy_circle_eta20",
+      "variant": "original",
+      "rate": false,
+      "velocity": false,
+      "ki": 1.6
+    },
+    {
+      "condition": "noisy_circle_eta80",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task2_m1_eta80_seed20261006\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "original__noisy_circle_eta80",
+      "variant": "original",
+      "rate": false,
+      "velocity": false,
+      "ki": 1.6
+    },
+    {
+      "condition": "healthy_circle",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\healthy_four_tasks_20261027\\02_circle\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "original__healthy_circle",
+      "variant": "original",
+      "rate": false,
+      "velocity": false,
+      "ki": 1.6
+    },
+    {
+      "condition": "healthy_force",
+      "baseline_mat": "",
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "force": [
+        0.5,
+        -0.3,
+        0
+      ],
+      "mean_wind": [
+        0,
+        0,
+        0
+      ],
+      "name": "original__healthy_force",
+      "variant": "original",
+      "rate": false,
+      "velocity": false,
+      "ki": 1.6
+    },
+    {
+      "condition": "fault_force",
+      "baseline_mat": "",
+      "task": 0,
+      "motor": 1,
+      "factor": 0,
+      "wind": false,
+      "noise": false,
+      "force": [
+        0.5,
+        -0.3,
+        0
+      ],
+      "mean_wind": [
+        0,
+        0,
+        0
+      ],
+      "name": "original__fault_force",
+      "variant": "original",
+      "rate": false,
+      "velocity": false,
+      "ki": 1.6
+    },
+    {
+      "condition": "healthy_wind",
+      "baseline_mat": "",
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": [
+        1,
+        0.5,
+        0
+      ],
+      "name": "original__healthy_wind",
+      "variant": "original",
+      "rate": false,
+      "velocity": false,
+      "ki": 1.6
+    },
+    {
+      "condition": "fault_wind",
+      "baseline_mat": "",
+      "task": 0,
+      "motor": 1,
+      "factor": 0,
+      "wind": false,
+      "noise": false,
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": [
+        1,
+        0.5,
+        0
+      ],
+      "name": "original__fault_wind",
+      "variant": "original",
+      "rate": false,
+      "velocity": false,
+      "ki": 1.6
+    },
+    {
+      "condition": "calm_hover_m1",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_diagnostics\\m1_m4_symmetry_20261106\\hover_calm_m1\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "rate_only__calm_hover_m1",
+      "variant": "rate_only",
+      "rate": true,
+      "velocity": false,
+      "ki": 1.6
+    },
+    {
+      "condition": "calm_hover_m4",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_diagnostics\\m1_m4_symmetry_20261106\\hover_calm_m4\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "rate_only__calm_hover_m4",
+      "variant": "rate_only",
+      "rate": true,
+      "velocity": false,
+      "ki": 1.6
+    },
+    {
+      "condition": "noisy_hover_m1",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_diagnostics\\m1_m4_symmetry_20261106\\hover_wind_noise_m1\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "rate_only__noisy_hover_m1",
+      "variant": "rate_only",
+      "rate": true,
+      "velocity": false,
+      "ki": 1.6
+    },
+    {
+      "condition": "noisy_hover_m4",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_diagnostics\\m1_m4_symmetry_20261106\\hover_wind_noise_m4\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "rate_only__noisy_hover_m4",
+      "variant": "rate_only",
+      "rate": true,
+      "velocity": false,
+      "ki": 1.6
+    },
+    {
+      "condition": "noisy_circle_m1",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task2_m1_eta00_seed20261006\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "rate_only__noisy_circle_m1",
+      "variant": "rate_only",
+      "rate": true,
+      "velocity": false,
+      "ki": 1.6
+    },
+    {
+      "condition": "noisy_circle_m4",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task2_m4_eta00_seed20261006\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "rate_only__noisy_circle_m4",
+      "variant": "rate_only",
+      "rate": true,
+      "velocity": false,
+      "ki": 1.6
+    },
+    {
+      "condition": "noisy_line_m1",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task1_m1_eta00_seed20261006\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "rate_only__noisy_line_m1",
+      "variant": "rate_only",
+      "rate": true,
+      "velocity": false,
+      "ki": 1.6
+    },
+    {
+      "condition": "noisy_vertical_m1",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task3_m1_eta00_seed20261006\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "rate_only__noisy_vertical_m1",
+      "variant": "rate_only",
+      "rate": true,
+      "velocity": false,
+      "ki": 1.6
+    },
+    {
+      "condition": "noisy_circle_eta20",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task2_m1_eta20_seed20261006\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "rate_only__noisy_circle_eta20",
+      "variant": "rate_only",
+      "rate": true,
+      "velocity": false,
+      "ki": 1.6
+    },
+    {
+      "condition": "noisy_circle_eta80",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task2_m1_eta80_seed20261006\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "rate_only__noisy_circle_eta80",
+      "variant": "rate_only",
+      "rate": true,
+      "velocity": false,
+      "ki": 1.6
+    },
+    {
+      "condition": "healthy_circle",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\healthy_four_tasks_20261027\\02_circle\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "rate_only__healthy_circle",
+      "variant": "rate_only",
+      "rate": true,
+      "velocity": false,
+      "ki": 1.6
+    },
+    {
+      "condition": "healthy_force",
+      "baseline_mat": "",
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "force": [
+        0.5,
+        -0.3,
+        0
+      ],
+      "mean_wind": [
+        0,
+        0,
+        0
+      ],
+      "name": "rate_only__healthy_force",
+      "variant": "rate_only",
+      "rate": true,
+      "velocity": false,
+      "ki": 1.6
+    },
+    {
+      "condition": "fault_force",
+      "baseline_mat": "",
+      "task": 0,
+      "motor": 1,
+      "factor": 0,
+      "wind": false,
+      "noise": false,
+      "force": [
+        0.5,
+        -0.3,
+        0
+      ],
+      "mean_wind": [
+        0,
+        0,
+        0
+      ],
+      "name": "rate_only__fault_force",
+      "variant": "rate_only",
+      "rate": true,
+      "velocity": false,
+      "ki": 1.6
+    },
+    {
+      "condition": "healthy_wind",
+      "baseline_mat": "",
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": [
+        1,
+        0.5,
+        0
+      ],
+      "name": "rate_only__healthy_wind",
+      "variant": "rate_only",
+      "rate": true,
+      "velocity": false,
+      "ki": 1.6
+    },
+    {
+      "condition": "fault_wind",
+      "baseline_mat": "",
+      "task": 0,
+      "motor": 1,
+      "factor": 0,
+      "wind": false,
+      "noise": false,
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": [
+        1,
+        0.5,
+        0
+      ],
+      "name": "rate_only__fault_wind",
+      "variant": "rate_only",
+      "rate": true,
+      "velocity": false,
+      "ki": 1.6
+    },
+    {
+      "condition": "calm_hover_m1",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_diagnostics\\m1_m4_symmetry_20261106\\hover_calm_m1\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "velocity_only__calm_hover_m1",
+      "variant": "velocity_only",
+      "rate": false,
+      "velocity": true,
+      "ki": 1.6
+    },
+    {
+      "condition": "calm_hover_m4",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_diagnostics\\m1_m4_symmetry_20261106\\hover_calm_m4\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "velocity_only__calm_hover_m4",
+      "variant": "velocity_only",
+      "rate": false,
+      "velocity": true,
+      "ki": 1.6
+    },
+    {
+      "condition": "noisy_hover_m1",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_diagnostics\\m1_m4_symmetry_20261106\\hover_wind_noise_m1\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "velocity_only__noisy_hover_m1",
+      "variant": "velocity_only",
+      "rate": false,
+      "velocity": true,
+      "ki": 1.6
+    },
+    {
+      "condition": "noisy_hover_m4",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_diagnostics\\m1_m4_symmetry_20261106\\hover_wind_noise_m4\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "velocity_only__noisy_hover_m4",
+      "variant": "velocity_only",
+      "rate": false,
+      "velocity": true,
+      "ki": 1.6
+    },
+    {
+      "condition": "noisy_circle_m1",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task2_m1_eta00_seed20261006\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "velocity_only__noisy_circle_m1",
+      "variant": "velocity_only",
+      "rate": false,
+      "velocity": true,
+      "ki": 1.6
+    },
+    {
+      "condition": "noisy_circle_m4",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task2_m4_eta00_seed20261006\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "velocity_only__noisy_circle_m4",
+      "variant": "velocity_only",
+      "rate": false,
+      "velocity": true,
+      "ki": 1.6
+    },
+    {
+      "condition": "noisy_line_m1",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task1_m1_eta00_seed20261006\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "velocity_only__noisy_line_m1",
+      "variant": "velocity_only",
+      "rate": false,
+      "velocity": true,
+      "ki": 1.6
+    },
+    {
+      "condition": "noisy_vertical_m1",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task3_m1_eta00_seed20261006\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "velocity_only__noisy_vertical_m1",
+      "variant": "velocity_only",
+      "rate": false,
+      "velocity": true,
+      "ki": 1.6
+    },
+    {
+      "condition": "noisy_circle_eta20",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task2_m1_eta20_seed20261006\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "velocity_only__noisy_circle_eta20",
+      "variant": "velocity_only",
+      "rate": false,
+      "velocity": true,
+      "ki": 1.6
+    },
+    {
+      "condition": "noisy_circle_eta80",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task2_m1_eta80_seed20261006\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "velocity_only__noisy_circle_eta80",
+      "variant": "velocity_only",
+      "rate": false,
+      "velocity": true,
+      "ki": 1.6
+    },
+    {
+      "condition": "healthy_circle",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\healthy_four_tasks_20261027\\02_circle\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "velocity_only__healthy_circle",
+      "variant": "velocity_only",
+      "rate": false,
+      "velocity": true,
+      "ki": 1.6
+    },
+    {
+      "condition": "healthy_force",
+      "baseline_mat": "",
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "force": [
+        0.5,
+        -0.3,
+        0
+      ],
+      "mean_wind": [
+        0,
+        0,
+        0
+      ],
+      "name": "velocity_only__healthy_force",
+      "variant": "velocity_only",
+      "rate": false,
+      "velocity": true,
+      "ki": 1.6
+    },
+    {
+      "condition": "fault_force",
+      "baseline_mat": "",
+      "task": 0,
+      "motor": 1,
+      "factor": 0,
+      "wind": false,
+      "noise": false,
+      "force": [
+        0.5,
+        -0.3,
+        0
+      ],
+      "mean_wind": [
+        0,
+        0,
+        0
+      ],
+      "name": "velocity_only__fault_force",
+      "variant": "velocity_only",
+      "rate": false,
+      "velocity": true,
+      "ki": 1.6
+    },
+    {
+      "condition": "healthy_wind",
+      "baseline_mat": "",
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": [
+        1,
+        0.5,
+        0
+      ],
+      "name": "velocity_only__healthy_wind",
+      "variant": "velocity_only",
+      "rate": false,
+      "velocity": true,
+      "ki": 1.6
+    },
+    {
+      "condition": "fault_wind",
+      "baseline_mat": "",
+      "task": 0,
+      "motor": 1,
+      "factor": 0,
+      "wind": false,
+      "noise": false,
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": [
+        1,
+        0.5,
+        0
+      ],
+      "name": "velocity_only__fault_wind",
+      "variant": "velocity_only",
+      "rate": false,
+      "velocity": true,
+      "ki": 1.6
+    },
+    {
+      "condition": "calm_hover_m1",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_diagnostics\\m1_m4_symmetry_20261106\\hover_calm_m1\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "both_k08__calm_hover_m1",
+      "variant": "both_k08",
+      "rate": true,
+      "velocity": true,
+      "ki": 0.8
+    },
+    {
+      "condition": "calm_hover_m4",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_diagnostics\\m1_m4_symmetry_20261106\\hover_calm_m4\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "both_k08__calm_hover_m4",
+      "variant": "both_k08",
+      "rate": true,
+      "velocity": true,
+      "ki": 0.8
+    },
+    {
+      "condition": "noisy_hover_m1",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_diagnostics\\m1_m4_symmetry_20261106\\hover_wind_noise_m1\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "both_k08__noisy_hover_m1",
+      "variant": "both_k08",
+      "rate": true,
+      "velocity": true,
+      "ki": 0.8
+    },
+    {
+      "condition": "noisy_hover_m4",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_diagnostics\\m1_m4_symmetry_20261106\\hover_wind_noise_m4\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "both_k08__noisy_hover_m4",
+      "variant": "both_k08",
+      "rate": true,
+      "velocity": true,
+      "ki": 0.8
+    },
+    {
+      "condition": "noisy_circle_m1",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task2_m1_eta00_seed20261006\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "both_k08__noisy_circle_m1",
+      "variant": "both_k08",
+      "rate": true,
+      "velocity": true,
+      "ki": 0.8
+    },
+    {
+      "condition": "noisy_circle_m4",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task2_m4_eta00_seed20261006\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "both_k08__noisy_circle_m4",
+      "variant": "both_k08",
+      "rate": true,
+      "velocity": true,
+      "ki": 0.8
+    },
+    {
+      "condition": "noisy_line_m1",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task1_m1_eta00_seed20261006\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "both_k08__noisy_line_m1",
+      "variant": "both_k08",
+      "rate": true,
+      "velocity": true,
+      "ki": 0.8
+    },
+    {
+      "condition": "noisy_vertical_m1",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task3_m1_eta00_seed20261006\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "both_k08__noisy_vertical_m1",
+      "variant": "both_k08",
+      "rate": true,
+      "velocity": true,
+      "ki": 0.8
+    },
+    {
+      "condition": "noisy_circle_eta20",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task2_m1_eta20_seed20261006\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "both_k08__noisy_circle_eta20",
+      "variant": "both_k08",
+      "rate": true,
+      "velocity": true,
+      "ki": 0.8
+    },
+    {
+      "condition": "noisy_circle_eta80",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task2_m1_eta80_seed20261006\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "both_k08__noisy_circle_eta80",
+      "variant": "both_k08",
+      "rate": true,
+      "velocity": true,
+      "ki": 0.8
+    },
+    {
+      "condition": "healthy_circle",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\healthy_four_tasks_20261027\\02_circle\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "both_k08__healthy_circle",
+      "variant": "both_k08",
+      "rate": true,
+      "velocity": true,
+      "ki": 0.8
+    },
+    {
+      "condition": "healthy_force",
+      "baseline_mat": "",
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "force": [
+        0.5,
+        -0.3,
+        0
+      ],
+      "mean_wind": [
+        0,
+        0,
+        0
+      ],
+      "name": "both_k08__healthy_force",
+      "variant": "both_k08",
+      "rate": true,
+      "velocity": true,
+      "ki": 0.8
+    },
+    {
+      "condition": "fault_force",
+      "baseline_mat": "",
+      "task": 0,
+      "motor": 1,
+      "factor": 0,
+      "wind": false,
+      "noise": false,
+      "force": [
+        0.5,
+        -0.3,
+        0
+      ],
+      "mean_wind": [
+        0,
+        0,
+        0
+      ],
+      "name": "both_k08__fault_force",
+      "variant": "both_k08",
+      "rate": true,
+      "velocity": true,
+      "ki": 0.8
+    },
+    {
+      "condition": "healthy_wind",
+      "baseline_mat": "",
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": [
+        1,
+        0.5,
+        0
+      ],
+      "name": "both_k08__healthy_wind",
+      "variant": "both_k08",
+      "rate": true,
+      "velocity": true,
+      "ki": 0.8
+    },
+    {
+      "condition": "fault_wind",
+      "baseline_mat": "",
+      "task": 0,
+      "motor": 1,
+      "factor": 0,
+      "wind": false,
+      "noise": false,
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": [
+        1,
+        0.5,
+        0
+      ],
+      "name": "both_k08__fault_wind",
+      "variant": "both_k08",
+      "rate": true,
+      "velocity": true,
+      "ki": 0.8
+    },
+    {
+      "condition": "calm_hover_m1",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_diagnostics\\m1_m4_symmetry_20261106\\hover_calm_m1\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "both_k16__calm_hover_m1",
+      "variant": "both_k16",
+      "rate": true,
+      "velocity": true,
+      "ki": 1.6
+    },
+    {
+      "condition": "calm_hover_m4",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_diagnostics\\m1_m4_symmetry_20261106\\hover_calm_m4\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "both_k16__calm_hover_m4",
+      "variant": "both_k16",
+      "rate": true,
+      "velocity": true,
+      "ki": 1.6
+    },
+    {
+      "condition": "noisy_hover_m1",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_diagnostics\\m1_m4_symmetry_20261106\\hover_wind_noise_m1\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "both_k16__noisy_hover_m1",
+      "variant": "both_k16",
+      "rate": true,
+      "velocity": true,
+      "ki": 1.6
+    },
+    {
+      "condition": "noisy_hover_m4",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_simulink_diagnostics\\m1_m4_symmetry_20261106\\hover_wind_noise_m4\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "both_k16__noisy_hover_m4",
+      "variant": "both_k16",
+      "rate": true,
+      "velocity": true,
+      "ki": 1.6
+    },
+    {
+      "condition": "noisy_circle_m1",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task2_m1_eta00_seed20261006\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "both_k16__noisy_circle_m1",
+      "variant": "both_k16",
+      "rate": true,
+      "velocity": true,
+      "ki": 1.6
+    },
+    {
+      "condition": "noisy_circle_m4",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task2_m4_eta00_seed20261006\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "both_k16__noisy_circle_m4",
+      "variant": "both_k16",
+      "rate": true,
+      "velocity": true,
+      "ki": 1.6
+    },
+    {
+      "condition": "noisy_line_m1",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task1_m1_eta00_seed20261006\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "both_k16__noisy_line_m1",
+      "variant": "both_k16",
+      "rate": true,
+      "velocity": true,
+      "ki": 1.6
+    },
+    {
+      "condition": "noisy_vertical_m1",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task3_m1_eta00_seed20261006\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "both_k16__noisy_vertical_m1",
+      "variant": "both_k16",
+      "rate": true,
+      "velocity": true,
+      "ki": 1.6
+    },
+    {
+      "condition": "noisy_circle_eta20",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task2_m1_eta20_seed20261006\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "both_k16__noisy_circle_eta20",
+      "variant": "both_k16",
+      "rate": true,
+      "velocity": true,
+      "ki": 1.6
+    },
+    {
+      "condition": "noisy_circle_eta80",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\core_task2_m1_eta80_seed20261006\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "both_k16__noisy_circle_eta80",
+      "variant": "both_k16",
+      "rate": true,
+      "velocity": true,
+      "ki": 1.6
+    },
+    {
+      "condition": "healthy_circle",
+      "baseline_mat": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\simulink\\output\\simulations\\control_v3_20261023\\healthy_four_tasks_20261027\\02_circle\\result.mat",
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": null,
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "name": "both_k16__healthy_circle",
+      "variant": "both_k16",
+      "rate": true,
+      "velocity": true,
+      "ki": 1.6
+    },
+    {
+      "condition": "healthy_force",
+      "baseline_mat": "",
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "force": [
+        0.5,
+        -0.3,
+        0
+      ],
+      "mean_wind": [
+        0,
+        0,
+        0
+      ],
+      "name": "both_k16__healthy_force",
+      "variant": "both_k16",
+      "rate": true,
+      "velocity": true,
+      "ki": 1.6
+    },
+    {
+      "condition": "fault_force",
+      "baseline_mat": "",
+      "task": 0,
+      "motor": 1,
+      "factor": 0,
+      "wind": false,
+      "noise": false,
+      "force": [
+        0.5,
+        -0.3,
+        0
+      ],
+      "mean_wind": [
+        0,
+        0,
+        0
+      ],
+      "name": "both_k16__fault_force",
+      "variant": "both_k16",
+      "rate": true,
+      "velocity": true,
+      "ki": 1.6
+    },
+    {
+      "condition": "healthy_wind",
+      "baseline_mat": "",
+      "task": 0,
+      "motor": 0,
+      "factor": 1,
+      "wind": false,
+      "noise": false,
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": [
+        1,
+        0.5,
+        0
+      ],
+      "name": "both_k16__healthy_wind",
+      "variant": "both_k16",
+      "rate": true,
+      "velocity": true,
+      "ki": 1.6
+    },
+    {
+      "condition": "fault_wind",
+      "baseline_mat": "",
+      "task": 0,
+      "motor": 1,
+      "factor": 0,
+      "wind": false,
+      "noise": false,
+      "force": [
+        0,
+        0,
+        0
+      ],
+      "mean_wind": [
+        1,
+        0.5,
+        0
+      ],
+      "name": "both_k16__fault_wind",
+      "variant": "both_k16",
+      "rate": true,
+      "velocity": true,
+      "ki": 1.6
+    }
+  ],
+  "selection": "Require all current acceptance criteria and bounded integrals. Compare median, p90, maximum recovery, late errors and peak attitude/rates. Retain every regression.",
+  "independent_final_seeds": [
+    907001,
+    907003,
+    907009
+  ]
+}

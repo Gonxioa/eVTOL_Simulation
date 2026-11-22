@@ -1,0 +1,79 @@
+[
+  {
+    "condition": "calm_hover_m1",
+    "max_state_difference": 0.10391231840640103,
+    "max_position_difference_m": 2.6047251510105054e-09,
+    "max_command_difference_rad_s": 0.3344095970312537,
+    "max_reference_difference": 0.0
+  },
+  {
+    "condition": "calm_hover_m4",
+    "max_state_difference": 0.0936291585080653,
+    "max_position_difference_m": 3.52676308368148e-09,
+    "max_command_difference_rad_s": 0.3720468293254271,
+    "max_reference_difference": 0.0
+  },
+  {
+    "condition": "noisy_hover_m1",
+    "max_state_difference": 0.09130400439948971,
+    "max_position_difference_m": 1.9018686539390218e-07,
+    "max_command_difference_rad_s": 0.44898153224266935,
+    "max_reference_difference": 0.0
+  },
+  {
+    "condition": "noisy_hover_m4",
+    "max_state_difference": 0.07812501965918273,
+    "max_position_difference_m": 1.521479140636615e-07,
+    "max_command_difference_rad_s": 0.3714559187685609,
+    "max_reference_difference": 0.0
+  },
+  {
+    "condition": "noisy_circle_m1",
+    "max_state_difference": 0.07929707620564841,
+    "max_position_difference_m": 2.592231103283017e-07,
+    "max_command_difference_rad_s": 0.5077898055474179,
+    "max_reference_difference": 8.53440415560236e-08
+  },
+  {
+    "condition": "noisy_circle_m4",
+    "max_state_difference": 0.06586027749540335,
+    "max_position_difference_m": 8.777654564032678e-07,
+    "max_command_difference_rad_s": 0.3461143321737836,
+    "max_reference_difference": 3.444210744316112e-07
+  },
+  {
+    "condition": "noisy_line_m1",
+    "max_state_difference": 0.10786987424171457,
+    "max_position_difference_m": 1.621413669982929e-07,
+    "max_command_difference_rad_s": 0.4934042386130386,
+    "max_reference_difference": 7.239159105498771e-08
+  },
+  {
+    "condition": "noisy_vertical_m1",
+    "max_state_difference": 0.10922721695760629,
+    "max_position_difference_m": 2.396571305508307e-07,
+    "max_command_difference_rad_s": 0.7258781306043147,
+    "max_reference_difference": 2.3065933607568923e-08
+  },
+  {
+    "condition": "noisy_circle_eta20",
+    "max_state_difference": 1.860581767232361e-05,
+    "max_position_difference_m": 1.3661270067598372e-10,
+    "max_command_difference_rad_s": 0.00012132518122598412,
+    "max_reference_difference": 1.6325697738128753e-10
+  },
+  {
+    "condition": "noisy_circle_eta80",
+    "max_state_difference": 4.547473508864641e-13,
+    "max_position_difference_m": 4.847799515902576e-16,
+    "max_command_difference_rad_s": 1.0231815394945443e-12,
+    "max_reference_difference": 3.885780586188048e-16
+  },
+  {
+    "condition": "healthy_circle",
+    "max_state_difference": 5.7980287238024175e-12,
+    "max_position_difference_m": 3.5761484339252494e-15,
+    "max_command_difference_rad_s": 9.777068044058979e-12,
+    "max_reference_difference": 7.022160630754115e-15
+  }
+]

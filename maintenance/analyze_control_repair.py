@@ -98,7 +98,26 @@ def pair_audits(records,output):
 def development(folder,output):
     records=rows(folder);flat=[]
     for r in records:
-        flat.append(dict(variant=r['case']['variant'],condition=r['case']['condition'],**r['metrics']))
+        a=loadmat(Path(r['directory'])/'result.mat',simplify_cells=True)['result']
+        t=a['time'];s=a['state'];ref=a['reference'];audit=a['control_audit'];diag=a['controller_diagnostic']
+        nominal=np.linalg.norm(s[:,:3]-a['reference_audit'][:,2:5],axis=1)
+        phase_indices=np.flatnonzero(a['reference_audit'][:,0]>=a['parameters']['motion_end'])
+        last_changes=[]
+        for axis in range(3):
+            changes=np.flatnonzero(abs(np.diff(audit[:,15+axis]))>1e-10)+1
+            last_changes.append(float(t[changes[-1]]) if len(changes) else None)
+        extra=dict(nominal_tracking_rmse_m=float(np.sqrt(np.mean(nominal**2))),
+            late_nominal_rmse_m=float(np.sqrt(np.mean(nominal[t>=21]**2))),
+            mission_completion_time_s=float(t[phase_indices[0]]) if len(phase_indices) else None,
+            max_velocity_integral_m_s2=np.max(abs(audit[:,12:15]),axis=0).tolist(),
+            max_rate_integral_rad_s2=np.max(abs(audit[:,15:18]),axis=0).tolist(),
+            rate_integral_last_change_s=last_changes,
+            actuator_saturated_time_s=float(np.sum(np.diff(t)*np.any(a['motor_command'][:-1]>=1099.999999,axis=1))),
+            max_requested_moment_Nm=np.max(abs(audit[:,1:4]),axis=0).tolist(),
+            max_allocated_moment_Nm=np.max(abs(audit[:,5:8]),axis=0).tolist(),
+            max_moment_residual_Nm=np.max(abs(audit[:,9:12]),axis=0).tolist(),
+            velocity_backcalc_components_m_s2=diag[:,48:63].sum(axis=0).tolist())
+        flat.append(dict(variant=r['case']['variant'],condition=r['case']['condition'],**r['metrics'],**extra))
     df=pd.DataFrame(flat);df.to_csv(output/'ablation_cases.csv',index=False,encoding='utf-8-sig')
     summaries=[]
     for variant,a in df.groupby('variant',sort=False):
@@ -129,16 +148,39 @@ def plots(df,records,output):
         ax.plot(range(len(selected)),a.return_time_s,'o-',label=label)
     ax.set_xticks(range(len(selected)),['理想悬停M1','风噪悬停M1','风噪悬停M4','绕圈M1','绕圈M4','直线M1','升降M1'])
     ax.set_ylabel('故障后恢复时间（s）');ax.grid(alpha=.25);ax.legend();fig.tight_layout();fig.savefig(output/'01_ablation_recovery.png',dpi=180);plt.close(fig)
+    base=Path(records[0]['directory']).parent.parent if records else None
+    if base:
+        fig,axs=plt.subplots(4,2,figsize=(13,10),sharex=True)
+        for column,(variant,label) in enumerate([('original','原控制器'),('both_k16','正式修复')]):
+            a=loadmat(base/'development_01'/f'{variant}__calm_hover_m1'/'result.mat',simplify_cells=True)['result']
+            t=a['time'];d=a['controller_diagnostic'];audit=a['control_audit'];s=a['state']
+            axs[0,column].plot(t,np.linalg.norm(s[:,:3]-a['reference'][:,:3],axis=1));axs[0,column].axhline(.15,color='gray',ls=':');axs[0,column].set_title(label+'：理想悬停M1完全失效');axs[0,column].set_ylabel('位置误差（m）')
+            for index,name in [(22,'P'),(25,'I'),(28,'D'),(31,'净请求')]:axs[1,column].plot(t,d[:,index],label=name)
+            axs[1,column].set_ylabel('俯仰角速度环（rad/s²）');axs[1,column].legend(ncol=4,fontsize=8)
+            for index,name in [(0,'P'),(3,'I'),(6,'D'),(9,'净请求')]:axs[2,column].plot(t,d[:,index],label=name)
+            axs[2,column].set_ylabel('x速度环（m/s²）');axs[2,column].legend(ncol=4,fontsize=8)
+            axs[3,column].plot(t,audit[:,16]);axs[3,column].set_ylabel('俯仰积分（rad/s²）');axs[3,column].set_xlabel('Time (s)')
+            for ax in axs[:,column]:ax.grid(alpha=.25);ax.axvline(3,ls='--',color='gray')
+        fig.tight_layout();fig.savefig(output/'03_mechanism_before_after.png',dpi=180);plt.close(fig)
     if records:
         r=max(records,key=lambda a:a['metrics']['return_time_s']);data=pd.read_csv(Path(r['directory'])/'signals.csv')
         fig,axs=plt.subplots(3,1,figsize=(11,8),sharex=True)
         axs[0].plot(data.time_s,data.diag_position_error_norm_m);axs[0].axhline(.15,color='gray',ls=':');axs[0].set_ylabel('位置误差（m）')
-        for axis in 'xy':axs[1].plot(data.time_s,data[f'diag_rate_I_applied_{axis}'],label=axis)
-        axs[1].set_ylabel('角速度环积分（rad/s²）');axs[1].legend()
-        for axis in 'xy':axs[2].plot(data.time_s,data[f'diag_velocity_I_applied_{axis}'],label=axis)
-        axs[2].set_ylabel('速度环积分（m/s²）');axs[2].set_xlabel('Time (s)');axs[2].legend()
+        axs[1].plot(data.time_s,data.diag_rate_I_applied_y)
+        axs[1].set_ylabel('俯仰角速度环积分（rad/s²）')
+        axs[2].plot(data.time_s,data.diag_velocity_I_applied_x)
+        axs[2].set_ylabel('x速度环积分（m/s²）');axs[2].set_xlabel('Time (s)')
         for ax in axs:ax.grid(alpha=.25);ax.axvline(r['case']['fault_start'],ls='--',color='gray')
         fig.suptitle('最终验证中恢复最慢工况：'+r['case']['name']);fig.tight_layout();fig.savefig(output/'02_worst_recovery_trace.png',dpi=180);plt.close(fig)
+        core=[r for r in records if r['case']['suite']=='development' and r['case']['seed']==20261006]
+        if len(core)==76:
+            fig,axs=plt.subplots(2,2,figsize=(12,7),sharex=True,sharey=True)
+            for task,ax in enumerate(axs.flat):
+                for eta,label in [(.8,'剩余80%效能'),(.2,'剩余20%效能'),(0.,'完全失效')]:
+                    selected=sorted([r for r in core if r['case']['task']==task and r['case']['motor'] and r['case']['factor']==eta],key=lambda r:r['case']['motor'])
+                    ax.plot(range(1,7),[r['metrics']['return_time_s'] for r in selected],'o-',label=label)
+                ax.set_title(['悬停','直线','绕圈','升降'][task]);ax.set_xticks(range(1,7),[f'M{i}' for i in range(1,7)]);ax.set_ylabel('故障后恢复时间（s）');ax.grid(alpha=.25)
+            axs[0,0].legend(fontsize=9);fig.tight_layout();fig.savefig(output/'04_core_72_recovery.png',dpi=180);plt.close(fig)
 
 
 def main(base,output):
@@ -150,6 +192,7 @@ def main(base,output):
         if i%50==0: print('AUDIT',i,len(complete),flush=True)
     flat=[dict(name=r['case']['name'],suite=r['case']['suite'],**r['metrics'],directory=r['directory'],csv_sha256=r['csv_sha256'],mat_sha256=r['mat_sha256']) for r in complete]
     frame=pd.DataFrame(flat);frame.to_csv(output/'native_cases.csv',index=False,encoding='utf-8-sig')
+    write_json(output/'native_cases.json',flat)
     pd.DataFrame(audit).to_csv(output/'independent_csv_recomputation.csv',index=False)
     mirrors,convergence=pair_audits(complete,output)
     stats=[]

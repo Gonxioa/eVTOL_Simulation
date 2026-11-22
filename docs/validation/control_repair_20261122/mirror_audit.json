@@ -304,5 +304,311 @@
     ],
     "recovery_difference_s": -0.08000000000000007,
     "suite": "mirror_3_6_1_original"
+  },
+  {
+    "axial": [
+      [
+        1.0,
+        -0.0,
+        -0.0
+      ],
+      [
+        -0.0,
+        -1.0,
+        -0.0
+      ],
+      [
+        -0.0,
+        -0.0,
+        -1.0
+      ]
+    ],
+    "max_body_rate_difference_rad_s": 1.7044776700322187e-07,
+    "max_command_difference_rad_s": 0.3166977634214163,
+    "max_exogenous_transform_error": 0.0,
+    "max_position_difference_m": 4.2675211326074e-09,
+    "max_wind_transform_error": 0.0,
+    "permutation": [
+      4,
+      3,
+      2,
+      1,
+      6,
+      5
+    ],
+    "polar": [
+      [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "recovery_difference_s": 0.0,
+    "suite": "moving_mirror_1_4_0_original"
+  },
+  {
+    "axial": [
+      [
+        1.0,
+        -0.0,
+        -0.0
+      ],
+      [
+        -0.0,
+        -1.0,
+        -0.0
+      ],
+      [
+        -0.0,
+        -0.0,
+        -1.0
+      ]
+    ],
+    "max_body_rate_difference_rad_s": 8.096939740181197e-06,
+    "max_command_difference_rad_s": 0.489618491491683,
+    "max_exogenous_transform_error": 0.0,
+    "max_position_difference_m": 1.5026724010582806e-07,
+    "max_wind_transform_error": 0.0,
+    "permutation": [
+      4,
+      3,
+      2,
+      1,
+      6,
+      5
+    ],
+    "polar": [
+      [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "recovery_difference_s": 0.0,
+    "suite": "moving_mirror_1_4_1_original"
+  },
+  {
+    "axial": [
+      [
+        -0.4999999999999998,
+        0.8660254037844388,
+        -0.0
+      ],
+      [
+        0.8660254037844388,
+        0.4999999999999998,
+        -0.0
+      ],
+      [
+        -0.0,
+        -0.0,
+        -1.0
+      ]
+    ],
+    "max_body_rate_difference_rad_s": 1.2367472379116742,
+    "max_command_difference_rad_s": 367.0753405087516,
+    "max_exogenous_transform_error": 0.0,
+    "max_position_difference_m": 0.11284133210579286,
+    "max_wind_transform_error": 0.0,
+    "permutation": [
+      6,
+      5,
+      4,
+      3,
+      2,
+      1
+    ],
+    "polar": [
+      [
+        0.4999999999999998,
+        -0.8660254037844388,
+        0.0
+      ],
+      [
+        -0.8660254037844388,
+        -0.4999999999999998,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "recovery_difference_s": 0.009999999999999787,
+    "suite": "moving_mirror_2_5_0_original"
+  },
+  {
+    "axial": [
+      [
+        -0.4999999999999998,
+        0.8660254037844388,
+        -0.0
+      ],
+      [
+        0.8660254037844388,
+        0.4999999999999998,
+        -0.0
+      ],
+      [
+        -0.0,
+        -0.0,
+        -1.0
+      ]
+    ],
+    "max_body_rate_difference_rad_s": 1.2832191782025957,
+    "max_command_difference_rad_s": 329.81761566866203,
+    "max_exogenous_transform_error": 1.1102230246251565e-16,
+    "max_position_difference_m": 0.11626241768051492,
+    "max_wind_transform_error": 1.1102230246251565e-16,
+    "permutation": [
+      6,
+      5,
+      4,
+      3,
+      2,
+      1
+    ],
+    "polar": [
+      [
+        0.4999999999999998,
+        -0.8660254037844388,
+        0.0
+      ],
+      [
+        -0.8660254037844388,
+        -0.4999999999999998,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "recovery_difference_s": 0.14999999999999947,
+    "suite": "moving_mirror_2_5_1_original"
+  },
+  {
+    "axial": [
+      [
+        -0.5000000000000004,
+        -0.8660254037844384,
+        -0.0
+      ],
+      [
+        -0.8660254037844384,
+        0.5000000000000002,
+        -0.0
+      ],
+      [
+        -0.0,
+        -0.0,
+        -1.0
+      ]
+    ],
+    "max_body_rate_difference_rad_s": 0.949333559444665,
+    "max_command_difference_rad_s": 148.43276440212063,
+    "max_exogenous_transform_error": 0.0,
+    "max_position_difference_m": 0.05111044972382997,
+    "max_wind_transform_error": 0.0,
+    "permutation": [
+      2,
+      1,
+      6,
+      5,
+      4,
+      3
+    ],
+    "polar": [
+      [
+        0.5000000000000004,
+        0.8660254037844384,
+        0.0
+      ],
+      [
+        0.8660254037844384,
+        -0.5000000000000002,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "recovery_difference_s": -0.10000000000000053,
+    "suite": "moving_mirror_3_6_0_original"
+  },
+  {
+    "axial": [
+      [
+        -0.5000000000000004,
+        -0.8660254037844384,
+        -0.0
+      ],
+      [
+        -0.8660254037844384,
+        0.5000000000000002,
+        -0.0
+      ],
+      [
+        -0.0,
+        -0.0,
+        -1.0
+      ]
+    ],
+    "max_body_rate_difference_rad_s": 0.9202957541375847,
+    "max_command_difference_rad_s": 198.1332952187489,
+    "max_exogenous_transform_error": 1.1102230246251565e-16,
+    "max_position_difference_m": 0.04230140990113245,
+    "max_wind_transform_error": 1.1102230246251565e-16,
+    "permutation": [
+      2,
+      1,
+      6,
+      5,
+      4,
+      3
+    ],
+    "polar": [
+      [
+        0.5000000000000004,
+        0.8660254037844384,
+        0.0
+      ],
+      [
+        0.8660254037844384,
+        -0.5000000000000002,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "recovery_difference_s": -0.03000000000000025,
+    "suite": "moving_mirror_3_6_1_original"
   }
 ]

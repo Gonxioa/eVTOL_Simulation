@@ -1,0 +1,10 @@
+{
+  "profile": "control_recovery_v4_20261122",
+  "native_cases": 544,
+  "passed": true,
+  "source_signature": "dd7c8618acf32b63feeeb5afb8e5c3c3b499c95161622b53a55f98017d9c5ce1",
+  "model_sha256": "aaced9e3aac6adbabfa33e089f416455d860478c49c86043d2b543edb6fd7c55",
+  "all_files_rehashed": true,
+  "metrics_recomputed_from_mat": false,
+  "mat_stored_metrics_checked": true
+}

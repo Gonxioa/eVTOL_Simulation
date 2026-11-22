@@ -1,0 +1,779 @@
+{
+  "profile": "hex_control_repair_native_v4",
+  "controller_version": "control_recovery_v4_20261122",
+  "source_signature": "27367be75c2729e32a8621f8c02620ae148b182de98dad43840e66a273caa2a7",
+  "cases": [
+    {
+      "suite": "mirror_1_4_0_original",
+      "task": 0,
+      "motor": 1,
+      "factor": 0.0,
+      "seed": 20261006,
+      "noise": false,
+      "wind": false,
+      "integration_dt": 0.002,
+      "fault_start": 3.0,
+      "heading": 0.0,
+      "mirror": 0,
+      "force": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "mirror_1_4_0_original_t0_m1_e000_s20261006"
+    },
+    {
+      "suite": "mirror_1_4_0_reflected",
+      "task": 0,
+      "motor": 4,
+      "factor": 0.0,
+      "seed": 20261006,
+      "noise": false,
+      "wind": false,
+      "integration_dt": 0.002,
+      "fault_start": 3.0,
+      "heading": 0.0,
+      "mirror": 1,
+      "force": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "mirror_1_4_0_reflected_t0_m4_e000_s20261006"
+    },
+    {
+      "suite": "mirror_1_4_1_original",
+      "task": 0,
+      "motor": 1,
+      "factor": 0.0,
+      "seed": 20261006,
+      "noise": true,
+      "wind": true,
+      "integration_dt": 0.002,
+      "fault_start": 3.0,
+      "heading": 0.0,
+      "mirror": 0,
+      "force": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "mirror_1_4_1_original_t0_m1_e000_s20261006"
+    },
+    {
+      "suite": "mirror_1_4_1_reflected",
+      "task": 0,
+      "motor": 4,
+      "factor": 0.0,
+      "seed": 20261006,
+      "noise": true,
+      "wind": true,
+      "integration_dt": 0.002,
+      "fault_start": 3.0,
+      "heading": 0.0,
+      "mirror": 1,
+      "force": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "mirror_1_4_1_reflected_t0_m4_e000_s20261006"
+    },
+    {
+      "suite": "mirror_2_5_0_original",
+      "task": 0,
+      "motor": 2,
+      "factor": 0.0,
+      "seed": 20261006,
+      "noise": false,
+      "wind": false,
+      "integration_dt": 0.002,
+      "fault_start": 3.0,
+      "heading": 0.0,
+      "mirror": 0,
+      "force": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "mirror_2_5_0_original_t0_m2_e000_s20261006"
+    },
+    {
+      "suite": "mirror_2_5_0_reflected",
+      "task": 0,
+      "motor": 5,
+      "factor": 0.0,
+      "seed": 20261006,
+      "noise": false,
+      "wind": false,
+      "integration_dt": 0.002,
+      "fault_start": 3.0,
+      "heading": 0.0,
+      "mirror": 2,
+      "force": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "mirror_2_5_0_reflected_t0_m5_e000_s20261006"
+    },
+    {
+      "suite": "mirror_2_5_1_original",
+      "task": 0,
+      "motor": 2,
+      "factor": 0.0,
+      "seed": 20261006,
+      "noise": true,
+      "wind": true,
+      "integration_dt": 0.002,
+      "fault_start": 3.0,
+      "heading": 0.0,
+      "mirror": 0,
+      "force": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "mirror_2_5_1_original_t0_m2_e000_s20261006"
+    },
+    {
+      "suite": "mirror_2_5_1_reflected",
+      "task": 0,
+      "motor": 5,
+      "factor": 0.0,
+      "seed": 20261006,
+      "noise": true,
+      "wind": true,
+      "integration_dt": 0.002,
+      "fault_start": 3.0,
+      "heading": 0.0,
+      "mirror": 2,
+      "force": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "mirror_2_5_1_reflected_t0_m5_e000_s20261006"
+    },
+    {
+      "suite": "mirror_3_6_0_original",
+      "task": 0,
+      "motor": 3,
+      "factor": 0.0,
+      "seed": 20261006,
+      "noise": false,
+      "wind": false,
+      "integration_dt": 0.002,
+      "fault_start": 3.0,
+      "heading": 0.0,
+      "mirror": 0,
+      "force": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "mirror_3_6_0_original_t0_m3_e000_s20261006"
+    },
+    {
+      "suite": "mirror_3_6_0_reflected",
+      "task": 0,
+      "motor": 6,
+      "factor": 0.0,
+      "seed": 20261006,
+      "noise": false,
+      "wind": false,
+      "integration_dt": 0.002,
+      "fault_start": 3.0,
+      "heading": 0.0,
+      "mirror": 3,
+      "force": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "mirror_3_6_0_reflected_t0_m6_e000_s20261006"
+    },
+    {
+      "suite": "mirror_3_6_1_original",
+      "task": 0,
+      "motor": 3,
+      "factor": 0.0,
+      "seed": 20261006,
+      "noise": true,
+      "wind": true,
+      "integration_dt": 0.002,
+      "fault_start": 3.0,
+      "heading": 0.0,
+      "mirror": 0,
+      "force": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "mirror_3_6_1_original_t0_m3_e000_s20261006"
+    },
+    {
+      "suite": "mirror_3_6_1_reflected",
+      "task": 0,
+      "motor": 6,
+      "factor": 0.0,
+      "seed": 20261006,
+      "noise": true,
+      "wind": true,
+      "integration_dt": 0.002,
+      "fault_start": 3.0,
+      "heading": 0.0,
+      "mirror": 3,
+      "force": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "mirror_3_6_1_reflected_t0_m6_e000_s20261006"
+    },
+    {
+      "suite": "convergence_0.002",
+      "task": 0,
+      "motor": 1,
+      "factor": 0.0,
+      "seed": 20261006,
+      "noise": true,
+      "wind": true,
+      "integration_dt": 0.002,
+      "fault_start": 3.0,
+      "heading": 0.0,
+      "mirror": 0,
+      "force": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "convergence_0.002_t0_m1_e000_s20261006"
+    },
+    {
+      "suite": "convergence_0.001",
+      "task": 0,
+      "motor": 1,
+      "factor": 0.0,
+      "seed": 20261006,
+      "noise": true,
+      "wind": true,
+      "integration_dt": 0.001,
+      "fault_start": 3.0,
+      "heading": 0.0,
+      "mirror": 0,
+      "force": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "convergence_0.001_t0_m1_e000_s20261006"
+    },
+    {
+      "suite": "convergence_0.002",
+      "task": 0,
+      "motor": 4,
+      "factor": 0.0,
+      "seed": 20261006,
+      "noise": true,
+      "wind": true,
+      "integration_dt": 0.002,
+      "fault_start": 3.0,
+      "heading": 0.0,
+      "mirror": 0,
+      "force": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "convergence_0.002_t0_m4_e000_s20261006"
+    },
+    {
+      "suite": "convergence_0.001",
+      "task": 0,
+      "motor": 4,
+      "factor": 0.0,
+      "seed": 20261006,
+      "noise": true,
+      "wind": true,
+      "integration_dt": 0.001,
+      "fault_start": 3.0,
+      "heading": 0.0,
+      "mirror": 0,
+      "force": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "convergence_0.001_t0_m4_e000_s20261006"
+    },
+    {
+      "suite": "convergence_0.002",
+      "task": 2,
+      "motor": 1,
+      "factor": 0.0,
+      "seed": 20261006,
+      "noise": true,
+      "wind": true,
+      "integration_dt": 0.002,
+      "fault_start": 3.0,
+      "heading": 0.0,
+      "mirror": 0,
+      "force": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "convergence_0.002_t2_m1_e000_s20261006"
+    },
+    {
+      "suite": "convergence_0.001",
+      "task": 2,
+      "motor": 1,
+      "factor": 0.0,
+      "seed": 20261006,
+      "noise": true,
+      "wind": true,
+      "integration_dt": 0.001,
+      "fault_start": 3.0,
+      "heading": 0.0,
+      "mirror": 0,
+      "force": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "convergence_0.001_t2_m1_e000_s20261006"
+    },
+    {
+      "suite": "convergence_0.002",
+      "task": 2,
+      "motor": 4,
+      "factor": 0.0,
+      "seed": 20261006,
+      "noise": true,
+      "wind": true,
+      "integration_dt": 0.002,
+      "fault_start": 3.0,
+      "heading": 0.0,
+      "mirror": 0,
+      "force": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "convergence_0.002_t2_m4_e000_s20261006"
+    },
+    {
+      "suite": "convergence_0.001",
+      "task": 2,
+      "motor": 4,
+      "factor": 0.0,
+      "seed": 20261006,
+      "noise": true,
+      "wind": true,
+      "integration_dt": 0.001,
+      "fault_start": 3.0,
+      "heading": 0.0,
+      "mirror": 0,
+      "force": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "convergence_0.001_t2_m4_e000_s20261006"
+    },
+    {
+      "suite": "convergence_0.002",
+      "task": 1,
+      "motor": 1,
+      "factor": 0.0,
+      "seed": 20261006,
+      "noise": true,
+      "wind": true,
+      "integration_dt": 0.002,
+      "fault_start": 3.0,
+      "heading": 0.0,
+      "mirror": 0,
+      "force": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "convergence_0.002_t1_m1_e000_s20261006"
+    },
+    {
+      "suite": "convergence_0.001",
+      "task": 1,
+      "motor": 1,
+      "factor": 0.0,
+      "seed": 20261006,
+      "noise": true,
+      "wind": true,
+      "integration_dt": 0.001,
+      "fault_start": 3.0,
+      "heading": 0.0,
+      "mirror": 0,
+      "force": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "convergence_0.001_t1_m1_e000_s20261006"
+    },
+    {
+      "suite": "convergence_0.002",
+      "task": 3,
+      "motor": 1,
+      "factor": 0.0,
+      "seed": 20261006,
+      "noise": true,
+      "wind": true,
+      "integration_dt": 0.002,
+      "fault_start": 3.0,
+      "heading": 0.0,
+      "mirror": 0,
+      "force": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "convergence_0.002_t3_m1_e000_s20261006"
+    },
+    {
+      "suite": "convergence_0.001",
+      "task": 3,
+      "motor": 1,
+      "factor": 0.0,
+      "seed": 20261006,
+      "noise": true,
+      "wind": true,
+      "integration_dt": 0.001,
+      "fault_start": 3.0,
+      "heading": 0.0,
+      "mirror": 0,
+      "force": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "convergence_0.001_t3_m1_e000_s20261006"
+    },
+    {
+      "suite": "fault_time_1.5",
+      "task": 0,
+      "motor": 1,
+      "factor": 0.0,
+      "seed": 20261006,
+      "noise": true,
+      "wind": true,
+      "integration_dt": 0.002,
+      "fault_start": 1.5,
+      "heading": 0.0,
+      "mirror": 0,
+      "force": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "fault_time_1.5_t0_m1_e000_s20261006"
+    },
+    {
+      "suite": "fault_time_5.5",
+      "task": 0,
+      "motor": 1,
+      "factor": 0.0,
+      "seed": 20261006,
+      "noise": true,
+      "wind": true,
+      "integration_dt": 0.002,
+      "fault_start": 5.5,
+      "heading": 0.0,
+      "mirror": 0,
+      "force": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "fault_time_5.5_t0_m1_e000_s20261006"
+    },
+    {
+      "suite": "fault_time_1.5",
+      "task": 0,
+      "motor": 4,
+      "factor": 0.0,
+      "seed": 20261006,
+      "noise": true,
+      "wind": true,
+      "integration_dt": 0.002,
+      "fault_start": 1.5,
+      "heading": 0.0,
+      "mirror": 0,
+      "force": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "fault_time_1.5_t0_m4_e000_s20261006"
+    },
+    {
+      "suite": "fault_time_5.5",
+      "task": 0,
+      "motor": 4,
+      "factor": 0.0,
+      "seed": 20261006,
+      "noise": true,
+      "wind": true,
+      "integration_dt": 0.002,
+      "fault_start": 5.5,
+      "heading": 0.0,
+      "mirror": 0,
+      "force": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "fault_time_5.5_t0_m4_e000_s20261006"
+    },
+    {
+      "suite": "fault_time_1.5",
+      "task": 1,
+      "motor": 1,
+      "factor": 0.0,
+      "seed": 20261006,
+      "noise": true,
+      "wind": true,
+      "integration_dt": 0.002,
+      "fault_start": 1.5,
+      "heading": 0.0,
+      "mirror": 0,
+      "force": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "fault_time_1.5_t1_m1_e000_s20261006"
+    },
+    {
+      "suite": "fault_time_5.5",
+      "task": 1,
+      "motor": 1,
+      "factor": 0.0,
+      "seed": 20261006,
+      "noise": true,
+      "wind": true,
+      "integration_dt": 0.002,
+      "fault_start": 5.5,
+      "heading": 0.0,
+      "mirror": 0,
+      "force": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "fault_time_5.5_t1_m1_e000_s20261006"
+    },
+    {
+      "suite": "fault_time_1.5",
+      "task": 1,
+      "motor": 4,
+      "factor": 0.0,
+      "seed": 20261006,
+      "noise": true,
+      "wind": true,
+      "integration_dt": 0.002,
+      "fault_start": 1.5,
+      "heading": 0.0,
+      "mirror": 0,
+      "force": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "fault_time_1.5_t1_m4_e000_s20261006"
+    },
+    {
+      "suite": "fault_time_5.5",
+      "task": 1,
+      "motor": 4,
+      "factor": 0.0,
+      "seed": 20261006,
+      "noise": true,
+      "wind": true,
+      "integration_dt": 0.002,
+      "fault_start": 5.5,
+      "heading": 0.0,
+      "mirror": 0,
+      "force": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "fault_time_5.5_t1_m4_e000_s20261006"
+    },
+    {
+      "suite": "fault_time_1.5",
+      "task": 2,
+      "motor": 1,
+      "factor": 0.0,
+      "seed": 20261006,
+      "noise": true,
+      "wind": true,
+      "integration_dt": 0.002,
+      "fault_start": 1.5,
+      "heading": 0.0,
+      "mirror": 0,
+      "force": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "fault_time_1.5_t2_m1_e000_s20261006"
+    },
+    {
+      "suite": "fault_time_5.5",
+      "task": 2,
+      "motor": 1,
+      "factor": 0.0,
+      "seed": 20261006,
+      "noise": true,
+      "wind": true,
+      "integration_dt": 0.002,
+      "fault_start": 5.5,
+      "heading": 0.0,
+      "mirror": 0,
+      "force": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "fault_time_5.5_t2_m1_e000_s20261006"
+    },
+    {
+      "suite": "fault_time_1.5",
+      "task": 2,
+      "motor": 4,
+      "factor": 0.0,
+      "seed": 20261006,
+      "noise": true,
+      "wind": true,
+      "integration_dt": 0.002,
+      "fault_start": 1.5,
+      "heading": 0.0,
+      "mirror": 0,
+      "force": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "fault_time_1.5_t2_m4_e000_s20261006"
+    },
+    {
+      "suite": "fault_time_5.5",
+      "task": 2,
+      "motor": 4,
+      "factor": 0.0,
+      "seed": 20261006,
+      "noise": true,
+      "wind": true,
+      "integration_dt": 0.002,
+      "fault_start": 5.5,
+      "heading": 0.0,
+      "mirror": 0,
+      "force": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "fault_time_5.5_t2_m4_e000_s20261006"
+    },
+    {
+      "suite": "fault_time_1.5",
+      "task": 3,
+      "motor": 1,
+      "factor": 0.0,
+      "seed": 20261006,
+      "noise": true,
+      "wind": true,
+      "integration_dt": 0.002,
+      "fault_start": 1.5,
+      "heading": 0.0,
+      "mirror": 0,
+      "force": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "fault_time_1.5_t3_m1_e000_s20261006"
+    },
+    {
+      "suite": "fault_time_5.5",
+      "task": 3,
+      "motor": 1,
+      "factor": 0.0,
+      "seed": 20261006,
+      "noise": true,
+      "wind": true,
+      "integration_dt": 0.002,
+      "fault_start": 5.5,
+      "heading": 0.0,
+      "mirror": 0,
+      "force": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "fault_time_5.5_t3_m1_e000_s20261006"
+    },
+    {
+      "suite": "fault_time_1.5",
+      "task": 3,
+      "motor": 4,
+      "factor": 0.0,
+      "seed": 20261006,
+      "noise": true,
+      "wind": true,
+      "integration_dt": 0.002,
+      "fault_start": 1.5,
+      "heading": 0.0,
+      "mirror": 0,
+      "force": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "fault_time_1.5_t3_m4_e000_s20261006"
+    },
+    {
+      "suite": "fault_time_5.5",
+      "task": 3,
+      "motor": 4,
+      "factor": 0.0,
+      "seed": 20261006,
+      "noise": true,
+      "wind": true,
+      "integration_dt": 0.002,
+      "fault_start": 5.5,
+      "heading": 0.0,
+      "mirror": 0,
+      "force": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "fault_time_5.5_t3_m4_e000_s20261006"
+    }
+  ],
+  "independent_final_seeds": [
+    907001,
+    907003,
+    907009
+  ],
+  "feedback": "observed, 30 ms in ideal and stochastic conditions",
+  "selection": "Frozen after 75 paired ablations; minimum median/p90 recovery with all existing flight limits; retain all regressions.",
+  "mirror": "polar S=I-2nnT; axial det(S)S; motor permutation induced by S; hover; quaternion matrices compared as S R S",
+  "convergence_limits": {
+    "max_position_difference_m": 0.02,
+    "max_recovery_difference_s": 0.1
+  }
+}
