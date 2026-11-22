@@ -1,0 +1,19 @@
+SIMULATION_SLX m=0 eta=1.00 task=2 duration=24.00 completed final=0.0105
+COLLECT 1/9 g000_label00 completed 39.44s
+SIMULATION_SLX m=1 eta=0.00 task=2 duration=24.00 completed final=0.0096
+COLLECT 2/9 g000_label01 completed 9.00s
+SIMULATION_SLX m=1 eta=0.80 task=2 duration=24.00 completed final=0.0113
+COLLECT 3/9 g000_label13 completed 9.04s
+SIMULATION_SLX m=0 eta=1.00 task=2 duration=24.00 completed final=0.0159
+COLLECT 4/9 g001_label00 completed 14.37s
+SIMULATION_SLX m=1 eta=0.00 task=2 duration=24.00 completed final=0.0124
+COLLECT 5/9 g001_label01 completed 3.69s
+SIMULATION_SLX m=1 eta=0.80 task=2 duration=24.00 completed final=0.0149
+COLLECT 6/9 g001_label13 completed 3.67s
+SIMULATION_SLX m=0 eta=1.00 task=2 duration=24.00 completed final=0.0032
+COLLECT 7/9 g002_label00 completed 13.76s
+SIMULATION_SLX m=1 eta=0.00 task=2 duration=24.00 completed final=0.0042
+COLLECT 8/9 g002_label01 completed 4.69s
+SIMULATION_SLX m=1 eta=0.80 task=2 duration=24.00 completed final=0.0026
+COLLECT 9/9 g002_label13 completed 3.15s
+COLLECTION_FINISHED

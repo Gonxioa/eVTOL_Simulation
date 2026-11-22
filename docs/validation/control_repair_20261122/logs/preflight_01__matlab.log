@@ -1,0 +1,81 @@
+SIMULATION_SLX m=1 eta=0.00 task=0 duration=24.00 completed final=0.0001
+REPAIR_VALIDATION 1/40 mirror_1_4_0_original_t0_m1_e000_s20261006 pass=1 recovery=2.53 late=0.00025
+SIMULATION_SLX m=4 eta=0.00 task=0 duration=24.00 completed final=0.0001
+REPAIR_VALIDATION 2/40 mirror_1_4_0_reflected_t0_m4_e000_s20261006 pass=1 recovery=2.53 late=0.00025
+SIMULATION_SLX m=1 eta=0.00 task=0 duration=24.00 completed final=0.0048
+REPAIR_VALIDATION 3/40 mirror_1_4_1_original_t0_m1_e000_s20261006 pass=1 recovery=3.38 late=0.00994
+SIMULATION_SLX m=4 eta=0.00 task=0 duration=24.00 completed final=0.0048
+REPAIR_VALIDATION 4/40 mirror_1_4_1_reflected_t0_m4_e000_s20261006 pass=1 recovery=3.38 late=0.00994
+SIMULATION_SLX m=2 eta=0.00 task=0 duration=24.00 completed final=0.0001
+REPAIR_VALIDATION 5/40 mirror_2_5_0_original_t0_m2_e000_s20261006 pass=1 recovery=1.88 late=0.00025
+SIMULATION_SLX m=5 eta=0.00 task=0 duration=24.00 completed final=0.0001
+REPAIR_VALIDATION 6/40 mirror_2_5_0_reflected_t0_m5_e000_s20261006 pass=1 recovery=1.75 late=0.00024
+SIMULATION_SLX m=2 eta=0.00 task=0 duration=24.00 completed final=0.0050
+REPAIR_VALIDATION 7/40 mirror_2_5_1_original_t0_m2_e000_s20261006 pass=1 recovery=1.96 late=0.00979
+SIMULATION_SLX m=5 eta=0.00 task=0 duration=24.00 completed final=0.0049
+REPAIR_VALIDATION 8/40 mirror_2_5_1_reflected_t0_m5_e000_s20261006 pass=1 recovery=1.82 late=0.00980
+SIMULATION_SLX m=3 eta=0.00 task=0 duration=24.00 completed final=0.0001
+REPAIR_VALIDATION 9/40 mirror_3_6_0_original_t0_m3_e000_s20261006 pass=1 recovery=1.88 late=0.00025
+SIMULATION_SLX m=6 eta=0.00 task=0 duration=24.00 completed final=0.0001
+REPAIR_VALIDATION 10/40 mirror_3_6_0_reflected_t0_m6_e000_s20261006 pass=1 recovery=1.75 late=0.00024
+SIMULATION_SLX m=3 eta=0.00 task=0 duration=24.00 completed final=0.0048
+REPAIR_VALIDATION 11/40 mirror_3_6_1_original_t0_m3_e000_s20261006 pass=1 recovery=1.59 late=0.00989
+SIMULATION_SLX m=6 eta=0.00 task=0 duration=24.00 completed final=0.0046
+REPAIR_VALIDATION 12/40 mirror_3_6_1_reflected_t0_m6_e000_s20261006 pass=1 recovery=1.51 late=0.00989
+SIMULATION_SLX m=1 eta=0.00 task=0 duration=24.00 completed final=0.0048
+REPAIR_VALIDATION 13/40 convergence_0.002_t0_m1_e000_s20261006 pass=1 recovery=3.38 late=0.00994
+SIMULATION_SLX m=1 eta=0.00 task=0 duration=24.00 completed final=0.0048
+REPAIR_VALIDATION 14/40 convergence_0.001_t0_m1_e000_s20261006 pass=1 recovery=3.38 late=0.00994
+SIMULATION_SLX m=4 eta=0.00 task=0 duration=24.00 completed final=0.0053
+REPAIR_VALIDATION 15/40 convergence_0.002_t0_m4_e000_s20261006 pass=1 recovery=1.65 late=0.00999
+SIMULATION_SLX m=4 eta=0.00 task=0 duration=24.00 completed final=0.0053
+REPAIR_VALIDATION 16/40 convergence_0.001_t0_m4_e000_s20261006 pass=1 recovery=1.65 late=0.00999
+SIMULATION_SLX m=1 eta=0.00 task=2 duration=24.00 completed final=0.0048
+REPAIR_VALIDATION 17/40 convergence_0.002_t2_m1_e000_s20261006 pass=1 recovery=3.13 late=0.00993
+SIMULATION_SLX m=1 eta=0.00 task=2 duration=24.00 completed final=0.0048
+REPAIR_VALIDATION 18/40 convergence_0.001_t2_m1_e000_s20261006 pass=1 recovery=3.13 late=0.00993
+SIMULATION_SLX m=4 eta=0.00 task=2 duration=24.00 completed final=0.0051
+REPAIR_VALIDATION 19/40 convergence_0.002_t2_m4_e000_s20261006 pass=1 recovery=5.32 late=0.01003
+SIMULATION_SLX m=4 eta=0.00 task=2 duration=24.00 completed final=0.0051
+REPAIR_VALIDATION 20/40 convergence_0.001_t2_m4_e000_s20261006 pass=1 recovery=5.32 late=0.01003
+SIMULATION_SLX m=1 eta=0.00 task=1 duration=24.00 completed final=0.0049
+REPAIR_VALIDATION 21/40 convergence_0.002_t1_m1_e000_s20261006 pass=1 recovery=4.36 late=0.00994
+SIMULATION_SLX m=1 eta=0.00 task=1 duration=24.00 completed final=0.0049
+REPAIR_VALIDATION 22/40 convergence_0.001_t1_m1_e000_s20261006 pass=1 recovery=4.36 late=0.00994
+SIMULATION_SLX m=1 eta=0.00 task=3 duration=24.00 completed final=0.0047
+REPAIR_VALIDATION 23/40 convergence_0.002_t3_m1_e000_s20261006 pass=1 recovery=1.83 late=0.01000
+SIMULATION_SLX m=1 eta=0.00 task=3 duration=24.00 completed final=0.0047
+REPAIR_VALIDATION 24/40 convergence_0.001_t3_m1_e000_s20261006 pass=1 recovery=1.83 late=0.01000
+SIMULATION_SLX m=1 eta=0.00 task=0 duration=24.00 completed final=0.0048
+REPAIR_VALIDATION 25/40 fault_time_1.5_t0_m1_e000_s20261006 pass=1 recovery=4.03 late=0.00999
+SIMULATION_SLX m=1 eta=0.00 task=0 duration=24.00 completed final=0.0047
+REPAIR_VALIDATION 26/40 fault_time_5.5_t0_m1_e000_s20261006 pass=1 recovery=1.96 late=0.00982
+SIMULATION_SLX m=4 eta=0.00 task=0 duration=24.00 completed final=0.0053
+REPAIR_VALIDATION 27/40 fault_time_1.5_t0_m4_e000_s20261006 pass=1 recovery=1.93 late=0.01001
+SIMULATION_SLX m=4 eta=0.00 task=0 duration=24.00 completed final=0.0052
+REPAIR_VALIDATION 28/40 fault_time_5.5_t0_m4_e000_s20261006 pass=1 recovery=1.81 late=0.00984
+SIMULATION_SLX m=1 eta=0.00 task=1 duration=24.00 completed final=0.0048
+REPAIR_VALIDATION 29/40 fault_time_1.5_t1_m1_e000_s20261006 pass=1 recovery=4.43 late=0.01000
+SIMULATION_SLX m=1 eta=0.00 task=1 duration=24.00 completed final=0.0048
+REPAIR_VALIDATION 30/40 fault_time_5.5_t1_m1_e000_s20261006 pass=1 recovery=2.40 late=0.00982
+SIMULATION_SLX m=4 eta=0.00 task=1 duration=24.00 completed final=0.0053
+REPAIR_VALIDATION 31/40 fault_time_1.5_t1_m4_e000_s20261006 pass=1 recovery=1.68 late=0.01002
+SIMULATION_SLX m=4 eta=0.00 task=1 duration=24.00 completed final=0.0053
+REPAIR_VALIDATION 32/40 fault_time_5.5_t1_m4_e000_s20261006 pass=1 recovery=1.57 late=0.00985
+SIMULATION_SLX m=1 eta=0.00 task=2 duration=24.00 completed final=0.0048
+REPAIR_VALIDATION 33/40 fault_time_1.5_t2_m1_e000_s20261006 pass=1 recovery=3.86 late=0.01001
+SIMULATION_SLX m=1 eta=0.00 task=2 duration=24.00 completed final=0.0049
+REPAIR_VALIDATION 34/40 fault_time_5.5_t2_m1_e000_s20261006 pass=1 recovery=2.83 late=0.00981
+SIMULATION_SLX m=4 eta=0.00 task=2 duration=24.00 completed final=0.0052
+REPAIR_VALIDATION 35/40 fault_time_1.5_t2_m4_e000_s20261006 pass=1 recovery=1.92 late=0.01004
+SIMULATION_SLX m=4 eta=0.00 task=2 duration=24.00 completed final=0.0053
+REPAIR_VALIDATION 36/40 fault_time_5.5_t2_m4_e000_s20261006 pass=1 recovery=1.51 late=0.00988
+SIMULATION_SLX m=1 eta=0.00 task=3 duration=24.00 completed final=0.0048
+REPAIR_VALIDATION 37/40 fault_time_1.5_t3_m1_e000_s20261006 pass=1 recovery=4.26 late=0.00994
+SIMULATION_SLX m=1 eta=0.00 task=3 duration=24.00 completed final=0.0045
+REPAIR_VALIDATION 38/40 fault_time_5.5_t3_m1_e000_s20261006 pass=1 recovery=1.04 late=0.01004
+SIMULATION_SLX m=4 eta=0.00 task=3 duration=24.00 completed final=0.0053
+REPAIR_VALIDATION 39/40 fault_time_1.5_t3_m4_e000_s20261006 pass=1 recovery=2.05 late=0.00998
+SIMULATION_SLX m=4 eta=0.00 task=3 duration=24.00 completed final=0.0054
+REPAIR_VALIDATION 40/40 fault_time_5.5_t3_m4_e000_s20261006 pass=1 recovery=0.64 late=0.01007
+REPAIR_PLAN_FINISHED

@@ -1,0 +1,18 @@
+[警告: The file containing block diagram 'hex_evtol' is shadowed by a file of the same name higher on the MATLAB path. This can cause unexpected behavior. For more information see
+<a href="matlab:helpview([docroot '/toolbox/simulink/helptargets.map'], 'shadowing')">"Avoiding Problems with Shadowed Files"</a> in the Simulink documentation.
+
+The file containing the block diagram is: C:\Users\lenovo\.codex\worktrees\evt-control-recovery-20261122\simulink\build\3ddde369-4ab3-473e-842f-0c5d71003267\hex_evtol.slx.
+The file higher on the MATLAB path is: C:\Users\lenovo\.codex\worktrees\evt-control-recovery-20261122\simulink\hex_evtol.slx] 
+[> 位置：load_system>i_load_system (第 44 行)
+位置: load_system (第 20 行)
+位置: build_hex_model (第 14 行)
+位置: hex_ensure_model (第 17 行)
+位置: test_hex_repair (第 21 行)] 
+SIMULATION_MODEL_SAVED C:\Users\lenovo\.codex\worktrees\evt-control-recovery-20261122\simulink\hex_evtol.slx source=27367be75c2729e32a8621f8c02620ae148b182de98dad43840e66a273caa2a7
+SIMULATION_SLX m=0 eta=0.80 task=0 duration=1.00 completed final=0.0043
+SIMULATION_SLX m=0 eta=0.80 task=2 duration=1.00 completed final=0.0141
+SIMULATION_SLX m=0 eta=0.80 task=0 duration=1.00 completed final=0.0043
+HEX_REPAIR_REGRESSIONS_PASS
+[警告: 关闭前是否保存模型工作区的内容?
+
+模型工作区的数据源是文件 ""。] 

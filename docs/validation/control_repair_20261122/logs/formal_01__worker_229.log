@@ -1,0 +1,153 @@
+SIMULATION_SLX m=0 eta=1.00 task=0 duration=24.00 completed final=0.0251
+REPAIR_VALIDATION 229/544 independent_t0_m0_e100_s907001 pass=1 recovery=0.00 late=0.01787
+SIMULATION_SLX m=1 eta=0.80 task=0 duration=24.00 completed final=0.0244
+REPAIR_VALIDATION 230/544 independent_t0_m1_e080_s907001 pass=1 recovery=0.00 late=0.01768
+SIMULATION_SLX m=1 eta=0.20 task=0 duration=24.00 completed final=0.0238
+REPAIR_VALIDATION 231/544 independent_t0_m1_e020_s907001 pass=1 recovery=0.34 late=0.01812
+SIMULATION_SLX m=1 eta=0.00 task=0 duration=24.00 completed final=0.0205
+REPAIR_VALIDATION 232/544 independent_t0_m1_e000_s907001 pass=1 recovery=4.81 late=0.01544
+SIMULATION_SLX m=2 eta=0.80 task=0 duration=24.00 completed final=0.0244
+REPAIR_VALIDATION 233/544 independent_t0_m2_e080_s907001 pass=1 recovery=0.00 late=0.01761
+SIMULATION_SLX m=2 eta=0.20 task=0 duration=24.00 completed final=0.0238
+REPAIR_VALIDATION 234/544 independent_t0_m2_e020_s907001 pass=1 recovery=0.54 late=0.01808
+SIMULATION_SLX m=2 eta=0.00 task=0 duration=24.00 completed final=0.0200
+REPAIR_VALIDATION 235/544 independent_t0_m2_e000_s907001 pass=1 recovery=4.26 late=0.01544
+SIMULATION_SLX m=3 eta=0.80 task=0 duration=24.00 completed final=0.0244
+REPAIR_VALIDATION 236/544 independent_t0_m3_e080_s907001 pass=1 recovery=0.00 late=0.01763
+SIMULATION_SLX m=3 eta=0.20 task=0 duration=24.00 completed final=0.0238
+REPAIR_VALIDATION 237/544 independent_t0_m3_e020_s907001 pass=1 recovery=0.54 late=0.01810
+SIMULATION_SLX m=3 eta=0.00 task=0 duration=24.00 completed final=0.0206
+REPAIR_VALIDATION 238/544 independent_t0_m3_e000_s907001 pass=1 recovery=4.04 late=0.01544
+SIMULATION_SLX m=4 eta=0.80 task=0 duration=24.00 completed final=0.0243
+REPAIR_VALIDATION 239/544 independent_t0_m4_e080_s907001 pass=1 recovery=0.00 late=0.01763
+SIMULATION_SLX m=4 eta=0.20 task=0 duration=24.00 completed final=0.0237
+REPAIR_VALIDATION 240/544 independent_t0_m4_e020_s907001 pass=1 recovery=0.53 late=0.01810
+SIMULATION_SLX m=4 eta=0.00 task=0 duration=24.00 completed final=0.0206
+REPAIR_VALIDATION 241/544 independent_t0_m4_e000_s907001 pass=1 recovery=4.26 late=0.01570
+SIMULATION_SLX m=5 eta=0.80 task=0 duration=24.00 completed final=0.0243
+REPAIR_VALIDATION 242/544 independent_t0_m5_e080_s907001 pass=1 recovery=0.00 late=0.01763
+SIMULATION_SLX m=5 eta=0.20 task=0 duration=24.00 completed final=0.0237
+REPAIR_VALIDATION 243/544 independent_t0_m5_e020_s907001 pass=1 recovery=0.52 late=0.01808
+SIMULATION_SLX m=5 eta=0.00 task=0 duration=24.00 completed final=0.0203
+REPAIR_VALIDATION 244/544 independent_t0_m5_e000_s907001 pass=1 recovery=2.01 late=0.01571
+SIMULATION_SLX m=6 eta=0.80 task=0 duration=24.00 completed final=0.0243
+REPAIR_VALIDATION 245/544 independent_t0_m6_e080_s907001 pass=1 recovery=0.00 late=0.01756
+SIMULATION_SLX m=6 eta=0.20 task=0 duration=24.00 completed final=0.0237
+REPAIR_VALIDATION 246/544 independent_t0_m6_e020_s907001 pass=1 recovery=0.33 late=0.01806
+SIMULATION_SLX m=6 eta=0.00 task=0 duration=24.00 completed final=0.0203
+REPAIR_VALIDATION 247/544 independent_t0_m6_e000_s907001 pass=1 recovery=2.03 late=0.01567
+SIMULATION_SLX m=0 eta=1.00 task=1 duration=24.00 completed final=0.0251
+REPAIR_VALIDATION 248/544 independent_t1_m0_e100_s907001 pass=1 recovery=0.00 late=0.01786
+SIMULATION_SLX m=1 eta=0.80 task=1 duration=24.00 completed final=0.0244
+REPAIR_VALIDATION 249/544 independent_t1_m1_e080_s907001 pass=1 recovery=0.00 late=0.01768
+SIMULATION_SLX m=1 eta=0.20 task=1 duration=24.00 completed final=0.0238
+REPAIR_VALIDATION 250/544 independent_t1_m1_e020_s907001 pass=1 recovery=0.55 late=0.01813
+SIMULATION_SLX m=1 eta=0.00 task=1 duration=24.00 completed final=0.0205
+REPAIR_VALIDATION 251/544 independent_t1_m1_e000_s907001 pass=1 recovery=5.07 late=0.01546
+SIMULATION_SLX m=2 eta=0.80 task=1 duration=24.00 completed final=0.0244
+REPAIR_VALIDATION 252/544 independent_t1_m2_e080_s907001 pass=1 recovery=0.00 late=0.01761
+SIMULATION_SLX m=2 eta=0.20 task=1 duration=24.00 completed final=0.0238
+REPAIR_VALIDATION 253/544 independent_t1_m2_e020_s907001 pass=1 recovery=0.58 late=0.01809
+SIMULATION_SLX m=2 eta=0.00 task=1 duration=24.00 completed final=0.0200
+REPAIR_VALIDATION 254/544 independent_t1_m2_e000_s907001 pass=1 recovery=4.51 late=0.01543
+SIMULATION_SLX m=3 eta=0.80 task=1 duration=24.00 completed final=0.0244
+REPAIR_VALIDATION 255/544 independent_t1_m3_e080_s907001 pass=1 recovery=0.00 late=0.01764
+SIMULATION_SLX m=3 eta=0.20 task=1 duration=24.00 completed final=0.0238
+REPAIR_VALIDATION 256/544 independent_t1_m3_e020_s907001 pass=1 recovery=0.52 late=0.01810
+SIMULATION_SLX m=3 eta=0.00 task=1 duration=24.00 completed final=0.0206
+REPAIR_VALIDATION 257/544 independent_t1_m3_e000_s907001 pass=1 recovery=3.11 late=0.01549
+SIMULATION_SLX m=4 eta=0.80 task=1 duration=24.00 completed final=0.0243
+REPAIR_VALIDATION 258/544 independent_t1_m4_e080_s907001 pass=1 recovery=0.00 late=0.01763
+SIMULATION_SLX m=4 eta=0.20 task=1 duration=24.00 completed final=0.0238
+REPAIR_VALIDATION 259/544 independent_t1_m4_e020_s907001 pass=1 recovery=0.51 late=0.01810
+SIMULATION_SLX m=4 eta=0.00 task=1 duration=24.00 completed final=0.0205
+REPAIR_VALIDATION 260/544 independent_t1_m4_e000_s907001 pass=1 recovery=3.32 late=0.01566
+SIMULATION_SLX m=5 eta=0.80 task=1 duration=24.00 completed final=0.0243
+REPAIR_VALIDATION 261/544 independent_t1_m5_e080_s907001 pass=1 recovery=0.00 late=0.01763
+SIMULATION_SLX m=5 eta=0.20 task=1 duration=24.00 completed final=0.0237
+REPAIR_VALIDATION 262/544 independent_t1_m5_e020_s907001 pass=1 recovery=0.50 late=0.01809
+SIMULATION_SLX m=5 eta=0.00 task=1 duration=24.00 completed final=0.0203
+REPAIR_VALIDATION 263/544 independent_t1_m5_e000_s907001 pass=1 recovery=1.92 late=0.01568
+SIMULATION_SLX m=6 eta=0.80 task=1 duration=24.00 completed final=0.0243
+REPAIR_VALIDATION 264/544 independent_t1_m6_e080_s907001 pass=1 recovery=0.00 late=0.01756
+SIMULATION_SLX m=6 eta=0.20 task=1 duration=24.00 completed final=0.0237
+REPAIR_VALIDATION 265/544 independent_t1_m6_e020_s907001 pass=1 recovery=0.53 late=0.01807
+SIMULATION_SLX m=6 eta=0.00 task=1 duration=24.00 completed final=0.0203
+REPAIR_VALIDATION 266/544 independent_t1_m6_e000_s907001 pass=1 recovery=2.34 late=0.01566
+SIMULATION_SLX m=0 eta=1.00 task=2 duration=24.00 completed final=0.0251
+REPAIR_VALIDATION 267/544 independent_t2_m0_e100_s907001 pass=1 recovery=0.00 late=0.01788
+SIMULATION_SLX m=1 eta=0.80 task=2 duration=24.00 completed final=0.0244
+REPAIR_VALIDATION 268/544 independent_t2_m1_e080_s907001 pass=1 recovery=0.00 late=0.01767
+SIMULATION_SLX m=1 eta=0.20 task=2 duration=24.00 completed final=0.0238
+REPAIR_VALIDATION 269/544 independent_t2_m1_e020_s907001 pass=1 recovery=0.15 late=0.01812
+SIMULATION_SLX m=1 eta=0.00 task=2 duration=24.00 completed final=0.0204
+REPAIR_VALIDATION 270/544 independent_t2_m1_e000_s907001 pass=1 recovery=5.74 late=0.01538
+SIMULATION_SLX m=2 eta=0.80 task=2 duration=24.00 completed final=0.0244
+REPAIR_VALIDATION 271/544 independent_t2_m2_e080_s907001 pass=1 recovery=0.00 late=0.01761
+SIMULATION_SLX m=2 eta=0.20 task=2 duration=24.00 completed final=0.0238
+REPAIR_VALIDATION 272/544 independent_t2_m2_e020_s907001 pass=1 recovery=0.32 late=0.01808
+SIMULATION_SLX m=2 eta=0.00 task=2 duration=24.00 completed final=0.0201
+REPAIR_VALIDATION 273/544 independent_t2_m2_e000_s907001 pass=1 recovery=2.44 late=0.01554
+SIMULATION_SLX m=3 eta=0.80 task=2 duration=24.00 completed final=0.0245
+REPAIR_VALIDATION 274/544 independent_t2_m3_e080_s907001 pass=1 recovery=0.71 late=0.01764
+SIMULATION_SLX m=3 eta=0.20 task=2 duration=24.00 completed final=0.0238
+REPAIR_VALIDATION 275/544 independent_t2_m3_e020_s907001 pass=1 recovery=0.67 late=0.01810
+SIMULATION_SLX m=3 eta=0.00 task=2 duration=24.00 completed final=0.0208
+REPAIR_VALIDATION 276/544 independent_t2_m3_e000_s907001 pass=1 recovery=2.60 late=0.01559
+SIMULATION_SLX m=4 eta=0.80 task=2 duration=24.00 completed final=0.0244
+REPAIR_VALIDATION 277/544 independent_t2_m4_e080_s907001 pass=1 recovery=0.72 late=0.01763
+SIMULATION_SLX m=4 eta=0.20 task=2 duration=24.00 completed final=0.0238
+REPAIR_VALIDATION 278/544 independent_t2_m4_e020_s907001 pass=1 recovery=0.86 late=0.01811
+SIMULATION_SLX m=4 eta=0.00 task=2 duration=24.00 completed final=0.0206
+REPAIR_VALIDATION 279/544 independent_t2_m4_e000_s907001 pass=1 recovery=6.55 late=0.01576
+SIMULATION_SLX m=5 eta=0.80 task=2 duration=24.00 completed final=0.0243
+REPAIR_VALIDATION 280/544 independent_t2_m5_e080_s907001 pass=1 recovery=0.00 late=0.01762
+SIMULATION_SLX m=5 eta=0.20 task=2 duration=24.00 completed final=0.0237
+REPAIR_VALIDATION 281/544 independent_t2_m5_e020_s907001 pass=1 recovery=0.35 late=0.01809
+SIMULATION_SLX m=5 eta=0.00 task=2 duration=24.00 completed final=0.0202
+REPAIR_VALIDATION 282/544 independent_t2_m5_e000_s907001 pass=1 recovery=5.84 late=0.01576
+SIMULATION_SLX m=6 eta=0.80 task=2 duration=24.00 completed final=0.0243
+REPAIR_VALIDATION 283/544 independent_t2_m6_e080_s907001 pass=1 recovery=0.00 late=0.01755
+SIMULATION_SLX m=6 eta=0.20 task=2 duration=24.00 completed final=0.0237
+REPAIR_VALIDATION 284/544 independent_t2_m6_e020_s907001 pass=1 recovery=0.32 late=0.01806
+SIMULATION_SLX m=6 eta=0.00 task=2 duration=24.00 completed final=0.0203
+REPAIR_VALIDATION 285/544 independent_t2_m6_e000_s907001 pass=1 recovery=2.27 late=0.01564
+SIMULATION_SLX m=0 eta=1.00 task=3 duration=24.00 completed final=0.0251
+REPAIR_VALIDATION 286/544 independent_t3_m0_e100_s907001 pass=1 recovery=0.00 late=0.01787
+SIMULATION_SLX m=1 eta=0.80 task=3 duration=24.00 completed final=0.0244
+REPAIR_VALIDATION 287/544 independent_t3_m1_e080_s907001 pass=1 recovery=0.00 late=0.01768
+SIMULATION_SLX m=1 eta=0.20 task=3 duration=24.00 completed final=0.0238
+REPAIR_VALIDATION 288/544 independent_t3_m1_e020_s907001 pass=1 recovery=0.53 late=0.01812
+SIMULATION_SLX m=1 eta=0.00 task=3 duration=24.00 completed final=0.0206
+REPAIR_VALIDATION 289/544 independent_t3_m1_e000_s907001 pass=1 recovery=2.28 late=0.01556
+SIMULATION_SLX m=2 eta=0.80 task=3 duration=24.00 completed final=0.0244
+REPAIR_VALIDATION 290/544 independent_t3_m2_e080_s907001 pass=1 recovery=0.00 late=0.01761
+SIMULATION_SLX m=2 eta=0.20 task=3 duration=24.00 completed final=0.0238
+REPAIR_VALIDATION 291/544 independent_t3_m2_e020_s907001 pass=1 recovery=0.55 late=0.01808
+SIMULATION_SLX m=2 eta=0.00 task=3 duration=24.00 completed final=0.0201
+REPAIR_VALIDATION 292/544 independent_t3_m2_e000_s907001 pass=1 recovery=1.93 late=0.01556
+SIMULATION_SLX m=3 eta=0.80 task=3 duration=24.00 completed final=0.0245
+REPAIR_VALIDATION 293/544 independent_t3_m3_e080_s907001 pass=1 recovery=0.00 late=0.01764
+SIMULATION_SLX m=3 eta=0.20 task=3 duration=24.00 completed final=0.0238
+REPAIR_VALIDATION 294/544 independent_t3_m3_e020_s907001 pass=1 recovery=0.56 late=0.01810
+SIMULATION_SLX m=3 eta=0.00 task=3 duration=24.00 completed final=0.0208
+REPAIR_VALIDATION 295/544 independent_t3_m3_e000_s907001 pass=1 recovery=1.94 late=0.01559
+SIMULATION_SLX m=4 eta=0.80 task=3 duration=24.00 completed final=0.0243
+REPAIR_VALIDATION 296/544 independent_t3_m4_e080_s907001 pass=1 recovery=0.00 late=0.01763
+SIMULATION_SLX m=4 eta=0.20 task=3 duration=24.00 completed final=0.0238
+REPAIR_VALIDATION 297/544 independent_t3_m4_e020_s907001 pass=1 recovery=0.54 late=0.01810
+SIMULATION_SLX m=4 eta=0.00 task=3 duration=24.00 completed final=0.0206
+REPAIR_VALIDATION 298/544 independent_t3_m4_e000_s907001 pass=1 recovery=2.21 late=0.01570
+SIMULATION_SLX m=5 eta=0.80 task=3 duration=24.00 completed final=0.0243
+REPAIR_VALIDATION 299/544 independent_t3_m5_e080_s907001 pass=1 recovery=0.00 late=0.01763
+SIMULATION_SLX m=5 eta=0.20 task=3 duration=24.00 completed final=0.0237
+REPAIR_VALIDATION 300/544 independent_t3_m5_e020_s907001 pass=1 recovery=0.53 late=0.01808
+SIMULATION_SLX m=5 eta=0.00 task=3 duration=24.00 completed final=0.0205
+REPAIR_VALIDATION 301/544 independent_t3_m5_e000_s907001 pass=1 recovery=1.45 late=0.01576
+SIMULATION_SLX m=6 eta=0.80 task=3 duration=24.00 completed final=0.0243
+REPAIR_VALIDATION 302/544 independent_t3_m6_e080_s907001 pass=1 recovery=0.00 late=0.01756
+SIMULATION_SLX m=6 eta=0.20 task=3 duration=24.00 completed final=0.0237
+REPAIR_VALIDATION 303/544 independent_t3_m6_e020_s907001 pass=1 recovery=0.34 late=0.01806
+SIMULATION_SLX m=6 eta=0.00 task=3 duration=24.00 completed final=0.0205
+REPAIR_VALIDATION 304/544 independent_t3_m6_e000_s907001 pass=1 recovery=1.42 late=0.01572
+REPAIR_PLAN_FINISHED

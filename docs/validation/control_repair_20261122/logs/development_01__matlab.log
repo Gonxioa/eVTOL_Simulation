@@ -1,0 +1,7 @@
+SIMULATION_MODEL_SAVED C:\Users\lenovo\.codex\worktrees\evt-control-recovery-20261122\simulink\hex_evtol.slx
+{此类型的变量不支持使用点进行索引。
+
+出错 develop_hex_repair (第 9 行)
+    item=plan.cases(i); destination=fullfile(folder,item.name);
+                                                    ^^^^^^^^^
+} 

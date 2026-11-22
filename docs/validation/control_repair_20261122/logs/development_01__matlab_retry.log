@@ -1,0 +1,152 @@
+SIMULATION_MODEL_SAVED C:\Users\lenovo\.codex\worktrees\evt-control-recovery-20261122\simulink\hex_evtol.slx
+SIMULATION_SLX m=1 eta=0.00 task=0 duration=24.00 completed final=0.0502
+REPAIR_DEV 1/75 original__calm_hover_m1 pass=1 recover=10.31 late=0.05911
+SIMULATION_SLX m=4 eta=0.00 task=0 duration=24.00 completed final=0.0502
+REPAIR_DEV 2/75 original__calm_hover_m4 pass=1 recover=10.31 late=0.05911
+SIMULATION_SLX m=1 eta=0.00 task=0 duration=24.00 completed final=0.0515
+REPAIR_DEV 3/75 original__noisy_hover_m1 pass=1 recover=10.35 late=0.05670
+SIMULATION_SLX m=4 eta=0.00 task=0 duration=24.00 completed final=0.0044
+REPAIR_DEV 4/75 original__noisy_hover_m4 pass=1 recover=3.22 late=0.01587
+SIMULATION_SLX m=1 eta=0.00 task=2 duration=24.00 completed final=0.0506
+REPAIR_DEV 5/75 original__noisy_circle_m1 pass=1 recover=11.74 late=0.05566
+SIMULATION_SLX m=4 eta=0.00 task=2 duration=24.00 completed final=0.0424
+REPAIR_DEV 6/75 original__noisy_circle_m4 pass=1 recover=10.52 late=0.05799
+SIMULATION_SLX m=1 eta=0.00 task=1 duration=24.00 completed final=0.0576
+REPAIR_DEV 7/75 original__noisy_line_m1 pass=1 recover=11.80 late=0.06365
+SIMULATION_SLX m=1 eta=0.00 task=3 duration=24.00 completed final=0.0197
+REPAIR_DEV 8/75 original__noisy_vertical_m1 pass=1 recover=4.69 late=0.02109
+SIMULATION_SLX m=1 eta=0.20 task=2 duration=24.00 completed final=0.0067
+REPAIR_DEV 9/75 original__noisy_circle_eta20 pass=1 recover=0.14 late=0.01218
+SIMULATION_SLX m=1 eta=0.80 task=2 duration=24.00 completed final=0.0028
+REPAIR_DEV 10/75 original__noisy_circle_eta80 pass=1 recover=0.00 late=0.01191
+SIMULATION_SLX m=0 eta=1.00 task=2 duration=24.00 completed final=0.0051
+REPAIR_DEV 11/75 original__healthy_circle pass=1 recover=0.00 late=0.01210
+SIMULATION_SLX m=0 eta=1.00 task=0 duration=24.00 completed final=0.0016
+REPAIR_DEV 12/75 original__healthy_force pass=1 recover=0.00 late=0.00171
+SIMULATION_SLX m=1 eta=0.00 task=0 duration=24.00 completed final=0.0572
+REPAIR_DEV 13/75 original__fault_force pass=1 recover=11.64 late=0.06742
+SIMULATION_SLX m=0 eta=1.00 task=0 duration=24.00 completed final=0.0019
+REPAIR_DEV 14/75 original__healthy_wind pass=1 recover=0.00 late=0.00204
+SIMULATION_SLX m=1 eta=0.00 task=0 duration=24.00 completed final=0.0514
+REPAIR_DEV 15/75 original__fault_wind pass=1 recover=11.71 late=0.06248
+SIMULATION_SLX m=1 eta=0.00 task=0 duration=24.00 completed final=0.0362
+REPAIR_DEV 16/75 rate_only__calm_hover_m1 pass=1 recover=6.80 late=0.04235
+SIMULATION_SLX m=4 eta=0.00 task=0 duration=24.00 completed final=0.0362
+REPAIR_DEV 17/75 rate_only__calm_hover_m4 pass=1 recover=6.80 late=0.04235
+SIMULATION_SLX m=1 eta=0.00 task=0 duration=24.00 completed final=0.0547
+REPAIR_DEV 18/75 rate_only__noisy_hover_m1 pass=1 recover=10.32 late=0.05894
+SIMULATION_SLX m=4 eta=0.00 task=0 duration=24.00 completed final=0.0087
+REPAIR_DEV 19/75 rate_only__noisy_hover_m4 pass=1 recover=1.83 late=0.01948
+SIMULATION_SLX m=1 eta=0.00 task=2 duration=24.00 completed final=0.0411
+REPAIR_DEV 20/75 rate_only__noisy_circle_m1 pass=1 recover=8.41 late=0.04328
+SIMULATION_SLX m=4 eta=0.00 task=2 duration=24.00 completed final=0.0450
+REPAIR_DEV 21/75 rate_only__noisy_circle_m4 pass=1 recover=9.92 late=0.06011
+SIMULATION_SLX m=1 eta=0.00 task=1 duration=24.00 completed final=0.0585
+REPAIR_DEV 22/75 rate_only__noisy_line_m1 pass=1 recover=11.42 late=0.06337
+SIMULATION_SLX m=1 eta=0.00 task=3 duration=24.00 completed final=0.0239
+REPAIR_DEV 23/75 rate_only__noisy_vertical_m1 pass=1 recover=2.26 late=0.02425
+SIMULATION_SLX m=1 eta=0.20 task=2 duration=24.00 completed final=0.0067
+REPAIR_DEV 24/75 rate_only__noisy_circle_eta20 pass=1 recover=0.14 late=0.01218
+SIMULATION_SLX m=1 eta=0.80 task=2 duration=24.00 completed final=0.0028
+REPAIR_DEV 25/75 rate_only__noisy_circle_eta80 pass=1 recover=0.00 late=0.01191
+SIMULATION_SLX m=0 eta=1.00 task=2 duration=24.00 completed final=0.0051
+REPAIR_DEV 26/75 rate_only__healthy_circle pass=1 recover=0.00 late=0.01210
+SIMULATION_SLX m=0 eta=1.00 task=0 duration=24.00 completed final=0.0016
+REPAIR_DEV 27/75 rate_only__healthy_force pass=1 recover=0.00 late=0.00171
+SIMULATION_SLX m=1 eta=0.00 task=0 duration=24.00 completed final=0.0421
+REPAIR_DEV 28/75 rate_only__fault_force pass=1 recover=8.51 late=0.04951
+SIMULATION_SLX m=0 eta=1.00 task=0 duration=24.00 completed final=0.0019
+REPAIR_DEV 29/75 rate_only__healthy_wind pass=1 recover=0.00 late=0.00204
+SIMULATION_SLX m=1 eta=0.00 task=0 duration=24.00 completed final=0.0449
+REPAIR_DEV 30/75 rate_only__fault_wind pass=1 recover=8.95 late=0.05259
+SIMULATION_SLX m=1 eta=0.00 task=0 duration=24.00 completed final=0.0010
+REPAIR_DEV 31/75 velocity_only__calm_hover_m1 pass=1 recover=3.69 late=0.00102
+SIMULATION_SLX m=4 eta=0.00 task=0 duration=24.00 completed final=0.0010
+REPAIR_DEV 32/75 velocity_only__calm_hover_m4 pass=1 recover=3.69 late=0.00102
+SIMULATION_SLX m=1 eta=0.00 task=0 duration=24.00 completed final=0.0034
+REPAIR_DEV 33/75 velocity_only__noisy_hover_m1 pass=1 recover=4.47 late=0.01000
+SIMULATION_SLX m=4 eta=0.00 task=0 duration=24.00 completed final=0.0066
+REPAIR_DEV 34/75 velocity_only__noisy_hover_m4 pass=1 recover=1.82 late=0.01017
+SIMULATION_SLX m=1 eta=0.00 task=2 duration=24.00 completed final=0.0032
+REPAIR_DEV 35/75 velocity_only__noisy_circle_m1 pass=1 recover=4.76 late=0.01002
+SIMULATION_SLX m=4 eta=0.00 task=2 duration=24.00 completed final=0.0063
+REPAIR_DEV 36/75 velocity_only__noisy_circle_m4 pass=1 recover=4.30 late=0.01016
+SIMULATION_SLX m=1 eta=0.00 task=1 duration=24.00 completed final=0.0035
+REPAIR_DEV 37/75 velocity_only__noisy_line_m1 pass=1 recover=5.15 late=0.01004
+SIMULATION_SLX m=1 eta=0.00 task=3 duration=24.00 completed final=0.0031
+REPAIR_DEV 38/75 velocity_only__noisy_vertical_m1 pass=1 recover=2.41 late=0.01012
+SIMULATION_SLX m=1 eta=0.20 task=2 duration=24.00 completed final=0.0056
+REPAIR_DEV 39/75 velocity_only__noisy_circle_eta20 pass=1 recover=0.14 late=0.01185
+SIMULATION_SLX m=1 eta=0.80 task=2 duration=24.00 completed final=0.0028
+REPAIR_DEV 40/75 velocity_only__noisy_circle_eta80 pass=1 recover=0.00 late=0.01189
+SIMULATION_SLX m=0 eta=1.00 task=2 duration=24.00 completed final=0.0051
+REPAIR_DEV 41/75 velocity_only__healthy_circle pass=1 recover=0.00 late=0.01210
+SIMULATION_SLX m=0 eta=1.00 task=0 duration=24.00 completed final=0.0016
+REPAIR_DEV 42/75 velocity_only__healthy_force pass=1 recover=0.00 late=0.00171
+SIMULATION_SLX m=1 eta=0.00 task=0 duration=24.00 completed final=0.0012
+REPAIR_DEV 43/75 velocity_only__fault_force pass=1 recover=4.07 late=0.00117
+SIMULATION_SLX m=0 eta=1.00 task=0 duration=24.00 completed final=0.0019
+REPAIR_DEV 44/75 velocity_only__healthy_wind pass=1 recover=0.00 late=0.00204
+SIMULATION_SLX m=1 eta=0.00 task=0 duration=24.00 completed final=0.0052
+REPAIR_DEV 45/75 velocity_only__fault_wind pass=1 recover=4.18 late=0.00507
+SIMULATION_SLX m=1 eta=0.00 task=0 duration=24.00 completed final=0.0048
+REPAIR_DEV 46/75 both_k08__calm_hover_m1 pass=1 recover=3.87 late=0.00674
+SIMULATION_SLX m=4 eta=0.00 task=0 duration=24.00 completed final=0.0048
+REPAIR_DEV 47/75 both_k08__calm_hover_m4 pass=1 recover=3.87 late=0.00674
+SIMULATION_SLX m=1 eta=0.00 task=0 duration=24.00 completed final=0.0118
+REPAIR_DEV 48/75 both_k08__noisy_hover_m1 pass=1 recover=5.74 late=0.01359
+SIMULATION_SLX m=4 eta=0.00 task=0 duration=24.00 completed final=0.0038
+REPAIR_DEV 49/75 both_k08__noisy_hover_m4 pass=1 recover=1.74 late=0.01043
+SIMULATION_SLX m=1 eta=0.00 task=2 duration=24.00 completed final=0.0098
+REPAIR_DEV 50/75 both_k08__noisy_circle_m1 pass=1 recover=6.80 late=0.01181
+SIMULATION_SLX m=4 eta=0.00 task=2 duration=24.00 completed final=0.0027
+REPAIR_DEV 51/75 both_k08__noisy_circle_m4 pass=1 recover=7.31 late=0.01516
+SIMULATION_SLX m=1 eta=0.00 task=1 duration=24.00 completed final=0.0132
+REPAIR_DEV 52/75 both_k08__noisy_line_m1 pass=1 recover=6.42 late=0.01502
+SIMULATION_SLX m=1 eta=0.00 task=3 duration=24.00 completed final=0.0072
+REPAIR_DEV 53/75 both_k08__noisy_vertical_m1 pass=1 recover=2.02 late=0.01044
+SIMULATION_SLX m=1 eta=0.20 task=2 duration=24.00 completed final=0.0060
+REPAIR_DEV 54/75 both_k08__noisy_circle_eta20 pass=1 recover=0.14 late=0.01191
+SIMULATION_SLX m=1 eta=0.80 task=2 duration=24.00 completed final=0.0028
+REPAIR_DEV 55/75 both_k08__noisy_circle_eta80 pass=1 recover=0.00 late=0.01190
+SIMULATION_SLX m=0 eta=1.00 task=2 duration=24.00 completed final=0.0051
+REPAIR_DEV 56/75 both_k08__healthy_circle pass=1 recover=0.00 late=0.01210
+SIMULATION_SLX m=0 eta=1.00 task=0 duration=24.00 completed final=0.0016
+REPAIR_DEV 57/75 both_k08__healthy_force pass=1 recover=0.00 late=0.00171
+SIMULATION_SLX m=1 eta=0.00 task=0 duration=24.00 completed final=0.0052
+REPAIR_DEV 58/75 both_k08__fault_force pass=1 recover=4.77 late=0.00752
+SIMULATION_SLX m=0 eta=1.00 task=0 duration=24.00 completed final=0.0019
+REPAIR_DEV 59/75 both_k08__healthy_wind pass=1 recover=0.00 late=0.00204
+SIMULATION_SLX m=1 eta=0.00 task=0 duration=24.00 completed final=0.0061
+REPAIR_DEV 60/75 both_k08__fault_wind pass=1 recover=5.00 late=0.00853
+SIMULATION_SLX m=1 eta=0.00 task=0 duration=24.00 completed final=0.0001
+REPAIR_DEV 61/75 both_k16__calm_hover_m1 pass=1 recover=2.53 late=0.00025
+SIMULATION_SLX m=4 eta=0.00 task=0 duration=24.00 completed final=0.0001
+REPAIR_DEV 62/75 both_k16__calm_hover_m4 pass=1 recover=2.53 late=0.00025
+SIMULATION_SLX m=1 eta=0.00 task=0 duration=24.00 completed final=0.0048
+REPAIR_DEV 63/75 both_k16__noisy_hover_m1 pass=1 recover=3.38 late=0.00994
+SIMULATION_SLX m=4 eta=0.00 task=0 duration=24.00 completed final=0.0053
+REPAIR_DEV 64/75 both_k16__noisy_hover_m4 pass=1 recover=1.65 late=0.00999
+SIMULATION_SLX m=1 eta=0.00 task=2 duration=24.00 completed final=0.0048
+REPAIR_DEV 65/75 both_k16__noisy_circle_m1 pass=1 recover=3.13 late=0.00993
+SIMULATION_SLX m=4 eta=0.00 task=2 duration=24.00 completed final=0.0051
+REPAIR_DEV 66/75 both_k16__noisy_circle_m4 pass=1 recover=5.32 late=0.01003
+SIMULATION_SLX m=1 eta=0.00 task=1 duration=24.00 completed final=0.0049
+REPAIR_DEV 67/75 both_k16__noisy_line_m1 pass=1 recover=4.36 late=0.00994
+SIMULATION_SLX m=1 eta=0.00 task=3 duration=24.00 completed final=0.0047
+REPAIR_DEV 68/75 both_k16__noisy_vertical_m1 pass=1 recover=1.83 late=0.01000
+SIMULATION_SLX m=1 eta=0.20 task=2 duration=24.00 completed final=0.0056
+REPAIR_DEV 69/75 both_k16__noisy_circle_eta20 pass=1 recover=0.14 late=0.01185
+SIMULATION_SLX m=1 eta=0.80 task=2 duration=24.00 completed final=0.0028
+REPAIR_DEV 70/75 both_k16__noisy_circle_eta80 pass=1 recover=0.00 late=0.01189
+SIMULATION_SLX m=0 eta=1.00 task=2 duration=24.00 completed final=0.0051
+REPAIR_DEV 71/75 both_k16__healthy_circle pass=1 recover=0.00 late=0.01210
+SIMULATION_SLX m=0 eta=1.00 task=0 duration=24.00 completed final=0.0016
+REPAIR_DEV 72/75 both_k16__healthy_force pass=1 recover=0.00 late=0.00171
+SIMULATION_SLX m=1 eta=0.00 task=0 duration=24.00 completed final=0.0002
+REPAIR_DEV 73/75 both_k16__fault_force pass=1 recover=2.91 late=0.00021
+SIMULATION_SLX m=0 eta=1.00 task=0 duration=24.00 completed final=0.0019
+REPAIR_DEV 74/75 both_k16__healthy_wind pass=1 recover=0.00 late=0.00204
+SIMULATION_SLX m=1 eta=0.00 task=0 duration=24.00 completed final=0.0002
+REPAIR_DEV 75/75 both_k16__fault_wind pass=1 recover=3.01 late=0.00030
+REPAIR_DEV_FINISHED
