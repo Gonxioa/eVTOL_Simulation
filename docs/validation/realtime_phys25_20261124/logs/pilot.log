@@ -1,0 +1,158 @@
+REALTIME_STAGE pilot
+PILOT_TRAIN cnn_segment100_early1_span3
+REALTIME_EPOCH cnn current_state seed=42 epoch=1 updates=29 loss=3.69773 seconds=16.05
+REALTIME_EPOCH cnn current_state seed=42 epoch=2 updates=58 loss=2.96032 seconds=17.77
+REALTIME_EPOCH cnn current_state seed=42 epoch=3 updates=87 loss=2.47911 seconds=18.04
+REALTIME_EPOCH cnn current_state seed=42 epoch=4 updates=116 loss=2.33852 seconds=20.55 stateF1=0.0969 loc1=0.0000 mild80_det1=0.0000 mild80_loc1=0.0000 hFA=0
+REALTIME_EPOCH cnn current_state seed=42 epoch=5 updates=145 loss=2.26507 seconds=16.12
+REALTIME_EPOCH cnn current_state seed=42 epoch=6 updates=174 loss=2.27934 seconds=14.87
+REALTIME_EPOCH cnn current_state seed=42 epoch=7 updates=203 loss=1.91748 seconds=15.24
+REALTIME_EPOCH cnn current_state seed=42 epoch=8 updates=232 loss=1.74327 seconds=19.60 stateF1=0.3697 loc1=0.0370 mild80_det1=0.2778 mild80_loc1=0.0000 hFA=3
+REALTIME_EPOCH cnn current_state seed=42 epoch=9 updates=261 loss=1.67171 seconds=15.72
+REALTIME_EPOCH cnn current_state seed=42 epoch=10 updates=290 loss=1.51924 seconds=14.03
+REALTIME_EPOCH cnn current_state seed=42 epoch=11 updates=319 loss=1.33166 seconds=14.62
+REALTIME_EPOCH cnn current_state seed=42 epoch=12 updates=348 loss=1.12664 seconds=19.79 stateF1=0.5541 loc1=0.5185 mild80_det1=0.7778 mild80_loc1=0.0556 hFA=0
+PILOT_TRAIN lstm_segment100_early1_span3
+REALTIME_EPOCH lstm current_state seed=42 epoch=1 updates=29 loss=3.80920 seconds=7.10
+REALTIME_EPOCH lstm current_state seed=42 epoch=2 updates=58 loss=3.11969 seconds=7.72
+REALTIME_EPOCH lstm current_state seed=42 epoch=3 updates=87 loss=2.54851 seconds=6.10
+REALTIME_EPOCH lstm current_state seed=42 epoch=4 updates=116 loss=2.37401 seconds=10.09 stateF1=0.0928 loc1=0.0000 mild80_det1=0.0000 mild80_loc1=0.0000 hFA=0
+REALTIME_EPOCH lstm current_state seed=42 epoch=5 updates=145 loss=2.35145 seconds=7.09
+REALTIME_EPOCH lstm current_state seed=42 epoch=6 updates=174 loss=2.35960 seconds=5.82
+REALTIME_EPOCH lstm current_state seed=42 epoch=7 updates=203 loss=2.15555 seconds=5.88
+REALTIME_EPOCH lstm current_state seed=42 epoch=8 updates=232 loss=2.03085 seconds=9.97 stateF1=0.1568 loc1=0.0000 mild80_det1=0.1667 mild80_loc1=0.0000 hFA=4
+REALTIME_EPOCH lstm current_state seed=42 epoch=9 updates=261 loss=1.99402 seconds=6.13
+REALTIME_EPOCH lstm current_state seed=42 epoch=10 updates=290 loss=1.81492 seconds=6.20
+REALTIME_EPOCH lstm current_state seed=42 epoch=11 updates=319 loss=1.68418 seconds=7.85
+REALTIME_EPOCH lstm current_state seed=42 epoch=12 updates=348 loss=1.60623 seconds=10.03 stateF1=0.2841 loc1=0.0741 mild80_det1=0.0000 mild80_loc1=0.0000 hFA=3
+PILOT_TRAIN cnn_segment100_early3_span1
+REALTIME_EPOCH cnn current_state seed=42 epoch=1 updates=29 loss=3.70993 seconds=16.24
+REALTIME_EPOCH cnn current_state seed=42 epoch=2 updates=58 loss=2.97842 seconds=15.32
+REALTIME_EPOCH cnn current_state seed=42 epoch=3 updates=87 loss=2.51919 seconds=15.33
+REALTIME_EPOCH cnn current_state seed=42 epoch=4 updates=116 loss=2.38206 seconds=21.18 stateF1=0.2066 loc1=0.0000 mild80_det1=0.0000 mild80_loc1=0.0000 hFA=0
+REALTIME_EPOCH cnn current_state seed=42 epoch=5 updates=145 loss=2.32994 seconds=15.44
+REALTIME_EPOCH cnn current_state seed=42 epoch=6 updates=174 loss=2.28024 seconds=24.45
+REALTIME_EPOCH cnn current_state seed=42 epoch=7 updates=203 loss=2.05027 seconds=15.19
+REALTIME_EPOCH cnn current_state seed=42 epoch=8 updates=232 loss=1.86651 seconds=21.44 stateF1=0.3673 loc1=0.1111 mild80_det1=0.1667 mild80_loc1=0.0000 hFA=0
+REALTIME_EPOCH cnn current_state seed=42 epoch=9 updates=261 loss=1.58578 seconds=14.37
+REALTIME_EPOCH cnn current_state seed=42 epoch=10 updates=290 loss=1.44355 seconds=13.14
+REALTIME_EPOCH cnn current_state seed=42 epoch=11 updates=319 loss=1.23075 seconds=17.96
+REALTIME_EPOCH cnn current_state seed=42 epoch=12 updates=348 loss=1.02709 seconds=17.75 stateF1=0.8015 loc1=0.6667 mild80_det1=1.0000 mild80_loc1=0.3333 hFA=0
+PILOT_TRAIN lstm_segment100_early3_span1
+REALTIME_EPOCH lstm current_state seed=42 epoch=1 updates=29 loss=3.82549 seconds=7.95
+REALTIME_EPOCH lstm current_state seed=42 epoch=2 updates=58 loss=3.15974 seconds=6.73
+REALTIME_EPOCH lstm current_state seed=42 epoch=3 updates=87 loss=2.56172 seconds=6.31
+REALTIME_EPOCH lstm current_state seed=42 epoch=4 updates=116 loss=2.39327 seconds=10.41 stateF1=0.0925 loc1=0.0000 mild80_det1=0.0000 mild80_loc1=0.0000 hFA=0
+REALTIME_EPOCH lstm current_state seed=42 epoch=5 updates=145 loss=2.38275 seconds=9.50
+REALTIME_EPOCH lstm current_state seed=42 epoch=6 updates=174 loss=2.36136 seconds=6.84
+REALTIME_EPOCH lstm current_state seed=42 epoch=7 updates=203 loss=2.22111 seconds=6.53
+REALTIME_EPOCH lstm current_state seed=42 epoch=8 updates=232 loss=2.11820 seconds=10.62 stateF1=0.1070 loc1=0.0000 mild80_det1=0.0000 mild80_loc1=0.0000 hFA=0
+REALTIME_EPOCH lstm current_state seed=42 epoch=9 updates=261 loss=2.07961 seconds=7.16
+REALTIME_EPOCH lstm current_state seed=42 epoch=10 updates=290 loss=1.90033 seconds=6.56
+REALTIME_EPOCH lstm current_state seed=42 epoch=11 updates=319 loss=2.02672 seconds=6.64
+REALTIME_EPOCH lstm current_state seed=42 epoch=12 updates=348 loss=1.95494 seconds=10.54 stateF1=0.2502 loc1=0.0000 mild80_det1=0.8333 mild80_loc1=0.0000 hFA=3
+PILOT_TRAIN cnn_segment100_early3_span3
+REALTIME_EPOCH cnn current_state seed=42 epoch=1 updates=29 loss=3.72484 seconds=19.17
+REALTIME_EPOCH cnn current_state seed=42 epoch=2 updates=58 loss=2.99472 seconds=13.39
+REALTIME_EPOCH cnn current_state seed=42 epoch=3 updates=87 loss=2.52288 seconds=12.96
+REALTIME_EPOCH cnn current_state seed=42 epoch=4 updates=116 loss=2.37149 seconds=17.52 stateF1=0.2691 loc1=0.0000 mild80_det1=0.0000 mild80_loc1=0.0000 hFA=0
+REALTIME_EPOCH cnn current_state seed=42 epoch=5 updates=145 loss=2.30798 seconds=19.98
+REALTIME_EPOCH cnn current_state seed=42 epoch=6 updates=174 loss=2.26468 seconds=13.63
+REALTIME_EPOCH cnn current_state seed=42 epoch=7 updates=203 loss=2.04872 seconds=12.83
+REALTIME_EPOCH cnn current_state seed=42 epoch=8 updates=232 loss=1.81263 seconds=20.26 stateF1=0.4873 loc1=0.1111 mild80_det1=0.0556 mild80_loc1=0.0000 hFA=2
+REALTIME_EPOCH cnn current_state seed=42 epoch=9 updates=261 loss=1.63504 seconds=30.57
+REALTIME_EPOCH cnn current_state seed=42 epoch=10 updates=290 loss=1.36813 seconds=13.60
+REALTIME_EPOCH cnn current_state seed=42 epoch=11 updates=319 loss=1.19069 seconds=13.24
+REALTIME_EPOCH cnn current_state seed=42 epoch=12 updates=348 loss=1.04276 seconds=20.22 stateF1=0.6460 loc1=0.4259 mild80_det1=0.5556 mild80_loc1=0.0000 hFA=0
+PILOT_TRAIN lstm_segment100_early3_span3
+REALTIME_EPOCH lstm current_state seed=42 epoch=1 updates=29 loss=3.83131 seconds=7.88
+REALTIME_EPOCH lstm current_state seed=42 epoch=2 updates=58 loss=3.17397 seconds=6.44
+REALTIME_EPOCH lstm current_state seed=42 epoch=3 updates=87 loss=2.54283 seconds=6.82
+REALTIME_EPOCH lstm current_state seed=42 epoch=4 updates=116 loss=2.39447 seconds=10.61 stateF1=0.1454 loc1=0.0000 mild80_det1=0.0000 mild80_loc1=0.0000 hFA=0
+REALTIME_EPOCH lstm current_state seed=42 epoch=5 updates=145 loss=2.40020 seconds=6.24
+REALTIME_EPOCH lstm current_state seed=42 epoch=6 updates=174 loss=2.32941 seconds=6.36
+REALTIME_EPOCH lstm current_state seed=42 epoch=7 updates=203 loss=2.19889 seconds=6.39
+REALTIME_EPOCH lstm current_state seed=42 epoch=8 updates=232 loss=2.02260 seconds=13.35 stateF1=0.2241 loc1=0.0556 mild80_det1=0.4444 mild80_loc1=0.0000 hFA=4
+REALTIME_EPOCH lstm current_state seed=42 epoch=9 updates=261 loss=1.95048 seconds=7.34
+REALTIME_EPOCH lstm current_state seed=42 epoch=10 updates=290 loss=1.69569 seconds=6.34
+REALTIME_EPOCH lstm current_state seed=42 epoch=11 updates=319 loss=1.87039 seconds=6.13
+REALTIME_EPOCH lstm current_state seed=42 epoch=12 updates=348 loss=1.78285 seconds=11.05 stateF1=0.3562 loc1=0.0556 mild80_det1=0.2778 mild80_loc1=0.0000 hFA=4
+PILOT_TRAIN cnn_segment300_early1_span3
+REALTIME_EPOCH cnn current_state seed=42 epoch=1 updates=29 loss=3.67897 seconds=7.61
+REALTIME_EPOCH cnn current_state seed=42 epoch=2 updates=58 loss=2.93609 seconds=5.07
+REALTIME_EPOCH cnn current_state seed=42 epoch=3 updates=87 loss=2.46922 seconds=5.11
+REALTIME_EPOCH cnn current_state seed=42 epoch=4 updates=116 loss=2.31726 seconds=10.26 stateF1=0.2184 loc1=0.0000 mild80_det1=0.0000 mild80_loc1=0.0000 hFA=0
+REALTIME_EPOCH cnn current_state seed=42 epoch=5 updates=145 loss=2.20752 seconds=5.23
+REALTIME_EPOCH cnn current_state seed=42 epoch=6 updates=174 loss=2.16728 seconds=4.92
+REALTIME_EPOCH cnn current_state seed=42 epoch=7 updates=203 loss=1.79550 seconds=5.33
+REALTIME_EPOCH cnn current_state seed=42 epoch=8 updates=232 loss=1.57421 seconds=9.36 stateF1=0.3521 loc1=0.1111 mild80_det1=0.2222 mild80_loc1=0.0000 hFA=3
+REALTIME_EPOCH cnn current_state seed=42 epoch=9 updates=261 loss=1.63478 seconds=5.12
+REALTIME_EPOCH cnn current_state seed=42 epoch=10 updates=290 loss=1.42193 seconds=4.98
+REALTIME_EPOCH cnn current_state seed=42 epoch=11 updates=319 loss=1.28004 seconds=4.96
+REALTIME_EPOCH cnn current_state seed=42 epoch=12 updates=348 loss=1.16270 seconds=9.46 stateF1=0.6576 loc1=0.5556 mild80_det1=0.9444 mild80_loc1=0.0000 hFA=0
+PILOT_TRAIN lstm_segment300_early1_span3
+REALTIME_EPOCH lstm current_state seed=42 epoch=1 updates=29 loss=3.80974 seconds=3.55
+REALTIME_EPOCH lstm current_state seed=42 epoch=2 updates=58 loss=3.14332 seconds=2.46
+REALTIME_EPOCH lstm current_state seed=42 epoch=3 updates=87 loss=2.55109 seconds=2.29
+REALTIME_EPOCH lstm current_state seed=42 epoch=4 updates=116 loss=2.37444 seconds=7.95 stateF1=0.1433 loc1=0.0000 mild80_det1=0.0000 mild80_loc1=0.0000 hFA=0
+REALTIME_EPOCH lstm current_state seed=42 epoch=5 updates=145 loss=2.36619 seconds=3.10
+REALTIME_EPOCH lstm current_state seed=42 epoch=6 updates=174 loss=2.35208 seconds=2.53
+REALTIME_EPOCH lstm current_state seed=42 epoch=7 updates=203 loss=2.20215 seconds=2.80
+REALTIME_EPOCH lstm current_state seed=42 epoch=8 updates=232 loss=2.14761 seconds=7.42 stateF1=0.1124 loc1=0.0000 mild80_det1=0.0000 mild80_loc1=0.0000 hFA=0
+REALTIME_EPOCH lstm current_state seed=42 epoch=9 updates=261 loss=2.07827 seconds=2.52
+REALTIME_EPOCH lstm current_state seed=42 epoch=10 updates=290 loss=1.89737 seconds=3.19
+REALTIME_EPOCH lstm current_state seed=42 epoch=11 updates=319 loss=1.73411 seconds=2.50
+REALTIME_EPOCH lstm current_state seed=42 epoch=12 updates=348 loss=1.65747 seconds=7.51 stateF1=0.2775 loc1=0.0185 mild80_det1=0.1667 mild80_loc1=0.0000 hFA=5
+PILOT_TRAIN cnn_segment300_early3_span1
+REALTIME_EPOCH cnn current_state seed=42 epoch=1 updates=29 loss=3.69424 seconds=5.66
+REALTIME_EPOCH cnn current_state seed=42 epoch=2 updates=58 loss=2.96152 seconds=4.97
+REALTIME_EPOCH cnn current_state seed=42 epoch=3 updates=87 loss=2.49533 seconds=4.94
+REALTIME_EPOCH cnn current_state seed=42 epoch=4 updates=116 loss=2.35065 seconds=9.34 stateF1=0.2698 loc1=0.0000 mild80_det1=0.0000 mild80_loc1=0.0000 hFA=0
+REALTIME_EPOCH cnn current_state seed=42 epoch=5 updates=145 loss=2.29565 seconds=6.57
+REALTIME_EPOCH cnn current_state seed=42 epoch=6 updates=174 loss=2.23930 seconds=5.12
+REALTIME_EPOCH cnn current_state seed=42 epoch=7 updates=203 loss=1.96190 seconds=5.13
+REALTIME_EPOCH cnn current_state seed=42 epoch=8 updates=232 loss=1.71469 seconds=9.46 stateF1=0.3745 loc1=0.1667 mild80_det1=0.7778 mild80_loc1=0.0000 hFA=1
+REALTIME_EPOCH cnn current_state seed=42 epoch=9 updates=261 loss=1.51587 seconds=5.14
+REALTIME_EPOCH cnn current_state seed=42 epoch=10 updates=290 loss=1.35924 seconds=4.95
+REALTIME_EPOCH cnn current_state seed=42 epoch=11 updates=319 loss=1.16922 seconds=4.89
+REALTIME_EPOCH cnn current_state seed=42 epoch=12 updates=348 loss=0.96421 seconds=9.30 stateF1=0.7950 loc1=0.5000 mild80_det1=0.5000 mild80_loc1=0.0000 hFA=0
+PILOT_TRAIN lstm_segment300_early3_span1
+REALTIME_EPOCH lstm current_state seed=42 epoch=1 updates=29 loss=3.82549 seconds=3.58
+REALTIME_EPOCH lstm current_state seed=42 epoch=2 updates=58 loss=3.16223 seconds=2.33
+REALTIME_EPOCH lstm current_state seed=42 epoch=3 updates=87 loss=2.56175 seconds=2.40
+REALTIME_EPOCH lstm current_state seed=42 epoch=4 updates=116 loss=2.40045 seconds=8.24 stateF1=0.0925 loc1=0.0000 mild80_det1=0.0000 mild80_loc1=0.0000 hFA=0
+REALTIME_EPOCH lstm current_state seed=42 epoch=5 updates=145 loss=2.35471 seconds=3.72
+REALTIME_EPOCH lstm current_state seed=42 epoch=6 updates=174 loss=2.42355 seconds=2.45
+REALTIME_EPOCH lstm current_state seed=42 epoch=7 updates=203 loss=2.25789 seconds=2.31
+REALTIME_EPOCH lstm current_state seed=42 epoch=8 updates=232 loss=2.11982 seconds=7.12 stateF1=0.2110 loc1=0.0000 mild80_det1=0.6667 mild80_loc1=0.0000 hFA=6
+REALTIME_EPOCH lstm current_state seed=42 epoch=9 updates=261 loss=2.10685 seconds=2.61
+REALTIME_EPOCH lstm current_state seed=42 epoch=10 updates=290 loss=1.92392 seconds=3.00
+REALTIME_EPOCH lstm current_state seed=42 epoch=11 updates=319 loss=1.79031 seconds=2.92
+REALTIME_EPOCH lstm current_state seed=42 epoch=12 updates=348 loss=1.69871 seconds=6.93 stateF1=0.2410 loc1=0.0000 mild80_det1=0.5556 mild80_loc1=0.0000 hFA=3
+PILOT_TRAIN cnn_segment300_early3_span3
+REALTIME_EPOCH cnn current_state seed=42 epoch=1 updates=29 loss=3.71161 seconds=6.26
+REALTIME_EPOCH cnn current_state seed=42 epoch=2 updates=58 loss=2.97347 seconds=5.04
+REALTIME_EPOCH cnn current_state seed=42 epoch=3 updates=87 loss=2.51025 seconds=5.08
+REALTIME_EPOCH cnn current_state seed=42 epoch=4 updates=116 loss=2.36537 seconds=9.35 stateF1=0.2470 loc1=0.0000 mild80_det1=0.0000 mild80_loc1=0.0000 hFA=0
+REALTIME_EPOCH cnn current_state seed=42 epoch=5 updates=145 loss=2.29596 seconds=5.18
+REALTIME_EPOCH cnn current_state seed=42 epoch=6 updates=174 loss=2.24834 seconds=6.37
+REALTIME_EPOCH cnn current_state seed=42 epoch=7 updates=203 loss=1.99303 seconds=5.09
+REALTIME_EPOCH cnn current_state seed=42 epoch=8 updates=232 loss=1.74620 seconds=9.43 stateF1=0.4198 loc1=0.1667 mild80_det1=0.5000 mild80_loc1=0.0000 hFA=2
+REALTIME_EPOCH cnn current_state seed=42 epoch=9 updates=261 loss=1.50009 seconds=5.80
+REALTIME_EPOCH cnn current_state seed=42 epoch=10 updates=290 loss=1.32219 seconds=5.04
+REALTIME_EPOCH cnn current_state seed=42 epoch=11 updates=319 loss=1.10707 seconds=4.94
+REALTIME_EPOCH cnn current_state seed=42 epoch=12 updates=348 loss=0.87671 seconds=10.74 stateF1=0.7611 loc1=0.5556 mild80_det1=0.7778 mild80_loc1=0.3333 hFA=1
+PILOT_TRAIN lstm_segment300_early3_span3
+REALTIME_EPOCH lstm current_state seed=42 epoch=1 updates=29 loss=3.83089 seconds=5.66
+REALTIME_EPOCH lstm current_state seed=42 epoch=2 updates=58 loss=3.17993 seconds=2.41
+REALTIME_EPOCH lstm current_state seed=42 epoch=3 updates=87 loss=2.54570 seconds=3.19
+REALTIME_EPOCH lstm current_state seed=42 epoch=4 updates=116 loss=2.40234 seconds=7.03 stateF1=0.0926 loc1=0.0000 mild80_det1=0.0000 mild80_loc1=0.0000 hFA=0
+REALTIME_EPOCH lstm current_state seed=42 epoch=5 updates=145 loss=2.39070 seconds=5.37
+REALTIME_EPOCH lstm current_state seed=42 epoch=6 updates=174 loss=2.35206 seconds=2.68
+REALTIME_EPOCH lstm current_state seed=42 epoch=7 updates=203 loss=2.24655 seconds=3.04
+REALTIME_EPOCH lstm current_state seed=42 epoch=8 updates=232 loss=2.12893 seconds=6.66 stateF1=0.2260 loc1=0.0000 mild80_det1=0.2778 mild80_loc1=0.0000 hFA=3
+REALTIME_EPOCH lstm current_state seed=42 epoch=9 updates=261 loss=2.00053 seconds=3.07
+REALTIME_EPOCH lstm current_state seed=42 epoch=10 updates=290 loss=1.78582 seconds=2.42
+REALTIME_EPOCH lstm current_state seed=42 epoch=11 updates=319 loss=1.66342 seconds=3.28
+REALTIME_EPOCH lstm current_state seed=42 epoch=12 updates=348 loss=1.72166 seconds=7.09 stateF1=0.4174 loc1=0.0741 mild80_det1=0.6111 mild80_loc1=0.0000 hFA=3
+REALTIME_STAGE_COMPLETE pilot

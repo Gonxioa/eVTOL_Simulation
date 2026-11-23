@@ -1,0 +1,83 @@
+{
+  "test_touched": false,
+  "development_flights": 171,
+  "top_features": {
+    "1.0s_phys25_top15": [
+      {
+        "rank": 1,
+        "feature": "rpm_parity_mean",
+        "importance": 0.03371842107372161
+      },
+      {
+        "rank": 2,
+        "feature": "rpm_rel2_mean",
+        "importance": 0.03302962809958411
+      },
+      {
+        "rank": 3,
+        "feature": "gz_mean",
+        "importance": 0.029803718606739762
+      },
+      {
+        "rank": 4,
+        "feature": "gz_dCum_mean",
+        "importance": 0.028991800814047557
+      },
+      {
+        "rank": 5,
+        "feature": "rpm_rel3_mean",
+        "importance": 0.027663490136429235
+      },
+      {
+        "rank": 6,
+        "feature": "rpm_feedback4_mean",
+        "importance": 0.025981357741769354
+      },
+      {
+        "rank": 7,
+        "feature": "rpm_rel5_mean",
+        "importance": 0.025436915843131385
+      },
+      {
+        "rank": 8,
+        "feature": "rpm_feedback1_mean",
+        "importance": 0.025420786214657733
+      },
+      {
+        "rank": 9,
+        "feature": "rpm_rel0_mean",
+        "importance": 0.024093939230765055
+      },
+      {
+        "rank": 10,
+        "feature": "rpm_feedback0_mean",
+        "importance": 0.022129244212189002
+      },
+      {
+        "rank": 11,
+        "feature": "rpm_feedback5_mean",
+        "importance": 0.021763299965742545
+      },
+      {
+        "rank": 12,
+        "feature": "rpm_feedback3_mean",
+        "importance": 0.020915181261846175
+      },
+      {
+        "rank": 13,
+        "feature": "rpm_rel1_mean",
+        "importance": 0.020622360874326742
+      },
+      {
+        "rank": 14,
+        "feature": "rpm_rel4_dCum_mean",
+        "importance": 0.018177498457217858
+      },
+      {
+        "rank": 15,
+        "feature": "rpm_rel4_mean",
+        "importance": 0.01797379004563591
+      }
+    ]
+  }
+}

@@ -1,0 +1,326 @@
+{
+  "candidates": [
+    {
+      "early_span_s": 3.0,
+      "early_weight": 1.0,
+      "mean_rank": 4.0,
+      "segment_samples": 100
+    },
+    {
+      "early_span_s": 1.0,
+      "early_weight": 3.0,
+      "mean_rank": 2.0,
+      "segment_samples": 100
+    },
+    {
+      "early_span_s": 3.0,
+      "early_weight": 3.0,
+      "mean_rank": 3.5,
+      "segment_samples": 100
+    },
+    {
+      "early_span_s": 3.0,
+      "early_weight": 1.0,
+      "mean_rank": 2.5,
+      "segment_samples": 300
+    },
+    {
+      "early_span_s": 1.0,
+      "early_weight": 3.0,
+      "mean_rank": 5.5,
+      "segment_samples": 300
+    },
+    {
+      "early_span_s": 3.0,
+      "early_weight": 3.0,
+      "mean_rank": 3.5,
+      "segment_samples": 300
+    }
+  ],
+  "runs": [
+    {
+      "early_span_s": 3.0,
+      "early_weight": 1.0,
+      "localization_1s": 0.5185185185185185,
+      "model": "cnn",
+      "optimizer_updates": 348,
+      "rank": [
+        1,
+        -0.0,
+        1,
+        0.5185185185185185,
+        0.05555555555555555,
+        0.5370370370370371,
+        0.9259259259259259,
+        0.5540790912917067,
+        -0.23684210526315788,
+        -0.0,
+        -0.5899999999999999
+      ],
+      "segment_samples": 100,
+      "state_macro_f1": 0.5540790912917067,
+      "within_model_rank": 4
+    },
+    {
+      "early_span_s": 3.0,
+      "early_weight": 1.0,
+      "localization_1s": 0.0,
+      "model": "lstm",
+      "optimizer_updates": 348,
+      "rank": [
+        1,
+        -0.0,
+        0,
+        0.0,
+        0.0,
+        0.0,
+        0.6666666666666666,
+        0.0927948729917707,
+        -0.0,
+        -0.0,
+        -1000.0
+      ],
+      "segment_samples": 100,
+      "state_macro_f1": 0.0927948729917707,
+      "within_model_rank": 4
+    },
+    {
+      "early_span_s": 1.0,
+      "early_weight": 3.0,
+      "localization_1s": 0.6666666666666666,
+      "model": "cnn",
+      "optimizer_updates": 348,
+      "rank": [
+        1,
+        -0.0,
+        1,
+        0.6666666666666666,
+        0.3333333333333333,
+        0.6851851851851852,
+        1.0,
+        0.8014890393772793,
+        -0.07317073170731707,
+        -0.0,
+        -0.7799999999999991
+      ],
+      "segment_samples": 100,
+      "state_macro_f1": 0.8014890393772793,
+      "within_model_rank": 1
+    },
+    {
+      "early_span_s": 1.0,
+      "early_weight": 3.0,
+      "localization_1s": 0.0,
+      "model": "lstm",
+      "optimizer_updates": 348,
+      "rank": [
+        1,
+        -0.0,
+        0,
+        0.0,
+        0.0,
+        0.0,
+        0.6666666666666666,
+        0.1069968866296903,
+        -0.0,
+        -0.0,
+        -1000.0
+      ],
+      "segment_samples": 100,
+      "state_macro_f1": 0.1069968866296903,
+      "within_model_rank": 3
+    },
+    {
+      "early_span_s": 3.0,
+      "early_weight": 3.0,
+      "localization_1s": 0.42592592592592593,
+      "model": "cnn",
+      "optimizer_updates": 348,
+      "rank": [
+        1,
+        -0.0,
+        1,
+        0.42592592592592593,
+        0.0,
+        0.46296296296296297,
+        0.8518518518518519,
+        0.6460063472252038,
+        -0.03571428571428571,
+        -0.0,
+        -4.329999999999997
+      ],
+      "segment_samples": 100,
+      "state_macro_f1": 0.6460063472252038,
+      "within_model_rank": 6
+    },
+    {
+      "early_span_s": 3.0,
+      "early_weight": 3.0,
+      "localization_1s": 0.0,
+      "model": "lstm",
+      "optimizer_updates": 348,
+      "rank": [
+        1,
+        -0.0,
+        0,
+        0.0,
+        0.0,
+        0.0,
+        0.6666666666666666,
+        0.14536148863457218,
+        -0.0,
+        -0.0,
+        -1000.0
+      ],
+      "segment_samples": 100,
+      "state_macro_f1": 0.14536148863457218,
+      "within_model_rank": 1
+    },
+    {
+      "early_span_s": 3.0,
+      "early_weight": 1.0,
+      "localization_1s": 0.5555555555555556,
+      "model": "cnn",
+      "optimizer_updates": 348,
+      "rank": [
+        1,
+        -0.0,
+        1,
+        0.5555555555555556,
+        0.0,
+        0.5555555555555556,
+        0.9814814814814815,
+        0.6575750405312099,
+        -0.19444444444444445,
+        -0.0,
+        -0.4900000000000002
+      ],
+      "segment_samples": 300,
+      "state_macro_f1": 0.6575750405312099,
+      "within_model_rank": 3
+    },
+    {
+      "early_span_s": 3.0,
+      "early_weight": 1.0,
+      "localization_1s": 0.0,
+      "model": "lstm",
+      "optimizer_updates": 348,
+      "rank": [
+        1,
+        -0.0,
+        0,
+        0.0,
+        0.0,
+        0.0,
+        0.6666666666666666,
+        0.14327095223062944,
+        -0.0,
+        -0.0,
+        -1000.0
+      ],
+      "segment_samples": 300,
+      "state_macro_f1": 0.14327095223062944,
+      "within_model_rank": 2
+    },
+    {
+      "early_span_s": 1.0,
+      "early_weight": 3.0,
+      "localization_1s": 0.5,
+      "model": "cnn",
+      "optimizer_updates": 348,
+      "rank": [
+        1,
+        -0.0,
+        1,
+        0.5,
+        0.0,
+        0.5555555555555556,
+        0.8333333333333334,
+        0.7949717452943311,
+        -0.0,
+        -0.0,
+        -2.3449999999999998
+      ],
+      "segment_samples": 300,
+      "state_macro_f1": 0.7949717452943311,
+      "within_model_rank": 5
+    },
+    {
+      "early_span_s": 1.0,
+      "early_weight": 3.0,
+      "localization_1s": 0.0,
+      "model": "lstm",
+      "optimizer_updates": 348,
+      "rank": [
+        1,
+        -0.0,
+        0,
+        0.0,
+        0.0,
+        0.0,
+        0.6666666666666666,
+        0.09246981270878578,
+        -0.0,
+        -0.0,
+        -1000.0
+      ],
+      "segment_samples": 300,
+      "state_macro_f1": 0.09246981270878578,
+      "within_model_rank": 6
+    },
+    {
+      "early_span_s": 3.0,
+      "early_weight": 3.0,
+      "localization_1s": 0.5555555555555556,
+      "model": "cnn",
+      "optimizer_updates": 348,
+      "rank": [
+        1,
+        -0.0,
+        1,
+        0.5555555555555556,
+        0.3333333333333333,
+        0.5555555555555556,
+        0.9259259259259259,
+        0.761141051283099,
+        -0.0,
+        -0.8368200836820086,
+        -0.9900000000000002
+      ],
+      "segment_samples": 300,
+      "state_macro_f1": 0.761141051283099,
+      "within_model_rank": 2
+    },
+    {
+      "early_span_s": 3.0,
+      "early_weight": 3.0,
+      "localization_1s": 0.0,
+      "model": "lstm",
+      "optimizer_updates": 348,
+      "rank": [
+        1,
+        -0.0,
+        0,
+        0.0,
+        0.0,
+        0.0,
+        0.6666666666666666,
+        0.09260847167155183,
+        -0.0,
+        -0.0,
+        -1000.0
+      ],
+      "segment_samples": 300,
+      "state_macro_f1": 0.09260847167155183,
+      "within_model_rank": 5
+    }
+  ],
+  "selected": {
+    "early_span_s": 1.0,
+    "early_weight": 3.0,
+    "mean_rank": 2.0,
+    "segment_samples": 100
+  },
+  "test_used": false,
+  "training_seed": 42
+}

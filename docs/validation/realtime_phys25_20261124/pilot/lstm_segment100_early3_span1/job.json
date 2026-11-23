@@ -1,0 +1,337 @@
+{
+  "config": {
+    "allow_tf32": false,
+    "batch_flights": 4,
+    "binary_fault_loss_weight": 0.5,
+    "cnn_dilations": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "cnn_kernels": [
+      5,
+      5,
+      5,
+      5
+    ],
+    "cnn_use_gru": true,
+    "controller_version": "control_recovery_v4_20261122",
+    "current_loss_weight": 1.0,
+    "dataset_root": "C:/Users/lenovo/Desktop/eVTOL_Simulation/output_simulink_gan/control_v4_20261123",
+    "dataset_version": "simulink_control_v4_observable_20261122_v1",
+    "decision_samples": 10,
+    "dropout": 0.15,
+    "early_span_candidates_s": [
+      1.0,
+      3.0
+    ],
+    "early_span_s": 1.0,
+    "early_weight": 3.0,
+    "early_weight_candidates": [
+      1.0,
+      3.0
+    ],
+    "ema_taus_s": [
+      0.3,
+      2.0
+    ],
+    "event_policy": {
+      "class_threshold": 0.6,
+      "clear_s": 0.5,
+      "clear_threshold": 0.3,
+      "confirm_s": 0.3,
+      "fault_threshold": 0.8,
+      "localize_s": 0.3
+    },
+    "feature_mode": "phys25",
+    "gradient_clip": 5.0,
+    "healthy_flight_weight": 3.0,
+    "hidden": 64,
+    "layers": 2,
+    "learning_rate": 0.002,
+    "legacy_control_loss_weights": {
+      "current": 0.25,
+      "prefix": 0.25,
+      "record": 1.0
+    },
+    "max_epochs": 12,
+    "mild_flight_weight": 1.5,
+    "min_lr_ratio": 0.1,
+    "model": "lstm",
+    "models": [
+      "cnn",
+      "lstm"
+    ],
+    "objective": "current_state",
+    "phase_reporting_span_s": 3.0,
+    "pilot_epochs": 12,
+    "pilot_seed": 42,
+    "policy_candidates": [
+      {
+        "class_threshold": 0.6,
+        "clear_s": 0.5,
+        "clear_threshold": 0.3,
+        "confirm_s": 0.3,
+        "fault_threshold": 0.8,
+        "localize_s": 0.3
+      },
+      {
+        "class_threshold": 0.4,
+        "clear_s": 0.5,
+        "clear_threshold": 0.3,
+        "confirm_s": 0.2,
+        "fault_threshold": 0.65,
+        "localize_s": 0.2
+      },
+      {
+        "class_threshold": 0.4,
+        "clear_s": 0.5,
+        "clear_threshold": 0.3,
+        "confirm_s": 0.2,
+        "fault_threshold": 0.8,
+        "localize_s": 0.2
+      },
+      {
+        "class_threshold": 0.6,
+        "clear_s": 0.5,
+        "clear_threshold": 0.3,
+        "confirm_s": 0.3,
+        "fault_threshold": 0.65,
+        "localize_s": 0.3
+      },
+      {
+        "class_threshold": 0.6,
+        "clear_s": 0.5,
+        "clear_threshold": 0.3,
+        "confirm_s": 0.3,
+        "fault_threshold": 0.9,
+        "localize_s": 0.3
+      },
+      {
+        "class_threshold": 0.6,
+        "clear_s": 0.8,
+        "clear_threshold": 0.2,
+        "confirm_s": 0.5,
+        "fault_threshold": 0.9,
+        "localize_s": 0.3
+      },
+      {
+        "class_threshold": 0.6,
+        "clear_s": 0.8,
+        "clear_threshold": 0.2,
+        "confirm_s": 0.2,
+        "fault_threshold": 0.8,
+        "localize_s": 0.3
+      },
+      {
+        "class_threshold": 0.6,
+        "clear_s": 0.8,
+        "clear_threshold": 0.3,
+        "confirm_s": 0.3,
+        "fault_threshold": 0.8,
+        "localize_s": 0.5
+      }
+    ],
+    "prefix_loss_weight": 0.0,
+    "profile": "control_v4_current_state_phys25_tcngru_20261124",
+    "record_loss_weight": 0.0,
+    "results_root": "C:/Users/lenovo/Desktop/eVTOL_Simulation/output_realtime_diagnosis_phys25_20261124",
+    "sample_hz": 100,
+    "scaling_mode": "healthy_asinh",
+    "scope": "No GAN/ROS. Existing 228 native circle flights; measured-only 12-channel external API preserved. Strictly causal phys25 feature combinations with training healthy-baseline arcsinh scaling, O(1)-state causal multi-scale EMA, TCN-GRU / LSTM encoders, balanced flight weights, and explicit binary fault-detection loss.",
+    "seed": 42,
+    "segment_candidates": [
+      100,
+      300
+    ],
+    "segment_samples": 100,
+    "selection": "Require healthy and prefault FA/min <=1 where possible; prefer non-blind models detecting all severities within 1s, then rank feasible by joint localization within1s, worst-severity localization within1s, localization within3s, detection within1s, state macroF1, first-error fraction, false alarms, localization p95. All frozen before any test signals.",
+    "semantics": "current_state_stream_v2",
+    "test_policy": "Read only test metadata/hashes during audit. All 12 main checkpoints, scalers and policies must be frozen before numerical test loading. Test physics summary was previously exposed, classification test remains unused for selection.",
+    "training_seeds": [
+      42,
+      43,
+      44
+    ],
+    "use_causal_ema": true,
+    "use_cosine_lr": false,
+    "validation_every_epochs": 4
+  },
+  "identity": {
+    "code": {
+      "configs/simulink_realtime.json": "7f8cadf5df04be8dcb7264dc5620e233133e1e24d7468ae834ebd6e4a0dfcac6",
+      "provenance.py": "38bdef20ade038f89469e6172300556c399be602621c46666ed8b919c6c1ce5b",
+      "run_simulink_realtime.py": "5fed830062500eef96e4afcc674419eb0bc0af60e3ec3fe85d4d76b710df5d23",
+      "simulink_data.py": "e11e54763bc80b0c8a946e36ffcebe85ce265da326cc713b6f2255e7c6d2d1a4",
+      "simulink_realtime.py": "98eecbb391f2a90a226cefd814a28218e6172ac41edef1610e13ab28021fe69a",
+      "simulink_realtime_evaluation.py": "bcaba47353ad029a5473e503240651d6c7c7fad2466daf2a0a0a5948f8a80e11",
+      "simulink_realtime_training.py": "d5cb2cf8b658111c1a51dacd2cab4960998a9624c42cf770a30be03ec054a37b",
+      "simulink_sequence_data.py": "09a3af15fd377a05bc442fa3c6dee9438fa3a85dd84317b6176e9a66235c87ac",
+      "simulink_sequence_events.py": "c1bc593edb5b5b6824013ce56a8f3f11c75e8ef2e4b1ca7ea219e046632c197b",
+      "simulink_sequence_model.py": "337fe7a4319cf7574c3d598be55c02253e3cded01a311dedf5fd510714a41d73"
+    },
+    "collection_receipt_sha256": "de738a6bc9d59ec5a17b559381b5150cdbf251e0c833671fb38a3e3fd76d409e",
+    "config": {
+      "allow_tf32": false,
+      "batch_flights": 4,
+      "binary_fault_loss_weight": 0.5,
+      "cnn_dilations": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "cnn_kernels": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "cnn_use_gru": true,
+      "controller_version": "control_recovery_v4_20261122",
+      "current_loss_weight": 1.0,
+      "dataset_root": "C:/Users/lenovo/Desktop/eVTOL_Simulation/output_simulink_gan/control_v4_20261123",
+      "dataset_version": "simulink_control_v4_observable_20261122_v1",
+      "decision_samples": 10,
+      "dropout": 0.15,
+      "early_span_candidates_s": [
+        1.0,
+        3.0
+      ],
+      "early_span_s": 3.0,
+      "early_weight_candidates": [
+        1.0,
+        3.0
+      ],
+      "ema_taus_s": [
+        0.3,
+        2.0
+      ],
+      "event_policy": {
+        "class_threshold": 0.6,
+        "clear_s": 0.5,
+        "clear_threshold": 0.3,
+        "confirm_s": 0.3,
+        "fault_threshold": 0.8,
+        "localize_s": 0.3
+      },
+      "feature_mode": "phys25",
+      "gradient_clip": 5.0,
+      "healthy_flight_weight": 3.0,
+      "hidden": 64,
+      "layers": 2,
+      "learning_rate": 0.002,
+      "legacy_control_loss_weights": {
+        "current": 0.25,
+        "prefix": 0.25,
+        "record": 1.0
+      },
+      "max_epochs": 48,
+      "mild_flight_weight": 1.5,
+      "min_lr_ratio": 0.1,
+      "models": [
+        "cnn",
+        "lstm"
+      ],
+      "phase_reporting_span_s": 3.0,
+      "pilot_epochs": 12,
+      "pilot_seed": 42,
+      "policy_candidates": [
+        {
+          "class_threshold": 0.6,
+          "clear_s": 0.5,
+          "clear_threshold": 0.3,
+          "confirm_s": 0.3,
+          "fault_threshold": 0.8,
+          "localize_s": 0.3
+        },
+        {
+          "class_threshold": 0.4,
+          "clear_s": 0.5,
+          "clear_threshold": 0.3,
+          "confirm_s": 0.2,
+          "fault_threshold": 0.65,
+          "localize_s": 0.2
+        },
+        {
+          "class_threshold": 0.4,
+          "clear_s": 0.5,
+          "clear_threshold": 0.3,
+          "confirm_s": 0.2,
+          "fault_threshold": 0.8,
+          "localize_s": 0.2
+        },
+        {
+          "class_threshold": 0.6,
+          "clear_s": 0.5,
+          "clear_threshold": 0.3,
+          "confirm_s": 0.3,
+          "fault_threshold": 0.65,
+          "localize_s": 0.3
+        },
+        {
+          "class_threshold": 0.6,
+          "clear_s": 0.5,
+          "clear_threshold": 0.3,
+          "confirm_s": 0.3,
+          "fault_threshold": 0.9,
+          "localize_s": 0.3
+        },
+        {
+          "class_threshold": 0.6,
+          "clear_s": 0.8,
+          "clear_threshold": 0.2,
+          "confirm_s": 0.5,
+          "fault_threshold": 0.9,
+          "localize_s": 0.3
+        },
+        {
+          "class_threshold": 0.6,
+          "clear_s": 0.8,
+          "clear_threshold": 0.2,
+          "confirm_s": 0.2,
+          "fault_threshold": 0.8,
+          "localize_s": 0.3
+        },
+        {
+          "class_threshold": 0.6,
+          "clear_s": 0.8,
+          "clear_threshold": 0.3,
+          "confirm_s": 0.3,
+          "fault_threshold": 0.8,
+          "localize_s": 0.5
+        }
+      ],
+      "prefix_loss_weight": 0.0,
+      "profile": "control_v4_current_state_phys25_tcngru_20261124",
+      "record_loss_weight": 0.0,
+      "results_root": "C:/Users/lenovo/Desktop/eVTOL_Simulation/output_realtime_diagnosis_phys25_20261124",
+      "sample_hz": 100,
+      "scaling_mode": "healthy_asinh",
+      "scope": "No GAN/ROS. Existing 228 native circle flights; measured-only 12-channel external API preserved. Strictly causal phys25 feature combinations with training healthy-baseline arcsinh scaling, O(1)-state causal multi-scale EMA, TCN-GRU / LSTM encoders, balanced flight weights, and explicit binary fault-detection loss.",
+      "segment_candidates": [
+        100,
+        300
+      ],
+      "selection": "Require healthy and prefault FA/min <=1 where possible; prefer non-blind models detecting all severities within 1s, then rank feasible by joint localization within1s, worst-severity localization within1s, localization within3s, detection within1s, state macroF1, first-error fraction, false alarms, localization p95. All frozen before any test signals.",
+      "semantics": "current_state_stream_v2",
+      "test_policy": "Read only test metadata/hashes during audit. All 12 main checkpoints, scalers and policies must be frozen before numerical test loading. Test physics summary was previously exposed, classification test remains unused for selection.",
+      "training_seeds": [
+        42,
+        43,
+        44
+      ],
+      "use_causal_ema": true,
+      "use_cosine_lr": false,
+      "validation_every_epochs": 4
+    },
+    "dataset_registry_sha256": "4c79ab33bb28139319a8611d851898a65f6ae68c2ec1b559a08ecf11c029e1f4",
+    "development_registry_sha256": "5e467e66f2b21797eb78fb6c75988c7100852fd0c1a4b081899cc69ae7cd4f8a",
+    "plan_sha256": "4ec010e966f3633f5a80033ff1c2b45db33e599231bfdefb3fadadd8dd032417",
+    "test_registry_sha256": "340e19470fc76fbce3aa67c3dcd5bbca0c75437cbb6d7e387348c5774e28f988"
+  },
+  "initial_parameters_sha256": "c67e22be858ea2ce060099b09a6949a0a5c166151a72101bb19222fbe5b73676",
+  "semantics": "current_state_stream_v2",
+  "signature": "095716e8f4869c45a19deedf7841dd8140cf586b1630c0ff2d81eac748b51fc8"
+}

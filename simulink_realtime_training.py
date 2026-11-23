@@ -18,6 +18,8 @@ def detach_memory(memory):
     if memory is None:
         return None
     def det(value):
+        if value is None:
+            return None
         return tuple(det(v) for v in value) if isinstance(value, tuple) else value.detach()
     return type(memory)(**{f.name: det(getattr(memory, f.name)) for f in fields(memory)})
 
@@ -28,7 +30,9 @@ def select_memory(memory, indices):
     data = {}
     for field in fields(memory):
         value = getattr(memory, field.name)
-        if field.name == "hidden":
+        if value is None:
+            data[field.name] = None
+        elif field.name == "hidden":
             data[field.name] = tuple(v.index_select(1, indices) for v in value)
         elif isinstance(value, tuple):
             data[field.name] = tuple(v.index_select(0, indices) for v in value)
@@ -49,15 +53,34 @@ def sample_weights(flights, steps, config, device):
     return torch.as_tensor(weights, device=device)
 
 
-def segmented_backward(model, x, lengths, current, seen, labels, weights, config, phase_tags=None):
+def flight_loss_scales(flights, config, device):
+    """Per-flight balancing multipliers to counter post-onset 1:6 healthy vs mild-fault prior skew."""
+    healthy_w = float(config.get("healthy_flight_weight", 1.0))
+    mild_w = float(config.get("mild_flight_weight", 1.0))
+    scales = []
+    for f in flights:
+        if f.label == 0:
+            scales.append(healthy_w)
+        elif 13 <= f.label <= 18:
+            scales.append(mild_w)
+        else:
+            scales.append(1.0)
+    return torch.as_tensor(scales, dtype=torch.float32, device=device)
+
+
+def segmented_backward(model, x, lengths, current, seen, labels, weights, config,
+                       phase_tags=None, flight_scales=None):
     """Returns point counts. Padding never advances a finished record's state.
 
     Parameters stay fixed until all chunks of this batch have been processed;
     detached memory carries numerical history but no cross-boundary gradients.
-    Per-flight weights sum to one, independent of chunk boundaries and length.
+    Per-flight time weights sum to one, independent of chunk boundaries and length.
     """
     batch, steps = x.shape[:2]
     normalized = weights/weights.sum(1, keepdim=True)
+    if flight_scales is None:
+        flight_scales = torch.ones((batch,), dtype=weights.dtype, device=x.device)
+    binary_w = float(config.get("binary_fault_loss_weight", 0.0))
     memory, previous = None, list(range(batch))
     stats = dict(loss=0., valid_forward_points=0, current_supervised_points=0, chunks=0,
                  record_terminals=0, weighted_mass=0.)
@@ -72,17 +95,26 @@ def segmented_backward(model, x, lengths, current, seen, labels, weights, config
         end = min(start+config["segment_samples"], steps)
         lens = (lengths[ix]-start).clamp(max=end-start)
         output = model(x[ix, start:end], memory, lens)
-        loss_map = F.cross_entropy(output["current_logits"].transpose(1, 2), current[ix, start:end], reduction="none")
+        target_seg = current[ix, start:end]
+        loss_map = F.cross_entropy(output["current_logits"].transpose(1, 2), target_seg, reduction="none")
         coeff = normalized[ix, start:end]
+        scaled_coeff = coeff * flight_scales[ix, None]
         if phase_tags is not None:
             for phase,name in enumerate(phase_sums):
                 mask = (phase_tags[ix,start:end] == phase) & (coeff > 0)
                 phase_sums[name][0] += float(loss_map.detach()[mask].sum())
                 phase_sums[name][1] += int(mask.sum())
-        loss = config["current_loss_weight"]*(loss_map*coeff).sum()/batch
+        loss = config["current_loss_weight"]*(loss_map*scaled_coeff).sum()/batch
+        if binary_w > 0.:
+            log_p = F.log_softmax(output["current_logits"], dim=-1)
+            log_p_healthy = log_p[..., 0]
+            log_p_fault = torch.logsumexp(log_p[..., 1:], dim=-1)
+            is_fault = (target_seg > 0).to(log_p.dtype)
+            bin_loss = -(is_fault*log_p_fault + (1.-is_fault)*log_p_healthy)
+            loss = loss + binary_w*(bin_loss*scaled_coeff).sum()/batch
         if config.get("prefix_loss_weight", 0):
             values = F.cross_entropy(output["prefix_logits"].transpose(1, 2), seen[ix, start:end], reduction="none")
-            loss = loss+config["prefix_loss_weight"]*(values*coeff).sum()/batch
+            loss = loss+config["prefix_loss_weight"]*(values*scaled_coeff).sum()/batch
         terminal = lengths[ix] <= end
         if config.get("record_loss_weight", 0) and bool(terminal.any()):
             loss = loss+config["record_loss_weight"]*F.cross_entropy(output["record_logits"][terminal], labels[ix][terminal], reduction="sum")/batch
@@ -151,7 +183,19 @@ def train_job(config, flights, output, identity, device="cuda", resume=False):
     model = build_model(config).to(device)
     initial_hash = stable_hash({k: v.detach().cpu().numpy().tolist() for k, v in model.state_dict().items()})
     optimizer = torch.optim.Adam(model.parameters(), lr=config["learning_rate"])
-    scaler = fit_scaler(train)
+    scheduler = (
+        torch.optim.lr_scheduler.CosineAnnealingLR(
+            optimizer,
+            T_max=config["max_epochs"],
+            eta_min=config["learning_rate"] * float(config.get("min_lr_ratio", 0.1)),
+        )
+        if config.get("use_cosine_lr", False) else None
+    )
+    scaler = fit_scaler(
+        train,
+        feature_mode=config.get("feature_mode", "raw12"),
+        scaling_mode=config.get("scaling_mode", "standard"),
+    )
     history, best_rank, updates, first_epoch, best_epoch = [], None, 0, 1, None
     best_policy = None
     wall_before = 0.
@@ -162,6 +206,8 @@ def train_job(config, flights, output, identity, device="cuda", resume=False):
             for name, val in state.items():
                 if isinstance(val, torch.Tensor):
                     state[name] = val.to(device)
+        if scheduler is not None and last.get("scheduler") is not None:
+            scheduler.load_state_dict(last["scheduler"])
         scaler = last["scaler"]
         history, updates = last["history"], last["updates"]
         first_epoch, best_rank = last["epoch"]+1, tuple(last["best_rank"]) if last["best_rank"] is not None else None
@@ -173,7 +219,6 @@ def train_job(config, flights, output, identity, device="cuda", resume=False):
         wall_before = last["elapsed_s"]
     write_json(output/"job.json", dict(signature=signature, config=config, identity=identity,
                                       initial_parameters_sha256=initial_hash, semantics=SEMANTICS))
-    # Tensor collation remains per batch so arbitrary lengths and padding are supported.
     started = time.perf_counter()
     for epoch in range(first_epoch, config["max_epochs"]+1):
         epoch_start = time.perf_counter()
@@ -187,6 +232,7 @@ def train_job(config, flights, output, identity, device="cuda", resume=False):
             optimizer.zero_grad(set_to_none=True)
             if config["objective"] == "current_state":
                 weights = sample_weights(selected, x.shape[1], config, device)
+                f_scales = flight_loss_scales(selected, config, device)
                 tags = torch.full(current.shape,-1,dtype=torch.long,device=device)
                 for i,flight in enumerate(selected):
                     target,_ = flight.targets()
@@ -195,7 +241,7 @@ def train_job(config, flights, output, identity, device="cuda", resume=False):
                     if flight.label:
                         phase[(target>0)&(flight.time<flight.fault_start_s+config.get("phase_reporting_span_s",3.)-1e-9)] = 1
                     tags[i,:len(target)] = torch.as_tensor(phase,device=device)
-                row = segmented_backward(model, x, lengths, current, seen, labels, weights, config,tags)
+                row = segmented_backward(model, x, lengths, current, seen, labels, weights, config, tags, f_scales)
             elif config["objective"] == "legacy_record":
                 output_full = model(x, lengths=lengths)
                 weights = config["legacy_control_loss_weights"]
@@ -217,7 +263,10 @@ def train_job(config, flights, output, identity, device="cuda", resume=False):
             optimizer.step()
             updates += 1
             stats.append(row)
-        row = dict(epoch=epoch, optimizer_updates=updates, loss=float(np.mean([r["loss"] for r in stats])),
+        if scheduler is not None:
+            scheduler.step()
+        row = dict(epoch=epoch, optimizer_updates=updates, lr=float(optimizer.param_groups[0]["lr"]),
+            loss=float(np.mean([r["loss"] for r in stats])),
             forward_points=sum(r["valid_forward_points"] for r in stats),
             current_supervised_points=sum(r["current_supervised_points"] for r in stats),
             compute_chunks=sum(r["chunks"] for r in stats),
@@ -241,7 +290,9 @@ def train_job(config, flights, output, identity, device="cuda", resume=False):
         row["epoch_wall_s"] = time.perf_counter()-epoch_start
         history.append(row)
         payload = dict(semantics=SEMANTICS, signature=signature, config=config, model=model.state_dict(),
-            optimizer=optimizer.state_dict(), scaler=scaler, epoch=epoch, updates=updates, history=history,
+            optimizer=optimizer.state_dict(),
+            scheduler=scheduler.state_dict() if scheduler is not None else None,
+            scaler=scaler, epoch=epoch, updates=updates, history=history,
             best_rank=best_rank, best_epoch=best_epoch, best_policy=best_policy,
             initial_parameters_sha256=initial_hash,
             sampler_rng=rng.bit_generator.state, torch_rng=torch.get_rng_state(),
@@ -251,7 +302,17 @@ def train_job(config, flights, output, identity, device="cuda", resume=False):
             _save(output/"best.pt", payload)
         _save(output/"last.pt", payload)
         write_json(output/"history.json", history)
-        val_text = "" if "validation" not in row else f" stateF1={row['validation']['states']['all']['macro_f1']:.4f} loc1={row['validation']['selected']['metrics']['localization_within_1s']:.4f}"
+        val_text = ""
+        if "validation" in row:
+            vm = row["validation"]["selected"]["metrics"]
+            m80 = vm.get("by_severity", {}).get("partial_80pct", {})
+            val_text = (
+                f" stateF1={row['validation']['states']['all']['macro_f1']:.4f}"
+                f" loc1={vm['localization_within_1s']:.4f}"
+                f" mild80_det1={(m80.get('detection_within_1s') or 0.):.4f}"
+                f" mild80_loc1={(m80.get('localization_within_1s') or 0.):.4f}"
+                f" hFA={vm['healthy_false_alarm_events']}"
+            )
         print(f"REALTIME_EPOCH {config['model']} {config['objective']} seed={config['seed']} epoch={epoch} updates={updates} loss={row['loss']:.5f} seconds={row['epoch_wall_s']:.2f}{val_text}", flush=True)
         model.train()
     best = torch.load(output/"best.pt", map_location="cpu", weights_only=False)

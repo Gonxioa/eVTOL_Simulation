@@ -30,3 +30,17 @@ docs/SIMULINK_GAN_V4_EXECUTION_PLAN.md -text whitespace=-blank-at-eol,blank-at-e
 docs/validation/simulink_gan_v4_20261105/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 # Preserve literal traceback whitespace in exported training/collection logs.
 docs/validation/simulink_gan_v4_20261105/*log*.txt -text whitespace=-blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Reproduce the source bytes recorded in the Phys25 pilot protocol.
+configs/simulink_realtime.json text eol=lf
+provenance.py text eol=crlf
+run_simulink_realtime.py text eol=lf
+simulink_realtime.py text eol=lf
+simulink_realtime_evaluation.py text eol=lf
+simulink_realtime_training.py text eol=lf
+simulink_sequence_data.py text eol=crlf
+simulink_sequence_events.py text eol=crlf
+simulink_sequence_model.py text eol=crlf
+docs/validation/realtime_phys25_20261124/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+model_artifacts/realtime_phys25_20261124/*.pt binary
+model_artifacts/realtime_phys25_20261124/manifest.json text eol=lf

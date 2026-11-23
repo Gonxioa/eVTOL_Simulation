@@ -142,6 +142,31 @@ def score_events(flights, predictions):
     for point in (.5, 1., 3.):
         for name in ("detection", "localization"):
             score[f"{name}_within_{point:g}s"] = sum(r[f"{name}_within_{point:g}s"] for r in faults)/n if n else None
+    by_severity = {}
+    for eff, sev_name in ((0.0, "full_0pct"), (0.2, "severe_20pct"), (0.8, "partial_80pct")):
+        sub = [r for r in faults if abs(r["remaining_effectiveness"] - eff) < 1e-9]
+        if not sub:
+            continue
+        by_severity[sev_name] = dict(
+            records=len(sub),
+            always_missed=sum(r["detection_delay_s"] is None for r in sub),
+            never_joint_localized=sum(r["localization_delay_s"] is None for r in sub),
+            detection_within_0_5s=sum(r["detection_within_0.5s"] for r in sub)/len(sub),
+            detection_within_1s=sum(r["detection_within_1s"] for r in sub)/len(sub),
+            detection_within_3s=sum(r["detection_within_3s"] for r in sub)/len(sub),
+            localization_within_0_5s=sum(r["localization_within_0.5s"] for r in sub)/len(sub),
+            localization_within_1s=sum(r["localization_within_1s"] for r in sub)/len(sub),
+            localization_within_3s=sum(r["localization_within_3s"] for r in sub)/len(sub),
+        )
+    score["by_severity"] = by_severity
+    if by_severity:
+        score["min_severity_detection_within_1s"] = min(v["detection_within_1s"] for v in by_severity.values())
+        score["min_severity_localization_within_1s"] = min(v["localization_within_1s"] for v in by_severity.values())
+        score["min_severity_localization_within_3s"] = min(v["localization_within_3s"] for v in by_severity.values())
+    else:
+        score["min_severity_detection_within_1s"] = None
+        score["min_severity_localization_within_1s"] = None
+        score["min_severity_localization_within_3s"] = None
     score["late_detection_over_3s"] = sum(r["detection_delay_s"] is not None and r["detection_delay_s"] > 3+1e-9 for r in faults)
     score["late_localization_over_3s"] = sum(r["localization_delay_s"] is not None and r["localization_delay_s"] > 3+1e-9 for r in faults)
     score["observation_horizons_s"] = [.5, 1., 3.]
@@ -167,17 +192,27 @@ def score_states(flights, probabilities):
 
 
 def policy_rank(score, state_macro_f1):
-    """Predeclared validation rule; 0.5/1/3s are observations, not safety limits."""
+    """Predeclared validation rule; prevents selecting severity-blind checkpoints."""
     healthy = score["healthy_false_alarms_per_minute"] or 0.
     pre = score["prefault_false_alarms_per_minute"] or 0.
     feasible = healthy <= 1.+1e-9 and pre <= 1.+1e-9
-    # Feasible policies compete on timely *joint* localization, not just alarms.
-    # Infeasible policies retain coverage but sort first by their excess false alarms.
     excess = max(0., healthy-1)+max(0., pre-1)
-    return (int(feasible), -excess, score["localization_within_1s"] or 0.,
-        score["localization_within_3s"] or 0., score["detection_within_1s"] or 0.,
-        state_macro_f1, -(score["first_localization_error_fraction"] or 0.),
-        -healthy-pre, -(score["localization_delay_s"]["p95"] or 1000.))
+    min_det_1s = score.get("min_severity_detection_within_1s") or 0.
+    min_loc_1s = score.get("min_severity_localization_within_1s") or 0.
+    all_tiers_active = int(min_det_1s > 0.0)
+    return (
+        int(feasible),
+        -excess,
+        all_tiers_active,
+        score["localization_within_1s"] or 0.,
+        min_loc_1s,
+        score["localization_within_3s"] or 0.,
+        score["detection_within_1s"] or 0.,
+        state_macro_f1,
+        -(score["first_localization_error_fraction"] or 0.),
+        -healthy-pre,
+        -(score["localization_delay_s"]["p95"] or 1000.),
+    )
 
 
 def choose_policy(flights, probabilities, policies, period=10):

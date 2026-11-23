@@ -1,19 +1,27 @@
 # 实时故障诊断运行说明
 
-本轮主入口为 `run_simulink_realtime.py`，语义版本 `current_state_stream_v2`。旧 `run_simulink_sequence.py` 和 `configs/simulink_sequence.json` 保留为历史记录目标工具，不能把旧 checkpoint 无提示装入新接口。新加载器默认拒绝旧权重；旧目标实验对照需要明确传入 `allow_legacy_control=True`。
+入口为 `run_simulink_realtime.py`，语义版本为 `current_state_stream_v2`。当前配置使用
+`phys25`、训练集健康基线 `healthy_asinh`、双尺度因果 EMA 和 TCN-GRU 或 LSTM。
+公开接口继续接收 12 维传感测量。旧记录目标对照使用 `allow_legacy_control=True` 显式加载。
+[本轮开发结果](validation/realtime_phys25_20261124/README.md)
 
-## 已有数据与最短命令
+## 数据与运行顺序
 
-无需再次运行Simulink。数据目录为 `C:/Users/lenovo/Desktop/eVTOL_Simulation/output_simulink_gan/control_v4_20261123`。完整记录继续保留。更换机器先修改配置中的 `dataset_root`、`results_root`，原注册表若搬迁可按已有来源目录布局恢复。
-
-在本分支目录执行：
+本轮复用 `control_v4_20261123` 的 228 条原生记录，开发阶段使用 114 条训练与 57 条验证。
+换机器时在配置副本中指定 `dataset_root`、`results_root`，通过 `--config` 使用该文件。
+在分支目录按下列顺序运行开发验证。
 
 ```powershell
-python -m unittest tests.test_realtime_diagnosis tests.test_simulink_sequence tests.test_sequence_baselines -v
-python run_simulink_realtime.py all --device cuda
+python -m unittest discover -s tests -q
+python run_simulink_realtime.py audit
+python run_simulink_realtime.py smoke --device cuda
+python run_simulink_realtime.py pilot --device cuda
 ```
 
-`all`依次执行审计、真实数据小规模检查、验证候选、12个正式训练、冻结和测试。正式测试阶段会验证全部冻结文件，未完成12个训练、源代码变化或模型文件变化都会拒绝读取测试数值。每个阶段也可单独运行：`audit`、`smoke`、`pilot`、`train`、`freeze`、`evaluate`。已完成且身份相同的训练会跳过；中断训练从 `last.pt` 恢复，包含优化器、采样器与随机数状态。正式预算40次来源遍历，不按测试成绩追加。
+现有 Phys25 结果已完成以上阶段。后续正式阶段依次为 `train`、`freeze`、`evaluate`。
+`all` 从审计运行到测试。正式训练配置为 48 次来源遍历，种子 42、43、44，
+CNN/LSTM 与两种训练目标共 12 个作业。冻结收据核验通过后才读取测试数值。
+相同运行身份的未完成作业从 `last.pt` 恢复。源码或配置变化后使用新 `results_root`。
 
 ## 可调用对象
 
@@ -45,7 +53,8 @@ diagnostic.reset()  # 下一次独立飞行必须复位
 
 `push`可以接收任意数量新点，返回该批新产生的判断列表。内部以累计第10、20、30…点判断；样本时间从0开始时，首次判断为0.09秒，此后0.19、0.29…23.99秒。末尾24.00秒的单点推进网络但不额外触发一次判断。读取当前状态不会重复推进网络。缓冲区最多等待不足一个判断周期的数据。
 
-LSTM传递隐藏、细胞状态；CNN传递每层卷积上下文。CNN当前头的感受野61点，缓存并不使它获得无限历史；旧前缀头虽有全历史池，但新目标不使用该头定位。LSTM数值状态跨完整飞行延续，TBPTT梯度在训练段边界截断。
+LSTM 跨包传递隐藏和细胞状态，TCN 传递每层卷积缓存，开启的 GRU 还传递递归状态。
+四层卷积的局部感受野为 61 点。双尺度 EMA 同样保留跨包状态，训练在分段边界截断梯度。
 
 ## 原始传感包示例
 
@@ -67,7 +76,7 @@ python stream_fault_diagnosis.py --checkpoint "path/to/best.pt" --csv "path/to/s
 
 ## 结果目录
 
-默认 `C:/Users/lenovo/Desktop/eVTOL_Simulation/output_realtime_diagnosis_20261123`：
+当前配置的本地结果目录名为 `output_realtime_diagnosis_phys25_20261124`。开发证据归档在 [Phys25 结果目录](validation/realtime_phys25_20261124/README.md)。
 
 - `data_audit.json`、`source_audit.csv`：228条来源审计，测试数值在冻结后另行验证。
 - `development_selection.json`：分段长度、早期权重候选与选择依据。

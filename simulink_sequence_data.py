@@ -15,6 +15,87 @@ from provenance import sha256_file
 from simulink_data import ROOT, FEATURES, checked_plan, observable_features, read, validate_run
 
 
+PHYS25_FEATURE_NAMES = (
+    list(FEATURES["imu_rpm"])
+    + [f"rpm_rel{i}" for i in range(6)]
+    + [f"rpm_opp{i}" for i in range(6)]
+    + ["rpm_parity"]
+)
+
+
+def extract_physics_features(x, feature_mode="raw12"):
+    """Strictly causal point-wise physical combinations from [N, 12] measured inputs."""
+    arr = np.asarray(x, dtype=np.float32)
+    if arr.ndim != 2 or arr.shape[1] != 12:
+        raise ValueError("Expected [N, 12] measured inputs")
+    if feature_mode == "raw12":
+        return arr
+    if feature_mode == "phys25":
+        rpm = arr[:, 6:12]
+        rpm_mean = rpm.mean(axis=1, keepdims=True)
+        rpm_rel = rpm - rpm_mean
+        rpm_opp = np.stack([rpm[:, i] - rpm[:, (i + 3) % 6] for i in range(6)], axis=1)
+        rpm_parity = (
+            rpm[:, [0, 2, 4]].mean(axis=1, keepdims=True)
+            - rpm[:, [1, 3, 5]].mean(axis=1, keepdims=True)
+        )
+        return np.concatenate((arr, rpm_rel, rpm_opp, rpm_parity), axis=1).astype(np.float32, copy=False)
+    raise ValueError(f"Unknown feature_mode: {feature_mode}")
+
+
+class PhysicsFeatureScaler:
+    """Drop-in scaler accepting raw [N, 12] inputs with causal physics features.
+
+    Supports:
+    - scaling_mode='standard': standard z-score over all training flights.
+    - scaling_mode='healthy_asinh': z-score normalized by training healthy-flight
+      baseline statistics followed by smooth arcsinh compression, preventing high-
+      amplitude 0%/20% faults from crushing 80% mild-fault signals.
+    """
+    def __init__(self, feature_mode="phys25", scaling_mode="healthy_asinh", min_scale=1e-4):
+        if feature_mode not in ("raw12", "phys25"):
+            raise ValueError(f"Unsupported feature_mode: {feature_mode}")
+        if scaling_mode not in ("standard", "healthy_asinh"):
+            raise ValueError(f"Unsupported scaling_mode: {scaling_mode}")
+        self.feature_mode = feature_mode
+        self.scaling_mode = scaling_mode
+        self.min_scale = float(min_scale)
+        self.n_features_out_ = 25 if feature_mode == "phys25" else 12
+        self.feature_names_ = PHYS25_FEATURE_NAMES if feature_mode == "phys25" else list(FEATURES["imu_rpm"])
+        self.mean_ = None
+        self.scale_ = None
+        self.n_samples_seen_ = 0
+        self.baseline_samples_seen_ = 0
+
+    def fit_flights(self, flights):
+        if not flights or any(f.role != "train" for f in flights):
+            raise PermissionError("Fit normalization on training flights only")
+        total_points = sum(len(f.x) for f in flights)
+        if self.scaling_mode == "healthy_asinh":
+            baseline = [f for f in flights if f.label == 0]
+            if not baseline:
+                baseline = list(flights)
+        else:
+            baseline = list(flights)
+        base_scaler = StandardScaler()
+        for f in baseline:
+            base_scaler.partial_fit(extract_physics_features(f.x, self.feature_mode))
+        self.mean_ = np.asarray(base_scaler.mean_, dtype=np.float64)
+        self.scale_ = np.maximum(np.asarray(base_scaler.scale_, dtype=np.float64), self.min_scale)
+        self.n_samples_seen_ = int(total_points)
+        self.baseline_samples_seen_ = int(base_scaler.n_samples_seen_)
+        return self
+
+    def transform(self, x):
+        if self.mean_ is None or self.scale_ is None:
+            raise RuntimeError("Scaler has not been fitted")
+        feats = extract_physics_features(x, self.feature_mode).astype(np.float64, copy=False)
+        z = (feats - self.mean_) / self.scale_
+        if self.scaling_mode == "healthy_asinh":
+            z = np.arcsinh(z)
+        return z.astype(np.float32, copy=False)
+
+
 @dataclass
 class Flight:
     source_id: str
@@ -84,8 +165,6 @@ def _source_path(value, source_root):
     direct = Path(value)
     if direct.exists():
         return direct
-    # Registries collected on Windows contain absolute paths. Preserve their
-    # project-relative output_simulink_gan suffix when the project is relocated.
     parts = PureWindowsPath(str(value)).parts
     if "output_simulink_gan" in parts:
         candidate = Path(source_root).joinpath(*parts[parts.index("output_simulink_gan"):])
@@ -146,24 +225,28 @@ def load_flights(registry_paths, roles=("train", "validation"), source_root=ROOT
     return output
 
 
-def fit_scaler(flights):
+def fit_scaler(flights, feature_mode="raw12", scaling_mode="standard"):
     if not flights or any(f.role != "train" for f in flights):
         raise PermissionError("Fit normalization on training flights only")
-    scaler = StandardScaler()
-    for f in flights:
-        scaler.partial_fit(f.x)  # Each actual time sample appears once.
-    return scaler
+    if feature_mode == "raw12" and scaling_mode == "standard":
+        scaler = StandardScaler()
+        for f in flights:
+            scaler.partial_fit(f.x)
+        return scaler
+    return PhysicsFeatureScaler(feature_mode=feature_mode, scaling_mode=scaling_mode).fit_flights(flights)
 
 
 def collate(flights, scaler, device):
     import torch
     lengths = np.asarray([len(f.x) for f in flights], dtype=np.int64)
-    x = np.zeros((len(flights), max(lengths), 12), dtype=np.float32)
+    transformed = [scaler.transform(f.x).astype(np.float32) for f in flights]
+    n_features = transformed[0].shape[1]
+    x = np.zeros((len(flights), max(lengths), n_features), dtype=np.float32)
     current = np.zeros(x.shape[:2], dtype=np.int64)
     seen = current.copy()
-    for i, f in enumerate(flights):
+    for i, (f, tx) in enumerate(zip(flights, transformed)):
         n = lengths[i]
-        x[i, :n] = scaler.transform(f.x).astype(np.float32)
+        x[i, :n] = tx
         current[i, :n], seen[i, :n] = f.targets()
     return tuple(torch.as_tensor(a, device=device) for a in (x, lengths, current, seen,
                  np.asarray([f.label for f in flights], dtype=np.int64)))

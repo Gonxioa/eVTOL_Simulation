@@ -1,8 +1,15 @@
 # eVTOL_Simulation
 
-实时故障报警入口：[运行说明与增量接口](docs/REALTIME_USAGE.md)、[训练前实验计划](docs/REALTIME_EXPERIMENT_PLAN.md)。使用 `control_recovery_v4_20261122` 的新版228条绕圈记录，保持12维测量输入、100 Hz采样，每0.1秒连续判断；当前状态监督、连续分段训练、CNN/LSTM三个种子及旧目标对照均在独立profile中实施。运行 `python run_simulink_realtime.py all --device cuda`，结果和权重分别见 `docs/validation/realtime_20261123`、`model_artifacts/realtime_20261123`。原始完整24秒数据不改写，本轮不使用GAN或ROS。
+最新实时诊断进度见 [Phys25 开发验证](docs/validation/realtime_phys25_20261124/README.md) 和
+[运行说明与增量接口](docs/REALTIME_USAGE.md)。本轮在 12 维传感输入上派生 `phys25`，使用健康基线
+`asinh`、双尺度因果 EMA 和 TCN-GRU，完成 `audit`、`smoke` 与 12 组 `pilot`。
+最佳 TCN-GRU 在开发验证集的 1 秒检出为 54/54，正确联合定位为 36/54。
+[最佳检查点与校验清单](model_artifacts/realtime_phys25_20261124/manifest.json)
 
-已完成12个正式训练及冻结后的统一测试：[中文结果报告](docs/validation/realtime_20261123/实时故障诊断_中文结果报告.md)。实时链路和执行审计通过，但剩余80%效能故障仍有明显漏检，CNN一个训练种子存在健康误报；本轮结果是研究基线，未验证正式安全报警时限。下文滑窗/GAN及旧记录目标流程保留为历史入口，不混用旧权重和旧数据缓存。
+旧 `raw12` 实时诊断基线的正式训练与冻结测试见
+[中文结果报告](docs/validation/realtime_20261123/实时故障诊断_中文结果报告.md)、
+[模型权重](model_artifacts/realtime_20261123) 和 [原实验计划](docs/REALTIME_EXPERIMENT_PLAN.md)。
+当前 Phys25 分支的开发结果与该基线分目录保存。
 
 历史记录目标入口：[12维完整飞行分类与事件标注](docs/SIMULINK_SEQUENCE_DIAGNOSIS.md)，运行 `run_simulink_sequence.py`。其主要目标为整条记录分类，旧checkpoint和配置应按旧语义使用，不能静默装入新版实时接口；历史V4短窗口结果也不代表本轮新版数据的在线报警成绩。
 
