@@ -81,6 +81,7 @@ def package(output):
         for path in sorted(output.rglob("*")):
             if not path.is_file():continue
             rel=path.relative_to(output)
+            if rel.as_posix()=="delivery_receipt.json":continue  # Final bundle hash is an external receipt.
             if path.suffix in (".npz",".pt") and rel.parts[0]!="portable_weights":continue
             archive.write(path,rel.as_posix())
     with zipfile.ZipFile(bundle) as archive:

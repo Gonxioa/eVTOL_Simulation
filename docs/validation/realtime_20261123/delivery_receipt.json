@@ -1,7 +1,7 @@
 {
   "bundle": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\实时故障诊断交付_20261123.zip",
-  "bundle_bytes": 12205200,
-  "bundle_sha256": "8dde33ab1066d54e6057570a830a9ccc4b43887451fc7c556c3ee5d64ae29e81",
+  "bundle_bytes": 12205130,
+  "bundle_sha256": "eb5126b71db2542fa90f657ea89a838b20f4e79a934681a0f09b3e04cd88a9c4",
   "models": 12,
   "portable_models": "C:\\Users\\lenovo\\.codex\\worktrees\\evt-realtime-diagnosis-20261123\\model_artifacts\\realtime_20261123",
   "raw_dataset_duplicated": false,

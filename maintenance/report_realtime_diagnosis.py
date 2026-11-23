@@ -98,6 +98,8 @@ def make_report(output):
     def save(fig,name):
         fig.savefig(figures/(name+".png"),dpi=180,bbox_inches="tight",facecolor="white")
         fig.savefig(figures/(name+".svg"),bbox_inches="tight",facecolor="white")
+        svg=figures/(name+".svg")
+        svg.write_text("\n".join(line.rstrip() for line in svg.read_text(encoding="utf-8").splitlines())+"\n",encoding="utf-8")
         plt.close(fig)
     test=rows[rows.role=="test"]
     group_order=[("cnn","legacy_record"),("cnn","current_state"),("lstm","legacy_record"),("lstm","current_state")]
