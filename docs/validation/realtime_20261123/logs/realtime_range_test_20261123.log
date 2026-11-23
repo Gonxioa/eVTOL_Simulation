@@ -1,0 +1,6 @@
+test_early_weight_range_does_not_crop_or_change_lifecycle_labels (tests.test_realtime_diagnosis.RealtimeTests.test_early_weight_range_does_not_crop_or_change_lifecycle_labels) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.070s
+
+OK

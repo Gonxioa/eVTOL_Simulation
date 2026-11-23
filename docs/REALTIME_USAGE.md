@@ -21,6 +21,9 @@ python run_simulink_realtime.py all --device cuda
 from simulink_realtime import RealtimeDiagnoser
 from simulink_realtime_training import load_realtime_checkpoint
 from simulink_sequence_events import EventPolicy
+import torch
+
+torch.set_num_threads(1)  # 与本轮在线耗时测量一致；应用程序管理CPU线程池
 
 model, scaler, saved = load_realtime_checkpoint("path/to/best.pt", "cpu")
 diagnostic = RealtimeDiagnoser(
@@ -47,7 +50,7 @@ LSTM传递隐藏、细胞状态；CNN传递每层卷积上下文。CNN当前头�
 ## 原始传感包示例
 
 ```powershell
-python stream_fault_diagnosis.py --checkpoint "path/to/best.pt" --csv "path/to/signals.csv" --packet-points 7 --device cpu
+python stream_fault_diagnosis.py --checkpoint "path/to/best.pt" --csv "path/to/signals.csv" --packet-points 7 --device cpu --cpu-threads 1
 ```
 
 这个示例逐批读取CSV，替换 `csv_packets` 即可接串口或网络采集。`MeasurementAligner`仅把原始IMU延迟3个采样周期，保留已经延迟的 `feedback_state_14..19`，不会再次延迟转速。已经对齐的数据不要再经过该适配器。初始化的前三个时刻使用初始测量保持，与现有仿真链一致。

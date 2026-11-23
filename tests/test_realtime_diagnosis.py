@@ -197,6 +197,18 @@ class RealtimeTests(unittest.TestCase):
                 for v in value if isinstance(value,tuple) else (value,):
                     self.assertFalse(v.requires_grad)
 
+    def test_early_weight_range_does_not_crop_or_change_lifecycle_labels(self):
+        time=np.arange(401)/100
+        f=Flight("range","train",0,42,np.zeros((401,12),dtype=np.float32),time,7,.5)
+        labels=f.targets()[0].copy()
+        one=sample_weights([f],401,dict(early_span_s=1.,early_weight=3.),"cpu")
+        three=sample_weights([f],401,dict(early_span_s=3.,early_weight=3.),"cpu")
+        self.assertEqual(int((one==3).sum()),100)
+        self.assertEqual(int((three==3).sum()),300)
+        self.assertTrue(torch.all(one>0))
+        self.assertTrue(torch.all(three>0))
+        np.testing.assert_array_equal(f.targets()[0],labels)
+
     def test_prefault_alarm_cannot_count_as_a_fresh_fault_detection(self):
         f = Flight("f","test",0,42,self.x,self.t,7,.5)
         p = np.repeat(posterior(7)[None],len(self.x),axis=0)

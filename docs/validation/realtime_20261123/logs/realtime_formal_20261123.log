@@ -1,0 +1,64 @@
+REALTIME_STAGE train
+FORMAL_TRAIN current_state_cnn_seed42
+REALTIME_EPOCH cnn current_state seed=42 epoch=1 updates=29 loss=2.91580 seconds=4.47
+REALTIME_EPOCH cnn current_state seed=42 epoch=2 updates=58 loss=2.61405 seconds=4.19
+REALTIME_EPOCH cnn current_state seed=42 epoch=3 updates=87 loss=2.37532 seconds=4.36
+REALTIME_EPOCH cnn current_state seed=42 epoch=4 updates=116 loss=2.04286 seconds=9.11 stateF1=0.1669 loc1=0.0556
+REALTIME_EPOCH cnn current_state seed=42 epoch=5 updates=145 loss=1.87845 seconds=5.30
+REALTIME_EPOCH cnn current_state seed=42 epoch=6 updates=174 loss=1.71341 seconds=4.20
+REALTIME_EPOCH cnn current_state seed=42 epoch=7 updates=203 loss=1.49883 seconds=4.49
+REALTIME_EPOCH cnn current_state seed=42 epoch=8 updates=232 loss=1.36251 seconds=8.24 stateF1=0.4518 loc1=0.5556
+REALTIME_EPOCH cnn current_state seed=42 epoch=9 updates=261 loss=1.35100 seconds=5.03
+REALTIME_EPOCH cnn current_state seed=42 epoch=10 updates=290 loss=1.26138 seconds=4.47
+REALTIME_EPOCH cnn current_state seed=42 epoch=11 updates=319 loss=1.21122 seconds=4.92
+REALTIME_EPOCH cnn current_state seed=42 epoch=12 updates=348 loss=1.17381 seconds=8.46 stateF1=0.4525 loc1=0.5556
+REALTIME_EPOCH cnn current_state seed=42 epoch=13 updates=377 loss=1.13611 seconds=4.95
+REALTIME_EPOCH cnn current_state seed=42 epoch=14 updates=406 loss=1.13382 seconds=4.18
+REALTIME_EPOCH cnn current_state seed=42 epoch=15 updates=435 loss=1.11456 seconds=4.11
+REALTIME_EPOCH cnn current_state seed=42 epoch=16 updates=464 loss=1.13148 seconds=8.61 stateF1=0.4615 loc1=0.6111
+REALTIME_EPOCH cnn current_state seed=42 epoch=17 updates=493 loss=1.12115 seconds=4.93
+REALTIME_EPOCH cnn current_state seed=42 epoch=18 updates=522 loss=1.10202 seconds=4.16
+REALTIME_EPOCH cnn current_state seed=42 epoch=19 updates=551 loss=1.08883 seconds=4.45
+REALTIME_EPOCH cnn current_state seed=42 epoch=20 updates=580 loss=1.06269 seconds=9.61 stateF1=0.4575 loc1=0.5556
+REALTIME_EPOCH cnn current_state seed=42 epoch=21 updates=609 loss=1.07772 seconds=4.51
+REALTIME_EPOCH cnn current_state seed=42 epoch=22 updates=638 loss=1.06138 seconds=5.10
+REALTIME_EPOCH cnn current_state seed=42 epoch=23 updates=667 loss=1.06520 seconds=4.33
+REALTIME_EPOCH cnn current_state seed=42 epoch=24 updates=696 loss=1.06603 seconds=8.42 stateF1=0.4701 loc1=0.6667
+REALTIME_EPOCH cnn current_state seed=42 epoch=25 updates=725 loss=1.05391 seconds=4.83
+REALTIME_EPOCH cnn current_state seed=42 epoch=26 updates=754 loss=1.04966 seconds=4.13
+REALTIME_EPOCH cnn current_state seed=42 epoch=27 updates=783 loss=1.06896 seconds=4.11
+REALTIME_EPOCH cnn current_state seed=42 epoch=28 updates=812 loss=1.06268 seconds=8.72 stateF1=0.4687 loc1=0.6111
+REALTIME_EPOCH cnn current_state seed=42 epoch=29 updates=841 loss=1.05364 seconds=5.04
+REALTIME_EPOCH cnn current_state seed=42 epoch=30 updates=870 loss=1.02247 seconds=4.87
+REALTIME_EPOCH cnn current_state seed=42 epoch=31 updates=899 loss=1.05856 seconds=4.11
+REALTIME_EPOCH cnn current_state seed=42 epoch=32 updates=928 loss=1.03377 seconds=8.59 stateF1=0.4766 loc1=0.6667
+REALTIME_EPOCH cnn current_state seed=42 epoch=33 updates=957 loss=1.05456 seconds=5.12
+REALTIME_EPOCH cnn current_state seed=42 epoch=34 updates=986 loss=1.07788 seconds=4.60
+REALTIME_EPOCH cnn current_state seed=42 epoch=35 updates=1015 loss=1.05031 seconds=4.17
+REALTIME_EPOCH cnn current_state seed=42 epoch=36 updates=1044 loss=1.08803 seconds=8.39 stateF1=0.4662 loc1=0.6111
+REALTIME_EPOCH cnn current_state seed=42 epoch=37 updates=1073 loss=1.05304 seconds=4.92
+REALTIME_EPOCH cnn current_state seed=42 epoch=38 updates=1102 loss=1.05810 seconds=4.10
+REALTIME_EPOCH cnn current_state seed=42 epoch=39 updates=1131 loss=1.46656 seconds=4.12
+REALTIME_EPOCH cnn current_state seed=42 epoch=40 updates=1160 loss=1.24465 seconds=8.55 stateF1=0.4685 loc1=0.6667
+FORMAL_TRAIN current_state_cnn_seed43
+REALTIME_EPOCH cnn current_state seed=43 epoch=1 updates=29 loss=2.88504 seconds=5.56
+REALTIME_EPOCH cnn current_state seed=43 epoch=2 updates=58 loss=2.61928 seconds=4.29
+REALTIME_EPOCH cnn current_state seed=43 epoch=3 updates=87 loss=2.26992 seconds=4.01
+REALTIME_EPOCH cnn current_state seed=43 epoch=4 updates=116 loss=1.95925 seconds=8.81 stateF1=0.1294 loc1=0.2222
+REALTIME_EPOCH cnn current_state seed=43 epoch=5 updates=145 loss=1.80141 seconds=5.58
+REALTIME_EPOCH cnn current_state seed=43 epoch=6 updates=174 loss=1.57237 seconds=4.25
+REALTIME_EPOCH cnn current_state seed=43 epoch=7 updates=203 loss=1.47022 seconds=4.40
+REALTIME_EPOCH cnn current_state seed=43 epoch=8 updates=232 loss=1.38671 seconds=9.01 stateF1=0.4614 loc1=0.4444
+REALTIME_EPOCH cnn current_state seed=43 epoch=9 updates=261 loss=1.25441 seconds=4.34
+REALTIME_EPOCH cnn current_state seed=43 epoch=10 updates=290 loss=1.21183 seconds=4.21
+REALTIME_EPOCH cnn current_state seed=43 epoch=11 updates=319 loss=1.18068 seconds=4.16
+REALTIME_EPOCH cnn current_state seed=43 epoch=12 updates=348 loss=1.16488 seconds=8.41 stateF1=0.4541 loc1=0.5556
+REALTIME_EPOCH cnn current_state seed=43 epoch=13 updates=377 loss=1.13923 seconds=5.43
+REALTIME_EPOCH cnn current_state seed=43 epoch=14 updates=406 loss=1.14783 seconds=4.09
+REALTIME_EPOCH cnn current_state seed=43 epoch=15 updates=435 loss=1.12895 seconds=4.04
+REALTIME_EPOCH cnn current_state seed=43 epoch=16 updates=464 loss=1.13547 seconds=9.24 stateF1=0.4578 loc1=0.6111
+REALTIME_EPOCH cnn current_state seed=43 epoch=17 updates=493 loss=1.10084 seconds=4.83
+REALTIME_EPOCH cnn current_state seed=43 epoch=18 updates=522 loss=1.10240 seconds=4.15
+REALTIME_EPOCH cnn current_state seed=43 epoch=19 updates=551 loss=1.12371 seconds=4.06
+REALTIME_EPOCH cnn current_state seed=43 epoch=20 updates=580 loss=1.09217 seconds=8.52 stateF1=0.4515 loc1=0.5370
+REALTIME_EPOCH cnn current_state seed=43 epoch=21 updates=609 loss=1.07743 seconds=4.95

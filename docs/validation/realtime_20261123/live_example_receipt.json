@@ -1,0 +1,16 @@
+{
+  "cpu_threads": 1,
+  "decisions": 240,
+  "detected_at_s": 3.29,
+  "first_decision_s": 0.09,
+  "last_decision_s": 23.99,
+  "localized_at_s": 3.39,
+  "log_sha256": "838c62946cd172bb196b145fb24fcbb1883571c09a6671d6ec033dc688f49a97",
+  "motor": 1,
+  "packet_points": 7,
+  "remaining_effectiveness": 0.0,
+  "samples_processed": 2401,
+  "source_id": "control_v4_g000_label01",
+  "source_role": "train",
+  "status": "passed"
+}

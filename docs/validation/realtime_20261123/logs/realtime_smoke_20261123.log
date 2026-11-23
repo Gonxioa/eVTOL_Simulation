@@ -1,0 +1,4 @@
+REALTIME_STAGE smoke
+REALTIME_EPOCH cnn current_state seed=42 epoch=1 updates=5 loss=2.95051 seconds=4.64 stateF1=0.0046 loc1=0.0000
+REALTIME_EPOCH lstm current_state seed=42 epoch=1 updates=5 loss=2.94102 seconds=2.47 stateF1=0.0181 loc1=0.0000
+REALTIME_STAGE_COMPLETE smoke

@@ -50,6 +50,31 @@ def make_report(output):
     pd.DataFrame(aggregates).to_csv(output/"aggregate_by_model_objective.csv",index=False,encoding="utf-8-sig")
     training=pd.DataFrame([{k:v for k,v in r.items() if not isinstance(v,(dict,list))} for r in jobs])
     training.to_csv(output/"training_budget.csv",index=False,encoding="utf-8-sig")
+    conditions=[]
+    for job in jobs:
+        for role in ("validation","test"):
+            frame=pd.read_csv(Path(job["folder"])/role/"per_record.csv")
+            for group,subset in frame.groupby("group"):
+                faults=subset[subset.label>0]
+                row=dict(model=job["model"],objective=job["objective"],training_seed=job["seed"],role=role,
+                    condition_group=int(group),records=len(subset),fault_records=len(faults),
+                    detected=int(faults.detection_delay_s.notna().sum()),always_missed=int(faults.detection_delay_s.isna().sum()),
+                    never_joint_localized=int(faults.localization_delay_s.isna().sum()),
+                    healthy_false_alarm_events=int(subset.healthy_false_alarm_events.sum()),
+                    healthy_observation_s=float(subset.healthy_observation_s.sum()),
+                    prefault_false_alarm_events=int(subset.prefault_false_alarm_events.sum()),
+                    prefault_observation_s=float(subset.prefault_observation_s.sum()),
+                    repeat_alarms=int(faults.repeat_alarms.sum()),wrong_clears=int(faults.wrong_clears.sum()))
+                for point in (.5,1.,3.):
+                    for kind in ("detection","localization"):
+                        field=f"{kind}_within_{point:g}s"
+                        row[field]=float(faults[field].mean())
+                for kind in ("detection","localization"):
+                    successful=faults[kind+"_delay_s"].dropna()
+                    row[kind+"_delay_median_s"]=float(successful.median()) if len(successful) else None
+                    row[kind+"_delay_p95_s"]=float(successful.quantile(.95)) if len(successful) else None
+                conditions.append(row)
+    pd.DataFrame(conditions).to_csv(output/"per_condition_group.csv",index=False,encoding="utf-8-sig")
     attempts=[]
     archive=output.with_name(output.name+"_pre_boundary_fix")
     draft=output.with_name(output.name+"_development_range_draft")
@@ -59,7 +84,8 @@ def make_report(output):
             saved=torch.load(checkpoint,map_location="cpu",weights_only=False)
             complete=(checkpoint.parent/"summary.json").exists()
             attempts.append(dict(phase=checkpoint.relative_to(root).parts[0],job=checkpoint.parent.name,
-                excluded_before_boundary_fix=excluded,completed=complete,
+                excluded_from_official_results=excluded,completed=complete,
+                exclusion_reason=("inclusive_boundary_fix" if root==archive else "early_range_grid_amendment" if root==draft else "none"),
                 persisted_epochs=saved["epoch"],persisted_optimizer_updates=saved["updates"],
                 persisted_forward_points=sum(r["forward_points"] for r in saved["history"]),
                 interrupted_epoch_additional_updates_unknown=not complete,
@@ -104,18 +130,26 @@ def make_report(output):
     fig.suptitle("延迟仅统计已成功样本；全部漏检和未定位在报告中单列")
     fig.tight_layout();save(fig,"02_条件检出与定位延迟")
 
-    fig,axes=plt.subplots(1,2,figsize=(12,4.5))
+    fig,axes=plt.subplots(1,2,figsize=(13,4.8))
     for family,ax in zip(config["models"],axes):
         job=next(j for j in jobs if j["model"]==family and j["objective"]=="current_state" and j["seed"]==42)
         candidates=job["selected_validation"]["candidates"]
-        for candidate in candidates:
-            metric=candidate["metrics"]
-            ax.scatter(metric["healthy_false_alarms_per_minute"],metric["localization_within_3s"]*100,
-                color="#147c9c" if candidate["index"]==job["selected_validation"]["selected"]["index"] else "#c6cdd4",s=70)
-            ax.annotate(str(candidate["index"]),(metric["healthy_false_alarms_per_minute"],metric["localization_within_3s"]*100),xytext=(3,4),textcoords="offset points")
-        ax.set(xlabel="唯一健康来源误报事件/分钟",ylabel="3秒内正确联合定位率（%）",title=family.upper()+"，种子42，最佳检查点")
-        ax.grid(alpha=.2)
-    fig.suptitle("验证集报警工作点权衡（候选编号与配置一致；蓝色为所选工作点）")
+        indices=np.asarray([c["index"] for c in candidates])
+        choice=job["selected_validation"]["selected"]["index"]
+        ax.axvspan(choice-.45,choice+.45,color="#d5edf5",zorder=0)
+        for offset,point,color in ((-.23,.5,"#7db7c8"),(0,1.,"#147c9c"),(.23,3.,"#194b64")):
+            ax.bar(indices+offset,[c["metrics"][f"localization_within_{point:g}s"]*100 for c in candidates],
+                   width=.22,color=color,label=f"{point:g}秒内正确联合定位")
+        right=ax.twinx()
+        fa=np.asarray([c["metrics"]["healthy_false_alarms_per_minute"] for c in candidates])
+        right.plot(indices,fa,"o--",color="#db8756",label="健康误报/分钟",linewidth=1.4)
+        right.set(ylabel="唯一健康来源误报事件/分钟",ylim=(0,max(1.,fa.max()*1.3)))
+        ax.set(xticks=indices,xlabel="候选编号（蓝底为所选工作点）",ylabel="正确电机及程度定位率（%）",ylim=(0,108),
+               title=family.upper()+"，种子42，最佳检查点")
+        a,b=ax.get_legend_handles_labels();c,d=right.get_legend_handles_labels()
+        ax.legend(a+c,b+d,loc="upper left",ncol=2,fontsize=7.5)
+        ax.grid(axis="y",alpha=.2)
+    fig.suptitle("验证集报警工作点：及时定位与误报权衡（编号与配置一致）")
     fig.tight_layout();save(fig,"03_验证集工作点权衡")
 
     for family in config["models"]:
@@ -131,9 +165,10 @@ def make_report(output):
                 ax.set(xticks=np.arange(19),yticks=np.arange(19),xlabel="预测类别编号",ylabel="真实类别编号",
                        title=names[objective]+("：故障后前3秒" if column==0 else "：持续故障后段"))
                 ax.tick_params(labelsize=8)
-        fig.colorbar(image,ax=axes.ravel().tolist(),label="按真实类别归一化的比例",shrink=.7)
         fig.suptitle(f"{family.upper()} 种子42：早期与持续阶段逐时刻混淆矩阵\n类别0健康，1～6完全失效，7～12剩余20%，13～18剩余80%",fontsize=14)
-        fig.subplots_adjust(wspace=.25,hspace=.28,top=.89,right=.86)
+        fig.subplots_adjust(wspace=.3,hspace=.28,top=.89,right=.88)
+        color_axis=fig.add_axes([.915,.2,.018,.6])
+        fig.colorbar(image,cax=color_axis,label="按真实类别归一化的比例")
         save(fig,"04_"+family.upper()+"_早期与后期混淆矩阵")
 
     fig,axes=plt.subplots(2,2,figsize=(12,8))
@@ -153,28 +188,50 @@ def make_report(output):
     # Post-freeze descriptive failure examples, not used for model selection.
     example_rows=[]
     for family in config["models"]:
-        job=next(j for j in jobs if j["model"]==family and j["objective"]=="current_state" and j["seed"]==42)
-        folder=Path(job["folder"])/"test"
-        cases=pd.read_csv(folder/"per_record.csv")
-        false=cases[(cases.healthy_false_alarm_events>0)|(cases.prefault_false_alarm_events>0)].sort_values("source_id")
-        misses=cases[(cases.label>0)&(~cases["localization_within_3s"])].sort_values("source_id")
-        source_ids=[]
-        if len(false):source_ids.append((false.iloc[0].source_id,"误报示例"))
-        if len(misses):source_ids.append((misses.iloc[0].source_id,"3秒内未正确定位示例"))
-        if not source_ids:source_ids=[(cases[cases.label>0].sort_values("source_id").iloc[0].source_id,"固定来源故障示例（没有上述失败）")]
-        trace=pd.read_csv(folder/"decision_trace.csv")
-        fig,axes=plt.subplots(len(source_ids),1,figsize=(12,3.3*len(source_ids)),squeeze=False)
-        for ax,(source_id,title) in zip(axes[:,0],source_ids):
+        family_jobs=sorted([j for j in jobs if j["model"]==family and j["objective"]=="current_state"],key=lambda j:j["seed"])
+        examples=[]
+        for kind in ("false","miss"):
+            for job in family_jobs:
+                cases=pd.read_csv(Path(job["folder"])/"test"/"per_record.csv")
+                selected_cases=(cases[(cases.healthy_false_alarm_events>0)|(cases.prefault_false_alarm_events>0)] if kind=="false" else
+                                cases[(cases.label>0)&(~cases["localization_within_3s"])])
+                if len(selected_cases):
+                    examples.append((job,selected_cases.sort_values("source_id").iloc[0],"误报示例" if kind=="false" else "3秒内未正确定位示例"))
+                    break
+        if not examples:
+            job=family_jobs[0]
+            cases=pd.read_csv(Path(job["folder"])/"test"/"per_record.csv")
+            examples=[(job,cases[cases.label>0].sort_values("source_id").iloc[0],"固定来源故障示例（没有上述失败）")]
+        fig,axes=plt.subplots(len(examples),1,figsize=(12,3.5*len(examples)),squeeze=False)
+        for ax,(job,case,title) in zip(axes[:,0],examples):
+            source_id=case.source_id
+            trace=pd.read_csv(Path(job["folder"])/"test"/"decision_trace.csv")
             frame=trace[trace.source_id==source_id]
             ax.plot(frame.time_s,frame.fault_probability,color="#147c9c",label="当前故障概率")
             ax.axhline(job["selected_policy"]["fault_threshold"],color="#db8756",linestyle="--",label="故障阈值")
             ax.fill_between(frame.time_s,0,1,where=frame.alarm.astype(bool),color="#d65151",alpha=.13,label="正式报警激活")
-            ax.axvline(3,color="black",linestyle=":",label="故障注入（仅离线标注）")
-            ax.set(xlabel="Time (s)",ylabel="概率",ylim=(-.03,1.04),title=f"{family.upper()} 种子42｜{title}｜{source_id}")
+            if case.label>0:
+                ax.axvline(3,color="black",linestyle=":",label="故障注入（仅离线标注）")
+            state_note="健康记录：未注入故障" if case.label==0 else "故障真值仅用于离线评分"
+            ax.set(xlabel="Time (s)",ylabel="概率",ylim=(-.03,1.04),title=f"{family.upper()} 种子{job['seed']}｜{title}｜{source_id}\n{state_note}")
             ax.grid(alpha=.2);ax.legend(loc="lower right",fontsize=8,ncol=2)
-            example_rows.append(dict(model=family,seed=42,source_id=source_id,purpose=title,selection="Post-freeze first sorted matching example; no retuning"))
+            example_rows.append(dict(model=family,seed=job["seed"],source_id=source_id,purpose=title,
+                actual_record_label=int(case.label),selection="Post-freeze first matching training seed, then source_id; no retuning"))
         fig.tight_layout();save(fig,"06_"+family.upper()+"_在线报警时序示例")
     write_json(output/"example_selection.json",example_rows)
+    healthy_alarm_details=[]
+    for job in jobs:
+        if job["objective"]!="current_state":continue
+        folder=Path(job["folder"])/"test"
+        cases=pd.read_csv(folder/"per_record.csv")
+        healthy_ids=set(cases[cases.label==0].source_id)
+        for record in read(folder/"events.json"):
+            if record["source_id"] in healthy_ids:
+                for event in record["events"]:
+                    healthy_alarm_details.append(dict(model=job["model"],seed=job["seed"],source_id=record["source_id"],
+                        detected_at_s=event["detected_at_s"],cleared_at_s=event["cleared_at_s"],
+                        ongoing_at_record_end=event["ongoing_at_record_end"],confirmed_label=event["label"]))
+    write_json(output/"healthy_false_alarm_details.json",healthy_alarm_details)
 
     # Each source's effective training mass can be checked without a huge point CSV.
     development=torch.load(output/"development_flights.pt",weights_only=False)
@@ -223,7 +280,7 @@ def make_report(output):
     latency=pd.read_csv(output/"online_latency.csv") if (output/"online_latency.csv").exists() else None
     lines=["# 新版飞控数据的实时故障诊断基线", "",
         "本轮复用已验收的228条原生Simulink绕圈记录，没有新运行仿真，没有GAN或ROS。完成2个真实数据小规模检查、12个开发候选、CNN/LSTM×2种训练目标×3个种子的12个正式训练。测试信号在全部正式模型、scaler及报警工作点冻结后统一读取。", "",
-        f"补充边界回归时发现0.3浮点减法的包含边界问题，已用1e-12双精度舍入容差修正。修正前的训练保留在{archive.name}，未用于正式结果。其中已完成与主动中止的尝试分别记录在all_training_attempts.csv；中止轮次未落盘的部分更新数不伪称可精确复算。修正后从头重跑了全部正式开发与训练。", "",
+        f"补充边界回归时发现0.3浮点减法的包含边界问题，已用1e-12双精度舍入容差修正。修正前的训练保留在{archive.name}，早期范围补足前的开发保留在{draft.name}，均未用于正式结果。其中已完成与主动中止的尝试分别记录在all_training_attempts.csv；中止轮次未落盘的部分更新数不伪称可精确复算。最终从头重跑了全部正式开发与训练。", "",
         "## 输入、标签和真正的在线处理", "",
         "输入保持加速度计3轴、陀螺仪3轴和六台带噪、延迟测量转速，共12维。转速直接来自feedback_state_14..19；IMU按既有传感链因果延迟3个采样周期，转速不再延迟。对命令、真值、效能及诊断内部列任意改写不影响输入，审计已通过。", "",
         "逐时刻标签：故障前健康，注入后保持对应电机/程度，只有故障本身解除才恢复健康；飞机恢复稳定不改变故障标签。现有数据不含真实解除事件，解除状态机仅有程序回归验证，不能据此宣称已验证故障解除识别性能。", "",
@@ -280,6 +337,33 @@ def make_report(output):
     record_table += ["", "旧训练记录头直到记录结束才形成整条飞行结果，不能把其宏F1当成故障后0.5/1/3秒的在线报警成绩。", ""]
     position=lines.index("## 实际设备耗时")
     lines[position:position]=record_table
+    strata=["## 按故障程度与电机统计", "",
+        "以下为新目标在相同测试来源上的三种子均值。每个故障程度每种子18条，每台电机每种子9条；不能将三次训练重复视为新增独立仿真。旧目标及逐种子明细完整保留在各自by_group_motor_severity.csv。", "",
+        "|网络|剩余效能|1秒内检出率|1秒内正确联合定位率|3秒内正确联合定位率|",
+        "|---|---:|---:|---:|---:|"]
+    stratified=[]
+    for family in config["models"]:
+        for job in jobs:
+            if job["model"]==family and job["objective"]=="current_state":
+                frame=pd.read_csv(Path(job["folder"])/"test"/"by_group_motor_severity.csv")
+                frame["model"],frame["seed"]=family,job["seed"]
+                stratified.append(frame)
+    strata_frame=pd.concat(stratified,ignore_index=True)
+    for family in config["models"]:
+        for eta in (0.,.2,.8):
+            subset=strata_frame[(strata_frame.model==family)&(strata_frame.axis=="remaining_effectiveness")&np.isclose(strata_frame.value,eta)]
+            strata.append("|"+family.upper()+f"|{eta*100:g}%|"+"|".join(percent(subset[field].mean()) for field in
+                ("detection_within_1s","localization_within_1s","localization_within_3s"))+"|")
+    strata += ["", "|网络|故障电机|1秒内检出率|1秒内正确联合定位率|3秒内正确联合定位率|",
+               "|---|---|---:|---:|---:|"]
+    for family in config["models"]:
+        for motor in range(1,7):
+            subset=strata_frame[(strata_frame.model==family)&(strata_frame.axis=="motor")&np.isclose(strata_frame.value,motor)]
+            strata.append("|"+family.upper()+f"|M{motor}|"+"|".join(percent(subset[field].mean()) for field in
+                ("detection_within_1s","localization_within_1s","localization_within_3s"))+"|")
+    strata += ["", "本轮新目标对剩余80%效能故障的及时检出和定位不足，不能将强故障上的较快响应推广为全部故障可靠报警；CNN种子44的健康误报也必须保留。未根据这些测试结果继续选择阈值或补训。", ""]
+    position=lines.index("## 实际设备耗时")
+    lines[position:position]=strata
     if latency is not None:
         cpu=latency[(latency.device=="cpu")&(latency.decision_samples==10)]
         gpu=latency[(latency.device=="cuda")&(latency.decision_samples==10)]
@@ -288,9 +372,12 @@ def make_report(output):
                 lines.append(f"{label}默认0.1秒判断周期：六个新目标模型的单次调用中位耗时范围 {frame.median_ms.min():.3f}～{frame.median_ms.max():.3f} ms，95%分位数范围 {frame.p95_ms.min():.3f}～{frame.p95_ms.max():.3f} ms，观察到的最大值 {frame.maximum_ms.max():.3f} ms。超出周期调用共 {int(frame.calls_over_period.sum())} 次。")
                 lines.append("")
         lines += ["每个模型、设备及判断周期预热60次后测600次，CPU单线程。公开push调用计时包含标准化、网络状态、报警逻辑和结果复制，CUDA前后同步；逐采样点10ms周期也单列。硬件为i7-14700HX、RTX4060 Laptop GPU。该测量是桌面实际观测，不是硬实时保证。报警延迟来自仿真数据时间轴，与这些计算耗时分别报告。", ""]
+        pointwise=latency[latency.decision_samples==1]
+        lines += [f"逐采样点10ms周期：CPU实测超周期共 {int(pointwise[pointwise.device=='cpu'].calls_over_period.sum())} 次；GPU共 {int(pointwise[pointwise.device=='cuda'].calls_over_period.sum())} 次，GPU观察最大耗时 {pointwise[pointwise.device=='cuda'].maximum_ms.max():.3f} ms。因此不能把默认100ms判断周期下的结果当成所有GPU调用均满足10ms硬时限。", ""]
     lines += ["## 完成范围与限制", "",
         "已采集数据复核：228条，全部控制器版本、文件哈希、19类完整性及来源划分核对；训练标准化仅拟合114条训练来源的273714个测量点。171条开发记录在审计阶段、57条测试记录在冻结后分别完成原生数值传感链检查。测试物理描述性结果曾经查看过，因此这里只称新的分类评价，不声称从未接触测试数据。", "",
         "开发检查预算较正式训练短，开发候选排名仍可能受早期优化波动影响；本轮不据测试结果重新选择分段长度或追加训练。40轮为预先固定的研究基线预算，不声称损失已经严格收敛。训练损失、早期/持续阶段验证和三种子差异全部保留。", "",
+        "CNN种子44的三个健康来源分别在4.49、4.69、4.69秒发出未定位误报警，并保持到记录结束，见healthy_false_alarm_details.json和误报时序图。误报事件数不能体现全部占用时间，这种持续误报是本轮明确保留的未解决问题。", "",
         "0.5、1、3秒是观察点，尚未通过控制闭环确认正式安全报警时限。来源只包含当前绕圈任务、单电机持续故障及既定三种强度，不能外推到其他任务、复合故障或真实飞行。", "",
         "## 运行与文件", "",
         "接口与最短命令见仓库docs/REALTIME_USAGE.md；从文件逐批模拟实时采集可运行stream_fault_diagnosis.py。报告目录内有figures、portable_weights、per_seed_results.csv、training_budget.csv、来源审计、开发选型及冻结/测试读取收据。权重保留12个正式训练各自的最佳检查点及scaler。", ""]

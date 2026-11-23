@@ -1,0 +1,173 @@
+{
+  "code": {
+    "configs/simulink_realtime.json": "68bafd8958371804d5bb5c2c1c3b1ebb59dcb766de8316c33a04163a5cb6d7b2",
+    "provenance.py": "38bdef20ade038f89469e6172300556c399be602621c46666ed8b919c6c1ce5b",
+    "run_simulink_realtime.py": "5fed830062500eef96e4afcc674419eb0bc0af60e3ec3fe85d4d76b710df5d23",
+    "simulink_data.py": "e11e54763bc80b0c8a946e36ffcebe85ce265da326cc713b6f2255e7c6d2d1a4",
+    "simulink_realtime.py": "98eecbb391f2a90a226cefd814a28218e6172ac41edef1610e13ab28021fe69a",
+    "simulink_realtime_evaluation.py": "127fdedd82d46832b86593c453101420f5b27a98c094a0fdbfcc56ac65e6feda",
+    "simulink_realtime_training.py": "318b4a48d738e4fec5d5bd3c7fe34801485b23e178d9fe5fde3810afb6432703",
+    "simulink_sequence_data.py": "a1d5270dab4c10d50de165d332d3e03073887d990243d267ef0b2e8ab0f50d42",
+    "simulink_sequence_events.py": "c1bc593edb5b5b6824013ce56a8f3f11c75e8ef2e4b1ca7ea219e046632c197b",
+    "simulink_sequence_model.py": "47f11db5d93a48e4338ce67c6e997188e15a0dfac50260a59c4bc252ab76d6fb"
+  },
+  "development_selection_sha256": "112b46a758bbc370d3b144c4e3b76eb406cf2017565bfbbd8144710a254a5a96",
+  "files": {
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\current_state_cnn_seed42\\best.pt": "91750a6bdb3d4e5c09e11d1cd8eb285c5833ff320121a2e56e642958bc98d207",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\current_state_cnn_seed42\\job.json": "a4b268c0954954ee29a2a56dd146cbab4573ea2b1374e24f9c55524be0692832",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\current_state_cnn_seed42\\last.pt": "701679441b8eb5f5ded76e4b34a4b72e8a92489d4bfed3030e141f23bfaa46db",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\current_state_cnn_seed42\\summary.json": "249574a77e5612da5ab1c64fba9a0f7d604392a0486083ca9abb91ab466f6d41",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\current_state_cnn_seed43\\best.pt": "14d4ab8c3f9e11973be40240082209503f2ad3afa1b9af2de4d8027e35d77908",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\current_state_cnn_seed43\\job.json": "784031ae2daf470a55d59c2226de2d7c9d5ce80ab612e8051b19465e83a834ce",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\current_state_cnn_seed43\\last.pt": "17f1f99fc26003cc9433961881595010a567d8c3f8b42037f024bf921f6d3c04",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\current_state_cnn_seed43\\summary.json": "4349bdcff59c7fc7913308039fbee4c13befbb99e0c0aa6da7f137a9f328ef0a",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\current_state_cnn_seed44\\best.pt": "9d64e215ebec5659fc8e6a06a0499cf8537edd640d416b2bf226c02c05ec57fe",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\current_state_cnn_seed44\\job.json": "723c15d6aac6a59af2842cae38c490f57a49991b4e1009e4b3dc91d43de50419",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\current_state_cnn_seed44\\last.pt": "0188d65d483ec40118fac6d4039b8bda17102774d4cae33bdca92ac06d217019",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\current_state_cnn_seed44\\summary.json": "8b6ab127d33885402282fc29f4dcdef8634cbcb605d3f239666a273283294e25",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\current_state_lstm_seed42\\best.pt": "7d773aa5dafd4d19137a092dd20a1bce360932a100c15e1ad1d84107bfe1f054",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\current_state_lstm_seed42\\job.json": "394c8e10cb0d1d58ff8e72e5289b3eb0d8ff89ae1c87bf516c5ead9c77f49d17",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\current_state_lstm_seed42\\last.pt": "46eb6793ac71e7f4f7708028b021c56c610a0cbc526e5d3f741c3992b0904b34",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\current_state_lstm_seed42\\summary.json": "42163ffdd3da75733460d5e2ec9b773dba7736e7d5a9a61b90a3ef2eb8b22f40",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\current_state_lstm_seed43\\best.pt": "6bfc12ea4659299cc2fcc57fb6f09fa36b3892192a9248d9200d3f5e2748e507",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\current_state_lstm_seed43\\job.json": "2e4e849b56d1c5208c1681a199cd3321bb3c6dc66818174dd57a6218c90b739b",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\current_state_lstm_seed43\\last.pt": "ddb60273f7aaf1aa58b267c4fa46befc40a12b9524ecb467f9624eb37c7b786d",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\current_state_lstm_seed43\\summary.json": "a206bbc6048af1bc7f21437d0fbdb0d671dd746129c8d9da65d2d194ab9c9a78",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\current_state_lstm_seed44\\best.pt": "4c71054cc8c2fc2ae8b7a32fa98b673409f13a8b9f582370fe53c377d0104a71",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\current_state_lstm_seed44\\job.json": "e4a363bda289fd402eff196a747783c25735ca6f043950fc16e9be333b4d0f5c",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\current_state_lstm_seed44\\last.pt": "52a4ae72aef5a040c9f9421abf075f21b73b25cfe7b054e6d401384640511705",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\current_state_lstm_seed44\\summary.json": "914894d0d7177f16750014cd4cb4e6d2cc8eb428249c6449ccf29b5c504907c1",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\legacy_record_cnn_seed42\\best.pt": "3c8723001b70a99de921d5ce1d838e290849a54a6ce5257cb5fcc632c11d59fc",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\legacy_record_cnn_seed42\\job.json": "a30ddbe13afbad26624d45803eb2a8bd2dc3f98da65e6cd8c6af189cba380036",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\legacy_record_cnn_seed42\\last.pt": "896df53ec3541c8ac4ba0eed684fceb35c3c3f1d9600b8584bbc26ef18837420",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\legacy_record_cnn_seed42\\summary.json": "f005b44eddaeccfb5b1234b478e7d8cdffb03584c2a96a67485853b8b598057e",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\legacy_record_cnn_seed43\\best.pt": "35bf5af4333ccec5d0e5b6fbda25ae4d742fda347c26fb8eb01e57cb640adb11",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\legacy_record_cnn_seed43\\job.json": "aff91270e14dbcf5fe7e499edacce2d2995dc6910e5e2e3d50ab49e785379a75",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\legacy_record_cnn_seed43\\last.pt": "b394048c405659306899ee297ce9ef28aac40e622443fed155a8fdb8eea49d12",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\legacy_record_cnn_seed43\\summary.json": "d50e3db7b8153522e9803554e2c967424bdb67ca73062fb39e3eadcc9f0fe012",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\legacy_record_cnn_seed44\\best.pt": "30b5b55c3bab8b5ccb47ed9b4f58422e20460eb61c215de212d0640b1c30d8e6",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\legacy_record_cnn_seed44\\job.json": "8702740d407da813891a0c39defc2fdf48a998c817236651c8a26585289b5e5c",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\legacy_record_cnn_seed44\\last.pt": "225d52dd678fb8e2384f5361e3c51f0a30684bf9c0142d7beadf88e5e1d1e25d",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\legacy_record_cnn_seed44\\summary.json": "8857ac9146a5398160393a836e8ba10d611aaa48729bab38c71e5b6bcb8348ef",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\legacy_record_lstm_seed42\\best.pt": "b7db87405a4da3b3b287745d435431e5865a24e156f415bbb9f11c4502d941fe",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\legacy_record_lstm_seed42\\job.json": "5de22d081aedf034cb59f681db4211af72b2cedb1a9b4372af4a0402ddfc043e",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\legacy_record_lstm_seed42\\last.pt": "58254b5ab2485be12a2b55ff4db67694fec2a4eba9b30e009ebdd1291a927402",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\legacy_record_lstm_seed42\\summary.json": "2d71d4c7a7d740ca10669dbd694064d37603ae6e178d93d6d350590bfdd2172c",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\legacy_record_lstm_seed43\\best.pt": "61020fc3860852c5c7bcc12a25e020bd703ca24ed12cbaee5dab55566df4e069",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\legacy_record_lstm_seed43\\job.json": "c5e0c4231509b47558ddff673c3b109f6d835ddee161dafcf5176f458fbe6747",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\legacy_record_lstm_seed43\\last.pt": "f5cc3aaaf865696ff7f870193f8de4d88d5722f54b914627f9572056d61936e3",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\legacy_record_lstm_seed43\\summary.json": "6d1c52980cdb43b3a60c434f72193769241f7639aada71e6a1ced410674287b0",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\legacy_record_lstm_seed44\\best.pt": "f25f930c23c24fd41a4d75ae3df724d0686f5bdb3cabc6d3f2077f827ca5bde3",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\legacy_record_lstm_seed44\\job.json": "1d4865a4f71e51985ed04f4c9e786491ed3905dd64f62b28463a9cbaac89de74",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\legacy_record_lstm_seed44\\last.pt": "dbf8101ea8d1b18f6b4018e973b049bb2906de85a0f88163b0988741983c15d7",
+    "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation\\output_realtime_diagnosis_20261123\\formal\\legacy_record_lstm_seed44\\summary.json": "8839bec3dc2a36108838749900d11b9c433178808216cde981e1c3f07134851a"
+  },
+  "protocol_signature": "fac33c5302f3bcdf1831944583c6729ffe59d3f711e05ca31440cb384044c73d",
+  "runtime": {
+    "created_utc": "2026-11-22T18:29:22.092981+00:00",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]"
+  },
+  "selected_policies": {
+    "current_state_cnn_seed42": {
+      "class_threshold": 0.4,
+      "clear_s": 0.5,
+      "clear_threshold": 0.3,
+      "confirm_s": 0.2,
+      "fault_threshold": 0.8,
+      "localize_s": 0.2
+    },
+    "current_state_cnn_seed43": {
+      "class_threshold": 0.4,
+      "clear_s": 0.5,
+      "clear_threshold": 0.3,
+      "confirm_s": 0.2,
+      "fault_threshold": 0.8,
+      "localize_s": 0.2
+    },
+    "current_state_cnn_seed44": {
+      "class_threshold": 0.4,
+      "clear_s": 0.5,
+      "clear_threshold": 0.3,
+      "confirm_s": 0.2,
+      "fault_threshold": 0.8,
+      "localize_s": 0.2
+    },
+    "current_state_lstm_seed42": {
+      "class_threshold": 0.4,
+      "clear_s": 0.5,
+      "clear_threshold": 0.3,
+      "confirm_s": 0.2,
+      "fault_threshold": 0.8,
+      "localize_s": 0.2
+    },
+    "current_state_lstm_seed43": {
+      "class_threshold": 0.4,
+      "clear_s": 0.5,
+      "clear_threshold": 0.3,
+      "confirm_s": 0.2,
+      "fault_threshold": 0.8,
+      "localize_s": 0.2
+    },
+    "current_state_lstm_seed44": {
+      "class_threshold": 0.4,
+      "clear_s": 0.5,
+      "clear_threshold": 0.3,
+      "confirm_s": 0.2,
+      "fault_threshold": 0.8,
+      "localize_s": 0.2
+    },
+    "legacy_record_cnn_seed42": {
+      "class_threshold": 0.4,
+      "clear_s": 0.5,
+      "clear_threshold": 0.3,
+      "confirm_s": 0.2,
+      "fault_threshold": 0.8,
+      "localize_s": 0.2
+    },
+    "legacy_record_cnn_seed43": {
+      "class_threshold": 0.6,
+      "clear_s": 0.5,
+      "clear_threshold": 0.3,
+      "confirm_s": 0.3,
+      "fault_threshold": 0.9,
+      "localize_s": 0.3
+    },
+    "legacy_record_cnn_seed44": {
+      "class_threshold": 0.4,
+      "clear_s": 0.5,
+      "clear_threshold": 0.3,
+      "confirm_s": 0.2,
+      "fault_threshold": 0.8,
+      "localize_s": 0.2
+    },
+    "legacy_record_lstm_seed42": {
+      "class_threshold": 0.4,
+      "clear_s": 0.5,
+      "clear_threshold": 0.3,
+      "confirm_s": 0.2,
+      "fault_threshold": 0.8,
+      "localize_s": 0.2
+    },
+    "legacy_record_lstm_seed43": {
+      "class_threshold": 0.4,
+      "clear_s": 0.5,
+      "clear_threshold": 0.3,
+      "confirm_s": 0.2,
+      "fault_threshold": 0.8,
+      "localize_s": 0.2
+    },
+    "legacy_record_lstm_seed44": {
+      "class_threshold": 0.4,
+      "clear_s": 0.5,
+      "clear_threshold": 0.3,
+      "confirm_s": 0.2,
+      "fault_threshold": 0.8,
+      "localize_s": 0.2
+    }
+  },
+  "signature": "0609c1e24e7cab4f2f516dc5f20fe6934c82515b5e4e3e493413033276d27226",
+  "test_exposure_note": "Prior physical descriptive analysis existed; no classification results used for this selection",
+  "test_registry_sha256": "340e19470fc76fbce3aa67c3dcd5bbca0c75437cbb6d7e387348c5774e28f988",
+  "test_used_for_selection": false
+}

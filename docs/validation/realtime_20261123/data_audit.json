@@ -1,0 +1,55 @@
+{
+  "IMU_delay_samples": 3,
+  "all_hashes_verified": true,
+  "controller_version": "control_recovery_v4_20261122",
+  "counts": {
+    "test": 57,
+    "train": 114,
+    "validation": 57
+  },
+  "development_full_native_validation_passed": 171,
+  "fault_records": 216,
+  "feature_names": [
+    "ax",
+    "ay",
+    "az",
+    "gx",
+    "gy",
+    "gz",
+    "rpm_feedback0",
+    "rpm_feedback1",
+    "rpm_feedback2",
+    "rpm_feedback3",
+    "rpm_feedback4",
+    "rpm_feedback5"
+  ],
+  "forbidden_field_mutation_test_passed": true,
+  "groups": 12,
+  "healthy_records": 12,
+  "input_columns": [
+    "accelerometer_sensor_m_s2_1",
+    "accelerometer_sensor_m_s2_2",
+    "accelerometer_sensor_m_s2_3",
+    "gyro_sensor_rad_s_1",
+    "gyro_sensor_rad_s_2",
+    "gyro_sensor_rad_s_3",
+    "feedback_state_14",
+    "feedback_state_15",
+    "feedback_state_16",
+    "feedback_state_17",
+    "feedback_state_18",
+    "feedback_state_19"
+  ],
+  "measured_RPM_additional_delay_samples": 0,
+  "points_per_record": 2401,
+  "runtime": {
+    "created_utc": "2026-11-22T17:53:15.923446+00:00",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]"
+  },
+  "source_groups_disjoint": true,
+  "source_records": 228,
+  "status": "passed",
+  "test_full_native_numeric_validation": "Deferred until frozen test access",
+  "test_signal_values_loaded": false
+}

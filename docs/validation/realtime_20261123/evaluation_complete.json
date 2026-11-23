@@ -1,0 +1,16 @@
+{
+  "GAN_used": false,
+  "ROS_used": false,
+  "formal_training_runs": 12,
+  "new_simulations_this_round": 0,
+  "original_native_records": 228,
+  "runtime": {
+    "created_utc": "2026-11-22T19:31:17.676379+00:00",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]"
+  },
+  "status": "completed",
+  "test_records": 57,
+  "train_records": 114,
+  "validation_records": 57
+}

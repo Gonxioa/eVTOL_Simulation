@@ -1,0 +1,82 @@
+{
+  "actual_native_runs": 228,
+  "all_file_hashes_verified": true,
+  "classifier_training_performed": false,
+  "completed": 228,
+  "controller_version": "control_recovery_v4_20261122",
+  "dataset_version": "simulink_control_v4_observable_20261122_v1",
+  "each_record_seconds": 24,
+  "failed_or_incomplete_runs": 0,
+  "fault": 216,
+  "fault_start_s": 3,
+  "feature_channels": 12,
+  "feedback_delay_s": 0.03,
+  "flight_acceptance_passed": 228,
+  "gan_training_performed": false,
+  "healthy": 12,
+  "master_plan_signature": "fcb762165e526e3cf6106b17a474f8c3c01a93b04606e2a2f1a395b339177e25",
+  "paired_exogenous_identical": true,
+  "paired_groups": 12,
+  "points": 2401,
+  "role_counts": {
+    "test": 57,
+    "train": 114,
+    "validation": 57
+  },
+  "sample_hz": 100,
+  "seed_role_map": {
+    "0": {
+      "role": "train",
+      "seed": 810101
+    },
+    "1": {
+      "role": "train",
+      "seed": 810102
+    },
+    "10": {
+      "role": "test",
+      "seed": 810111
+    },
+    "11": {
+      "role": "test",
+      "seed": 810112
+    },
+    "2": {
+      "role": "train",
+      "seed": 810103
+    },
+    "3": {
+      "role": "train",
+      "seed": 810104
+    },
+    "4": {
+      "role": "train",
+      "seed": 810105
+    },
+    "5": {
+      "role": "train",
+      "seed": 810106
+    },
+    "6": {
+      "role": "validation",
+      "seed": 810107
+    },
+    "7": {
+      "role": "validation",
+      "seed": 810108
+    },
+    "8": {
+      "role": "validation",
+      "seed": 810109
+    },
+    "9": {
+      "role": "test",
+      "seed": 810110
+    }
+  },
+  "source_files_verified": true,
+  "task": "circle",
+  "test_signal_values_parsed_for_analysis": false,
+  "test_used_for_model_selection": false,
+  "collection_date_local": "2026-11-23"
+}

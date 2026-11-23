@@ -1,0 +1,29 @@
+[
+  {
+    "cleared_at_s": null,
+    "confirmed_label": null,
+    "detected_at_s": 4.49,
+    "model": "cnn",
+    "ongoing_at_record_end": true,
+    "seed": 44,
+    "source_id": "control_v4_g009_label00"
+  },
+  {
+    "cleared_at_s": null,
+    "confirmed_label": null,
+    "detected_at_s": 4.69,
+    "model": "cnn",
+    "ongoing_at_record_end": true,
+    "seed": 44,
+    "source_id": "control_v4_g010_label00"
+  },
+  {
+    "cleared_at_s": null,
+    "confirmed_label": null,
+    "detected_at_s": 4.69,
+    "model": "cnn",
+    "ongoing_at_record_end": true,
+    "seed": 44,
+    "source_id": "control_v4_g011_label00"
+  }
+]

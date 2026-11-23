@@ -11,6 +11,7 @@ import json
 from pathlib import Path
 
 import numpy as np
+import torch
 from simulink_realtime import RealtimeDiagnoser
 from simulink_realtime_training import load_realtime_checkpoint
 from simulink_sequence_events import EventPolicy
@@ -75,12 +76,18 @@ if __name__=="__main__":
     parser.add_argument("--csv",required=True)
     parser.add_argument("--device",choices=("cpu","cuda"),default="cpu")
     parser.add_argument("--packet-points",type=int,default=10)
+    parser.add_argument("--cpu-threads",type=int,default=1,help="Small online packets use the measured one-thread deployment default")
     args=parser.parse_args()
-    if args.packet_points<1:
-        parser.error("--packet-points must be positive")
+    if args.packet_points<1 or args.cpu_threads<1:
+        parser.error("--packet-points and --cpu-threads must be positive")
+    torch.set_num_threads(args.cpu_threads)
     model,scaler,saved=load_realtime_checkpoint(args.checkpoint,args.device)
     diagnostic=RealtimeDiagnoser(model,scaler,EventPolicy(**saved["best_policy"]),device=args.device)
     for result in diagnose_packets(diagnostic,csv_packets(args.csv,args.packet_points),MeasurementAligner()):
-        print(json.dumps({k:v for k,v in result.items() if k!="probabilities"},ensure_ascii=False),flush=True)
+        public={k:v for k,v in result.items() if k!="probabilities"}
+        label=result["confirmed_label"]
+        public["motor"]=(label-1)%6+1 if label is not None and label>0 else None
+        public["remaining_effectiveness"]=(0.,.2,.8)[(label-1)//6] if label is not None and label>0 else None
+        print(json.dumps(public,ensure_ascii=False),flush=True)
     final=diagnostic.finish()
     print(json.dumps(dict(finished=True,samples=final["samples"],events=final["events"]),ensure_ascii=False))

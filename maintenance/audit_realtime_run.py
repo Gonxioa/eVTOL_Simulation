@@ -15,6 +15,7 @@ from simulink_realtime import replay_flight
 from simulink_realtime_training import load_realtime_checkpoint
 from simulink_sequence_data import fit_scaler
 from simulink_sequence_events import EventPolicy
+from simulink_sequence_model import build_model
 
 
 def audit(output):
@@ -42,10 +43,16 @@ def audit(output):
         if any(row["forward_points"] != 273714 or row["record_terminals"] != 114 for row in last["history"]):
             raise AssertionError("Missing/repeated actual training points")
         initials.setdefault((job["model"],job["seed"]),set()).add(job["initial_parameters_sha256"])
+        torch.manual_seed(job["seed"])
+        initial_model=build_model(last["config"])
+        delta=max(float((last["model"][key]-value).abs().max()) for key,value in initial_model.state_dict().items())
+        if delta<=0:
+            raise AssertionError("Optimizer counters advanced but model parameters did not change")
         counters.append(dict(job=folder.name,actual_optimizer_steps=list(steps)[0],
             record_traversals=job["record_traversals"],valid_points=job["total_valid_forward_points"],
             scaler_points=int(expected.n_samples_seen_),checkpoint_selected_epoch=best["epoch"],
-            trainable_parameter_tensors_with_optimizer_state=len(last["optimizer"]["state"])))
+            trainable_parameter_tensors_with_optimizer_state=len(last["optimizer"]["state"]),
+            maximum_parameter_change=delta))
     if any(len(v)!=1 for v in initials.values()):
         raise AssertionError("Paired targets did not use identical model initialization")
     torch.set_num_threads(1)

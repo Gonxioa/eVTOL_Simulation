@@ -1,0 +1,21 @@
+{
+  "runs": [
+    {
+      "model": "cnn",
+      "optimizer_updates": 5,
+      "real_flight_streaming_checks_passed": true,
+      "train_records": 19,
+      "validation_records": 19
+    },
+    {
+      "model": "lstm",
+      "optimizer_updates": 5,
+      "real_flight_streaming_checks_passed": true,
+      "train_records": 19,
+      "validation_records": 19
+    }
+  ],
+  "status": "passed",
+  "synthetic": false,
+  "test_used": false
+}

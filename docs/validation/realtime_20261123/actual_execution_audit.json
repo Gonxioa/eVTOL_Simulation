@@ -1,0 +1,191 @@
+{
+  "actual_training_counters": [
+    {
+      "actual_optimizer_steps": 1160,
+      "checkpoint_selected_epoch": 32,
+      "job": "current_state_cnn_seed42",
+      "maximum_parameter_change": 0.5729306936264038,
+      "record_traversals": 40,
+      "scaler_points": 273714,
+      "trainable_parameter_tensors_with_optimizer_state": 12,
+      "valid_points": 10948560
+    },
+    {
+      "actual_optimizer_steps": 1160,
+      "checkpoint_selected_epoch": 36,
+      "job": "current_state_cnn_seed43",
+      "maximum_parameter_change": 0.5217570066452026,
+      "record_traversals": 40,
+      "scaler_points": 273714,
+      "trainable_parameter_tensors_with_optimizer_state": 12,
+      "valid_points": 10948560
+    },
+    {
+      "actual_optimizer_steps": 1160,
+      "checkpoint_selected_epoch": 24,
+      "job": "current_state_cnn_seed44",
+      "maximum_parameter_change": 0.7614625692367554,
+      "record_traversals": 40,
+      "scaler_points": 273714,
+      "trainable_parameter_tensors_with_optimizer_state": 12,
+      "valid_points": 10948560
+    },
+    {
+      "actual_optimizer_steps": 1160,
+      "checkpoint_selected_epoch": 12,
+      "job": "current_state_lstm_seed42",
+      "maximum_parameter_change": 0.6559712886810303,
+      "record_traversals": 40,
+      "scaler_points": 273714,
+      "trainable_parameter_tensors_with_optimizer_state": 12,
+      "valid_points": 10948560
+    },
+    {
+      "actual_optimizer_steps": 1160,
+      "checkpoint_selected_epoch": 16,
+      "job": "current_state_lstm_seed43",
+      "maximum_parameter_change": 0.6155028343200684,
+      "record_traversals": 40,
+      "scaler_points": 273714,
+      "trainable_parameter_tensors_with_optimizer_state": 12,
+      "valid_points": 10948560
+    },
+    {
+      "actual_optimizer_steps": 1160,
+      "checkpoint_selected_epoch": 32,
+      "job": "current_state_lstm_seed44",
+      "maximum_parameter_change": 0.8689688444137573,
+      "record_traversals": 40,
+      "scaler_points": 273714,
+      "trainable_parameter_tensors_with_optimizer_state": 12,
+      "valid_points": 10948560
+    },
+    {
+      "actual_optimizer_steps": 1160,
+      "checkpoint_selected_epoch": 20,
+      "job": "legacy_record_cnn_seed42",
+      "maximum_parameter_change": 0.5999758243560791,
+      "record_traversals": 40,
+      "scaler_points": 273714,
+      "trainable_parameter_tensors_with_optimizer_state": 16,
+      "valid_points": 10948560
+    },
+    {
+      "actual_optimizer_steps": 1160,
+      "checkpoint_selected_epoch": 40,
+      "job": "legacy_record_cnn_seed43",
+      "maximum_parameter_change": 0.8879027962684631,
+      "record_traversals": 40,
+      "scaler_points": 273714,
+      "trainable_parameter_tensors_with_optimizer_state": 16,
+      "valid_points": 10948560
+    },
+    {
+      "actual_optimizer_steps": 1160,
+      "checkpoint_selected_epoch": 36,
+      "job": "legacy_record_cnn_seed44",
+      "maximum_parameter_change": 0.5713719725608826,
+      "record_traversals": 40,
+      "scaler_points": 273714,
+      "trainable_parameter_tensors_with_optimizer_state": 16,
+      "valid_points": 10948560
+    },
+    {
+      "actual_optimizer_steps": 1160,
+      "checkpoint_selected_epoch": 24,
+      "job": "legacy_record_lstm_seed42",
+      "maximum_parameter_change": 0.9438939690589905,
+      "record_traversals": 40,
+      "scaler_points": 273714,
+      "trainable_parameter_tensors_with_optimizer_state": 16,
+      "valid_points": 10948560
+    },
+    {
+      "actual_optimizer_steps": 1160,
+      "checkpoint_selected_epoch": 36,
+      "job": "legacy_record_lstm_seed43",
+      "maximum_parameter_change": 0.8349835872650146,
+      "record_traversals": 40,
+      "scaler_points": 273714,
+      "trainable_parameter_tensors_with_optimizer_state": 16,
+      "valid_points": 10948560
+    },
+    {
+      "actual_optimizer_steps": 1160,
+      "checkpoint_selected_epoch": 36,
+      "job": "legacy_record_lstm_seed44",
+      "maximum_parameter_change": 0.7336068153381348,
+      "record_traversals": 40,
+      "scaler_points": 273714,
+      "trainable_parameter_tensors_with_optimizer_state": 16,
+      "valid_points": 10948560
+    }
+  ],
+  "matched_initializations": true,
+  "original_uncommitted_files_unchanged": [
+    "README.md",
+    "docs/SIMULINK_SEQUENCE_DIAGNOSIS.md",
+    "run_simulink_sequence.py",
+    "simulink_sequence_data.py",
+    "simulink_sequence_events.py",
+    "simulink_sequence_model.py",
+    "tests/test_simulink_sequence.py",
+    "configs/simulink_sequence_baselines.json",
+    "run_simulink_sequence_baselines.py",
+    "simulink_sequence_verify.py",
+    "tests/test_sequence_baselines.py"
+  ],
+  "scaler_train_only_verified": true,
+  "status": "passed",
+  "test_not_used_for_additional_selection": true,
+  "trained_model_causality": [
+    {
+      "future_perturbation_start_s": 6.0,
+      "irregular_arrival_sequence_exact": true,
+      "model": "cnn",
+      "past_decisions_exactly_unchanged": true,
+      "per_sample_vs_full_probability_max_error": 5.960464477539062e-07,
+      "seed": 42
+    },
+    {
+      "future_perturbation_start_s": 6.0,
+      "irregular_arrival_sequence_exact": true,
+      "model": "cnn",
+      "past_decisions_exactly_unchanged": true,
+      "per_sample_vs_full_probability_max_error": 5.662441253662109e-07,
+      "seed": 43
+    },
+    {
+      "future_perturbation_start_s": 6.0,
+      "irregular_arrival_sequence_exact": true,
+      "model": "cnn",
+      "past_decisions_exactly_unchanged": true,
+      "per_sample_vs_full_probability_max_error": 4.76837158203125e-07,
+      "seed": 44
+    },
+    {
+      "future_perturbation_start_s": 6.0,
+      "irregular_arrival_sequence_exact": true,
+      "model": "lstm",
+      "past_decisions_exactly_unchanged": true,
+      "per_sample_vs_full_probability_max_error": 2.086162567138672e-07,
+      "seed": 42
+    },
+    {
+      "future_perturbation_start_s": 6.0,
+      "irregular_arrival_sequence_exact": true,
+      "model": "lstm",
+      "past_decisions_exactly_unchanged": true,
+      "per_sample_vs_full_probability_max_error": 3.5762786865234375e-07,
+      "seed": 43
+    },
+    {
+      "future_perturbation_start_s": 6.0,
+      "irregular_arrival_sequence_exact": true,
+      "model": "lstm",
+      "past_decisions_exactly_unchanged": true,
+      "per_sample_vs_full_probability_max_error": 2.980232238769531e-07,
+      "seed": 44
+    }
+  ]
+}

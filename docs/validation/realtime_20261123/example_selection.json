@@ -1,0 +1,26 @@
+[
+  {
+    "actual_record_label": 0,
+    "model": "cnn",
+    "purpose": "误报示例",
+    "seed": 44,
+    "selection": "Post-freeze first matching training seed, then source_id; no retuning",
+    "source_id": "control_v4_g009_label00"
+  },
+  {
+    "actual_record_label": 13,
+    "model": "cnn",
+    "purpose": "3秒内未正确定位示例",
+    "seed": 42,
+    "selection": "Post-freeze first matching training seed, then source_id; no retuning",
+    "source_id": "control_v4_g009_label13"
+  },
+  {
+    "actual_record_label": 10,
+    "model": "lstm",
+    "purpose": "3秒内未正确定位示例",
+    "seed": 42,
+    "selection": "Post-freeze first matching training seed, then source_id; no retuning",
+    "source_id": "control_v4_g009_label10"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "authorizing_request": "2026-11-23 user request: evaluate after all models and policies frozen",
+  "classification_evaluation_authorized": true,
+  "freeze_signature": "0609c1e24e7cab4f2f516dc5f20fe6934c82515b5e4e3e493413033276d27226",
+  "purpose": "One unified final classification evaluation; no model/threshold selection",
+  "runtime": {
+    "created_utc": "2026-11-22T18:29:22.165303+00:00",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]"
+  }
+}

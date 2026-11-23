@@ -1,6 +1,10 @@
 # eVTOL_Simulation
 
-长序列诊断新入口：[12维完整飞行分类与事件标注](docs/SIMULINK_SEQUENCE_DIAGNOSIS.md)。一条完整飞行记录作为一个训练/主评价样本，连续推理保留历史状态，输出整段记录标签与估计故障事件区间。运行 `python run_simulink_sequence.py audit`、`python run_simulink_sequence.py train`；默认沿用原114条训练和57条验证来源，完整读取24秒。代码、合成执行检查与回归核对见[实现验证记录](docs/validation/sequence_20261106/verification.json)。尚未在原始285条记录上完成新任务的正式训练与盲测；V4短窗口结果保留为历史对照。
+实时故障报警入口：[运行说明与增量接口](docs/REALTIME_USAGE.md)、[训练前实验计划](docs/REALTIME_EXPERIMENT_PLAN.md)。使用 `control_recovery_v4_20261122` 的新版228条绕圈记录，保持12维测量输入、100 Hz采样，每0.1秒连续判断；当前状态监督、连续分段训练、CNN/LSTM三个种子及旧目标对照均在独立profile中实施。运行 `python run_simulink_realtime.py all --device cuda`，结果和权重分别见 `docs/validation/realtime_20261123`、`model_artifacts/realtime_20261123`。原始完整24秒数据不改写，本轮不使用GAN或ROS。
+
+已完成12个正式训练及冻结后的统一测试：[中文结果报告](docs/validation/realtime_20261123/实时故障诊断_中文结果报告.md)。实时链路和执行审计通过，但剩余80%效能故障仍有明显漏检，CNN一个训练种子存在健康误报；本轮结果是研究基线，未验证正式安全报警时限。下文滑窗/GAN及旧记录目标流程保留为历史入口，不混用旧权重和旧数据缓存。
+
+历史记录目标入口：[12维完整飞行分类与事件标注](docs/SIMULINK_SEQUENCE_DIAGNOSIS.md)，运行 `run_simulink_sequence.py`。其主要目标为整条记录分类，旧checkpoint和配置应按旧语义使用，不能静默装入新版实时接口；历史V4短窗口结果也不代表本轮新版数据的在线报警成绩。
 
 V4证据研究：[执行顺序与边界](docs/SIMULINK_GAN_V4.md)、[评审修订后的完整计划](docs/SIMULINK_GAN_V4_EXECUTION_PLAN.md)。基于 `2e03333`，先验证窗口、训练预算和表示，再在同一真实数据池上比较G0／类别约束变体与同量ROS，最后冻结并建立全新独立确认。当前完成状态和证据以各阶段收据为准。
 
@@ -16,7 +20,7 @@ V2 已完成 228 次仿真和三个训练种子的统一测试：[实际结果�
 
 完整设计与代码导航：[当前设计总览](CURRENT_DESIGN.md)。2026-11-01 整理后，本地保留当前 Python 代码、当前 Simulink 模型、物理参数说明、研究设计与验证记录。历史版本与旧仿真结果见 [GitHub 归档](https://github.com/Gonxioa/eVTOL_Simulation/releases/tag/archive-20261030)。
 
-最新的单电机失效恢复实验位于 [`simulink/`](simulink/README.md)：按照“稳定姿态/高度 → 返回原轨迹附近 → 继续任务”的优先级控制，允许任务进度减慢或暂停。恢复参数版本为 `control_v3_20261023`，当前声明范围内的 106 个实际 Simulink 飞行工况通过恢复验收，详见 [结果汇总](simulink/validation/SIMULATION_SUMMARY.md) 与 [完整整定过程及限制](simulink/validation/SIMULATION_TUNING.md)。这不代表实飞有效性或多电机同时失效保证。
+正式飞控模型位于 [`simulink/`](simulink/README.md)，版本为 `control_recovery_v4_20261122`，代码基线为 `362646775e38183381867ba37aa07f729e4195b5`。本轮保持物理模型、PID、容错机制、风噪和反馈延迟，复用已采集并验收的新版数据。飞控修复过程见[飞控修复报告](docs/CONTROL_REPAIR_REPORT.md)；历史 `control_v3_20261023` 结果不混入本轮分类实验。
 
 在 MATLAB R2025b 中进入 `simulink` 文件夹，运行 `open_hex_simulink` 打开模型，或运行 `my_simulation` 完成仿真、绘图和保存。历史原模型从归档标签恢复，当前生成器依赖的布局模板位于 `simulink/internal/`。
 

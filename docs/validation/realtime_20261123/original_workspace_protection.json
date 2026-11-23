@@ -1,0 +1,17 @@
+{
+  "root": "C:\\Users\\lenovo\\Desktop\\eVTOL_Simulation",
+  "status": " M README.md\n M docs/SIMULINK_SEQUENCE_DIAGNOSIS.md\n M run_simulink_sequence.py\n M simulink_sequence_data.py\n M simulink_sequence_events.py\n M simulink_sequence_model.py\n M tests/test_simulink_sequence.py\n?? configs/simulink_sequence_baselines.json\n?? docs/validation/sequence_20261106/native_review/\n?? docs/validation/sequence_baselines_20261106/\n?? maintenance/report_sequence_baselines.py\n?? plot_healthy_six_motor_speeds.py\n?? plot_m1_m4_imu.py\n?? run_simulink_sequence_baselines.py\n?? simulink_sequence_verify.py\n?? tests/test_sequence_baselines.py\n?? zh.gx.109.pptx\n",
+  "hashes": {
+    "README.md": "15ea43fc11e41b759b2d7262abedf37ce5be82b72a86806c0db138cea3119adc",
+    "docs/SIMULINK_SEQUENCE_DIAGNOSIS.md": "f8d9a15d63a90c57a16018396469e8c9221426e0655f2d757dd6f7b79502901e",
+    "run_simulink_sequence.py": "58af643525c789e4c3006b7bbe734237c6c6d24bd047c76af395b8e1d03e1735",
+    "simulink_sequence_data.py": "a1d5270dab4c10d50de165d332d3e03073887d990243d267ef0b2e8ab0f50d42",
+    "simulink_sequence_events.py": "c1bc593edb5b5b6824013ce56a8f3f11c75e8ef2e4b1ca7ea219e046632c197b",
+    "simulink_sequence_model.py": "47f11db5d93a48e4338ce67c6e997188e15a0dfac50260a59c4bc252ab76d6fb",
+    "tests/test_simulink_sequence.py": "0daa89f63f644cc1df228cc1f38f4098a3d517512c4fbfacfbcff8a34785bbae",
+    "configs/simulink_sequence_baselines.json": "06415c12c89a2276a09eb1d5665dd39da0aa773bf195d89d028c29144c0715e8",
+    "run_simulink_sequence_baselines.py": "fbe73de0521ec6b219820ec40c96a3eb6b3481b45149985675359adcabc83f0a",
+    "simulink_sequence_verify.py": "ebfe6f71300372f2e6e94dd5799bd58eb9756d138d54a929dbfc1b9507a7c46b",
+    "tests/test_sequence_baselines.py": "045b98c8496469aba291cfdd694675469bb2ab63e53cb10bb31ef805f80520c7"
+  }
+}

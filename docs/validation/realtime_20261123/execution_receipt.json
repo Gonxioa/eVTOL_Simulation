@@ -1,0 +1,22 @@
+{
+  "actual_optimizer_updates_per_formal_run": 1160,
+  "all_official_jobs_completed": true,
+  "development_candidate_training_runs": 12,
+  "excluded_attempts": 21,
+  "excluded_completed": 19,
+  "excluded_intentionally_interrupted": 2,
+  "formal_native_training_runs": 12,
+  "native_simulations_reused": 228,
+  "new_native_simulations": 0,
+  "readiness": "Research baseline; remaining80% fault misses and CNN seed44 sustained healthy alarms unresolved",
+  "real_source_smoke_training_runs": 2,
+  "regression_tests_passed": 47,
+  "test_records_evaluated": 57,
+  "total_formal_optimizer_updates": 13920,
+  "total_logged_native_experiment_attempts": 47,
+  "training_seeds": [
+    42,
+    43,
+    44
+  ]
+}
